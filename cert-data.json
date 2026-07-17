@@ -276,36 +276,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Wireshark",
-    "severity": "high",
-    "date": "2026-07-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0361",
-    "code": "CIVN-2026-0361",
-    "summary": "Multiple vulnerabilities have been reported in Wireshark that could allow an attacker to obtain sensitive information or cause denial of service (DoS) condition on the targeted system.",
-    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for troubleshooting, analysis, and security purposes. Multiple vulnerabilities have been reported in Wireshark due to improper input validation. An attacker could exploit these vulnerabilities by sending a specially crafted request. Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive information or trigger denial of service (DoS) condition on the targeted system.",
-    "softwareAffected": [
-      "Wireshark versions 4.6.0 to 4.6.6, 4.4.0 to 4.4.16."
-    ],
-    "targetAudience": "All end-users organisations and individual using Wireshark.",
-    "riskAssessment": "High risk of service unavailability.",
-    "impactAssessment": "Potential for sensitive data exposure, disruption of services.",
-    "cves": [
-      "CVE-2026-15164",
-      "CVE-2026-15167",
-      "CVE-2026-15163",
-      "CVE-2026-15168",
-      "CVE-2026-15169",
-      "CVE-2026-15170",
-      "CVE-2026-15166",
-      "CVE-2026-15165",
-      "CVE-2026-15171",
-      "CVE-2026-15172",
-      "CVE-2026-15173",
-      "CVE-2026-15174"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in PAN-OS",
     "severity": "high",
     "date": "2026-07-10",
@@ -387,6 +357,36 @@
       "CVE-2026-15131",
       "CVE-2026-15132",
       "CVE-2026-15133"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Wireshark",
+    "severity": "high",
+    "date": "2026-07-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0361",
+    "code": "CIVN-2026-0361",
+    "summary": "Multiple vulnerabilities have been reported in Wireshark that could allow an attacker to obtain sensitive information or cause denial of service (DoS) condition on the targeted system.",
+    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for troubleshooting, analysis, and security purposes. Multiple vulnerabilities have been reported in Wireshark due to improper input validation. An attacker could exploit these vulnerabilities by sending a specially crafted request. Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive information or trigger denial of service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "Wireshark versions 4.6.0 to 4.6.6, 4.4.0 to 4.4.16."
+    ],
+    "targetAudience": "All end-users organisations and individual using Wireshark.",
+    "riskAssessment": "High risk of service unavailability.",
+    "impactAssessment": "Potential for sensitive data exposure, disruption of services.",
+    "cves": [
+      "CVE-2026-15164",
+      "CVE-2026-15167",
+      "CVE-2026-15163",
+      "CVE-2026-15168",
+      "CVE-2026-15169",
+      "CVE-2026-15170",
+      "CVE-2026-15166",
+      "CVE-2026-15165",
+      "CVE-2026-15171",
+      "CVE-2026-15172",
+      "CVE-2026-15173",
+      "CVE-2026-15174"
     ],
     "solutionLinks": []
   },
@@ -494,33 +494,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway",
-    "severity": "high",
-    "date": "2026-07-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0354",
-    "code": "CIVN-2026-0354",
-    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC (formerly Citrix ADC) and NetScaler Gateway (formerly Citrix Gateway), which could allow an unauthenticated remote attacker to disclose sensitive information, read arbitrary files, or cause denial of service on the affected systems.",
-    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
-    "softwareAffected": [
-      "NetScaler ADC and NetScaler Gateway releases prior to 14.1-72.61",
-      "NetScaler ADC and NetScaler Gateway releases prior to 13.1-63.18",
-      "NetScaler ADC FIPS releases prior to 14.1-72.61-FIPS",
-      "NetScaler ADC FIPS and NDcPP releases prior to 13.1-37.272-FIPS/NDcPP"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "Risk of information disclosure, arbitrary file read, and denial of service on the affected systems.",
-    "impactAssessment": "Disclosure of sensitive information, arbitrary file read, denial of service, and compromise of system availability.",
-    "cves": [
-      "CVE-2026-8451",
-      "CVE-2026-8452",
-      "CVE-2026-8655",
-      "CVE-2026-10816",
-      "CVE-2026-10817",
-      "CVE-2026-13474"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in RedHat JBoss Enterprise Application",
     "severity": "critical",
     "date": "2026-07-03",
@@ -544,21 +517,29 @@
     "solutionLinks": []
   },
   {
-    "title": "Vulnerability in the Oracle Payments product of Oracle E-Business Suite",
-    "severity": "critical",
-    "date": "2026-07-02",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0352",
-    "code": "CIVN-2026-0352",
-    "summary": "A vulnerability has been reported in Oracle E-Business Suite, which may allow an unauthenticated attacker with network access via HTTP to compromise the Oracle Payments component on the targeted system.",
-    "description": "Oracle E-Business Suite (EBS) is an integrated set of enterprise applications designed to help organisations automate and manage core business functions such as finance, human resources, supply chain, and more. It supports global operations and can be deployed on-premises or in the cloud. This vulnerability exists in Oracle Payments product of Oracle E-Business Suite due to security flaw in the File Transmission component. Successful exploitation of this vulnerability could allow an unauthenticated attacker with network access via HTTP to compromise the Oracle Payments component on the targeted system.",
+    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway",
+    "severity": "high",
+    "date": "2026-07-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0354",
+    "code": "CIVN-2026-0354",
+    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC (formerly Citrix ADC) and NetScaler Gateway (formerly Citrix Gateway), which could allow an unauthenticated remote attacker to disclose sensitive information, read arbitrary files, or cause denial of service on the affected systems.",
+    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
     "softwareAffected": [
-      "Oracle E-Business Suite versions 12.2.3-12.2.15."
+      "NetScaler ADC and NetScaler Gateway releases prior to 14.1-72.61",
+      "NetScaler ADC and NetScaler Gateway releases prior to 13.1-63.18",
+      "NetScaler ADC FIPS releases prior to 14.1-72.61-FIPS",
+      "NetScaler ADC FIPS and NDcPP releases prior to 13.1-37.272-FIPS/NDcPP"
     ],
-    "targetAudience": "All end-user organizations and individuals using affected Oracle E-Business Suite.",
-    "riskAssessment": "High risk of unauthorized access and disruption of business operations.",
-    "impactAssessment": "Potential for complete system takeover, unauthorized access to sensitive information, and disruption of services.",
+    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "Risk of information disclosure, arbitrary file read, and denial of service on the affected systems.",
+    "impactAssessment": "Disclosure of sensitive information, arbitrary file read, denial of service, and compromise of system availability.",
     "cves": [
-      "CVE-2026-46817"
+      "CVE-2026-8451",
+      "CVE-2026-8452",
+      "CVE-2026-8655",
+      "CVE-2026-10816",
+      "CVE-2026-10817",
+      "CVE-2026-13474"
     ],
     "solutionLinks": []
   },
@@ -619,6 +600,25 @@
       "CVE-2026-13036",
       "CVE-2026-13037",
       "CVE-2026-13038"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Vulnerability in the Oracle Payments product of Oracle E-Business Suite",
+    "severity": "critical",
+    "date": "2026-07-02",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0352",
+    "code": "CIVN-2026-0352",
+    "summary": "A vulnerability has been reported in Oracle E-Business Suite, which may allow an unauthenticated attacker with network access via HTTP to compromise the Oracle Payments component on the targeted system.",
+    "description": "Oracle E-Business Suite (EBS) is an integrated set of enterprise applications designed to help organisations automate and manage core business functions such as finance, human resources, supply chain, and more. It supports global operations and can be deployed on-premises or in the cloud. This vulnerability exists in Oracle Payments product of Oracle E-Business Suite due to security flaw in the File Transmission component. Successful exploitation of this vulnerability could allow an unauthenticated attacker with network access via HTTP to compromise the Oracle Payments component on the targeted system.",
+    "softwareAffected": [
+      "Oracle E-Business Suite versions 12.2.3-12.2.15."
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected Oracle E-Business Suite.",
+    "riskAssessment": "High risk of unauthorized access and disruption of business operations.",
+    "impactAssessment": "Potential for complete system takeover, unauthorized access to sensitive information, and disruption of services.",
+    "cves": [
+      "CVE-2026-46817"
     ],
     "solutionLinks": []
   },
@@ -3530,24 +3530,15 @@
     "severity": "critical",
     "date": "2026-05-21",
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0026",
+    "code": "CIAD-2026-0026",
     "summary": "Multiple vulnerabilities reported.",
     "description": "Analysis from multiple security researchers indicates that the attackers are leveraging compromised npm maintainer accounts, GitHub Actions workflow abuse, and CI/CD pipeline compromise to distribute malicious packages. The campaign uses malicious preinstall hooks, obfuscated Bun/JavaScript payloads, credential harvesting mechanisms, and worm-like propagation capabilities to spread across development and enterprise environments. Initial access has been observed through: • hijacking of GitHub Actions OIDC tokens via the \"pull_request_target\" trigger in combination with Actions cache poisoning, followed by exchange with npm trusted publishing workflows for valid publish credentials; • compromise of npm maintainer accounts; and • targeting of long-dormant packages with weaker security controls but continued transitive usage. • The malware is designed to harvest sensitive credentials, including GitHub Personal Access Tokens (PATs), npm authentication tokens, cloud credentials (AWS/Azure/GCP), SSH keys, Kubernetes service account tokens, Vault secrets, database credentials, and CI/CD environment variables. It may also attempt to access cloud metadata services, extract secrets from CI/CD runner environments, and exfiltrate collected data to attacker-controlled infrastructure, while enabling further propagation by validating stolen npm tokens, enumerating accessible packages, injecting malicious payloads, and republishing under compromised maintainer identities. Persistence mechanisms have been observed on development environments through modification of local tooling configurations (e.g., editor task hooks), potentially allowing execution across sessions. Malicious packages have also been observed abusing trusted build and provenance mechanisms to appear legitimate, complicating detection and trust validation efforts. Indicators of Compromise The following Indicators of Compromise (IoCs) are associated with this campaign: Malicious files and artefacts: • router_init.js • router_runtime.js • tanstack_runner.js • index.js (root-level, ~498 KB obfuscated Bun bundle) • setup.mjs • transformers.pyz (also observed at /tmp/transformers.pyz) • pgmonitor.py • pgsql-monitor.service gh-token-monitor.sh • kitty-monitor (Installed as a systemd user service on Linux or LaunchAgent on macOS) • cat.py (Often located in ~/.local/share/kitty/) • Injections into .claude/settings.json (SessionStart hook executing node • .claude/setup.mjs) and .vscode/tasks.json (task with \"runOn\": \"folderOpen\"). • Suspicious preinstall / postinstall / prepare script execution during npm install • Network indicators: • filev2.getsession[.]org • git-tanstack[.]com • t.m-kosche[.]com • api.masscan[.]cloud • 83[.]142[.]209[.]194 • Suspicious access attempts to cloud metadata endpoints: 169[.]254[.]169[.]254 (AWS/Azure/GCP IMDS) and 169[.]254[.]170[.]2 (ECS task metadata) • File hashes (SHA-256): • ab4fcadaec49c03278063dd269ea5eef82d24f2124a8e15d7b90f2fa8601266c (router_init.js, @tanstack) • 2ec78d556d696e208927cc503d48e4b5eb56b31abc2870c2ed2e98d6be27fc96 (tanstack_runner.js) • GitHub repository markers: • Repositories suddenly created under organisation identities with the",
-    "softwareAffected": [],
+    "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": [
-      "https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem",
-      "https://www.aikido.dev/blog/mini-shai-hulud-is-back-tanstack-compromised",
-      "https://www.sophos.com/en-us/blog/-mini-shai-hulud-supply-chain-attack-targets-sap-npm-packages",
-      "https://www.endorlabs.com/learn/shai-hulud-compromises-the-tanstack-ecosystem-80-packages-compromised",
-      "https://socket.dev/blog/tanstack-npm-packages-compromised-mini-shai-hulud-supply-chain-attack",
-      "https://snyk.io/blog/tanstack-npm-packages-compromised",
-      "https://safedep.io/mini-shai-hulud-strikes-again-314-npm-packages-compromised/",
-      "https://socket.dev/blog/antv-packages-compromised"
-    ],
-    "code": "CIAD-2026-0026"
+    "solutionLinks": []
   },
   {
     "title": "Denial of Service Vulnerability in Wireshark",
@@ -3718,6 +3709,7 @@
     "severity": "critical",
     "date": "2026-05-20",
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0025",
+    "code": "CIAD-2026-0025",
     "summary": "Multiple critical security vulnerabilities have been identified in Drupal Core. The Drupal Security Team has announced that security updates will be released for supported Drupal versions and has warned that exploit code may become available within hours or days following public disclosure.",
     "description": "Drupal has issued a public security advisory regarding undisclosed highly critical vulnerabilities affecting Drupal Core. Technical details of the vulnerabilities will be disclosed upon the release of security patches. The advisory indicates a high probability of rapid exploitation following public disclosure. Internet-facing Drupal installations are particularly at risk. Users and administrators are advised to update Drupal Core to the latest available security patch released by the Drupal Security Team and apply all recommended security updates immediately.",
     "softwareAffected": [
@@ -3731,11 +3723,7 @@
     "riskAssessment": "High risk of unauthorized access and rapid exploitation of vulnerable Drupal instances.",
     "impactAssessment": "May lead to website compromise, malicious code execution, data exposure, and full system compromise.",
     "cves": [],
-    "solutionLinks": [
-      "https://www.drupal.org/psa-2026-05-18",
-      "https://www.theregister.com/security/2026/05/19/drupal-warns-admins-to-brace-for-highly-critical-core-patch/5242728"
-    ],
-    "code": "CIAD-2026-0025"
+    "solutionLinks": []
   },
   {
     "title": "Improper Access Control Vulnerability in FortiAuthenticator",
@@ -3901,36 +3889,37 @@
     "severity": "high",
     "date": "2026-05-19",
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0024",
+    "code": "CIAD-2026-0024",
     "summary": "Multiple vulnerabilities have been identified in various Intel products that could allow an attacker to gain elevated privileges, obtain sensitive information and cause denial of service on the targeted system.",
     "description": "Intel Corporation products are processors, chipsets, firmware, and computing technologies used in PCs, servers, and enterprise systems. Multiple vulnerabilities have been reported in Intel Products due to Improper Input Validation, Improper buffer restrictions, Improper Check for Unusual or Exceptional Conditions, Use after free, Integer overflow, Classic Buffer Overflow, Incorrect Default Permissions, Shared Microarchitectural Predictor State that Influences Transient Execution, Out-of-bounds Write, Out-of-bounds Read, Untrusted Pointer Dereference, NULL Pointer Dereference, Divide By Zero, Unchecked Return Value. Successful exploitation of these vulnerabilities could allow attackers to gain elevated privileges, obtain sensitive information and cause denial of service on the targeted system.",
     "softwareAffected": [
       "Intel Vision software",
-      "Intel® EMA software",
+      "Intel� EMA software",
       "Display Virtualization for Windows OS driver software",
-      "Intel® 800 Series Ethernet Linux kernel drivers",
-      "Intel® Slim Bootloader",
-      "Intel® Core Ultra Series 2",
-      "12th Gen Intel® Core Processors",
-      "13th Gen Intel® Core Processors",
-      "11th Gen Intel® Core Processors",
-      "10th Gen Intel® Core Processors",
-      "Intel® Pentium® Gold Processors",
-      "Intel® Celeron® Processors",
-      "Intel® Celeron® 6305E/RE",
-      "Intel Atom® E3900 Processors",
-      "Intel® Xeon® E Family",
-      "Intel® Xeon® D Family",
-      "Intel® Xeon® W embedded SKUs",
-      "Intel® Core i3 embedded SKUs",
-      "Intel® Core i5 embedded SKUs",
-      "Intel® Core i7 embedded SKUs",
-      "Intel® NPU Driver for Linux",
-      "Intel® NPU Driver for Windows",
-      "Intel® Core Ultra 200S Series Processors (Arrow Lake)",
-      "Intel® Core Ultra Processors Series 2 (Lunar Lake)",
-      "Intel® Core Ultra Processors Series 3 Panther Lake H",
-      "Intel® Data Center Graphics Driver for VMware ESXi software",
-      "Intel® QAT software drivers for Windows"
+      "Intel� 800 Series Ethernet Linux kernel drivers",
+      "Intel� Slim Bootloader",
+      "Intel� Core� Ultra Series 2",
+      "12th Gen Intel� Core� Processors",
+      "13th Gen Intel� Core� Processors",
+      "11th Gen Intel� Core� Processors",
+      "10th Gen Intel� Core� Processors",
+      "Intel� Pentium� Gold Processors",
+      "Intel� Celeron� Processors",
+      "Intel� Celeron� 6305E/RE",
+      "Intel Atom� E3900 Processors",
+      "Intel� Xeon� E Family",
+      "Intel� Xeon� D Family",
+      "Intel� Xeon� W embedded SKUs",
+      "Intel� Core� i3 embedded SKUs",
+      "Intel� Core� i5 embedded SKUs",
+      "Intel� Core� i7 embedded SKUs",
+      "Intel� NPU Driver for Linux",
+      "Intel� NPU Driver for Windows",
+      "Intel� Core� Ultra 200S Series Processors (Arrow Lake)",
+      "Intel� Core� Ultra Processors Series 2 (Lunar Lake)",
+      "Intel� Core� Ultra Processors Series 3 Panther Lake H",
+      "Intel� Data Center Graphics Driver for VMware ESXi software",
+      "Intel� QAT software drivers for Windows"
     ],
     "targetAudience": "Individuals and organizations using the above-mentioned Intel products.",
     "riskAssessment": "High risk of full System Compromise, System Instability or Sensitive Information Disclosure.",
@@ -3958,17 +3947,7 @@
       "CVE-2026-20914",
       "CVE-2026-20793"
     ],
-    "solutionLinks": [
-      "https://www.intel.com/content/www/us/en/security-center/default.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01457.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01434.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01430.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01426.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01425.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01424.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01420.html"
-    ],
-    "code": "CIAD-2026-0024"
+    "solutionLinks": []
   },
   {
     "title": "Multiple Vulnerabilities in Avada Builder WordPress Plugin",
