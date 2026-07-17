@@ -923,7 +923,7 @@
       overflow: hidden;
       font-family: 'Manrope', sans-serif;
       z-index: 1;
-      background-color: #050b14;
+      background-color: #0f172a;
       transition: background-color 1s ease-in-out;
     }
 
@@ -936,7 +936,7 @@
       border-radius: 50%;
       filter: blur(120px);
       z-index: 0;
-      opacity: 0.6;
+      opacity: 0.2;
       animation: scoopAurora 15s infinite alternate ease-in-out;
       pointer-events: none;
       transition: background 1.5s ease-in-out;
@@ -1110,7 +1110,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 50%;
-      opacity: 0.9;
+      opacity: 1;
     }
 
     .scoop-content {
@@ -1163,11 +1163,10 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: var(--aurora-1, #00c3ff);
+      color: #fff;
       margin-bottom: 25px;
       backdrop-filter: blur(5px);
-      border: 1px solid var(--aurora-1, rgba(255, 255, 255, 0.2));
-      box-shadow: 0 0 15px var(--slide-glow, rgba(0, 0, 0, 0));
+      border: 1px solid rgba(255, 255, 255, 0.2);
       transition: all 0.5s ease;
     }
 
@@ -1181,9 +1180,7 @@
     }
 
     .scoop-title span {
-      color: transparent;
-      -webkit-text-stroke: 1.5px var(--aurora-1, rgba(255, 255, 255, 0.9));
-      filter: drop-shadow(0 0 10px var(--slide-glow, rgba(0, 0, 0, 0)));
+      color: var(--aurora-1, #00c3ff);
       transition: all 0.5s ease;
     }
 
@@ -1209,13 +1206,13 @@
     .scoop-btn-primary {
       background: linear-gradient(135deg, var(--aurora-1, #fff), var(--aurora-2, #ddd));
       color: #fff;
-      box-shadow: 0 10px 30px var(--slide-glow, rgba(255, 255, 255, 0.3));
+      box-shadow: none;
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .scoop-btn-primary:hover {
       transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 15px 40px var(--slide-glow, rgba(255, 255, 255, 0.5));
+      box-shadow: none;
     }
 
     .scoop-nav {
@@ -1572,7 +1569,7 @@
         { title: 'ISO Consultancy Services', url: 'consulting/iso-consulting-services.html', icon: 'card_logo/iso_consulting_hero.png', c1: '#00ffaa', c2: '#0055ff', bg_text: 'ISO', label: 'Certifications', h1_1: 'Global', h1_2: 'ISO Standards', desc: 'Achieve ISO 27001, 9001 and other key standards with our proven roadmap.' },
         { title: 'QMS Consulting Services', url: 'consulting/qms-consulting-services.html', icon: 'services_images/client_centric_bg.png', c1: '#ff3300', c2: '#ffaa00', bg_text: 'QUALITY', label: 'Quality', h1_1: 'Robust', h1_2: 'QMS Consulting', desc: 'Establish Quality Management Systems that drive continuous improvement.' },
         { title: 'HIPAA Compliance', url: 'consulting/hipaa-consulting-services.html', icon: 'card_logo/hipaa_consulting_hero.png', c1: '#00ccff', c2: '#00ff66', bg_text: 'HIPAA', label: 'Healthcare Privacy', h1_1: 'Full', h1_2: 'HIPAA Compliance', desc: 'Secure patient data and ensure healthcare regulatory compliance effortlessly.' },
-        { title: 'SOC 2 Consulting', url: 'consulting/soc2-consulting-services.html', icon: 'card_logo/cert_advisory_hero.png', c1: '#5500ff', c2: '#00ccff', bg_text: 'SOC 2', label: 'Certifications', h1_1: 'Trust via', h1_2: 'SOC 2 Consulting', desc: 'Build trust with clients by demonstrating robust security and availability controls.' },
+        { title: 'SOC 2 Consulting', url: 'consulting/soc2-consulting-services.html', icon: 'consulting_images/soc2_consulting_hero.png', c1: '#5500ff', c2: '#00ccff', bg_text: 'SOC 2', label: 'Certifications', h1_1: 'Trust via', h1_2: 'SOC 2 Consulting', desc: 'Build trust with clients by demonstrating robust security and availability controls.' },
         { title: 'PCI DSS Compliance', url: 'consulting/pci-dss-consulting-services.html', icon: 'card_logo/pci_dss_hero.png', c1: '#ff0055', c2: '#ffaa00', bg_text: 'PCI DSS', label: 'Payment Security', h1_1: 'Secure', h1_2: 'PCI DSS Compliance', desc: 'Protect cardholder data and achieve seamless payment security certification.' },
         { title: 'GDPR Consulting', url: 'consulting/gdpr-consulting-services.html', icon: 'card_logo/gdpr_consulting_hero.png', c1: '#00ffcc', c2: '#0055ff', bg_text: 'GDPR', label: 'Data Privacy', h1_1: 'European', h1_2: 'GDPR Consulting', desc: 'Navigate the complexities of the General Data Protection Regulation.' },
         { title: 'Network Security Consulting', url: 'consulting/network-security-consulting-services.html', icon: 'services_images/india_cyber_map.png', c1: '#aa00ff', c2: '#ff0055', bg_text: 'ADVISORY', label: 'Strategic Advisory', h1_1: 'Proactive', h1_2: 'Network Consulting', desc: 'Expert guidance to architect and fortify your enterprise networks.' },
@@ -1748,6 +1745,322 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
 
+                <div class="sitemap-category" style="background: rgba(12, 21, 36, 0.9); border: 1px solid rgba(8, 68, 129, 0.4); border-radius: 16px; padding: 2rem;">
+                    <h2 style="color: #ffffff; font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 0.5rem;">Core Pages</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem;">
+            
+                        <li>
+                            <a href="index.html" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Home
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="about-us" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> About Us
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="contact-us" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Contact Us
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="careers" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Careers
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="cert-advisory" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Cert Advisory
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="client-success-portfolio" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Client Success Portfolio
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="solutions" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Solutions
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="why-us" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Why Us
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="privacy-policy" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Privacy Policy
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="terms-of-service" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Terms Of Service
+                            </a>
+                        </li>
+                
+                    </ul>
+                </div>
+            
+                <div class="sitemap-category" style="background: rgba(12, 21, 36, 0.9); border: 1px solid rgba(8, 68, 129, 0.4); border-radius: 16px; padding: 2rem;">
+                    <h2 style="color: #ffffff; font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 0.5rem;">Solutions</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem;">
+            
+                        <li>
+                            <a href="solutions/cloud-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Cloud Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="solutions/cybersecurity-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Cybersecurity Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="solutions/devops-solutions" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Devops Solutions
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="solutions/it-managed-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> It Managed Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="solutions/network-security-solutions" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Network Security Solutions
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="solutions/ot-security-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Ot Security Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="solutions/software-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Software Services
+                            </a>
+                        </li>
+                
+                    </ul>
+                </div>
+            
+                <div class="sitemap-category" style="background: rgba(12, 21, 36, 0.9); border: 1px solid rgba(8, 68, 129, 0.4); border-radius: 16px; padding: 2rem;">
+                    <h2 style="color: #ffffff; font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 0.5rem;">Consulting</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem;">
+            
+                        <li>
+                            <a href="consulting/dpdp-act-consulting-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Dpdp Act Consulting Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/gdpr-consulting-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Gdpr Consulting Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/hipaa-consulting-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Hipaa Consulting Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/iso-consulting-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Iso Consulting Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/network-security-audit-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Network Security Audit Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/network-security-consulting-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Network Security Consulting Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/pci-dss-consulting-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Pci Dss Consulting Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/qms-consulting-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Qms Consulting Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/soc2-consulting-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Soc2 Consulting Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="consulting/virtual-ciso-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Virtual Ciso Services
+                            </a>
+                        </li>
+                
+                    </ul>
+                </div>
+            
+                <div class="sitemap-category" style="background: rgba(12, 21, 36, 0.9); border: 1px solid rgba(8, 68, 129, 0.4); border-radius: 16px; padding: 2rem;">
+                    <h2 style="color: #ffffff; font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 0.5rem;">Blog</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem;">
+            
+                        <li>
+                            <a href="blog/aws-vs-azure-vs-gcp-india" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Aws Vs Azure Vs Gcp India
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/cloud-security-best-practices-india" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Cloud Security Best Practices India
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/cybersecurity-incident-response-plan" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Cybersecurity Incident Response Plan
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/data-protection-officer-dpdp-act" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Data Protection Officer Dpdp Act
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/devsecops-vs-devops" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Devsecops Vs Devops
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/dpdp-act-penalties-non-compliance" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Dpdp Act Penalties Non Compliance
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/dpdp-act-vs-gdpr-differences" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Dpdp Act Vs Gdpr Differences
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/ics-vs-scada-security" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Ics Vs Scada Security
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/iso-27001-certification-guide-india" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Iso 27001 Certification Guide India
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/iso-27001-certification-timeline" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Iso 27001 Certification Timeline
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/iso-27001-gap-analysis" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Iso 27001 Gap Analysis
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/iso-27001-vs-soc-2" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Iso 27001 Vs Soc 2
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/ot-security-best-practices-manufacturing" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Ot Security Best Practices Manufacturing
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/ot-security-manufacturing-india" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Ot Security Manufacturing India
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/pci-dss-v4.0" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Pci Dss V4.0
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/ransomware-protection-india" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Ransomware Protection India
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/secure-industrial-control-systems" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Secure Industrial Control Systems
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/top-cybersecurity-threats-india-2025" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Top Cybersecurity Threats India 2025
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/virtual-ciso-services" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Virtual Ciso Services
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/zero-trust-cloud-architecture" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Zero Trust Cloud Architecture
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="blog/zero-trust-security-guide" class="sitemap-link" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--orange); font-size: 0.8rem;">▶</span> Zero Trust Security Guide
+                            </a>
+                        </li>
+                
+                    </ul>
+                </div>
+            
             </div>
         </div>
     </section>

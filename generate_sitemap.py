@@ -10,11 +10,11 @@ def get_links():
     links = []
     for url in root.findall('ns:url', namespace):
         loc = url.find('ns:loc', namespace).text
-        if loc.startswith('https://www.vedtam.com/'):
-            path = loc.replace('https://www.vedtam.com/', '')
-            if not path or path == '/':
-                path = 'index.html'
-            links.append(path)
+        
+        path = loc.replace('https://www.vedtam.com/', '').replace('https://vedtam.com/', '')
+        if not path or path == '/':
+            path = 'index.html'
+        links.append(path)
     return links
 
 def format_title(path):
@@ -24,12 +24,14 @@ def format_title(path):
     return name
 
 def group_links(links):
-    grouped = {'Core Pages': [], 'Solutions': [], 'Consulting': []}
+    grouped = {'Core Pages': [], 'Solutions': [], 'Consulting': [], 'Blog': []}
     for link in links:
         if link.startswith('solutions/'):
             grouped['Solutions'].append(link)
         elif link.startswith('consulting/'):
             grouped['Consulting'].append(link)
+        elif link.startswith('blog/'):
+            grouped['Blog'].append(link)
         else:
             grouped['Core Pages'].append(link)
     return grouped
