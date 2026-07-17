@@ -1,0 +1,2918 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link href="Vedtam%20Logo%20favicon.png" rel="icon" type="image/png" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Solutions &amp; Consulting - Vedtam Tech Solutions</title>
+  <meta
+    content="Vedtam Tech Solutions offers AI-powered cybersecurity, IT managed services, cloud solutions, DevOps, and compliance consulting. Trusted by 100+ businesses across India."
+    name="description" />
+  <link href="https://vedtam.com/" rel="canonical" />
+  <meta content="website" property="og:type" />
+  <meta content="https://vedtam.com/" property="og:url" />
+  <meta content="Vedtam Tech Solutions - AI-Powered Cybersecurity &amp; IT Services" property="og:title" />
+  <meta
+    content="Vedtam Tech Solutions offers AI-powered cybersecurity, IT managed services, cloud solutions, DevOps, and compliance consulting. Trusted by 100+ businesses across India."
+    property="og:description" />
+  <meta content="https://www.vedtam.com/Vedtam%20Logo%20favicon.png" property="og:image" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="Vedtam Tech Solutions - AI-Powered Cybersecurity &amp; IT Services" name="twitter:title" />
+  <meta
+    content="Vedtam Tech Solutions offers AI-powered cybersecurity, IT managed services, cloud solutions, DevOps, and compliance consulting. Trusted by 100+ businesses across India."
+    name="twitter:description" />
+  <meta content="https://www.vedtam.com/Vedtam%20Logo%20favicon.png" name="twitter:image" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <style id="premium-cards-css">
+    /* Elegant Expandable Premium Cards (Adapted for Consulting) */
+    .premium-feature-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      padding: 0;
+      background: #0f1115;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      overflow: hidden;
+      min-height: 380px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .premium-feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 195, 255, 0.1) inset;
+      border-color: rgba(0, 195, 255, 0.3);
+    }
+
+    /* Expanding Background Image */
+    .card-image-banner {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 0;
+      filter: brightness(0.7);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .premium-feature-card:hover .card-image-banner {
+      height: 100%;
+      filter: brightness(0.3) contrast(1.2);
+    }
+
+    /* Content Area */
+    .premium-card-content {
+      position: relative;
+      z-index: 2;
+      padding: 2.5rem 1.5rem;
+      margin-top: 140px;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .premium-feature-card:hover .premium-card-content {
+      margin-top: 80px;
+    }
+
+    /* Floating Icon */
+    .premium-icon-wrapper {
+      width: 45px;
+      height: 45px;
+      background: #00c3ff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      color: #000;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      position: absolute;
+      top: -22px;
+      left: 1.5rem;
+    }
+
+    .premium-feature-card:hover .premium-icon-wrapper {
+      transform: scale(1.1) translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 195, 255, 0.4);
+      background: #fff;
+    }
+
+    .premium-icon-wrapper svg {
+      width: 22px;
+      height: 22px;
+      transition: all 0.6s ease;
+    }
+
+    /* Text Adjustments */
+    .premium-feature-card h3 {
+      color: #fff !important;
+      font-size: 1.2rem !important;
+      font-weight: 800;
+      transition: color 0.3s ease;
+      margin-bottom: 0.5rem;
+    }
+
+    .premium-feature-card:hover h3 {
+      color: #00c3ff !important;
+    }
+
+    /* Explore Link */
+    .card-read-more {
+      margin-top: auto;
+      padding-top: 1.5rem;
+      color: #00c3ff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .premium-feature-card:hover .card-read-more {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Staggered Entrance Animations */
+    .animate-fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Perfectly Managed 3-4-3 Grid for 10 Cards */
+    .consulting-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+      width: 100%;
+    }
+
+    /* Row 1: 3 Cards (Span 4) */
+    .consulting-feature-grid .premium-feature-card:nth-child(1),
+    .consulting-feature-grid .premium-feature-card:nth-child(2),
+    .consulting-feature-grid .premium-feature-card:nth-child(3) {
+      grid-column: span 4;
+    }
+
+    /* Row 2: 4 Cards (Span 3) */
+    .consulting-feature-grid .premium-feature-card:nth-child(4),
+    .consulting-feature-grid .premium-feature-card:nth-child(5),
+    .consulting-feature-grid .premium-feature-card:nth-child(6),
+    .consulting-feature-grid .premium-feature-card:nth-child(7) {
+      grid-column: span 3;
+    }
+
+    /* Row 3: 3 Cards (Span 4) */
+    .consulting-feature-grid .premium-feature-card:nth-child(8),
+    .consulting-feature-grid .premium-feature-card:nth-child(9),
+    .consulting-feature-grid .premium-feature-card:nth-child(10) {
+      grid-column: span 4;
+    }
+
+    @media (max-width: 1200px) {
+      .consulting-feature-grid .premium-feature-card:nth-child(n) {
+        grid-column: span 4;
+      }
+      /* If 10 items, 10 % 3 = 1 left over, make it span full */
+      .consulting-feature-grid .premium-feature-card:last-child {
+        grid-column: span 12;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .consulting-feature-grid .premium-feature-card:nth-child(n) {
+        grid-column: span 6;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .consulting-feature-grid .premium-feature-card:nth-child(n) {
+        grid-column: span 12;
+      }
+    }
+  </style>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    onload="this.onload=null;this.rel='stylesheet'" rel="preload" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet" />
+  </noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="assets/css/vedtam.css?v=1.3" rel="stylesheet" />
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Vedtam Tech Solutions","url":"https://www.vedtam.com","logo":"https://www.vedtam.com/Vedtam%20Logo%20favicon.png","description":"AI-powered cybersecurity, IT managed services, cloud solutions, and compliance consulting.","address":{"@type":"PostalAddress","addressLocality":"Noida","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-70651-11015","contactType":"sales","email":"info@vedtam.com"},"sameAs":[]}</script>
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Vedtam Tech Solutions","url":"https://www.vedtam.com","potentialAction":{"@type":"SearchAction","target":"https://www.vedtam.com/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+  <!-- Theme init: runs before paint to prevent flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('vt-theme');
+      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+
+
+  <!-- Fix CERT-In box spacing when zoomed out -->
+  <style id="cert-zoom-fix">
+    * {
+      list-style: none !important;
+      list-style-type: none !important;
+    }
+
+    .nav-links a svg {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+
+    /* Logo Switcher Animation */
+    .nav-logo {
+      position: relative !important;
+    }
+
+    .hero,
+    .hero-shell {
+      min-height: auto !important;
+      height: auto !important;
+    }
+
+    .hero-visual,
+    .hero-visual::before,
+    .hero-visual::after,
+    .hero-panel,
+    .cert-hero-panel,
+    .hero-panel::before,
+    .hero-panel::after,
+    .cert-hero-panel::before,
+    .cert-hero-panel::after {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+
+    .cert-hero-panel {
+      justify-content: flex-start !important;
+      gap: 1.5rem !important;
+    }
+
+    .hero-panel-card,
+    .cert-insight-card,
+    .cert-chart-card,
+    .cert-chart-shell,
+    .cert-chart-copy,
+    .cert-chart-wrap,
+    .hero-panel-card::before,
+    .hero-panel-card::after {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+
+    .cert-insight-card {
+      justify-content: flex-start !important;
+      gap: 1.2rem !important;
+      min-height: auto !important;
+      flex: 0 0 auto !important;
+    }
+
+    .cert-chart-card {
+      min-height: auto !important;
+      flex: 0 0 auto !important;
+    }
+
+    /* Hide dotted background grids */
+    .hero-grid,
+    .tm-dots,
+    .bg-pattern {
+      display: none !important;
+      background-image: none !important;
+    }
+
+    /* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ Mobile Hero ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ */
+    @media (max-width: 1100px) {
+
+      /* Hero shell: single column flex */
+      .home-page .hero-shell {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2.5rem !important;
+      }
+
+      /* Pull dock out of absolute flow and push it to the END (after CERT-In panel) */
+      .home-page .hero-partner-dock {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        order: 3 !important;
+        margin-top: 0 !important;
+      }
+
+      /* Keep content and panel in their natural order */
+      .home-page .hero-content {
+        order: 1 !important;
+      }
+
+      .home-page .hero-visual {
+        order: 2 !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .home-page .hero {
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+        min-height: auto !important;
+      }
+
+      .home-page .hero-shell {
+        gap: 2rem !important;
+      }
+
+      /* Tighten CERT-In panel */
+      .home-page .cert-hero-panel {
+        gap: 1rem !important;
+      }
+
+      .home-page .cert-chart-card {
+        padding: 1.2rem !important;
+      }
+
+      /* Shrink partner logos */
+      .home-page .dock-logos img {
+        height: 52px !important;
+        padding: 0.4rem 0.8rem !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .home-page .hero {
+        padding-top: 90px !important;
+        padding-bottom: 32px !important;
+      }
+
+      /* Proof strip wraps */
+      .home-page .hero-proof-strip {
+        flex-wrap: wrap !important;
+        gap: 0.5rem !important;
+      }
+
+      .home-page .hero-stats {
+        gap: 1.5rem !important;
+      }
+    }
+  </style>
+  <style id="testimonials-creative">
+    /* Creative Testimonials UI Enhancements */
+    #testimonials .tm-card-premium {
+      background: rgba(15, 23, 42, 0.9) !important;
+      /* Dark background so white text is visible */
+      backdrop-filter: blur(15px) !important;
+      -webkit-backdrop-filter: blur(15px) !important;
+      border: 1px solid rgba(0, 195, 255, 0.2) !important;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5) !important;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+
+    #testimonials .tm-card-premium::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: -100% !important;
+      width: 50% !important;
+      height: 100% !important;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent) !important;
+      transform: skewX(-20deg) !important;
+      transition: left 0.7s ease !important;
+    }
+
+    #testimonials .tm-card-premium:hover::before {
+      left: 200% !important;
+    }
+
+    #testimonials .tm-card-premium:hover {
+      transform: translateY(-10px) scale(1.02) !important;
+      box-shadow: 0 15px 40px rgba(0, 195, 255, 0.2), 0 0 20px rgba(0, 195, 255, 0.1) inset !important;
+      border: 1px solid rgba(0, 195, 255, 0.3) !important;
+    }
+
+    #testimonials .tm-text {
+      color: #ffffff !important;
+      font-weight: 100 !important;
+      line-height: 1.6 !important;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+      position: relative !important;
+      z-index: 1 !important;
+      font-size: 1.2rem;
+    }
+
+    #testimonials .tm-name {
+      color: #00c3ff !important;
+      font-weight: 700 !important;
+      letter-spacing: 1px !important;
+      text-transform: uppercase !important;
+      margin-top: 15px !important;
+      position: relative !important;
+      z-index: 1 !important;
+    }
+
+    #testimonials .tm-quote-left,
+    #testimonials .tm-quote-right {
+      color: rgba(255, 255, 255, 0.15) !important;
+      font-size: 4rem !important;
+      line-height: 0.8 !important;
+    }
+
+    #testimonials .section-heading,
+    #testimonials .section-label {
+      color: #ffffff !important;
+      text-shadow: 0 2px 10px rgba(0, 195, 255, 0.3) !important;
+    }
+  </style>
+  <meta name="google-site-verification" content="google6d4aaa76f30c4585" />
+  <script defer src="assets/js/google-integrations.js"></script>
+  <style id="navbar-white-theme">
+    /* Navbar White Background */
+    .navbar {
+      background: #ffffff !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+      border-bottom: 1px solid rgba(8, 68, 129, 0.1) !important;
+    }
+
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.98) !important;
+      box-shadow: 0 8px 32px rgba(8, 68, 129, 0.12) !important;
+    }
+
+    /* Navbar Text Colors */
+    .nav-links>li>a {
+      color: #0c2340 !important;
+      text-shadow: none !important;
+      font-weight: 700 !important;
+    }
+
+    .nav-links>li>a:hover,
+    .nav-links>li>a.active {
+      color: #00A3D9 !important;
+      background: rgba(8, 68, 129, 0.06) !important;
+    }
+
+    /* Mobile hamburger icon */
+    .nav-hamburger span {
+      background: #0c2340 !important;
+    }
+
+    /* Theme toggle icon */
+    .theme-toggle-btn svg {
+      color: #0c2340 !important;
+    }
+  </style>
+  <style id="mega-menu-desktop-zoom-fix">
+    /* Mega Menu Zoom Overflow Fix for all screen sizes */
+    .mega-menu {
+      max-height: calc(100vh - 80px) !important;
+      overflow-y: auto !important;
+    }
+
+    .mega-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .mega-menu::-webkit-scrollbar-thumb {
+      background-color: rgba(6, 182, 212, 0.5);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body class="home-page">
+  <style>
+    /* Top Marquee Announcement Bar */
+    .top-marquee-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #050b14;
+      border-bottom: 1px solid rgba(0, 195, 255, 0.2);
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      z-index: 10000;
+    }
+
+    .top-marquee-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 20px;
+      background: rgba(0, 163, 217, 0.1);
+      border-right: 1px solid rgba(0, 195, 255, 0.15);
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .top-marquee-badge.right {
+      border-right: none;
+      border-left: 1px solid rgba(0, 195, 255, 0.15);
+    }
+
+    .marquee-pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #00c3ff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00c3ff;
+      animation: marqueePulse 2s infinite;
+    }
+
+    .marquee-content-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      mask-image: linear-gradient(90deg, transparent, black 40px, black calc(100% - 40px), transparent);
+      -webkit-mask-image: linear-gradient(90deg, transparent, black 40px, black calc(100% - 40px), transparent);
+    }
+
+    .marquee-text-container {
+      display: flex;
+      white-space: nowrap;
+      animation: marqueeScroll 25s linear infinite;
+    }
+
+    .marquee-text-container:hover {
+      animation-play-state: paused;
+    }
+
+    .marquee-text {
+      font-size: 13px;
+      color: #94a3b8;
+      padding-right: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .marquee-text strong {
+      color: #fff;
+      font-weight: 600;
+      margin: 0 5px;
+    }
+
+    .marquee-text a {
+      color: #00c3ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .marquee-text a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    @keyframes marqueeScroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes marqueePulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(0.8);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-marquee-badge.right {
+        display: none;
+      }
+
+      .marquee-text {
+        font-size: 12px;
+      }
+    }
+
+    /* Shift Navbar down to accommodate fixed marquee */
+    .navbar {
+      top: 40px !important;
+    }
+    @media (max-width: 768px) {
+      .mobile-nav {
+        top: 110px !important;
+      }
+    }
+  </style>
+
+  <div class="top-marquee-bar">
+    <div class="top-marquee-badge">
+      <div class="marquee-pulse-dot"></div>
+      Our all Services
+    </div>
+    <div class="marquee-content-wrapper">
+      <div class="marquee-text-container">
+        <!-- Text 1 -->
+        <div class="marquee-text">
+          Vedtam Tech Solutions provides <strong><a href="solutions/software-services.html">AI Software Solutions</a>,
+            <a href="solutions/cybersecurity-services.html">Cyber Security</a>, <a
+              href="solutions/network-security-solutions.html">Network Security</a>, <a
+              href="solutions/devops-solutions.html">DevOps</a>, <a href="solutions/it-managed-services.html">IT Managed
+              Services</a>, <a href="solutions/cloud-services.html">Cloud Services</a>, <a
+              href="consulting/dpdp-act-consulting-services.html">DPDP Act</a>, <a
+              href="consulting/gdpr-consulting-services.html">GDPR</a>, <a
+              href="consulting/hipaa-consulting-services.html">HIPAA</a>, <a
+              href="consulting/iso-consulting-services.html">ISO</a>, <a
+              href="consulting/network-security-audit-services.html">Network Security Audit</a>, <a
+              href="consulting/network-security-consulting-services.html">Network Security Consulting</a>, <a
+              href="consulting/pci-dss-consulting-services.html">PCI DSS</a>, <a
+              href="consulting/qms-consulting-services.html">QMS</a>, <a
+              href="consulting/soc2-consulting-services.html">SOC 2</a>, and <a
+              href="consulting/virtual-ciso-services.html">Virtual CISO (vCISO) Consulting</a>.</strong> For Enterprise
+          IT &amp; Security services, reach out to us:&nbsp;<a href="mailto:info@vedtam.com">info@vedtam.com</a>
+        </div>
+        <!-- Text 2 (Duplicate for seamless infinite scroll) -->
+        <div class="marquee-text">
+          Vedtam Tech Solutions provides <strong><a href="solutions/software-services.html">AI Software Solutions</a>,
+            <a href="solutions/cybersecurity-services.html">Cyber Security</a>, <a
+              href="solutions/network-security-solutions.html">Network Security</a>, <a
+              href="solutions/devops-solutions.html">DevOps</a>, <a href="solutions/it-managed-services.html">IT Managed
+              Services</a>, <a href="solutions/cloud-services.html">Cloud Services</a>, <a
+              href="consulting/dpdp-act-consulting-services.html">DPDP Act</a>, <a
+              href="consulting/gdpr-consulting-services.html">GDPR</a>, <a
+              href="consulting/hipaa-consulting-services.html">HIPAA</a>, <a
+              href="consulting/iso-consulting-services.html">ISO</a>, <a
+              href="consulting/network-security-audit-services.html">Network Security Audit</a>, <a
+              href="consulting/network-security-consulting-services.html">Network Security Consulting</a>, <a
+              href="consulting/pci-dss-consulting-services.html">PCI DSS</a>, <a
+              href="consulting/qms-consulting-services.html">QMS</a>, <a
+              href="consulting/soc2-consulting-services.html">SOC 2</a>, and <a
+              href="consulting/virtual-ciso-services.html">Virtual CISO (vCISO) Consulting</a>.</strong> For Enterprise
+          IT &amp; Security services, reach out to us:&nbsp;<a href="mailto:info@vedtam.com">info@vedtam.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="top-marquee-badge right">
+      Secure &amp; Scalable
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a aria-label="Vedtam Tech Solutions" class="nav-logo" href="index.html">
+        <img alt="Vedtam Tech Solutions logo" decoding="async" src="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png"
+          data-logo-switcher
+          data-logos="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png, website-logo/VEDTAM%20TECH%20SOLUTIONS%20hn.png" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="cert-advisory.html">CERT-In Advisories</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li>
+          <a href="about-us.html">Company <svg fill="none" viewbox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="mega-inner">
+                <div class="mega-col mega-info">
+                  <h3>About Vedtam</h3>
+                  <h2>Who We Are</h2>
+                  <p>A trusted cybersecurity and IT services partner.</p>
+                  <a class="mega-cta" href="about-us.html">Read Our Story &rarr;</a>
+                </div>
+                <div class="mega-col mega-links">
+                  <h3>Company Pages</h3>
+                  <div class="mega-links-grid">
+                    <a href="about-us.html">About Us</a>
+                    <a href="why-us.html">Why Us</a>
+                    <a href="client-success-portfolio.html">Client Success &amp; Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="careers.html">Careers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="solutions.html">Solutions <svg fill="none" viewbox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="mega-inner">
+                <div class="mega-col mega-info">
+                  <h3>Our Core Solutions</h3>
+                  <h2>Smarter AI. <br />Stronger Security.</h2>
+                  <p>Scaling businesses with AI-driven cybersecurity and optimized IT infrastructure.</p>
+                  <a class="mega-cta" href="solutions.html">View All Services &rarr;</a>
+                </div>
+                <div class="mega-col mega-links">
+                  <h3>Service Domains</h3>
+                  <div class="mega-links-grid">
+                    <a href="solutions/cybersecurity-services.html">Cybersecurity Services</a>
+                    <a href="solutions/network-security-solutions.html">Network Security Solutions</a>
+                    <a href="solutions/devops-solutions.html">DevOps Solutions</a>
+                    <a href="solutions/ot-security-services.html">OT Security Services</a>
+                    <a href="solutions/cloud-services.html">Cloud Services</a>
+                    <a href="solutions/it-managed-services.html">IT Managed Services</a>
+                    <a href="solutions/software-services.html">Software Solutions</a>
+                  </div>
+                </div>
+                <div class="mega-col mega-feature">
+                  <div class="mega-feature-card">
+                    <img alt="Cyber Security Featured" decoding="async" loading="lazy"
+                      src="services_images/service_cyber_security_1774586735180.png" />
+                    <div class="mega-feature-overlay">
+                      <h4>Security Excellence</h4>
+                      <p>Protect your assets with Vedtam AI.</p>
+                      <a class="btn btn-primary btn-sm" href="solutions/cybersecurity-services.html">Explore
+                        Solutions</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="consulting.html">Consulting <svg fill="none" viewbox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="mega-inner">
+                <div class="mega-col mega-info">
+                  <h3>Strategic Advisory</h3>
+                  <h2>Governance. <br />Risk. Compliance.</h2>
+                  <p>Guided pathways to compliance, risk management, and governance excellence.</p>
+                  <a class="mega-cta" href="contact-us.html">Talk to an Expert &rarr;</a>
+                </div>
+                <div class="mega-col mega-links">
+                  <h3>Compliance Frameworks</h3>
+                  <div class="mega-links-grid">
+                    <a href="consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a>
+                    <a href="consulting/virtual-ciso-services.html">Virtual CISO Services</a>
+                    <a href="consulting/iso-consulting-services.html">ISO Consultancy Services</a>
+                    <a href="consulting/qms-consulting-services.html">QMS Consulting Services</a>
+                    <a href="consulting/hipaa-consulting-services.html">HIPAA Compliance</a>
+                    <a href="consulting/soc2-consulting-services.html">SOC 2 Consulting</a>
+                    <a href="consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a>
+                    <a href="consulting/gdpr-consulting-services.html">GDPR Consulting</a>
+                    <a href="consulting/network-security-consulting-services.html">Network Security Consulting</a>
+                    <a href="consulting/network-security-audit-services.html">Network Security Audit</a>
+                  </div>
+                </div>
+                <div class="mega-col mega-feature">
+                  <div class="mega-feature-card">
+                    <img alt="Consulting Featured" decoding="async" loading="lazy"
+                      src="services_images/service_it_managed_1774586782051.png" />
+                    <div class="mega-feature-overlay">
+                      <h4>Compliance Ready</h4>
+                      <p>ISO, GDPR, HIPAA paths simplified.</p>
+                      <a class="btn btn-primary btn-sm" href="consulting.html">View Roadmap</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+      <div class="nav-cta">
+        <!-- Theme Toggle -->
+        <button aria-label="Toggle light/dark theme" class="theme-toggle-btn" id="themeToggleBtn" title="Toggle theme">
+          <!-- Moon icon (shown in dark mode) -->
+          <svg class="theme-icon-moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun icon (shown in light mode) -->
+          <svg class="theme-icon-sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" x2="12" y1="1" y2="3"></line>
+            <line x1="12" x2="12" y1="21" y2="23"></line>
+            <line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+            <line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+            <line x1="1" x2="3" y1="12" y2="12"></line>
+            <line x1="21" x2="23" y1="12" y2="12"></line>
+            <line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+            <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+          </svg>
+        </button>
+        <a class="btn btn-primary" href="contact-us.html">Free Network Assessment</a>
+        <button class="nav-hamburger" id="mobileNavToggleBtn" type="button" aria-label="Open mobile navigation"
+          aria-controls="mobileNav" aria-expanded="false" onclick="toggleMobileNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="cert-advisory.html">CERT-In Advisories</a>
+    <a class="active" href="index.html">Home</a>
+
+    <div class="m-dropdown">
+      <button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+        <span>Company</span>
+        <svg fill="none" viewbox="0 0 10 6" width="12" height="12">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <div class="m-dropdown-content">
+        <a href="about-us.html">About Us</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="client-success-portfolio.html">Client Success &amp; Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+      </div>
+    </div>
+
+    <div class="m-dropdown">
+      <button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+        <span>Solutions</span>
+        <svg fill="none" viewbox="0 0 10 6" width="12" height="12">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <div class="m-dropdown-content">
+        <a href="solutions/cybersecurity-services.html">Cybersecurity Services</a>
+        <a href="solutions/network-security-solutions.html">Network Security Solutions</a>
+        <a href="solutions/devops-solutions.html">DevOps Solutions</a>
+        <a href="solutions/ot-security-services.html">OT Security Services</a>
+        <a href="solutions/cloud-services.html">Cloud Services</a>
+        <a href="solutions/it-managed-services.html">IT Managed Services</a>
+        <a href="solutions/software-services.html">Software Solutions</a>
+      </div>
+    </div>
+
+    <div class="m-dropdown">
+      <button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+        <span>Consulting</span>
+        <svg fill="none" viewbox="0 0 10 6" width="12" height="12">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <div class="m-dropdown-content">
+        <a href="consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a>
+        <a href="consulting/virtual-ciso-services.html">Virtual CISO Services</a>
+        <a href="consulting/iso-consulting-services.html">ISO Consultancy Services</a>
+        <a href="consulting/qms-consulting-services.html">QMS Consulting Services</a>
+        <a href="consulting/hipaa-consulting-services.html">HIPAA Compliance</a>
+        <a href="consulting/soc2-consulting-services.html">SOC 2 Consulting</a>
+        <a href="consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a>
+        <a href="consulting/gdpr-consulting-services.html">GDPR Consulting</a>
+        <a href="consulting/network-security-consulting-services.html">Network Security Consulting</a>
+        <a href="consulting/network-security-audit-services.html">Network Security Audit</a>
+      </div>
+    </div>
+
+    <a href="contact-us.html">Contact Us</a>
+  </div>
+<style id="consulting-hero-css">
+/* Consulting Premium Hero */
+.consulting-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 140px 0 80px 0;
+  background: radial-gradient(circle at right center, rgba(0, 195, 255, 0.08), transparent 60%), #050b14;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.consulting-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ch-content {
+  position: relative;
+  z-index: 2;
+}
+
+.ch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 195, 255, 0.1);
+  border: 1px solid rgba(0, 195, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 50px;
+  color: #00c3ff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  animation: slideRight 0.8s ease forwards;
+}
+
+.ch-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.ch-title span {
+  display: block;
+  background: linear-gradient(135deg, #00c3ff, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ch-desc {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.ch-actions {
+  display: flex;
+  gap: 1.5rem;
+  animation: fadeUp 0.8s ease 0.6s forwards;
+  opacity: 0;
+}
+
+.ch-btn-primary {
+  padding: 16px 36px;
+  background: linear-gradient(135deg, #00c3ff, #0077ff);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 195, 255, 0.2);
+}
+
+.ch-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 195, 255, 0.4);
+  color: #fff;
+}
+
+.ch-btn-secondary {
+  padding: 16px 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ch-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Animated 3D Visualization */
+.ch-visual {
+  position: relative;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+}
+
+.ch-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed rgba(0, 195, 255, 0.3);
+  animation: rotateRing linear infinite;
+  transform-style: preserve-3d;
+}
+
+.ch-ring-1 {
+  width: 500px;
+  height: 500px;
+  animation-duration: 40s;
+}
+
+.ch-ring-2 {
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(0, 255, 136, 0.15);
+  animation-duration: 25s;
+  animation-direction: reverse;
+}
+
+.ch-ring-3 {
+  width: 250px;
+  height: 250px;
+  border: 2px dashed rgba(0, 195, 255, 0.4);
+  animation-duration: 15s;
+}
+
+.ch-center-shield {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 195, 255, 0.1);
+  border: 2px solid #00c3ff;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px rgba(0, 195, 255, 0.3);
+  animation: pulseShield 4s ease-in-out infinite;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+.ch-center-shield svg {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  filter: drop-shadow(0 0 10px rgba(0, 195, 255, 0.8));
+}
+
+.ch-float-badge {
+  position: absolute;
+  background: rgba(10, 15, 30, 0.95);
+  border: 1px solid rgba(0, 195, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 20;
+}
+
+.ch-fb-1 { top: 15%; right: 5%; animation: floaty 6s ease-in-out infinite; }
+.ch-fb-2 { bottom: 20%; left: 0%; animation: floaty 8s ease-in-out infinite 1s; }
+.ch-fb-3 { bottom: 35%; right: -5%; animation: floaty 7s ease-in-out infinite 2s; }
+
+.ch-float-badge svg {
+  width: 20px;
+  height: 20px;
+  stroke: #00ff88;
+}
+
+@keyframes rotateRing {
+  from { transform: rotateX(65deg) rotateZ(0deg); }
+  to { transform: rotateX(65deg) rotateZ(360deg); }
+}
+
+@keyframes pulseShield {
+  0%, 100% { transform: scale(1) translateY(0); box-shadow: 0 0 40px rgba(0, 195, 255, 0.4); }
+  50% { transform: scale(1.05) translateY(-10px); box-shadow: 0 0 60px rgba(0, 195, 255, 0.7); }
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 1024px) {
+  .consulting-hero-grid { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
+  .ch-badge { margin: 0 auto 2rem auto; }
+  .ch-desc { margin: 0 auto 2.5rem auto; }
+  .ch-actions { justify-content: center; }
+  .ch-visual { height: 400px; margin-top: 2rem; }
+  .ch-title { font-size: 3.2rem; }
+  .ch-fb-1 { right: 15%; }
+  .ch-fb-3 { right: 10%; }
+}
+@media (max-width: 768px) {
+  .ch-title { font-size: 2.5rem; }
+  .ch-visual { transform: scale(0.7); height: 300px; }
+  .ch-actions { flex-direction: column; }
+}
+</style>
+
+<style id="consulting-premium-overrides">
+.consulting-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: auto;
+  padding: 188px 0 90px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 195, 255, 0.16), transparent 28%),
+    radial-gradient(circle at 85% 18%, rgba(0, 255, 136, 0.12), transparent 26%),
+    radial-gradient(circle at 50% 110%, rgba(10, 132, 255, 0.18), transparent 35%),
+    linear-gradient(135deg, #03101c 0%, #071728 52%, #020912 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.consulting-hero::before,
+.consulting-hero::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.consulting-hero::before {
+  inset: 0;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent 85%);
+}
+
+.consulting-hero::after {
+  right: -140px;
+  top: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 195, 255, 0.2), transparent 68%);
+  filter: blur(20px);
+}
+
+.consulting-hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(16px);
+  opacity: 0.9;
+}
+
+.consulting-hero-glow-1 {
+  width: 300px;
+  height: 300px;
+  left: -80px;
+  bottom: 40px;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.18), transparent 70%);
+}
+
+.consulting-hero-glow-2 {
+  width: 260px;
+  height: 260px;
+  right: 10%;
+  bottom: 12%;
+  background: radial-gradient(circle, rgba(0, 195, 255, 0.16), transparent 72%);
+}
+
+.consulting-hero-grid {
+  position: relative;
+  z-index: 2;
+  grid-template-columns: minmax(0, 1.15fr) minmax(420px, 0.85fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.ch-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.ch-badge {
+  gap: 0.75rem;
+  padding: 0.7rem 1.15rem;
+  margin-bottom: 1.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 195, 255, 0.24);
+  background: rgba(6, 26, 42, 0.72);
+  color: #7fe8ff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.ch-title {
+  margin-bottom: 1.25rem;
+  color: #f8fbff;
+  max-width: 760px;
+  font-size: clamp(2.7rem, 4.9vw, 4.3rem);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.ch-title span {
+  background: linear-gradient(135deg, #b8f6ff 0%, #2fd1ff 42%, #63ffba 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ch-desc {
+  max-width: 575px;
+  margin-bottom: 2rem;
+  color: #9ab0c8;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.ch-actions {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ch-btn-primary,
+.ch-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0.95rem 1.6rem;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.ch-btn-primary {
+  color: #04111d;
+  background: linear-gradient(135deg, #9df5ff 0%, #00c3ff 50%, #4dffb2 100%);
+  box-shadow: 0 20px 45px rgba(0, 195, 255, 0.22);
+}
+
+.ch-btn-primary:hover {
+  transform: translateY(-3px);
+  color: #04111d;
+  box-shadow: 0 26px 50px rgba(0, 195, 255, 0.3);
+}
+
+.ch-btn-secondary {
+  color: #f8fbff;
+  border: 1px solid rgba(154, 176, 200, 0.22);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.ch-btn-secondary:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  border-color: rgba(0, 195, 255, 0.34);
+  background: rgba(0, 195, 255, 0.08);
+}
+
+.ch-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 640px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.6s forwards;
+}
+
+.ch-proof-card {
+  padding: 1.05rem 1.15rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03));
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.ch-proof-card strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.ch-proof-card span {
+  color: #9ab0c8;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.ch-visual {
+  min-height: 520px;
+  align-items: center;
+  justify-content: flex-end;
+  perspective: none;
+}
+
+.ch-visual-shell {
+  position: relative;
+  width: min(100%, 500px);
+  aspect-ratio: 1 / 1;
+  margin-left: auto;
+}
+
+.ch-visual-shell::before {
+  content: "";
+  position: absolute;
+  inset: 9% 12%;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(0, 195, 255, 0.08), rgba(2, 12, 22, 0.06));
+  filter: blur(12px);
+}
+
+.ch-orbit {
+  position: absolute;
+  inset: 50%;
+  border-radius: 50%;
+  border: 1px solid rgba(90, 218, 255, 0.18);
+}
+
+.ch-orbit-1 {
+  width: 100%;
+  height: 100%;
+  margin: -50%;
+  animation: orbitSpin 24s linear infinite;
+}
+
+.ch-orbit-2 {
+  width: 76%;
+  height: 76%;
+  margin: -38%;
+  border-color: rgba(92, 255, 182, 0.18);
+  animation: orbitSpinReverse 18s linear infinite;
+}
+
+.ch-orbit-3 {
+  width: 52%;
+  height: 52%;
+  margin: -26%;
+  border-style: dashed;
+  border-color: rgba(0, 195, 255, 0.3);
+  animation: orbitSpin 12s linear infinite;
+}
+
+.ch-core {
+  position: absolute;
+  inset: 50%;
+  width: 138px;
+  height: 138px;
+  margin: -69px;
+  border-radius: 28px;
+  border: 1px solid rgba(155, 245, 255, 0.4);
+  background: linear-gradient(180deg, rgba(13, 42, 64, 0.94), rgba(4, 14, 24, 0.98));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38), 0 0 60px rgba(0, 195, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.ch-core svg {
+  width: 62px;
+  height: 62px;
+  color: #b8f6ff;
+  filter: drop-shadow(0 0 22px rgba(0, 195, 255, 0.35));
+}
+
+.ch-visual-card {
+  position: absolute;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(8, 23, 38, 0.95), rgba(3, 12, 21, 0.92));
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(14px);
+}
+
+.ch-visual-card-main {
+  left: 18px;
+  right: 62px;
+  bottom: 6px;
+  padding: 1.45rem 1.35rem 1.35rem;
+  z-index: 5;
+}
+
+.ch-visual-card-side {
+  top: 11%;
+  right: -10px;
+  width: 232px;
+  padding: 1rem 1.1rem;
+  z-index: 4;
+}
+
+.ch-panel-label {
+  margin-bottom: 0.55rem;
+  color: #6de7ff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.ch-visual-card h3 {
+  margin-bottom: 0.95rem;
+  color: #ffffff;
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.ch-visual-card-main .ch-panel-label {
+  max-width: calc(100% - 210px);
+}
+
+.ch-visual-card-main h3 {
+  max-width: calc(100% - 148px);
+  font-size: 1.18rem;
+  line-height: 1.4;
+}
+
+.ch-visual-card p {
+  margin: 0;
+  color: #9ab0c8;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.ch-visual-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.ch-visual-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.ch-visual-list-item span {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.ch-visual-list-item strong {
+  color: #63ffba;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ch-visual-chip {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.95rem;
+  border-radius: 999px;
+  color: #e8fbff;
+  font-size: 0.84rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(4, 16, 28, 0.92);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+
+.ch-visual-chip::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9df5ff, #4dffb2);
+  box-shadow: 0 0 12px rgba(0, 195, 255, 0.5);
+}
+
+.chip-1 { top: 10%; left: 4%; }
+.chip-2 { top: 28%; left: -4%; }
+.chip-3 { right: 8%; bottom: 31%; }
+
+.ch-ring,
+.ch-center-shield,
+.ch-float-badge {
+  display: none;
+}
+
+.consulting-journey {
+  position: relative;
+  padding: 1.75rem 0 1.25rem;
+  background:
+    linear-gradient(180deg, rgba(4, 17, 29, 0) 0%, rgba(4, 17, 29, 0.5) 100%),
+    #06111d;
+  min-height: auto !important;
+  max-height: none !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.consulting-journey-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  min-height: auto !important;
+  max-height: none !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.consulting-journey-intro {
+  max-width: 520px;
+}
+
+.consulting-journey-intro h2,
+.consulting-section-head h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.consulting-journey-intro p,
+.consulting-section-lead {
+  margin: 0;
+  color: #9ab0c8;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.consulting-journey-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  min-height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.journey-card {
+  position: relative;
+  padding: 1.4rem;
+  min-height: 100%;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.16);
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.journey-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(157, 245, 255, 0.18), rgba(77, 255, 178, 0.16));
+  color: #b8f6ff;
+  font-weight: 800;
+}
+
+.journey-card h3 {
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  font-size: 1.15rem;
+}
+
+.journey-card p {
+  margin: 0;
+  color: #9ab0c8;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.consulting-section {
+  padding: 4.5rem 0 4rem !important;
+  background:
+    radial-gradient(circle at top center, rgba(0, 195, 255, 0.05), transparent 32%),
+    var(--dark-bg) !important;
+}
+
+.consulting-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.consulting-section-head .section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+  padding: 0.48rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(45, 155, 78, 0.28);
+  background: rgba(45, 155, 78, 0.1);
+  color: #7bdf9a;
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.consulting-section-spotlight {
+  max-width: 320px;
+  padding: 1.15rem 1.25rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 195, 255, 0.1);
+  background: linear-gradient(180deg, rgba(7, 24, 40, 0.95), rgba(5, 16, 28, 0.9));
+}
+
+.consulting-section-spotlight strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.consulting-section-spotlight p,
+.premium-feature-card p {
+  margin: 0;
+  color: #b2c1d2;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.premium-card-content {
+  gap: 0.85rem;
+}
+
+.card-read-more {
+  margin-top: 0.35rem;
+}
+
+.card-read-more span,
+.footer-cta-btn span {
+  font-size: 0;
+}
+
+.card-read-more span::after,
+.footer-cta-btn span::after {
+  content: "\2192";
+  font-size: 0.95rem;
+}
+
+@keyframes orbitSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes orbitSpinReverse {
+  from { transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); }
+}
+
+@media (max-width: 1199px) {
+  .consulting-hero-grid,
+  .consulting-journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consulting-section-head {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .consulting-section-spotlight {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .consulting-hero {
+    padding: 164px 0 72px;
+  }
+
+  .consulting-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.6rem;
+  }
+
+  .ch-content,
+  .consulting-journey-intro {
+    text-align: center;
+  }
+
+  .ch-content {
+    max-width: 100%;
+  }
+
+  .ch-badge,
+  .ch-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ch-actions {
+    justify-content: center;
+  }
+
+  .ch-proof-grid {
+    margin: 0 auto;
+  }
+
+  .ch-visual {
+    justify-content: center;
+  }
+
+  .ch-visual-shell {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .consulting-journey-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ch-visual {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .consulting-hero {
+    padding: 152px 0 64px;
+  }
+
+  .ch-title {
+    font-size: 2.28rem;
+    max-width: 100%;
+  }
+
+  .ch-desc {
+    font-size: 0.96rem;
+  }
+
+  .ch-actions {
+    flex-direction: column;
+  }
+
+  .ch-btn-primary,
+  .ch-btn-secondary {
+    width: 100%;
+  }
+
+  .ch-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ch-visual {
+    min-height: 430px;
+  }
+
+  .ch-visual-shell {
+    width: min(100%, 390px);
+  }
+
+  .ch-visual-card-main {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: 224px;
+    padding: 1.2rem 1.1rem 1.15rem;
+  }
+
+  .ch-visual-card-side {
+    top: 7%;
+    right: 0;
+    width: 162px;
+  }
+
+  .ch-visual-card-main .ch-panel-label,
+  .ch-visual-card-main h3 {
+    max-width: 100%;
+  }
+
+  .ch-visual-card-main h3 {
+    font-size: 1.08rem;
+    line-height: 1.35;
+  }
+
+  .chip-1 { top: 5%; left: 6%; }
+  .chip-2 { top: 22%; left: 0; }
+  .chip-3 { right: 0; bottom: 35%; }
+
+  .card-read-more {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .consulting-hero {
+    padding: 146px 0 56px;
+  }
+
+  .ch-title {
+    font-size: 1.95rem;
+  }
+
+  .ch-visual {
+    min-height: 340px;
+  }
+
+  .ch-core {
+    width: 112px;
+    height: 112px;
+    margin: -56px;
+  }
+
+  .ch-core svg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .ch-visual-card-main {
+    margin-top: 198px;
+    padding: 1.1rem;
+  }
+
+  .ch-visual-card-side,
+  .ch-visual-chip {
+    transform: scale(0.88);
+    transform-origin: center;
+  }
+
+  .ch-visual-card-side {
+    top: 4%;
+    right: -8px;
+  }
+}
+</style>
+
+<style id="consulting-hero-refresh">
+.consulting-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(220px, 19vw, 244px) 0 96px;
+  background:
+    radial-gradient(circle at 14% 16%, rgba(0, 195, 255, 0.16), transparent 24%),
+    radial-gradient(circle at 84% 12%, rgba(77, 255, 178, 0.13), transparent 22%),
+    radial-gradient(circle at 72% 72%, rgba(30, 124, 255, 0.12), transparent 26%),
+    linear-gradient(135deg, #04101a 0%, #081827 48%, #030c15 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.consulting-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 68px 68px;
+  opacity: 0.22;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 92%);
+  pointer-events: none;
+}
+
+.consulting-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 180px;
+  background: linear-gradient(180deg, rgba(3, 12, 21, 0), rgba(3, 12, 21, 0.78));
+  pointer-events: none;
+}
+
+.consulting-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(380px, 0.96fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+.ch-content {
+  max-width: 690px;
+}
+
+.ch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.78rem 1.16rem;
+  margin-bottom: 1.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(110, 222, 255, 0.2);
+  background: linear-gradient(180deg, rgba(7, 28, 44, 0.92), rgba(6, 20, 32, 0.78));
+  color: #b4f5ff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.2);
+}
+
+.ch-title {
+  max-width: 700px;
+  margin-bottom: 1.25rem;
+  padding-top: 0.08em;
+  color: #f7fbff;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+}
+
+.ch-title span {
+  display: block;
+  margin-top: 0.28rem;
+  background: linear-gradient(135deg, #d5fbff 0%, #34d4ff 42%, #5dffbb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ch-desc {
+  max-width: 590px;
+  margin-bottom: 1.55rem;
+  color: #aabed1;
+  font-size: 1.02rem;
+  line-height: 1.84;
+}
+
+.ch-trust-rail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  max-width: 640px;
+  margin-bottom: 1.65rem;
+}
+
+.ch-trust-item {
+  padding: 1rem 1rem 0.95rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.16);
+}
+
+.ch-trust-value {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #f8fcff;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ch-trust-label {
+  display: block;
+  color: #91a9c0;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.ch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.9rem;
+}
+
+.ch-btn-primary,
+.ch-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0.95rem 1.6rem;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.ch-btn-primary {
+  color: #04111d;
+  background: linear-gradient(135deg, #b9f7ff 0%, #11c5ff 52%, #58ffb5 100%);
+  box-shadow: 0 18px 40px rgba(17, 197, 255, 0.24);
+}
+
+.ch-btn-primary:hover {
+  transform: translateY(-3px);
+  color: #04111d;
+}
+
+.ch-btn-secondary {
+  color: #f7fbff;
+  border: 1px solid rgba(154, 176, 200, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.ch-btn-secondary:hover {
+  transform: translateY(-3px);
+  color: #ffffff;
+  border-color: rgba(17, 197, 255, 0.28);
+}
+
+.ch-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1rem;
+  max-width: 640px;
+  margin-bottom: 1.9rem;
+}
+
+.ch-point {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+  color: #dce8f3;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.ch-point::before {
+  content: "";
+  flex: 0 0 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #76f1ff, #57ffb4);
+  box-shadow: 0 0 14px rgba(17, 197, 255, 0.45);
+}
+
+.ch-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.95rem;
+  max-width: 640px;
+}
+
+.ch-proof-card {
+  padding: 1.05rem 1.05rem 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(6, 28, 42, 0.88), rgba(8, 18, 30, 0.74));
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.16);
+}
+
+.ch-proof-card strong {
+  display: block;
+  margin-bottom: 0.28rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.ch-proof-card span {
+  color: #9db8cf;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.ch-showcase {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ch-showcase-shell {
+  position: relative;
+  width: min(100%, 570px);
+  padding: 1.5rem;
+  border-radius: 32px;
+  border: 1px solid rgba(161, 212, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(8, 27, 42, 0.95), rgba(4, 15, 26, 0.98));
+  box-shadow: 0 36px 90px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+}
+
+.ch-showcase-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(17, 197, 255, 0.16), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(88, 255, 181, 0.12), transparent 34%);
+  pointer-events: none;
+}
+
+.ch-showcase-shell::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+.ch-showcase-top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.15rem;
+}
+
+.ch-showcase-kicker {
+  margin-bottom: 0.6rem;
+  color: #82eaff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.ch-showcase-title {
+  color: #ffffff;
+  font-size: 1.65rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.ch-command-bar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.ch-command-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.72rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: #dbf5ff;
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.ch-command-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #82eaff, #57ffb4);
+  box-shadow: 0 0 14px rgba(17, 197, 255, 0.28);
+}
+
+.ch-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.72rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e8fbff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ch-status-pill::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #57ffb4;
+  box-shadow: 0 0 14px rgba(87, 255, 180, 0.45);
+}
+
+.ch-showcase-metrics {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.ch-metric-card,
+.ch-note-card,
+.ch-roadmap-card {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.ch-metric-card {
+  padding: 1.15rem 1.2rem;
+}
+
+.ch-metric-label,
+.ch-note-label {
+  margin-bottom: 0.45rem;
+  color: #84eaff;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ch-metric-value {
+  color: #ffffff;
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.ch-metric-text {
+  margin-top: 0.55rem;
+  color: #9db2c7;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.ch-note-card {
+  padding: 1.05rem 1.05rem 1rem;
+}
+
+.ch-note-card p {
+  margin: 0;
+  color: #dce8f3;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.ch-roadmap {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.ch-roadmap-card {
+  padding: 1rem 1.1rem;
+}
+
+.ch-roadmap-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.45rem;
+}
+
+.ch-roadmap-title {
+  color: #ffffff;
+  font-size: 1.02rem;
+  font-weight: 800;
+}
+
+.ch-roadmap-tag {
+  color: #57ffb4;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ch-roadmap-card p {
+  margin: 0;
+  color: #9db2c7;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.ch-framework-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.ch-framework-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.72rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(4, 16, 28, 0.86);
+  color: #ecfbff;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.ch-framework-pill::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #82eaff, #57ffb4);
+}
+
+@media (max-width: 1199px) {
+  .consulting-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.8rem;
+  }
+
+  .ch-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .ch-badge,
+  .ch-desc,
+  .ch-trust-rail {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ch-actions,
+  .ch-points,
+  .ch-proof-grid,
+  .ch-command-bar {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ch-showcase {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .consulting-hero {
+    padding: 190px 0 76px;
+  }
+
+  .ch-title {
+    font-size: clamp(2.7rem, 6vw, 4rem);
+  }
+
+  .ch-points {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ch-showcase-shell {
+    width: min(100%, 620px);
+  }
+}
+
+@media (max-width: 768px) {
+  .consulting-hero {
+    padding: 166px 0 66px;
+  }
+
+  .ch-title {
+    font-size: 2.4rem;
+  }
+
+  .ch-desc {
+    font-size: 0.96rem;
+  }
+
+  .ch-trust-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .ch-actions {
+    flex-direction: column;
+  }
+
+  .ch-btn-primary,
+  .ch-btn-secondary {
+    width: 100%;
+  }
+
+  .ch-points,
+  .ch-proof-grid,
+  .ch-showcase-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .ch-showcase-top,
+  .ch-roadmap-head {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .ch-showcase-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .consulting-hero {
+    padding: 156px 0 56px;
+  }
+
+  .ch-title {
+    font-size: 2rem;
+  }
+
+  .ch-badge {
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+  }
+
+  .ch-showcase-shell {
+    padding: 1.1rem;
+    border-radius: 24px;
+  }
+
+  .ch-metric-value {
+    font-size: 2rem;
+  }
+
+  .ch-trust-item,
+  .ch-proof-card,
+  .ch-roadmap-card {
+    text-align: left;
+  }
+}
+</style>
+
+<section class="consulting-hero">
+  <div class="container">
+    <div class="consulting-hero-grid">
+      <div class="ch-content">
+        <div class="ch-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Strategic Cyber &amp; Compliance Advisory
+        </div>
+        <h1 class="ch-title">
+          Turn compliance pressure into <span>executive confidence and operational momentum.</span>
+        </h1>
+        <p class="ch-desc">
+          Vedtam helps growing teams unify privacy, governance, certification, and security oversight into one advisory motion with sharper reporting, practical control design, and audit-ready execution.
+        </p>
+        <div class="ch-trust-rail">
+          <div class="ch-trust-item">
+            <span class="ch-trust-value">Leadership View</span>
+            <span class="ch-trust-label">Board-friendly visibility across risk, readiness, and decisions.</span>
+          </div>
+          <div class="ch-trust-item">
+            <span class="ch-trust-value">Clear Ownership</span>
+            <span class="ch-trust-label">Controls, milestones, and accountability mapped from the start.</span>
+          </div>
+          <div class="ch-trust-item">
+            <span class="ch-trust-value">Audit Flow</span>
+            <span class="ch-trust-label">Evidence, remediation, and assurance aligned in one delivery model.</span>
+          </div>
+        </div>
+        <div class="ch-actions">
+          <a href="contact-us.html" class="ch-btn-primary">Schedule Consultation</a>
+          <a href="#consulting-services" class="ch-btn-secondary">View Advisory Tracks</a>
+        </div>
+        <div class="ch-points">
+          <div class="ch-point">Executive-ready roadmaps that connect regulation, risk, and delivery priorities.</div>
+          <div class="ch-point">Framework support across ISO 27001, DPDP Act, SOC 2, PCI DSS, and vCISO programs.</div>
+          <div class="ch-point">Control design, documentation, and evidence planning built directly into engagement delivery.</div>
+          <div class="ch-point">Senior advisory guidance without bloated process or unnecessary consulting overhead.</div>
+        </div>
+        <div class="ch-proof-grid">
+          <div class="ch-proof-card">
+            <strong>One Advisory Partner</strong>
+            <span>Strategy, readiness, and assurance managed through a single consulting layer.</span>
+          </div>
+          <div class="ch-proof-card">
+            <strong>Decision-Ready</strong>
+            <span>Leadership reporting and control visibility shaped for faster stakeholder decisions.</span>
+          </div>
+          <div class="ch-proof-card">
+            <strong>Readiness Built In</strong>
+            <span>Evidence, remediation, and audit preparation aligned from the first workstream.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ch-showcase">
+        <div class="ch-showcase-shell">
+          <div class="ch-showcase-top">
+            <div>
+              <div class="ch-showcase-kicker">Advisory Command Deck</div>
+              <div class="ch-showcase-title">A premium operating view for roadmap, reporting, and certification readiness.</div>
+            </div>
+            <div class="ch-status-pill">Executive View Live</div>
+          </div>
+
+          <div class="ch-command-bar">
+            <div class="ch-command-item">Governance</div>
+            <div class="ch-command-item">Control Design</div>
+            <div class="ch-command-item">Audit Readiness</div>
+          </div>
+
+          <div class="ch-showcase-metrics">
+            <div class="ch-metric-card">
+              <div class="ch-metric-label">Delivery Motion</div>
+              <div class="ch-metric-value">4-Phase</div>
+              <div class="ch-metric-text">Assess, architect, implement, and assure in a consulting sequence that keeps teams moving without losing executive clarity.</div>
+            </div>
+            <div class="ch-note-card">
+              <div class="ch-note-label">Coverage</div>
+              <p>Privacy, GRC, certification readiness, risk reporting, and security oversight managed in one premium advisory stream.</p>
+            </div>
+          </div>
+
+          <div class="ch-roadmap">
+            <div class="ch-roadmap-card">
+              <div class="ch-roadmap-head">
+                <div class="ch-roadmap-title">Assess the current posture</div>
+                <div class="ch-roadmap-tag">Discover</div>
+              </div>
+              <p>Baseline controls, identify exposure, and prioritize the work that matters most for risk, compliance, and stakeholder confidence.</p>
+            </div>
+            <div class="ch-roadmap-card">
+              <div class="ch-roadmap-head">
+                <div class="ch-roadmap-title">Architect the operating model</div>
+                <div class="ch-roadmap-tag">Design</div>
+              </div>
+              <p>Translate policies, controls, ownership, and reporting into an actionable roadmap your teams can actually execute.</p>
+            </div>
+            <div class="ch-roadmap-card">
+              <div class="ch-roadmap-head">
+                <div class="ch-roadmap-title">Assure evidence and readiness</div>
+                <div class="ch-roadmap-tag">Assure</div>
+              </div>
+              <p>Keep documentation, evidence packs, review checkpoints, and remediation guidance aligned for smoother audit outcomes.</p>
+            </div>
+          </div>
+
+          <div class="ch-framework-row">
+            <div class="ch-framework-pill">ISO 27001</div>
+            <div class="ch-framework-pill">DPDP Act</div>
+            <div class="ch-framework-pill">SOC 2</div>
+            <div class="ch-framework-pill">vCISO</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="consulting-journey">
+    <div class="container">
+        <div class="consulting-journey-grid">
+            <div class="consulting-journey-intro">
+                <div class="section-label" style="display:inline-flex; align-items:center; gap:0.55rem; margin-bottom:1rem; padding:0.48rem 0.95rem; background:rgba(0, 195, 255, 0.1); border:1px solid rgba(0, 195, 255, 0.24); border-radius:999px; color:#7fe8ff; font-weight:800; font-size:0.82rem; letter-spacing:0.12em; text-transform:uppercase;">Premium Delivery Model</div>
+                <h2>Built for fast-moving teams that need precision, not paperwork overload.</h2>
+                <p>Every Vedtam engagement balances executive visibility with practical implementation support, so your stakeholders see progress clearly while your teams know exactly what to do next.</p>
+            </div>
+            <div class="consulting-journey-cards">
+                <article class="journey-card">
+                    <div class="journey-step">01</div>
+                    <h3>Assess with clarity</h3>
+                    <p>We map your current posture, identify framework gaps, and rank remediation based on business and regulatory risk.</p>
+                </article>
+                <article class="journey-card">
+                    <div class="journey-step">02</div>
+                    <h3>Architect the roadmap</h3>
+                    <p>Policies, controls, ownership, and timelines are translated into an actionable plan your teams can actually execute.</p>
+                </article>
+                <article class="journey-card">
+                    <div class="journey-step">03</div>
+                    <h3>Assure and evidence</h3>
+                    <p>We help you prepare documentation, evidence trails, and readiness checkpoints for internal review and external audit success.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="consulting-section" id="consulting-services" style="padding: 4rem 0; background: var(--dark-bg);">
+    <div class="container">
+        <div class="consulting-section-head">
+            <div>
+                <div class="section-label">Strategic Advisory Portfolio</div>
+                <h2 class="section-heading">Choose the framework, keep the execution <span style="color:#2d9b4e">effortless.</span></h2>
+                <p class="consulting-section-lead">Explore specialized consulting tracks for privacy, cybersecurity governance, certification readiness, and executive security leadership.</p>
+            </div>
+            <div class="consulting-section-spotlight">
+                <strong>Advisory that feels senior from day one</strong>
+                <p>From vCISO strategy to industry-specific compliance, every engagement is structured for momentum, accountability, and polished stakeholder reporting.</p>
+            </div>
+        </div>
+        
+        <div class="consulting-feature-grid">
+            <a href="consulting/dpdp-act-consulting-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.1s;">
+                <img src="card_logo/dpdp_consulting_hero.png" class="card-image-banner" alt="DPDP Act">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                    <h3>DPDP Act</h3>
+                    <p>Prepare your privacy program, consent processes, and governance controls for India's data protection landscape.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/virtual-ciso-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.2s;">
+                <img src="card_logo/virtual_ciso_hero.png" class="card-image-banner" alt="Virtual CISO">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                    <h3>Virtual CISO</h3>
+                    <p>Get senior security leadership, risk guidance, and governance oversight without building a full in-house CISO office.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/iso-consulting-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.3s;">
+                <img src="card_logo/iso_consulting_hero.png" class="card-image-banner" alt="ISO Consultancy">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                    <h3>ISO Consultancy</h3>
+                    <p>Build certification-ready systems for ISO standards with structured documentation, controls, and remediation support.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/qms-consulting-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.4s;">
+                <img src="card_logo/cyber_compliance_landscape_infographic.png" class="card-image-banner" alt="QMS Consulting">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                    <h3>QMS Consulting</h3>
+                    <p>Strengthen process consistency, quality controls, and operational accountability across departments and delivery teams.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/hipaa-consulting-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.5s;">
+                <img src="card_logo/hipaa_consulting_hero.png" class="card-image-banner" alt="HIPAA Compliance">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                    <h3>HIPAA Compliance</h3>
+                    <p>Align healthcare data protection, administrative safeguards, and audit readiness with HIPAA-focused consulting support.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/soc2-consulting-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.6s;">
+                <img src="card_logo/cyber_attack_trends_infographic.png" class="card-image-banner" alt="SOC 2 Consulting">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                    <h3>SOC 2 Consulting</h3>
+                    <p>Establish trust service criteria, evidence workflows, and control maturity needed for a successful SOC 2 journey.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/pci-dss-consulting-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.7s;">
+                <img src="card_logo/pci_dss_hero.png" class="card-image-banner" alt="PCI DSS">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                    <h3>PCI DSS</h3>
+                    <p>Reduce payment security risk with tailored guidance for cardholder data controls, segmentation, and compliance evidence.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/gdpr-consulting-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.8s;">
+                <img src="card_logo/gdpr_consulting_hero.png" class="card-image-banner" alt="GDPR Consulting">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                    <h3>GDPR Consulting</h3>
+                    <p>Support international privacy obligations with practical data governance, consent, and accountability programs.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/network-security-consulting-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.9s;">
+                <img src="card_logo/net_threat_bg.png" class="card-image-banner" alt="Network Security Consulting">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+                    <h3>Network Security Consulting</h3>
+                    <p>Design stronger security architecture, segmentation models, and hardening strategies for resilient enterprise networks.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+            <a href="consulting/network-security-audit-services.html" class="premium-feature-card animate-fade-up" style="animation-delay: 0.1s;">
+                <img src="card_logo/network_audit_hero.png" class="card-image-banner" alt="Network Security Audit">
+                <div class="premium-card-content">
+                    <div class="premium-icon-wrapper"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg></div>
+                    <h3>Network Security Audit</h3>
+                    <p>Validate real-world network posture through configuration review, control assessment, and prioritized remediation advice.</p>
+                    <div class="card-read-more">Learn More <span>&rarr;</span></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <!-- Premium Creative Pre-Footer CTA -->
+      <div class="footer-cta-box">
+        <div class="footer-cta-content">
+          <h3>Ready to Secure &amp; Scale Your Enterprise?</h3>
+          <p>Partner with Vedtam for end-to-end multi-cloud transformation, advanced automated cybersecurity, DevOps
+            pipelines, and elite regulatory framework compliance.</p>
+        </div>
+        <div class="footer-cta-action">
+          <a class="btn btn-primary footer-cta-btn" href="contact-us.html">Schedule Strategic Consultation
+            <span><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
+        </div>
+      </div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a aria-label="Vedtam Tech Solutions" class="nav-logo footer-logo" href="index.html">
+            <img alt="Vedtam Tech Solutions logo" decoding="async" src="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png"
+              data-logo-switcher
+              data-logos="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png, website-logo/VEDTAM%20TECH%20SOLUTIONS%20hn.png" />
+          </a>
+          <p class="footer-about-text">Vedtam Tech Solutions is a trusted global IT services and specialized compliance
+            partner. We deliver mission-critical managed IT, multi-cloud architectures, next-gen automated
+            cybersecurity, DevOps pipelines, and enterprise framework consulting (ISO 27001, SOC 2, HIPAA, DPDP Act).
+            Committed to relentless innovation and proactive threat management, we empower modern enterprises to scale
+            securely, maintain regulatory excellence, and achieve uncompromised business resilience.</p>
+          <div class="footer-contact">
+            <a href="https://maps.google.com/?q=Noida%2C+Uttar+Pradesh%2C+India" target="_blank" rel="noopener"><i
+                class="fas fa-map-marker-alt fc-icon"></i> Location: Noida, Uttar Pradesh, India</a>
+            <a href="mailto:info@vedtam.com"><i class="fas fa-envelope fc-icon"></i> Email: info@vedtam.com</a>
+            <a href="tel:+917065111015"><i class="fas fa-phone fc-icon"></i> Phone: +91 70651 11015</a>
+          </div>
+          <div class="footer-social">
+            <a aria-label="LinkedIn" class="social-link"
+              href="https://www.linkedin.com/company/vedtam-tech-solutions/posts/?feedView=all">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M6.94 8.5a1.57 1.57 0 1 1 0-3.14 1.57 1.57 0 0 1 0 3.14ZM5.57 9.7h2.74V18H5.57V9.7Zm4.3 0h2.62v1.13h.04c.37-.7 1.25-1.44 2.57-1.44 2.75 0 3.26 1.8 3.26 4.15V18h-2.73v-3.95c0-.94-.02-2.15-1.31-2.15-1.31 0-1.5 1.02-1.5 2.08V18H9.88V9.7Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+            <a aria-label="Facebook" class="social-link" href="https://www.facebook.com/vedtamtechsolutions">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.87.25-1.46 1.5-1.46h1.64V5a21.4 21.4 0 0 0-2.39-.12c-2.36 0-3.97 1.44-3.97 4.08V11H8v3h2.3v8h3.2Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+            <a aria-label="Instagram" class="social-link" href="https://www.instagram.com/vedtamtechsolutions/">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm-.2 1.9A3.65 3.65 0 0 0 3.9 7.55v8.9a3.65 3.65 0 0 0 3.65 3.65h8.9a3.65 3.65 0 0 0 3.65-3.65v-8.9a3.65 3.65 0 0 0-3.65-3.65h-8.9Zm9.35 1.45a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.9A3.1 3.1 0 1 0 12 15.1 3.1 3.1 0 0 0 12 8.9Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="solutions/cybersecurity-services.html">Cybersecurity Services</a></li>
+            <li><a href="solutions/network-security-solutions.html">Network Security</a></li>
+            <li><a href="solutions/devops-solutions.html">DevOps Solutions</a></li>
+            <li><a href="solutions/ot-security-services.html">OT Security Services</a></li>
+            <li><a href="solutions/cloud-services.html">Cloud Services</a></li>
+            <li><a href="solutions/it-managed-services.html">IT Managed Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Consulting</h4>
+          <ul>
+            <li><a href="consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a></li>
+            <li><a href="consulting/virtual-ciso-services.html">Virtual CISO Services</a></li>
+            <li><a href="consulting/iso-consulting-services.html">ISO Consultancy Services</a></li>
+            <li><a href="consulting/qms-consulting-services.html">QMS Consulting Services</a></li>
+            <li><a href="consulting/hipaa-consulting-services.html">HIPAA Compliance</a></li>
+            <li><a href="consulting/soc2-consulting-services.html">SOC 2 Consulting</a></li>
+            <li><a href="consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a></li>
+            <li><a href="consulting/gdpr-consulting-services.html">GDPR Consulting</a></li>
+            <li><a href="consulting/network-security-consulting-services.html">Network Security Consulting</a></li>
+            <li><a href="consulting/network-security-audit-services.html">Network Security Audit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="why-us.html">Why Us</a></li>
+            <li><a href="solutions/software-services.html">Software Solutions</a></li>
+            <li><a href="solutions/cybersecurity-services.html">Industries We Serve</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vedtam Tech Solutions. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    window.VEDTAM_EMAILJS_CONFIG = {
+      publicKey: "6WOyjoeStKDv5NUBN",
+      serviceId: "service_138omqz",
+      templateId: "template_87oft6o"
+    };
+    // Set this to your live CERT-In JSON feed URL after hosting.
+    // Example: "https://www.vedtam.com/cert-data.json"
+    window.VEDTAM_CERT_DATA_URL = "cert-data.json";
+    // Optional fallback date shown only when feed is unavailable.
+    window.VEDTAM_CERT_PORTAL_UPDATED_AT = "2026-06-03";
+    window.VEDTAM_SHEET_WEBHOOK_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL";
+    window.VEDTAM_WHATSAPP_WEBHOOK_URL = "YOUR_WHATSAPP_WEBHOOK_URL";
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var storyLink = document.querySelector('.mega-cta[href="about-us.html"]');
+      if (storyLink) storyLink.innerHTML = 'Read Our Story &#8594;';
+
+      var footerCopy = document.querySelector('.footer-bottom p');
+      if (footerCopy) footerCopy.innerHTML = '2026 &copy; Vedtam Tech Solutions. All Rights Reserved.';
+    });
+  </script>
+  <script defer="" src="assets/js/vedtam.js?v=5"></script>
+  <script defer src="assets/js/cookie-banner.js"></script>
+  <!-- Logo Switcher Script -->
+  <script>
+    (function () {
+      const logos = document.querySelectorAll('[data-logo-switcher]');
+      logos.forEach(logo => {
+        const logosData = logo.getAttribute('data-logos');
+        if (!logosData) return;
+
+        const logoArray = logosData.split(',').map(url => url.trim());
+        if (logoArray.length < 2) return;
+
+        let currentIndex = 0;
+
+        // Switch logo every 1 second
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % logoArray.length;
+          logo.src = logoArray[currentIndex];
+        }, 1000);
+      });
+    })();
+  </script>
+<div aria-label="Quick actions" class="floating-actions">
+    <a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/917065111015" rel="noopener"
+      target="_blank">
+      <svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+        </path>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <button aria-label="Scroll to top" class="scroll-top" id="scrollTop"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+        <path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2.5"></path>
+      </svg>
+    </button>
+  </div>
+</body>
+
+</html>
+
+
+
+

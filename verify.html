@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifying Subscription  Vedtam Tech Solutions</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 48px 40px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+    .icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin: 0 auto 24px;
+    }
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid #334155;
+      border-top-color: #fb923c;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    h1 { color: #f8fafc; font-size: 1.6rem; margin-bottom: 12px; }
+    p  { color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 28px; }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #fb923c, #f97316);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .secondary { display: block; margin-top: 14px; color: #64748b; font-size: 0.85rem; text-decoration: none; }
+    .secondary:hover { color: #94a3b8; }
+  </style>
+  <style id="mega-menu-desktop-zoom-fix">
+    /* Mega Menu Zoom Overflow Fix for all screen sizes */
+    .mega-menu {
+      max-height: calc(100vh - 80px) !important;
+      overflow-y: auto !important;
+    }
+    .mega-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+    .mega-menu::-webkit-scrollbar-thumb {
+      background-color: rgba(6, 182, 212, 0.5);
+      border-radius: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="icon" id="icon" style="background:#33415533;">
+      <div class="spinner"></div>
+    </div>
+    <h1 id="headline">Verifying your subscription&hellip;</h1>
+    <p id="subtext">Please wait while we confirm your email address.</p>
+    <a id="btn" href="https://vedtam.com/cert-advisory" class="btn" style="display:none">View CERT-In Advisories &rarr;</a>
+    <a id="secondary" href="https://vedtam.com" class="secondary" style="display:none">&larr; Back to Vedtam Home</a>
+  </div>
+
+  <script>
+    (function () {
+      var token = new URLSearchParams(window.location.search).get('token');
+
+      if (!token) {
+        show('error', '&#10007;', '#e63946', 'No Token Found',
+          'No verification token was found. Please use the exact link from your confirmation email.');
+        return;
+      }
+
+      fetch('verify-subscriber.php?token=' + encodeURIComponent(token) + '&format=json')
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          var colors = { success: '#06d6a0', duplicate: '#06d6a0', expired: '#f9c74f', error: '#e63946' };
+          var icons  = { success: '&#10003;', duplicate: '&#10003;', expired: '&#9201;', error: '&#10007;' };
+          var msg = d.message || '';
+          if (d.status === 'success' && d.name) {
+            msg += ' ' + d.name + ', check your inbox for a welcome email.';
+          }
+          show(d.status, icons[d.status] || '&#10007;', colors[d.status] || '#e63946', d.headline, msg);
+        })
+        .catch(function () {
+          show('error', '&#10007;', '#e63946', 'Connection Error',
+            'Could not reach the server. Please try again or contact info@vedtam.com.');
+        });
+
+      function show(status, icon, color, headline, msg) {
+        var iconEl = document.getElementById('icon');
+        iconEl.style.background = color + '22';
+        iconEl.style.color = color;
+        iconEl.innerHTML = icon;
+        document.getElementById('headline').textContent = headline;
+        document.getElementById('subtext').textContent  = msg;
+        document.getElementById('btn').style.display      = 'inline-block';
+        document.getElementById('secondary').style.display = 'block';
+        document.title = headline + '  Vedtam Tech Solutions';
+      }
+    }());
+  </script>
+<div aria-label="Quick actions" class="floating-actions">
+    <a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/917065111015" rel="noopener"
+      target="_blank">
+      <svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+        </path>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <button aria-label="Scroll to top" class="scroll-top" id="scrollTop"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+        <path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2.5"></path>
+      </svg>
+    </button>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Arista Extensible Operating System Incomplete Comparison with Missing Factors Vulnerability",
+    "date": "June 11, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0301",
+    "severity": "MEDIUM",
+    "overview": "A vulnerability has been reported in Arista Extensible Operating System (EOS), which could be exploited to cause unexpected tunnel protocol decapsulation and forwarding bypass.",
+    "affected_software": "All releases in the 4.36.x train\nAll releases in the 4.35.x train\nAll releases in the 4.34.x train\nAll releases in the 4.33.x train\nAll releases in the 4.32.x train\nAll releases in the 4.31.x train\nAll releases in the 4.30.x train\nAll releases in trains older than 4.30.x\nAll releases in trains newer than 4.36.x"
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Plugins",
+    "date": "June 10, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0300",
+    "severity": "HIGH",
+    "overview": "Multiple vulnerabilities have been reported in Drupal modules, which could allow an attacker to disclose sensitive information, being able to delete arbitrary cookies and perform cross site scripting attacks on the targeted system.",
+    "affected_software": "LocalGov Workflows versions prior to 1.6.0\nTacjs versions prior to 6.8\nCommerce Core 3.3.0 versions prior to 3.3.6\nAnti-Spam by CleanTalk versions prior to 9.7.1"
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in WP Maps Pro plugin for WordPress",
+    "date": "June 10, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0299",
+    "severity": "CRITICAL",
+    "overview": "A vulnerability has been reported in WP Maps Pro plugin for WordPress, which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "affected_software": "WP Maps Pro plugin for WordPress versions prior to 6.1.1."
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "date": "June 10, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0298",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Denial of Service Vulnerability in SolarWinds Serv-U",
+    "date": "June 09, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0297",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Supply Chain Attack on @tanstack/* Packages",
+    "date": "June 09, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0296",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Denial-of-Service Vulnerability in SolarWinds Web Help Desk",
+    "date": "June 08, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0295",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "date": "June 08, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0294",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Multiple Vulnerabilities in Notepad++",
+    "date": "June 08, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0293",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Path Traversal Vulnerability in Bagisto",
+    "date": "June 08, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0292",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Multiple Vulnerabilities in UniFi OS",
+    "date": "June 05, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0291",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Mirasvit Full Page Cache Warmer for Magento",
+    "date": "June 05, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0290",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Multiple Vulnerabilities in IBM WebSphere Application Server",
+    "date": "June 05, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0289",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Multiple Vulnerabilities in GX Earth ONT Models",
+    "date": "June 04, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0288",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Access Control Vulnerability in Ivanti Neurons for ITSM",
+    "date": "June 04, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0287",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in Kirki Plugin of Wordpress",
+    "date": "June 03, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0286",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in PAN-OS GlobalProtect",
+    "date": "June 03, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0285",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab",
+    "date": "June 03, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0284",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Microsoft Office",
+    "date": "June 02, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0283",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in ShowDoc",
+    "date": "June 02, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0282",
+    "severity": null,
+    "overview": null,
+    "affected_software": null
+  }
+]

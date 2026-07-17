@@ -1,0 +1,60 @@
+name: Deploy To Hostinger
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
+      - name: Deploy website to Hostinger
+        env:
+          HOSTINGER_HOST: ${{ secrets.HOSTINGER_HOST }}
+          HOSTINGER_USERNAME: ${{ secrets.HOSTINGER_USERNAME }}
+          HOSTINGER_PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
+          HOSTINGER_PORT: ${{ secrets.HOSTINGER_PORT }}
+          HOSTINGER_PROTOCOL: ${{ secrets.HOSTINGER_PROTOCOL }}
+          HOSTINGER_REMOTE_DIR: ${{ secrets.HOSTINGER_REMOTE_DIR }}
+        run: |
+          test -n "$HOSTINGER_HOST"
+          test -n "$HOSTINGER_USERNAME"
+          test -n "$HOSTINGER_PASSWORD"
+
+          PORT="${HOSTINGER_PORT:-21}"
+          PROTOCOL="${HOSTINGER_PROTOCOL:-ftp}"
+          REMOTE_DIR="${HOSTINGER_REMOTE_DIR:-/public_html}"
+
+          lftp -e "
+            set net:max-retries 2;
+            set net:timeout 20;
+            set ssl:verify-certificate no;
+            open -u ${HOSTINGER_USERNAME},${HOSTINGER_PASSWORD} ${PROTOCOL}://${HOSTINGER_HOST}:${PORT};
+            mirror -R ./ ${REMOTE_DIR} \
+              --verbose \
+              --delete \
+              --exclude-glob .git* \
+              --exclude-glob .github* \
+              --exclude-glob node_modules* \
+              --exclude-glob backups* \
+              --exclude-glob __pycache__* \
+              --exclude-glob *.md \
+              --exclude-glob *.ps1 \
+              --exclude-glob *.py \
+              --exclude-glob *.bat \
+              --exclude-glob *.cmd \
+              --exclude-glob *.vbs;
+            bye
+          "

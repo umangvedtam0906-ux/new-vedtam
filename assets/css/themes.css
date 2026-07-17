@@ -1,0 +1,263 @@
+/* ==========================================================================
+   CONSULTING PAGES THEME SYSTEM
+   Provides color variations for the SOC2 premium architecture across all pages
+   ========================================================================== */
+
+:root {
+  /* Base Theme (SOC 2 - Blue) */
+  --theme-primary: #38bdf8;
+  --theme-primary-rgb: 56, 189, 248;
+  --theme-dark: #0ea5e9;
+  --theme-dark-rgb: 14, 165, 233;
+  --theme-darker: #0284c7;
+  --theme-accent: #facc15;
+  --theme-accent-rgb: 250, 204, 21;
+}
+
+/* ==========================================
+   THEME DEFINITIONS
+   ========================================== */
+
+/* SOC 2 (Default Blue) */
+body.theme-soc2 {
+  --theme-primary: #38bdf8;
+  --theme-primary-rgb: 56, 189, 248;
+  --theme-dark: #0ea5e9;
+  --theme-dark-rgb: 14, 165, 233;
+  --theme-darker: #0284c7;
+  --theme-accent: #facc15;
+  --theme-accent-rgb: 250, 204, 21;
+}
+
+/* DPDP Act (Dark Red) */
+body.theme-dpdp {
+  --theme-primary: #ef4444;
+  --theme-primary-rgb: 239, 68, 68;
+  --theme-dark: #dc2626;
+  --theme-dark-rgb: 220, 38, 38;
+  --theme-darker: #b91c1c;
+  --theme-accent: #fbbf24;
+  --theme-accent-rgb: 251, 191, 36;
+}
+
+/* HIPAA (Medical Green) */
+body.theme-hipaa {
+  --theme-primary: #10b981;
+  --theme-primary-rgb: 16, 185, 129;
+  --theme-dark: #059669;
+  --theme-dark-rgb: 5, 150, 105;
+  --theme-darker: #047857;
+  --theme-accent: #38bdf8;
+  --theme-accent-rgb: 56, 189, 248;
+}
+
+/* GDPR (Indigo/European Blue) */
+body.theme-gdpr {
+  --theme-primary: #6366f1;
+  --theme-primary-rgb: 99, 102, 241;
+  --theme-dark: #4f46e5;
+  --theme-dark-rgb: 79, 70, 229;
+  --theme-darker: #4338ca;
+  --theme-accent: #facc15;
+  --theme-accent-rgb: 250, 204, 21;
+}
+
+/* PCI DSS (Crimson) */
+body.theme-pci {
+  --theme-primary: #e11d48;
+  --theme-primary-rgb: 225, 29, 72;
+  --theme-dark: #be123c;
+  --theme-dark-rgb: 190, 18, 60;
+  --theme-darker: #9f1239;
+  --theme-accent: #fcd34d;
+  --theme-accent-rgb: 252, 211, 77;
+}
+
+/* ISO Consulting (Emerald) */
+body.theme-iso {
+  --theme-primary: #34d399;
+  --theme-primary-rgb: 52, 211, 153;
+  --theme-dark: #10b981;
+  --theme-dark-rgb: 16, 185, 129;
+  --theme-darker: #059669;
+  --theme-accent: #facc15;
+  --theme-accent-rgb: 250, 204, 21;
+}
+
+/* QMS Consulting (Gold/Orange) */
+body.theme-qms {
+  --theme-primary: #f59e0b;
+  --theme-primary-rgb: 245, 158, 11;
+  --theme-dark: #d97706;
+  --theme-dark-rgb: 217, 119, 6;
+  --theme-darker: #b45309;
+  --theme-accent: #10b981;
+  --theme-accent-rgb: 16, 185, 129;
+}
+
+/* Virtual CISO (Purple) */
+body.theme-vciso {
+  --theme-primary: #a855f7;
+  --theme-primary-rgb: 168, 85, 247;
+  --theme-dark: #9333ea;
+  --theme-dark-rgb: 147, 51, 234;
+  --theme-darker: #7e22ce;
+  --theme-accent: #38bdf8;
+  --theme-accent-rgb: 56, 189, 248;
+}
+
+/* Network Security Audit (Cyan) */
+body.theme-nsa {
+  --theme-primary: #22d3ee;
+  --theme-primary-rgb: 34, 211, 238;
+  --theme-dark: #0891b2;
+  --theme-dark-rgb: 8, 145, 178;
+  --theme-darker: #0e7490;
+  --theme-accent: #facc15;
+  --theme-accent-rgb: 250, 204, 21;
+}
+
+/* Network Security Consulting (Slate) */
+body.theme-nsc {
+  --theme-primary: #94a3b8;
+  --theme-primary-rgb: 148, 163, 184;
+  --theme-dark: #64748b;
+  --theme-dark-rgb: 100, 116, 139;
+  --theme-darker: #475569;
+  --theme-accent: #38bdf8;
+  --theme-accent-rgb: 56, 189, 248;
+}
+
+
+/* ==========================================
+   GLOBAL OVERRIDES (applying variables)
+   ========================================== */
+
+/* Hero Elements */
+.soc2-gold-grid {
+  background-image: 
+    linear-gradient(45deg, rgba(var(--theme-primary-rgb), 0.03) 25%, transparent 25%, transparent 75%, rgba(var(--theme-primary-rgb), 0.03) 75%, rgba(var(--theme-primary-rgb), 0.03)),
+    linear-gradient(45deg, rgba(var(--theme-primary-rgb), 0.03) 25%, transparent 25%, transparent 75%, rgba(var(--theme-primary-rgb), 0.03) 75%, rgba(var(--theme-primary-rgb), 0.03)) !important;
+}
+
+.soc2-glow-sphere { background: radial-gradient(circle, rgba(var(--theme-primary-rgb), 0.15), transparent 70%) !important; }
+.soc2-glow-sphere-2 { background: radial-gradient(circle, rgba(var(--theme-dark-rgb), 0.15), transparent 70%) !important; }
+
+.soc2-badge { 
+  background: rgba(var(--theme-primary-rgb), 0.1) !important; 
+  border-color: rgba(var(--theme-primary-rgb), 0.3) !important; 
+  color: var(--theme-primary) !important; 
+}
+
+.soc2-pulse { 
+  background: var(--theme-primary) !important; 
+  box-shadow: 0 0 10px var(--theme-primary) !important; 
+}
+
+.soc2-highlight { 
+  background: linear-gradient(135deg, var(--theme-primary), var(--theme-dark)) !important; 
+  -webkit-background-clip: text !important; 
+  -webkit-text-fill-color: transparent !important; 
+}
+
+.soc2-btn-primary { 
+  background: linear-gradient(135deg, var(--theme-dark), var(--theme-darker)) !important; 
+  box-shadow: 0 10px 20px rgba(var(--theme-dark-rgb), 0.3) !important; 
+}
+.soc2-btn-primary:hover { 
+  box-shadow: 0 15px 25px rgba(var(--theme-dark-rgb), 0.4) !important; 
+}
+
+/* 3D Visual Column */
+.ring-1 { border-color: rgba(var(--theme-primary-rgb), 0.4) !important; }
+.ring-2 { border-color: rgba(var(--theme-accent-rgb), 0.3) !important; }
+.ring-3 { border-color: rgba(var(--theme-primary-rgb), 0.15) !important; }
+
+.shield-glass { 
+  border: 1px solid rgba(var(--theme-accent-rgb), 0.5) !important;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6), inset 0 0 20px rgba(var(--theme-accent-rgb), 0.15), 0 0 50px rgba(var(--theme-accent-rgb), 0.25) !important;
+}
+.shield-icon { 
+  color: var(--theme-accent) !important; 
+  filter: drop-shadow(0 0 15px rgba(var(--theme-accent-rgb), 0.6)) !important; 
+}
+.shield-subtitle { color: var(--theme-accent) !important; }
+
+.scan-line { background: linear-gradient(to bottom, transparent, rgba(var(--theme-primary-rgb), 0.5), transparent) !important; }
+
+.floating-principle { 
+  border: 1px solid rgba(var(--theme-primary-rgb), 0.4) !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px rgba(var(--theme-primary-rgb), 0.2) !important;
+}
+.floating-principle i { color: var(--theme-primary) !important; }
+
+/* Data Particles */
+.data-particle { background: var(--theme-accent) !important; box-shadow: 0 0 10px var(--theme-accent) !important; }
+.dp-2 { background: var(--theme-primary) !important; box-shadow: 0 0 10px var(--theme-primary) !important; }
+.dp-3 { background: var(--theme-accent) !important; box-shadow: 0 0 10px var(--theme-accent) !important; }
+
+/* Bento Grid */
+.soc2-bento-card { border-color: rgba(var(--theme-dark-rgb), 0.2) !important; }
+.soc2-bento-card::before { background: linear-gradient(135deg, rgba(var(--theme-dark-rgb), 0.1), transparent) !important; }
+.soc2-bento-card:hover { border-color: rgba(var(--theme-dark-rgb), 0.6) !important; box-shadow: 0 15px 30px rgba(0,0,0,0.5), 0 0 20px rgba(var(--theme-dark-rgb), 0.15) !important; }
+
+.soc2-bento-icon { 
+  background: rgba(var(--theme-dark-rgb), 0.1) !important; 
+  color: var(--theme-primary) !important; 
+  border-color: rgba(var(--theme-dark-rgb), 0.3) !important; 
+}
+
+/* Services Grid */
+.soc2-service-card { border-color: rgba(var(--theme-dark-rgb), 0.2) !important; }
+.soc2-service-card::before { background: linear-gradient(135deg, var(--theme-primary), transparent, var(--theme-darker)) !important; }
+.soc2-service-card:hover { border-color: rgba(var(--theme-dark-rgb), 0.6) !important; }
+
+.soc2-service-icon { 
+  color: var(--theme-primary) !important; 
+  text-shadow: 0 0 15px rgba(var(--theme-dark-rgb), 0.4) !important; 
+}
+
+/* Circular Metrics & Dashboard */
+.soc2-creative-metrics { border-color: rgba(var(--theme-dark-rgb), 0.2) !important; }
+.soc2-metrics-header { border-bottom-color: rgba(var(--theme-dark-rgb), 0.2) !important; }
+.soc2-circle-progress { filter: drop-shadow(0 0 5px rgba(var(--theme-dark-rgb), 0.6)) !important; }
+.soc2-metrics-footer { border-top-color: rgba(var(--theme-dark-rgb), 0.2) !important; color: var(--theme-primary) !important; }
+.soc2-metrics-footer .pulse-dot { background: var(--theme-primary) !important; box-shadow: 0 0 10px var(--theme-primary) !important; }
+
+.dash-glow-bg { background: radial-gradient(circle, rgba(var(--theme-dark-rgb), 0.15) 0%, transparent 60%) !important; }
+.dashboard-glass { border-color: rgba(var(--theme-primary-rgb), 0.3) !important; box-shadow: -15px 20px 40px rgba(0,0,0,0.6), inset 0 0 20px rgba(var(--theme-primary-rgb), 0.05) !important; }
+.soc2-premium-dashboard:hover .dashboard-glass { box-shadow: 0 25px 50px rgba(0,0,0,0.7), inset 0 0 30px rgba(var(--theme-primary-rgb), 0.1) !important; border-color: rgba(var(--theme-primary-rgb), 0.6) !important; }
+
+.header-icon i { color: var(--theme-accent) !important; }
+.progress-ring { filter: drop-shadow(0 0 8px rgba(var(--theme-primary-rgb), 0.4)) !important; }
+.mb-val { color: var(--theme-accent) !important; }
+.mb-fill { background: linear-gradient(90deg, var(--theme-dark), var(--theme-primary)) !important; box-shadow: 0 0 10px rgba(var(--theme-primary-rgb), 0.5) !important; }
+.footer-stat { color: var(--theme-primary) !important; }
+
+.dash-float { border-color: rgba(var(--theme-accent-rgb), 0.4) !important; color: var(--theme-accent) !important; }
+.df-2 { border-color: rgba(var(--theme-primary-rgb), 0.4) !important; color: var(--theme-primary) !important; }
+
+/* Premium Feature Grid (Why Choose Us) */
+.soc2-premium-why-section::before { background: radial-gradient(circle at center, rgba(var(--theme-dark-rgb), 0.05) 0%, transparent 50%) !important; }
+.soc2-pf-card { border-color: rgba(var(--theme-dark-rgb), 0.2) !important; }
+.soc2-pf-card::before { background: linear-gradient(135deg, rgba(var(--theme-primary-rgb), 0.1), transparent) !important; }
+.soc2-pf-card:hover { border-color: rgba(var(--theme-primary-rgb), 0.5) !important; box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 0 20px rgba(var(--theme-primary-rgb), 0.15) !important; }
+
+.pf-icon { 
+  background: rgba(var(--theme-dark-rgb), 0.1) !important; 
+  border-color: rgba(var(--theme-dark-rgb), 0.3) !important; 
+  color: var(--theme-primary) !important; 
+  box-shadow: inset 0 0 15px rgba(var(--theme-dark-rgb), 0.1) !important; 
+}
+
+.soc2-premium-why-grid .soc2-creative-metrics { border-color: rgba(var(--theme-accent-rgb), 0.25) !important; box-shadow: -20px 30px 60px rgba(0,0,0,0.7), inset 0 0 30px rgba(var(--theme-accent-rgb), 0.05) !important; }
+
+/* Light Theme Variables & Overrides */
+[data-theme="light"] .soc2-badge { color: var(--theme-dark) !important; }
+[data-theme="light"] .soc2-bento-card { border-color: rgba(var(--theme-dark-rgb), 0.3) !important; }
+[data-theme="light"] .soc2-bento-card:hover { border-color: var(--theme-dark) !important; }
+[data-theme="light"] .soc2-service-card { border-color: rgba(var(--theme-dark-rgb), 0.3) !important; }
+[data-theme="light"] .soc2-service-card:hover { border-color: var(--theme-primary) !important; }
+[data-theme="light"] .soc2-pf-card { border-color: rgba(var(--theme-dark-rgb), 0.3) !important; }
+[data-theme="light"] .soc2-pf-card:hover { border-color: var(--theme-dark) !important; }
+[data-theme="light"] .dashboard-glass { border-color: rgba(var(--theme-dark-rgb), 0.3) !important; }

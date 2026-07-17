@@ -1,0 +1,41 @@
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.vedtam\.com [NC]
+RewriteRule ^ https://vedtam.com%{REQUEST_URI} [L,R=301]
+
+# Keep the top-level solutions and consulting pages on the newer root HTML files.
+RewriteRule ^(solutions|consulting)/$ /$1 [R=301,L,NC]
+RewriteRule ^(solutions|consulting)/index\.html$ /$1 [R=301,L,NC]
+RewriteRule ^(solutions|consulting)$ $1.html [L,NC]
+
+# Serve extensionless URLs from .html files (never rewrite PHP files)
+RewriteCond %{REQUEST_URI} !\.php [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Redirect direct .html requests to extensionless canonical URLs (never touch PHP or verify.html)
+RewriteCond %{REQUEST_URI} !\.php [NC]
+RewriteCond %{REQUEST_URI} !^/verify\.html [NC]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Custom 404 error page
+ErrorDocument 404 /404.html
+
+# Block direct access to pending subscription and OTP JSON data files for cybersecurity integrity
+<FilesMatch "^(pending-subscribers|pending-otps)\.json$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order Allow,Deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

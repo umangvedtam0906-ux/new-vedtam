@@ -1,0 +1,8 @@
+website_backup_*.zip
+*.unminified
+*.zip
+*.log
+__pycache__/
+*.pyc
+*.pyo
+.vscode/

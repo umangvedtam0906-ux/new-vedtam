@@ -1,0 +1,7 @@
+copy "C:\Users\Manu\.gemini\antigravity-ide\brain\229faa3e-a6cd-4d34-b755-fcb62ce17388\cybersecurity_banner_*.png" "c:\Users\Manu\Downloads\new-vedtam-main (7)\new-vedtam\images\solutions\cybersecurity_banner.png" /Y
+copy "C:\Users\Manu\.gemini\antigravity-ide\brain\229faa3e-a6cd-4d34-b755-fcb62ce17388\network_security_banner_*.png" "c:\Users\Manu\Downloads\new-vedtam-main (7)\new-vedtam\images\solutions\network_security_banner.png" /Y
+copy "C:\Users\Manu\.gemini\antigravity-ide\brain\229faa3e-a6cd-4d34-b755-fcb62ce17388\devops_banner_*.png" "c:\Users\Manu\Downloads\new-vedtam-main (7)\new-vedtam\images\solutions\devops_banner.png" /Y
+copy "C:\Users\Manu\.gemini\antigravity-ide\brain\229faa3e-a6cd-4d34-b755-fcb62ce17388\ot_security_banner_*.png" "c:\Users\Manu\Downloads\new-vedtam-main (7)\new-vedtam\images\solutions\ot_security_banner.png" /Y
+copy "C:\Users\Manu\.gemini\antigravity-ide\brain\229faa3e-a6cd-4d34-b755-fcb62ce17388\cloud_services_banner_*.png" "c:\Users\Manu\Downloads\new-vedtam-main (7)\new-vedtam\images\solutions\cloud_services_banner.png" /Y
+copy "C:\Users\Manu\.gemini\antigravity-ide\brain\229faa3e-a6cd-4d34-b755-fcb62ce17388\it_managed_banner_*.png" "c:\Users\Manu\Downloads\new-vedtam-main (7)\new-vedtam\images\solutions\it_managed_banner.png" /Y
+copy "C:\Users\Manu\.gemini\antigravity-ide\brain\229faa3e-a6cd-4d34-b755-fcb62ce17388\software_banner_*.png" "c:\Users\Manu\Downloads\new-vedtam-main (7)\new-vedtam\images\solutions\software_banner.png" /Y

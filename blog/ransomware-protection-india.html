@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TH898GVT');</script>
+<!-- End Google Tag Manager -->
+<link href="../Vedtam%20Logo%20favicon.png" rel="icon" type="image/png"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ransomware Protection for Indian Enterprises | Vedtam</title>
+<meta content="A comprehensive guide to protecting Indian enterprises from ransomware attacks — covering prevention, detection, backup strategy, and recovery planning." name="description"/>
+<link href="https://vedtam.com/blog/ransomware-protection-india" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="https://vedtam.com/blog/ransomware-protection-india" property="og:url"/>
+<meta content="Ransomware Protection: How Indian Enterprises Can Defend Themselves" property="og:title"/>
+<meta content="A comprehensive guide to protecting Indian enterprises from ransomware attacks — covering prevention, detection, backup strategy, and recovery planning." property="og:description"/>
+<meta content="https://www.vedtam.com/Vedtam%20Logo%20favicon.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Ransomware Protection: How Indian Enterprises Can Defend Themselves" name="twitter:title"/>
+<meta content="A comprehensive guide to protecting Indian enterprises from ransomware attacks — covering prevention, detection, backup strategy, and recovery planning." name="twitter:description"/>
+<meta content="https://www.vedtam.com/Vedtam%20Logo%20favicon.png" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+</noscript>
+<link href="../assets/css/vedtam.css?v=1.1" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Vedtam Tech Solutions","url":"https://www.vedtam.com","logo":"https://www.vedtam.com/Vedtam%20Logo%20favicon.png","description":"AI-powered cybersecurity, IT managed services, cloud solutions, and compliance consulting.","address":{"@type":"PostalAddress","addressLocality":"Noida","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-70651-11015","contactType":"sales","email":"info@vedtam.com"},"sameAs":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Vedtam Tech Solutions","url":"https://www.vedtam.com","potentialAction":{"@type":"SearchAction","target":"https://www.vedtam.com/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- Theme init: runs before paint to prevent flash -->
+<script>
+    (function () {
+      var t = localStorage.getItem('vt-theme');
+      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+<style>
+    /* Single Blog Post Specific Styles */
+    .article-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem;
+      background: rgba(10, 15, 25, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      color: #fff;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      position: relative;
+      z-index: 2;
+    }
+    
+    [data-theme="light"] .article-container {
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+      color: #1e293b;
+    }
+
+    .article-container h2 {
+      font-size: 2.2rem;
+      color: #00a3d9;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+
+    [data-theme="light"] .article-container h2 {
+      color: #2563eb;
+    }
+
+    .article-container h3 {
+      font-size: 1.6rem;
+      color: #fff;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    [data-theme="light"] .article-container h3 {
+      color: #0f172a;
+    }
+
+    .article-container p {
+      margin-bottom: 1.5rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    [data-theme="light"] .article-container p {
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    .article-container ul {
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+      list-style-type: none;
+    }
+
+    .article-container ul li {
+      margin-bottom: 0.8rem;
+      position: relative;
+    }
+
+    .article-container ul li::before {
+      content: '\2713';
+      position: absolute;
+      left: -1.5rem;
+      color: #00a3d9;
+      font-weight: bold;
+    }
+
+    [data-theme="light"] .article-container ul li::before {
+      color: #2563eb;
+    }
+
+    .article-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: rgba(0,0,0,0.2);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    [data-theme="light"] .article-table {
+      background: #f8fafc;
+    }
+
+    .article-table th, .article-table td {
+      padding: 1.2rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    [data-theme="light"] .article-table th, [data-theme="light"] .article-table td {
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .article-table th {
+      background: rgba(0, 163, 217, 0.1);
+      color: #00a3d9;
+      font-weight: 700;
+    }
+
+    [data-theme="light"] .article-table th {
+      background: rgba(37, 99, 235, 0.1);
+      color: #2563eb;
+    }
+
+    .article-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .article-meta-info {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+<meta name="google-site-verification" content="google6d4aaa76f30c4585" />
+<script src="../assets/js/google-integrations.js"></script>
+  <style id="mega-menu-desktop-zoom-fix">
+    /* Mega Menu Zoom Overflow Fix for all screen sizes */
+    .mega-menu {
+      max-height: calc(100vh - 80px) !important;
+      overflow-y: auto !important;
+    }
+    .mega-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+    .mega-menu::-webkit-scrollbar-thumb {
+      background-color: rgba(6, 182, 212, 0.5);
+      border-radius: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH898GVT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="navbar" id="navbar">
+<div class="nav-inner">
+<a aria-label="Vedtam Tech Solutions" class="nav-logo" href="../index.html">
+<img alt="Vedtam Tech Solutions logo" data-logo-switcher="" data-logos="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png, website-logo/VEDTAM%20TECH%20SOLUTIONS%20hn.png" decoding="async" src="../website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png"/>
+</a>
+<ul class="nav-links">
+<li><a href="../cert-advisory.html">CERT-In Advisories</a></li>
+<li><a class="active" href="../index.html">Home</a></li>
+<li>
+<a href="../about-us.html">Company <svg fill="none" viewbox="0 0 10 6">
+<path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg></a>
+<div class="mega-menu">
+<div class="container">
+<div class="mega-inner">
+<div class="mega-col mega-info">
+<h3>About Vedtam</h3>
+<h2>Who We Are</h2>
+<p>A trusted cybersecurity and IT services partner.</p>
+<a class="mega-cta" href="../about-us.html">Read Our Story &rarr;</a>
+</div>
+<div class="mega-col mega-links">
+<h3>Company Pages</h3>
+<div class="mega-links-grid">
+<a href="../about-us.html">About Us</a>
+<a href="../why-us.html">Why Us</a>
+<a href="../client-success-portfolio.html">Client Success &amp; Portfolio</a>
+<a href="../blog.html">Blog</a>
+<a href="../careers.html">Careers</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="../solutions.html">Solutions <svg fill="none" viewbox="0 0 10 6">
+<path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg></a>
+<div class="mega-menu">
+<div class="container">
+<div class="mega-inner">
+<div class="mega-col mega-info">
+<h3>Our Core Solutions</h3>
+<h2>Smarter AI. <br/>Stronger Security.</h2>
+<p>Scaling businesses with AI-driven cybersecurity and optimized IT infrastructure.</p>
+<a class="mega-cta" href="../solutions.html">View All Services &rarr;</a>
+</div>
+<div class="mega-col mega-links">
+<h3>Service Domains</h3>
+<div class="mega-links-grid">
+<a href="../solutions/cybersecurity-services.html">Cybersecurity Services</a>
+<a href="../solutions/network-security-solutions.html">Network Security Solutions</a>
+<a href="../solutions/devops-solutions.html">DevOps Solutions</a>
+<a href="../solutions/ot-security-services.html">OT Security Services</a>
+<a href="../solutions/cloud-services.html">Cloud Services</a>
+<a href="../solutions/it-managed-services.html">IT Managed Services</a>
+<a href="../solutions/software-services.html">Software Solutions</a>
+</div>
+</div>
+<div class="mega-col mega-feature">
+<div class="mega-feature-card">
+<img alt="Cyber Security Featured" decoding="async" loading="lazy" src="../services_images/service_cyber_security_1774586735180.png"/>
+<div class="mega-feature-overlay">
+<h4>Security Excellence</h4>
+<p>Protect your assets with Vedtam AI.</p>
+<a class="btn btn-primary btn-sm" href="../solutions/cybersecurity-services.html">Explore
+                        Solutions</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="../consulting.html">Consulting <svg fill="none" viewbox="0 0 10 6">
+<path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg></a>
+<div class="mega-menu">
+<div class="container">
+<div class="mega-inner">
+<div class="mega-col mega-info">
+<h3>Strategic Advisory</h3>
+<h2>Governance. <br/>Risk. Compliance.</h2>
+<p>Guided pathways to compliance, risk management, and governance excellence.</p>
+<a class="mega-cta" href="../contact-us.html">Talk to an Expert &rarr;</a>
+</div>
+<div class="mega-col mega-links">
+<h3>Compliance Frameworks</h3>
+<div class="mega-links-grid">
+<a href="../consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a>
+<a href="../consulting/virtual-ciso-services.html">Virtual CISO Services</a>
+<a href="../consulting/iso-consulting-services.html">ISO Consultancy Services</a>
+<a href="../consulting/qms-consulting-services.html">QMS Consulting Services</a>
+<a href="../consulting/hipaa-consulting-services.html">HIPAA Compliance</a>
+<a href="../consulting/soc2-consulting-services.html">SOC 2 Consulting</a>
+<a href="../consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a>
+<a href="../consulting/gdpr-consulting-services.html">GDPR Consulting</a>
+<a href="../consulting/network-security-consulting-services.html">Network Security Consulting</a>
+<a href="../consulting/network-security-audit-services.html">Network Security Audit</a>
+</div>
+</div>
+<div class="mega-col mega-feature">
+<div class="mega-feature-card">
+<img alt="Consulting Featured" decoding="async" loading="lazy" src="../services_images/service_it_managed_1774586782051.png"/>
+<div class="mega-feature-overlay">
+<h4>Compliance Ready</h4>
+<p>ISO, GDPR, HIPAA paths simplified.</p>
+<a class="btn btn-primary btn-sm" href="../consulting.html">View Roadmap</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li><a href="../contact-us.html">Contact Us</a></li>
+</ul>
+<div class="nav-cta">
+<!-- Theme Toggle -->
+<button aria-label="Toggle light/dark theme" class="theme-toggle-btn" id="themeToggleBtn" title="Toggle theme">
+<!-- Moon icon (shown in dark mode) -->
+<svg class="theme-icon-moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<!-- Sun icon (shown in light mode) -->
+<svg class="theme-icon-sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+<a class="btn btn-primary" href="../contact-us.html">Free Network Assessment</a>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open mobile navigation" class="nav-hamburger" id="mobileNavToggleBtn" onclick="toggleMobileNav()" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+<a href="../cert-advisory.html">CERT-In Advisories</a>
+<a class="active" href="../index.html">Home</a>
+<div class="m-dropdown">
+<button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+<span>Company</span>
+<svg fill="none" height="12" viewbox="0 0 10 6" width="12">
+<path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</button>
+<div class="m-dropdown-content">
+<a href="../about-us.html">About Us</a>
+<a href="../why-us.html">Why Us</a>
+<a href="../client-success-portfolio.html">Client Success &amp; Portfolio</a>
+<a href="../blog.html">Blog</a>
+<a href="../careers.html">Careers</a>
+</div>
+</div>
+<div class="m-dropdown">
+<button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+<span>Solutions</span>
+<svg fill="none" height="12" viewbox="0 0 10 6" width="12">
+<path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</button>
+<div class="m-dropdown-content">
+<a href="../solutions/cybersecurity-services.html">Cybersecurity Services</a>
+<a href="../solutions/network-security-solutions.html">Network Security Solutions</a>
+<a href="../solutions/devops-solutions.html">DevOps Solutions</a>
+<a href="../solutions/ot-security-services.html">OT Security Services</a>
+<a href="../solutions/cloud-services.html">Cloud Services</a>
+<a href="../solutions/it-managed-services.html">IT Managed Services</a>
+<a href="../solutions/software-services.html">Software Solutions</a>
+</div>
+</div>
+<div class="m-dropdown">
+<button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+<span>Consulting</span>
+<svg fill="none" height="12" viewbox="0 0 10 6" width="12">
+<path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</button>
+<div class="m-dropdown-content">
+<a href="../consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a>
+<a href="../consulting/virtual-ciso-services.html">Virtual CISO Services</a>
+<a href="../consulting/iso-consulting-services.html">ISO Consultancy Services</a>
+<a href="../consulting/qms-consulting-services.html">QMS Consulting Services</a>
+<a href="../consulting/hipaa-consulting-services.html">HIPAA Compliance</a>
+<a href="../consulting/soc2-consulting-services.html">SOC 2 Consulting</a>
+<a href="../consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a>
+<a href="../consulting/gdpr-consulting-services.html">GDPR Consulting</a>
+<a href="../consulting/network-security-consulting-services.html">Network Security Consulting</a>
+<a href="../consulting/network-security-audit-services.html">Network Security Audit</a>
+</div>
+</div>
+<a href="../contact-us.html">Contact Us</a>
+</div>
+<section class="hero" style="min-height: 60vh;">
+<div aria-hidden="true" class="hero-media">
+<div class="hero-interactive-bg" id="heroInteractiveBg">
+<span class="hero-aurora orb-a"></span>
+<span class="hero-aurora orb-b"></span>
+<span class="hero-aurora orb-c"></span>
+<span class="hero-spotlight"></span>
+</div>
+</div>
+<div class="hero-bg"></div>
+<div class="hero-grid"></div>
+<div class="hero-glow"></div>
+<div class="container hero-shell" style="padding-top: 150px; text-align: center; justify-content: center; align-items: center;">
+<div class="hero-content" style="max-width: 900px;">
+<div class="hero-badge reveal">Cybersecurity</div>
+<h1 class="hero-title reveal" style="margin-bottom: 1rem; font-size: 3.5rem;">Ransomware Protection: <span class="gradient-text">How Indian Enterprises Can Defend Themselves</span></h1>
+<div class="article-meta-info reveal">
+<span>By Vedtam Tech Solutions</span>
+<span></span>
+<span>6 Min Read</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Content Section -->
+<section class="tm-section" style="padding: 0 0 6rem 0; margin-top: -80px;">
+<div class="container">
+<div class="article-container reveal">
+<div style="margin-bottom: 2rem; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+<img src="../blog Image/Ransomware Protection Strategy.png" alt="Ransomware Protection" style="width: 100%; height: auto; display: block;" />
+</div>
+<p>Ransomware attacks against Indian enterprises have increased by over 200% in the past three years. Manufacturing plants have been shut down, hospitals have lost access to patient records, and financial institutions have faced operational crises — all because of ransomware. The average ransom demand against Indian enterprises now exceeds ₹2 crore, with recovery costs often 5–10 times the ransom itself.</p>
+<p>This guide provides a practical, comprehensive ransomware protection framework for Indian enterprises — covering the prevention controls, backup strategies, and recovery capabilities that collectively create ransomware resilience.</p>
+
+<h2>How Modern Ransomware Works</h2>
+<p>Understanding the attack lifecycle is essential for building effective defences. Modern ransomware attacks follow a predictable pattern called the ransomware kill chain:</p>
+<table class="article-table">
+  <thead>
+    <tr>
+      <th>Stage</th>
+      <th>Description</th>
+      <th>Defender's Window</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Initial Access</strong></td>
+      <td>Attacker gains entry through phishing, RDP brute force, or VPN vulnerability</td>
+      <td>Prevention — strongest opportunity to stop the attack</td>
+    </tr>
+    <tr>
+      <td><strong>Persistence</strong></td>
+      <td>Attacker installs backdoor to maintain access</td>
+      <td>Detection — SIEM and EDR can identify unusual activity</td>
+    </tr>
+    <tr>
+      <td><strong>Lateral Movement</strong></td>
+      <td>Attacker moves across the network to find valuable targets</td>
+      <td>Detection and Containment — network segmentation limits spread</td>
+    </tr>
+    <tr>
+      <td><strong>Privilege Escalation</strong></td>
+      <td>Attacker obtains administrative credentials</td>
+      <td>Detection — PAM and behavioural analytics can identify this</td>
+    </tr>
+    <tr>
+      <td><strong>Exfiltration</strong></td>
+      <td>Attacker steals data before encryption (double extortion)</td>
+      <td>Detection — DLP and network monitoring can identify large data transfers</td>
+    </tr>
+    <tr>
+      <td><strong>Encryption</strong></td>
+      <td>Attacker deploys ransomware payload and encrypts files</td>
+      <td>Recovery — backups determine whether payment is necessary</td>
+    </tr>
+    <tr>
+      <td><strong>Extortion</strong></td>
+      <td>Ransom demand with threat to publish stolen data</td>
+      <td>Recovery — the quality of backups and IR plan determines outcome</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Ransomware Prevention Controls</h2>
+
+<h3>1. Email Security</h3>
+<p>Since phishing is the most common ransomware delivery mechanism, email security is your first line of defence. Implement:</p>
+<ul style="margin-bottom: 2rem; padding-left: 1.5rem; color: rgba(255,255,255,0.85);">
+  <li>Advanced email filtering with sandboxing for attachment analysis</li>
+  <li>DMARC, DKIM, and SPF to prevent email spoofing</li>
+  <li>Anti-phishing AI that detects impersonation and malicious links</li>
+  <li>Attachment stripping for high-risk file types (.exe, .js, .vbs, .bat, .iso)</li>
+</ul>
+
+<h3>2. Vulnerability Management and Patching</h3>
+<p>Many ransomware attacks exploit known vulnerabilities in unpatched systems — particularly internet-facing services like VPN gateways, RDP, and web applications. Implement:</p>
+<ul style="margin-bottom: 2rem; padding-left: 1.5rem; color: rgba(255,255,255,0.85);">
+  <li>Monthly patching cadence for standard systems; 24-hour patching for critical vulnerabilities</li>
+  <li>Automated vulnerability scanning with prioritisation by exploitability and exposure</li>
+  <li>External attack surface management to discover exposed systems</li>
+  <li>Immediate patching of any vulnerability listed in CISA's Known Exploited Vulnerabilities catalogue</li>
+</ul>
+
+<h3>3. Multi-Factor Authentication</h3>
+<p>Credential theft is a primary initial access method. MFA on all externally accessible services — email, VPN, RDP, cloud portals, and administrative interfaces — eliminates a huge category of ransomware entry points.</p>
+
+<h3>4. Network Segmentation</h3>
+<p>Ransomware spreads laterally through flat networks. Micro-segmentation limits the blast radius by preventing malware from moving freely between network zones. Critical systems — production environments, backups, domain controllers — should be in isolated segments.</p>
+
+<h3>5. Endpoint Detection and Response (EDR)</h3>
+<p>EDR solutions use behavioural analysis to detect ransomware activity — rapid file encryption, shadow copy deletion, and unusual process behaviour — before the attack completes. EDR is essential because signature-based antivirus fails against modern ransomware variants.</p>
+
+<h2>The Backup Strategy That Saves You</h2>
+<p>If prevention fails, your backup strategy determines whether you pay the ransom. The 3-2-1-1-0 backup rule for ransomware resilience:</p>
+<ul style="margin-bottom: 2rem; padding-left: 1.5rem; color: rgba(255,255,255,0.85);">
+  <li><strong>3</strong> — Keep 3 copies of important data</li>
+  <li><strong>2</strong> — Store on 2 different media types</li>
+  <li><strong>1</strong> — Keep 1 copy offsite</li>
+  <li><strong>1</strong> — Keep 1 copy offline (air-gapped) — this is the critical ransomware-specific addition</li>
+  <li><strong>0</strong> — Zero errors on backup verification — test your restores regularly</li>
+</ul>
+<p>The most important element is the offline, air-gapped backup. Ransomware operators actively seek and encrypt backup systems. An offline backup that ransomware cannot reach is the difference between a recoverable incident and a catastrophic one.</p>
+<p>Backup testing is as important as backup creation. Organisations that discover their backups are corrupt or incomplete during a ransomware incident face the worst possible outcome — no usable backups and a ransom demand. Test backup restores quarterly.</p>
+
+<h2>Ransomware Response Plan</h2>
+<ul style="margin-bottom: 2rem; padding-left: 1.5rem; color: rgba(255,255,255,0.85);">
+  <li><strong>1. Isolate</strong> — Immediately disconnect affected systems from the network. Do not power them off — forensic evidence is preserved in memory.</li>
+  <li><strong>2. Assess Scope</strong> — Identify which systems are encrypted, which are clean, and how the attacker entered.</li>
+  <li><strong>3. Notify</strong> — Report to CERT-In within 6 hours as required. Notify management, legal, and PR teams.</li>
+  <li><strong>4. Engage Forensics</strong> — Engage your pre-retained forensics firm to investigate the attack and preserve evidence.</li>
+  <li><strong>5. Restore from Backups</strong> — Begin recovery from clean, verified backups. Rebuild affected systems from scratch if necessary.</li>
+  <li><strong>6. Eradicate</strong> — Ensure the attacker's persistence mechanisms are removed before reconnecting systems.</li>
+  <li><strong>7. Review</strong> — Conduct a post-incident review to understand how the attack succeeded and implement improvements.</li>
+</ul>
+
+<h2>Should You Pay the Ransom?</h2>
+<p>This is the most difficult question in ransomware response. The official advice from CERT-In, Interpol, and most cybersecurity authorities is: do not pay. Reasons include:</p>
+<ul style="margin-bottom: 2rem; padding-left: 1.5rem; color: rgba(255,255,255,0.85);">
+  <li>Payment does not guarantee data recovery — decryptors provided by attackers are often slow, incomplete, or broken</li>
+  <li>Payment funds further attacks against others</li>
+  <li>Payment marks you as a willing payer — many organisations that pay are attacked again within 12 months</li>
+  <li>Payment may violate sanctions — some ransomware groups are sanctioned entities</li>
+</ul>
+<p>However, if your backup strategy has failed and the encrypted data is business-critical and irreplaceable, the practical calculus may differ. Legal and law enforcement consultation before any payment decision is essential.</p>
+
+<div style="margin-top: 3rem; padding: 2rem; background: rgba(0, 163, 217, 0.1); border-left: 4px solid #00a3d9; border-radius: 4px;">
+  <h3 style="margin-top: 0;">How Vedtam Can Help</h3>
+  <p style="margin-bottom: 1rem;">Vedtam helps Indian enterprises build comprehensive ransomware defences — from EDR deployment and backup architecture to ransomware response planning and tabletop exercises. If your organisation has already suffered an attack, our incident response team provides emergency support.</p>
+  <a href="../solutions/cybersecurity-services.html" style="color: #00a3d9; font-weight: bold; text-decoration: none;">Explore Cybersecurity Services &rarr;</a>
+  <br><br>
+  <p style="margin-bottom: 0;">Assess your ransomware readiness today. Free consultation: <a href="../contact-us.html" style="color: #00a3d9; text-decoration: none;">vedtam.com/contact-us</a> | <a href="tel:+917065111015" style="color: #00a3d9; text-decoration: none;">+91 70651 11015</a></p>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<!-- Premium Creative Pre-Footer CTA -->
+<div class="footer-cta-box">
+<div class="footer-cta-content">
+<h3>Ready to Secure &amp; Scale Your Enterprise?</h3>
+<p>Partner with Vedtam for end-to-end multi-cloud transformation, advanced automated cybersecurity, DevOps
+            pipelines, and elite regulatory framework compliance.</p>
+</div>
+<div class="footer-cta-action">
+<a class="btn btn-primary footer-cta-btn" href="../contact-us.html">Schedule Strategic Consultation
+            <span><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
+</div>
+</div>
+<div class="footer-top">
+<div class="footer-brand">
+<a aria-label="Vedtam Tech Solutions" class="nav-logo footer-logo" href="../index.html">
+        <img alt="Vedtam Tech Solutions logo" decoding="async"
+          src="../website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png" 
+          data-logo-switcher 
+          data-logos="../website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png, ../website-logo/VEDTAM%20TECH%20SOLUTIONS%20hn.png" />
+      </a>
+<p class="footer-about-text">Vedtam Tech Solutions is a trusted global IT services and specialized compliance
+            partner. We deliver mission-critical managed IT, multi-cloud architectures, next-gen automated
+            cybersecurity, DevOps pipelines, and enterprise framework consulting (ISO 27001, SOC 2, HIPAA, DPDP Act).
+            Committed to relentless innovation and proactive threat management, we empower modern enterprises to scale
+            securely, maintain regulatory excellence, and achieve uncompromised business resilience.</p>
+<div class="footer-contact">
+<a href="#"><i class="fas fa-map-marker-alt fc-icon"></i> Location: Noida, Uttar Pradesh, India</a>
+<a href="mailto:info@vedtam.com"><i class="fas fa-envelope fc-icon"></i> Email: info@vedtam.com</a>
+<a href="tel:+917065111015"><i class="fas fa-phone fc-icon"></i> Phone: +91 70651 11015</a>
+</div>
+<div class="footer-social">
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/company/vedtam-tech-solutions/posts/?feedView=all">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M6.94 8.5a1.57 1.57 0 1 1 0-3.14 1.57 1.57 0 0 1 0 3.14ZM5.57 9.7h2.74V18H5.57V9.7Zm4.3 0h2.62v1.13h.04c.37-.7 1.25-1.44 2.57-1.44 2.75 0 3.26 1.8 3.26 4.15V18h-2.73v-3.95c0-.94-.02-2.15-1.31-2.15-1.31 0-1.5 1.02-1.5 2.08V18H9.88V9.7Z" fill="currentColor"></path>
+</svg>
+</a>
+<a aria-label="Facebook" class="social-link" href="https://www.facebook.com/vedtamtechsolutions">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.87.25-1.46 1.5-1.46h1.64V5a21.4 21.4 0 0 0-2.39-.12c-2.36 0-3.97 1.44-3.97 4.08V11H8v3h2.3v8h3.2Z" fill="currentColor"></path>
+</svg>
+</a>
+<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/vedtamtechsolutions/">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm-.2 1.9A3.65 3.65 0 0 0 3.9 7.55v8.9a3.65 3.65 0 0 0 3.65 3.65h8.9a3.65 3.65 0 0 0 3.65-3.65v-8.9a3.65 3.65 0 0 0-3.65-3.65h-8.9Zm9.35 1.45a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.9A3.1 3.1 0 1 0 12 15.1 3.1 3.1 0 0 0 12 8.9Z" fill="currentColor"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Our Services</h4>
+<ul>
+<li><a href="../solutions/cybersecurity-services.html">Cybersecurity Services</a></li>
+<li><a href="../solutions/network-security-solutions.html">Network Security</a></li>
+<li><a href="../solutions/devops-solutions.html">DevOps Solutions</a></li>
+<li><a href="../solutions/ot-security-services.html">OT Security Services</a></li>
+<li><a href="../solutions/cloud-services.html">Cloud Services</a></li>
+<li><a href="../solutions/it-managed-services.html">IT Managed Services</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Our Consulting</h4>
+<ul>
+<li><a href="../consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a></li>
+<li><a href="../consulting/virtual-ciso-services.html">Virtual CISO Services</a></li>
+<li><a href="../consulting/iso-consulting-services.html">ISO Consultancy Services</a></li>
+<li><a href="../consulting/qms-consulting-services.html">QMS Consulting Services</a></li>
+<li><a href="../consulting/hipaa-consulting-services.html">HIPAA Compliance</a></li>
+<li><a href="../consulting/soc2-consulting-services.html">SOC 2 Consulting</a></li>
+<li><a href="../consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a></li>
+<li><a href="../consulting/gdpr-consulting-services.html">GDPR Consulting</a></li>
+<li><a href="../consulting/network-security-consulting-services.html">Network Security Consulting</a></li>
+<li><a href="../consulting/network-security-audit-services.html">Network Security Audit</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Company</h4>
+<ul>
+<li><a href="../about-us.html">About Us</a></li>
+<li><a href="../solutions/software-services.html">Software Solutions</a></li>
+<li><a href="../solutions/cybersecurity-services.html">Industries We Serve</a></li>
+<li><a href="../blog.html">Blog</a></li>
+<li><a href="../careers.html">Careers</a></li>
+<li><a href="../contact-us.html">Contact Us</a></li>
+<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>2026  Vedtam Tech Solutions. All Rights Reserved.</p>
+<div class="footer-links">
+<a href="../privacy-policy.html">Privacy Policy</a>
+<a href="../terms-of-service.html">Terms of Service</a>
+          <a href="../sitemap.html">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script defer="" fetchpriority="low" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    window.VEDTAM_EMAILJS_CONFIG = {
+      publicKey: "6WOyjoeStKDv5NUBN",
+      serviceId: "service_138omqz",
+      templateId: "template_87oft6o"
+    };
+    // Set this to your live CERT-In JSON feed URL after hosting.
+    // Example: "https://www.vedtam.com/cert-data.json"
+    window.VEDTAM_CERT_DATA_URL = "cert-data.json";
+    // Optional fallback date shown only when feed is unavailable.
+    window.VEDTAM_CERT_PORTAL_UPDATED_AT = "2026-04-13";
+    window.VEDTAM_SHEET_WEBHOOK_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL";
+    window.VEDTAM_WHATSAPP_WEBHOOK_URL = "YOUR_WHATSAPP_WEBHOOK_URL";
+  </script>
+<script defer="" src="../assets/js/vedtam.js"></script>
+<script src="../assets/js/cookie-banner.js"></script>
+<div aria-label="Quick actions" class="floating-actions">
+    <a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/917065111015" rel="noopener"
+      target="_blank">
+      <svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+        </path>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <button aria-label="Scroll to top" class="scroll-top" id="scrollTop"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+        <path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2.5"></path>
+      </svg>
+    </button>
+  </div>
+</body>
+</html>

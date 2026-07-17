@@ -1,0 +1,5145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+  <link href="Vedtam%20Logo%20favicon.png" rel="icon" type="image/png" />
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="6d4aaa76f30c4585" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Vedtam Tech Solutions - Cybersecurity &amp; IT Services</title>
+  <meta
+    content="Vedtam Tech Solutions offers AI-powered cybersecurity, IT managed services, cloud solutions, DevOps, and compliance consulting. Trusted by 100+ businesses across India."
+    name="description" />
+  <link href="https://vedtam.com/" rel="canonical" />
+  <meta content="website" property="og:type" />
+  <meta content="https://vedtam.com/" property="og:url" />
+  <meta content="Vedtam Tech Solutions — AI-Powered Cybersecurity &amp; IT Services" property="og:title" />
+  <meta
+    content="Vedtam Tech Solutions offers AI-powered cybersecurity, IT managed services, cloud solutions, DevOps, and compliance consulting. Trusted by 100+ businesses across India."
+    property="og:description" />
+  <meta content="https://www.vedtam.com/Vedtam%20Logo%20favicon.png" property="og:image" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="Vedtam Tech Solutions — AI-Powered Cybersecurity &amp; IT Services" name="twitter:title" />
+  <meta
+    content="Vedtam Tech Solutions offers AI-powered cybersecurity, IT managed services, cloud solutions, DevOps, and compliance consulting. Trusted by 100+ businesses across India."
+    name="twitter:description" />
+  <meta content="https://www.vedtam.com/Vedtam%20Logo%20favicon.png" name="twitter:image" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    onload="this.onload=null;this.rel='stylesheet'" rel="preload" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet" />
+  </noscript>
+  <link as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    onload="this.onload=null;this.rel='stylesheet'" rel="preload" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </noscript>
+  <link href="assets/css/vedtam.css?v=1.5" rel="stylesheet" />
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Vedtam Tech Solutions","url":"https://www.vedtam.com","logo":"https://www.vedtam.com/Vedtam%20Logo%20favicon.png","description":"AI-powered cybersecurity, IT managed services, cloud solutions, and compliance consulting.","address":{"@type":"PostalAddress","addressLocality":"Noida","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-70651-11015","contactType":"sales","email":"info@vedtam.com"},"sameAs":[]}</script>
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Vedtam Tech Solutions","url":"https://www.vedtam.com","potentialAction":{"@type":"SearchAction","target":"https://www.vedtam.com/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+  <!-- Theme init: runs before paint to prevent flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('vt-theme');
+      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+
+
+  <!-- Fix CERT-In box spacing when zoomed out -->
+  <style id="cert-zoom-fix">
+    * {
+      list-style: none !important;
+      list-style-type: none !important;
+    }
+
+    .nav-links a svg {
+      transform: rotate(0deg);
+      transition: transform 0.3s ease;
+    }
+
+    /* Logo Switcher Animation */
+    .nav-logo {
+      position: relative !important;
+    }
+
+    .hero,
+    .hero-shell {
+      min-height: auto !important;
+      height: auto !important;
+    }
+
+    .hero-visual,
+    .hero-visual::before,
+    .hero-visual::after,
+    .hero-panel,
+    .cert-hero-panel,
+    .hero-panel::before,
+    .hero-panel::after,
+    .cert-hero-panel::before,
+    .cert-hero-panel::after {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+
+    .cert-hero-panel {
+      justify-content: flex-start !important;
+      gap: 1.5rem !important;
+    }
+
+    .hero-panel-card,
+    .cert-insight-card,
+    .cert-chart-card,
+    .cert-chart-shell,
+    .cert-chart-copy,
+    .cert-chart-wrap,
+    .hero-panel-card::before,
+    .hero-panel-card::after {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+
+    .cert-insight-card {
+      justify-content: flex-start !important;
+      gap: 1.2rem !important;
+      min-height: auto !important;
+      flex: 0 0 auto !important;
+    }
+
+    .cert-chart-card {
+      min-height: auto !important;
+      flex: 0 0 auto !important;
+    }
+
+    /* Hide dotted background grids */
+    .hero-grid,
+    .tm-dots,
+    .bg-pattern {
+      display: none !important;
+      background-image: none !important;
+    }
+
+    /* ── Mobile Hero ── */
+    @media (max-width: 1100px) {
+
+      /* Hero shell: single column flex */
+      .home-page .hero-shell {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2.5rem !important;
+      }
+
+      /* Pull dock out of absolute flow and push it to the END (after CERT-In panel) */
+      .home-page .hero-partner-dock {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        order: 3 !important;
+        margin-top: 0 !important;
+      }
+
+      /* Keep content and panel in their natural order */
+      .home-page .hero-content {
+        order: 1 !important;
+      }
+
+      .home-page .hero-visual {
+        order: 2 !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .home-page .hero {
+        padding-top: 72px !important;
+        padding-bottom: 40px !important;
+        min-height: auto !important;
+      }
+
+      .home-page .hero-shell {
+        gap: 1.5rem !important;
+      }
+
+      .home-page .hero-content,
+      .home-page .hero-visual {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+      }
+
+      .home-page .hero-badge {
+        margin-top: 0 !important;
+      }
+
+      /* Tighten CERT-In panel */
+      .home-page .cert-hero-panel {
+        gap: 1rem !important;
+      }
+
+      .home-page .cert-chart-card {
+        padding: 1.2rem !important;
+      }
+
+      /* Shrink partner logos */
+      .home-page .dock-logos img {
+        height: 78px !important;
+        max-width: 190px !important;
+        padding: 0.6rem 1rem !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .home-page .hero {
+        padding-top: 64px !important;
+        padding-bottom: 32px !important;
+      }
+
+      /* Proof strip wraps */
+      .home-page .hero-proof-strip {
+        flex-wrap: wrap !important;
+        gap: 0.5rem !important;
+      }
+
+      .home-page .hero-stats {
+        gap: 1.5rem !important;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-shell {
+        padding-top: 0px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .home-page .hero-visual {
+        min-height: auto !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .home-page .hero-panel.cert-hero-panel,
+      .home-page .cert-chart-card,
+      .home-page .cert-insight-card {
+        min-height: auto !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .home-page .cert-panel-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+      }
+
+      .home-page .cert-panel-title {
+        flex-wrap: wrap !important;
+      }
+
+      .home-page .cert-view-all-link {
+        white-space: normal !important;
+      }
+
+      .home-page .cert-chart-shell {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-areas:
+          "copy"
+          "chart" !important;
+        gap: 1rem !important;
+        justify-items: center !important;
+        align-items: start !important;
+      }
+
+      .home-page .cert-chart-copy,
+      .home-page .cert-chart-copy h3,
+      .home-page .cert-chart-copy p {
+        text-align: center !important;
+        max-width: none !important;
+      }
+
+      .home-page .cert-chart-wrap {
+        width: min(100%, 220px) !important;
+        min-width: 0 !important;
+        max-height: none !important;
+        margin-inline: auto !important;
+      }
+
+      .home-page .cert-insight-meta {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+      }
+
+      .home-page .cert-update-list {
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .home-page .cert-update-list li {
+        display: grid !important;
+        grid-template-columns: 20px minmax(0, 1fr) !important;
+        gap: 0.7rem !important;
+        align-items: start !important;
+      }
+
+      .home-page .cert-update-list li::before {
+        min-width: 20px !important;
+        padding-top: 0.2rem !important;
+      }
+
+      .home-page .cert-update-entry {
+        min-width: 0 !important;
+        width: 100% !important;
+        display: grid !important;
+        justify-items: start !important;
+        text-align: left !important;
+      }
+
+      .home-page .cert-insight-card,
+      .home-page .cert-insight-card p,
+      .home-page .cert-update-list,
+      .home-page .cert-update-list li,
+      .home-page .cert-update-entry,
+      .home-page .cert-update-title,
+      .home-page .cert-update-summary,
+      .home-page .cert-update-meta {
+        text-align: left !important;
+        justify-content: flex-start !important;
+        justify-items: start !important;
+        align-items: start !important;
+      }
+    }
+  </style>
+  <style id="testimonials-creative">
+    /* Creative Testimonials UI Enhancements */
+    #testimonials .tm-card-premium {
+      background: rgba(15, 23, 42, 0.9) !important;
+      /* Dark background so white text is visible */
+      backdrop-filter: blur(15px) !important;
+      -webkit-backdrop-filter: blur(15px) !important;
+      border: 1px solid rgba(0, 195, 255, 0.2) !important;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5) !important;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease !important;
+      position: relative !important;
+      overflow: hidden !important;
+      height: 100% !important;
+      min-height: clamp(26rem, 30vw, 33rem) !important;
+      display: flex !important;
+      align-items: stretch !important;
+      justify-content: stretch !important;
+      box-sizing: border-box !important;
+      padding: clamp(2rem, 2.5vw, 3rem) clamp(1.4rem, 2vw, 2rem) !important;
+    }
+
+    #testimonials .tm-card-premium::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: -100% !important;
+      width: 50% !important;
+      height: 100% !important;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent) !important;
+      transform: skewX(-20deg) !important;
+      transition: left 0.7s ease !important;
+    }
+
+    #testimonials .tm-card-premium:hover::before {
+      left: 200% !important;
+    }
+
+    #testimonials .tm-card-premium:hover {
+      transform: translateY(-10px) scale(1.02) !important;
+      box-shadow: 0 15px 40px rgba(0, 195, 255, 0.2), 0 0 20px rgba(0, 195, 255, 0.1) inset !important;
+      border: 1px solid rgba(0, 195, 255, 0.3) !important;
+    }
+
+    #testimonials .tm-text {
+      color: #ffffff !important;
+      font-weight: 100 !important;
+      line-height: 1.6 !important;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+      position: relative !important;
+      z-index: 1 !important;
+      font-size: clamp(1rem, 1vw + 0.7rem, 1.2rem) !important;
+      flex: 1 1 auto !important;
+      margin-bottom: 1.25rem !important;
+    }
+
+    #testimonials .tm-name {
+      color: #00c3ff !important;
+      font-weight: 700 !important;
+      letter-spacing: 1px !important;
+      text-transform: uppercase !important;
+      margin-top: 15px !important;
+      position: relative !important;
+      z-index: 1 !important;
+    }
+
+    #testimonials .tm-quote-left,
+    #testimonials .tm-quote-right {
+      color: rgba(255, 255, 255, 0.15) !important;
+      font-size: 4rem !important;
+      line-height: 0.8 !important;
+    }
+
+    #testimonials .section-heading,
+    #testimonials .section-label {
+      color: #ffffff !important;
+      text-shadow: 0 2px 10px rgba(0, 195, 255, 0.3) !important;
+    }
+
+    #testimonials .tm-carousel-track {
+      align-items: stretch !important;
+    }
+
+    #testimonials .tm-slide {
+      display: flex !important;
+      align-items: stretch !important;
+      height: auto !important;
+    }
+
+    #testimonials .tm-content {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      gap: 0.9rem !important;
+      min-height: 100% !important;
+      width: 100% !important;
+    }
+
+    #testimonials .tm-name {
+      width: 100% !important;
+      margin-top: auto !important;
+      padding-top: 1rem !important;
+    }
+
+    @media (max-width: 1024px) {
+      #testimonials .tm-card-premium {
+        min-height: 24rem !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #testimonials .tm-card-premium {
+        min-height: 22rem !important;
+        padding: 2rem 1.3rem !important;
+      }
+
+      #testimonials .tm-text {
+        font-size: 1rem !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #testimonials .tm-card-premium {
+        min-height: 20rem !important;
+        padding: 1.7rem 1.1rem !important;
+      }
+    }
+  </style>
+  <meta name="google-site-verification" content="google6d4aaa76f30c4585" />
+  <script defer src="assets/js/google-integrations.js"></script>
+  <style id="navbar-white-theme">
+    /* Navbar White Background */
+    .navbar {
+      background: #ffffff !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+      border-bottom: 1px solid rgba(8, 68, 129, 0.1) !important;
+    }
+
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.98) !important;
+      box-shadow: 0 8px 32px rgba(8, 68, 129, 0.12) !important;
+    }
+
+    /* Navbar Text Colors */
+    .nav-links>li>a {
+      color: #0c2340 !important;
+      text-shadow: none !important;
+      font-weight: 700 !important;
+    }
+
+    .nav-links>li>a:hover,
+    .nav-links>li>a.active {
+      color: #00A3D9 !important;
+      background: rgba(8, 68, 129, 0.06) !important;
+    }
+
+    /* Mobile hamburger icon */
+    .nav-hamburger span {
+      background: #0c2340 !important;
+    }
+
+    /* Theme toggle icon */
+    .theme-toggle-btn svg {
+      color: #0c2340 !important;
+    }
+  </style>
+  <style id="mega-menu-desktop-zoom-fix">
+    /* Mega Menu Zoom Overflow Fix for all screen sizes */
+    .mega-menu {
+      max-height: calc(100vh - 80px) !important;
+      overflow-y: auto !important;
+    }
+
+    .mega-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .mega-menu::-webkit-scrollbar-thumb {
+      background-color: rgba(6, 182, 212, 0.5);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body class="home-page">
+  <style>
+    /* Top Marquee Announcement Bar */
+    .top-marquee-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #050b14;
+      border-bottom: 1px solid rgba(0, 195, 255, 0.2);
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      z-index: 10000;
+    }
+
+    .top-marquee-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 20px;
+      background: rgba(0, 163, 217, 0.1);
+      border-right: 1px solid rgba(0, 195, 255, 0.15);
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .top-marquee-badge.right {
+      border-right: none;
+      border-left: 1px solid rgba(0, 195, 255, 0.15);
+    }
+
+    .marquee-pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #00c3ff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00c3ff;
+      animation: marqueePulse 2s infinite;
+    }
+
+    .marquee-content-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      mask-image: linear-gradient(90deg, transparent, black 40px, black calc(100% - 40px), transparent);
+      -webkit-mask-image: linear-gradient(90deg, transparent, black 40px, black calc(100% - 40px), transparent);
+    }
+
+    .marquee-text-container {
+      display: flex;
+      white-space: nowrap;
+      animation: marqueeScroll 25s linear infinite;
+    }
+
+    .marquee-text-container:hover {
+      animation-play-state: paused;
+    }
+
+    .marquee-text {
+      font-size: 13px;
+      color: #94a3b8;
+      padding-right: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .marquee-text strong {
+      color: #fff;
+      font-weight: 600;
+      margin: 0 5px;
+    }
+
+    .marquee-text a {
+      color: #00c3ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .marquee-text a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    @keyframes marqueeScroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes marqueePulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(0.8);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-marquee-badge.right {
+        display: none;
+      }
+
+      .marquee-text {
+        font-size: 12px;
+      }
+    }
+
+    /* Shift Navbar down to accommodate fixed marquee */
+    .navbar {
+      top: 40px !important;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-nav {
+        top: 110px !important;
+      }
+    }
+  </style>
+
+  <div class="top-marquee-bar">
+    <div class="top-marquee-badge">
+      <div class="marquee-pulse-dot"></div>
+      Our all Services
+    </div>
+    <div class="marquee-content-wrapper">
+      <div class="marquee-text-container">
+        <!-- Text 1 -->
+        <div class="marquee-text">
+          Vedtam Tech Solutions provides <strong><a href="solutions/software-services.html">AI Software Solutions</a>,
+            <a href="solutions/cybersecurity-services.html">Cyber Security</a>, <a
+              href="solutions/network-security-solutions.html">Network Security</a>, <a
+              href="solutions/devops-solutions.html">DevOps</a>, <a href="solutions/it-managed-services.html">IT Managed
+              Services</a>, <a href="solutions/cloud-services.html">Cloud Services</a>, <a
+              href="consulting/dpdp-act-consulting-services.html">DPDP Act</a>, <a
+              href="consulting/gdpr-consulting-services.html">GDPR</a>, <a
+              href="consulting/hipaa-consulting-services.html">HIPAA</a>, <a
+              href="consulting/iso-consulting-services.html">ISO</a>, <a
+              href="consulting/network-security-audit-services.html">Network Security Audit</a>, <a
+              href="consulting/network-security-consulting-services.html">Network Security Consulting</a>, <a
+              href="consulting/pci-dss-consulting-services.html">PCI DSS</a>, <a
+              href="consulting/qms-consulting-services.html">QMS</a>, <a
+              href="consulting/soc2-consulting-services.html">SOC 2</a>, and <a
+              href="consulting/virtual-ciso-services.html">Virtual CISO (vCISO) Consulting</a>.</strong> For Enterprise
+          IT &amp; Security services, reach out to us:&nbsp;<a href="mailto:info@vedtam.com">info@vedtam.com</a>
+        </div>
+        <!-- Text 2 (Duplicate for seamless infinite scroll) -->
+        <div class="marquee-text">
+          Vedtam Tech Solutions provides <strong><a href="solutions/software-services.html">AI Software Solutions</a>,
+            <a href="solutions/cybersecurity-services.html">Cyber Security</a>, <a
+              href="solutions/network-security-solutions.html">Network Security</a>, <a
+              href="solutions/devops-solutions.html">DevOps</a>, <a href="solutions/it-managed-services.html">IT Managed
+              Services</a>, <a href="solutions/cloud-services.html">Cloud Services</a>, <a
+              href="consulting/dpdp-act-consulting-services.html">DPDP Act</a>, <a
+              href="consulting/gdpr-consulting-services.html">GDPR</a>, <a
+              href="consulting/hipaa-consulting-services.html">HIPAA</a>, <a
+              href="consulting/iso-consulting-services.html">ISO</a>, <a
+              href="consulting/network-security-audit-services.html">Network Security Audit</a>, <a
+              href="consulting/network-security-consulting-services.html">Network Security Consulting</a>, <a
+              href="consulting/pci-dss-consulting-services.html">PCI DSS</a>, <a
+              href="consulting/qms-consulting-services.html">QMS</a>, <a
+              href="consulting/soc2-consulting-services.html">SOC 2</a>, and <a
+              href="consulting/virtual-ciso-services.html">Virtual CISO (vCISO) Consulting</a>.</strong> For Enterprise
+          IT &amp; Security services, reach out to us:&nbsp;<a href="mailto:info@vedtam.com">info@vedtam.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="top-marquee-badge right">
+      Secure &amp; Scalable
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a aria-label="Vedtam Tech Solutions" class="nav-logo" href="index.html">
+        <img alt="Vedtam Tech Solutions logo" decoding="async" fetchpriority="high"
+          src="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png" data-logo-switcher data-logo-switch-interval="1000"
+          data-logos="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png, website-logo/VEDTAM%20TECH%20SOLUTIONS%20hn.png" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="cert-advisory.html">CERT-In Advisories</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li>
+          <a href="about-us.html">Company <svg fill="none" viewbox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="mega-inner">
+                <div class="mega-col mega-info">
+                  <h3>About Vedtam</h3>
+                  <h2>Who We Are</h2>
+                  <p>A trusted cybersecurity and IT services partner.</p>
+                  <a class="mega-cta" href="about-us.html">Read Our Story &rarr;</a>
+                </div>
+                <div class="mega-col mega-links">
+                  <h3>Company Pages</h3>
+                  <div class="mega-links-grid">
+                    <a href="about-us.html">About Us</a>
+                    <a href="why-us.html">Why Us</a>
+                    <a href="client-success-portfolio.html">Client Success &amp; Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="careers.html">Careers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="solutions.html">Solutions <svg fill="none" viewbox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="mega-inner">
+                <div class="mega-col mega-info">
+                  <h3>Our Core Solutions</h3>
+                  <h2>Smarter AI. <br />Stronger Security.</h2>
+                  <p>Scaling businesses with AI-driven cybersecurity and optimized IT infrastructure.</p>
+                  <a class="mega-cta" href="solutions.html">View All Services &rarr;</a>
+                </div>
+                <div class="mega-col mega-links">
+                  <h3>Service Domains</h3>
+                  <div class="mega-links-grid">
+                    <a href="solutions/cybersecurity-services.html">Cybersecurity Services</a>
+                    <a href="solutions/network-security-solutions.html">Network Security Solutions</a>
+                    <a href="solutions/devops-solutions.html">DevOps Solutions</a>
+                    <a href="solutions/ot-security-services.html">OT Security Services</a>
+                    <a href="solutions/cloud-services.html">Cloud Services</a>
+                    <a href="solutions/it-managed-services.html">IT Managed Services</a>
+                    <a href="solutions/software-services.html">Software Solutions</a>
+                  </div>
+                </div>
+                <div class="mega-col mega-feature">
+                  <div class="mega-feature-card">
+                    <img alt="Cyber Security Featured" decoding="async" loading="lazy"
+                      src="services_images/service_cyber_security_1774586735180.png" />
+                    <div class="mega-feature-overlay">
+                      <h4>Security Excellence</h4>
+                      <p>Protect your assets with Vedtam AI.</p>
+                      <a class="btn btn-primary btn-sm" href="solutions/cybersecurity-services.html">Explore
+                        Solutions</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="consulting.html">Consulting <svg fill="none" viewbox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="mega-inner">
+                <div class="mega-col mega-info">
+                  <h3>Strategic Advisory</h3>
+                  <h2>Governance. <br />Risk. Compliance.</h2>
+                  <p>Guided pathways to compliance, risk management, and governance excellence.</p>
+                  <a class="mega-cta" href="contact-us.html">Talk to an Expert &rarr;</a>
+                </div>
+                <div class="mega-col mega-links">
+                  <h3>Compliance Frameworks</h3>
+                  <div class="mega-links-grid">
+                    <a href="consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a>
+                    <a href="consulting/virtual-ciso-services.html">Virtual CISO Services</a>
+                    <a href="consulting/iso-consulting-services.html">ISO Consultancy Services</a>
+                    <a href="consulting/qms-consulting-services.html">QMS Consulting Services</a>
+                    <a href="consulting/hipaa-consulting-services.html">HIPAA Compliance</a>
+                    <a href="consulting/soc2-consulting-services.html">SOC 2 Consulting</a>
+                    <a href="consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a>
+                    <a href="consulting/gdpr-consulting-services.html">GDPR Consulting</a>
+                    <a href="consulting/network-security-consulting-services.html">Network Security Consulting</a>
+                    <a href="consulting/network-security-audit-services.html">Network Security Audit</a>
+                  </div>
+                </div>
+                <div class="mega-col mega-feature">
+                  <div class="mega-feature-card">
+                    <img alt="Consulting Featured" decoding="async" loading="lazy"
+                      src="services_images/service_it_managed_1774586782051.png" />
+                    <div class="mega-feature-overlay">
+                      <h4>Compliance Ready</h4>
+                      <p>ISO, GDPR, HIPAA paths simplified.</p>
+                      <a class="btn btn-primary btn-sm" href="consulting.html">View Roadmap</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+      <div class="nav-cta">
+        <!-- Theme Toggle -->
+        <button aria-label="Toggle light/dark theme" class="theme-toggle-btn" id="themeToggleBtn" title="Toggle theme">
+          <!-- Moon icon (shown in dark mode) -->
+          <svg class="theme-icon-moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun icon (shown in light mode) -->
+          <svg class="theme-icon-sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" x2="12" y1="1" y2="3"></line>
+            <line x1="12" x2="12" y1="21" y2="23"></line>
+            <line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+            <line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+            <line x1="1" x2="3" y1="12" y2="12"></line>
+            <line x1="21" x2="23" y1="12" y2="12"></line>
+            <line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+            <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+          </svg>
+        </button>
+        <a class="btn btn-primary" href="contact-us.html">Free Network Assessment</a>
+        <button class="nav-hamburger" id="mobileNavToggleBtn" type="button" aria-label="Open mobile navigation"
+          aria-controls="mobileNav" aria-expanded="false" onclick="toggleMobileNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="cert-advisory.html">CERT-In Advisories</a>
+    <a class="active" href="index.html">Home</a>
+
+    <div class="m-dropdown">
+      <button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+        <span>Company</span>
+        <svg fill="none" viewbox="0 0 10 6" width="12" height="12">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <div class="m-dropdown-content">
+        <a href="about-us.html">About Us</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="client-success-portfolio.html">Client Success &amp; Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+      </div>
+    </div>
+
+    <div class="m-dropdown">
+      <button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+        <span>Solutions</span>
+        <svg fill="none" viewbox="0 0 10 6" width="12" height="12">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <div class="m-dropdown-content">
+        <a href="solutions/cybersecurity-services.html">Cybersecurity Services</a>
+        <a href="solutions/network-security-solutions.html">Network Security Solutions</a>
+        <a href="solutions/devops-solutions.html">DevOps Solutions</a>
+        <a href="solutions/ot-security-services.html">OT Security Services</a>
+        <a href="solutions/cloud-services.html">Cloud Services</a>
+        <a href="solutions/it-managed-services.html">IT Managed Services</a>
+        <a href="solutions/software-services.html">Software Solutions</a>
+      </div>
+    </div>
+
+    <div class="m-dropdown">
+      <button class="m-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+        <span>Consulting</span>
+        <svg fill="none" viewbox="0 0 10 6" width="12" height="12">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <div class="m-dropdown-content">
+        <a href="consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a>
+        <a href="consulting/virtual-ciso-services.html">Virtual CISO Services</a>
+        <a href="consulting/iso-consulting-services.html">ISO Consultancy Services</a>
+        <a href="consulting/qms-consulting-services.html">QMS Consulting Services</a>
+        <a href="consulting/hipaa-consulting-services.html">HIPAA Compliance</a>
+        <a href="consulting/soc2-consulting-services.html">SOC 2 Consulting</a>
+        <a href="consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a>
+        <a href="consulting/gdpr-consulting-services.html">GDPR Consulting</a>
+        <a href="consulting/network-security-consulting-services.html">Network Security Consulting</a>
+        <a href="consulting/network-security-audit-services.html">Network Security Audit</a>
+      </div>
+    </div>
+
+    <a href="contact-us.html">Contact Us</a>
+  </div>
+
+  <style id="premium-hero-slider-styles">
+    /* Scoop Society Hero Slider */
+    .scoop-hero-slider {
+      position: relative;
+      width: 100%;
+      height: 100dvh;
+      min-height: clamp(620px, 100dvh, 780px);
+      overflow: hidden;
+      font-family: 'Manrope', sans-serif;
+      z-index: 1;
+      background-color: #0f172a;
+      transition: background-color 1s ease-in-out;
+    }
+
+    .scoop-hero-slider::before,
+    .scoop-hero-slider::after {
+      content: '';
+      position: absolute;
+      width: 50vw;
+      height: 50vw;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: 0;
+      opacity: 0.2;
+      animation: scoopAurora 15s infinite alternate ease-in-out;
+      pointer-events: none;
+      transition: background 1.5s ease-in-out;
+    }
+
+    .scoop-hero-slider::before {
+      top: -10%;
+      left: -10%;
+      background: var(--aurora-1, #00c3ff);
+    }
+
+    .scoop-hero-slider::after {
+      bottom: -10%;
+      right: -10%;
+      background: var(--aurora-2, #ff007a);
+      animation-delay: -7.5s;
+    }
+
+    @keyframes scoopAurora {
+      0% {
+        transform: scale(1) translate(0, 0);
+      }
+
+      50% {
+        transform: scale(1.3) translate(10%, 10%);
+      }
+
+      100% {
+        transform: scale(0.8) translate(-10%, -10%);
+      }
+    }
+
+    .scoop-slides {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .scoop-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+      pointer-events: none;
+    }
+
+    .scoop-slide.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 5;
+      pointer-events: auto;
+    }
+
+    .scoop-bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      text-align: center;
+      transform: translate(-50%, -50%) scale(1.1);
+      font-size: 11vw;
+      font-weight: 900;
+      color: transparent;
+      -webkit-text-stroke: 2px rgba(255, 255, 255, 0.05);
+      white-space: nowrap;
+      z-index: 0;
+      letter-spacing: -2px;
+      pointer-events: none;
+      transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+      text-transform: uppercase;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    .scoop-slide.active .scoop-bg-text {
+      transform: translate(-50%, -50%) scale(1);
+      -webkit-text-stroke: 3px rgba(255, 255, 255, 0.15);
+      text-shadow: 0 0 80px rgba(255, 255, 255, 0.1);
+    }
+
+    .scoop-content-wrapper {
+      position: relative;
+      z-index: 4;
+      width: 100%;
+      max-width: 1380px;
+      height: 100%;
+      margin: 0 auto;
+      padding: max(1.25rem, calc(var(--vt-marquee-offset, 40px) + var(--vt-nav-height, 76px) - 4.4rem)) 5% 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: clamp(1.25rem, 2.4vw, 2.6rem);
+      box-sizing: border-box;
+    }
+
+    .scoop-text-col {
+      flex: 0 0 50%;
+      max-width: 650px;
+      transform: translateX(-50px);
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+    }
+
+    .scoop-slide.active .scoop-text-col {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .scoop-visual-col {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+
+    .scoop-center-object {
+      position: relative;
+      z-index: 3;
+      width: clamp(250px, 24vw, 350px);
+      height: clamp(250px, 24vw, 350px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5), inset 0 0 50px rgba(255, 255, 255, 0.3), 0 0 80px var(--slide-glow, rgba(0, 195, 255, 0.4));
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      transform: translateX(100px) rotate(-15deg) scale(0.8);
+      opacity: 0;
+      transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .scoop-center-object::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      right: -30px;
+      bottom: -30px;
+      border-radius: 50%;
+      border: 2px dashed rgba(255, 255, 255, 0.4);
+      animation: spinRing 20s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes spinRing {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .scoop-slide.active .scoop-center-object {
+      transform: translateX(0) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+
+    .scoop-center-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      opacity: 1;
+    }
+
+    .scoop-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      max-width: 100%;
+    }
+
+    .scoop-label,
+    .scoop-title,
+    .scoop-desc,
+    .scoop-btn {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .scoop-slide.active .scoop-label {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.2s;
+    }
+
+    .scoop-slide.active .scoop-title {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.3s;
+    }
+
+    .scoop-slide.active .scoop-desc {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.4s;
+    }
+
+    .scoop-slide.active .scoop-btn {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.5s;
+    }
+
+    .scoop-label {
+      display: inline-block;
+      padding: 10px 24px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff;
+      margin-bottom: 25px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.5s ease;
+    }
+
+    .scoop-title {
+      font-size: clamp(2.7rem, 4vw, 3.8rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.04;
+      margin-bottom: 18px;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .scoop-title span {
+      color: var(--aurora-1, #00c3ff);
+      transition: all 0.5s ease;
+    }
+
+    .scoop-desc {
+      font-size: clamp(0.96rem, 1.2vw, 1.08rem);
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0 0 28px;
+      line-height: 1.48;
+      max-width: 34rem;
+    }
+
+    .scoop-btn {
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .scoop-btn-primary {
+      background: linear-gradient(135deg, var(--aurora-1, #fff), var(--aurora-2, #ddd));
+      color: #fff;
+      box-shadow: none;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .scoop-btn-primary:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: none;
+    }
+
+    .scoop-nav {
+      position: absolute;
+      bottom: 10px;
+      left: 5%;
+      display: flex;
+      gap: 30px;
+      z-index: 10;
+      align-items: center;
+    }
+
+    .scoop-arrow {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+    }
+
+    .scoop-arrow:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.1);
+    }
+
+    .scoop-dots {
+      display: flex;
+      gap: 12px;
+    }
+
+    .scoop-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .scoop-dot.active {
+      background: #fff;
+      transform: scale(1.4);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+
+    .scoop-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .scoop-particle {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      animation: float 20s infinite linear;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-1000px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .scoop-title {
+        font-size: 2.7rem;
+      }
+
+      .scoop-center-object {
+        width: 230px;
+        height: 230px;
+      }
+
+      .scoop-center-icon {
+        left: 5%;
+        display: flex;
+        gap: 30px;
+        z-index: 10;
+        align-items: center;
+      }
+
+      .scoop-arrow {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+      }
+
+      .scoop-arrow:hover {
+        background: #fff;
+        color: #000;
+        transform: scale(1.1);
+      }
+
+      .scoop-dots {
+        display: flex;
+        gap: 12px;
+      }
+
+      .scoop-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .scoop-dot.active {
+        background: #fff;
+        transform: scale(1.4);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+      }
+
+      .scoop-particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .scoop-particle {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        animation: float 20s infinite linear;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 1;
+        }
+
+        90% {
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateY(-1000px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .scoop-title {
+          font-size: 2.7rem;
+        }
+
+        .scoop-center-object {
+          width: 230px;
+          height: 230px;
+        }
+
+        .scoop-center-icon {
+          font-size: 110px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .scoop-hero-slider {
+          min-height: 100dvh;
+          height: 100dvh;
+        }
+
+        .scoop-content-wrapper {
+          flex-direction: column;
+          padding: max(1.75rem, calc(var(--vt-marquee-offset, 40px) + var(--vt-nav-height, 60px) - 2rem)) 5% 80px;
+          justify-content: center;
+          gap: 15px;
+        }
+
+        .scoop-text-col {
+          max-width: 100%;
+          flex: 0 0 auto;
+        }
+
+        .scoop-content {
+          align-items: center;
+          text-align: center;
+        }
+
+        .scoop-visual-col {
+          justify-content: center;
+          width: 100%;
+          flex: 0 0 auto;
+        }
+
+        .scoop-center-object {
+          width: 190px;
+          height: 190px;
+        }
+
+        .scoop-slide.active .scoop-center-object {
+          transform: translateX(0) scale(1) !important;
+        }
+
+        .scoop-bg-text {
+          font-size: 16vw;
+          top: 35%;
+        }
+
+        .scoop-title {
+          font-size: 2.5rem;
+          margin-bottom: 15px;
+        }
+
+        .scoop-label {
+          font-size: 0.9rem;
+          padding: 6px 16px;
+          margin-bottom: 15px;
+        }
+
+        .scoop-desc {
+          font-size: 1.1rem;
+          margin-bottom: 25px;
+        }
+
+        .scoop-btn {
+          padding: 12px 30px;
+          font-size: 1rem;
+        }
+
+        .scoop-nav {
+          bottom: 12px;
+          left: 0;
+          width: 100%;
+          justify-content: center;
+          gap: 20px;
+        }
+
+        .scoop-dots {
+          gap: 8px;
+        }
+
+        .scoop-dot {
+          width: 7px;
+          height: 7px;
+        }
+
+        .scoop-dot.active {
+          transform: scale(1.3);
+        }
+
+        .scoop-arrow {
+          width: 45px;
+          height: 45px;
+          font-size: 16px;
+        }
+
+        .home-page .floating-actions {
+          bottom: 2.35rem !important;
+        }
+      }
+
+      @media (min-width: 1025px) and (max-height: 860px) {
+        .scoop-content-wrapper {
+          padding-top: max(1rem, calc(var(--vt-marquee-offset, 40px) + var(--vt-nav-height, 56px) - 4.8rem));
+          padding-bottom: 42px;
+        }
+
+        .scoop-label {
+          margin-bottom: 18px;
+          padding: 8px 20px;
+          font-size: 0.96rem;
+        }
+
+        .scoop-title {
+          font-size: clamp(2.7rem, 3.8vw, 3.6rem);
+          margin-bottom: 14px;
+        }
+
+        .scoop-desc {
+          font-size: 1rem;
+          margin-bottom: 22px;
+        }
+
+        .scoop-center-object {
+          width: clamp(210px, 20vw, 290px);
+          height: clamp(210px, 20vw, 290px);
+        }
+
+        .scoop-nav {
+          bottom: 8px;
+        }
+      }
+  </style>
+
+  <section class="scoop-hero-slider" id="scoopSliderSection">
+    <div class="scoop-particles" id="scoopParticles"></div>
+    <div class="scoop-slides" id="scoopSlides"></div>
+
+    <div class="scoop-nav">
+      <div class="scoop-arrow" id="scoopPrev"><i class="fas fa-chevron-left"></i></div>
+      <div class="scoop-dots" id="scoopDots"></div>
+      <div class="scoop-arrow" id="scoopNext"><i class="fas fa-chevron-right"></i></div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const slideData = [
+        { title: 'Cybersecurity Services', url: 'solutions/cybersecurity-services.html', icon: 'services_images/service_cyber_security_1774586735180.png', c1: '#00c3ff', c2: '#003cff', bg_text: 'CYBER', label: 'Security Solutions', h1_1: 'Next-Gen', h1_2: 'Cybersecurity', desc: 'Protect your digital assets with AI-driven threat detection and response.' },
+        { title: 'Network Security Solutions', url: 'solutions/network-security-solutions.html', icon: 'services_images/service_network_security_1774586750963.png', c1: '#ff007a', c2: '#7a00ff', bg_text: 'NETWORK', label: 'Security Solutions', h1_1: 'Enterprise', h1_2: 'Network Security', desc: 'Robust firewalls and intrusion prevention for your entire infrastructure.' },
+        { title: 'DevOps Solutions', url: 'solutions/devops-solutions.html', icon: 'services_images/service_devops_1774586766465.png', c1: '#00ff88', c2: '#0088ff', bg_text: 'DEVOPS', label: 'Infrastructure', h1_1: 'Agile', h1_2: 'DevOps Solutions', desc: 'Streamline your deployment pipelines with CI/CD automation.' },
+        { title: 'OT Security Services', url: 'solutions/ot-security-services.html', icon: 'services_images/service_ot_security_1774586821288.png', c1: '#ff5500', c2: '#ff0055', bg_text: 'OT SEC', label: 'Industrial Security', h1_1: 'Industrial', h1_2: 'OT Security', desc: 'Protect critical infrastructure and industrial control systems from cyber threats.' },
+        { title: 'Cloud Services', url: 'solutions/cloud-services.html', icon: 'services_images/service_cloud_1774586800180.png', c1: '#00ffff', c2: '#00ff00', bg_text: 'CLOUD', label: 'Cloud', h1_1: 'Scalable', h1_2: 'Cloud Services', desc: 'Design and deploy high-performance environments on AWS, Azure, and Google Cloud.' },
+        { title: 'IT Managed Services', url: 'solutions/it-managed-services.html', icon: 'services_images/service_it_managed_1774586782051.png', c1: '#ff00ff', c2: '#5500ff', bg_text: 'MANAGED', label: 'Managed Services', h1_1: '24/7', h1_2: 'IT Management', desc: 'Optimize operations with round-the-clock infrastructure support.' },
+        { title: 'Software Solutions', url: 'solutions/software-services.html', icon: 'services_images/custom_app_dev.png', c1: '#ffd900', c2: '#ff5500', bg_text: 'SOFTWARE', label: 'Innovation', h1_1: 'Custom', h1_2: 'Software Solutions', desc: 'Application development powered by next-generation AI integrations.' },
+        { title: 'DPDP Act Compliance', url: 'consulting/dpdp-act-consulting-services.html', icon: 'card_logo/dpdp_consulting_hero.png', c1: '#00e5ff', c2: '#0055ff', bg_text: 'DPDP', label: 'Data Privacy', h1_1: 'India', h1_2: 'DPDP Act Ready', desc: 'Ensure your organization meets the latest Digital Personal Data Protection mandates.' },
+        { title: 'Virtual CISO Services', url: 'consulting/virtual-ciso-services.html', icon: 'card_logo/virtual_ciso_hero.png', c1: '#8800ff', c2: '#ff00aa', bg_text: 'vCISO', label: 'Strategic Advisory', h1_1: 'Expert', h1_2: 'Virtual CISO', desc: 'Align your technology and security strategy with business goals.' },
+        { title: 'ISO Consultancy Services', url: 'consulting/iso-consulting-services.html', icon: 'card_logo/iso_consulting_hero.png', c1: '#00ffaa', c2: '#0055ff', bg_text: 'ISO', label: 'Certifications', h1_1: 'Global', h1_2: 'ISO Standards', desc: 'Achieve ISO 27001, 9001 and other key standards with our proven roadmap.' },
+        { title: 'QMS Consulting Services', url: 'consulting/qms-consulting-services.html', icon: 'services_images/client_centric_bg.png', c1: '#ff3300', c2: '#ffaa00', bg_text: 'QUALITY', label: 'Quality', h1_1: 'Robust', h1_2: 'QMS Consulting', desc: 'Establish Quality Management Systems that drive continuous improvement.' },
+        { title: 'HIPAA Compliance', url: 'consulting/hipaa-consulting-services.html', icon: 'card_logo/hipaa_consulting_hero.png', c1: '#00ccff', c2: '#00ff66', bg_text: 'HIPAA', label: 'Healthcare Privacy', h1_1: 'Full', h1_2: 'HIPAA Compliance', desc: 'Secure patient data and ensure healthcare regulatory compliance effortlessly.' },
+        { title: 'SOC 2 Consulting', url: 'consulting/soc2-consulting-services.html', icon: 'consulting_images/soc2_consulting_hero.png', c1: '#5500ff', c2: '#00ccff', bg_text: 'SOC 2', label: 'Certifications', h1_1: 'Trust via', h1_2: 'SOC 2 Consulting', desc: 'Build trust with clients by demonstrating robust security and availability controls.' },
+        { title: 'PCI DSS Compliance', url: 'consulting/pci-dss-consulting-services.html', icon: 'card_logo/pci_dss_hero.png', c1: '#ff0055', c2: '#ffaa00', bg_text: 'PCI DSS', label: 'Payment Security', h1_1: 'Secure', h1_2: 'PCI DSS Compliance', desc: 'Protect cardholder data and achieve seamless payment security certification.' },
+        { title: 'GDPR Consulting', url: 'consulting/gdpr-consulting-services.html', icon: 'card_logo/gdpr_consulting_hero.png', c1: '#00ffcc', c2: '#0055ff', bg_text: 'GDPR', label: 'Data Privacy', h1_1: 'European', h1_2: 'GDPR Consulting', desc: 'Navigate the complexities of the General Data Protection Regulation.' },
+        { title: 'Network Security Consulting', url: 'consulting/network-security-consulting-services.html', icon: 'services_images/india_cyber_map.png', c1: '#aa00ff', c2: '#ff0055', bg_text: 'ADVISORY', label: 'Strategic Advisory', h1_1: 'Proactive', h1_2: 'Network Consulting', desc: 'Expert guidance to architect and fortify your enterprise networks.' },
+        { title: 'Network Security Audit', url: 'consulting/network-security-audit-services.html', icon: 'services_images/api_dev.png', c1: '#ff6600', c2: '#ff0000', bg_text: 'AUDIT', label: 'Assessment', h1_1: 'Rigorous', h1_2: 'Security Audits', desc: 'Comprehensive VAPT and risk assessments to uncover hidden vulnerabilities.' }
+      ];
+
+      const scoopSlides = document.getElementById('scoopSlides');
+      const scoopDots = document.getElementById('scoopDots');
+      const scoopSection = document.getElementById('scoopSliderSection');
+
+      if (!scoopSlides || !scoopDots) return;
+
+      let htmlStr = '';
+      let dotsStr = '';
+
+      slideData.forEach((slide, i) => {
+        const activeClass = i === 0 ? ' active' : '';
+        htmlStr += `
+          <div class="scoop-slide${activeClass}" data-c1="${slide.c1}" data-c2="${slide.c2}">
+            <div class="scoop-bg-text">${slide.bg_text}</div>
+            
+            <div class="scoop-content-wrapper">
+              <div class="scoop-text-col">
+                <div class="scoop-content">
+                  <div class="scoop-label">${slide.label}</div>
+                  <h1 class="scoop-title">${slide.h1_1} <br><span>${slide.h1_2}</span></h1>
+                  <p class="scoop-desc">${slide.desc}</p>
+                  <a href="${slide.url}" class="scoop-btn scoop-btn-primary">Explore Solution</a>
+                </div>
+              </div>
+
+              <div class="scoop-visual-col">
+                <div class="scoop-center-object">
+                  <img src="${slide.icon}" class="scoop-center-image" alt="${slide.title}" />
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        dotsStr += `<div class="scoop-dot${activeClass}" data-index="${i}"></div>`;
+      });
+
+      scoopSlides.innerHTML = htmlStr;
+      scoopDots.innerHTML = dotsStr;
+
+      // Add floating particles
+      const particlesContainer = document.getElementById('scoopParticles');
+      for (let p = 0; p < 20; p++) {
+        let particle = document.createElement('div');
+        particle.className = 'scoop-particle';
+        particle.style.width = Math.random() * 10 + 5 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + 100 + '%';
+        particle.style.animationDuration = Math.random() * 15 + 10 + 's';
+        particle.style.animationDelay = Math.random() * 10 + 's';
+        particlesContainer.appendChild(particle);
+      }
+
+      const slides = document.querySelectorAll('.scoop-slide');
+      const dots = document.querySelectorAll('.scoop-dot');
+      const prevBtn = document.getElementById('scoopPrev');
+      const nextBtn = document.getElementById('scoopNext');
+
+      let currentIndex = 0;
+      const totalSlides = slides.length;
+      let slideInterval;
+
+      if (slides[0]) {
+        scoopSection.style.setProperty('--aurora-1', slides[0].getAttribute('data-c1'));
+        scoopSection.style.setProperty('--aurora-2', slides[0].getAttribute('data-c2'));
+        scoopSection.style.setProperty('--slide-glow', slides[0].getAttribute('data-c1'));
+      }
+
+      function goToSlide(index) {
+        slides.forEach(s => s.classList.remove('active'));
+        dots.forEach(d => d.classList.remove('active'));
+
+        currentIndex = index;
+        if (currentIndex < 0) currentIndex = totalSlides - 1;
+        if (currentIndex >= totalSlides) currentIndex = 0;
+
+        slides[currentIndex].classList.add('active');
+        dots[currentIndex].classList.add('active');
+
+        scoopSection.style.setProperty('--aurora-1', slides[currentIndex].getAttribute('data-c1'));
+        scoopSection.style.setProperty('--aurora-2', slides[currentIndex].getAttribute('data-c2'));
+        scoopSection.style.setProperty('--slide-glow', slides[currentIndex].getAttribute('data-c1'));
+      }
+
+      function nextSlide() { goToSlide(currentIndex + 1); }
+      function prevSlide() { goToSlide(currentIndex - 1); }
+
+      if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetInterval(); });
+      if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetInterval(); });
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          goToSlide(index);
+          resetInterval();
+        });
+      });
+
+      function startInterval() {
+        slideInterval = setInterval(nextSlide, 7000);
+      }
+      function resetInterval() {
+        clearInterval(slideInterval);
+        startInterval();
+      }
+
+      startInterval();
+
+      // Mouse parallax for central object
+      if (scoopSection) {
+        scoopSection.addEventListener('mouseenter', () => clearInterval(slideInterval));
+        scoopSection.addEventListener('mouseleave', startInterval);
+
+        scoopSection.addEventListener('mousemove', (e) => {
+          if (window.innerWidth > 1024) {
+            const x = (e.clientX / window.innerWidth - 0.5) * 40;
+            const y = (e.clientY / window.innerHeight - 0.5) * 40;
+
+            const rotateX = (e.clientY / window.innerHeight - 0.5) * -20;
+            const rotateY = (e.clientX / window.innerWidth - 0.5) * 20;
+
+            const activeObject = scoopSection.querySelector('.scoop-slide.active .scoop-center-object');
+            const activeBgText = scoopSection.querySelector('.scoop-slide.active .scoop-bg-text');
+            if (activeObject) {
+              activeObject.style.transform = `translateX(0) scale(1) translate(${x}px, ${y}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+              activeObject.style.transition = 'transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            }
+            if (activeBgText) {
+              activeBgText.style.transform = `translate(-50%, -50%) scale(1) translate(${-x * 1.5}px, ${-y * 1.5}px)`;
+              activeBgText.style.transition = 'transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            }
+          }
+        });
+        scoopSection.addEventListener('mouseleave', () => {
+          const activeObject = scoopSection.querySelector('.scoop-slide.active .scoop-center-object');
+          const activeBgText = scoopSection.querySelector('.scoop-slide.active .scoop-bg-text');
+          if (activeObject) {
+            activeObject.style.transform = `translateX(0) rotate(0deg) scale(1)`;
+            activeObject.style.transition = 'transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+          }
+          if (activeBgText) {
+            activeBgText.style.transform = `translate(-50%, -50%) scale(1)`;
+            activeBgText.style.transition = 'transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+          }
+        });
+      }
+    });
+  </script>
+
+  <!-- Old Hero Section, now functioning as a secondary introduction -->
+  <section class="hero" style="min-height: auto; padding-top: 3rem; padding-bottom: 3rem; background: transparent;">
+    <div aria-hidden="true" class="hero-media">
+      <div class="hero-interactive-bg" id="heroInteractiveBg">
+        <span class="hero-aurora orb-a"></span>
+        <span class="hero-aurora orb-b"></span>
+        <span class="hero-aurora orb-c"></span>
+        <span class="hero-spotlight"></span>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-shell">
+        <!-- Creative Partner Dock -->
+        <style>
+          .hero-partner-dock {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            width: 50%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 0;
+            background: transparent;
+            z-index: 10;
+            transition: all 0.4s ease;
+          }
+
+          .hero-partner-dock:hover {
+            background: transparent;
+          }
+
+          .dock-label {
+            color: #00c3ff;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-right: 1rem;
+            border-right: none;
+            white-space: nowrap;
+            position: relative;
+            z-index: 2;
+          }
+
+          .dock-scroll-wrapper {
+            overflow: hidden;
+            width: 100%;
+            padding: 110px 0;
+            margin: -110px 0;
+            mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+          }
+
+          .dock-logos {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            width: max-content;
+            animation: scrollDock 25s linear infinite;
+            padding-right: 3rem;
+            perspective: 1200px;
+            transform-style: preserve-3d;
+            overflow: visible;
+          }
+
+          .hero-partner-dock:hover .dock-logos {
+            animation-play-state: paused;
+          }
+
+          @keyframes scrollDock {
+            0% {
+              transform: translateX(0);
+            }
+
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+
+          .dock-logos img {
+            display: block;
+            height: 96px;
+            max-width: 210px;
+            object-fit: contain;
+            filter: brightness(0) invert(1) opacity(0.85);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            transform-origin: center bottom;
+            background: rgba(255, 255, 255, 0);
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            transform-style: preserve-3d;
+            border: 1px solid transparent;
+            box-shadow: 0 0 0 rgba(0, 195, 255, 0);
+            position: relative;
+            z-index: 1;
+            will-change: transform, filter, box-shadow;
+          }
+
+          /* Special fix for Lenovo to prevent solid white block */
+          .dock-logos img[alt*="Lenovo" i] {
+            filter: grayscale(1) opacity(0.85) !important;
+          }
+
+          .dock-logos img:hover {
+            filter: brightness(0) invert(1) brightness(1.2) opacity(1) drop-shadow(0 0 8px rgba(0, 195, 255, 0.3));
+            transform: scale(1.15) translateY(-8px);
+            background: radial-gradient(circle at center, rgba(0, 195, 255, 0.08), rgba(0, 195, 255, 0.02) 62%, transparent 100%);
+            border: 1px solid rgba(0, 195, 255, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 12px rgba(0, 195, 255, 0.3);
+            z-index: 10;
+            position: relative;
+            animation: dockLogoGlow 2s ease-in-out infinite alternate;
+          }
+
+          .dock-logos img[alt*="Lenovo" i]:hover {
+            filter: grayscale(1) brightness(1.2) opacity(1) drop-shadow(0 0 8px rgba(0, 195, 255, 0.3)) !important;
+          }
+
+          @keyframes dockLogoGlow {
+            from {
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 8px rgba(0, 195, 255, 0.2);
+            }
+            to {
+              box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(0, 195, 255, 0.4);
+            }
+          }
+
+          /* Responsive adjustments */
+          @media (max-width: 1024px) {
+            .hero-partner-dock {
+              width: 100%;
+              border-radius: 20px;
+              flex-direction: column;
+              gap: 1.5rem;
+              padding: 1.5rem;
+            }
+
+            .dock-label {
+              border-right: none;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+              padding-right: 0;
+              padding-bottom: 0.5rem;
+            }
+
+            .dock-scroll-wrapper {
+              max-width: 100%;
+            }
+
+            .dock-logos {
+              gap: 2rem;
+            }
+
+            .dock-logos img {
+              height: 88px;
+              max-width: 210px;
+              padding: 0.65rem 1.15rem;
+            }
+          }
+
+          @media (max-width: 900px) {
+            .hero-partner-dock {
+              width: 100%;
+              padding: 0.5rem;
+            }
+
+            .dock-logos img {
+              height: 78px;
+              max-width: 190px;
+              padding: 0.6rem 1rem;
+            }
+          }
+        </style>
+
+        <div class="hero-partner-dock">
+          <div class="dock-label">Technology Partners</div>
+          <div class="dock-scroll-wrapper">
+            <div class="dock-logos">
+              <img alt="Microsoft" src="Vedtam%20Partners/Microsoft.png" />
+              <img alt="AWS" src="Vedtam%20Partners/aws.png" />
+              <img alt="Cisco" src="Vedtam%20Partners/cisco.png" />
+              <img alt="Fortinet" src="Vedtam%20Partners/fortinet.png" />
+              <img alt="Palo Alto" src="Vedtam%20Partners/paloalto.png" />
+              <img alt="Check Point" src="Vedtam%20Partners/checkpoint.png" />
+              <img alt="Sophos" src="Vedtam%20Partners/sophos.png" />
+              <img alt="Dell" src="Vedtam%20Partners/dell.png" />
+              <img alt="HP" src="Vedtam%20Partners/hp.png" />
+              <img alt="Lenovo" src="Vedtam%20Partners/lenovo.png" />
+              <img alt="VMware" src="Vedtam%20Partners/vmware.png" />
+              <img alt="Qualys" src="Vedtam%20Partners/qualys.png" />
+              <!-- Duplicate Set for Seamless Scroll -->
+              <img alt="Microsoft" src="Vedtam%20Partners/Microsoft.png" />
+              <img alt="AWS" src="Vedtam%20Partners/aws.png" />
+              <img alt="Cisco" src="Vedtam%20Partners/cisco.png" />
+              <img alt="Fortinet" src="Vedtam%20Partners/fortinet.png" />
+              <img alt="Palo Alto" src="Vedtam%20Partners/paloalto.png" />
+              <img alt="Check Point" src="Vedtam%20Partners/checkpoint.png" />
+              <img alt="Sophos" src="Vedtam%20Partners/sophos.png" />
+              <img alt="Dell" src="Vedtam%20Partners/dell.png" />
+              <img alt="HP" src="Vedtam%20Partners/hp.png" />
+              <img alt="Lenovo" src="Vedtam%20Partners/lenovo.png" />
+              <img alt="VMware" src="Vedtam%20Partners/vmware.png" />
+              <img alt="Qualys" src="Vedtam%20Partners/qualys.png" />
+            </div>
+          </div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="cert-live-dot" style="margin-right:0"></span>
+            AI-First Cybersecurity &amp; IT Partner
+          </div>
+          <h1 class="hero-title">
+            AI-Powered Cybersecurity &amp;
+            <span class="line2">IT Solutions</span>
+          </h1>
+          <p class="hero-sub">We help businesses secure, automate, and scale using AI-driven cybersecurity, cloud, and
+            compliance solutions.</p>
+          <div class="hero-proof-strip">
+            <div class="hero-proof-item"><i class="fas fa-shield-alt"></i> AI-based threat detection</div>
+            <div class="hero-proof-item"><i class="fas fa-chart-line"></i> Predictive IT monitoring</div>
+            <div class="hero-proof-item"><i class="fas fa-check-circle"></i> Automated compliance</div>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Book Free Consultation</a>
+            <a class="btn btn-outline" href="solutions.html">Explore Solutions</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hstat">
+              <div class="hstat-num">100<span>+</span></div>
+              <div class="hstat-label">Deployments</div>
+            </div>
+            <div class="hstat">
+              <div class="hstat-num">8<span>+</span></div>
+              <div class="hstat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal-right">
+          <div class="hero-panel cert-hero-panel">
+            <a class="btn btn-primary cert-subscribe-btn" href="#certSubscribeModal" onclick="openCertModal()">
+              <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewbox="0 0 24 24" width="20">
+                <path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path>
+              </svg>
+              Subscribe to CERT-In Advisories
+            </a>
+            <div class="hero-panel-card cert-chart-card">
+              <div class="cert-panel-header">
+                <div class="cert-panel-title">
+                  <span class="cert-live-badge">
+                    <span class="cert-live-dot"></span>LIVE
+                  </span>
+                  <span class="hero-panel-label">Cert-In Advisory Feed</span>
+                  <span id="lastSyncTime"
+                    style="font-size: 0.7rem; color: rgba(255,255,255,0.4); margin-left: 10px;"></span>
+                </div>
+                <a class="cert-view-all-link" href="cert-advisory.html">View All →</a>
+              </div>
+              <div class="cert-chart-shell">
+                <div class="cert-chart-copy">
+                  <h3>Security advisory pulse for active business environments.</h3>
+                  <p>Real-time breakdown across critical, high, medium &amp; low-priority issues.</p>
+                </div>
+                <div class="cert-chart-wrap">
+                  <canvas aria-label="Security advisory severity chart" id="chart"></canvas>
+                  <div class="chart-center">
+                    <strong id="total">0</strong>
+                    <span>Alerts</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-panel-card cert-insight-card"
+              style="width: 100%; margin-top: 1rem; box-sizing: border-box;">
+              <div class="cert-insight-meta">
+                <span class="hero-mini-label">CERT-In Portal Updated</span>
+                <strong id="latestDate">Updating...</strong>
+              </div>
+              <p id="latestSummary">Pulling the newest security notifications from the current dataset.</p>
+              <ol class="cert-update-list" id="latestItems">
+                <li>Loading current CERT-In advisories...</li>
+              </ol>
+              <a class="cert-more-link" href="cert-advisory.html">(Click here for more updates)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CERT-In Subscribe Modal -->
+  <div aria-labelledby="certModalTitle" aria-modal="true" class="cert-modal-overlay" id="certSubscribeModal"
+    role="dialog" style="display:none">
+    <div class="cert-modal-content">
+      <button aria-label="Close" class="cert-modal-close" onclick="closeCertModal()">&times;</button>
+      <div aria-hidden="true" class="cert-modal-icon">
+        <svg fill="none" height="36" viewbox="0 0 24 24" width="36">
+          <path d="M12 3L4 7v6c0 5.1 3.5 9.9 8 11 4.5-1.1 8-5.9 8-11V7l-8-4z" stroke="currentColor"
+            stroke-linejoin="round" stroke-width="1.8"></path>
+        </svg>
+      </div>
+      <h3 id="certModalTitle">Subscribe to CERT-In Advisories</h3>
+      <p>Get instant email alerts whenever CERT-In releases new security advisories. Stay ahead of threats.</p>
+      <form class="cert-subscribe-form" id="certSubscribeForm" onsubmit="event.preventDefault();">
+        <div id="certFormMsg"
+          style="display:none; padding: 0.8rem; border-radius: 8px; margin-bottom: 1rem; font-weight: 600; font-size: 0.9rem; text-align: left;">
+        </div>
+        <div class="cert-form-group">
+          <label for="certSubName">Full Name</label>
+          <input id="certSubName" minlength="2" maxlength="100" pattern="^[a-zA-Z\s.\'\-]+$"
+            placeholder="e.g. Rahul Sharma" required="" title="Only letters and spaces allowed" type="text" />
+        </div>
+        <div class="cert-form-group">
+          <label for="certSubPhone">Mobile Number</label>
+          <input id="certSubPhone" placeholder="e.g. 9876543210" required="" type="tel" maxlength="10"
+            pattern="[6-9][0-9]{9}" title="Enter a valid 10-digit Indian mobile number" />
+        </div>
+        <div class="cert-form-group">
+          <label for="certSubOrg">Organisation</label>
+          <input id="certSubOrg" minlength="2" maxlength="150" placeholder="e.g. Acme Pvt. Ltd." required=""
+            type="text" />
+        </div>
+        <div class="cert-form-group">
+          <label for="certSubEmail">Email Address</label>
+          <input id="certSubEmail" placeholder="e.g. rahul@company.com" required="" type="email" />
+        </div>
+        <div class="g-recaptcha" data-sitekey="6Lfw7B8tAAAAAF8msWjJqvABoC0B48s0lktM7_L2" data-action="subscribe"
+          style="margin-bottom:15px; display:flex; justify-content:center;"></div>
+        <button class="btn btn-primary" style="width:100%" type="submit">Subscribe Now</button>
+        <p class="cert-modal-note">By subscribing, you agree to receive advisory emails from Vedtam. You will receive a
+          confirmation email to verify your address. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </div>
+  <section class="consulting-section" id="consulting">
+    <div class="container">
+      <div class="consulting-header reveal">
+        <div class="section-label">Strategic Advisory</div>
+        <h2 class="section-heading">Strategic Consulting &amp; Compliance</h2>
+        <p class="section-sub">End-to-end compliance consulting designed to protect your business, build regulator
+          trust, and accelerate your certification journey without the complexity.</p>
+      </div>
+      <style>
+        /* Dashboard Layout UI */
+        .consulting-dashboard {
+          display: flex;
+          gap: 2rem;
+          margin-bottom: 3rem;
+          position: relative;
+          background: rgba(15, 23, 42, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 24px;
+          padding: 2rem;
+        }
+
+        @media (max-width: 900px) {
+          .consulting-dashboard {
+            flex-direction: column;
+            padding: 1.5rem 1rem;
+          }
+
+          .dashboard-tabs {
+            display: none;
+          }
+
+          .dashboard-display {
+            min-height: auto;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+          }
+
+          .pane-header h3 {
+            font-size: 1.5rem;
+            word-break: keep-all;
+            overflow-wrap: normal;
+          }
+
+          .pane-widget-area {
+            flex-direction: column;
+            padding: 1.5rem;
+            height: auto !important;
+            overflow: visible !important;
+          }
+
+          .cyber-metrics {
+            margin-left: 0 !important;
+            margin-top: 1rem;
+          }
+
+          .dashboard-content-pane {
+            position: static !important;
+            top: auto !important;
+            right: auto !important;
+            bottom: auto !important;
+            left: auto !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: none !important;
+            display: flex !important;
+            flex-direction: column;
+            gap: 1.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 2rem;
+          }
+
+          .dashboard-content-pane:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+
+          .pane-desc {
+            max-width: 100%;
+          }
+
+          .pane-footer {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+          }
+
+          .compliance-checklist,
+          .consulting-card-tags {
+            flex-wrap: wrap;
+          }
+        }
+
+        /* Tabs Panel (Left) */
+        .dashboard-tabs {
+          flex: 0 0 320px;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          position: relative;
+        }
+
+        .dashboard-tab {
+          padding: 1.5rem;
+          border-radius: 16px;
+          background: transparent;
+          border: 1px solid transparent;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .dashboard-tab:hover {
+          background: rgba(255, 255, 255, 0.03);
+        }
+
+        .dashboard-tab.active {
+          background: rgba(15, 23, 42, 0.6);
+          border-color: rgba(0, 195, 255, 0.3);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 195, 255, 0.1) inset;
+        }
+
+        .dashboard-tab-icon {
+          width: 45px;
+          height: 45px;
+          border-radius: 12px;
+          background: rgba(0, 195, 255, 0.05);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #94a3b8;
+          transition: all 0.3s ease;
+        }
+
+        .dashboard-tab.active .dashboard-tab-icon {
+          color: #00A3D9;
+          background: rgba(0, 195, 255, 0.15);
+        }
+
+        .dashboard-tab-icon svg {
+          width: 22px;
+          height: 22px;
+        }
+
+        .dashboard-tab-info h4 {
+          color: #94a3b8;
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 0;
+          transition: color 0.3s ease;
+        }
+
+        .dashboard-tab.active .dashboard-tab-info h4 {
+          color: #fff;
+        }
+
+        .dashboard-tab-info p {
+          color: #64748b;
+          font-size: 0.85rem;
+          margin: 0.3rem 0 0;
+        }
+
+        /* Display Panel (Right) */
+        .dashboard-display {
+          flex: 1;
+          position: relative;
+          background: rgba(15, 23, 42, 0.5);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 20px;
+          padding: 3rem;
+          overflow: hidden;
+          min-height: 480px;
+        }
+
+        .dashboard-content-pane {
+          position: absolute;
+          top: 3rem;
+          left: 3rem;
+          right: 3rem;
+          bottom: 3rem;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(20px) scale(0.98);
+          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .dashboard-content-pane.active {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0) scale(1);
+          z-index: 2;
+        }
+
+        .dashboard-display::before {
+          content: '';
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          right: -50%;
+          bottom: -50%;
+          background: radial-gradient(circle at center, rgba(0, 195, 255, 0.05), transparent 60%);
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .pane-header {
+          margin-bottom: 2rem;
+        }
+
+        .pane-header h3 {
+          font-size: 2rem;
+          color: #fff;
+          margin-bottom: 0.5rem;
+        }
+
+        .pane-desc {
+          color: #94a3b8;
+          font-size: 1.1rem;
+          line-height: 1.6;
+          max-width: 90%;
+        }
+
+        .pane-widget-area {
+          background: rgba(0, 0, 0, 0.2);
+          border-radius: 16px;
+          padding: 2rem;
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          margin-bottom: 2rem;
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .cloud-widget {
+          height: auto !important;
+          min-height: 210px !important;
+          justify-content: flex-start !important;
+          align-items: stretch !important;
+          gap: 1rem !important;
+          overflow: visible !important;
+        }
+
+        .cloud-slider-group {
+          margin-bottom: 1rem !important;
+        }
+
+        .cloud-savings-callout {
+          min-height: 0 !important;
+          padding: 1rem 1.1rem !important;
+          border-radius: 12px !important;
+          display: flex !important;
+          align-items: flex-start !important;
+          justify-content: space-between !important;
+          gap: 0.75rem !important;
+          flex-wrap: wrap !important;
+          overflow: visible !important;
+          text-align: left !important;
+        }
+
+        .cloud-savings-callout .savings-label,
+        .cloud-savings-callout .savings-val {
+          width: 100%;
+          line-height: 1.2;
+        }
+
+        .cloud-savings-callout .savings-val {
+          font-size: clamp(1.5rem, 2.2vw, 2.3rem) !important;
+        }
+
+        .pane-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .svc-link {
+          font-weight: 700;
+          color: #00A3D9;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          transition: gap 0.3s ease;
+          cursor: pointer;
+        }
+
+        .svc-link:hover {
+          gap: 0.8rem;
+        }
+
+        @media (min-width: 901px) and (max-width: 1400px) {
+          .consulting-dashboard {
+            gap: 1.35rem;
+            padding: 1.5rem;
+          }
+
+          .dashboard-tabs {
+            flex-basis: 280px;
+          }
+
+          .dashboard-display {
+            min-height: 560px;
+            padding: 2rem;
+          }
+
+          .dashboard-content-pane {
+            top: 2rem;
+            right: 2rem;
+            bottom: 2rem;
+            left: 2rem;
+          }
+
+          .pane-header {
+            margin-bottom: 1.1rem;
+          }
+
+          .pane-header h3 {
+            font-size: 1.7rem;
+          }
+
+          .pane-desc {
+            font-size: 0.98rem;
+            line-height: 1.45;
+            margin-bottom: 1rem;
+            max-width: 100%;
+          }
+
+          .pane-widget-area {
+            padding: 1.25rem;
+          }
+
+          .cloud-widget {
+            min-height: 195px !important;
+          }
+
+          .pane-footer {
+            gap: 0.8rem;
+            align-items: flex-end;
+          }
+        }
+      </style>
+
+      <div class="consulting-dashboard">
+        <!-- Left: Tabs Navigation -->
+        <div class="dashboard-tabs">
+          <!-- Tab 1 -->
+          <div class="dashboard-tab active" data-target="pane-cyber"
+            onmouseenter="switchDashboardTab('pane-cyber', this)">
+            <div class="dashboard-tab-icon">
+              <svg aria-hidden="true" fill="none" viewbox="0 0 48 48">
+                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"></circle>
+                <path d="M15 24l6 6 12-12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="3"></path>
+              </svg>
+            </div>
+            <div class="dashboard-tab-info">
+              <h4>Cybersecurity</h4>
+              <p>Threat landscape & vCISO</p>
+            </div>
+          </div>
+          <!-- Tab 2 -->
+          <div class="dashboard-tab" data-target="pane-compliance"
+            onmouseenter="switchDashboardTab('pane-compliance', this)">
+            <div class="dashboard-tab-icon">
+              <svg aria-hidden="true" fill="none" viewbox="0 0 48 48">
+                <rect height="32" rx="8" stroke="currentColor" stroke-width="2.5" width="32" x="8" y="8"></rect>
+                <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+              </svg>
+            </div>
+            <div class="dashboard-tab-info">
+              <h4>IT Compliance</h4>
+              <p>DPDP, SOC 2, GDPR audits</p>
+            </div>
+          </div>
+          <!-- Tab 3 -->
+          <div class="dashboard-tab" data-target="pane-iso" onmouseenter="switchDashboardTab('pane-iso', this)">
+            <div class="dashboard-tab-icon">
+              <svg aria-hidden="true" fill="none" viewbox="0 0 48 48">
+                <path d="M24 6L8 13v11c0 9.4 6.8 18.2 16 20.5C33.2 42.2 40 33.4 40 24V13L24 6z" stroke="currentColor"
+                  stroke-linejoin="round" stroke-width="2.5"></path>
+                <path d="M18 24.5l4 4 8-8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="3"></path>
+              </svg>
+            </div>
+            <div class="dashboard-tab-info">
+              <h4>ISO 27001</h4>
+              <p>ISMS implementation</p>
+            </div>
+          </div>
+          <!-- Tab 4 -->
+          <div class="dashboard-tab" data-target="pane-cloud" onmouseenter="switchDashboardTab('pane-cloud', this)">
+            <div class="dashboard-tab-icon">
+              <svg aria-hidden="true" fill="none" viewbox="0 0 48 48">
+                <path d="M36 34H14a8 8 0 010-16h.5A10 10 0 1136 34z" stroke="currentColor" stroke-linejoin="round"
+                  stroke-width="2.5"></path>
+              </svg>
+            </div>
+            <div class="dashboard-tab-info">
+              <h4>Cloud Strategy</h4>
+              <p>Optimization & Migration</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Display Panel -->
+        <div class="dashboard-display">
+          <!-- Pane 1: Cyber -->
+          <div class="dashboard-content-pane active" id="pane-cyber">
+            <div class="pane-header">
+              <div>
+                <h3>Cybersecurity Consulting</h3>
+                <p class="pane-desc">Threat landscape analysis, penetration testing strategy, incident response planning
+                  and architecture advisory.</p>
+              </div>
+              <div class="card-badge cyber-badge">vCISO Active</div>
+            </div>
+            <div class="pane-widget-area card-widget cyber-widget" style="margin-bottom:0;">
+              <div class="cyber-dial-wrap" style="transform: scale(1.2);">
+                <svg class="cyber-dial" viewbox="0 0 100 100">
+                  <circle class="dial-bg" cx="50" cy="50" r="40"></circle>
+                  <circle class="dial-fill" id="cyber-dial-fill" cx="50" cy="50" r="40"
+                    style="stroke-dasharray: 251; stroke-dashoffset: 251; transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1);">
+                  </circle>
+                </svg>
+                <div class="dial-text">
+                  <span class="dial-num" id="cyber-dial-num">0</span>
+                  <span class="dial-lbl">SCORE</span>
+                </div>
+              </div>
+              <div class="cyber-metrics" style="margin-left: 3rem;">
+                <div class="metric-item"><span class="dot green"></span> Threats Blocked: 100%</div>
+                <div class="metric-item"><span class="dot blue"></span> Scanned Systems: 1,420</div>
+              </div>
+            </div>
+            <div class="pane-footer">
+              <div class="consulting-card-tags">
+                <span>vCISO</span><span>Pen Testing</span><span>IR Planning</span>
+              </div>
+              <div class="svc-link" onclick="window.location.href='consulting/virtual-ciso-services.html'">Learn More
+                <span>→</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: Compliance -->
+          <div class="dashboard-content-pane" id="pane-compliance">
+            <div class="pane-header">
+              <div>
+                <h3>IT Compliance</h3>
+                <p class="pane-desc">Strategic framework mapping and continuous security audits across multiple
+                  regulatory landscapes.</p>
+              </div>
+              <div class="card-badge compliance-badge">DPDP Ready</div>
+            </div>
+            <div class="pane-widget-area card-widget compliance-widget"
+              style="margin-bottom:0; flex-direction:column; align-items:flex-start;">
+              <div class="compliance-checklist" style="display:flex; gap:2rem; width:100%; margin-bottom: 2rem;">
+                <label class="check-item">
+                  <input type="checkbox" onchange="updateComplianceScore(this)" checked />
+                  <span class="check-box"></span><span class="check-label">DPDP Act</span>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" onchange="updateComplianceScore(this)" checked />
+                  <span class="check-box"></span><span class="check-label">GDPR</span>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" onchange="updateComplianceScore(this)" />
+                  <span class="check-box"></span><span class="check-label">SOC 2 / ISO</span>
+                </label>
+              </div>
+              <div class="compliance-gauge" style="width: 100%;">
+                <div class="gauge-bar"
+                  style="height: 12px; background: rgba(255,255,255,0.1); border-radius: 6px; overflow: hidden; margin-bottom: 0.5rem;">
+                  <div class="gauge-fill" id="comp-gauge"
+                    style="height: 100%; width: 66%; background: linear-gradient(90deg, #00A3D9, #00E5FF); transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);">
+                  </div>
+                </div>
+                <div class="gauge-txt" style="text-align: right; color:#fff;">Compliance Score: <strong class="comp-val"
+                    id="comp-score-txt">66%</strong></div>
+              </div>
+            </div>
+            <div class="pane-footer">
+              <div class="consulting-card-tags">
+                <span>DPDP</span><span>SOC 2</span><span>HIPAA</span>
+              </div>
+              <div class="svc-link" onclick="window.location.href='consulting/hipaa-consulting-services.html'">Learn
+                More <span>→</span></div>
+            </div>
+          </div>
+
+          <!-- Pane 3: ISO -->
+          <div class="dashboard-content-pane" id="pane-iso">
+            <div class="pane-header">
+              <div>
+                <h3>ISO 27001 Consulting</h3>
+                <p class="pane-desc">Full-cycle implementation of ISO 27001 ISMS. Gap analysis, design, and internal
+                  audit support.</p>
+              </div>
+              <div class="card-badge iso-badge">Audit Track</div>
+            </div>
+            <div class="pane-widget-area card-widget iso-widget" style="margin-bottom:0;">
+              <div class="iso-steps" id="iso-interactive-steps"
+                style="display:flex; flex-direction:column; gap:1.5rem; width:100%;">
+                <div class="iso-step active" onclick="isoStepClick(0)"
+                  style="cursor: pointer; display:flex; align-items:center; gap:1rem;">
+                  <div class="step-dot"
+                    style="width:30px; height:30px; border-radius:50%; background:#00c3ff; color:#000; display:flex; align-items:center; justify-content:center; font-weight:bold;">
+                    1</div>
+                  <div class="step-info"
+                    style="display:flex; justify-content:space-between; width:100%; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.5rem;">
+                    <span class="step-name text-white">Gap Analysis</span><span class="step-status text-green">100%
+                      Done</span>
+                  </div>
+                </div>
+                <div class="iso-step active" onclick="isoStepClick(1)"
+                  style="cursor: pointer; display:flex; align-items:center; gap:1rem;">
+                  <div class="step-dot"
+                    style="width:30px; height:30px; border-radius:50%; background:#00c3ff; color:#000; display:flex; align-items:center; justify-content:center; font-weight:bold;">
+                    2</div>
+                  <div class="step-info"
+                    style="display:flex; justify-content:space-between; width:100%; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.5rem;">
+                    <span class="step-name text-white">ISMS Design</span><span class="step-status text-green">100%
+                      Done</span>
+                  </div>
+                </div>
+                <div class="iso-step current" onclick="isoStepClick(2)"
+                  style="cursor: pointer; display:flex; align-items:center; gap:1rem;">
+                  <div class="step-dot"
+                    style="width:30px; height:30px; border-radius:50%; background:transparent; border:2px solid #00c3ff; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:bold;">
+                    3</div>
+                  <div class="step-info"
+                    style="display:flex; justify-content:space-between; width:100%; padding-bottom:0.5rem;"><span
+                      class="step-name text-white">Internal Audit</span><span class="step-status text-blue">In
+                      Progress</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="pane-footer">
+              <div class="consulting-card-tags">
+                <span>ISO 27001</span><span>ISO 9001</span>
+              </div>
+              <div class="svc-link" onclick="window.location.href='consulting/iso-consulting-services.html'">Learn More
+                <span>→</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 4: Cloud -->
+          <div class="dashboard-content-pane" id="pane-cloud">
+            <div class="pane-header">
+              <div>
+                <h3>Cloud Strategy Consulting</h3>
+                <p class="pane-desc">Multi-cloud strategy, migration advisory, and security posture management across
+                  AWS, Azure and hybrid environments.</p>
+              </div>
+              <div class="card-badge cloud-badge">Cost Advisory</div>
+            </div>
+            <div class="pane-widget-area card-widget cloud-widget"
+              style="margin-bottom:0; flex-direction:column; align-items:stretch;">
+              <div class="cloud-slider-group" style="margin-bottom:2rem;">
+                <div class="slider-header" style="display:flex; justify-content:space-between; color:#94a3b8;">
+                  <span>Monthly Cloud Spend</span>
+                  <strong class="spend-val" id="cloud-spend-val"
+                    style="font-size: 1.5rem; color: #fff;">$15,000</strong>
+                </div>
+                <input class="cloud-slider" max="100000" min="2000" oninput="updateCloudSavings(this)" step="1000"
+                  type="range" value="15000" style="width: 100%; margin: 1rem 0; cursor: pointer;" />
+              </div>
+              <div class="cloud-savings-callout"
+                style="background: rgba(0, 195, 255, 0.1); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(0, 195, 255, 0.2); text-align:center;">
+                <span class="savings-label"
+                  style="display: block; color: #00A3D9; font-size: 1rem; margin-bottom: 0.5rem;">Potential Optimization
+                  Savings</span>
+                <strong class="savings-val" id="cloud-save-val"
+                  style="font-size: 2.5rem; color: #fff;">$4,500/mo</strong>
+              </div>
+            </div>
+            <div class="pane-footer">
+              <div class="consulting-card-tags">
+                <span>AWS</span><span>Azure</span><span>Multi-Cloud</span>
+              </div>
+              <div class="svc-link" onclick="window.location.href='solutions/cloud-services.html'">Learn More
+                <span>→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Tab Switching Logic
+        function switchDashboardTab(targetId, tabElement) {
+          // Remove active class from all tabs
+          document.querySelectorAll('.dashboard-tab').forEach(t => t.classList.remove('active'));
+          // Add active class to clicked tab
+          tabElement.classList.add('active');
+
+          // Hide all panes
+          document.querySelectorAll('.dashboard-content-pane').forEach(p => p.classList.remove('active'));
+          // Show target pane
+          const targetPane = document.getElementById(targetId);
+          if (targetPane) {
+            targetPane.classList.add('active');
+
+            // Re-trigger animations if needed
+            if (targetId === 'pane-cyber') triggerCyberAnimation();
+          }
+        }
+
+        // Interactive functions for Dashboard Widgets
+        function updateComplianceScore(checkbox) {
+          const container = checkbox.closest('.compliance-checklist');
+          const total = container.querySelectorAll('input[type="checkbox"]').length;
+          const checked = container.querySelectorAll('input[type="checkbox"]:checked').length;
+          const score = Math.round((checked / total) * 100);
+
+          document.getElementById('comp-gauge').style.width = score + '%';
+          document.getElementById('comp-score-txt').textContent = score + '%';
+        }
+
+        function updateCloudSavings(slider) {
+          const val = parseInt(slider.value);
+          const savings = Math.round(val * 0.3); // Simulate 30% savings
+
+          document.getElementById('cloud-spend-val').textContent = '$' + val.toLocaleString();
+          document.getElementById('cloud-save-val').textContent = '$' + savings.toLocaleString() + '/mo';
+        }
+
+        function isoStepClick(index) {
+          const steps = document.querySelectorAll('#iso-interactive-steps .iso-step');
+          steps.forEach((step, i) => {
+            const statusSpan = step.querySelector('.step-status');
+            const dot = step.querySelector('.step-dot');
+            if (i < index) {
+              dot.style.background = '#00c3ff';
+              dot.style.color = '#000';
+              dot.style.border = 'none';
+              statusSpan.className = 'step-status text-green';
+              statusSpan.textContent = '100% Done';
+            } else if (i === index) {
+              dot.style.background = 'transparent';
+              dot.style.border = '2px solid #00c3ff';
+              dot.style.color = '#fff';
+              statusSpan.className = 'step-status text-blue';
+              statusSpan.textContent = 'In Progress';
+            } else {
+              dot.style.background = 'rgba(255,255,255,0.1)';
+              dot.style.border = 'none';
+              dot.style.color = '#fff';
+              statusSpan.className = 'step-status text-muted';
+              statusSpan.textContent = 'Pending';
+            }
+          });
+        }
+
+        function triggerCyberAnimation() {
+          const cyberDial = document.getElementById('cyber-dial-fill');
+          const cyberNum = document.getElementById('cyber-dial-num');
+          if (cyberDial) {
+            // Reset first
+            cyberDial.style.strokeDashoffset = '251';
+            cyberNum.textContent = '0';
+
+            setTimeout(() => {
+              cyberDial.style.strokeDashoffset = '5'; // 98%
+              let count = 0;
+              const interval = setInterval(() => {
+                if (count >= 98) clearInterval(interval);
+                else { count += 2; if (count > 98) count = 98; cyberNum.textContent = count; }
+              }, 25);
+            }, 100);
+          }
+        }
+
+        // Initialize Animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+          const dashboard = document.querySelector('.consulting-dashboard');
+          if (dashboard) {
+            const observer = new IntersectionObserver((entries) => {
+              if (entries[0].isIntersecting) {
+                triggerCyberAnimation();
+                observer.disconnect();
+              }
+            });
+            observer.observe(dashboard);
+          }
+        });
+      </script>
+      <div class="consulting-cta reveal">
+        <div class="consulting-cta-inner">
+          <div class="consulting-cta-text">
+            <div class="section-label">Free Strategy Call</div>
+            <h3>Not sure where to start? <span>Talk to an Expert.</span></h3>
+            <p>Our consultants help you map the right compliance path, identify gaps, and build a clear roadmap in one
+              call.</p>
+          </div>
+          <div class="consulting-cta-actions">
+            <a class="btn btn-primary btn-cta-hero" href="#contact">
+              <svg fill="none" height="18" viewbox="0 0 20 20" width="18">
+                <path d="M3 5h14M3 10h14M3 15h8" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+              </svg>
+              Talk to an Expert
+            </a>
+            <a class="btn btn-outline btn-cta-hero" href="consulting/virtual-ciso-services.html">View vCISO Services
+              →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="services-header">
+        <div class="services-title-group">
+          <div class="section-label">Execution Services</div>
+          <h2 class="section-heading">Solutions Built to <span>Protect and Scale</span></h2>
+        </div>
+        <p class="section-sub">Enterprise-ready delivery across cybersecurity, cloud, infrastructure, and managed
+          operations.</p>
+        <!-- <div class="services-header-card">
+          <div class="services-header-label">Enterprise Delivery Model</div>
+          <p>Strategy, implementation, compliance, and support under one execution partner.</p>
+        </div> -->
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" onclick="window.location.href='solutions/software-services.html'">
+          <div aria-hidden="true" class="svc-bg">
+            <img alt="AI Software Solutions Visual" decoding="async" loading="lazy"
+              src="services_images/software_solutions_hero.png" />
+          </div>
+          <div class="svc-overlay"></div>
+          <div class="svc-content">
+            <h3>AI Software Solutions</h3>
+            <p>Deploy secure Generative AI models, enterprise LLMs, intelligent automations, and custom neural agents
+              optimized for high performance and full regulatory compliance.</p>
+            <div class="svc-link">Read More <span>→</span></div>
+          </div>
+        </div>
+        <div class="service-card reveal" onclick="window.location.href='solutions/cybersecurity-services.html'"
+          style="transition-delay:0.08s">
+          <div aria-hidden="true" class="svc-bg">
+            <img alt="" decoding="async" loading="lazy"
+              src="services_images/service_cyber_security_1774586735180.png" />
+          </div>
+          <div class="svc-overlay"></div>
+          <div class="svc-content">
+            <h3>Cyber Security Services</h3>
+            <p>Protect your business from evolving threats with advanced cyber security, SOC monitoring, vulnerability
+              assessments, and compliance audits.</p>
+            <div class="svc-link">Read More <span>→</span></div>
+          </div>
+        </div>
+        <div class="service-card reveal" onclick="window.location.href='solutions/network-security-solutions.html'"
+          style="transition-delay:0.08s">
+          <div aria-hidden="true" class="svc-bg">
+            <img alt="" decoding="async" loading="lazy"
+              src="services_images/service_network_security_1774586750963.png" />
+          </div>
+          <div class="svc-overlay"></div>
+          <div class="svc-content">
+            <h3>Network Security Solutions</h3>
+            <p>Build resilient network environments with secure architecture, intelligent monitoring, and zero-trust
+              configurations.</p>
+            <div class="svc-link">Read More <span>→</span></div>
+          </div>
+        </div>
+        <div class="service-card reveal" onclick="window.location.href='solutions/devops-solutions.html'"
+          style="transition-delay:0.16s">
+          <div aria-hidden="true" class="svc-bg">
+            <img alt="" decoding="async" loading="lazy" src="services_images/service_devops_1774586766465.png" />
+          </div>
+          <div class="svc-overlay"></div>
+          <div class="svc-content">
+            <h3>DevOps Services</h3>
+            <p>CI/CD pipelines, automated testing, infrastructure as code - accelerate your development cycle with
+              scalable DevOps practices.</p>
+            <div class="svc-link">Read More <span>→</span></div>
+          </div>
+        </div>
+        <div class="service-card reveal" onclick="window.location.href='solutions/it-managed-services.html'"
+          style="transition-delay:0.24s">
+          <div aria-hidden="true" class="svc-bg">
+            <img alt="" decoding="async" loading="lazy" src="services_images/service_it_managed_1774586782051.png" />
+          </div>
+          <div class="svc-overlay"></div>
+          <div class="svc-content">
+            <h3>IT Managed Services</h3>
+            <p>Offload your IT operations with round-the-clock support, expert infrastructure management, and proactive
+              troubleshooting.</p>
+            <div class="svc-link">Read More <span>→</span></div>
+          </div>
+        </div>
+        <div class="service-card reveal" onclick="window.location.href='solutions/cloud-services.html'"
+          style="transition-delay:0.32s">
+          <div aria-hidden="true" class="svc-bg">
+            <img alt="" decoding="async" loading="lazy" src="services_images/service_cloud_1774586800180.png" />
+          </div>
+          <div class="svc-overlay"></div>
+          <div class="svc-content">
+            <h3>Cloud Services</h3>
+            <p>Migrate, manage, and scale with secure cloud solutions across AWS, Azure, and hybrid environments -
+              optimized for performance and compliance.</p>
+            <div class="svc-link">Read More <span>→</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cyber-industries-section" id="industries">
+    <style>
+      .cyber-industries-section {
+        position: relative;
+        padding: 8rem 0;
+        background: radial-gradient(circle at center, #0a0a0f 0%, #050508 100%);
+        overflow: hidden;
+      }
+
+      .cyber-industries-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 50px 50px;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      .industries-header-v2 {
+        text-align: center;
+        margin-bottom: 5rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .industries-header-v2 .section-label {
+        color: #06b6d4;
+        /* Cyan */
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .industries-header-v2 h2 {
+        font-size: 2.8rem;
+        color: #f8fafc;
+        font-weight: 800;
+        margin: 0 auto;
+        max-width: 100%;
+        white-space: nowrap;
+        /* Forced one line */
+      }
+
+      /* Scale down heading on mobile so it doesn't break layout */
+      @media (max-width: 992px) {
+        .industries-header-v2 h2 {
+          font-size: 2rem;
+          white-space: normal;
+          /* allow wrapping on small screens to prevent overflow */
+        }
+      }
+
+      .industries-header-v2 h2 span {
+        color: transparent;
+        background: linear-gradient(135deg, #0ea5e9, #10b981);
+        /* Blue/Green Gradient */
+        -webkit-background-clip: text;
+      }
+
+      .industries-clean-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2.5rem;
+        position: relative;
+        z-index: 2;
+        padding: 0 2rem;
+      }
+
+      /* Desktop: force 3 columns perfectly aligned */
+      @media (min-width: 1200px) {
+        .industries-clean-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .industry-glass-card {
+        background: rgba(15, 23, 42, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 2.5rem;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 380px;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      /* Hover states */
+      .industry-glass-card:hover {
+        transform: translateY(-10px);
+        border-color: rgba(6, 182, 212, 0.3);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 0 40px rgba(6, 182, 212, 0.1);
+      }
+
+      /* Background Images */
+      .ind-bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.15;
+        transition: all 0.7s ease;
+        z-index: 0;
+      }
+
+      .industry-glass-card:hover .ind-bg-image {
+        opacity: 0.4;
+        transform: scale(1.05);
+      }
+
+      .ind-bg-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(10, 10, 15, 0.95) 0%, rgba(10, 10, 15, 0.4) 100%);
+        z-index: 1;
+      }
+
+      /* Giant Hollow Numbers */
+      .ind-hollow-number {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        font-size: 8rem;
+        font-weight: 900;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+        z-index: 2;
+        transition: all 0.5s ease;
+      }
+
+      .industry-glass-card:hover .ind-hollow-number {
+        -webkit-text-stroke: 1px rgba(6, 182, 212, 0.5);
+        text-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+        transform: translateY(-10px);
+      }
+
+      /* Content Area */
+      .ind-content-box {
+        position: relative;
+        z-index: 3;
+        transition: all 0.5s ease;
+      }
+
+      .industry-glass-card:hover .ind-content-box {
+        transform: translateY(-5px);
+      }
+
+      .ind-content-box h3 {
+        font-size: 1.8rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .ind-content-box p {
+        color: #ffffff;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+      }
+
+      /* Cyber Terminal Style Label */
+      .ind-terminal-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 1rem;
+        background: rgba(6, 182, 212, 0.1);
+        border: 1px solid rgba(6, 182, 212, 0.2);
+        border-radius: 30px;
+        color: #06b6d4;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .ind-terminal-label .pulse-dot {
+        width: 8px;
+        height: 8px;
+        background: #06b6d4;
+        border-radius: 50%;
+        animation: pulseDot 2s infinite;
+      }
+
+      @keyframes pulseDot {
+        0% {
+          box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4);
+        }
+
+        70% {
+          box-shadow: 0 0 0 10px rgba(6, 182, 212, 0);
+        }
+
+        100% {
+          box-shadow: 0 0 0 0 rgba(6, 182, 212, 0);
+        }
+      }
+    </style>
+    <div class="container">
+      <div class="industries-header-v2 reveal">
+        <div class="section-label">Industries We Secure</div>
+        <h2>Trusted Across Critical and Regulated <span>Environments</span></h2>
+      </div>
+      <div class="industries-clean-grid">
+        <!-- BFSI -->
+        <div class="industry-glass-card reveal">
+          <div class="ind-bg-image" style="background-image: url('industry_images/industry_bfsi_bg.png');"></div>
+          <div class="ind-bg-gradient"></div>
+          <div class="ind-hollow-number">01</div>
+          <div class="holo-pedestal-home"></div>
+          <div class="holo-beam-home"></div>
+          <div class="ind-content-box">
+            <h3>BFSI &amp; FinTech</h3>
+            <p>We architect resilient financial systems, ensuring zero-downtime performance and strict regulatory
+              compliance. Our deep integration of zero-trust networks safeguards highly sensitive transactional data
+              against modern threats.</p>
+            <div class="ind-terminal-label">
+              <span class="pulse-dot"></span> SECURITY ACTIVE
+            </div>
+          </div>
+        </div>
+        <!-- Healthcare -->
+        <div class="industry-glass-card reveal" style="transition-delay: 0.1s;">
+          <div class="ind-bg-image" style="background-image: url('industry_images/industry_healthcare_bg.png');"></div>
+          <div class="ind-bg-gradient"></div>
+          <div class="ind-hollow-number">02</div>
+          <div class="holo-pedestal-home"></div>
+          <div class="holo-beam-home"></div>
+          <div class="ind-content-box">
+            <h3>Healthcare</h3>
+            <p>Our solutions safeguard critical patient data and continuity-critical operations. We maintain strict
+              adherence to HIPAA and other global standards, guaranteeing secure and private medical data
+              interoperability.</p>
+            <div class="ind-terminal-label">
+              <span class="pulse-dot"></span> EHR GUARDED
+            </div>
+          </div>
+        </div>
+        <!-- Manufacturing -->
+        <div class="industry-glass-card reveal" style="transition-delay: 0.2s;">
+          <div class="ind-bg-image" style="background-image: url('industry_images/industry_manufacturing_bg.png');">
+          </div>
+          <div class="ind-bg-gradient"></div>
+          <div class="ind-hollow-number">03</div>
+          <div class="holo-pedestal-home"></div>
+          <div class="holo-beam-home"></div>
+          <div class="ind-content-box">
+            <h3>Manufacturing</h3>
+            <p>Bridging the gap between IT and OT systems to drastically reduce cyber risk on the factory floor. Our
+              continuous monitoring minimizes latency while defending SCADA systems from sophisticated external
+              intrusions.</p>
+            <div class="ind-terminal-label">
+              <span class="pulse-dot"></span> OT SECURE
+            </div>
+          </div>
+        </div>
+        <!-- SaaS & Product -->
+        <div class="industry-glass-card reveal" style="transition-delay: 0.3s;">
+          <div class="ind-bg-image" style="background-image: url('industry_images/industry_saas_bg.png');"></div>
+          <div class="ind-bg-gradient"></div>
+          <div class="ind-hollow-number">04</div>
+          <div class="holo-pedestal-home"></div>
+          <div class="holo-beam-home"></div>
+          <div class="ind-content-box">
+            <h3>SaaS &amp; Product</h3>
+            <p>Empowering cloud-native platforms with hardened engineering workflows and dynamic access controls. We
+              secure your product lifecycle, enabling seamless scale and protecting intellectual property in the cloud.
+            </p>
+            <div class="ind-terminal-label">
+              <span class="pulse-dot"></span> CLOUD SHIELD
+            </div>
+          </div>
+        </div>
+        <!-- Education & EdTech -->
+        <div class="industry-glass-card reveal" style="transition-delay: 0.4s;">
+          <div class="ind-bg-image" style="background-image: url('industry_images/industry_education_bg.png');"></div>
+          <div class="ind-bg-gradient"></div>
+          <div class="ind-hollow-number">05</div>
+          <div class="holo-pedestal-home"></div>
+          <div class="holo-beam-home"></div>
+          <div class="ind-content-box">
+            <h3>Education &amp; EdTech</h3>
+            <p>We construct resilient learning ecosystems focused on ultimate user protection and privacy. Our
+              architectures ensure seamless student access while mitigating distributed attacks against online
+              educational platforms.</p>
+            <div class="ind-terminal-label">
+              <span class="pulse-dot"></span> EDU PROTECTED
+            </div>
+          </div>
+        </div>
+        <!-- Government & PSU -->
+        <div class="industry-glass-card reveal" style="transition-delay: 0.5s;">
+          <div class="ind-bg-image" style="background-image: url('services_images/ot_security_overview_hero.png');">
+          </div>
+          <div class="ind-bg-gradient"></div>
+          <div class="ind-hollow-number">06</div>
+          <div class="holo-pedestal-home"></div>
+          <div class="holo-beam-home"></div>
+          <div class="ind-content-box">
+            <h3>Government &amp; PSU</h3>
+            <p>Defending national infrastructure and state-level digital services against state-sponsored threats. We
+              employ classified-grade cryptographic wrappers and extensive auditing to ensure absolute sovereignty.</p>
+            <div class="ind-terminal-label">
+              <span class="pulse-dot"></span> GOV VERIFIED
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    .approach-v2-section {
+      padding: 6rem 0;
+      background: #050b14;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .approach-v2-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .ap2-text,
+    .ap2-visual {
+      min-width: 0;
+    }
+
+    .ap2-body,
+    .ap2-cont-text {
+      min-width: 0;
+    }
+
+    .ap2-point {
+      background: rgba(12, 21, 36, 0.6);
+      border: 1px solid rgba(0, 163, 217, 0.2);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ap2-point::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--cyan, #00c3ff);
+      transform: scaleY(0);
+      transition: transform 0.4s ease;
+      transform-origin: center;
+    }
+
+    .ap2-point:hover::before,
+    .ap2-point.active::before {
+      transform: scaleY(1);
+    }
+
+    .ap2-point:hover,
+    .ap2-point.active {
+      background: rgba(0, 163, 217, 0.1);
+      border-color: rgba(0, 163, 217, 0.5);
+      transform: translateX(10px);
+      box-shadow: 0 10px 30px rgba(0, 163, 217, 0.15);
+    }
+
+    .ap2-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: rgba(0, 163, 217, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #00c3ff;
+      flex-shrink: 0;
+      transition: all 0.4s ease;
+    }
+
+    .ap2-point:hover .ap2-icon,
+    .ap2-point.active .ap2-icon {
+      background: #00c3ff;
+      color: #050b14;
+      box-shadow: 0 0 20px rgba(0, 195, 255, 0.5);
+    }
+
+    .ap2-body h4 {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .ap2-body p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Interactive Visual Dashboard */
+    .ap2-dashboard {
+      position: relative;
+      width: 100%;
+      min-height: 700px;
+      height: auto;
+      background: rgba(10, 17, 30, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .ap2-dash-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .ap2-dash-dots span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .ap2-dash-title {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ap2-dash-title .blink {
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      animation: pulseDot 2s infinite;
+    }
+
+    .ap2-dash-body {
+      padding: 2rem;
+      display: grid;
+    }
+
+    .ap2-view {
+      grid-area: 1 / 1;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(20px);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .ap2-view.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    /* View 1: Security */
+    .ap2-sec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      height: 100%;
+    }
+
+    .ap2-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, background 0.3s;
+      min-width: 0;
+    }
+
+    .ap2-card:hover {
+      background: rgba(255, 255, 255, 0.05);
+      transform: translateY(-2px);
+    }
+
+    .ap2-card::after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle, rgba(0, 195, 255, 0.15) 0%, transparent 70%);
+    }
+
+    .ap2-card.green::after {
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+    }
+
+    .ap2-card-val {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    .ap2-card-val span {
+      font-size: 1.2rem;
+      opacity: 0.6;
+      font-weight: 600;
+    }
+
+    .ap2-card-label {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .ap2-card-wide {
+      grid-column: span 2;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .ap2-card-spinner {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid rgba(0, 195, 255, 0.2);
+      border-top-color: #00c3ff;
+      animation: spin 1.5s linear infinite;
+    }
+
+    /* View 2: Continuity */
+    .ap2-cont-path {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .ap2-cont-step {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      background: linear-gradient(90deg, rgba(16, 185, 129, 0.1), transparent);
+      border-left: 3px solid #10b981;
+      padding: 1rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ap2-cont-step::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+      transform: translateX(-100%);
+      animation: shimmer 3s infinite;
+    }
+
+    .ap2-cont-icon {
+      color: #10b981;
+      font-size: 1.5rem;
+      background: rgba(16, 185, 129, 0.2);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .ap2-cont-text h5 {
+      color: #fff;
+      margin: 0 0 0.3rem 0;
+      font-size: 1.1rem;
+    }
+
+    .ap2-cont-text p {
+      color: #94a3b8;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* View 3: ROI */
+    .ap2-roi-chart {
+      height: 62%;
+      display: flex;
+      align-items: flex-end;
+      gap: 1.5rem;
+      padding-top: 2rem;
+    }
+
+    .ap2-bar {
+      flex: 1;
+      background: rgba(139, 92, 246, 0.2);
+      border-radius: 8px 8px 0 0;
+      position: relative;
+      transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .ap2-bar.active {
+      background: linear-gradient(to top, rgba(0, 195, 255, 0.5), #00c3ff);
+      box-shadow: 0 0 20px rgba(0, 195, 255, 0.3);
+    }
+
+    .ap2-bar::before {
+      content: attr(data-val);
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes shimmer {
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes dashPulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .approach-v2-section {
+        padding: 4.5rem 0;
+      }
+
+      .approach-v2-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .ap2-dashboard {
+        min-height: auto;
+      }
+
+      .ap2-point:hover,
+      .ap2-point.active {
+        transform: none;
+      }
+
+      .ap2-dash-body {
+        padding: 1.5rem;
+      }
+
+      .ap2-roi-chart {
+        height: 260px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .approach-v2-section {
+        padding: 4rem 0;
+      }
+
+      .ap2-point {
+        padding: 1.1rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .ap2-icon {
+        width: 44px;
+        height: 44px;
+      }
+
+      .ap2-body h4 {
+        font-size: 1.1rem;
+      }
+
+      .ap2-dashboard {
+        border-radius: 20px;
+      }
+
+      .ap2-dash-header {
+        padding: 0.9rem 1.1rem;
+        gap: 0.75rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .ap2-dash-title {
+        font-size: 0.72rem;
+        letter-spacing: 1.4px;
+      }
+
+      .ap2-dash-body {
+        padding: 1.1rem;
+      }
+
+      .ap2-sec-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .ap2-card {
+        padding: 1.2rem;
+      }
+
+      .ap2-card-wide {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .ap2-card-val {
+        font-size: 2rem;
+      }
+
+      .ap2-card-wide .ap2-card-val {
+        font-size: 1.6rem;
+      }
+
+      .ap2-card-spinner {
+        width: 42px;
+        height: 42px;
+      }
+
+      .ap2-cont-step {
+        padding: 1rem 1rem 1rem 1.15rem;
+        gap: 0.9rem;
+        align-items: flex-start;
+      }
+
+      .ap2-cont-text h5 {
+        font-size: 1rem;
+      }
+
+      .ap2-roi-chart {
+        height: 220px;
+        gap: 1rem;
+        padding-top: 1rem;
+      }
+
+      .ap2-bar::before {
+        font-size: 0.78rem;
+        top: -24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .ap2-point {
+        flex-direction: column;
+      }
+
+      .ap2-body p,
+      .ap2-card-label,
+      .ap2-cont-text p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+
+  <script>
+    function changeAp2View(viewId, element) {
+      document.querySelectorAll('.ap2-point').forEach(el => el.classList.remove('active'));
+      element.classList.add('active');
+      document.querySelectorAll('.ap2-view').forEach(el => el.classList.remove('active'));
+      document.getElementById(viewId).classList.add('active');
+    }
+  </script>
+
+  <section class="approach-v2-section" id="executive-process">
+    <div class="container">
+      <div class="approach-v2-grid">
+        <div class="ap2-text reveal-left">
+          <div class="section-label" style="color:var(--cyan)">Executive Delivery Process</div>
+          <h2 class="section-heading" style="color:#fff; margin-bottom:1.5rem;">Strategic Frameworks for <span>Resilient
+              Growth</span></h2>
+          <p class="section-sub" style="color:#94a3b8; margin-bottom:3rem;">We bridge the gap between traditional
+            corporate stewardship and next-generation technical agility. Our delivery model prioritizes zero-trust
+            compliance protocols while driving scalable automation.</p>
+
+          <div class="ap2-points">
+            <div class="ap2-point active" onmouseenter="changeAp2View('ap2-v1', this)">
+              <div class="ap2-icon"><svg fill="none" height="24" stroke="currentColor" stroke-width="2"
+                  viewbox="0 0 24 24" width="24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg></div>
+              <div class="ap2-body">
+                <h4>Security-First Safeguards</h4>
+                <p>Enterprise-wide security frameworks mapped natively to global audit standards, reinforcing stability
+                  across all operational layers.</p>
+              </div>
+            </div>
+            <div class="ap2-point" onmouseenter="changeAp2View('ap2-v2', this)">
+              <div class="ap2-icon"><svg fill="none" height="24" stroke="currentColor" stroke-width="2"
+                  viewbox="0 0 24 24" width="24">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                  </path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" x2="12" y1="22.08" y2="12"></line>
+                </svg></div>
+              <div class="ap2-body">
+                <h4>Business Continuity &amp; Assurance</h4>
+                <p>Redundant failover architectures, zero-downtime cloud migration protocols, and robust SLA-backed
+                  response infrastructure.</p>
+              </div>
+            </div>
+            <div class="ap2-point" onmouseenter="changeAp2View('ap2-v3', this)">
+              <div class="ap2-icon"><svg fill="none" height="24" stroke="currentColor" stroke-width="2"
+                  viewbox="0 0 24 24" width="24">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg></div>
+              <div class="ap2-body">
+                <h4>Optimized ROI Architecture</h4>
+                <p>Streamlined software licensing, legacy infrastructure consolidation, and high-efficiency operational
+                  automated frameworks.</p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:2.5rem">
+            <a class="btn btn-primary" href="#contact">Schedule Strategy Call →</a>
+          </div>
+        </div>
+
+        <div class="ap2-visual reveal-right">
+          <div class="ap2-dashboard">
+            <div class="ap2-dash-header">
+              <div class="ap2-dash-dots">
+                <span style="background:#ef4444"></span>
+                <span style="background:#f59e0b"></span>
+                <span style="background:#10b981"></span>
+              </div>
+              <div class="ap2-dash-title"><span class="blink"></span> Executive Command Center</div>
+            </div>
+            <div class="ap2-dash-body">
+              <!-- View 1: Security -->
+              <div class="ap2-view active" id="ap2-v1">
+                <div style="margin-bottom:1.5rem;">
+                  <h3 style="color:#fff; font-size:1.5rem; margin:0 0 0.5rem 0;">Real-Time Posture</h3>
+                  <p style="color:#94a3b8; margin:0; font-size:0.95rem;">Continuous DPDP Act &amp; ISO 27001 Compliance
+                    Tracking</p>
+                </div>
+                <div class="ap2-sec-grid">
+                  <div class="ap2-card green">
+                    <div class="ap2-card-val" style="color:#10b981">99.9<span>%</span></div>
+                    <div class="ap2-card-label">Threat Interception Rate</div>
+                  </div>
+                  <div class="ap2-card">
+                    <div class="ap2-card-val" style="color:#00c3ff">0</div>
+                    <div class="ap2-card-label">Critical Vulnerabilities</div>
+                  </div>
+                  <div class="ap2-card ap2-card-wide">
+                    <div>
+                      <div class="ap2-card-val" style="font-size:1.8rem;">Active</div>
+                      <div class="ap2-card-label">Zero-Trust Network Access</div>
+                    </div>
+                    <div class="ap2-card-spinner"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- View 2: Continuity -->
+              <div class="ap2-view" id="ap2-v2">
+                <div style="margin-bottom:1.5rem;">
+                  <h3 style="color:#fff; font-size:1.5rem; margin:0 0 0.5rem 0;">Failover Architecture</h3>
+                  <p style="color:#94a3b8; margin:0; font-size:0.95rem;">Multi-zone redundancy and instant recovery</p>
+                </div>
+                <div class="ap2-cont-path">
+                  <div class="ap2-cont-step">
+                    <div class="ap2-cont-icon">✓</div>
+                    <div class="ap2-cont-text">
+                      <h5>Primary Cluster Active</h5>
+                      <p>Serving 100% of global traffic with sub-millisecond latency.</p>
+                    </div>
+                  </div>
+                  <div class="ap2-cont-step" style="opacity:0.8">
+                    <div class="ap2-cont-icon" style="color:#00c3ff; background:rgba(0,195,255,0.2)">⟳</div>
+                    <div class="ap2-cont-text">
+                      <h5>Continuous Replication</h5>
+                      <p>Real-time data syncing to isolated backup zones.</p>
+                    </div>
+                  </div>
+                  <div class="ap2-cont-step"
+                    style="opacity:0.7; border-left-color:#f59e0b; background:linear-gradient(90deg, rgba(245, 158, 11, 0.1), transparent);">
+                    <div class="ap2-cont-icon" style="color:#f59e0b; background:rgba(245,158,11,0.2)">⚡</div>
+                    <div class="ap2-cont-text">
+                      <h5>Standby Disaster Recovery</h5>
+                      <p>Ready to assume full load in &lt; 60 seconds if primary fails.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- View 3: ROI -->
+              <div class="ap2-view" id="ap2-v3">
+                <div style="margin-bottom:1.5rem;">
+                  <h3 style="color:#fff; font-size:1.5rem; margin:0 0 0.5rem 0;">Cost Optimization</h3>
+                  <p style="color:#94a3b8; margin:0; font-size:0.95rem;">Projected IT overhead reduction via automation
+                  </p>
+                </div>
+                <div class="ap2-roi-chart">
+                  <div class="ap2-bar" data-val="100%" style="height: 100%"></div>
+                  <div class="ap2-bar" data-val="85%" style="height: 85%"></div>
+                  <div class="ap2-bar" data-val="70%" style="height: 70%"></div>
+                  <div class="ap2-bar active" data-val="45%" style="height: 45%"></div>
+                </div>
+                <div
+                  style="display:flex; justify-content:space-between; margin-top:1.5rem; color:#94a3b8; font-size:0.9rem; font-weight:600;">
+                  <span>Q1</span><span>Q2</span><span>Q3</span><span style="color:#00c3ff;">Q4 (Vedtam)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="why-bento-section">
+    <style>
+      .why-bento-section {
+        padding: 8rem 0;
+        background: #050b14;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .why-bento-header {
+        text-align: center;
+        margin-bottom: 4rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .why-bento-header .section-label {
+        color: #06b6d4;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .why-bento-header h2 {
+        font-size: 3.5rem;
+        color: #fff;
+        font-weight: 800;
+        margin: 0 auto 1.5rem auto;
+      }
+
+      .why-bento-header h2 span {
+        color: #00c3ff;
+      }
+
+      .why-bento-header p {
+        color: #94a3b8;
+        font-size: 1.15rem;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .bento-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(240px, auto);
+        gap: 1.5rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .bento-card {
+        background: rgba(15, 23, 42, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 24px;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        min-width: 0;
+      }
+
+      .bento-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 195, 255, 0.15), inset 0 0 0 1px rgba(0, 195, 255, 0.3);
+        border-color: rgba(0, 195, 255, 0.3);
+      }
+
+      .bento-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+
+      .bento-card:hover::before {
+        opacity: 1;
+      }
+
+      .bento-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 195, 255, 0.1);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #00c3ff;
+        margin-bottom: auto;
+        /* pushes text to bottom */
+        transition: transform 0.4s, background 0.4s, color 0.4s;
+        position: relative;
+        z-index: 1;
+      }
+
+      .bento-card:hover .bento-icon {
+        transform: scale(1.1);
+        background: #00c3ff;
+        color: #050b14;
+        box-shadow: 0 0 20px rgba(0, 195, 255, 0.5);
+      }
+
+      .bento-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .bento-content h3 {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .bento-content p {
+        color: #94a3b8;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      /* Card Specifics */
+      .bento-large {
+        grid-column: span 2;
+        grid-row: span 2;
+        justify-content: space-between;
+      }
+
+      .bento-large .bento-content h3 {
+        font-size: 1.8rem;
+      }
+
+      .bento-large .bento-content p {
+        font-size: 1.05rem;
+        max-width: 80%;
+      }
+
+      .bento-wide {
+        grid-column: span 2;
+        grid-row: span 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+      }
+
+      .bento-wide .bento-icon {
+        margin-bottom: 0;
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+      }
+
+      .bento-wide .bento-content h3 {
+        font-size: 1.5rem;
+      }
+
+      /* Custom Visuals for Large Cards */
+      .radar-visual {
+        position: absolute;
+        top: -30%;
+        right: -20%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 195, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+        opacity: 0.5;
+      }
+
+      .radar-visual::before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 195, 255, 0.2);
+      }
+
+      .radar-visual::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgba(0, 195, 255, 0.05);
+        border: 1px solid rgba(0, 195, 255, 0.3);
+        animation: radarPulse 3s infinite;
+      }
+
+      .radar-sweep {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 0;
+        right: 50%;
+        transform-origin: bottom right;
+        background: linear-gradient(45deg, rgba(0, 195, 255, 0.5), transparent);
+        animation: radarSweep 4s linear infinite;
+        border-right: 2px solid #00c3ff;
+      }
+
+      @keyframes radarPulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        100% {
+          transform: scale(3);
+          opacity: 0;
+        }
+      }
+
+      @keyframes radarSweep {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .bento-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-auto-rows: minmax(220px, auto);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .why-bento-section {
+          padding: 5rem 0;
+        }
+
+        .why-bento-header h2 {
+          font-size: clamp(1.8rem, 7vw, 2.4rem);
+        }
+
+        .why-bento-header p {
+          font-size: 1rem;
+        }
+
+        .bento-card {
+          padding: 1.5rem;
+        }
+
+        .bento-large .bento-content h3 {
+          font-size: 1.55rem;
+        }
+
+        .bento-large .bento-content p {
+          max-width: 100%;
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .bento-grid {
+          grid-template-columns: 1fr;
+          grid-auto-rows: minmax(0, auto);
+        }
+
+        .bento-card {
+          min-height: 0;
+          justify-content: flex-start;
+          gap: 1.25rem;
+        }
+
+        .bento-large,
+        .bento-wide {
+          grid-column: span 1;
+          grid-row: span 1;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+
+        .bento-wide .bento-icon {
+          margin-bottom: 1rem;
+          width: 50px;
+          height: 50px;
+        }
+
+        .radar-visual {
+          width: 200px;
+          height: 200px;
+          right: -50px;
+          top: -50px;
+        }
+
+        .bento-content h3 {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+
+    <div class="container">
+      <div class="why-bento-header reveal">
+        <div class="section-label">Why Vedtam</div>
+        <h2>Built for <span>Enterprise Trust</span></h2>
+        <p>Choosing Vedtam means gaining a reliable IT partner committed to excellence, absolute security, and long-term
+          digital growth.</p>
+      </div>
+
+      <div class="bento-grid reveal">
+        <!-- 1. Client-Centric (Large) -->
+        <div class="bento-card bento-large">
+          <div class="radar-visual">
+            <div class="radar-sweep"></div>
+          </div>
+          <div class="bento-icon">
+            <svg fill="none" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewbox="0 0 24 24" width="28">
+              <path
+                d="M12 20s-6.5-4.35-8.5-8A4.96 4.96 0 0 1 8 5.5c1.7 0 3.06.86 4 2.18.94-1.32 2.3-2.18 4-2.18a4.96 4.96 0 0 1 4.5 6.5c-2 3.65-8.5 8-8.5 8Z">
+              </path>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <h3>Client-Centric Approach</h3>
+            <p>We listen, understand, and adapt to your evolving business needs, ensuring every technological
+              architecture and security solution adds measurable, strategic value. Your operational resilience is our
+              highest priority.</p>
+          </div>
+        </div>
+
+        <!-- 2. Alignment -->
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+              <circle cx="12" cy="12" r="8"></circle>
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="m16.5 7.5 4-4" stroke-linecap="round"></path>
+              <path d="M18 3h2.5v2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <h3>Strategic Alignment</h3>
+            <p>We align IT directly with your core business goals to eliminate technology bloat.</p>
+          </div>
+        </div>
+
+        <!-- 3. Scalability -->
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-width="2"
+              viewbox="0 0 24 24" width="24">
+              <path d="M5 16.5 10 11l3 3 6-7" stroke-linejoin="round"></path>
+              <path d="M16 7h3v3" stroke-linejoin="round"></path>
+              <path d="M5 19h14"></path>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <h3>Scalable Models</h3>
+            <p>Flexible architectures designed to scale effortlessly from dynamic startups to vast enterprises.</p>
+          </div>
+        </div>
+
+        <!-- 4. Innovation -->
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-width="2"
+              viewbox="0 0 24 24" width="24">
+              <path d="M9 18h6"></path>
+              <path d="M10 21h4"></path>
+              <path
+                d="M8.5 14.5c-1.3-1.05-2-2.53-2-4.16A5.5 5.5 0 0 1 12 4.84a5.5 5.5 0 0 1 5.5 5.5c0 1.63-.7 3.11-2 4.16-.62.5-1 1.2-1 1.99V17h-5v-.51c0-.79-.38-1.49-1-1.99Z"
+                stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <h3>Innovation-Driven</h3>
+            <p>Integrating emerging AI and next-gen DevSecOps to permanently future-proof your infrastructure.</p>
+          </div>
+        </div>
+
+        <!-- 5. Defense -->
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg fill="none" height="24" stroke="currentColor" stroke-linejoin="round" stroke-width="2"
+              viewbox="0 0 24 24" width="24">
+              <path d="M12 3 5.5 6v4.8c0 4.25 2.73 8.2 6.5 9.7 3.77-1.5 6.5-5.45 6.5-9.7V6L12 3Z"></path>
+              <path d="m9.5 12 1.7 1.7 3.3-3.7" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <h3>Proactive Defense</h3>
+            <p>AI-driven threat detection neutralizing threats before they breach the perimeter.</p>
+          </div>
+        </div>
+
+        <!-- 6. Continuity (Wide) -->
+        <div class="bento-card bento-wide">
+          <div class="bento-icon">
+            <svg fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-width="2"
+              viewbox="0 0 24 24" width="32">
+              <path d="M6 17h12"></path>
+              <path d="M8 17V9.5a4 4 0 1 1 8 0V17" stroke-linejoin="round"></path>
+              <path d="M12 9V6"></path>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <h3>Business Continuity Guaranteed</h3>
+            <p>Robust risk management, data sovereignty compliance, and active BCP/DR planning are structurally embedded
+              into every network we touch.</p>
+          </div>
+        </div>
+
+        <!-- 7. Agnostic -->
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+              <path d="M4 4h16v16H4V4z"></path>
+              <path d="M9 9h6v6H9V9z"></path>
+              <path d="M4 12h5M15 12h5M12 4v5M12 15v5"></path>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <h3>Agnostic Stack</h3>
+            <p>Delivering best-fit solutions tailored uniquely for you, eliminating vendor lock-in.</p>
+          </div>
+        </div>
+
+        <!-- 8. Experts -->
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+              <path d="M12 12v3"></path>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <h3>Dedicated Experts</h3>
+            <p>Certified vCISOs acting as a high-performance extension of your team.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <style>
+    .client-vertical-section {
+      padding: 6rem 0;
+      position: relative;
+      background: radial-gradient(circle at top, rgba(0, 195, 255, 0.05) 0%, transparent 60%);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .vertical-marquee-wrapper {
+      margin-top: 4rem;
+      width: 100%;
+      max-width: 1200px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      overflow: hidden;
+      mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+      -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    }
+
+    .vertical-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 250px;
+      padding-bottom: 2rem;
+    }
+
+    .col-up {
+      animation: scrollUp 30s linear infinite;
+    }
+
+    .col-down {
+      animation: scrollDown 35s linear infinite;
+      transform: translateY(-50%);
+    }
+
+    .col-fast {
+      animation-duration: 16s;
+    }
+
+    .col-slow {
+      animation-duration: 18s;
+    }
+
+    .vertical-marquee-wrapper:hover .vertical-column {
+      animation-play-state: paused;
+    }
+
+    @keyframes scrollUp {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-50%);
+      }
+    }
+
+    @keyframes scrollDown {
+      0% {
+        transform: translateY(-50%);
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
+    }
+
+    .vertical-logo-card {
+      background: transparent;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 140px;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .vertical-logo-card img {
+      max-width: 100%;
+      max-height: 100%;
+      filter: brightness(0) invert(1) opacity(0.85);
+      transition: all 0.2s ease;
+    }
+
+    .vertical-logo-card:hover img {
+      filter: brightness(0) invert(1) brightness(1.2) opacity(1) drop-shadow(0 0 12px rgba(0, 195, 255, 0.4));
+    }
+
+    .vertical-logo-card img.remove-bg {
+      filter: invert(1) grayscale(100%) opacity(0.85);
+      mix-blend-mode: screen;
+    }
+
+    .vertical-logo-card:hover img.remove-bg {
+      filter: invert(1) grayscale(100%) brightness(1.2) opacity(1) drop-shadow(0 0 12px rgba(0, 195, 255, 0.4));
+      mix-blend-mode: screen;
+    }
+
+    @media (max-width: 900px) {
+      .vertical-column {
+        width: 180px;
+        gap: 1.5rem;
+      }
+
+      .vertical-logo-card {
+        height: 120px;
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .vertical-marquee-wrapper {
+        height: 350px;
+        gap: 0.8rem;
+      }
+
+      .vertical-column {
+        width: 140px;
+        gap: 1rem;
+      }
+
+      .vertical-logo-card {
+        height: 100px;
+        padding: 1rem;
+      }
+
+      .vertical-marquee-wrapper .vertical-column:nth-child(3),
+      .vertical-marquee-wrapper .vertical-column:nth-child(4) {
+        display: none;
+      }
+    }
+  </style>
+
+  <section class="client-vertical-section">
+    <div class="container">
+      <div class="faq-intro reveal">
+        <div class="section-label">Trusted Partners</div>
+        <h2 class="section-heading">Empowering Global <span>Brands</span></h2>
+        <p class="section-sub">We are proud to have delivered measurable success to industry leaders worldwide.</p>
+      </div>
+    </div>
+    <div class="vertical-marquee-wrapper">
+      <div class="vertical-column col-up col-fast">
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/1.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/2.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/3.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/4.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/5.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/6.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/nimbuslogo.jpeg" alt="Client Logo"
+            class="remove-bg"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/16.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/1.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/2.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/3.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/4.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/5.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/6.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/nimbuslogo.jpeg" alt="Client Logo"
+            class="remove-bg"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/16.png" alt="Client Logo"></div>
+      </div>
+      <div class="vertical-column col-down col-slow">
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/7.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/8.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/9.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/10.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/12.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/13.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/21.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/7.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/8.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/9.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/10.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/12.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/13.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/21.png" alt="Client Logo"></div>
+      </div>
+      <div class="vertical-column col-up col-slow">
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/14.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/15.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/16.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/17.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/18.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/6.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/2.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/14.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/15.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/16.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/17.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/18.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/6.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/2.png" alt="Client Logo"></div>
+      </div>
+      <div class="vertical-column col-down col-fast">
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/19.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/21.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/22.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/image.png" alt="Client Logo" class="remove-bg">
+        </div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/nimbuslogo.jpeg" alt="Client Logo"
+            class="remove-bg"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/10.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/7.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/19.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/21.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/22.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/image.png" alt="Client Logo" class="remove-bg">
+        </div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/nimbuslogo.jpeg" alt="Client Logo"
+            class="remove-bg"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/10.png" alt="Client Logo"></div>
+        <div class="vertical-logo-card"><img src="vedtam%20TESTIMONIAL/7.png" alt="Client Logo"></div>
+      </div>
+    </div>
+  </section>
+  <section class="tm-section" id="testimonials">
+    <div class="container">
+      <div class="section-label">
+        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+          </path>
+        </svg>
+        Client Success
+      </div>
+      <h2 class="section-heading">Trusted by Industry Leaders</h2>
+      <div class="tm-carousel-wrapper">
+        <button aria-label="Previous Testimonial" class="tm-carousel-btn tm-prev" id="tmPrev">❮</button>
+        <div class="tm-carousel-viewport">
+          <div class="tm-carousel-track" id="tmTrack">
+            <!-- Card 1 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">Vedtam helped us transform our cybersecurity infrastructure with a structured
+                    approach. Their proactive support improved our security posture immensely.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">IT HEAD</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">We partnered with Vedtam for cloud infrastructure and DevOps implementation. The
+                    results were outstanding and deployment cycles are faster.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">CTO</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">Vedtam provided end-to-end cybersecurity solutions that helped us secure sensitive
+                    data and maintain compliance standards with complete peace of mind.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">CISO</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">As our business scaled, Vedtam supported us with infrastructure and network
+                    optimization. Their solutions are scalable and aligned with our goals.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">DIRECTOR IT</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">Scaling our e-commerce platform during peak seasons used to be a nightmare.
+                    Vedtam's cloud architecture brought us zero-downtime reliability.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">CEO</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">Achieving SOC 2 and PCI-DSS compliance was a monumental task. The consulting team
+                    at Vedtam navigated us through every audit requirement flawlessly.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">VP ENGINEERING</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">From the initial vulnerability assessment to the final penetration testing report,
+                    their attention to detail was incredible. They uncovered critical flaws.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">INFOSEC MANAGER</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">Outsourcing our IT managed services to Vedtam was the best decision we made. We get
+                    24/7 proactive monitoring and our team focuses on product.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">COO</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="tm-slide">
+              <div class="tm-card-premium">
+                <div class="tm-content">
+                  <div class="tm-quote tm-quote-left">"</div>
+                  <p class="tm-text">Their OT security implementation completely transformed our factory floor's digital
+                    safety. We finally have deep visibility into our control systems.</p>
+                  <div class="tm-quote tm-quote-right">"</div>
+                  <div class="tm-name">HEAD OF OPS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button aria-label="Next Testimonial" class="tm-carousel-btn tm-next" id="tmNext">❯</button>
+      </div>
+      <div class="tm-dots" id="tmDots"></div>
+    </div>
+  </section>
+  <section class="contact-premium-section" id="contact">
+    <div class="container">
+      <!-- Atmospheric Mesh Gradients -->
+      <div class="mesh-gradient-1"></div>
+      <div class="mesh-gradient-2"></div>
+      <div class="mesh-gradient-3"></div>
+      <div class="contact-premium-grid">
+        <div class="contact-premium-info reveal-left">
+          <div class="response-badge-premium">
+            <div class="pulse-icon"></div>
+            <span>Expert Team Online | 4h Priority Response</span>
+          </div>
+          <h2 class="premium-heading">Secure Your Future. <span>Scale Without Limits.</span></h2>
+          <p class="premium-sub">Don't just fix IT transform it. Partner with Vedtam for fractional vCISO leadership,
+            proactive resilience, and a strategic roadmap built for enterprise trust.</p>
+          <div class="consultation-features">
+            <div class="feature-tag">
+              <i class="fas fa-shield-alt"></i>
+              <div class="feature-text">
+                <strong><i aria-hidden="true" class="fas fa-check-circle feature-title-icon"></i>Strategic Gap
+                  Analysis</strong>
+                <span>Expert review of your current posture</span>
+              </div>
+            </div>
+            <div class="feature-tag">
+              <i class="fas fa-file-contract"></i>
+              <div class="feature-text">
+                <strong><i aria-hidden="true" class="fas fa-check-circle feature-title-icon"></i>Compliance
+                  Roadmap</strong>
+                <span>Accelerated paths to ISO, HIPAA &amp; SOC2</span>
+              </div>
+            </div>
+            <div class="feature-tag">
+              <i class="fas fa-user-shield"></i>
+              <div class="feature-text">
+                <strong><i aria-hidden="true" class="fas fa-check-circle feature-title-icon"></i>Direct Expert
+                  Access</strong>
+                <span>Pure engineering expertise, zero sales fluff</span>
+              </div>
+            </div>
+          </div>
+          <div class="client-trust-widget">
+            <div class="trust-avatars">
+              <div class="trust-avatar">L</div>
+              <div class="trust-avatar">E</div>
+              <div class="trust-avatar">A</div>
+              <div class="trust-avatar">D</div>
+            </div>
+            <div class="trust-text">Join <strong>100+ Leaders</strong> Securing Their Digital Growth</div>
+          </div>
+        </div>
+        <div class="contact-glass-card-premium reveal-right">
+          <div class="card-glass-glow"></div>
+          <form action="#" class="premium-form" id="consultationForm">
+            <div class="form-header">
+              <h3>Request Your Consultation</h3>
+              <p>Fill out the form below and an expert will reach out within 4 hours.</p>
+            </div>
+            <div class="premium-form-row">
+              <div class="premium-input-group">
+                <label for="leadName">Full Name</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user"></i>
+                  <input id="leadName" name="full_name" placeholder="John Doe" required="" type="text" />
+                  <div class="input-focus-border"></div>
+                </div>
+              </div>
+              <div class="premium-input-group">
+                <label for="leadEmail">Work Email</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input id="leadEmail" name="work_email" placeholder="john@company.com" required="" type="email" />
+                  <div class="input-focus-border"></div>
+                </div>
+              </div>
+            </div>
+            <div class="premium-form-row">
+              <div class="premium-input-group">
+                <label for="leadPhone">Phone Number</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-phone"></i>
+                  <input id="leadPhone" name="phone" placeholder="+91 00000 00000" type="tel" />
+                  <div class="input-focus-border"></div>
+                </div>
+              </div>
+              <div class="premium-input-group">
+                <label for="leadService">Service Interest</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-briefcase"></i>
+                  <select id="leadService" name="service" required="">
+                    <option disabled="" selected="" value="">Where can we help you most?</option>
+                    <option value="cybersecurity">Cybersecurity Strategy</option>
+                    <option value="compliance">Compliance &amp; Audits</option>
+                    <option value="it-managed">Managed IT Support</option>
+                    <option value="cloud">Cloud Transformation</option>
+                    <option value="devops">DevOps Automation</option>
+                    <option value="vCISO">vCISO / vCIO Advisory</option>
+                  </select>
+                  <div class="input-focus-border"></div>
+                </div>
+              </div>
+            </div>
+            <div class="premium-input-group full-width">
+              <label for="leadMessage">How can we help?</label>
+              <div class="input-wrapper">
+                <i class="fas fa-comment-dots"></i>
+                <textarea id="leadMessage" name="message" placeholder="Briefly describe your requirements..."
+                  rows="3"></textarea>
+                <div class="input-focus-border"></div>
+              </div>
+            </div>
+            <button class="premium-submit-btn" type="submit">
+              <span>Get My Free Security Roadmap</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-intro reveal">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-heading">Get All the Important <span>Answers</span></h2>
+        <p class="section-sub">Everything you need to know about working with Vedtam Tech Solutions.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What industries do you specialize in?
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">At Vedtam, we work with a wide spectrum of industries including Banking,
+              Financial Services &amp; Insurance (BFSI), Healthcare, Manufacturing, Education Technology,
+              Software-as-a-Service (SaaS), and Small to Medium Businesses (SMBs). Our domain expertise allows us to
+              offer tailored solutions that align with the operational and compliance needs specific to each sector.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Can you help us with ISO certification?
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Absolutely. We have a proven track record in helping businesses achieve
+              certifications such as ISO 27001, ISO 22301, ISO 20000, and PCI DSS. Our experts guide you through every
+              step - from gap assessments to policy creation, implementation, internal audits, and certification
+              support.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Do you work with startups and small businesses?
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, we cater to startups and small businesses with cost-effective IT
+              solutions that can scale as you grow. Whether you need basic cybersecurity, cloud setup, or compliance
+              guidance, we create packages that are flexible, efficient, and aligned with your budget and long-term
+              vision.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How do you ensure project success?
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We follow a structured methodology: Discovery, Strategy, Implementation, and
+              Continuous Support. This ensures every project is aligned with your business goals, delivered on time,
+              and provides measurable value.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Do you provide customized solutions?
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Absolutely. We don't believe in one-size-fits-all. Every solution we build is
+              customized to your specific technology stack, budget, and operational requirements to ensure maximum
+              impact.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What is your typical project delivery timeline?
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Timelines vary by project scope. A focused audit or assessment might take 1-2
+              weeks, while complex software builds or enterprise cloud migrations can take 3-6 months. We always provide
+              clear milestones during the strategy phase.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How do you handle post-implementation support?
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We offer 24/7 remote support and proactive maintenance plans. Our team
+              continuously monitors your systems for performance and security, providing regular updates and
+              troubleshooting to ensure long-term stability.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Is your team certified in specific security standards?
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, our experts hold industry-leading certifications including CISSP, CISA,
+              ISO Lead Auditor, and platform-specific certifications from AWS and Microsoft, ensuring your projects
+              are handled by qualified professionals.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <!-- Premium Creative Pre-Footer CTA -->
+      <div class="footer-cta-box">
+        <div class="footer-cta-content">
+          <h3>Ready to Secure &amp; Scale Your Enterprise?</h3>
+          <p>Partner with Vedtam for end-to-end multi-cloud transformation, advanced automated cybersecurity, DevOps
+            pipelines, and elite regulatory framework compliance.</p>
+        </div>
+        <div class="footer-cta-action">
+          <a class="btn btn-primary footer-cta-btn" href="contact-us.html">Schedule Strategic Consultation
+            <span><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
+        </div>
+      </div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a aria-label="Vedtam Tech Solutions" class="nav-logo footer-logo" href="index.html">
+            <img alt="Vedtam Tech Solutions logo" decoding="async" fetchpriority="low"
+              src="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png" data-logo-switcher
+              data-logos="website-logo/VEDTAM%20TECH%20SOLUTIONS%20en.png, website-logo/VEDTAM%20TECH%20SOLUTIONS%20hn.png" />
+          </a>
+          <p class="footer-about-text">Vedtam Tech Solutions is a trusted global IT services and specialized compliance
+            partner. We deliver mission-critical managed IT, multi-cloud architectures, next-gen automated
+            cybersecurity, DevOps pipelines, and enterprise framework consulting (ISO 27001, SOC 2, HIPAA, DPDP Act).
+            Committed to relentless innovation and proactive threat management, we empower modern enterprises to scale
+            securely, maintain regulatory excellence, and achieve uncompromised business resilience.</p>
+          <div class="footer-contact">
+            <a href="https://maps.google.com/?q=Noida%2C+Uttar+Pradesh%2C+India" target="_blank" rel="noopener"><i
+                class="fas fa-map-marker-alt fc-icon"></i> Location: Noida, Uttar Pradesh, India</a>
+            <a href="mailto:info@vedtam.com"><i class="fas fa-envelope fc-icon"></i> Email: info@vedtam.com</a>
+            <a href="tel:+917065111015"><i class="fas fa-phone fc-icon"></i> Phone: +91 70651 11015</a>
+          </div>
+          <div class="footer-social">
+            <a aria-label="LinkedIn" class="social-link"
+              href="https://www.linkedin.com/company/vedtam-tech-solutions/posts/?feedView=all">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M6.94 8.5a1.57 1.57 0 1 1 0-3.14 1.57 1.57 0 0 1 0 3.14ZM5.57 9.7h2.74V18H5.57V9.7Zm4.3 0h2.62v1.13h.04c.37-.7 1.25-1.44 2.57-1.44 2.75 0 3.26 1.8 3.26 4.15V18h-2.73v-3.95c0-.94-.02-2.15-1.31-2.15-1.31 0-1.5 1.02-1.5 2.08V18H9.88V9.7Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+            <a aria-label="Facebook" class="social-link" href="https://www.facebook.com/vedtamtechsolutions">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.87.25-1.46 1.5-1.46h1.64V5a21.4 21.4 0 0 0-2.39-.12c-2.36 0-3.97 1.44-3.97 4.08V11H8v3h2.3v8h3.2Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+            <a aria-label="Instagram" class="social-link" href="https://www.instagram.com/vedtamtechsolutions/">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm-.2 1.9A3.65 3.65 0 0 0 3.9 7.55v8.9a3.65 3.65 0 0 0 3.65 3.65h8.9a3.65 3.65 0 0 0 3.65-3.65v-8.9a3.65 3.65 0 0 0-3.65-3.65h-8.9Zm9.35 1.45a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.9A3.1 3.1 0 1 0 12 15.1 3.1 3.1 0 0 0 12 8.9Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="solutions/cybersecurity-services.html">Cybersecurity Services</a></li>
+            <li><a href="solutions/network-security-solutions.html">Network Security</a></li>
+            <li><a href="solutions/devops-solutions.html">DevOps Solutions</a></li>
+            <li><a href="solutions/ot-security-services.html">OT Security Services</a></li>
+            <li><a href="solutions/cloud-services.html">Cloud Services</a></li>
+            <li><a href="solutions/it-managed-services.html">IT Managed Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Consulting</h4>
+          <ul>
+            <li><a href="consulting/dpdp-act-consulting-services.html">DPDP Act Compliance</a></li>
+            <li><a href="consulting/virtual-ciso-services.html">Virtual CISO Services</a></li>
+            <li><a href="consulting/iso-consulting-services.html">ISO Consultancy Services</a></li>
+            <li><a href="consulting/qms-consulting-services.html">QMS Consulting Services</a></li>
+            <li><a href="consulting/hipaa-consulting-services.html">HIPAA Compliance</a></li>
+            <li><a href="consulting/soc2-consulting-services.html">SOC 2 Consulting</a></li>
+            <li><a href="consulting/pci-dss-consulting-services.html">PCI DSS Compliance</a></li>
+            <li><a href="consulting/gdpr-consulting-services.html">GDPR Consulting</a></li>
+            <li><a href="consulting/network-security-consulting-services.html">Network Security Consulting</a></li>
+            <li><a href="consulting/network-security-audit-services.html">Network Security Audit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="why-us.html">Why Us</a></li>
+            <li><a href="solutions/software-services.html">Software Solutions</a></li>
+            <li><a href="solutions/cybersecurity-services.html">Industries We Serve</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 © Vedtam Tech Solutions. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div aria-label="Quick actions" class="floating-actions">
+    <a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/917065111015" rel="noopener"
+      target="_blank">
+      <svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+        </path>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <button aria-label="Scroll to top" class="scroll-top" id="scrollTop"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+        <path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2.5"></path>
+      </svg>
+    </button>
+  </div>
+  <script>
+    window.VEDTAM_EMAILJS_CONFIG = {
+      publicKey: "6WOyjoeStKDv5NUBN",
+      serviceId: "service_138omqz",
+      templateId: "template_87oft6o"
+    };
+    // Set this to your live CERT-In JSON feed URL after hosting.
+    // Example: "https://www.vedtam.com/cert-data.json"
+    window.VEDTAM_CERT_DATA_URL = "cert-data.json";
+    // Optional fallback date shown only when feed is unavailable.
+    window.VEDTAM_CERT_PORTAL_UPDATED_AT = "2026-07-06";
+    window.VEDTAM_SHEET_WEBHOOK_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL";
+    window.VEDTAM_WHATSAPP_WEBHOOK_URL = "YOUR_WHATSAPP_WEBHOOK_URL";
+  </script>
+  <script defer="" src="assets/js/vedtam.js?v=5"></script>
+  <script defer src="assets/js/cookie-banner.js"></script>
+  <!-- Logo Switcher Script -->
+  <script>
+    (function () {
+      const logos = document.querySelectorAll('[data-logo-switcher]');
+      logos.forEach(logo => {
+        const logosData = logo.getAttribute('data-logos');
+        if (!logosData) return;
+
+        const logoArray = logosData.split(',').map(url => url.trim());
+        if (logoArray.length < 2) return;
+        const switchDelay = Math.max(250, parseInt(logo.getAttribute('data-logo-switch-interval') || '5000', 10) || 5000);
+
+        let currentIndex = 0;
+
+        let switchTimer = null;
+
+        const rotateLogo = () => {
+          currentIndex = (currentIndex + 1) % logoArray.length;
+          logo.src = logoArray[currentIndex];
+        };
+
+        const startRotation = () => {
+          if (switchTimer || document.hidden) return;
+          switchTimer = setInterval(rotateLogo, switchDelay);
+        };
+
+        const stopRotation = () => {
+          if (!switchTimer) return;
+          clearInterval(switchTimer);
+          switchTimer = null;
+        };
+
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden) stopRotation();
+          else startRotation();
+        });
+
+        startRotation();
+      });
+    })();
+  </script>
+
+  <!-- Delayed Lead Generation Popup Modal -->
+  <div class="split-modal-overlay" id="delayedPopupModal">
+    <div class="split-modal-container">
+      <button class="split-modal-close" id="closeDelayedPopup" aria-label="Close popup">&times;</button>
+
+      <!-- Left Side (Visuals) -->
+      <div class="split-modal-left">
+        <div class="split-modal-glow"></div>
+        <div class="split-modal-left-content">
+          <h2 class="split-modal-title">Get a Call Within <br /><span>30 Seconds</span></h2>
+          <p class="split-modal-subtitle">Don't miss out on our expert enterprise consultation.</p>
+        </div>
+        <img src="services_images/service_it_managed_1774586782051.png" alt="Support Expert"
+          class="split-modal-image" />
+      </div>
+
+      <!-- Right Side (Form) -->
+      <div class="split-modal-right">
+        <h3 class="split-form-heading">Have a Question? We're Here to Help.</h3>
+        <form class="split-modal-form" id="delayedPopupForm"
+          onsubmit="event.preventDefault(); document.getElementById('closeDelayedPopup').click();">
+          <div class="split-input-group">
+            <i class="fas fa-user split-input-icon"></i>
+            <input type="text" placeholder="Name*" required />
+          </div>
+          <div class="split-input-group">
+            <i class="fas fa-envelope split-input-icon"></i>
+            <input type="email" placeholder="Email*" required />
+          </div>
+          <div class="split-input-group">
+            <i class="fas fa-phone split-input-icon"></i>
+            <input type="tel" placeholder="Contact No*" required />
+          </div>
+          <div class="split-input-group">
+            <i class="fas fa-globe split-input-icon"></i>
+            <select required>
+              <option value="" disabled selected>Select Country*</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="UAE">UAE</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="split-input-group">
+            <i class="fas fa-cogs split-input-icon"></i>
+            <select required>
+              <option value="" disabled selected>Service Name*</option>
+              <option value="Cybersecurity">Cybersecurity</option>
+              <option value="DevOps">DevOps</option>
+              <option value="Cloud Solutions">Cloud Solutions</option>
+              <option value="IT Managed Services">IT Managed Services</option>
+              <option value="Compliance Consulting">Compliance Consulting</option>
+            </select>
+          </div>
+          <div class="split-input-group">
+            <i class="fas fa-comment-dots split-input-icon" style="top: 15px;"></i>
+            <textarea placeholder="Write your message here.*" required rows="2"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary split-submit-btn">SUBMIT YOUR QUERY</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

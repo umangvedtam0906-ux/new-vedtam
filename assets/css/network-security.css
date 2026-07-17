@@ -1,0 +1,490 @@
+/* ==========================================================================
+   NETWORK SECURITY CONSULTING - PREMIUM HERO & STYLES
+   ========================================================================== */
+.netsec-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 150px 0 100px;
+  background: #020617; /* Deep slate / almost black */
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Background gradient overlay */
+.netsec-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at top right, rgba(14, 165, 233, 0.15) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(250, 204, 21, 0.1) 0%, transparent 50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Custom Interactive Nodes Canvas Wrapper */
+#netsec-canvas-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+#netsec-canvas-container canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.netsec-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* Left Content */
+.netsec-content-col .cyber-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(14, 165, 233, 0.1);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  color: #38bdf8;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.2);
+}
+
+.netsec-content-col h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  color: #f8fafc;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: -1px;
+}
+
+.netsec-content-col h1 span {
+  background: linear-gradient(135deg, #38bdf8 0%, #facc15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.netsec-content-col p {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 550px;
+}
+
+/* Right Content: Premium Interactive Shield Visualization */
+.netsec-visual-col {
+  position: relative;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1500px;
+}
+
+.netsec-shield-core {
+  position: relative;
+  width: 280px;
+  height: 320px;
+  animation: netsecFloat 6s ease-in-out infinite;
+  z-index: 10;
+  transform-style: preserve-3d;
+}
+
+.ns-glass-shield {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(2, 6, 23, 0.9));
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  border-radius: 20px 20px 140px 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  box-shadow: 
+    0 40px 80px rgba(0,0,0,0.8),
+    inset 0 0 30px rgba(56, 189, 248, 0.2),
+    0 0 60px rgba(56, 189, 248, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.ns-glass-shield::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(56, 189, 248, 0.2), transparent);
+  animation: scanWave 3s linear infinite;
+  pointer-events: none;
+}
+
+.ns-shield-icon {
+  font-size: 5rem;
+  color: #38bdf8;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.6));
+}
+
+.ns-shield-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.ns-shield-status {
+  color: #10b981;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ns-shield-status::before {
+  content: '';
+  width: 8px; height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #10b981;
+  animation: blinkFast 1s infinite;
+}
+
+/* Orbital Rings */
+.ns-orbit {
+  position: absolute;
+  top: 50%; left: 50%;
+  border-radius: 50%;
+  border: 1px dashed rgba(250, 204, 21, 0.3);
+  transform: translate(-50%, -50%) rotateX(70deg);
+  transform-style: preserve-3d;
+}
+.ns-ring-1 { width: 400px; height: 400px; animation: spinRing 20s linear infinite; }
+.ns-ring-2 { width: 550px; height: 550px; animation: spinRing 30s linear infinite reverse; border-color: rgba(56, 189, 248, 0.2); border-style: solid;}
+.ns-ring-3 { width: 700px; height: 700px; animation: spinRing 40s linear infinite; border-color: rgba(14, 165, 233, 0.1); }
+
+/* Floating Threat Blocks */
+.ns-threat {
+  position: absolute;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+}
+.nt-1 { top: 10%; right: 10%; animation: threatFloat 4s ease-in-out infinite; }
+.nt-2 { bottom: 15%; left: 5%; animation: threatFloat 5s ease-in-out infinite 1s; }
+
+@keyframes netsecFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+@keyframes spinRing { 100% { transform: translate(-50%, -50%) rotateX(70deg) rotateZ(360deg); } }
+@keyframes scanWave { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+@keyframes blinkFast { 50% { opacity: 0.3; } }
+@keyframes threatFloat { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-10px) scale(1.05); } }
+
+/* ==========================================================================
+   NETSEC BENTO GRID SERVICES
+   ========================================================================== */
+.netsec-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.ns-bento-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: 24px;
+  padding: 40px;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.ns-bento-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+.ns-bento-icon {
+  width: 60px; height: 60px;
+  background: rgba(14, 165, 233, 0.1);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #38bdf8;
+  margin-bottom: 25px;
+  box-shadow: inset 0 0 15px rgba(14, 165, 233, 0.2);
+}
+
+.ns-bento-card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ns-bento-card p {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ns-card-full { grid-column: span 12; }
+.ns-card-half { grid-column: span 6; }
+.ns-card-third { grid-column: span 4; }
+
+/* Light Theme overrides */
+[data-theme="light"] .netsec-hero { background: #f8fafc; }
+[data-theme="light"] .netsec-content-col h1 { color: #0f172a; }
+[data-theme="light"] .netsec-content-col p { color: #475569; }
+[data-theme="light"] .ns-glass-shield { background: #fff; border-color: #38bdf8; box-shadow: 0 30px 60px rgba(0,0,0,0.1); }
+[data-theme="light"] .ns-shield-title { color: #0f172a; }
+[data-theme="light"] .ns-bento-card { background: #fff; border-color: rgba(14, 165, 233, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+[data-theme="light"] .ns-bento-card h3 { color: #0f172a; }
+[data-theme="light"] .ns-bento-card p { color: #475569; }
+
+@media (max-width: 992px) {
+  .netsec-container { grid-template-columns: 1fr; text-align: center; }
+  .netsec-content-col h1 { font-size: 3.5rem; }
+  .netsec-content-col .cyber-badge { margin: 0 auto 25px; }
+  .netsec-content-col p { margin: 0 auto 40px; }
+  .ns-card-half, .ns-card-third { grid-column: span 12; }
+  .netsec-visual-col { height: 460px; }
+}
+@media (max-width: 768px) {
+  .netsec-content-col h1 { font-size: 2.8rem; }
+  .netsec-visual-col { height: 380px; }
+}
+@media (max-width: 600px) {
+  .netsec-content-col h1 { font-size: 2.5rem; }
+  .netsec-visual-col { height: 320px; transform: none; }
+}
+
+/* ==========================================================================
+   METHODOLOGY TIMELINE
+   ========================================================================== */
+.ns-methodology-section {
+  padding: 80px 0;
+  background: #0f172a; /* Slate 900 */
+}
+
+.ns-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ns-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: rgba(56, 189, 248, 0.2);
+  transform: translateX(-50%);
+}
+
+.ns-timeline-step {
+  position: relative;
+  width: 50%;
+  padding: 0 40px 40px 40px;
+}
+
+.ns-timeline-step:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.ns-timeline-step:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.ns-step-marker {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: #020617;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  color: #38bdf8;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+  z-index: 2;
+}
+
+.ns-timeline-step:nth-child(odd) .ns-step-marker {
+  right: -20px;
+}
+
+.ns-timeline-step:nth-child(even) .ns-step-marker {
+  left: -20px;
+}
+
+.ns-step-content {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.ns-step-content:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.ns-step-content h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.ns-step-content p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ==========================================================================
+   WHY CHOOSE VEDTAM
+   ========================================================================== */
+.ns-why-section {
+  padding: 100px 0;
+  background: #020617;
+  position: relative;
+  overflow: hidden;
+}
+
+.ns-why-section::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 600px; height: 600px;
+  background: rgba(56, 189, 248, 0.05);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.ns-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.ns-why-card {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ns-why-card:hover {
+  transform: translateY(-15px);
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.1) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border-top-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+.ns-why-icon {
+  width: 80px; height: 80px;
+  margin: 0 auto 25px;
+  background: #0f172a;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #38bdf8;
+  box-shadow: inset 0 0 20px rgba(56, 189, 248, 0.1);
+  transition: all 0.4s ease;
+}
+
+.ns-why-card:hover .ns-why-icon {
+  background: #38bdf8;
+  color: #020617;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.ns-why-card h4 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.ns-why-card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Light Theme overrides for new sections */
+[data-theme="light"] .ns-methodology-section { background: #f1f5f9; }
+[data-theme="light"] .ns-step-content { background: #fff; border-color: rgba(14, 165, 233, 0.2); }
+[data-theme="light"] .ns-step-content h3 { color: #0f172a; }
+[data-theme="light"] .ns-step-content p { color: #475569; }
+[data-theme="light"] .ns-step-marker { background: #fff; border-color: #0ea5e9; color: #0ea5e9; }
+[data-theme="light"] .ns-timeline::before { background: rgba(14, 165, 233, 0.3); }
+
+[data-theme="light"] .ns-why-section { background: #fff; }
+[data-theme="light"] .ns-why-card { background: #f8fafc; border: 1px solid rgba(14, 165, 233, 0.2); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+[data-theme="light"] .ns-why-card:hover { background: #fff; border-color: #0ea5e9; box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15); }
+[data-theme="light"] .ns-why-icon { background: #f1f5f9; border-color: rgba(14, 165, 233, 0.4); color: #0ea5e9; }
+[data-theme="light"] .ns-why-card:hover .ns-why-icon { background: #0ea5e9; color: #fff; }
+[data-theme="light"] .ns-why-card h4 { color: #0f172a; }
+[data-theme="light"] .ns-why-card p { color: #475569; }
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .ns-why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .ns-timeline::before { left: 30px; }
+  .ns-timeline-step { width: 100%; padding: 0 0 40px 70px; left: 0 !important; text-align: left !important; }
+  .ns-step-marker { left: 10px !important; right: auto !important; }
+  
+  .ns-why-grid { grid-template-columns: 1fr; }
+}

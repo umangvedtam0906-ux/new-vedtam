@@ -1,0 +1,8 @@
+{
+  "name": "vedtam-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update:cert": "node update-cert-data.mjs"
+  }
+}
