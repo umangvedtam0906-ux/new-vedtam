@@ -110,6 +110,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Mozilla Firefox",
+    "severity": "critical",
+    "date": "2026-07-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
+    "code": "CIVN-2026-0365",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 152.0.6."
+    ],
+    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
+    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
+    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
+    "cves": [
+      "CVE-2026-15718",
+      "CVE-2026-15719"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "high",
     "date": "2026-07-16",
@@ -159,26 +179,6 @@
       "CVE-2026-44768",
       "CVE-2026-44753",
       "CVE-2025-68161"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Mozilla Firefox",
-    "severity": "critical",
-    "date": "2026-07-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
-    "code": "CIVN-2026-0365",
-    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "softwareAffected": [
-      "Mozilla Firefox versions prior to 152.0.6."
-    ],
-    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
-    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
-    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
-    "cves": [
-      "CVE-2026-15718",
-      "CVE-2026-15719"
     ],
     "solutionLinks": []
   },
