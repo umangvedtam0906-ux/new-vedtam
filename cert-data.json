@@ -110,26 +110,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Mozilla Firefox",
-    "severity": "critical",
-    "date": "2026-07-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
-    "code": "CIVN-2026-0365",
-    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "softwareAffected": [
-      "Mozilla Firefox versions prior to 152.0.6."
-    ],
-    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
-    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
-    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
-    "cves": [
-      "CVE-2026-15718",
-      "CVE-2026-15719"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "high",
     "date": "2026-07-16",
@@ -183,6 +163,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Mozilla Firefox",
+    "severity": "critical",
+    "date": "2026-07-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
+    "code": "CIVN-2026-0365",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 152.0.6."
+    ],
+    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
+    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
+    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
+    "cves": [
+      "CVE-2026-15718",
+      "CVE-2026-15719"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in SP Pagebuilder Extension for Joomla",
     "severity": "high",
     "date": "2026-07-15",
@@ -199,21 +199,6 @@
     "cves": [
       "CVE-2026-48908"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3536",
-    "severity": "high",
-    "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
-    "code": "CICA-2026-3536",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -273,6 +258,21 @@
       "CVE-2026-15087",
       "CVE-2026-15089"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3536",
+    "severity": "high",
+    "date": "2026-07-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
+    "code": "CICA-2026-3536",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -436,6 +436,32 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Apache Tomcat",
+    "severity": "high",
+    "date": "2026-07-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0355",
+    "code": "CIVN-2026-0355",
+    "summary": "Multiple vulnerabilities have been reported in Apache Tomcat, which could allow a remote attacker to perform cross-site scripting, bypass security restrictions, elevate privileges, or gain unauthorized access to protected resources on the affected system.",
+    "description": "Apache Tomcat is an open-source web server and servlet container that runs Java-based web applications. Multiple vulnerabilities have been identified in Apache Tomcat due to improper input validation, improper authorization, improper authentication, insufficient enforcement of security constraints, and Incorrect Control Flow Implementation in various components. Successful exploitation of these vulnerabilities could allow a remote attacker to perform cross-site scripting, bypass security restrictions, elevate privileges, or gain unauthorized access to protected resources on the affected system.",
+    "softwareAffected": [
+      "Apache Tomcat 9 versions prior to 9.0.119",
+      "Apache Tomcat 10.1 versions prior to 10.1.56",
+      "Apache Tomcat 11 versions prior to 11.0.23"
+    ],
+    "targetAudience": "All end-user organizations and individuals responsible for maintaining and updating Apache Tomcat.",
+    "riskAssessment": "Risk of cross-site scripting, authentication bypass, privilege escalation, security restriction bypass, and unauthorized access to protected resources.",
+    "impactAssessment": "Potential for sensitive information disclosure and system compromise.",
+    "cves": [
+      "CVE-2026-50229",
+      "CVE-2026-53404",
+      "CVE-2026-53434",
+      "CVE-2026-55276",
+      "CVE-2026-55955",
+      "CVE-2026-55956"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-07-06",
@@ -464,32 +490,6 @@
       "CVE-2026-48315",
       "CVE-2026-48316",
       "CVE-2026-48286"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Apache Tomcat",
-    "severity": "high",
-    "date": "2026-07-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0355",
-    "code": "CIVN-2026-0355",
-    "summary": "Multiple vulnerabilities have been reported in Apache Tomcat, which could allow a remote attacker to perform cross-site scripting, bypass security restrictions, elevate privileges, or gain unauthorized access to protected resources on the affected system.",
-    "description": "Apache Tomcat is an open-source web server and servlet container that runs Java-based web applications. Multiple vulnerabilities have been identified in Apache Tomcat due to improper input validation, improper authorization, improper authentication, insufficient enforcement of security constraints, and Incorrect Control Flow Implementation in various components. Successful exploitation of these vulnerabilities could allow a remote attacker to perform cross-site scripting, bypass security restrictions, elevate privileges, or gain unauthorized access to protected resources on the affected system.",
-    "softwareAffected": [
-      "Apache Tomcat 9 versions prior to 9.0.119",
-      "Apache Tomcat 10.1 versions prior to 10.1.56",
-      "Apache Tomcat 11 versions prior to 11.0.23"
-    ],
-    "targetAudience": "All end-user organizations and individuals responsible for maintaining and updating Apache Tomcat.",
-    "riskAssessment": "Risk of cross-site scripting, authentication bypass, privilege escalation, security restriction bypass, and unauthorized access to protected resources.",
-    "impactAssessment": "Potential for sensitive information disclosure and system compromise.",
-    "cves": [
-      "CVE-2026-50229",
-      "CVE-2026-53404",
-      "CVE-2026-53434",
-      "CVE-2026-55276",
-      "CVE-2026-55955",
-      "CVE-2026-55956"
     ],
     "solutionLinks": []
   },
