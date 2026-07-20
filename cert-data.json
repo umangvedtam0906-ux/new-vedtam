@@ -24,27 +24,28 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Drupal products",
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "high",
     "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
-    "code": "CIVN-2026-0366",
-    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0368",
+    "code": "CIVN-2026-0368",
+    "summary": "Multiple vulnerabilities have been reported in GitLab that could be exploited by an attacker to execute arbitrary scripts, perform Cross-Site Scripting (XSS) attacks, gain unauthorized access to protected resources, and perform unauthorized actions on the targeted system.",
+    "description": "GitLab is a web-based DevOps platform that provides tools for software development, including source code management, continuous integration and continuous deployment. It is available as Community Edition (CE) and Enterprise Edition (EE). Multiple vulnerabilities exist in GitLab due to improper sanitization of user-supplied input, insufficient authorization controls, missing access-control checks and improper handling of Git reference name re",
     "softwareAffected": [
-      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
-      "FlowDrop module versions prior to 1.6.0.",
-      "Colorbox module versions prior to 2.1.5 and 2.2.1."
+      "GitLab Community Edition (CE) and Enterprise Edition (EE) versions prior to 18.11.7, 19.0.4 and 19.1.2"
     ],
-    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
-    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
-    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
+    "targetAudience": "All organizations and individuals using self-managed GitLab installations.",
+    "riskAssessment": "High risk of cross-site scripting, sensitive information disclosure, credential exposure and unauthorized modification of settings or records.",
+    "impactAssessment": "Potential for sensitive data theft, confidential information disclosure, session compromise through Cross-Site Scripting (XSS), unauthorized modification of settings or records, exposure of stored credentials, repository content manipulation, and loss of data integrity.",
     "cves": [
-      "CVE-2026-58587",
-      "CVE-2026-58588",
-      "CVE-2026-58589",
-      "CVE-2026-58590",
-      "CVE-2026-58591"
+      "CVE-2026-6896",
+      "CVE-2026-13320",
+      "CVE-2026-11827",
+      "CVE-2026-8472",
+      "CVE-2026-7492",
+      "CVE-2025-12506",
+      "CVE-2026-13151",
+      "CVE-2026-6352"
     ],
     "solutionLinks": []
   },
@@ -108,28 +109,27 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "title": "Multiple vulnerabilities in Drupal products",
     "severity": "high",
     "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0368",
-    "code": "CIVN-2026-0368",
-    "summary": "Multiple vulnerabilities have been reported in GitLab that could be exploited by an attacker to execute arbitrary scripts, perform Cross-Site Scripting (XSS) attacks, gain unauthorized access to protected resources, and perform unauthorized actions on the targeted system.",
-    "description": "GitLab is a web-based DevOps platform that provides tools for software development, including source code management, continuous integration and continuous deployment. It is available as Community Edition (CE) and Enterprise Edition (EE). Multiple vulnerabilities exist in GitLab due to improper sanitization of user-supplied input, insufficient authorization controls, missing access-control checks and improper handling of Git reference name re",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
+    "code": "CIVN-2026-0366",
+    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
     "softwareAffected": [
-      "GitLab Community Edition (CE) and Enterprise Edition (EE) versions prior to 18.11.7, 19.0.4 and 19.1.2"
+      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
+      "FlowDrop module versions prior to 1.6.0.",
+      "Colorbox module versions prior to 2.1.5 and 2.2.1."
     ],
-    "targetAudience": "All organizations and individuals using self-managed GitLab installations.",
-    "riskAssessment": "High risk of cross-site scripting, sensitive information disclosure, credential exposure and unauthorized modification of settings or records.",
-    "impactAssessment": "Potential for sensitive data theft, confidential information disclosure, session compromise through Cross-Site Scripting (XSS), unauthorized modification of settings or records, exposure of stored credentials, repository content manipulation, and loss of data integrity.",
+    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
+    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
     "cves": [
-      "CVE-2026-6896",
-      "CVE-2026-13320",
-      "CVE-2026-11827",
-      "CVE-2026-8472",
-      "CVE-2026-7492",
-      "CVE-2025-12506",
-      "CVE-2026-13151",
-      "CVE-2026-6352"
+      "CVE-2026-58587",
+      "CVE-2026-58588",
+      "CVE-2026-58589",
+      "CVE-2026-58590",
+      "CVE-2026-58591"
     ],
     "solutionLinks": []
   },
@@ -226,6 +226,21 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3536",
+    "severity": "high",
+    "date": "2026-07-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
+    "code": "CICA-2026-3536",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Ivanti Sentry",
     "severity": "critical",
     "date": "2026-07-13",
@@ -245,21 +260,6 @@
       "CVE-2026-10520",
       "CVE-2026-10523"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3536",
-    "severity": "high",
-    "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
-    "code": "CICA-2026-3536",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
