@@ -1,5 +1,33 @@
 [
   {
+    "title": "Multiple Vulnerabilities in VMware Avi Load Balancer",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0370",
+    "code": "CIVN-2026-0370",
+    "summary": "Multiple vulnerabilities have been reported in VMware Avi Load Balancer, which could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
+    "description": "VMware Avi Load Balancer is a software-defined, multi-cloud application delivery controller that provides elastic load balancing, application security (WAF), and observability for containerized, virtualised, and bare-metal workloads. Multiple vulnerabilities exist in VMware Avi Load Balancer due to improper authentication, insufficient input validation, improper privilege management and file path validation issues. An attacker may exploit these vulnerabilities by sending specially crafted requests. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
+    "softwareAffected": [
+      "VMware Avi Load Balancer version 31.1.1 - 31.2.2",
+      "VMware Avi Load Balancer version 30.1.1 - 30.2.6",
+      "VMware Avi Load Balancer version 22.1.1 - 22.1.7",
+      "VMware Avi Load Balancer version 32.1.1"
+    ],
+    "targetAudience": "Enterprises and large organisations, cloud service providers and industries with IT environments utilizing VMware Avi Load Balancer.",
+    "riskAssessment": "Risk of full system compromise, sensitive information disclosure and lateral movement.",
+    "impactAssessment": "Potential for local privilege escalation, disclosure of sensitive information and unauthorised access.",
+    "cves": [
+      "CVE-2026-47865",
+      "CVE-2026-47866",
+      "CVE-2026-47867",
+      "CVE-2026-47868",
+      "CVE-2026-47869",
+      "CVE-2026-47870",
+      "CVE-2026-47871"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Apache Tomcat",
     "severity": "critical",
     "date": "2026-07-20",
@@ -20,32 +48,6 @@
     "cves": [
       "CVE-2026-59083",
       "CVE-2026-59084"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Drupal",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0367",
-    "code": "CIVN-2026-0367",
-    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system.",
-    "description": "Drupal is an open-source, content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in a Drupal core due to insufficient access check for image style derivatives, improper sanitization of certain HTMX attributes and improper sanitisation of block labels in certain scenarios. An attacker could exploit these vulnerabilities by sending specially crafted inputs. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system. Note: Drupal 10.5.x, Drupal 11.2.x and all prior releases have reached end-of-life and no longer receive security support. Drupal 8 and Drupal 9 have also reached end-of-life.",
-    "softwareAffected": [
-      "Drupal Core version prior to 10.6.13",
-      "Drupal Core versions 11.3.0 to 11.3.13",
-      "Drupal Core versions 11.4.0 to 11.4.3",
-      "Drupal Core versions 11.0.x",
-      "Drupal Core versions 11.1.x",
-      "Drupal Core versions 11.2.x"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal.",
-    "riskAssessment": "High risk of unauthorized access, cross-site scripting (XSS) attacks.",
-    "impactAssessment": "Potential for data exposure, unauthorized access to sensitive information and potential compromise of system.",
-    "cves": [
-      "CVE-2026-15916",
-      "CVE-2026-15917",
-      "CVE-2026-55805"
     ],
     "solutionLinks": []
   },
@@ -83,6 +85,57 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in Drupal products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
+    "code": "CIVN-2026-0366",
+    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "softwareAffected": [
+      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
+      "FlowDrop module versions prior to 1.6.0.",
+      "Colorbox module versions prior to 2.1.5 and 2.2.1."
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
+    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
+    "cves": [
+      "CVE-2026-58587",
+      "CVE-2026-58588",
+      "CVE-2026-58589",
+      "CVE-2026-58590",
+      "CVE-2026-58591"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0367",
+    "code": "CIVN-2026-0367",
+    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system.",
+    "description": "Drupal is an open-source, content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in a Drupal core due to insufficient access check for image style derivatives, improper sanitization of certain HTMX attributes and improper sanitisation of block labels in certain scenarios. An attacker could exploit these vulnerabilities by sending specially crafted inputs. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system. Note: Drupal 10.5.x, Drupal 11.2.x and all prior releases have reached end-of-life and no longer receive security support. Drupal 8 and Drupal 9 have also reached end-of-life.",
+    "softwareAffected": [
+      "Drupal Core version prior to 10.6.13",
+      "Drupal Core versions 11.3.0 to 11.3.13",
+      "Drupal Core versions 11.4.0 to 11.4.3",
+      "Drupal Core versions 11.0.x",
+      "Drupal Core versions 11.1.x",
+      "Drupal Core versions 11.2.x"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal.",
+    "riskAssessment": "High risk of unauthorized access, cross-site scripting (XSS) attacks.",
+    "impactAssessment": "Potential for data exposure, unauthorized access to sensitive information and potential compromise of system.",
+    "cves": [
+      "CVE-2026-15916",
+      "CVE-2026-15917",
+      "CVE-2026-55805"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "high",
     "date": "2026-07-17",
@@ -105,31 +158,6 @@
       "CVE-2025-12506",
       "CVE-2026-13151",
       "CVE-2026-6352"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Drupal products",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
-    "code": "CIVN-2026-0366",
-    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "softwareAffected": [
-      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
-      "FlowDrop module versions prior to 1.6.0.",
-      "Colorbox module versions prior to 2.1.5 and 2.2.1."
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
-    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
-    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
-    "cves": [
-      "CVE-2026-58587",
-      "CVE-2026-58588",
-      "CVE-2026-58589",
-      "CVE-2026-58590",
-      "CVE-2026-58591"
     ],
     "solutionLinks": []
   },
@@ -300,36 +328,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Wireshark",
-    "severity": "high",
-    "date": "2026-07-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0361",
-    "code": "CIVN-2026-0361",
-    "summary": "Multiple vulnerabilities have been reported in Wireshark that could allow an attacker to obtain sensitive information or cause denial of service (DoS) condition on the targeted system.",
-    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for troubleshooting, analysis, and security purposes. Multiple vulnerabilities have been reported in Wireshark due to improper input validation. An attacker could exploit these vulnerabilities by sending a specially crafted request. Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive information or trigger denial of service (DoS) condition on the targeted system.",
-    "softwareAffected": [
-      "Wireshark versions 4.6.0 to 4.6.6, 4.4.0 to 4.4.16."
-    ],
-    "targetAudience": "All end-users organisations and individual using Wireshark.",
-    "riskAssessment": "High risk of service unavailability.",
-    "impactAssessment": "Potential for sensitive data exposure, disruption of services.",
-    "cves": [
-      "CVE-2026-15164",
-      "CVE-2026-15167",
-      "CVE-2026-15163",
-      "CVE-2026-15168",
-      "CVE-2026-15169",
-      "CVE-2026-15170",
-      "CVE-2026-15166",
-      "CVE-2026-15165",
-      "CVE-2026-15171",
-      "CVE-2026-15172",
-      "CVE-2026-15173",
-      "CVE-2026-15174"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in PAN-OS",
     "severity": "high",
     "date": "2026-07-10",
@@ -365,6 +363,36 @@
       "CVE-2026-0286",
       "CVE-2026-0287",
       "CVE-2026-0288"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Wireshark",
+    "severity": "high",
+    "date": "2026-07-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0361",
+    "code": "CIVN-2026-0361",
+    "summary": "Multiple vulnerabilities have been reported in Wireshark that could allow an attacker to obtain sensitive information or cause denial of service (DoS) condition on the targeted system.",
+    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for troubleshooting, analysis, and security purposes. Multiple vulnerabilities have been reported in Wireshark due to improper input validation. An attacker could exploit these vulnerabilities by sending a specially crafted request. Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive information or trigger denial of service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "Wireshark versions 4.6.0 to 4.6.6, 4.4.0 to 4.4.16."
+    ],
+    "targetAudience": "All end-users organisations and individual using Wireshark.",
+    "riskAssessment": "High risk of service unavailability.",
+    "impactAssessment": "Potential for sensitive data exposure, disruption of services.",
+    "cves": [
+      "CVE-2026-15164",
+      "CVE-2026-15167",
+      "CVE-2026-15163",
+      "CVE-2026-15168",
+      "CVE-2026-15169",
+      "CVE-2026-15170",
+      "CVE-2026-15166",
+      "CVE-2026-15165",
+      "CVE-2026-15171",
+      "CVE-2026-15172",
+      "CVE-2026-15173",
+      "CVE-2026-15174"
     ],
     "solutionLinks": []
   },
