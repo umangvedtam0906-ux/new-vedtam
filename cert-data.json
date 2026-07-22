@@ -23,32 +23,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Zoom Products",
-    "severity": "critical",
-    "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0374",
-    "code": "CIVN-2026-0374",
-    "summary": "Multiple vulnerabilities have been reported in Zoom products that could be exploited by an attacker to achieve privilege escalation and account takeover via network access.",
-    "description": "Zoom is a communications platform that provides video conferencing, team chat, phone services, whiteboard, mail, calendar, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to improper input validation, race conditions (time-of-check to time-of-use), and improper privilege management. Successful exploitation of these vulnerabilities could allow an attacker to gain elevated privileges and account takeover via network access on the targeted system.",
-    "softwareAffected": [
-      "Zoom Rooms for Windows before version 7.1.0",
-      "Zoom Workplace for Windows before version 7.0.5",
-      "Zoom Workplace VDI Client for Windows before versions 6.5.18, 6.6.15 and 7.0.10 in their respective branch",
-      "Zoom Workplace VDI plugin for Windows before versions 6.5.17 and 6.6.14 in their respective branch",
-      "Zoom Remote Control for Zoom Contact Center for Windows before version 7.0.0"
-    ],
-    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
-    "riskAssessment": "Critical risk of unauthorized access, privilege escalation, and system compromise.",
-    "impactAssessment": "Potential for bypassing security restrictions, privilege escalation, and account takeover.",
-    "cves": [
-      "CVE-2026-53409",
-      "CVE-2026-53410",
-      "CVE-2026-53411",
-      "CVE-2026-53412"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-07-22",
@@ -76,6 +50,32 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Zoom Products",
+    "severity": "critical",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0374",
+    "code": "CIVN-2026-0374",
+    "summary": "Multiple vulnerabilities have been reported in Zoom products that could be exploited by an attacker to achieve privilege escalation and account takeover via network access.",
+    "description": "Zoom is a communications platform that provides video conferencing, team chat, phone services, whiteboard, mail, calendar, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to improper input validation, race conditions (time-of-check to time-of-use), and improper privilege management. Successful exploitation of these vulnerabilities could allow an attacker to gain elevated privileges and account takeover via network access on the targeted system.",
+    "softwareAffected": [
+      "Zoom Rooms for Windows before version 7.1.0",
+      "Zoom Workplace for Windows before version 7.0.5",
+      "Zoom Workplace VDI Client for Windows before versions 6.5.18, 6.6.15 and 7.0.10 in their respective branch",
+      "Zoom Workplace VDI plugin for Windows before versions 6.5.17 and 6.6.14 in their respective branch",
+      "Zoom Remote Control for Zoom Contact Center for Windows before version 7.0.0"
+    ],
+    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
+    "riskAssessment": "Critical risk of unauthorized access, privilege escalation, and system compromise.",
+    "impactAssessment": "Potential for bypassing security restrictions, privilege escalation, and account takeover.",
+    "cves": [
+      "CVE-2026-53409",
+      "CVE-2026-53410",
+      "CVE-2026-53411",
+      "CVE-2026-53412"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in WordPress",
     "severity": "critical",
     "date": "2026-07-21",
@@ -92,6 +92,34 @@
     "cves": [
       "CVE-2026-60137",
       "CVE-2026-63030"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in VMware Avi Load Balancer",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0370",
+    "code": "CIVN-2026-0370",
+    "summary": "Multiple vulnerabilities have been reported in VMware Avi Load Balancer, which could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
+    "description": "VMware Avi Load Balancer is a software-defined, multi-cloud application delivery controller that provides elastic load balancing, application security (WAF), and observability for containerized, virtualised, and bare-metal workloads. Multiple vulnerabilities exist in VMware Avi Load Balancer due to improper authentication, insufficient input validation, improper privilege management and file path validation issues. An attacker may exploit these vulnerabilities by sending specially crafted requests. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
+    "softwareAffected": [
+      "VMware Avi Load Balancer version 31.1.1 - 31.2.2",
+      "VMware Avi Load Balancer version 30.1.1 - 30.2.6",
+      "VMware Avi Load Balancer version 22.1.1 - 22.1.7",
+      "VMware Avi Load Balancer version 32.1.1"
+    ],
+    "targetAudience": "Enterprises and large organisations, cloud service providers and industries with IT environments utilizing VMware Avi Load Balancer.",
+    "riskAssessment": "Risk of full system compromise, sensitive information disclosure and lateral movement.",
+    "impactAssessment": "Potential for local privilege escalation, disclosure of sensitive information and unauthorised access.",
+    "cves": [
+      "CVE-2026-47865",
+      "CVE-2026-47866",
+      "CVE-2026-47867",
+      "CVE-2026-47868",
+      "CVE-2026-47869",
+      "CVE-2026-47870",
+      "CVE-2026-47871"
     ],
     "solutionLinks": []
   },
@@ -135,34 +163,6 @@
     "cves": [
       "CVE-2026-15409",
       "CVE-2026-15410"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in VMware Avi Load Balancer",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0370",
-    "code": "CIVN-2026-0370",
-    "summary": "Multiple vulnerabilities have been reported in VMware Avi Load Balancer, which could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
-    "description": "VMware Avi Load Balancer is a software-defined, multi-cloud application delivery controller that provides elastic load balancing, application security (WAF), and observability for containerized, virtualised, and bare-metal workloads. Multiple vulnerabilities exist in VMware Avi Load Balancer due to improper authentication, insufficient input validation, improper privilege management and file path validation issues. An attacker may exploit these vulnerabilities by sending specially crafted requests. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
-    "softwareAffected": [
-      "VMware Avi Load Balancer version 31.1.1 - 31.2.2",
-      "VMware Avi Load Balancer version 30.1.1 - 30.2.6",
-      "VMware Avi Load Balancer version 22.1.1 - 22.1.7",
-      "VMware Avi Load Balancer version 32.1.1"
-    ],
-    "targetAudience": "Enterprises and large organisations, cloud service providers and industries with IT environments utilizing VMware Avi Load Balancer.",
-    "riskAssessment": "Risk of full system compromise, sensitive information disclosure and lateral movement.",
-    "impactAssessment": "Potential for local privilege escalation, disclosure of sensitive information and unauthorised access.",
-    "cves": [
-      "CVE-2026-47865",
-      "CVE-2026-47866",
-      "CVE-2026-47867",
-      "CVE-2026-47868",
-      "CVE-2026-47869",
-      "CVE-2026-47870",
-      "CVE-2026-47871"
     ],
     "solutionLinks": []
   },
