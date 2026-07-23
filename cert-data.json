@@ -34,29 +34,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in BeyondTrust",
-    "severity": "critical",
-    "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0375",
-    "code": "CIVN-2026-0375",
-    "summary": "Multiple vulnerabilities have been reported in BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA), which could allow an attacker to bypass authentication, gain unauthorized access, cause denial-of-service conditions, access unintended resources on the targeted system.",
-    "description": "BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA) are secure remote access and privileged access management",
-    "softwareAffected": [
-      "BeyondTrust Remote Support versions RS 25.3.2 or lower",
-      "BeyondTrust Privileged Remote Access versions PRA 25.3.2 or lower"
-    ],
-    "targetAudience": "All end-user organizations and individuals using BeyondTrust.",
-    "riskAssessment": "High risk of denial-of-service, bypass security restrictions, sensitive information disclosure.",
-    "impactAssessment": "Potential for denial-of-service, bypass security restrictions, sensitive information disclosure and/or compromise of system.",
-    "cves": [
-      "CVE-2026-40138",
-      "CVE-2026-40139",
-      "CVE-2026-40140",
-      "CVE-2026-40141"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Zoom Products",
     "severity": "critical",
     "date": "2026-07-22",
@@ -79,6 +56,29 @@
       "CVE-2026-53410",
       "CVE-2026-53411",
       "CVE-2026-53412"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in BeyondTrust",
+    "severity": "critical",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0375",
+    "code": "CIVN-2026-0375",
+    "summary": "Multiple vulnerabilities have been reported in BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA), which could allow an attacker to bypass authentication, gain unauthorized access, cause denial-of-service conditions, access unintended resources on the targeted system.",
+    "description": "BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA) are secure remote access and privileged access management",
+    "softwareAffected": [
+      "BeyondTrust Remote Support versions RS 25.3.2 or lower",
+      "BeyondTrust Privileged Remote Access versions PRA 25.3.2 or lower"
+    ],
+    "targetAudience": "All end-user organizations and individuals using BeyondTrust.",
+    "riskAssessment": "High risk of denial-of-service, bypass security restrictions, sensitive information disclosure.",
+    "impactAssessment": "Potential for denial-of-service, bypass security restrictions, sensitive information disclosure and/or compromise of system.",
+    "cves": [
+      "CVE-2026-40138",
+      "CVE-2026-40139",
+      "CVE-2026-40140",
+      "CVE-2026-40141"
     ],
     "solutionLinks": []
   },
@@ -130,26 +130,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in SonicWall",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
-    "code": "CIVN-2026-0371",
-    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
-    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
-    "softwareAffected": [
-      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
-    ],
-    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
-    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
-    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
-    "cves": [
-      "CVE-2026-15409",
-      "CVE-2026-15410"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in VMware Avi Load Balancer",
     "severity": "critical",
     "date": "2026-07-21",
@@ -174,6 +154,26 @@
       "CVE-2026-47869",
       "CVE-2026-47870",
       "CVE-2026-47871"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in SonicWall",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
+    "code": "CIVN-2026-0371",
+    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
+    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
+    "softwareAffected": [
+      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
+    ],
+    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
+    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
+    "cves": [
+      "CVE-2026-15409",
+      "CVE-2026-15410"
     ],
     "solutionLinks": []
   },
@@ -225,35 +225,28 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "high",
     "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
-    "code": "CIAD-2026-0035",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0368",
+    "code": "CIVN-2026-0368",
+    "summary": "Multiple vulnerabilities have been reported in GitLab that could be exploited by an attacker to execute arbitrary scripts, perform Cross-Site Scripting (XSS) attacks, gain unauthorized access to protected resources, and perform unauthorized actions on the targeted system.",
+    "description": "GitLab is a web-based DevOps platform that provides tools for software development, including source code management, continuous integration and continuous deployment. It is available as Community Edition (CE) and Enterprise Edition (EE). Multiple vulnerabilities exist in GitLab due to improper sanitization of user-supplied input, insufficient authorization controls, missing access-control checks and improper handling of Git reference name re",
     "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "Developer Tools",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Device",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
+      "GitLab Community Edition (CE) and Enterprise Edition (EE) versions prior to 18.11.7, 19.0.4 and 19.1.2"
     ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "targetAudience": "All organizations and individuals using self-managed GitLab installations.",
+    "riskAssessment": "High risk of cross-site scripting, sensitive information disclosure, credential exposure and unauthorized modification of settings or records.",
+    "impactAssessment": "Potential for sensitive data theft, confidential information disclosure, session compromise through Cross-Site Scripting (XSS), unauthorized modification of settings or records, exposure of stored credentials, repository content manipulation, and loss of data integrity.",
     "cves": [
-      "CVE-2026-56155",
-      "CVE-2026-56164",
-      "CVE-2026-58644"
+      "CVE-2026-6896",
+      "CVE-2026-13320",
+      "CVE-2026-11827",
+      "CVE-2026-8472",
+      "CVE-2026-7492",
+      "CVE-2025-12506",
+      "CVE-2026-13151",
+      "CVE-2026-6352"
     ],
     "solutionLinks": []
   },
@@ -309,28 +302,35 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0368",
-    "code": "CIVN-2026-0368",
-    "summary": "Multiple vulnerabilities have been reported in GitLab that could be exploited by an attacker to execute arbitrary scripts, perform Cross-Site Scripting (XSS) attacks, gain unauthorized access to protected resources, and perform unauthorized actions on the targeted system.",
-    "description": "GitLab is a web-based DevOps platform that provides tools for software development, including source code management, continuous integration and continuous deployment. It is available as Community Edition (CE) and Enterprise Edition (EE). Multiple vulnerabilities exist in GitLab due to improper sanitization of user-supplied input, insufficient authorization controls, missing access-control checks and improper handling of Git reference name re",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
+    "code": "CIAD-2026-0035",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
     "softwareAffected": [
-      "GitLab Community Edition (CE) and Enterprise Edition (EE) versions prior to 18.11.7, 19.0.4 and 19.1.2"
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "Developer Tools",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Device",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
     ],
-    "targetAudience": "All organizations and individuals using self-managed GitLab installations.",
-    "riskAssessment": "High risk of cross-site scripting, sensitive information disclosure, credential exposure and unauthorized modification of settings or records.",
-    "impactAssessment": "Potential for sensitive data theft, confidential information disclosure, session compromise through Cross-Site Scripting (XSS), unauthorized modification of settings or records, exposure of stored credentials, repository content manipulation, and loss of data integrity.",
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
     "cves": [
-      "CVE-2026-6896",
-      "CVE-2026-13320",
-      "CVE-2026-11827",
-      "CVE-2026-8472",
-      "CVE-2026-7492",
-      "CVE-2025-12506",
-      "CVE-2026-13151",
-      "CVE-2026-6352"
+      "CVE-2026-56155",
+      "CVE-2026-56164",
+      "CVE-2026-58644"
     ],
     "solutionLinks": []
   },
@@ -427,21 +427,6 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3536",
-    "severity": "high",
-    "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
-    "code": "CICA-2026-3536",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Drupal",
     "severity": "high",
     "date": "2026-07-13",
@@ -476,6 +461,21 @@
       "CVE-2026-15087",
       "CVE-2026-15089"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3536",
+    "severity": "high",
+    "date": "2026-07-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
+    "code": "CICA-2026-3536",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
