@@ -1,21 +1,367 @@
 [
   {
-    "title": "Multiple Vulnerabilities in Mozilla Firefox",
-    "severity": "critical",
-    "date": "2026-07-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
-    "code": "CIVN-2026-0365",
-    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-07-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0377",
+    "code": "CIVN-2026-0377",
+    "summary": "Multiple vulnerabilities have been reported in Google which could allow a remote attacker to execute arbitrary code, bypass security restrictions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to type Confusion in WebAudio, inappropriate implementation in WebAudio, out of bounds write in ANGLE, read and write in ANGLE, Insufficient validation of untrusted input in Chromecast, Integer overflow in Chromecast, Uninitialized Use in Skia, Stack buffer overflow in V8 and Use after free in UI. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web page. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions on the targeted system.",
     "softwareAffected": [
-      "Mozilla Firefox versions prior to 152.0.6."
+      "Google Chrome versions prior to 150.0.7871.181/.182 for Windows and Mac",
+      "Google Chrome versions prior to 150.0.7871.181 for Linux"
     ],
-    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
-    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "Potential for unauthorized access and bypass security restriction.",
     "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
     "cves": [
-      "CVE-2026-15718",
-      "CVE-2026-15719"
+      "CVE-2026-16413",
+      "CVE-2026-16414",
+      "CVE-2026-16415",
+      "CVE-2026-16416",
+      "CVE-2026-16417",
+      "CVE-2026-16418",
+      "CVE-2026-16419",
+      "CVE-2026-16420",
+      "CVE-2026-16421",
+      "CVE-2026-16422",
+      "CVE-2026-16423",
+      "CVE-2026-16424"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "critical",
+    "date": "2026-07-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0376",
+    "code": "CIVN-2026-0376",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft Products, which could allow an attacker to perform spoofing, elevate privilege, perform tampering and disclose sensitive information on the targeted system.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft Products due to improper neutralization of input during web page generation, URL redirection to untrusted site, missing authorization, execution with unnecessary privileges, improper access control, improper authentication, exposure of sensitive information, and improper neutralization of special elements in command. An attacker could exploit these vulnerabilities to perform spoofing, elevate privileges, perform tampering or disclose information over a network on the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access, access sensitive information, elevate privileges, perform tampering over a network and/or perform spoofing on the targeted system.",
+    "softwareAffected": [
+      "Dynamics 365 Customer Voice",
+      "Microsoft 365 Copilot",
+      "Microsoft Exchange Online",
+      "Azure Synapse",
+      "Microsoft Dynamics 365",
+      "Azure AI Bot Service",
+      "Microsoft Edge (Chromium-based)",
+      "Microsoft Cost Management"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Microsoft Products.",
+    "riskAssessment": "High risk of privilege escalation, spoofing, sensitive information disclosure.",
+    "impactAssessment": "Potential for privilege escalation, spoofing, sensitive information disclosure and/or compromise of system.",
+    "cves": [
+      "CVE-2026-47646",
+      "CVE-2026-47645",
+      "CVE-2026-48582",
+      "CVE-2026-48584",
+      "CVE-2026-47647",
+      "CVE-2026-42895",
+      "CVE-2026-32174",
+      "CVE-2026-32208",
+      "CVE-2026-47633"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in BeyondTrust",
+    "severity": "critical",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0375",
+    "code": "CIVN-2026-0375",
+    "summary": "Multiple vulnerabilities have been reported in BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA), which could allow an attacker to bypass authentication, gain unauthorized access, cause denial-of-service conditions, access unintended resources on the targeted system.",
+    "description": "BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA) are secure remote access and privileged access management",
+    "softwareAffected": [
+      "BeyondTrust Remote Support versions RS 25.3.2 or lower",
+      "BeyondTrust Privileged Remote Access versions PRA 25.3.2 or lower"
+    ],
+    "targetAudience": "All end-user organizations and individuals using BeyondTrust.",
+    "riskAssessment": "High risk of denial-of-service, bypass security restrictions, sensitive information disclosure.",
+    "impactAssessment": "Potential for denial-of-service, bypass security restrictions, sensitive information disclosure and/or compromise of system.",
+    "cves": [
+      "CVE-2026-40138",
+      "CVE-2026-40139",
+      "CVE-2026-40140",
+      "CVE-2026-40141"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
+    "code": "CIAD-2026-0036",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle MySQL",
+      "Java SE",
+      "Oracle Database Server",
+      "WebLogic Server",
+      "Oracle Communications",
+      "Oracle Construction and Engineering",
+      "Oracle Enterprise Manager",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle E-Business Suite",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
+    ],
+    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Zoom Products",
+    "severity": "critical",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0374",
+    "code": "CIVN-2026-0374",
+    "summary": "Multiple vulnerabilities have been reported in Zoom products that could be exploited by an attacker to achieve privilege escalation and account takeover via network access.",
+    "description": "Zoom is a communications platform that provides video conferencing, team chat, phone services, whiteboard, mail, calendar, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to improper input validation, race conditions (time-of-check to time-of-use), and improper privilege management. Successful exploitation of these vulnerabilities could allow an attacker to gain elevated privileges and account takeover via network access on the targeted system.",
+    "softwareAffected": [
+      "Zoom Rooms for Windows before version 7.1.0",
+      "Zoom Workplace for Windows before version 7.0.5",
+      "Zoom Workplace VDI Client for Windows before versions 6.5.18, 6.6.15 and 7.0.10 in their respective branch",
+      "Zoom Workplace VDI plugin for Windows before versions 6.5.17 and 6.6.14 in their respective branch",
+      "Zoom Remote Control for Zoom Contact Center for Windows before version 7.0.0"
+    ],
+    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
+    "riskAssessment": "Critical risk of unauthorized access, privilege escalation, and system compromise.",
+    "impactAssessment": "Potential for bypassing security restrictions, privilege escalation, and account takeover.",
+    "cves": [
+      "CVE-2026-53409",
+      "CVE-2026-53410",
+      "CVE-2026-53411",
+      "CVE-2026-53412"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in WordPress",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0373",
+    "code": "CIVN-2026-0373",
+    "summary": "Multiple vulnerabilities have been reported in WordPress, which could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to build websites and blogs. Multiple vulnerabilities exist in WordPress due to a REST API batch endpoint route interpretation conflict (route confusion) and improper sanitization of the author__not_in parameter in WP_Query. Successful exploitation of these vulnerabilities could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.2"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of SQL injection attacks and remote code execution (RCE).",
+    "impactAssessment": "Potential for unauthorized access, execution of arbitrary code, privilege escalation, and full compromise.",
+    "cves": [
+      "CVE-2026-60137",
+      "CVE-2026-63030"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in TP-Link Products",
+    "severity": "high",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0372",
+    "code": "CIVN-2026-0372",
+    "summary": "Multiple vulnerabilities have been reported in TP-Link products, which could allow an attacker on the same local network to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
+    "description": "TP-Link Kasa EC70 and EC71 are smart security cameras that provide remote monitoring and surveillance capabilities for residential and enterprise environments. These vulnerabilities exist in TP-Link products due to the use of a hard-coded cryptographic private key within the firmware and exposure of sensitive geolocation information through the local discovery mechanism. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
+    "softwareAffected": [
+      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
+      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
+      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536",
+      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536"
+    ],
+    "targetAudience": "All organizations and individuals using the affected TP-Link products.",
+    "riskAssessment": "High risk of sensitive information disclosure, compromise of encrypted communications through Man-in-the-Middle (MITM) attacks, and exposure of geolocation information.",
+    "impactAssessment": "Potential for disclosure of sensitive information, interception of encrypted communications, exposure of geolocation information, and compromise of the confidentiality of affected devices.",
+    "cves": [
+      "CVE-2026-9770",
+      "CVE-2026-13230"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in SonicWall",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
+    "code": "CIVN-2026-0371",
+    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
+    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
+    "softwareAffected": [
+      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
+    ],
+    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
+    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
+    "cves": [
+      "CVE-2026-15409",
+      "CVE-2026-15410"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in VMware Avi Load Balancer",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0370",
+    "code": "CIVN-2026-0370",
+    "summary": "Multiple vulnerabilities have been reported in VMware Avi Load Balancer, which could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
+    "description": "VMware Avi Load Balancer is a software-defined, multi-cloud application delivery controller that provides elastic load balancing, application security (WAF), and observability for containerized, virtualised, and bare-metal workloads. Multiple vulnerabilities exist in VMware Avi Load Balancer due to improper authentication, insufficient input validation, improper privilege management and file path validation issues. An attacker may exploit these vulnerabilities by sending specially crafted requests. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
+    "softwareAffected": [
+      "VMware Avi Load Balancer version 31.1.1 - 31.2.2",
+      "VMware Avi Load Balancer version 30.1.1 - 30.2.6",
+      "VMware Avi Load Balancer version 22.1.1 - 22.1.7",
+      "VMware Avi Load Balancer version 32.1.1"
+    ],
+    "targetAudience": "Enterprises and large organisations, cloud service providers and industries with IT environments utilizing VMware Avi Load Balancer.",
+    "riskAssessment": "Risk of full system compromise, sensitive information disclosure and lateral movement.",
+    "impactAssessment": "Potential for local privilege escalation, disclosure of sensitive information and unauthorised access.",
+    "cves": [
+      "CVE-2026-47865",
+      "CVE-2026-47866",
+      "CVE-2026-47867",
+      "CVE-2026-47868",
+      "CVE-2026-47869",
+      "CVE-2026-47870",
+      "CVE-2026-47871"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Apache Tomcat",
+    "severity": "critical",
+    "date": "2026-07-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0369",
+    "code": "CIVN-2026-0369",
+    "summary": "Multiple vulnerabilities have been reported in Apache Tomcat that could allow an attacker to bypass security restrictions or gain unauthorized access to protected resources on the affected system.",
+    "description": "Apache Tomcat is an open-source web server and servlet container used to deploy Java-based web applications. Multiple vulnerabilities have been identified in Apache Tomcat due to improper handling of URL encoding (hex encoding) in the RewriteValve component and insufficient technical documentation for securely configuring the EncryptInterceptor component. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions or gain unauthorized access to protected resources on the affected system.",
+    "softwareAffected": [
+      "Apache Tomcat 11 versions prior to 11.0.24",
+      "Apache Tomcat 10.1 versions prior to 10.1.57",
+      "Apache Tomcat 9 versions prior to 9.0.120",
+      "Apache Tomcat versions 8.5.38 through 8.5.100",
+      "Apache Tomcat versions 7.0.100 through 7.0.109"
+    ],
+    "targetAudience": "All end user organizations and individuals responsible for maintaining and updating Apache Tomcat.",
+    "riskAssessment": "Risk of security constraint bypass, unauthorized access, and insecure cluster communication configuration.",
+    "impactAssessment": "Potential for unauthorized access to protected resources and weakened security of encrypted Tomcat cluster communications.",
+    "cves": [
+      "CVE-2026-59083",
+      "CVE-2026-59084"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
+    "code": "CIAD-2026-0035",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "Developer Tools",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Device",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-56155",
+      "CVE-2026-56164",
+      "CVE-2026-58644"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0368",
+    "code": "CIVN-2026-0368",
+    "summary": "Multiple vulnerabilities have been reported in GitLab that could be exploited by an attacker to execute arbitrary scripts, perform Cross-Site Scripting (XSS) attacks, gain unauthorized access to protected resources, and perform unauthorized actions on the targeted system.",
+    "description": "GitLab is a web-based DevOps platform that provides tools for software development, including source code management, continuous integration and continuous deployment. It is available as Community Edition (CE) and Enterprise Edition (EE). Multiple vulnerabilities exist in GitLab due to improper sanitization of user-supplied input, insufficient authorization controls, missing access-control checks and improper handling of Git reference name re",
+    "softwareAffected": [
+      "GitLab Community Edition (CE) and Enterprise Edition (EE) versions prior to 18.11.7, 19.0.4 and 19.1.2"
+    ],
+    "targetAudience": "All organizations and individuals using self-managed GitLab installations.",
+    "riskAssessment": "High risk of cross-site scripting, sensitive information disclosure, credential exposure and unauthorized modification of settings or records.",
+    "impactAssessment": "Potential for sensitive data theft, confidential information disclosure, session compromise through Cross-Site Scripting (XSS), unauthorized modification of settings or records, exposure of stored credentials, repository content manipulation, and loss of data integrity.",
+    "cves": [
+      "CVE-2026-6896",
+      "CVE-2026-13320",
+      "CVE-2026-11827",
+      "CVE-2026-8472",
+      "CVE-2026-7492",
+      "CVE-2025-12506",
+      "CVE-2026-13151",
+      "CVE-2026-6352"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Drupal products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
+    "code": "CIVN-2026-0366",
+    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "softwareAffected": [
+      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
+      "FlowDrop module versions prior to 1.6.0.",
+      "Colorbox module versions prior to 2.1.5 and 2.2.1."
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
+    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
+    "cves": [
+      "CVE-2026-58587",
+      "CVE-2026-58588",
+      "CVE-2026-58589",
+      "CVE-2026-58590",
+      "CVE-2026-58591"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0367",
+    "code": "CIVN-2026-0367",
+    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system.",
+    "description": "Drupal is an open-source, content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in a Drupal core due to insufficient access check for image style derivatives, improper sanitization of certain HTMX attributes and improper sanitisation of block labels in certain scenarios. An attacker could exploit these vulnerabilities by sending specially crafted inputs. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system. Note: Drupal 10.5.x, Drupal 11.2.x and all prior releases have reached end-of-life and no longer receive security support. Drupal 8 and Drupal 9 have also reached end-of-life.",
+    "softwareAffected": [
+      "Drupal Core version prior to 10.6.13",
+      "Drupal Core versions 11.3.0 to 11.3.13",
+      "Drupal Core versions 11.4.0 to 11.4.3",
+      "Drupal Core versions 11.0.x",
+      "Drupal Core versions 11.1.x",
+      "Drupal Core versions 11.2.x"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal.",
+    "riskAssessment": "High risk of unauthorized access, cross-site scripting (XSS) attacks.",
+    "impactAssessment": "Potential for data exposure, unauthorized access to sensitive information and potential compromise of system.",
+    "cves": [
+      "CVE-2026-15916",
+      "CVE-2026-15917",
+      "CVE-2026-55805"
     ],
     "solutionLinks": []
   },
@@ -73,6 +419,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Mozilla Firefox",
+    "severity": "critical",
+    "date": "2026-07-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
+    "code": "CIVN-2026-0365",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 152.0.6."
+    ],
+    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
+    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
+    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
+    "cves": [
+      "CVE-2026-15718",
+      "CVE-2026-15719"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in SP Pagebuilder Extension for Joomla",
     "severity": "high",
     "date": "2026-07-15",
@@ -88,28 +454,6 @@
     "impactAssessment": "Unauthorized access to sensitive data, data manipulation and complete system compromise.",
     "cves": [
       "CVE-2026-48908"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Ivanti Sentry",
-    "severity": "critical",
-    "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0363",
-    "code": "CIVN-2026-0363",
-    "summary": "Multiple vulnerabilities have been reported in Ivanti Sentry, which could allow a remote unauthenticated attacker to execute arbitrary code with root privileges, bypass authentication, create arbitrary administrative accounts, and gain full administrative access on the targeted system.",
-    "description": "Ivanti Sentry, formerly known as MobileIron Sentry, is an in-line gateway that manages, encrypts, and secures traffic between mobile devices and backend enterprise systems. Multiple critical vulnerabilities have been reported in Ivanti Sentry due to improper neutralization of special elements used in an operating system command and authentication bypass using an alternate path or channel. Successful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to execute arbitrary code with root privileges, bypass authentication, create arbitrary administrative accounts, and gain full administrative access on the targeted system. Note: CVE-2026-10520 is being actively exploited in the wild.",
-    "softwareAffected": [
-      "Ivanti Sentry 10.5.x versions prior to 10.5.2",
-      "Ivanti Sentry 10.6.x versions prior to 10.6.2",
-      "Ivanti Sentry 10.7.x versions prior to 10.7.1"
-    ],
-    "targetAudience": "IT administrators, security administrators, network administrators, and organizations using Ivanti Sentry.",
-    "riskAssessment": "Critical risk of complete system compromise, unauthorized administrative access, and execution of arbitrary commands.",
-    "impactAssessment": "Potential for complete system compromise, unauthorized administrative access, and arbitrary code execution with root privileges.",
-    "cves": [
-      "CVE-2026-10520",
-      "CVE-2026-10523"
     ],
     "solutionLinks": []
   },
@@ -162,6 +506,28 @@
       "CVE-2026-15086",
       "CVE-2026-15087",
       "CVE-2026-15089"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Ivanti Sentry",
+    "severity": "critical",
+    "date": "2026-07-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0363",
+    "code": "CIVN-2026-0363",
+    "summary": "Multiple vulnerabilities have been reported in Ivanti Sentry, which could allow a remote unauthenticated attacker to execute arbitrary code with root privileges, bypass authentication, create arbitrary administrative accounts, and gain full administrative access on the targeted system.",
+    "description": "Ivanti Sentry, formerly known as MobileIron Sentry, is an in-line gateway that manages, encrypts, and secures traffic between mobile devices and backend enterprise systems. Multiple critical vulnerabilities have been reported in Ivanti Sentry due to improper neutralization of special elements used in an operating system command and authentication bypass using an alternate path or channel. Successful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to execute arbitrary code with root privileges, bypass authentication, create arbitrary administrative accounts, and gain full administrative access on the targeted system. Note: CVE-2026-10520 is being actively exploited in the wild.",
+    "softwareAffected": [
+      "Ivanti Sentry 10.5.x versions prior to 10.5.2",
+      "Ivanti Sentry 10.6.x versions prior to 10.6.2",
+      "Ivanti Sentry 10.7.x versions prior to 10.7.1"
+    ],
+    "targetAudience": "IT administrators, security administrators, network administrators, and organizations using Ivanti Sentry.",
+    "riskAssessment": "Critical risk of complete system compromise, unauthorized administrative access, and execution of arbitrary commands.",
+    "impactAssessment": "Potential for complete system compromise, unauthorized administrative access, and arbitrary code execution with root privileges.",
+    "cves": [
+      "CVE-2026-10520",
+      "CVE-2026-10523"
     ],
     "solutionLinks": []
   },
@@ -1386,6 +1752,21 @@
     "code": "CIVN-2026-0320"
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -1410,21 +1791,6 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
@@ -3420,24 +3786,15 @@
     "severity": "critical",
     "date": "2026-05-21",
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0026",
+    "code": "CIAD-2026-0026",
     "summary": "Multiple vulnerabilities reported.",
     "description": "Analysis from multiple security researchers indicates that the attackers are leveraging compromised npm maintainer accounts, GitHub Actions workflow abuse, and CI/CD pipeline compromise to distribute malicious packages. The campaign uses malicious preinstall hooks, obfuscated Bun/JavaScript payloads, credential harvesting mechanisms, and worm-like propagation capabilities to spread across development and enterprise environments. Initial access has been observed through: • hijacking of GitHub Actions OIDC tokens via the \"pull_request_target\" trigger in combination with Actions cache poisoning, followed by exchange with npm trusted publishing workflows for valid publish credentials; • compromise of npm maintainer accounts; and • targeting of long-dormant packages with weaker security controls but continued transitive usage. • The malware is designed to harvest sensitive credentials, including GitHub Personal Access Tokens (PATs), npm authentication tokens, cloud credentials (AWS/Azure/GCP), SSH keys, Kubernetes service account tokens, Vault secrets, database credentials, and CI/CD environment variables. It may also attempt to access cloud metadata services, extract secrets from CI/CD runner environments, and exfiltrate collected data to attacker-controlled infrastructure, while enabling further propagation by validating stolen npm tokens, enumerating accessible packages, injecting malicious payloads, and republishing under compromised maintainer identities. Persistence mechanisms have been observed on development environments through modification of local tooling configurations (e.g., editor task hooks), potentially allowing execution across sessions. Malicious packages have also been observed abusing trusted build and provenance mechanisms to appear legitimate, complicating detection and trust validation efforts. Indicators of Compromise The following Indicators of Compromise (IoCs) are associated with this campaign: Malicious files and artefacts: • router_init.js • router_runtime.js • tanstack_runner.js • index.js (root-level, ~498 KB obfuscated Bun bundle) • setup.mjs • transformers.pyz (also observed at /tmp/transformers.pyz) • pgmonitor.py • pgsql-monitor.service gh-token-monitor.sh • kitty-monitor (Installed as a systemd user service on Linux or LaunchAgent on macOS) • cat.py (Often located in ~/.local/share/kitty/) • Injections into .claude/settings.json (SessionStart hook executing node • .claude/setup.mjs) and .vscode/tasks.json (task with \"runOn\": \"folderOpen\"). • Suspicious preinstall / postinstall / prepare script execution during npm install • Network indicators: • filev2.getsession[.]org • git-tanstack[.]com • t.m-kosche[.]com • api.masscan[.]cloud • 83[.]142[.]209[.]194 • Suspicious access attempts to cloud metadata endpoints: 169[.]254[.]169[.]254 (AWS/Azure/GCP IMDS) and 169[.]254[.]170[.]2 (ECS task metadata) • File hashes (SHA-256): • ab4fcadaec49c03278063dd269ea5eef82d24f2124a8e15d7b90f2fa8601266c (router_init.js, @tanstack) • 2ec78d556d696e208927cc503d48e4b5eb56b31abc2870c2ed2e98d6be27fc96 (tanstack_runner.js) • GitHub repository markers: • Repositories suddenly created under organisation identities with the",
-    "softwareAffected": [],
+    "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": [
-      "https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem",
-      "https://www.aikido.dev/blog/mini-shai-hulud-is-back-tanstack-compromised",
-      "https://www.sophos.com/en-us/blog/-mini-shai-hulud-supply-chain-attack-targets-sap-npm-packages",
-      "https://www.endorlabs.com/learn/shai-hulud-compromises-the-tanstack-ecosystem-80-packages-compromised",
-      "https://socket.dev/blog/tanstack-npm-packages-compromised-mini-shai-hulud-supply-chain-attack",
-      "https://snyk.io/blog/tanstack-npm-packages-compromised",
-      "https://safedep.io/mini-shai-hulud-strikes-again-314-npm-packages-compromised/",
-      "https://socket.dev/blog/antv-packages-compromised"
-    ],
-    "code": "CIAD-2026-0026"
+    "solutionLinks": []
   },
   {
     "title": "Denial of Service Vulnerability in Wireshark",
@@ -3608,6 +3965,7 @@
     "severity": "critical",
     "date": "2026-05-20",
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0025",
+    "code": "CIAD-2026-0025",
     "summary": "Multiple critical security vulnerabilities have been identified in Drupal Core. The Drupal Security Team has announced that security updates will be released for supported Drupal versions and has warned that exploit code may become available within hours or days following public disclosure.",
     "description": "Drupal has issued a public security advisory regarding undisclosed highly critical vulnerabilities affecting Drupal Core. Technical details of the vulnerabilities will be disclosed upon the release of security patches. The advisory indicates a high probability of rapid exploitation following public disclosure. Internet-facing Drupal installations are particularly at risk. Users and administrators are advised to update Drupal Core to the latest available security patch released by the Drupal Security Team and apply all recommended security updates immediately.",
     "softwareAffected": [
@@ -3621,11 +3979,7 @@
     "riskAssessment": "High risk of unauthorized access and rapid exploitation of vulnerable Drupal instances.",
     "impactAssessment": "May lead to website compromise, malicious code execution, data exposure, and full system compromise.",
     "cves": [],
-    "solutionLinks": [
-      "https://www.drupal.org/psa-2026-05-18",
-      "https://www.theregister.com/security/2026/05/19/drupal-warns-admins-to-brace-for-highly-critical-core-patch/5242728"
-    ],
-    "code": "CIAD-2026-0025"
+    "solutionLinks": []
   },
   {
     "title": "Improper Access Control Vulnerability in FortiAuthenticator",
@@ -3791,36 +4145,37 @@
     "severity": "high",
     "date": "2026-05-19",
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0024",
+    "code": "CIAD-2026-0024",
     "summary": "Multiple vulnerabilities have been identified in various Intel products that could allow an attacker to gain elevated privileges, obtain sensitive information and cause denial of service on the targeted system.",
     "description": "Intel Corporation products are processors, chipsets, firmware, and computing technologies used in PCs, servers, and enterprise systems. Multiple vulnerabilities have been reported in Intel Products due to Improper Input Validation, Improper buffer restrictions, Improper Check for Unusual or Exceptional Conditions, Use after free, Integer overflow, Classic Buffer Overflow, Incorrect Default Permissions, Shared Microarchitectural Predictor State that Influences Transient Execution, Out-of-bounds Write, Out-of-bounds Read, Untrusted Pointer Dereference, NULL Pointer Dereference, Divide By Zero, Unchecked Return Value. Successful exploitation of these vulnerabilities could allow attackers to gain elevated privileges, obtain sensitive information and cause denial of service on the targeted system.",
     "softwareAffected": [
       "Intel Vision software",
-      "Intel® EMA software",
+      "Intel� EMA software",
       "Display Virtualization for Windows OS driver software",
-      "Intel® 800 Series Ethernet Linux kernel drivers",
-      "Intel® Slim Bootloader",
-      "Intel® Core Ultra Series 2",
-      "12th Gen Intel® Core Processors",
-      "13th Gen Intel® Core Processors",
-      "11th Gen Intel® Core Processors",
-      "10th Gen Intel® Core Processors",
-      "Intel® Pentium® Gold Processors",
-      "Intel® Celeron® Processors",
-      "Intel® Celeron® 6305E/RE",
-      "Intel Atom® E3900 Processors",
-      "Intel® Xeon® E Family",
-      "Intel® Xeon® D Family",
-      "Intel® Xeon® W embedded SKUs",
-      "Intel® Core i3 embedded SKUs",
-      "Intel® Core i5 embedded SKUs",
-      "Intel® Core i7 embedded SKUs",
-      "Intel® NPU Driver for Linux",
-      "Intel® NPU Driver for Windows",
-      "Intel® Core Ultra 200S Series Processors (Arrow Lake)",
-      "Intel® Core Ultra Processors Series 2 (Lunar Lake)",
-      "Intel® Core Ultra Processors Series 3 Panther Lake H",
-      "Intel® Data Center Graphics Driver for VMware ESXi software",
-      "Intel® QAT software drivers for Windows"
+      "Intel� 800 Series Ethernet Linux kernel drivers",
+      "Intel� Slim Bootloader",
+      "Intel� Core� Ultra Series 2",
+      "12th Gen Intel� Core� Processors",
+      "13th Gen Intel� Core� Processors",
+      "11th Gen Intel� Core� Processors",
+      "10th Gen Intel� Core� Processors",
+      "Intel� Pentium� Gold Processors",
+      "Intel� Celeron� Processors",
+      "Intel� Celeron� 6305E/RE",
+      "Intel Atom� E3900 Processors",
+      "Intel� Xeon� E Family",
+      "Intel� Xeon� D Family",
+      "Intel� Xeon� W embedded SKUs",
+      "Intel� Core� i3 embedded SKUs",
+      "Intel� Core� i5 embedded SKUs",
+      "Intel� Core� i7 embedded SKUs",
+      "Intel� NPU Driver for Linux",
+      "Intel� NPU Driver for Windows",
+      "Intel� Core� Ultra 200S Series Processors (Arrow Lake)",
+      "Intel� Core� Ultra Processors Series 2 (Lunar Lake)",
+      "Intel� Core� Ultra Processors Series 3 Panther Lake H",
+      "Intel� Data Center Graphics Driver for VMware ESXi software",
+      "Intel� QAT software drivers for Windows"
     ],
     "targetAudience": "Individuals and organizations using the above-mentioned Intel products.",
     "riskAssessment": "High risk of full System Compromise, System Instability or Sensitive Information Disclosure.",
@@ -3848,17 +4203,7 @@
       "CVE-2026-20914",
       "CVE-2026-20793"
     ],
-    "solutionLinks": [
-      "https://www.intel.com/content/www/us/en/security-center/default.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01457.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01434.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01430.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01426.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01425.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01424.html",
-      "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01420.html"
-    ],
-    "code": "CIAD-2026-0024"
+    "solutionLinks": []
   },
   {
     "title": "Multiple Vulnerabilities in Avada Builder WordPress Plugin",
