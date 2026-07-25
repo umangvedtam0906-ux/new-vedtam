@@ -86,6 +86,33 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
+    "code": "CIAD-2026-0036",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle MySQL",
+      "Java SE",
+      "Oracle Database Server",
+      "WebLogic Server",
+      "Oracle Communications",
+      "Oracle Construction and Engineering",
+      "Oracle Enterprise Manager",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle E-Business Suite",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
+    ],
+    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in BeyondTrust",
     "severity": "critical",
     "date": "2026-07-22",
@@ -135,33 +162,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "high",
-    "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
-    "code": "CIAD-2026-0036",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle MySQL",
-      "Java SE",
-      "Oracle Database Server",
-      "WebLogic Server",
-      "Oracle Communications",
-      "Oracle Construction and Engineering",
-      "Oracle Enterprise Manager",
-      "Oracle Financial Services Applications",
-      "Oracle Fusion Middleware",
-      "Oracle E-Business Suite",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
-    ],
-    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in WordPress",
     "severity": "critical",
     "date": "2026-07-21",
@@ -178,26 +178,6 @@
     "cves": [
       "CVE-2026-60137",
       "CVE-2026-63030"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in SonicWall",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
-    "code": "CIVN-2026-0371",
-    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
-    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
-    "softwareAffected": [
-      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
-    ],
-    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
-    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
-    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
-    "cves": [
-      "CVE-2026-15409",
-      "CVE-2026-15410"
     ],
     "solutionLinks": []
   },
@@ -221,6 +201,26 @@
     "cves": [
       "CVE-2026-9770",
       "CVE-2026-13230"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in SonicWall",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
+    "code": "CIVN-2026-0371",
+    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
+    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
+    "softwareAffected": [
+      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
+    ],
+    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
+    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
+    "cves": [
+      "CVE-2026-15409",
+      "CVE-2026-15410"
     ],
     "solutionLinks": []
   },
@@ -277,6 +277,39 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
+    "code": "CIAD-2026-0035",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "Developer Tools",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Device",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-56155",
+      "CVE-2026-56164",
+      "CVE-2026-58644"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "high",
     "date": "2026-07-17",
@@ -329,39 +362,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
-    "code": "CIAD-2026-0035",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "Developer Tools",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Device",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-56155",
-      "CVE-2026-56164",
-      "CVE-2026-58644"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple vulnerabilities in Drupal products",
     "severity": "high",
     "date": "2026-07-17",
@@ -383,6 +383,26 @@
       "CVE-2026-58589",
       "CVE-2026-58590",
       "CVE-2026-58591"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Mozilla Firefox",
+    "severity": "critical",
+    "date": "2026-07-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
+    "code": "CIVN-2026-0365",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 152.0.6."
+    ],
+    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
+    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
+    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
+    "cves": [
+      "CVE-2026-15718",
+      "CVE-2026-15719"
     ],
     "solutionLinks": []
   },
@@ -440,26 +460,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Mozilla Firefox",
-    "severity": "critical",
-    "date": "2026-07-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
-    "code": "CIVN-2026-0365",
-    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "softwareAffected": [
-      "Mozilla Firefox versions prior to 152.0.6."
-    ],
-    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
-    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
-    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
-    "cves": [
-      "CVE-2026-15718",
-      "CVE-2026-15719"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in SP Pagebuilder Extension for Joomla",
     "severity": "high",
     "date": "2026-07-15",
@@ -501,21 +501,6 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3536",
-    "severity": "high",
-    "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
-    "code": "CICA-2026-3536",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Drupal",
     "severity": "high",
     "date": "2026-07-13",
@@ -549,6 +534,67 @@
       "CVE-2026-15086",
       "CVE-2026-15087",
       "CVE-2026-15089"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3536",
+    "severity": "high",
+    "date": "2026-07-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
+    "code": "CICA-2026-3536",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Google Chrome for Desktop",
+    "severity": "critical",
+    "date": "2026-07-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0359",
+    "code": "CIVN-2026-0359",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome which could allow a remote attacker to execute arbitrary code, bypass security restrictions, disclose sensitive information and cause denial of service (DoS) condition on the targeted system.",
+    "description": "Google Chrome is a popular internet browser that is used for accessing the information available on worldwide web. It is designed for use on desktop computers, such as those running on Windows, macOS or Linux operating system. Multiple vulnerabilities exist in Google Chrome due to Use after free in Ozone, Views, InterestGroups, Extensions, Autofill, Actor, Payments, Input, Core, WebRTC, Forms and IndexedDB; Uninitialized use in V8 and ANGLE; Integer overflow in Extensions API; Out-of-bounds read and write in Codecs; Insufficient input validation of WebAppInstalls and Codecs; Insufficient data validation in DOM and Navigation; Insufficient policy enforcement in Passwords and Navigation; and Inappropriate implementation in GetUserMedia, Forms and WebGL. A remote attacker could exploit these vulnerabilities by persuading a victim to visit a specially crafted web page. Successful exploitation of these vulnerabilities could allow remote attacker to execute arbitrary code, bypass security restrictions, disclose sensitive information and cause denial of service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "Google Chrome versions prior to 150.0.7871.114/.115 for Windows and Mac",
+      "Google Chrome versions prior to 150.0.7871.114 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of security policy bypass, data loss and service disruptions.",
+    "impactAssessment": "Potential for full system compromise, service unavailability and information disclosure.",
+    "cves": [
+      "CVE-2026-15107",
+      "CVE-2026-15108",
+      "CVE-2026-15109",
+      "CVE-2026-15110",
+      "CVE-2026-15111",
+      "CVE-2026-15112",
+      "CVE-2026-15113",
+      "CVE-2026-15114",
+      "CVE-2026-15115",
+      "CVE-2026-15116",
+      "CVE-2026-15117",
+      "CVE-2026-15118",
+      "CVE-2026-15119",
+      "CVE-2026-15120",
+      "CVE-2026-15121",
+      "CVE-2026-15122",
+      "CVE-2026-15123",
+      "CVE-2026-15124",
+      "CVE-2026-15125",
+      "CVE-2026-15126",
+      "CVE-2026-15127",
+      "CVE-2026-15128",
+      "CVE-2026-15129",
+      "CVE-2026-15130",
+      "CVE-2026-15131",
+      "CVE-2026-15132",
+      "CVE-2026-15133"
     ],
     "solutionLinks": []
   },
@@ -618,52 +664,6 @@
       "CVE-2026-0286",
       "CVE-2026-0287",
       "CVE-2026-0288"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Google Chrome for Desktop",
-    "severity": "critical",
-    "date": "2026-07-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0359",
-    "code": "CIVN-2026-0359",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome which could allow a remote attacker to execute arbitrary code, bypass security restrictions, disclose sensitive information and cause denial of service (DoS) condition on the targeted system.",
-    "description": "Google Chrome is a popular internet browser that is used for accessing the information available on worldwide web. It is designed for use on desktop computers, such as those running on Windows, macOS or Linux operating system. Multiple vulnerabilities exist in Google Chrome due to Use after free in Ozone, Views, InterestGroups, Extensions, Autofill, Actor, Payments, Input, Core, WebRTC, Forms and IndexedDB; Uninitialized use in V8 and ANGLE; Integer overflow in Extensions API; Out-of-bounds read and write in Codecs; Insufficient input validation of WebAppInstalls and Codecs; Insufficient data validation in DOM and Navigation; Insufficient policy enforcement in Passwords and Navigation; and Inappropriate implementation in GetUserMedia, Forms and WebGL. A remote attacker could exploit these vulnerabilities by persuading a victim to visit a specially crafted web page. Successful exploitation of these vulnerabilities could allow remote attacker to execute arbitrary code, bypass security restrictions, disclose sensitive information and cause denial of service (DoS) condition on the targeted system.",
-    "softwareAffected": [
-      "Google Chrome versions prior to 150.0.7871.114/.115 for Windows and Mac",
-      "Google Chrome versions prior to 150.0.7871.114 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of security policy bypass, data loss and service disruptions.",
-    "impactAssessment": "Potential for full system compromise, service unavailability and information disclosure.",
-    "cves": [
-      "CVE-2026-15107",
-      "CVE-2026-15108",
-      "CVE-2026-15109",
-      "CVE-2026-15110",
-      "CVE-2026-15111",
-      "CVE-2026-15112",
-      "CVE-2026-15113",
-      "CVE-2026-15114",
-      "CVE-2026-15115",
-      "CVE-2026-15116",
-      "CVE-2026-15117",
-      "CVE-2026-15118",
-      "CVE-2026-15119",
-      "CVE-2026-15120",
-      "CVE-2026-15121",
-      "CVE-2026-15122",
-      "CVE-2026-15123",
-      "CVE-2026-15124",
-      "CVE-2026-15125",
-      "CVE-2026-15126",
-      "CVE-2026-15127",
-      "CVE-2026-15128",
-      "CVE-2026-15129",
-      "CVE-2026-15130",
-      "CVE-2026-15131",
-      "CVE-2026-15132",
-      "CVE-2026-15133"
     ],
     "solutionLinks": []
   },
