@@ -479,6 +479,21 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3536",
+    "severity": "high",
+    "date": "2026-07-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
+    "code": "CICA-2026-3536",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Drupal",
     "severity": "high",
     "date": "2026-07-13",
@@ -535,21 +550,6 @@
       "CVE-2026-10520",
       "CVE-2026-10523"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3536",
-    "severity": "high",
-    "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
-    "code": "CICA-2026-3536",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
