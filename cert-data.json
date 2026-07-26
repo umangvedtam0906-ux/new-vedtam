@@ -1,26 +1,5 @@
 [
   {
-    "title": "Multiple vulnerabilities in Citrix Products",
-    "severity": "high",
-    "date": "2026-07-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
-    "code": "CIVN-2026-0378",
-    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "softwareAffected": [
-      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
-      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
-    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
-    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
-    "cves": [
-      "CVE-2026-53565",
-      "CVE-2026-53566"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-07-24",
@@ -48,6 +27,27 @@
       "CVE-2026-16422",
       "CVE-2026-16423",
       "CVE-2026-16424"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Citrix Products",
+    "severity": "high",
+    "date": "2026-07-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
+    "code": "CIVN-2026-0378",
+    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "softwareAffected": [
+      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
+      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
+    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
+    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
+    "cves": [
+      "CVE-2026-53565",
+      "CVE-2026-53566"
     ],
     "solutionLinks": []
   },
@@ -1773,6 +1773,21 @@
     "code": "CIVN-2026-0320"
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -1797,21 +1812,6 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
