@@ -1773,21 +1773,6 @@
     "code": "CIVN-2026-0320"
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -1812,6 +1797,21 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
