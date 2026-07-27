@@ -1,5 +1,23 @@
 [
   {
+    "title": "Multiple Vulnerabilities in CP PLUS EZ-P21 IP Camera",
+    "severity": "critical",
+    "date": "2026-07-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0380",
+    "code": "CIVN-2026-0380",
+    "summary": "Multiple vulnerabilities have been reported in CP PLUS EZ-P21 IP Camera, which could allow an attacker to execute arbitrary code and gain unauthorized access to live video snapshots from the targeted device.",
+    "description": "The CP PLUS EZ-P21 IP Camera is an Internet Protocol (IP) based surveillance camera used for video monitoring and network based access to camera functions and video snapshots. 1. Arbitrary Code Execution Vulnerability ( CVE-2026-65893 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to an insecure debug feature enabled in the firmware. An attacker with physical access could exploit this vulnerability by placing arbitrary code on removable media and triggering their execution through the debug mechanism. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with elevated privileges on the targeted device. 2. Improper Authentication Vulnerability ( CVE-2026-65894 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to improper authentication of HTTP endpoints. A remote attacker could exploit this vulnerability by conducting brute-force attacks against HTTP endpoint on the targeted device. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized access to live video snapshots from the targeted device. Credit These vulnerabilities are reported by the following team of security researchers: • CVE-2026-65893: Isukapalli Venkata Mythreya Kumara Sarma, Tiyyagura Venkata Shesha Shaina Reddy and Naga Venkatesh Durga Sai Krishna from Vignan University. Vishwa V and Sathya Priya S from SRMIST Ramapuram. Deven Lunkad and S. Venkatesan from IIIT Allahabad • • CVE-2026-65894: Vishwa V and Sathya Priya S from SRMIST Ramapuram. Tiyyagura Venkata Shesha Shaina Reddy and Isukapalli Venkata Mythreya Kumara Sarma from Vignan University. Deven Lunkad and S. Venkatesan from IIIT Allahabad •",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators using CP PLUS EZ-P21 IP Camera",
+    "riskAssessment": "Risk of arbitrary code execution and improper authentication",
+    "impactAssessment": "Potential for arbitrary code execution with elevated privileges and unauthorized access.",
+    "cves": [
+      "CVE-2026-65893",
+      "CVE-2026-65894"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Authentication Bypass Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-07-27",
@@ -22,27 +40,6 @@
     "impactAssessment": "Potential for authentication bypass, unauthorized administrative access, modification of security policies and security configurations, and compromise of the integrity and security of the affected management server.",
     "cves": [
       "CVE-2026-16232"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Citrix Products",
-    "severity": "high",
-    "date": "2026-07-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
-    "code": "CIVN-2026-0378",
-    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "softwareAffected": [
-      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
-      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
-    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
-    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
-    "cves": [
-      "CVE-2026-53565",
-      "CVE-2026-53566"
     ],
     "solutionLinks": []
   },
@@ -74,6 +71,27 @@
       "CVE-2026-16422",
       "CVE-2026-16423",
       "CVE-2026-16424"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Citrix Products",
+    "severity": "high",
+    "date": "2026-07-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
+    "code": "CIVN-2026-0378",
+    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "softwareAffected": [
+      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
+      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
+    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
+    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
+    "cves": [
+      "CVE-2026-53565",
+      "CVE-2026-53566"
     ],
     "solutionLinks": []
   },
@@ -231,26 +249,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in SonicWall",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
-    "code": "CIVN-2026-0371",
-    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
-    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
-    "softwareAffected": [
-      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
-    ],
-    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
-    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
-    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
-    "cves": [
-      "CVE-2026-15409",
-      "CVE-2026-15410"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in VMware Avi Load Balancer",
     "severity": "critical",
     "date": "2026-07-21",
@@ -279,6 +277,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in SonicWall",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
+    "code": "CIVN-2026-0371",
+    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
+    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
+    "softwareAffected": [
+      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
+    ],
+    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
+    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
+    "cves": [
+      "CVE-2026-15409",
+      "CVE-2026-15410"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Apache Tomcat",
     "severity": "critical",
     "date": "2026-07-20",
@@ -299,39 +317,6 @@
     "cves": [
       "CVE-2026-59083",
       "CVE-2026-59084"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
-    "code": "CIAD-2026-0035",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "Developer Tools",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Device",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-56155",
-      "CVE-2026-56164",
-      "CVE-2026-58644"
     ],
     "solutionLinks": []
   },
@@ -384,6 +369,39 @@
       "CVE-2026-15916",
       "CVE-2026-15917",
       "CVE-2026-55805"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
+    "code": "CIAD-2026-0035",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "Developer Tools",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Device",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-56155",
+      "CVE-2026-56164",
+      "CVE-2026-58644"
     ],
     "solutionLinks": []
   },
@@ -505,6 +523,21 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3536",
+    "severity": "high",
+    "date": "2026-07-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
+    "code": "CICA-2026-3536",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Ivanti Sentry",
     "severity": "critical",
     "date": "2026-07-13",
@@ -561,21 +594,6 @@
       "CVE-2026-15087",
       "CVE-2026-15089"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3536",
-    "severity": "high",
-    "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
-    "code": "CICA-2026-3536",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
