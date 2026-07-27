@@ -1,5 +1,31 @@
 [
   {
+    "title": "Authentication Bypass Vulnerability in Check Point Products",
+    "severity": "critical",
+    "date": "2026-07-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0379",
+    "code": "CIVN-2026-0379",
+    "summary": "An authentication bypass vulnerability has been reported in Check Point Quantum Security Management and Multi-Domain Security Management products, which could allow an unauthenticated remote attacker to obtain administrative access to the affected management server and modify security policies and configurations.",
+    "description": "Check Point Quantum Security Management and Multi-Domain Security Management provide centralized management capabilities for Check Point security deployments. An authentication bypass vulnerability exists in Check Point Quantum Security Management and Multi-Domain Security Management products due to improper authentication in the SmartConsole login process. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to obtain an application login token and authenticate to the affected management server with full administrative privileges. The attacker may subsequently modify security policies and security configurations.",
+    "softwareAffected": [
+      "Check Point Quantum Security Management R82.10 with Jumbo Hotfix Take 36 or below",
+      "Check Point Quantum Security Management R82 with Jumbo Hotfix Take 118 or below",
+      "Check Point Quantum Security Management R81.20 with Jumbo Hotfix Take 158 or below",
+      "Check Point Quantum Security Management R81.10, R81, R80.30, R80.20, R80.10, R80 and R77.30",
+      "Check Point Multi-Domain Security Management R82.10 with Jumbo Hotfix Take 36 or below",
+      "Check Point Multi-Domain Security Management R82 with Jumbo Hotfix Take 118 or below",
+      "Check Point Multi-Domain Security Management R81.20 with Jumbo Hotfix Take 158 or below",
+      "Check Point Multi-Domain Security Management R81.10, R81, R80.30, R80.20, R80.10, R80 and R77.30"
+    ],
+    "targetAudience": "All organizations and individuals using the affected Check Point products.",
+    "riskAssessment": "Critical risk of unauthorized administrative access to the affected management server.",
+    "impactAssessment": "Potential for authentication bypass, unauthorized administrative access, modification of security policies and security configurations, and compromise of the integrity and security of the affected management server.",
+    "cves": [
+      "CVE-2026-16232"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Citrix Products",
     "severity": "high",
     "date": "2026-07-24",
@@ -113,6 +139,29 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in BeyondTrust",
+    "severity": "critical",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0375",
+    "code": "CIVN-2026-0375",
+    "summary": "Multiple vulnerabilities have been reported in BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA), which could allow an attacker to bypass authentication, gain unauthorized access, cause denial-of-service conditions, access unintended resources on the targeted system.",
+    "description": "BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA) are secure remote access and privileged access management",
+    "softwareAffected": [
+      "BeyondTrust Remote Support versions RS 25.3.2 or lower",
+      "BeyondTrust Privileged Remote Access versions PRA 25.3.2 or lower"
+    ],
+    "targetAudience": "All end-user organizations and individuals using BeyondTrust.",
+    "riskAssessment": "High risk of denial-of-service, bypass security restrictions, sensitive information disclosure.",
+    "impactAssessment": "Potential for denial-of-service, bypass security restrictions, sensitive information disclosure and/or compromise of system.",
+    "cves": [
+      "CVE-2026-40138",
+      "CVE-2026-40139",
+      "CVE-2026-40140",
+      "CVE-2026-40141"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Zoom Products",
     "severity": "critical",
     "date": "2026-07-22",
@@ -139,29 +188,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in BeyondTrust",
-    "severity": "critical",
-    "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0375",
-    "code": "CIVN-2026-0375",
-    "summary": "Multiple vulnerabilities have been reported in BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA), which could allow an attacker to bypass authentication, gain unauthorized access, cause denial-of-service conditions, access unintended resources on the targeted system.",
-    "description": "BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA) are secure remote access and privileged access management",
-    "softwareAffected": [
-      "BeyondTrust Remote Support versions RS 25.3.2 or lower",
-      "BeyondTrust Privileged Remote Access versions PRA 25.3.2 or lower"
-    ],
-    "targetAudience": "All end-user organizations and individuals using BeyondTrust.",
-    "riskAssessment": "High risk of denial-of-service, bypass security restrictions, sensitive information disclosure.",
-    "impactAssessment": "Potential for denial-of-service, bypass security restrictions, sensitive information disclosure and/or compromise of system.",
-    "cves": [
-      "CVE-2026-40138",
-      "CVE-2026-40139",
-      "CVE-2026-40140",
-      "CVE-2026-40141"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in WordPress",
     "severity": "critical",
     "date": "2026-07-21",
@@ -178,6 +204,29 @@
     "cves": [
       "CVE-2026-60137",
       "CVE-2026-63030"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in TP-Link Products",
+    "severity": "high",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0372",
+    "code": "CIVN-2026-0372",
+    "summary": "Multiple vulnerabilities have been reported in TP-Link products, which could allow an attacker on the same local network to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
+    "description": "TP-Link Kasa EC70 and EC71 are smart security cameras that provide remote monitoring and surveillance capabilities for residential and enterprise environments. These vulnerabilities exist in TP-Link products due to the use of a hard-coded cryptographic private key within the firmware and exposure of sensitive geolocation information through the local discovery mechanism. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
+    "softwareAffected": [
+      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
+      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
+      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536",
+      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536"
+    ],
+    "targetAudience": "All organizations and individuals using the affected TP-Link products.",
+    "riskAssessment": "High risk of sensitive information disclosure, compromise of encrypted communications through Man-in-the-Middle (MITM) attacks, and exposure of geolocation information.",
+    "impactAssessment": "Potential for disclosure of sensitive information, interception of encrypted communications, exposure of geolocation information, and compromise of the confidentiality of affected devices.",
+    "cves": [
+      "CVE-2026-9770",
+      "CVE-2026-13230"
     ],
     "solutionLinks": []
   },
@@ -226,29 +275,6 @@
       "CVE-2026-47869",
       "CVE-2026-47870",
       "CVE-2026-47871"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in TP-Link Products",
-    "severity": "high",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0372",
-    "code": "CIVN-2026-0372",
-    "summary": "Multiple vulnerabilities have been reported in TP-Link products, which could allow an attacker on the same local network to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
-    "description": "TP-Link Kasa EC70 and EC71 are smart security cameras that provide remote monitoring and surveillance capabilities for residential and enterprise environments. These vulnerabilities exist in TP-Link products due to the use of a hard-coded cryptographic private key within the firmware and exposure of sensitive geolocation information through the local discovery mechanism. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
-    "softwareAffected": [
-      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
-      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
-      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536",
-      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536"
-    ],
-    "targetAudience": "All organizations and individuals using the affected TP-Link products.",
-    "riskAssessment": "High risk of sensitive information disclosure, compromise of encrypted communications through Man-in-the-Middle (MITM) attacks, and exposure of geolocation information.",
-    "impactAssessment": "Potential for disclosure of sensitive information, interception of encrypted communications, exposure of geolocation information, and compromise of the confidentiality of affected devices.",
-    "cves": [
-      "CVE-2026-9770",
-      "CVE-2026-13230"
     ],
     "solutionLinks": []
   },
@@ -310,32 +336,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0367",
-    "code": "CIVN-2026-0367",
-    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system.",
-    "description": "Drupal is an open-source, content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in a Drupal core due to insufficient access check for image style derivatives, improper sanitization of certain HTMX attributes and improper sanitisation of block labels in certain scenarios. An attacker could exploit these vulnerabilities by sending specially crafted inputs. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system. Note: Drupal 10.5.x, Drupal 11.2.x and all prior releases have reached end-of-life and no longer receive security support. Drupal 8 and Drupal 9 have also reached end-of-life.",
-    "softwareAffected": [
-      "Drupal Core version prior to 10.6.13",
-      "Drupal Core versions 11.3.0 to 11.3.13",
-      "Drupal Core versions 11.4.0 to 11.4.3",
-      "Drupal Core versions 11.0.x",
-      "Drupal Core versions 11.1.x",
-      "Drupal Core versions 11.2.x"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal.",
-    "riskAssessment": "High risk of unauthorized access, cross-site scripting (XSS) attacks.",
-    "impactAssessment": "Potential for data exposure, unauthorized access to sensitive information and potential compromise of system.",
-    "cves": [
-      "CVE-2026-15916",
-      "CVE-2026-15917",
-      "CVE-2026-55805"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "high",
     "date": "2026-07-17",
@@ -358,6 +358,32 @@
       "CVE-2025-12506",
       "CVE-2026-13151",
       "CVE-2026-6352"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0367",
+    "code": "CIVN-2026-0367",
+    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system.",
+    "description": "Drupal is an open-source, content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in a Drupal core due to insufficient access check for image style derivatives, improper sanitization of certain HTMX attributes and improper sanitisation of block labels in certain scenarios. An attacker could exploit these vulnerabilities by sending specially crafted inputs. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information and perform cross-site scripting (XSS) attacks on the targeted system. Note: Drupal 10.5.x, Drupal 11.2.x and all prior releases have reached end-of-life and no longer receive security support. Drupal 8 and Drupal 9 have also reached end-of-life.",
+    "softwareAffected": [
+      "Drupal Core version prior to 10.6.13",
+      "Drupal Core versions 11.3.0 to 11.3.13",
+      "Drupal Core versions 11.4.0 to 11.4.3",
+      "Drupal Core versions 11.0.x",
+      "Drupal Core versions 11.1.x",
+      "Drupal Core versions 11.2.x"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal.",
+    "riskAssessment": "High risk of unauthorized access, cross-site scripting (XSS) attacks.",
+    "impactAssessment": "Potential for data exposure, unauthorized access to sensitive information and potential compromise of system.",
+    "cves": [
+      "CVE-2026-15916",
+      "CVE-2026-15917",
+      "CVE-2026-55805"
     ],
     "solutionLinks": []
   },
@@ -479,18 +505,25 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3536",
-    "severity": "high",
+    "title": "Multiple Vulnerabilities in Ivanti Sentry",
+    "severity": "critical",
     "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
-    "code": "CICA-2026-3536",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0363",
+    "code": "CIVN-2026-0363",
+    "summary": "Multiple vulnerabilities have been reported in Ivanti Sentry, which could allow a remote unauthenticated attacker to execute arbitrary code with root privileges, bypass authentication, create arbitrary administrative accounts, and gain full administrative access on the targeted system.",
+    "description": "Ivanti Sentry, formerly known as MobileIron Sentry, is an in-line gateway that manages, encrypts, and secures traffic between mobile devices and backend enterprise systems. Multiple critical vulnerabilities have been reported in Ivanti Sentry due to improper neutralization of special elements used in an operating system command and authentication bypass using an alternate path or channel. Successful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to execute arbitrary code with root privileges, bypass authentication, create arbitrary administrative accounts, and gain full administrative access on the targeted system. Note: CVE-2026-10520 is being actively exploited in the wild.",
+    "softwareAffected": [
+      "Ivanti Sentry 10.5.x versions prior to 10.5.2",
+      "Ivanti Sentry 10.6.x versions prior to 10.6.2",
+      "Ivanti Sentry 10.7.x versions prior to 10.7.1"
+    ],
+    "targetAudience": "IT administrators, security administrators, network administrators, and organizations using Ivanti Sentry.",
+    "riskAssessment": "Critical risk of complete system compromise, unauthorized administrative access, and execution of arbitrary commands.",
+    "impactAssessment": "Potential for complete system compromise, unauthorized administrative access, and arbitrary code execution with root privileges.",
+    "cves": [
+      "CVE-2026-10520",
+      "CVE-2026-10523"
+    ],
     "solutionLinks": []
   },
   {
@@ -531,25 +564,18 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Ivanti Sentry",
-    "severity": "critical",
+    "title": "CERT-In Advisory CICA-2026-3536",
+    "severity": "high",
     "date": "2026-07-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0363",
-    "code": "CIVN-2026-0363",
-    "summary": "Multiple vulnerabilities have been reported in Ivanti Sentry, which could allow a remote unauthenticated attacker to execute arbitrary code with root privileges, bypass authentication, create arbitrary administrative accounts, and gain full administrative access on the targeted system.",
-    "description": "Ivanti Sentry, formerly known as MobileIron Sentry, is an in-line gateway that manages, encrypts, and secures traffic between mobile devices and backend enterprise systems. Multiple critical vulnerabilities have been reported in Ivanti Sentry due to improper neutralization of special elements used in an operating system command and authentication bypass using an alternate path or channel. Successful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to execute arbitrary code with root privileges, bypass authentication, create arbitrary administrative accounts, and gain full administrative access on the targeted system. Note: CVE-2026-10520 is being actively exploited in the wild.",
-    "softwareAffected": [
-      "Ivanti Sentry 10.5.x versions prior to 10.5.2",
-      "Ivanti Sentry 10.6.x versions prior to 10.6.2",
-      "Ivanti Sentry 10.7.x versions prior to 10.7.1"
-    ],
-    "targetAudience": "IT administrators, security administrators, network administrators, and organizations using Ivanti Sentry.",
-    "riskAssessment": "Critical risk of complete system compromise, unauthorized administrative access, and execution of arbitrary commands.",
-    "impactAssessment": "Potential for complete system compromise, unauthorized administrative access, and arbitrary code execution with root privileges.",
-    "cves": [
-      "CVE-2026-10520",
-      "CVE-2026-10523"
-    ],
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3536",
+    "code": "CICA-2026-3536",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
