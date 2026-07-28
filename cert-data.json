@@ -44,27 +44,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Citrix Products",
-    "severity": "high",
-    "date": "2026-07-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
-    "code": "CIVN-2026-0378",
-    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "softwareAffected": [
-      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
-      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
-    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
-    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
-    "cves": [
-      "CVE-2026-53565",
-      "CVE-2026-53566"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-07-24",
@@ -92,6 +71,27 @@
       "CVE-2026-16422",
       "CVE-2026-16423",
       "CVE-2026-16424"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Citrix Products",
+    "severity": "high",
+    "date": "2026-07-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
+    "code": "CIVN-2026-0378",
+    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "softwareAffected": [
+      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
+      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
+    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
+    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
+    "cves": [
+      "CVE-2026-53565",
+      "CVE-2026-53566"
     ],
     "solutionLinks": []
   },
@@ -127,33 +127,6 @@
       "CVE-2026-32208",
       "CVE-2026-47633"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "high",
-    "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
-    "code": "CIAD-2026-0036",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle MySQL",
-      "Java SE",
-      "Oracle Database Server",
-      "WebLogic Server",
-      "Oracle Communications",
-      "Oracle Construction and Engineering",
-      "Oracle Enterprise Manager",
-      "Oracle Financial Services Applications",
-      "Oracle Fusion Middleware",
-      "Oracle E-Business Suite",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
-    ],
-    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -206,23 +179,30 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in WordPress",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0373",
-    "code": "CIVN-2026-0373",
-    "summary": "Multiple vulnerabilities have been reported in WordPress, which could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to build websites and blogs. Multiple vulnerabilities exist in WordPress due to a REST API batch endpoint route interpretation conflict (route confusion) and improper sanitization of the author__not_in parameter in WP_Query. Successful exploitation of these vulnerabilities could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
+    "code": "CIAD-2026-0036",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
     "softwareAffected": [
-      "WordPress versions prior to 7.0.2"
+      "Oracle MySQL",
+      "Java SE",
+      "Oracle Database Server",
+      "WebLogic Server",
+      "Oracle Communications",
+      "Oracle Construction and Engineering",
+      "Oracle Enterprise Manager",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle E-Business Suite",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
     ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of SQL injection attacks and remote code execution (RCE).",
-    "impactAssessment": "Potential for unauthorized access, execution of arbitrary code, privilege escalation, and full compromise.",
-    "cves": [
-      "CVE-2026-60137",
-      "CVE-2026-63030"
-    ],
+    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -297,6 +277,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in WordPress",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0373",
+    "code": "CIVN-2026-0373",
+    "summary": "Multiple vulnerabilities have been reported in WordPress, which could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to build websites and blogs. Multiple vulnerabilities exist in WordPress due to a REST API batch endpoint route interpretation conflict (route confusion) and improper sanitization of the author__not_in parameter in WP_Query. Successful exploitation of these vulnerabilities could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.2"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of SQL injection attacks and remote code execution (RCE).",
+    "impactAssessment": "Potential for unauthorized access, execution of arbitrary code, privilege escalation, and full compromise.",
+    "cves": [
+      "CVE-2026-60137",
+      "CVE-2026-63030"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Apache Tomcat",
     "severity": "critical",
     "date": "2026-07-20",
@@ -317,39 +317,6 @@
     "cves": [
       "CVE-2026-59083",
       "CVE-2026-59084"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
-    "code": "CIAD-2026-0035",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "Developer Tools",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Device",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-56155",
-      "CVE-2026-56164",
-      "CVE-2026-58644"
     ],
     "solutionLinks": []
   },
@@ -427,6 +394,39 @@
       "CVE-2026-58589",
       "CVE-2026-58590",
       "CVE-2026-58591"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0035",
+    "code": "CIAD-2026-0035",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-56155: This vulnerability exists in Microsoft Active Directory Federation Services (AD FS) due to insufficient granularity of access control. An authenticated attacker could exploit this vulnerability to elevate privileges on the affected system. CVE-2026-56164: This vulnerability exists in Microsoft Office SharePoint due to missing authentication for a critical function. An unauthenticated attacker could exploit this vulnerability over a network to elevate privileges. CVE-2026-58644: This vulnerability exists in Microsoft Office SharePoint due to deserialization of untrusted data. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to execute arbitrary code on the target server over a network. Note: The vulnerabilities CVE-2026-56155 CVE-2026-56164 and CVE-2026-58644 are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "Developer Tools",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Device",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "Other (Microsoft Copilot, Minecraft Bedrock Dedicated Server, GitHub Copilot Plugin for JetBrains IDEs, Age of Empires II: Definitive Edition Game)"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-56155",
+      "CVE-2026-56164",
+      "CVE-2026-58644"
     ],
     "solutionLinks": []
   },
