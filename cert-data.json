@@ -18,6 +18,32 @@
     "solutionLinks": []
   },
   {
+    "title": "Authentication Bypass Vulnerability in Check Point Products",
+    "severity": "critical",
+    "date": "2026-07-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0379",
+    "code": "CIVN-2026-0379",
+    "summary": "An authentication bypass vulnerability has been reported in Check Point Quantum Security Management and Multi-Domain Security Management products, which could allow an unauthenticated remote attacker to obtain administrative access to the affected management server and modify security policies and configurations.",
+    "description": "Check Point Quantum Security Management and Multi-Domain Security Management provide centralized management capabilities for Check Point security deployments. An authentication bypass vulnerability exists in Check Point Quantum Security Management and Multi-Domain Security Management products due to improper authentication in the SmartConsole login process. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to obtain an application login token and authenticate to the affected management server with full administrative privileges. The attacker may subsequently modify security policies and security configurations.",
+    "softwareAffected": [
+      "Check Point Quantum Security Management R82.10 with Jumbo Hotfix Take 36 or below",
+      "Check Point Quantum Security Management R82 with Jumbo Hotfix Take 118 or below",
+      "Check Point Quantum Security Management R81.20 with Jumbo Hotfix Take 158 or below",
+      "Check Point Quantum Security Management R81.10, R81, R80.30, R80.20, R80.10, R80 and R77.30",
+      "Check Point Multi-Domain Security Management R82.10 with Jumbo Hotfix Take 36 or below",
+      "Check Point Multi-Domain Security Management R82 with Jumbo Hotfix Take 118 or below",
+      "Check Point Multi-Domain Security Management R81.20 with Jumbo Hotfix Take 158 or below",
+      "Check Point Multi-Domain Security Management R81.10, R81, R80.30, R80.20, R80.10, R80 and R77.30"
+    ],
+    "targetAudience": "All organizations and individuals using the affected Check Point products.",
+    "riskAssessment": "Critical risk of unauthorized administrative access to the affected management server.",
+    "impactAssessment": "Potential for authentication bypass, unauthorized administrative access, modification of security policies and security configurations, and compromise of the integrity and security of the affected management server.",
+    "cves": [
+      "CVE-2026-16232"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Citrix Products",
     "severity": "high",
     "date": "2026-07-24",
@@ -295,6 +321,32 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0368",
+    "code": "CIVN-2026-0368",
+    "summary": "Multiple vulnerabilities have been reported in GitLab that could be exploited by an attacker to execute arbitrary scripts, perform Cross-Site Scripting (XSS) attacks, gain unauthorized access to protected resources, and perform unauthorized actions on the targeted system.",
+    "description": "GitLab is a web-based DevOps platform that provides tools for software development, including source code management, continuous integration and continuous deployment. It is available as Community Edition (CE) and Enterprise Edition (EE). Multiple vulnerabilities exist in GitLab due to improper sanitization of user-supplied input, insufficient authorization controls, missing access-control checks and improper handling of Git reference name re",
+    "softwareAffected": [
+      "GitLab Community Edition (CE) and Enterprise Edition (EE) versions prior to 18.11.7, 19.0.4 and 19.1.2"
+    ],
+    "targetAudience": "All organizations and individuals using self-managed GitLab installations.",
+    "riskAssessment": "High risk of cross-site scripting, sensitive information disclosure, credential exposure and unauthorized modification of settings or records.",
+    "impactAssessment": "Potential for sensitive data theft, confidential information disclosure, session compromise through Cross-Site Scripting (XSS), unauthorized modification of settings or records, exposure of stored credentials, repository content manipulation, and loss of data integrity.",
+    "cves": [
+      "CVE-2026-6896",
+      "CVE-2026-13320",
+      "CVE-2026-11827",
+      "CVE-2026-8472",
+      "CVE-2026-7492",
+      "CVE-2025-12506",
+      "CVE-2026-13151",
+      "CVE-2026-6352"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Drupal",
     "severity": "high",
     "date": "2026-07-17",
@@ -375,32 +427,6 @@
       "CVE-2026-56155",
       "CVE-2026-56164",
       "CVE-2026-58644"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0368",
-    "code": "CIVN-2026-0368",
-    "summary": "Multiple vulnerabilities have been reported in GitLab that could be exploited by an attacker to execute arbitrary scripts, perform Cross-Site Scripting (XSS) attacks, gain unauthorized access to protected resources, and perform unauthorized actions on the targeted system.",
-    "description": "GitLab is a web-based DevOps platform that provides tools for software development, including source code management, continuous integration and continuous deployment. It is available as Community Edition (CE) and Enterprise Edition (EE). Multiple vulnerabilities exist in GitLab due to improper sanitization of user-supplied input, insufficient authorization controls, missing access-control checks and improper handling of Git reference name re",
-    "softwareAffected": [
-      "GitLab Community Edition (CE) and Enterprise Edition (EE) versions prior to 18.11.7, 19.0.4 and 19.1.2"
-    ],
-    "targetAudience": "All organizations and individuals using self-managed GitLab installations.",
-    "riskAssessment": "High risk of cross-site scripting, sensitive information disclosure, credential exposure and unauthorized modification of settings or records.",
-    "impactAssessment": "Potential for sensitive data theft, confidential information disclosure, session compromise through Cross-Site Scripting (XSS), unauthorized modification of settings or records, exposure of stored credentials, repository content manipulation, and loss of data integrity.",
-    "cves": [
-      "CVE-2026-6896",
-      "CVE-2026-13320",
-      "CVE-2026-11827",
-      "CVE-2026-8472",
-      "CVE-2026-7492",
-      "CVE-2025-12506",
-      "CVE-2026-13151",
-      "CVE-2026-6352"
     ],
     "solutionLinks": []
   },
