@@ -20,24 +20,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in CP PLUS EZ-P21 IP Camera",
-    "severity": "critical",
-    "date": "2026-07-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0380",
-    "code": "CIVN-2026-0380",
-    "summary": "Multiple vulnerabilities have been reported in CP PLUS EZ-P21 IP Camera, which could allow an attacker to execute arbitrary code and gain unauthorized access to live video snapshots from the targeted device.",
-    "description": "The CP PLUS EZ-P21 IP Camera is an Internet Protocol (IP) based surveillance camera used for video monitoring and network based access to camera functions and video snapshots. 1. Arbitrary Code Execution Vulnerability ( CVE-2026-65893 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to an insecure debug feature enabled in the firmware. An attacker with physical access could exploit this vulnerability by placing arbitrary code on removable media and triggering their execution through the debug mechanism. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with elevated privileges on the targeted device. 2. Improper Authentication Vulnerability ( CVE-2026-65894 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to improper authentication of HTTP endpoints. A remote attacker could exploit this vulnerability by conducting brute-force attacks against HTTP endpoint on the targeted device. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized access to live video snapshots from the targeted device. Credit These vulnerabilities are reported by the following team of security researchers: • CVE-2026-65893: Isukapalli Venkata Mythreya Kumara Sarma, Tiyyagura Venkata Shesha Shaina Reddy and Naga Venkatesh Durga Sai Krishna from Vignan University. Vishwa V and Sathya Priya S from SRMIST Ramapuram. Deven Lunkad and S. Venkatesan from IIIT Allahabad • • CVE-2026-65894: Vishwa V and Sathya Priya S from SRMIST Ramapuram. Tiyyagura Venkata Shesha Shaina Reddy and Isukapalli Venkata Mythreya Kumara Sarma from Vignan University. Deven Lunkad and S. Venkatesan from IIIT Allahabad •",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators using CP PLUS EZ-P21 IP Camera",
-    "riskAssessment": "Risk of arbitrary code execution and improper authentication",
-    "impactAssessment": "Potential for arbitrary code execution with elevated privileges and unauthorized access.",
-    "cves": [
-      "CVE-2026-65893",
-      "CVE-2026-65894"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Authentication Bypass Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-07-27",
@@ -60,6 +42,24 @@
     "impactAssessment": "Potential for authentication bypass, unauthorized administrative access, modification of security policies and security configurations, and compromise of the integrity and security of the affected management server.",
     "cves": [
       "CVE-2026-16232"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in CP PLUS EZ-P21 IP Camera",
+    "severity": "critical",
+    "date": "2026-07-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0380",
+    "code": "CIVN-2026-0380",
+    "summary": "Multiple vulnerabilities have been reported in CP PLUS EZ-P21 IP Camera, which could allow an attacker to execute arbitrary code and gain unauthorized access to live video snapshots from the targeted device.",
+    "description": "The CP PLUS EZ-P21 IP Camera is an Internet Protocol (IP) based surveillance camera used for video monitoring and network based access to camera functions and video snapshots. 1. Arbitrary Code Execution Vulnerability ( CVE-2026-65893 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to an insecure debug feature enabled in the firmware. An attacker with physical access could exploit this vulnerability by placing arbitrary code on removable media and triggering their execution through the debug mechanism. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with elevated privileges on the targeted device. 2. Improper Authentication Vulnerability ( CVE-2026-65894 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to improper authentication of HTTP endpoints. A remote attacker could exploit this vulnerability by conducting brute-force attacks against HTTP endpoint on the targeted device. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized access to live video snapshots from the targeted device. Credit These vulnerabilities are reported by the following team of security researchers: • CVE-2026-65893: Isukapalli Venkata Mythreya Kumara Sarma, Tiyyagura Venkata Shesha Shaina Reddy and Naga Venkatesh Durga Sai Krishna from Vignan University. Vishwa V and Sathya Priya S from SRMIST Ramapuram. Deven Lunkad and S. Venkatesan from IIIT Allahabad • • CVE-2026-65894: Vishwa V and Sathya Priya S from SRMIST Ramapuram. Tiyyagura Venkata Shesha Shaina Reddy and Isukapalli Venkata Mythreya Kumara Sarma from Vignan University. Deven Lunkad and S. Venkatesan from IIIT Allahabad •",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators using CP PLUS EZ-P21 IP Camera",
+    "riskAssessment": "Risk of arbitrary code execution and improper authentication",
+    "impactAssessment": "Potential for arbitrary code execution with elevated privileges and unauthorized access.",
+    "cves": [
+      "CVE-2026-65893",
+      "CVE-2026-65894"
     ],
     "solutionLinks": []
   },
