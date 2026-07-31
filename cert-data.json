@@ -41,24 +41,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in CP PLUS EZ-P21 IP Camera",
-    "severity": "critical",
-    "date": "2026-07-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0380",
-    "code": "CIVN-2026-0380",
-    "summary": "Multiple vulnerabilities have been reported in CP PLUS EZ-P21 IP Camera, which could allow an attacker to execute arbitrary code and gain unauthorized access to live video snapshots from the targeted device.",
-    "description": "The CP PLUS EZ-P21 IP Camera is an Internet Protocol (IP) based surveillance camera used for video monitoring and network based access to camera functions and video snapshots. 1. Arbitrary Code Execution Vulnerability ( CVE-2026-65893 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to an insecure debug feature enabled in the firmware. An attacker with physical access could exploit this vulnerability by placing arbitrary code on removable media and triggering their execution through the debug mechanism. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with elevated privileges on the targeted device. 2. Improper Authentication Vulnerability ( CVE-2026-65894 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to improper authentication of HTTP endpoints. A remote attacker could exploit this vulnerability by conducting brute-force attacks against HTTP endpoint on the targeted device. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized access to live video snapshots from the targeted device. Credit These vulnerabilities are reported by the following team of security researchers: • CVE-2026-65893: Isukapalli Venkata Mythreya Kumara Sarma, Tiyyagura Venkata Shesha Shaina Reddy and Naga Venkatesh Durga Sai Krishna from Vignan University. Vishwa V and Sathya Priya S from SRMIST Ramapuram. Deven Lunkad and S. Venkatesan from IIIT Allahabad • • CVE-2026-65894: Vishwa V and Sathya Priya S from SRMIST Ramapuram. Tiyyagura Venkata Shesha Shaina Reddy and Isukapalli Venkata Mythreya Kumara Sarma from Vignan University. Deven Lunkad and S. Venkatesan from IIIT Allahabad •",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators using CP PLUS EZ-P21 IP Camera",
-    "riskAssessment": "Risk of arbitrary code execution and improper authentication",
-    "impactAssessment": "Potential for arbitrary code execution with elevated privileges and unauthorized access.",
-    "cves": [
-      "CVE-2026-65893",
-      "CVE-2026-65894"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Authentication Bypass Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-07-27",
@@ -81,6 +63,24 @@
     "impactAssessment": "Potential for authentication bypass, unauthorized administrative access, modification of security policies and security configurations, and compromise of the integrity and security of the affected management server.",
     "cves": [
       "CVE-2026-16232"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in CP PLUS EZ-P21 IP Camera",
+    "severity": "critical",
+    "date": "2026-07-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0380",
+    "code": "CIVN-2026-0380",
+    "summary": "Multiple vulnerabilities have been reported in CP PLUS EZ-P21 IP Camera, which could allow an attacker to execute arbitrary code and gain unauthorized access to live video snapshots from the targeted device.",
+    "description": "The CP PLUS EZ-P21 IP Camera is an Internet Protocol (IP) based surveillance camera used for video monitoring and network based access to camera functions and video snapshots. 1. Arbitrary Code Execution Vulnerability ( CVE-2026-65893 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to an insecure debug feature enabled in the firmware. An attacker with physical access could exploit this vulnerability by placing arbitrary code on removable media and triggering their execution through the debug mechanism. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with elevated privileges on the targeted device. 2. Improper Authentication Vulnerability ( CVE-2026-65894 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to improper authentication of HTTP endpoints. A remote attacker could exploit this vulnerability by conducting brute-force attacks against HTTP endpoint on the targeted device. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized access to live video snapshots from the targeted device. Credit These vulnerabilities are reported by the following team of security researchers: • CVE-2026-65893: Isukapalli Venkata Mythreya Kumara Sarma, Tiyyagura Venkata Shesha Shaina Reddy and Naga Venkatesh Durga Sai Krishna from Vignan University. Vishwa V and Sathya Priya S from SRMIST Ramapuram. Deven Lunkad and S. Venkatesan from IIIT Allahabad • • CVE-2026-65894: Vishwa V and Sathya Priya S from SRMIST Ramapuram. Tiyyagura Venkata Shesha Shaina Reddy and Isukapalli Venkata Mythreya Kumara Sarma from Vignan University. Deven Lunkad and S. Venkatesan from IIIT Allahabad •",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators using CP PLUS EZ-P21 IP Camera",
+    "riskAssessment": "Risk of arbitrary code execution and improper authentication",
+    "impactAssessment": "Potential for arbitrary code execution with elevated privileges and unauthorized access.",
+    "cves": [
+      "CVE-2026-65893",
+      "CVE-2026-65894"
     ],
     "solutionLinks": []
   },
@@ -171,33 +171,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "high",
-    "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
-    "code": "CIAD-2026-0036",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle MySQL",
-      "Java SE",
-      "Oracle Database Server",
-      "WebLogic Server",
-      "Oracle Communications",
-      "Oracle Construction and Engineering",
-      "Oracle Enterprise Manager",
-      "Oracle Financial Services Applications",
-      "Oracle Fusion Middleware",
-      "Oracle E-Business Suite",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
-    ],
-    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in BeyondTrust",
     "severity": "critical",
     "date": "2026-07-22",
@@ -247,43 +220,30 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in SonicWall",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
-    "code": "CIVN-2026-0371",
-    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
-    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
+    "code": "CIAD-2026-0036",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
     "softwareAffected": [
-      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
+      "Oracle MySQL",
+      "Java SE",
+      "Oracle Database Server",
+      "WebLogic Server",
+      "Oracle Communications",
+      "Oracle Construction and Engineering",
+      "Oracle Enterprise Manager",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle E-Business Suite",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
     ],
-    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
-    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
-    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
-    "cves": [
-      "CVE-2026-15409",
-      "CVE-2026-15410"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in WordPress",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0373",
-    "code": "CIVN-2026-0373",
-    "summary": "Multiple vulnerabilities have been reported in WordPress, which could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to build websites and blogs. Multiple vulnerabilities exist in WordPress due to a REST API batch endpoint route interpretation conflict (route confusion) and improper sanitization of the author__not_in parameter in WP_Query. Successful exploitation of these vulnerabilities could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.2"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of SQL injection attacks and remote code execution (RCE).",
-    "impactAssessment": "Potential for unauthorized access, execution of arbitrary code, privilege escalation, and full compromise.",
-    "cves": [
-      "CVE-2026-60137",
-      "CVE-2026-63030"
-    ],
+    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -334,6 +294,46 @@
       "CVE-2026-47869",
       "CVE-2026-47870",
       "CVE-2026-47871"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in SonicWall",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0371",
+    "code": "CIVN-2026-0371",
+    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote attacker to perform Server-Side Request Forgery (SSRF) or execute arbitrary operating system commands on the affected systems.",
+    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
+    "softwareAffected": [
+      "SonicWall Secure Mobile Access (SMA) 1000 Series appliances"
+    ],
+    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
+    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), and compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized requests to internal or unintended locations, arbitrary operating system command execution with administrative privileges, unauthorized access to resources reachable through the appliance and compromise of affected appliances.",
+    "cves": [
+      "CVE-2026-15409",
+      "CVE-2026-15410"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in WordPress",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0373",
+    "code": "CIVN-2026-0373",
+    "summary": "Multiple vulnerabilities have been reported in WordPress, which could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to build websites and blogs. Multiple vulnerabilities exist in WordPress due to a REST API batch endpoint route interpretation conflict (route confusion) and improper sanitization of the author__not_in parameter in WP_Query. Successful exploitation of these vulnerabilities could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.2"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of SQL injection attacks and remote code execution (RCE).",
+    "impactAssessment": "Potential for unauthorized access, execution of arbitrary code, privilege escalation, and full compromise.",
+    "cves": [
+      "CVE-2026-60137",
+      "CVE-2026-63030"
     ],
     "solutionLinks": []
   },
@@ -395,6 +395,31 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in Drupal products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
+    "code": "CIVN-2026-0366",
+    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "softwareAffected": [
+      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
+      "FlowDrop module versions prior to 1.6.0.",
+      "Colorbox module versions prior to 2.1.5 and 2.2.1."
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
+    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
+    "cves": [
+      "CVE-2026-58587",
+      "CVE-2026-58588",
+      "CVE-2026-58589",
+      "CVE-2026-58590",
+      "CVE-2026-58591"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "high",
     "date": "2026-07-17",
@@ -443,31 +468,6 @@
       "CVE-2026-15916",
       "CVE-2026-15917",
       "CVE-2026-55805"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Drupal products",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
-    "code": "CIVN-2026-0366",
-    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "softwareAffected": [
-      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
-      "FlowDrop module versions prior to 1.6.0.",
-      "Colorbox module versions prior to 2.1.5 and 2.2.1."
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
-    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
-    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
-    "cves": [
-      "CVE-2026-58587",
-      "CVE-2026-58588",
-      "CVE-2026-58589",
-      "CVE-2026-58590",
-      "CVE-2026-58591"
     ],
     "solutionLinks": []
   },
