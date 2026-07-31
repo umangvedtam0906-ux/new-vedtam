@@ -171,6 +171,33 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
+    "code": "CIAD-2026-0036",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle MySQL",
+      "Java SE",
+      "Oracle Database Server",
+      "WebLogic Server",
+      "Oracle Communications",
+      "Oracle Construction and Engineering",
+      "Oracle Enterprise Manager",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle E-Business Suite",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
+    ],
+    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in BeyondTrust",
     "severity": "critical",
     "date": "2026-07-22",
@@ -217,33 +244,6 @@
       "CVE-2026-53411",
       "CVE-2026-53412"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "high",
-    "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
-    "code": "CIAD-2026-0036",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle MySQL",
-      "Java SE",
-      "Oracle Database Server",
-      "WebLogic Server",
-      "Oracle Communications",
-      "Oracle Construction and Engineering",
-      "Oracle Enterprise Manager",
-      "Oracle Financial Services Applications",
-      "Oracle Fusion Middleware",
-      "Oracle E-Business Suite",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
-    ],
-    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -1858,21 +1858,6 @@
     "code": "CIVN-2026-0320"
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -1897,6 +1882,21 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
