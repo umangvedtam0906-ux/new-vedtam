@@ -7621,26 +7621,6 @@
     "code": "CIAD-2024-0062"
   },
   {
-    "title": "Information Disclosure Vulnerability in Tinxy",
-    "severity": "medium",
-    "date": "2024-12-05",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2024-0355",
-    "summary": "A vulnerability has been reported in Tinxy, which could allow an attacker to gain unauthorized access to sensitive information stored on the targeted device.",
-    "description": "The Tinxy mobile application enables users to control Tinxy IoT devices directly from their smartphones. This vulnerability exists in the Tinxy mobile app due to storage of logged-in user information in plaintext on the device database. An attacker with physical access to the rooted device could exploit this vulnerability by accessing its database leading to unauthorized access of user information such as username, email address and mobile number. Note: To exploit this vulnerability, the device must be rooted/jailbroken. Credit This vulnerability is reported by Shravan Singh from Mumbai, India in Android app and Harshil Soni (Bitbreacher) in iOS app.",
-    "softwareAffected": [],
-    "targetAudience": "End-users of Tinxy app.",
-    "riskAssessment": "Medium risk of unauthorized access to user information",
-    "impactAssessment": "Potential for information disclosure",
-    "cves": [
-      "CVE-2024-12094"
-    ],
-    "solutionLinks": [
-      "https://play.google.com/store/apps/details?id=com.tinxy",
-      "https://apps.apple.com/in/app/tinxy/id1387370719"
-    ],
-    "code": "CIVN-2024-0355"
-  },
-  {
     "title": "Multiple Vulnerabilities in TP-Link Archer C50 Wireless Router",
     "severity": "medium",
     "date": "2024-12-05",
@@ -13583,72 +13563,5 @@
       "https://www.cybersecurity-help.cz/vdb/SB2020110612"
     ],
     "code": "CIAD-2020-0074"
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Android",
-    "severity": "high",
-    "date": "2019-05-05",
-    "link": "https://xn----1td4etbxb9bwj.xn--h2brj9c/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2020-0450",
-    "summary": "Multiple vulnerabilities have been reported in Google Android operating system (OS) which could enable a remote attacker to perform arbitrary code execution, gain elevated privileges, obtain sensitive information and cause denial of service condition on the targeted system.",
-    "description": "These vulnerabilities exists in Google Android due to flaws in the Media Framework, System component, Kernel component, Broadcom components, MediaTek components, Qualcomm components and Qualcomm closed-source components. A remote attacker could exploit these vulnerabilities by hosting a specially crafted file designed to exploit the vulnerabilities. Successful exploitation of these vulnerabilities could allow remote attacker to perform arbitrary code execution within the context of a privileged process, gain elevated privileges, allow the attacker to access sensitive information from the targeted device and cause denial of service conditions on the targeted system.",
-    "softwareAffected": [
-      "Google Android OS builds utilizing Security Patch Levels issued prior to May 5, 2019"
-    ],
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [
-      "CVE-2020-0099",
-      "CVE-2020-0294",
-      "CVE-2020-0440",
-      "CVE-2020-0459",
-      "CVE-2020-0464",
-      "CVE-2020-0467",
-      "CVE-2020-0468",
-      "CVE-2020-0469",
-      "CVE-2020-0458",
-      "CVE-2020-0470",
-      "CVE-2020-0460",
-      "CVE-2020-0463",
-      "CVE-2020-15802",
-      "CVE-2020-0444",
-      "CVE-2020-0465",
-      "CVE-2020-0466",
-      "CVE-2020-0016",
-      "CVE-2020-0019",
-      "CVE-2020-0455",
-      "CVE-2020-0456",
-      "CVE-2020-0457",
-      "CVE-2020-11225",
-      "CVE-2020-11146",
-      "CVE-2020-11167",
-      "CVE-2020-11185",
-      "CVE-2020-11217",
-      "CVE-2020-3685",
-      "CVE-2020-3686",
-      "CVE-2020-3691",
-      "CVE-2020-11136",
-      "CVE-2020-11137",
-      "CVE-2020-11138",
-      "CVE-2020-11140",
-      "CVE-2020-11143",
-      "CVE-2020-11119",
-      "CVE-2020-11139",
-      "CVE-2020-11144",
-      "CVE-2020-11145",
-      "CVE-2020-11179",
-      "CVE-2020-11197",
-      "CVE-2020-11200",
-      "CVE-2020-11212",
-      "CVE-2020-11213",
-      "CVE-2020-11214",
-      "CVE-2020-11215",
-      "CVE-2020-11216"
-    ],
-    "solutionLinks": [
-      "https://source.android.com/security/bulletin/2020-12-01",
-      "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-google-android-os-could-allow-for-remote-code-execution_2020-162/"
-    ],
-    "code": "CIVN-2020-0450"
   }
 ]
