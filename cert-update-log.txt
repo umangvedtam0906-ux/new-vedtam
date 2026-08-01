@@ -165,3 +165,4 @@
 [cert-updater] Fetched https://xn----1td4etbxb9bwj.xn--h2brj9c/s2cMainServlet?pageid=VLNLIST02&year=2026: 82593 chars
 [cert-updater] 2026-07-31T19:58:43.031Z — Saved 434 advisories (9 fresh).
 [cert-updater] 2026-08-01T03:52:17.699Z — Saved 434 advisories (15 fresh).
+[cert-updater] 2026-08-01T08:35:04.974Z — Saved 434 advisories (9 fresh).
