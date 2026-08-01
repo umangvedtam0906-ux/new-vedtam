@@ -125,6 +125,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in Citrix Products",
+    "severity": "high",
+    "date": "2026-07-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
+    "code": "CIVN-2026-0378",
+    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "softwareAffected": [
+      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
+      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
+    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
+    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
+    "cves": [
+      "CVE-2026-53565",
+      "CVE-2026-53566"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-07-24",
@@ -152,27 +173,6 @@
       "CVE-2026-16422",
       "CVE-2026-16423",
       "CVE-2026-16424"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Citrix Products",
-    "severity": "high",
-    "date": "2026-07-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
-    "code": "CIVN-2026-0378",
-    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "softwareAffected": [
-      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
-      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
-    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
-    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
-    "cves": [
-      "CVE-2026-53565",
-      "CVE-2026-53566"
     ],
     "solutionLinks": []
   },
@@ -211,30 +211,26 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "high",
+    "title": "Multiple Vulnerabilities in BeyondTrust",
+    "severity": "critical",
     "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
-    "code": "CIAD-2026-0036",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0375",
+    "code": "CIVN-2026-0375",
+    "summary": "Multiple vulnerabilities have been reported in BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA), which could allow an attacker to bypass authentication, gain unauthorized access, cause denial-of-service conditions, access unintended resources on the targeted system.",
+    "description": "BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA) are secure remote access and privileged access management",
     "softwareAffected": [
-      "Oracle MySQL",
-      "Java SE",
-      "Oracle Database Server",
-      "WebLogic Server",
-      "Oracle Communications",
-      "Oracle Construction and Engineering",
-      "Oracle Enterprise Manager",
-      "Oracle Financial Services Applications",
-      "Oracle Fusion Middleware",
-      "Oracle E-Business Suite",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
+      "BeyondTrust Remote Support versions RS 25.3.2 or lower",
+      "BeyondTrust Privileged Remote Access versions PRA 25.3.2 or lower"
     ],
-    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
-    "cves": [],
+    "targetAudience": "All end-user organizations and individuals using BeyondTrust.",
+    "riskAssessment": "High risk of denial-of-service, bypass security restrictions, sensitive information disclosure.",
+    "impactAssessment": "Potential for denial-of-service, bypass security restrictions, sensitive information disclosure and/or compromise of system.",
+    "cves": [
+      "CVE-2026-40138",
+      "CVE-2026-40139",
+      "CVE-2026-40140",
+      "CVE-2026-40141"
+    ],
     "solutionLinks": []
   },
   {
@@ -264,25 +260,49 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in BeyondTrust",
-    "severity": "critical",
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
     "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0375",
-    "code": "CIVN-2026-0375",
-    "summary": "Multiple vulnerabilities have been reported in BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA), which could allow an attacker to bypass authentication, gain unauthorized access, cause denial-of-service conditions, access unintended resources on the targeted system.",
-    "description": "BeyondTrust Remote Support (RS) and Privilege Remote Access (PRA) are secure remote access and privileged access management",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
+    "code": "CIAD-2026-0036",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
     "softwareAffected": [
-      "BeyondTrust Remote Support versions RS 25.3.2 or lower",
-      "BeyondTrust Privileged Remote Access versions PRA 25.3.2 or lower"
+      "Oracle MySQL",
+      "Java SE",
+      "Oracle Database Server",
+      "WebLogic Server",
+      "Oracle Communications",
+      "Oracle Construction and Engineering",
+      "Oracle Enterprise Manager",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle E-Business Suite",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
     ],
-    "targetAudience": "All end-user organizations and individuals using BeyondTrust.",
-    "riskAssessment": "High risk of denial-of-service, bypass security restrictions, sensitive information disclosure.",
-    "impactAssessment": "Potential for denial-of-service, bypass security restrictions, sensitive information disclosure and/or compromise of system.",
+    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in WordPress",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0373",
+    "code": "CIVN-2026-0373",
+    "summary": "Multiple vulnerabilities have been reported in WordPress, which could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to build websites and blogs. Multiple vulnerabilities exist in WordPress due to a REST API batch endpoint route interpretation conflict (route confusion) and improper sanitization of the author__not_in parameter in WP_Query. Successful exploitation of these vulnerabilities could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.2"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of SQL injection attacks and remote code execution (RCE).",
+    "impactAssessment": "Potential for unauthorized access, execution of arbitrary code, privilege escalation, and full compromise.",
     "cves": [
-      "CVE-2026-40138",
-      "CVE-2026-40139",
-      "CVE-2026-40140",
-      "CVE-2026-40141"
+      "CVE-2026-60137",
+      "CVE-2026-63030"
     ],
     "solutionLinks": []
   },
@@ -354,26 +374,6 @@
       "CVE-2026-47869",
       "CVE-2026-47870",
       "CVE-2026-47871"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in WordPress",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0373",
-    "code": "CIVN-2026-0373",
-    "summary": "Multiple vulnerabilities have been reported in WordPress, which could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to build websites and blogs. Multiple vulnerabilities exist in WordPress due to a REST API batch endpoint route interpretation conflict (route confusion) and improper sanitization of the author__not_in parameter in WP_Query. Successful exploitation of these vulnerabilities could allow an attacker to perform SQL injection attack, or execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.2"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of SQL injection attacks and remote code execution (RCE).",
-    "impactAssessment": "Potential for unauthorized access, execution of arbitrary code, privilege escalation, and full compromise.",
-    "cves": [
-      "CVE-2026-60137",
-      "CVE-2026-63030"
     ],
     "solutionLinks": []
   },
@@ -461,6 +461,31 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in Drupal products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
+    "code": "CIVN-2026-0366",
+    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "softwareAffected": [
+      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
+      "FlowDrop module versions prior to 1.6.0.",
+      "Colorbox module versions prior to 2.1.5 and 2.2.1."
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
+    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
+    "cves": [
+      "CVE-2026-58587",
+      "CVE-2026-58588",
+      "CVE-2026-58589",
+      "CVE-2026-58590",
+      "CVE-2026-58591"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Drupal",
     "severity": "high",
     "date": "2026-07-17",
@@ -483,31 +508,6 @@
       "CVE-2026-15916",
       "CVE-2026-15917",
       "CVE-2026-55805"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Drupal products",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
-    "code": "CIVN-2026-0366",
-    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "softwareAffected": [
-      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
-      "FlowDrop module versions prior to 1.6.0.",
-      "Colorbox module versions prior to 2.1.5 and 2.2.1."
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
-    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
-    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
-    "cves": [
-      "CVE-2026-58587",
-      "CVE-2026-58588",
-      "CVE-2026-58589",
-      "CVE-2026-58590",
-      "CVE-2026-58591"
     ],
     "solutionLinks": []
   },
