@@ -100,24 +100,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in CP PLUS EZ-P21 IP Camera",
-    "severity": "critical",
-    "date": "2026-07-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0380",
-    "code": "CIVN-2026-0380",
-    "summary": "Multiple vulnerabilities have been reported in CP PLUS EZ-P21 IP Camera, which could allow an attacker to execute arbitrary code and gain unauthorized access to live video snapshots from the targeted device.",
-    "description": "The CP PLUS EZ-P21 IP Camera is an Internet Protocol (IP) based surveillance camera used for video monitoring and network based access to camera functions and video snapshots. 1. Arbitrary Code Execution Vulnerability ( CVE-2026-65893 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to an insecure debug feature enabled in the firmware. An attacker with physical access could exploit this vulnerability by placing arbitrary code on removable media and triggering their execution through the debug mechanism. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with elevated privileges on the targeted device. 2. Improper Authentication Vulnerability ( CVE-2026-65894 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to improper authentication of HTTP endpoints. A remote attacker could exploit this vulnerability by conducting brute-force attacks against HTTP endpoint on the targeted device. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized access to live video snapshots from the targeted device. Credit These vulnerabilities are reported by the following team of security researchers: • CVE-2026-65893: Isukapalli Venkata Mythreya Kumara Sarma, Tiyyagura Venkata Shesha Shaina Reddy and Naga Venkatesh Durga Sai Krishna from Vignan University. Vishwa V and Sathya Priya S from SRMIST Ramapuram. Deven Lunkad and S. Venkatesan from IIIT Allahabad • • CVE-2026-65894: Vishwa V and Sathya Priya S from SRMIST Ramapuram. Tiyyagura Venkata Shesha Shaina Reddy and Isukapalli Venkata Mythreya Kumara Sarma from Vignan University. Deven Lunkad and S. Venkatesan from IIIT Allahabad •",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators using CP PLUS EZ-P21 IP Camera",
-    "riskAssessment": "Risk of arbitrary code execution and improper authentication",
-    "impactAssessment": "Potential for arbitrary code execution with elevated privileges and unauthorized access.",
-    "cves": [
-      "CVE-2026-65893",
-      "CVE-2026-65894"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Authentication Bypass Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-07-27",
@@ -140,6 +122,24 @@
     "impactAssessment": "Potential for authentication bypass, unauthorized administrative access, modification of security policies and security configurations, and compromise of the integrity and security of the affected management server.",
     "cves": [
       "CVE-2026-16232"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in CP PLUS EZ-P21 IP Camera",
+    "severity": "critical",
+    "date": "2026-07-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0380",
+    "code": "CIVN-2026-0380",
+    "summary": "Multiple vulnerabilities have been reported in CP PLUS EZ-P21 IP Camera, which could allow an attacker to execute arbitrary code and gain unauthorized access to live video snapshots from the targeted device.",
+    "description": "The CP PLUS EZ-P21 IP Camera is an Internet Protocol (IP) based surveillance camera used for video monitoring and network based access to camera functions and video snapshots. 1. Arbitrary Code Execution Vulnerability ( CVE-2026-65893 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to an insecure debug feature enabled in the firmware. An attacker with physical access could exploit this vulnerability by placing arbitrary code on removable media and triggering their execution through the debug mechanism. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with elevated privileges on the targeted device. 2. Improper Authentication Vulnerability ( CVE-2026-65894 ) This vulnerability exists in CP PLUS EZ-P21 IP Camera due to improper authentication of HTTP endpoints. A remote attacker could exploit this vulnerability by conducting brute-force attacks against HTTP endpoint on the targeted device. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized access to live video snapshots from the targeted device. Credit These vulnerabilities are reported by the following team of security researchers: • CVE-2026-65893: Isukapalli Venkata Mythreya Kumara Sarma, Tiyyagura Venkata Shesha Shaina Reddy and Naga Venkatesh Durga Sai Krishna from Vignan University. Vishwa V and Sathya Priya S from SRMIST Ramapuram. Deven Lunkad and S. Venkatesan from IIIT Allahabad • • CVE-2026-65894: Vishwa V and Sathya Priya S from SRMIST Ramapuram. Tiyyagura Venkata Shesha Shaina Reddy and Isukapalli Venkata Mythreya Kumara Sarma from Vignan University. Deven Lunkad and S. Venkatesan from IIIT Allahabad •",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators using CP PLUS EZ-P21 IP Camera",
+    "riskAssessment": "Risk of arbitrary code execution and improper authentication",
+    "impactAssessment": "Potential for arbitrary code execution with elevated privileges and unauthorized access.",
+    "cves": [
+      "CVE-2026-65893",
+      "CVE-2026-65894"
     ],
     "solutionLinks": []
   },
@@ -230,6 +230,33 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-07-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
+    "code": "CIAD-2026-0036",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle MySQL",
+      "Java SE",
+      "Oracle Database Server",
+      "WebLogic Server",
+      "Oracle Communications",
+      "Oracle Construction and Engineering",
+      "Oracle Enterprise Manager",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle E-Business Suite",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
+    ],
+    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in BeyondTrust",
     "severity": "critical",
     "date": "2026-07-22",
@@ -276,33 +303,6 @@
       "CVE-2026-53411",
       "CVE-2026-53412"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "high",
-    "date": "2026-07-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0036",
-    "code": "CIAD-2026-0036",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to execute arbitrary code, gain elevated privileges, cause denial-of-service conditions, access sensitive information, manipulate data, or bypass security controls on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle MySQL",
-      "Java SE",
-      "Oracle Database Server",
-      "WebLogic Server",
-      "Oracle Communications",
-      "Oracle Construction and Engineering",
-      "Oracle Enterprise Manager",
-      "Oracle Financial Services Applications",
-      "Oracle Fusion Middleware",
-      "Oracle E-Business Suite",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpujul2026.html"
-    ],
-    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -421,31 +421,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Drupal products",
-    "severity": "high",
-    "date": "2026-07-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
-    "code": "CIVN-2026-0366",
-    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
-    "softwareAffected": [
-      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
-      "FlowDrop module versions prior to 1.6.0.",
-      "Colorbox module versions prior to 2.1.5 and 2.2.1."
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
-    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
-    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
-    "cves": [
-      "CVE-2026-58587",
-      "CVE-2026-58588",
-      "CVE-2026-58589",
-      "CVE-2026-58590",
-      "CVE-2026-58591"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-07-17",
@@ -475,6 +450,31 @@
       "CVE-2026-56155",
       "CVE-2026-56164",
       "CVE-2026-58644"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Drupal products",
+    "severity": "high",
+    "date": "2026-07-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0366",
+    "code": "CIVN-2026-0366",
+    "summary": "Multiple vulnerabilities have been reported in Drupal plugins, which could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "description": "Drupal is an open-source Content Management System (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. Multiple vulnerabilities exist in Drupal Core due to improper validation, improper access control, and improper sanitization of user supplied input. Successful exploitation of these vulnerabilities could allow could allow an attacker to perform cross-site scripting (XSS) attacks, bypass access restrictions, upload malicious files, and execute unauthorized access on the targeted system.",
+    "softwareAffected": [
+      "Drupal Canvas AI submodule versions prior to 1.4.2, 1.5.0 to 1.5.1, 1.6.0, and 1.7.1.",
+      "FlowDrop module versions prior to 1.6.0.",
+      "Colorbox module versions prior to 2.1.5 and 2.2.1."
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Drupal plugins.",
+    "riskAssessment": "Risk of cross-site scripting attacks, bypass access restrictions, execution malicious file upload, and execute unauthorized access.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, data theft, malicious file uploads, and full compromise of the affected system.",
+    "cves": [
+      "CVE-2026-58587",
+      "CVE-2026-58588",
+      "CVE-2026-58589",
+      "CVE-2026-58590",
+      "CVE-2026-58591"
     ],
     "solutionLinks": []
   },
@@ -531,26 +531,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Mozilla Firefox",
-    "severity": "critical",
-    "date": "2026-07-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
-    "code": "CIVN-2026-0365",
-    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
-    "softwareAffected": [
-      "Mozilla Firefox versions prior to 152.0.6."
-    ],
-    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
-    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
-    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
-    "cves": [
-      "CVE-2026-15718",
-      "CVE-2026-15719"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "high",
     "date": "2026-07-16",
@@ -600,6 +580,26 @@
       "CVE-2026-44768",
       "CVE-2026-44753",
       "CVE-2025-68161"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Mozilla Firefox",
+    "severity": "critical",
+    "date": "2026-07-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0365",
+    "code": "CIVN-2026-0365",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation. Multiple vulnerabilities exist in Mozilla Firefox due to an Invalid pointer in the JavaScript of WebAssembly component and Improper site isolation in the DOM of Navigation component. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system.",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 152.0.6."
+    ],
+    "targetAudience": "All end-user organizations and individuals using Mozilla Firefox.",
+    "riskAssessment": "High risk of denial of service (DoS), and data manipulation on the targeted system.",
+    "impactAssessment": "Potential for remote code execution and bypass security restrictions.",
+    "cves": [
+      "CVE-2026-15718",
+      "CVE-2026-15719"
     ],
     "solutionLinks": []
   },
@@ -1917,6 +1917,21 @@
     "code": "CIVN-2026-0320"
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -1941,21 +1956,6 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
