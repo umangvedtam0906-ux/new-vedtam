@@ -112,6 +112,36 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in VMware Products",
+    "severity": "high",
+    "date": "2026-08-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0386",
+    "code": "CIVN-2026-0386",
+    "summary": "Multiple vulnerabilities have been reported in VMware products, which could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, or cause denial of service on the affected systems.",
+    "description": "VMware ESXi, VMware vCenter Server, VMware Workstation Pro, VMware Fusion, VMware Cloud Foundation, VMware Telco Cloud Platform, and VMware Telco Cloud Infrastructure are virtualization and cloud infrastructure products used to deploy and manage enterprise virtual environments. These vulnerabilities exist in VMware products due to improper input validation, insufficient validation of user-supplied input, authorization issues, and other implementation flaws in various product components. Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
+    "softwareAffected": [
+      "VMware vCenter Server 8.0 versions prior to 8.0 U3e",
+      "VMware vCenter Server 7.0 versions prior to 7.0 U3v",
+      "VMware ESXi 8.0 versions prior to ESXi80U3e",
+      "VMware ESXi 7.0 versions prior to ESXi70U3v",
+      "VMware Workstation Pro 17.x versions prior to 17.6.4",
+      "VMware Fusion 13.x versions prior to 13.6.4",
+      "VMware Cloud Foundation deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
+      "VMware Telco Cloud Platform deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
+      "VMware Telco Cloud Infrastructure deployments containing the affected versions of VMware ESXi and VMware vCenter Server"
+    ],
+    "targetAudience": "All organizations and individuals using the affected VMware products.",
+    "riskAssessment": "High risk of arbitrary code execution, privilege escalation, unauthorized file operations, sensitive information disclosure, and denial of service.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
+    "cves": [
+      "CVE-2025-41225",
+      "CVE-2025-41226",
+      "CVE-2025-41227",
+      "CVE-2025-41228"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Information Disclosure Vulnerability in Cisco Product",
     "severity": "medium",
     "date": "2026-08-03",
