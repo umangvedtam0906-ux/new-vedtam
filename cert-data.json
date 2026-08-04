@@ -19,6 +19,24 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-07-31",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0383",
+    "code": "CIVN-2026-0383",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, bypass security restrictions, and data manipulation on the targeted system.",
+    "description": "Google Chrome is an internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome versions prior to 151.0.7922.71/.72 for Windows and Mac",
+      "Google Chrome versions prior to 151.0.7922.71 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of remote code execution and bypass security restrictions.",
+    "impactAssessment": "Potential for data theft, data manipulation and browser crashes.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Command Injection Vulnerability in Arista",
     "severity": "critical",
     "date": "2026-07-31",
@@ -38,24 +56,6 @@
     "cves": [
       "CVE-2026-16812"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-07-31",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0383",
-    "code": "CIVN-2026-0383",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, bypass security restrictions, and data manipulation on the targeted system.",
-    "description": "Google Chrome is an internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome versions prior to 151.0.7922.71/.72 for Windows and Mac",
-      "Google Chrome versions prior to 151.0.7922.71 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of remote code execution and bypass security restrictions.",
-    "impactAssessment": "Potential for data theft, data manipulation and browser crashes.",
-    "cves": [],
     "solutionLinks": []
   },
   {
