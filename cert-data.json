@@ -1,5 +1,117 @@
 [
   {
+    "title": "Multiple Vulnerabilities in PHP",
+    "severity": "high",
+    "date": "2026-08-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0388",
+    "code": "CIVN-2026-0388",
+    "summary": "Multiple vulnerabilities have been reported in PHP that could be exploited by an attacker to cause memory corruption, execute SQL injection attacks, trigger denial-of-service (DoS) conditions, and potentially compromise application integrity.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. Multiple vulnerabilities have been identified in PHP affecting several core components and extensions. These vulnerabilities arise due to improper bounds checking, out-of-bounds write operations, SQL injection caused by improper handling of PostgreSQL escaped strings, recursive symbolic link processing, and vulnerabilities inherited from third-party libraries. An attacker could exploit these vulnerabilities by supplying specially crafted application input, malicious PostgreSQL queries, specially crafted Phar archives, or malformed image files depending on the affected component. Successful exploitation of these vulnerabilities could result in memory corruption, SQL injection, denial-of-service, application crashes, information disclosure and potential arbitrary code execution.",
+    "softwareAffected": [
+      "PHP version prior to 8.5.9",
+      "PHP version prior to 8.4.24",
+      "PHP version prior to 8.3.33",
+      "PHP version prior to 8.2.33"
+    ],
+    "targetAudience": "Enterprises, Government Organizations, Cloud Service Providers, Hosting Providers and Web Developers using PHP.",
+    "riskAssessment": "High risk of denial of service, memory corruption, SQL injection, application crashes and information disclosure.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could allow a potential attacker to cause for denial of service, information disclosure and possible arbitrary code execution depending on application usage.",
+    "cves": [
+      "CVE-2026-17544",
+      "CVE-2026-17543",
+      "CVE-2026-7260",
+      "CVE-2026-9672"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Mozilla Products",
+    "severity": "critical",
+    "date": "2026-08-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0387",
+    "code": "CIVN-2026-0387",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla products which could be exploited by a remote attacker to execute arbitrary code, obtain sensitive information, perform spoofing attacks, bypass security restrictions, escalate privileges, escape browser sandbox protections, or cause a Denial of Service (DoS) condition on the targeted system.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation, while Firefox ESR (Extended Support Release) is a stable version designed for organizations requiring long-term support with security and maintenance updates. Mozilla Thunderbird is an open-source email client developed by the Mozilla Foundation. Multiple vulnerabilities exist in the affected Mozilla products due to invalid pointer dereference, incorrect boundary conditions, integer overflow, information disclosure, memory safety flaws, use-after-free, sandbox escape, mitigation bypass, privilege escalation, same-origin policy bypass, and spoofing issues in various components including Audio/Video, JavaScript Engine, DOM, Networking, Graphics, Security, Widget, WebRTC, Enterprise Policies, Profile Backup, Form Autofill, Popup Blocker, Toolbar, Web Speech, WebExtensions, Application Update, and Accessibility APIs. A remote attacker could exploit these vulnerabilities by convincing a user to visit a specially crafted web page or process malicious web content. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, disclose sensitive information, perform spoofing attacks, bypass security restrictions, escalate privileges, or cause a Denial of Service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 153",
+      "Mozilla Firefox ESR versions prior to 115.38 and Firefox ESR versions prior to 140.13",
+      "Mozilla Thunderbird ESR versions prior to 140.13 and Thunderbird versions prior to 153"
+    ],
+    "targetAudience": "Individuals and organizations using the affected products.",
+    "riskAssessment": "High risk of unauthorized access to sensitive information.",
+    "impactAssessment": "Potential for data theft, sensitive information disclosure and complete compromise of system.",
+    "cves": [
+      "CVE-2026-15718",
+      "CVE-2026-15719",
+      "CVE-2026-16349",
+      "CVE-2026-16350",
+      "CVE-2026-16362",
+      "CVE-2026-16351",
+      "CVE-2026-16352",
+      "CVE-2026-16363",
+      "CVE-2026-16353",
+      "CVE-2026-16354",
+      "CVE-2026-16368",
+      "CVE-2026-16369",
+      "CVE-2026-16355",
+      "CVE-2026-16356",
+      "CVE-2026-16357",
+      "CVE-2026-16371",
+      "CVE-2026-16374",
+      "CVE-2026-16375",
+      "CVE-2026-16377",
+      "CVE-2026-16379",
+      "CVE-2026-16358",
+      "CVE-2026-16381",
+      "CVE-2026-16383",
+      "CVE-2026-16387",
+      "CVE-2026-16390",
+      "CVE-2026-16391",
+      "CVE-2026-16359",
+      "CVE-2026-16396",
+      "CVE-2026-16405",
+      "CVE-2026-16412",
+      "CVE-2026-16360",
+      "CVE-2026-16361",
+      "CVE-2026-16364",
+      "CVE-2026-16365",
+      "CVE-2026-16366",
+      "CVE-2026-16367",
+      "CVE-2026-16370",
+      "CVE-2026-16372",
+      "CVE-2026-16373",
+      "CVE-2026-16376",
+      "CVE-2026-16378",
+      "CVE-2026-16380",
+      "CVE-2026-16382",
+      "CVE-2026-16384",
+      "CVE-2026-16385",
+      "CVE-2026-16386",
+      "CVE-2026-16388",
+      "CVE-2026-16389",
+      "CVE-2026-16392",
+      "CVE-2026-16393",
+      "CVE-2026-16394",
+      "CVE-2026-16395",
+      "CVE-2026-16397",
+      "CVE-2026-16398",
+      "CVE-2026-16399",
+      "CVE-2026-16400",
+      "CVE-2026-16401",
+      "CVE-2026-16402",
+      "CVE-2026-16403",
+      "CVE-2026-16404",
+      "CVE-2026-16406",
+      "CVE-2026-16407",
+      "CVE-2026-16408",
+      "CVE-2026-16409",
+      "CVE-2026-16410",
+      "CVE-2026-16411",
+      "CVE-2026-14899"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Information Disclosure Vulnerability in Cisco Product",
     "severity": "medium",
     "date": "2026-08-03",
@@ -16,24 +128,6 @@
     "cves": [
       "CVE-2026-20316"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-07-31",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0383",
-    "code": "CIVN-2026-0383",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, bypass security restrictions, and data manipulation on the targeted system.",
-    "description": "Google Chrome is an internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome versions prior to 151.0.7922.71/.72 for Windows and Mac",
-      "Google Chrome versions prior to 151.0.7922.71 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of remote code execution and bypass security restrictions.",
-    "impactAssessment": "Potential for data theft, data manipulation and browser crashes.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -56,6 +150,24 @@
     "cves": [
       "CVE-2026-16812"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-07-31",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0383",
+    "code": "CIVN-2026-0383",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, bypass security restrictions, and data manipulation on the targeted system.",
+    "description": "Google Chrome is an internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, bypass security restrictions, denial of service, and data manipulation on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome versions prior to 151.0.7922.71/.72 for Windows and Mac",
+      "Google Chrome versions prior to 151.0.7922.71 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of remote code execution and bypass security restrictions.",
+    "impactAssessment": "Potential for data theft, data manipulation and browser crashes.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -144,6 +256,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in Citrix Products",
+    "severity": "high",
+    "date": "2026-07-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
+    "code": "CIVN-2026-0378",
+    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
+    "softwareAffected": [
+      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
+      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
+    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
+    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
+    "cves": [
+      "CVE-2026-53565",
+      "CVE-2026-53566"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-07-24",
@@ -171,27 +304,6 @@
       "CVE-2026-16422",
       "CVE-2026-16423",
       "CVE-2026-16424"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Citrix Products",
-    "severity": "high",
-    "date": "2026-07-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0378",
-    "code": "CIVN-2026-0378",
-    "summary": "Multiple vulnerabilities have been reported in Citrix products, which could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "description": "Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows are endpoint software components that facilitate secure remote connectivity and endpoint security validation for enterprise environments by verifying device compliance before granting access to organizational resources. Multiple vulnerabilities exist in these Citrix products due to improper privilege management and an out-of-bounds memory read flaw. Successful exploitation of these vulnerabilities could allow a local, low-privileged attacker to escalate privileges to SYSTEM level or disclose sensitive information from process memory on the affected system.",
-    "softwareAffected": [
-      "Citrix Secure Access Client for Windows versions prior to 26.6.1.20",
-      "Citrix Endpoint Analysis Client for Windows versions prior to 26.5.1.7"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected Citrix products.",
-    "riskAssessment": "Risk of local privilege escalation and sensitive information disclosure.",
-    "impactAssessment": "Potential for elevation of privileges to SYSTEM level resulting in full compromise and disclosure of sensitive information from memory.",
-    "cves": [
-      "CVE-2026-53565",
-      "CVE-2026-53566"
     ],
     "solutionLinks": []
   },
@@ -306,57 +418,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in TP-Link Products",
-    "severity": "high",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0372",
-    "code": "CIVN-2026-0372",
-    "summary": "Multiple vulnerabilities have been reported in TP-Link products, which could allow an attacker on the same local network to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
-    "description": "TP-Link Kasa EC70 and EC71 are smart security cameras that provide remote monitoring and surveillance capabilities for residential and enterprise environments. These vulnerabilities exist in TP-Link products due to the use of a hard-coded cryptographic private key within the firmware and exposure of sensitive geolocation information through the local discovery mechanism. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
-    "softwareAffected": [
-      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
-      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
-      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536",
-      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536"
-    ],
-    "targetAudience": "All organizations and individuals using the affected TP-Link products.",
-    "riskAssessment": "High risk of sensitive information disclosure, compromise of encrypted communications through Man-in-the-Middle (MITM) attacks, and exposure of geolocation information.",
-    "impactAssessment": "Potential for disclosure of sensitive information, interception of encrypted communications, exposure of geolocation information, and compromise of the confidentiality of affected devices.",
-    "cves": [
-      "CVE-2026-9770",
-      "CVE-2026-13230"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in VMware Avi Load Balancer",
-    "severity": "critical",
-    "date": "2026-07-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0370",
-    "code": "CIVN-2026-0370",
-    "summary": "Multiple vulnerabilities have been reported in VMware Avi Load Balancer, which could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
-    "description": "VMware Avi Load Balancer is a software-defined, multi-cloud application delivery controller that provides elastic load balancing, application security (WAF), and observability for containerized, virtualised, and bare-metal workloads. Multiple vulnerabilities exist in VMware Avi Load Balancer due to improper authentication, insufficient input validation, improper privilege management and file path validation issues. An attacker may exploit these vulnerabilities by sending specially crafted requests. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
-    "softwareAffected": [
-      "VMware Avi Load Balancer version 31.1.1 - 31.2.2",
-      "VMware Avi Load Balancer version 30.1.1 - 30.2.6",
-      "VMware Avi Load Balancer version 22.1.1 - 22.1.7",
-      "VMware Avi Load Balancer version 32.1.1"
-    ],
-    "targetAudience": "Enterprises and large organisations, cloud service providers and industries with IT environments utilizing VMware Avi Load Balancer.",
-    "riskAssessment": "Risk of full system compromise, sensitive information disclosure and lateral movement.",
-    "impactAssessment": "Potential for local privilege escalation, disclosure of sensitive information and unauthorised access.",
-    "cves": [
-      "CVE-2026-47865",
-      "CVE-2026-47866",
-      "CVE-2026-47867",
-      "CVE-2026-47868",
-      "CVE-2026-47869",
-      "CVE-2026-47870",
-      "CVE-2026-47871"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in WordPress",
     "severity": "critical",
     "date": "2026-07-21",
@@ -393,6 +454,57 @@
     "cves": [
       "CVE-2026-15409",
       "CVE-2026-15410"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in VMware Avi Load Balancer",
+    "severity": "critical",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0370",
+    "code": "CIVN-2026-0370",
+    "summary": "Multiple vulnerabilities have been reported in VMware Avi Load Balancer, which could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
+    "description": "VMware Avi Load Balancer is a software-defined, multi-cloud application delivery controller that provides elastic load balancing, application security (WAF), and observability for containerized, virtualised, and bare-metal workloads. Multiple vulnerabilities exist in VMware Avi Load Balancer due to improper authentication, insufficient input validation, improper privilege management and file path validation issues. An attacker may exploit these vulnerabilities by sending specially crafted requests. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorised access, escalate privileges, execute arbitrary code, and gain access to sensitive information on the targeted system.",
+    "softwareAffected": [
+      "VMware Avi Load Balancer version 31.1.1 - 31.2.2",
+      "VMware Avi Load Balancer version 30.1.1 - 30.2.6",
+      "VMware Avi Load Balancer version 22.1.1 - 22.1.7",
+      "VMware Avi Load Balancer version 32.1.1"
+    ],
+    "targetAudience": "Enterprises and large organisations, cloud service providers and industries with IT environments utilizing VMware Avi Load Balancer.",
+    "riskAssessment": "Risk of full system compromise, sensitive information disclosure and lateral movement.",
+    "impactAssessment": "Potential for local privilege escalation, disclosure of sensitive information and unauthorised access.",
+    "cves": [
+      "CVE-2026-47865",
+      "CVE-2026-47866",
+      "CVE-2026-47867",
+      "CVE-2026-47868",
+      "CVE-2026-47869",
+      "CVE-2026-47870",
+      "CVE-2026-47871"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in TP-Link Products",
+    "severity": "high",
+    "date": "2026-07-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0372",
+    "code": "CIVN-2026-0372",
+    "summary": "Multiple vulnerabilities have been reported in TP-Link products, which could allow an attacker on the same local network to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
+    "description": "TP-Link Kasa EC70 and EC71 are smart security cameras that provide remote monitoring and surveillance capabilities for residential and enterprise environments. These vulnerabilities exist in TP-Link products due to the use of a hard-coded cryptographic private key within the firmware and exposure of sensitive geolocation information through the local discovery mechanism. Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information, intercept encrypted communications through a Man-in-the-Middle (MITM) attack, expose geolocation information, and compromise the confidentiality of the affected devices.",
+    "softwareAffected": [
+      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
+      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.0 Build 20260520 rel. 4191",
+      "TP-Link Kasa EC70 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536",
+      "TP-Link Kasa EC71 V4 firmware versions prior to 2.4.1 Build 20260621 rel. 76536"
+    ],
+    "targetAudience": "All organizations and individuals using the affected TP-Link products.",
+    "riskAssessment": "High risk of sensitive information disclosure, compromise of encrypted communications through Man-in-the-Middle (MITM) attacks, and exposure of geolocation information.",
+    "impactAssessment": "Potential for disclosure of sensitive information, interception of encrypted communications, exposure of geolocation information, and compromise of the confidentiality of affected devices.",
+    "cves": [
+      "CVE-2026-9770",
+      "CVE-2026-13230"
     ],
     "solutionLinks": []
   },
