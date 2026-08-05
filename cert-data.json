@@ -1,5 +1,96 @@
 [
   {
+    "title": "Arbitrary file read Vulnerability in Ruby on Rails Active Storage",
+    "severity": "critical",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0393",
+    "code": "CIVN-2026-0393",
+    "summary": "A vulnerability has been reported in Ruby on Rails Active Storage which could allow an unauthenticated remote attacker to read arbitrary files from the server and subsequently perform Remote Code Execution (RCE).",
+    "description": "Ruby on Rails is a server-side web application framework written in Ruby. Active Storage is the Rails component used to upload, store, and process files. This vulnerability exists Ruby on Rails because active Storage does not disable libvips operations that are considered unsafe when processing untrusted content. An unauthenticated remote attacker can exploit this vulnerability by uploading specially crafted image files. Successful exploitation of this vulnerability could allow an attacker to read arbitrary files from the server. Exposure of sensitive information may subsequently lead to Remote Code Execution.",
+    "softwareAffected": [
+      "Rails version prior to 7.2.3.2",
+      "Rails version 8.0.0 or higher and prior to 8.0.5.1",
+      "Rails version 8.1.0 or higher and prior to 8.1.3.1"
+    ],
+    "targetAudience": "All organizations and individuals using Ruby on Rails Active Storage with the libvips library enabled.",
+    "riskAssessment": "High risk of unauthorized disclosure of sensitive files, secrets, and credentials, potentially leading to Remote Code Execution (RCE) and complete system compromise.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-66066"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Heap-based Buffer Overflow Vulnerability in Adobe Format Plugins",
+    "severity": "high",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0392",
+    "code": "CIVN-2026-0392",
+    "summary": "A vulnerability has been reported in Adobe Format Plugins which could allow an attacker to execute arbitrary code on the affected system.",
+    "description": "Adobe Format Plugins are software components used by Adobe applications to parse, import, export and process various file formats. This vulnerability exists in Adobe Format Plugins due to improper handling of memory while processing specially crafted files. An attacker could exploit this vulnerability by convincing a victim to open a maliciously crafted file. Successful exploitation may result in arbitrary code execution in the security context of the currently logged-in user, allowing the attacker to perform unauthorized actions on the affected system.",
+    "softwareAffected": [
+      "Adobe Format Plugins versions prior to 2026.07"
+    ],
+    "targetAudience": "All organizations and individuals using Adobe Format Plugins.",
+    "riskAssessment": "High risk of arbitrary code execution and complete system compromise.",
+    "impactAssessment": "Potential High impact on Confidentiality, Integrity and Availability of the System.",
+    "cves": [
+      "CVE-2026-48372"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Arbitrary Code Vulnerability in vBulletin",
+    "severity": "critical",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0391",
+    "code": "CIVN-2026-0391",
+    "summary": "A vulnerability has been reported in vBulletin which could allow an unauthenticated remote attacker to execute arbitrary PHP code on the targeted system.",
+    "description": "vBulletin is a commercial PHP-based forum software used to create and manage online discussion boards and community websites. A vulnerability has been reported in vBulletin due to improper sanitization of user-supplied input in the runMaths() function, an unauthenticated attacker can exploit the flaw by sending a specially crafted request to the \"ajax/render/[template]\" endpoint. Successful exploitation of the vulnerability could allow an unauthenticated remote attacker to execute arbitrary PHP code on the targeted system.",
+    "softwareAffected": [
+      "vBulletin versions from 5.0.0 through 5.7.5",
+      "vBulletin versions from 6.0.0 through 6.2.1"
+    ],
+    "targetAudience": "All end-user organizations and individuals using VBulletin.",
+    "riskAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
+    "impactAssessment": "Potential of complete compromise of system",
+    "cves": [
+      "CVE-2026-61511"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab",
+    "severity": "high",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0389",
+    "code": "CIVN-2026-0389",
+    "summary": "Multiple vulnerabilities have been reported in GitLab CE/EE which could allow a remote attacker to gain unauthorized access to sensitive information, modify CI/CD or project configurations, bypass security restrictions, execute cross-site scripting (XSS) attacks or cause a denial-of-service (DoS) condition on the targeted system.",
+    "description": "GitLab is a web-based DevOps platform that provides tools for software developments, including source code management, continuous integration and continuous deployment. It is available in both open-source Community Edition (CE) and Enterprise Edition (EE) versions. Multiple vulnerabilities exist in GitLab Community Edition (CE) and Enterprise Edition (EE) due to insufficient access controls, improper authorization, improper validation of user-supplied attributes, mass assignment, race conditions, improper sanitization of user-controlled input, insufficient resource throttling, improper handling of sensitive information, prompt injection in AI-assisted functionality and incorrect security-token generation. Successful exploitation of these vulnerabilities could allow a remote attacker to gain unauthorized access to sensitive information, modify CI/CD or project configurations, bypass security restrictions, execute cross-site scripting (XSS) attacks or cause a denial-of-service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "GitLab versions prior to 19.0.5, 19.1.3, and 19.2.1 for GitLab Community Edition (CE) and Enterprise Edition (EE)"
+    ],
+    "targetAudience": "Organizations and individuals using GitLab CE/EE instances.",
+    "riskAssessment": "High risk of unauthorized access to sensitive information, unauthorized modification of CI/CD and project configurations, bypassing of security controls, cross-site scripting and disruption of services.",
+    "impactAssessment": "Potential for unauthorized disclosure of sensitive information, modification of CI/CD and protected-branch configurations, bypassing of merge-request approval and governance controls, cross-site scripting attacks and denial-of-service conditions.",
+    "cves": [
+      "CVE-2026-6267",
+      "CVE-2026-12436",
+      "CVE-2026-15975",
+      "CVE-2026-13113",
+      "CVE-2026-16553",
+      "CVE-2026-6336",
+      "CVE-2026-14341",
+      "CVE-2026-3093",
+      "CVE-2026-15077",
+      "CVE-2026-15831",
+      "CVE-2026-14351",
+      "CVE-2026-4672",
+      "CVE-2026-14562"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in PHP",
     "severity": "high",
     "date": "2026-08-04",
