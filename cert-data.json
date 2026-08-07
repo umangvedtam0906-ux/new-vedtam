@@ -1,24 +1,5 @@
 [
   {
-    "title": "Authentication Bypass Vulnerability in Check Point",
-    "severity": "high",
-    "date": "2026-08-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0395",
-    "code": "CIVN-2026-0395",
-    "summary": "A vulnerability has been reported in Check Point Security Management Server and Multi-Domain Security Management Server (MDS) which may allow a remote unauthenticated attacker to bypass the Management authentication mechanism and execute arbitrary commands on the Security Management Server.",
-    "description": "Check Point Security Management Server and Multi-Domain Security Management Server (MDS) are centralized management platforms used for administering and enforcing security policies across Check Point security gateways. This vulnerability exists due to an authentication bypass flaw in the Management Server. An unauthenticated attacker with network access to the Management Server may exploit this vulnerability to bypass the authentication mechanism and execute arbitrary commands on the affected system. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized administrative access, execute arbitrary commands, and completely compromise the affected Check Point Security Management Server.",
-    "softwareAffected": [
-      "Security Management Server, Multi-Domain Security Management Server versions R80, R80.10, R80.20, R80.30, R80.40, R81, R81.10 (All End of Support), R81.20, R82, R82.10"
-    ],
-    "targetAudience": "Organizations and administrators using the affected Check Point Security Management Server and Multi-Domain Security Management Server (MDS).",
-    "riskAssessment": "High risk of authentication bypass, arbitrary command execution, and complete compromise of the server.",
-    "impactAssessment": "Authentication bypass, arbitrary command execution, unauthorized administrative access, and complete compromise of the Server.",
-    "cves": [
-      "CVE-2026-18574"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Server-Side Request Forgery (SSRF) Vulnerability in Next.js",
     "severity": "high",
     "date": "2026-08-06",
@@ -39,23 +20,21 @@
     "solutionLinks": []
   },
   {
-    "title": "Arbitrary file read Vulnerability in Ruby on Rails Active Storage",
-    "severity": "critical",
-    "date": "2026-08-05",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0393",
-    "code": "CIVN-2026-0393",
-    "summary": "A vulnerability has been reported in Ruby on Rails Active Storage which could allow an unauthenticated remote attacker to read arbitrary files from the server and subsequently perform Remote Code Execution (RCE).",
-    "description": "Ruby on Rails is a server-side web application framework written in Ruby. Active Storage is the Rails component used to upload, store, and process files. This vulnerability exists Ruby on Rails because active Storage does not disable libvips operations that are considered unsafe when processing untrusted content. An unauthenticated remote attacker can exploit this vulnerability by uploading specially crafted image files. Successful exploitation of this vulnerability could allow an attacker to read arbitrary files from the server. Exposure of sensitive information may subsequently lead to Remote Code Execution.",
+    "title": "Authentication Bypass Vulnerability in Check Point",
+    "severity": "high",
+    "date": "2026-08-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0395",
+    "code": "CIVN-2026-0395",
+    "summary": "A vulnerability has been reported in Check Point Security Management Server and Multi-Domain Security Management Server (MDS) which may allow a remote unauthenticated attacker to bypass the Management authentication mechanism and execute arbitrary commands on the Security Management Server.",
+    "description": "Check Point Security Management Server and Multi-Domain Security Management Server (MDS) are centralized management platforms used for administering and enforcing security policies across Check Point security gateways. This vulnerability exists due to an authentication bypass flaw in the Management Server. An unauthenticated attacker with network access to the Management Server may exploit this vulnerability to bypass the authentication mechanism and execute arbitrary commands on the affected system. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized administrative access, execute arbitrary commands, and completely compromise the affected Check Point Security Management Server.",
     "softwareAffected": [
-      "Rails version prior to 7.2.3.2",
-      "Rails version 8.0.0 or higher and prior to 8.0.5.1",
-      "Rails version 8.1.0 or higher and prior to 8.1.3.1"
+      "Security Management Server, Multi-Domain Security Management Server versions R80, R80.10, R80.20, R80.30, R80.40, R81, R81.10 (All End of Support), R81.20, R82, R82.10"
     ],
-    "targetAudience": "All organizations and individuals using Ruby on Rails Active Storage with the libvips library enabled.",
-    "riskAssessment": "High risk of unauthorized disclosure of sensitive files, secrets, and credentials, potentially leading to Remote Code Execution (RCE) and complete system compromise.",
-    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "targetAudience": "Organizations and administrators using the affected Check Point Security Management Server and Multi-Domain Security Management Server (MDS).",
+    "riskAssessment": "High risk of authentication bypass, arbitrary command execution, and complete compromise of the server.",
+    "impactAssessment": "Authentication bypass, arbitrary command execution, unauthorized administrative access, and complete compromise of the Server.",
     "cves": [
-      "CVE-2026-66066"
+      "CVE-2026-18574"
     ],
     "solutionLinks": []
   },
@@ -120,6 +99,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Arbitrary file read Vulnerability in Ruby on Rails Active Storage",
+    "severity": "critical",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0393",
+    "code": "CIVN-2026-0393",
+    "summary": "A vulnerability has been reported in Ruby on Rails Active Storage which could allow an unauthenticated remote attacker to read arbitrary files from the server and subsequently perform Remote Code Execution (RCE).",
+    "description": "Ruby on Rails is a server-side web application framework written in Ruby. Active Storage is the Rails component used to upload, store, and process files. This vulnerability exists Ruby on Rails because active Storage does not disable libvips operations that are considered unsafe when processing untrusted content. An unauthenticated remote attacker can exploit this vulnerability by uploading specially crafted image files. Successful exploitation of this vulnerability could allow an attacker to read arbitrary files from the server. Exposure of sensitive information may subsequently lead to Remote Code Execution.",
+    "softwareAffected": [
+      "Rails version prior to 7.2.3.2",
+      "Rails version 8.0.0 or higher and prior to 8.0.5.1",
+      "Rails version 8.1.0 or higher and prior to 8.1.3.1"
+    ],
+    "targetAudience": "All organizations and individuals using Ruby on Rails Active Storage with the libvips library enabled.",
+    "riskAssessment": "High risk of unauthorized disclosure of sensitive files, secrets, and credentials, potentially leading to Remote Code Execution (RCE) and complete system compromise.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-66066"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in GitLab",
     "severity": "high",
     "date": "2026-08-05",
@@ -151,6 +151,31 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in PHP",
+    "severity": "high",
+    "date": "2026-08-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0388",
+    "code": "CIVN-2026-0388",
+    "summary": "Multiple vulnerabilities have been reported in PHP that could be exploited by an attacker to cause memory corruption, execute SQL injection attacks, trigger denial-of-service (DoS) conditions, and potentially compromise application integrity.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. Multiple vulnerabilities have been identified in PHP affecting several core components and extensions. These vulnerabilities arise due to improper bounds checking, out-of-bounds write operations, SQL injection caused by improper handling of PostgreSQL escaped strings, recursive symbolic link processing, and vulnerabilities inherited from third-party libraries. An attacker could exploit these vulnerabilities by supplying specially crafted application input, malicious PostgreSQL queries, specially crafted Phar archives, or malformed image files depending on the affected component. Successful exploitation of these vulnerabilities could result in memory corruption, SQL injection, denial-of-service, application crashes, information disclosure and potential arbitrary code execution.",
+    "softwareAffected": [
+      "PHP version prior to 8.5.9",
+      "PHP version prior to 8.4.24",
+      "PHP version prior to 8.3.33",
+      "PHP version prior to 8.2.33"
+    ],
+    "targetAudience": "Enterprises, Government Organizations, Cloud Service Providers, Hosting Providers and Web Developers using PHP.",
+    "riskAssessment": "High risk of denial of service, memory corruption, SQL injection, application crashes and information disclosure.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could allow a potential attacker to cause for denial of service, information disclosure and possible arbitrary code execution depending on application usage.",
+    "cves": [
+      "CVE-2026-17544",
+      "CVE-2026-17543",
+      "CVE-2026-7260",
+      "CVE-2026-9672"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in VMware Products",
     "severity": "high",
     "date": "2026-08-04",
@@ -177,31 +202,6 @@
       "CVE-2025-41226",
       "CVE-2025-41227",
       "CVE-2025-41228"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in PHP",
-    "severity": "high",
-    "date": "2026-08-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0388",
-    "code": "CIVN-2026-0388",
-    "summary": "Multiple vulnerabilities have been reported in PHP that could be exploited by an attacker to cause memory corruption, execute SQL injection attacks, trigger denial-of-service (DoS) conditions, and potentially compromise application integrity.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. Multiple vulnerabilities have been identified in PHP affecting several core components and extensions. These vulnerabilities arise due to improper bounds checking, out-of-bounds write operations, SQL injection caused by improper handling of PostgreSQL escaped strings, recursive symbolic link processing, and vulnerabilities inherited from third-party libraries. An attacker could exploit these vulnerabilities by supplying specially crafted application input, malicious PostgreSQL queries, specially crafted Phar archives, or malformed image files depending on the affected component. Successful exploitation of these vulnerabilities could result in memory corruption, SQL injection, denial-of-service, application crashes, information disclosure and potential arbitrary code execution.",
-    "softwareAffected": [
-      "PHP version prior to 8.5.9",
-      "PHP version prior to 8.4.24",
-      "PHP version prior to 8.3.33",
-      "PHP version prior to 8.2.33"
-    ],
-    "targetAudience": "Enterprises, Government Organizations, Cloud Service Providers, Hosting Providers and Web Developers using PHP.",
-    "riskAssessment": "High risk of denial of service, memory corruption, SQL injection, application crashes and information disclosure.",
-    "impactAssessment": "Successful exploitation of these vulnerabilities could allow a potential attacker to cause for denial of service, information disclosure and possible arbitrary code execution depending on application usage.",
-    "cves": [
-      "CVE-2026-17544",
-      "CVE-2026-17543",
-      "CVE-2026-7260",
-      "CVE-2026-9672"
     ],
     "solutionLinks": []
   },
