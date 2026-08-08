@@ -81,6 +81,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Authentication Bypass Vulnerability in Check Point",
+    "severity": "high",
+    "date": "2026-08-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0395",
+    "code": "CIVN-2026-0395",
+    "summary": "A vulnerability has been reported in Check Point Security Management Server and Multi-Domain Security Management Server (MDS) which may allow a remote unauthenticated attacker to bypass the Management authentication mechanism and execute arbitrary commands on the Security Management Server.",
+    "description": "Check Point Security Management Server and Multi-Domain Security Management Server (MDS) are centralized management platforms used for administering and enforcing security policies across Check Point security gateways. This vulnerability exists due to an authentication bypass flaw in the Management Server. An unauthenticated attacker with network access to the Management Server may exploit this vulnerability to bypass the authentication mechanism and execute arbitrary commands on the affected system. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized administrative access, execute arbitrary commands, and completely compromise the affected Check Point Security Management Server.",
+    "softwareAffected": [
+      "Security Management Server, Multi-Domain Security Management Server versions R80, R80.10, R80.20, R80.30, R80.40, R81, R81.10 (All End of Support), R81.20, R82, R82.10"
+    ],
+    "targetAudience": "Organizations and administrators using the affected Check Point Security Management Server and Multi-Domain Security Management Server (MDS).",
+    "riskAssessment": "High risk of authentication bypass, arbitrary command execution, and complete compromise of the server.",
+    "impactAssessment": "Authentication bypass, arbitrary command execution, unauthorized administrative access, and complete compromise of the Server.",
+    "cves": [
+      "CVE-2026-18574"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Server-Side Request Forgery (SSRF) Vulnerability in Next.js",
     "severity": "high",
     "date": "2026-08-06",
@@ -97,25 +116,6 @@
     "impactAssessment": "Potential High impact on Confidentiality of the System.",
     "cves": [
       "CVE-2026-64645"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in Check Point",
-    "severity": "high",
-    "date": "2026-08-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0395",
-    "code": "CIVN-2026-0395",
-    "summary": "A vulnerability has been reported in Check Point Security Management Server and Multi-Domain Security Management Server (MDS) which may allow a remote unauthenticated attacker to bypass the Management authentication mechanism and execute arbitrary commands on the Security Management Server.",
-    "description": "Check Point Security Management Server and Multi-Domain Security Management Server (MDS) are centralized management platforms used for administering and enforcing security policies across Check Point security gateways. This vulnerability exists due to an authentication bypass flaw in the Management Server. An unauthenticated attacker with network access to the Management Server may exploit this vulnerability to bypass the authentication mechanism and execute arbitrary commands on the affected system. Successful exploitation of this vulnerability could allow an attacker to gain unauthorized administrative access, execute arbitrary commands, and completely compromise the affected Check Point Security Management Server.",
-    "softwareAffected": [
-      "Security Management Server, Multi-Domain Security Management Server versions R80, R80.10, R80.20, R80.30, R80.40, R81, R81.10 (All End of Support), R81.20, R82, R82.10"
-    ],
-    "targetAudience": "Organizations and administrators using the affected Check Point Security Management Server and Multi-Domain Security Management Server (MDS).",
-    "riskAssessment": "High risk of authentication bypass, arbitrary command execution, and complete compromise of the server.",
-    "impactAssessment": "Authentication bypass, arbitrary command execution, unauthorized administrative access, and complete compromise of the Server.",
-    "cves": [
-      "CVE-2026-18574"
     ],
     "solutionLinks": []
   },
