@@ -1,34 +1,5 @@
 [
   {
-    "title": "Multiple Vulnerabilities in Cisco IOS XE Software",
-    "severity": "critical",
-    "date": "2026-08-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0397",
-    "code": "CIVN-2026-0397",
-    "summary": "Multiple vulnerabilities have been identified in Cisco IOS XE Software that could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, or compromise the confidentiality, integrity, and availability of the affected devices.",
-    "description": "Cisco IOS XE Software is a network operating system used on Cisco enterprise routers, switches, wireless controllers, and other networking devices. Multiple vulnerabilities have been reported in Cisco IOS XE Software due to Unchecked Input for Loop Condition, Error Handling, Missing Release of Resource after Effective Lifetime, Improper Access Control, Improper Restriction of Operations within the Bounds of a Memory Buffer, Improper Control of a Resource Through its Lifetime, Incorrect Calculation, Insufficient Control Flow Management, Improper Neutralization of Special Elements in Output Used by a Downstream Component (\"Injection\"), and Improper Input Validation. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, inject malicious input, access unauthorized resources, or compromise the confidentiality, integrity, and availability of the affected devices.",
-    "softwareAffected": [
-      "Cisco IOS XE Software (multiple releases as identified by Cisco Software Checker)",
-      "Cisco IOS Software (for the XMCP advisory)"
-    ],
-    "targetAudience": "Individuals and organizations using Cisco IOS XE Software and Cisco IOS Software.",
-    "riskAssessment": "High risk of remote code execution, denial of service, security restriction bypass, and compromise of critical network infrastructure.",
-    "impactAssessment": "Potential remote code execution, denial of service, security restriction bypass, and disruption of network operations.",
-    "cves": [
-      "CVE-2026-20301",
-      "CVE-2026-20263",
-      "CVE-2026-20124",
-      "CVE-2026-20267",
-      "CVE-2026-20268",
-      "CVE-2026-20269",
-      "CVE-2026-20270",
-      "CVE-2026-20271",
-      "CVE-2026-20272",
-      "CVE-2026-20273"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Omada ZTP",
     "severity": "high",
     "date": "2026-08-07",
@@ -81,22 +52,31 @@
     "solutionLinks": []
   },
   {
-    "title": "Server-Side Request Forgery (SSRF) Vulnerability in Next.js",
-    "severity": "high",
-    "date": "2026-08-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0394",
-    "code": "CIVN-2026-0394",
-    "summary": "A Server-Side Request Forgery (SSRF) vulnerability exists in the Next.js framework. An unauthenticated remote attacker may exploit this vulnerability to cause the server to issue requests to arbitrary internal or external hosts or perform Open Redirect attacks.",
-    "description": "Next.js is a React-based web application framework used for building server-rendered and full-stack web applications. Next.js framework is affected by the Server-Side Request Forgery (SSRF) vulnerability. This vulnerability exists due to improper validation of request-controlled inputs during the processing of rewrites() and redirects() configuration rules where destination hostname is dynamically generated from request-controlled inputs. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted requests that manipulate the destination hostname to an arbitrary host instead of the intended destination. Successful exploitation could allow the attacker to perform Server-Side Request Forgery (SSRF), resulting in unauthorized access to internal or external network resources in applications using the affected rewrites() configurations, or perform Open Redirect attacks in applications using the affected redirects() configurations.",
+    "title": "Multiple Vulnerabilities in Cisco IOS XE Software",
+    "severity": "critical",
+    "date": "2026-08-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0397",
+    "code": "CIVN-2026-0397",
+    "summary": "Multiple vulnerabilities have been identified in Cisco IOS XE Software that could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, or compromise the confidentiality, integrity, and availability of the affected devices.",
+    "description": "Cisco IOS XE Software is a network operating system used on Cisco enterprise routers, switches, wireless controllers, and other networking devices. Multiple vulnerabilities have been reported in Cisco IOS XE Software due to Unchecked Input for Loop Condition, Error Handling, Missing Release of Resource after Effective Lifetime, Improper Access Control, Improper Restriction of Operations within the Bounds of a Memory Buffer, Improper Control of a Resource Through its Lifetime, Incorrect Calculation, Insufficient Control Flow Management, Improper Neutralization of Special Elements in Output Used by a Downstream Component (\"Injection\"), and Improper Input Validation. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, inject malicious input, access unauthorized resources, or compromise the confidentiality, integrity, and availability of the affected devices.",
     "softwareAffected": [
-      "Next.js version 12.0.0 or higher and prior to 15.5.21",
-      "Next.js version 16.0.0 or higher and prior to 16.2.11"
+      "Cisco IOS XE Software (multiple releases as identified by Cisco Software Checker)",
+      "Cisco IOS Software (for the XMCP advisory)"
     ],
-    "targetAudience": "Organizations developing or hosting web applications using the Next.js framework.",
-    "riskAssessment": "High risk of unauthorized access to internal network resources and disclosure of sensitive information.",
-    "impactAssessment": "Potential High impact on Confidentiality of the System.",
+    "targetAudience": "Individuals and organizations using Cisco IOS XE Software and Cisco IOS Software.",
+    "riskAssessment": "High risk of remote code execution, denial of service, security restriction bypass, and compromise of critical network infrastructure.",
+    "impactAssessment": "Potential remote code execution, denial of service, security restriction bypass, and disruption of network operations.",
     "cves": [
-      "CVE-2026-64645"
+      "CVE-2026-20301",
+      "CVE-2026-20263",
+      "CVE-2026-20124",
+      "CVE-2026-20267",
+      "CVE-2026-20268",
+      "CVE-2026-20269",
+      "CVE-2026-20270",
+      "CVE-2026-20271",
+      "CVE-2026-20272",
+      "CVE-2026-20273"
     ],
     "solutionLinks": []
   },
@@ -116,6 +96,26 @@
     "impactAssessment": "Authentication bypass, arbitrary command execution, unauthorized administrative access, and complete compromise of the Server.",
     "cves": [
       "CVE-2026-18574"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Server-Side Request Forgery (SSRF) Vulnerability in Next.js",
+    "severity": "high",
+    "date": "2026-08-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0394",
+    "code": "CIVN-2026-0394",
+    "summary": "A Server-Side Request Forgery (SSRF) vulnerability exists in the Next.js framework. An unauthenticated remote attacker may exploit this vulnerability to cause the server to issue requests to arbitrary internal or external hosts or perform Open Redirect attacks.",
+    "description": "Next.js is a React-based web application framework used for building server-rendered and full-stack web applications. Next.js framework is affected by the Server-Side Request Forgery (SSRF) vulnerability. This vulnerability exists due to improper validation of request-controlled inputs during the processing of rewrites() and redirects() configuration rules where destination hostname is dynamically generated from request-controlled inputs. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted requests that manipulate the destination hostname to an arbitrary host instead of the intended destination. Successful exploitation could allow the attacker to perform Server-Side Request Forgery (SSRF), resulting in unauthorized access to internal or external network resources in applications using the affected rewrites() configurations, or perform Open Redirect attacks in applications using the affected redirects() configurations.",
+    "softwareAffected": [
+      "Next.js version 12.0.0 or higher and prior to 15.5.21",
+      "Next.js version 16.0.0 or higher and prior to 16.2.11"
+    ],
+    "targetAudience": "Organizations developing or hosting web applications using the Next.js framework.",
+    "riskAssessment": "High risk of unauthorized access to internal network resources and disclosure of sensitive information.",
+    "impactAssessment": "Potential High impact on Confidentiality of the System.",
+    "cves": [
+      "CVE-2026-64645"
     ],
     "solutionLinks": []
   },
@@ -232,61 +232,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in PHP",
-    "severity": "high",
-    "date": "2026-08-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0388",
-    "code": "CIVN-2026-0388",
-    "summary": "Multiple vulnerabilities have been reported in PHP that could be exploited by an attacker to cause memory corruption, execute SQL injection attacks, trigger denial-of-service (DoS) conditions, and potentially compromise application integrity.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. Multiple vulnerabilities have been identified in PHP affecting several core components and extensions. These vulnerabilities arise due to improper bounds checking, out-of-bounds write operations, SQL injection caused by improper handling of PostgreSQL escaped strings, recursive symbolic link processing, and vulnerabilities inherited from third-party libraries. An attacker could exploit these vulnerabilities by supplying specially crafted application input, malicious PostgreSQL queries, specially crafted Phar archives, or malformed image files depending on the affected component. Successful exploitation of these vulnerabilities could result in memory corruption, SQL injection, denial-of-service, application crashes, information disclosure and potential arbitrary code execution.",
-    "softwareAffected": [
-      "PHP version prior to 8.5.9",
-      "PHP version prior to 8.4.24",
-      "PHP version prior to 8.3.33",
-      "PHP version prior to 8.2.33"
-    ],
-    "targetAudience": "Enterprises, Government Organizations, Cloud Service Providers, Hosting Providers and Web Developers using PHP.",
-    "riskAssessment": "High risk of denial of service, memory corruption, SQL injection, application crashes and information disclosure.",
-    "impactAssessment": "Successful exploitation of these vulnerabilities could allow a potential attacker to cause for denial of service, information disclosure and possible arbitrary code execution depending on application usage.",
-    "cves": [
-      "CVE-2026-17544",
-      "CVE-2026-17543",
-      "CVE-2026-7260",
-      "CVE-2026-9672"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in VMware Products",
-    "severity": "high",
-    "date": "2026-08-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0386",
-    "code": "CIVN-2026-0386",
-    "summary": "Multiple vulnerabilities have been reported in VMware products, which could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, or cause denial of service on the affected systems.",
-    "description": "VMware ESXi, VMware vCenter Server, VMware Workstation Pro, VMware Fusion, VMware Cloud Foundation, VMware Telco Cloud Platform, and VMware Telco Cloud Infrastructure are virtualization and cloud infrastructure products used to deploy and manage enterprise virtual environments. These vulnerabilities exist in VMware products due to improper input validation, insufficient validation of user-supplied input, authorization issues, and other implementation flaws in various product components. Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
-    "softwareAffected": [
-      "VMware vCenter Server 8.0 versions prior to 8.0 U3e",
-      "VMware vCenter Server 7.0 versions prior to 7.0 U3v",
-      "VMware ESXi 8.0 versions prior to ESXi80U3e",
-      "VMware ESXi 7.0 versions prior to ESXi70U3v",
-      "VMware Workstation Pro 17.x versions prior to 17.6.4",
-      "VMware Fusion 13.x versions prior to 13.6.4",
-      "VMware Cloud Foundation deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
-      "VMware Telco Cloud Platform deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
-      "VMware Telco Cloud Infrastructure deployments containing the affected versions of VMware ESXi and VMware vCenter Server"
-    ],
-    "targetAudience": "All organizations and individuals using the affected VMware products.",
-    "riskAssessment": "High risk of arbitrary code execution, privilege escalation, unauthorized file operations, sensitive information disclosure, and denial of service.",
-    "impactAssessment": "Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
-    "cves": [
-      "CVE-2025-41225",
-      "CVE-2025-41226",
-      "CVE-2025-41227",
-      "CVE-2025-41228"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "critical",
     "date": "2026-08-04",
@@ -370,6 +315,61 @@
       "CVE-2026-16410",
       "CVE-2026-16411",
       "CVE-2026-14899"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in PHP",
+    "severity": "high",
+    "date": "2026-08-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0388",
+    "code": "CIVN-2026-0388",
+    "summary": "Multiple vulnerabilities have been reported in PHP that could be exploited by an attacker to cause memory corruption, execute SQL injection attacks, trigger denial-of-service (DoS) conditions, and potentially compromise application integrity.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. Multiple vulnerabilities have been identified in PHP affecting several core components and extensions. These vulnerabilities arise due to improper bounds checking, out-of-bounds write operations, SQL injection caused by improper handling of PostgreSQL escaped strings, recursive symbolic link processing, and vulnerabilities inherited from third-party libraries. An attacker could exploit these vulnerabilities by supplying specially crafted application input, malicious PostgreSQL queries, specially crafted Phar archives, or malformed image files depending on the affected component. Successful exploitation of these vulnerabilities could result in memory corruption, SQL injection, denial-of-service, application crashes, information disclosure and potential arbitrary code execution.",
+    "softwareAffected": [
+      "PHP version prior to 8.5.9",
+      "PHP version prior to 8.4.24",
+      "PHP version prior to 8.3.33",
+      "PHP version prior to 8.2.33"
+    ],
+    "targetAudience": "Enterprises, Government Organizations, Cloud Service Providers, Hosting Providers and Web Developers using PHP.",
+    "riskAssessment": "High risk of denial of service, memory corruption, SQL injection, application crashes and information disclosure.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could allow a potential attacker to cause for denial of service, information disclosure and possible arbitrary code execution depending on application usage.",
+    "cves": [
+      "CVE-2026-17544",
+      "CVE-2026-17543",
+      "CVE-2026-7260",
+      "CVE-2026-9672"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in VMware Products",
+    "severity": "high",
+    "date": "2026-08-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0386",
+    "code": "CIVN-2026-0386",
+    "summary": "Multiple vulnerabilities have been reported in VMware products, which could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, or cause denial of service on the affected systems.",
+    "description": "VMware ESXi, VMware vCenter Server, VMware Workstation Pro, VMware Fusion, VMware Cloud Foundation, VMware Telco Cloud Platform, and VMware Telco Cloud Infrastructure are virtualization and cloud infrastructure products used to deploy and manage enterprise virtual environments. These vulnerabilities exist in VMware products due to improper input validation, insufficient validation of user-supplied input, authorization issues, and other implementation flaws in various product components. Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
+    "softwareAffected": [
+      "VMware vCenter Server 8.0 versions prior to 8.0 U3e",
+      "VMware vCenter Server 7.0 versions prior to 7.0 U3v",
+      "VMware ESXi 8.0 versions prior to ESXi80U3e",
+      "VMware ESXi 7.0 versions prior to ESXi70U3v",
+      "VMware Workstation Pro 17.x versions prior to 17.6.4",
+      "VMware Fusion 13.x versions prior to 13.6.4",
+      "VMware Cloud Foundation deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
+      "VMware Telco Cloud Platform deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
+      "VMware Telco Cloud Infrastructure deployments containing the affected versions of VMware ESXi and VMware vCenter Server"
+    ],
+    "targetAudience": "All organizations and individuals using the affected VMware products.",
+    "riskAssessment": "High risk of arbitrary code execution, privilege escalation, unauthorized file operations, sensitive information disclosure, and denial of service.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
+    "cves": [
+      "CVE-2025-41225",
+      "CVE-2025-41226",
+      "CVE-2025-41227",
+      "CVE-2025-41228"
     ],
     "solutionLinks": []
   },
