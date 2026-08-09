@@ -120,6 +120,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Heap-based Buffer Overflow Vulnerability in Adobe Format Plugins",
+    "severity": "high",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0392",
+    "code": "CIVN-2026-0392",
+    "summary": "A vulnerability has been reported in Adobe Format Plugins which could allow an attacker to execute arbitrary code on the affected system.",
+    "description": "Adobe Format Plugins are software components used by Adobe applications to parse, import, export and process various file formats. This vulnerability exists in Adobe Format Plugins due to improper handling of memory while processing specially crafted files. An attacker could exploit this vulnerability by convincing a victim to open a maliciously crafted file. Successful exploitation may result in arbitrary code execution in the security context of the currently logged-in user, allowing the attacker to perform unauthorized actions on the affected system.",
+    "softwareAffected": [
+      "Adobe Format Plugins versions prior to 2026.07"
+    ],
+    "targetAudience": "All organizations and individuals using Adobe Format Plugins.",
+    "riskAssessment": "High risk of arbitrary code execution and complete system compromise.",
+    "impactAssessment": "Potential High impact on Confidentiality, Integrity and Availability of the System.",
+    "cves": [
+      "CVE-2026-48372"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Arbitrary Code Vulnerability in vBulletin",
     "severity": "critical",
     "date": "2026-08-05",
@@ -178,25 +197,6 @@
     "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
     "cves": [
       "CVE-2026-66066"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Heap-based Buffer Overflow Vulnerability in Adobe Format Plugins",
-    "severity": "high",
-    "date": "2026-08-05",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0392",
-    "code": "CIVN-2026-0392",
-    "summary": "A vulnerability has been reported in Adobe Format Plugins which could allow an attacker to execute arbitrary code on the affected system.",
-    "description": "Adobe Format Plugins are software components used by Adobe applications to parse, import, export and process various file formats. This vulnerability exists in Adobe Format Plugins due to improper handling of memory while processing specially crafted files. An attacker could exploit this vulnerability by convincing a victim to open a maliciously crafted file. Successful exploitation may result in arbitrary code execution in the security context of the currently logged-in user, allowing the attacker to perform unauthorized actions on the affected system.",
-    "softwareAffected": [
-      "Adobe Format Plugins versions prior to 2026.07"
-    ],
-    "targetAudience": "All organizations and individuals using Adobe Format Plugins.",
-    "riskAssessment": "High risk of arbitrary code execution and complete system compromise.",
-    "impactAssessment": "Potential High impact on Confidentiality, Integrity and Availability of the System.",
-    "cves": [
-      "CVE-2026-48372"
     ],
     "solutionLinks": []
   },
