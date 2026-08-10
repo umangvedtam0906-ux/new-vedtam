@@ -1,5 +1,90 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
+    "severity": "high",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
+    "code": "CIVN-2026-0402",
+    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
+    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
+    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-20288",
+      "CVE-2026-20200"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in cPanel & WHM",
+    "severity": "critical",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0400",
+    "code": "CIVN-2026-0400",
+    "summary": "A vulnerability has been reported in in cPanel & WHM, which could allow a remote attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
+    "description": "cPanel & WHM is a widely used web hosting control panel that provides administrative (WHM) and user-level (cPanel) interfaces for managing servers and websites. This vulnerability exists in cPanel & WHM due to improper preservation of SQL mode during database renaming in cPanel. A remote authenticated attacker could exploit this vulnerability to execute arbitrary database commands with full administrative privileges. Successful exploitation of this vulnerability could allow the attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
+    "softwareAffected": [
+      "cPanel & WHM (Web Host Manager) versions",
+      "prior to 11.136.0.32",
+      "prior to 11.134.0.48",
+      "prior to 11.126.0.78",
+      "prior to 11.110.0.137",
+      "WP Squared version prior to 138.1.6"
+    ],
+    "targetAudience": "Organizations and individuals using affected cPanel & WHM-based hosting environments.",
+    "riskAssessment": "High risk of Privilege escalation and operating-system level compromise.",
+    "impactAssessment": "Potential for execution of arbitrary database commands with full administrative privileges.",
+    "cves": [
+      "CVE-2026-58048"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Veeam Service Provider Console",
+    "severity": "critical",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0399",
+    "code": "CIVN-2026-0399",
+    "summary": "Multiple vulnerabilities have been reported in Veeam Service Provider Console, which could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
+    "description": "Veeam Service Provider Console is a centralized management platform that enables service providers to monitor, manage, and deliver Veeam-powered backup, disaster recovery, and data protection services to multiple customers from a single console. Multiple vulnerabilities have been reported in Veeam Service Provider Console due to missing authentication for critical function, exhaust host memory, authentication bypass using an alternate path or channel, and Improper limitation of a pathname to a restricted directory. Successful exploitation of these vulnerabilities could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
+    "softwareAffected": [
+      "Veeam Service Provider Console 9.2.1.33875 and all earlier version 9 builds."
+    ],
+    "targetAudience": "All organizations and individuals using the affected Veeam Service Provider Console.",
+    "riskAssessment": "High risk of complete system compromise, execution of arbitrary commands, and denial of service (DoS) condition.",
+    "impactAssessment": "Potential for Authentication bypass, arbitrary command execution, and unauthorized administrative access.",
+    "cves": [
+      "CVE-2026-58073",
+      "CVE-2026-58072",
+      "CVE-2026-58067",
+      "CVE-2026-58071"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in Apple macOS",
+    "severity": "high",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0398",
+    "code": "CIVN-2026-0398",
+    "summary": "A vulnerability has been reported in Apple macOS that could allow an attacker on the network to authenticate to screen sharing without valid credentials on the targeted system.",
+    "description": "Apple macOS is an operating system developed by Apple Inc. for Mac computers. It is designed to provide a secure, efficient, and seamless computing experience on Apple Mac computers. A vulnerability has been reported in Apple macOS due to authentication issue in Screen Sharing. Successful exploitation of this vulnerability could allow an attacker on the network to authenticate to Screen Sharing without valid credentials on the targeted system.",
+    "softwareAffected": [
+      "MacOS Sonoma versions prior to 14.8.9",
+      "MacOS Sequoia versions prior to 15.7.9",
+      "MacOS Tahoe versions prior to 26.6.1"
+    ],
+    "targetAudience": "Individuals and organizations using the affected versions of Apple macOS.",
+    "riskAssessment": "High risk of unauthorized access and sensitive data disclosure.",
+    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "cves": [
+      "CVE-2026-65400"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in JetBrains TeamCity",
     "severity": "critical",
     "date": "2026-08-10",
