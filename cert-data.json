@@ -1,19 +1,71 @@
 [
   {
-    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
+    "title": "Multiple Vulnerabilities in Drupal Plugins",
     "severity": "high",
-    "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
-    "code": "CIVN-2026-0402",
-    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
-    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
-    "softwareAffected": "",
-    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
-    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
-    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "date": "2026-08-11",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
+    "code": "CIVN-2026-0404",
+    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
+    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
+    "softwareAffected": [
+      "Drupal Entity Browser module versions prior to 8.x-2.16",
+      "Drupal Edit in-place field module versions prior to 2.1.1"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
+    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
     "cves": [
-      "CVE-2026-20288",
-      "CVE-2026-20200"
+      "CVE-2026-18985",
+      "CVE-2026-18986"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "critical",
+    "date": "2026-08-11",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0403",
+    "code": "CIVN-2026-0403",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft Products, which could allow an attacker to perform spoofing, elevate privilege, perform tampering and disclose sensitive information on the targeted system.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft Products due to broken authorization/authentication controls, improper access control, modification of data assumed to be immutable, unsafe exposure of privileged functionality, or inadequate path handling. An attacker could exploit these vulnerabilities by sending crafted network requests, abusing authentication or authorization weaknesses, manipulating paths or resource handling and invoking exposed privileged functionality. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access to protected information, privilege escalation and remote code execution.",
+    "softwareAffected": [
+      "Azure SQL Managed Instance",
+      "Microsoft Teams",
+      "Microsoft Purview eDiscovery",
+      "Microsoft Power Apps",
+      "Azure Active Directory",
+      "Microsoft Entra Provisioning Service",
+      "Microsoft Application Insights Profiler",
+      "Azure Confidential Ledger",
+      "Azure Logic Apps",
+      "Azure SRE Agent",
+      "Azure SQL Database",
+      "Azure Service Bus",
+      "Microsoft Planetary Computer Pro",
+      "Microsoft 365 Admin Center",
+      "Microsoft Office SharePoint"
+    ],
+    "targetAudience": "All end-user organizations and individuals using the Microsoft Products.",
+    "riskAssessment": "High risk of privilege escalation, spoofing, sensitive information disclosure.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the affected systems.",
+    "cves": [
+      "CVE-2026-62836",
+      "CVE-2026-62896",
+      "CVE-2026-65668",
+      "CVE-2026-59118",
+      "CVE-2026-50481",
+      "CVE-2026-62918",
+      "CVE-2026-59115",
+      "CVE-2026-49163",
+      "CVE-2026-68823",
+      "CVE-2026-56161",
+      "CVE-2026-62830",
+      "CVE-2026-65667",
+      "CVE-2026-56162",
+      "CVE-2026-50515",
+      "CVE-2026-63508",
+      "CVE-2026-62873",
+      "CVE-2026-70332"
     ],
     "solutionLinks": []
   },
@@ -79,6 +131,24 @@
       "CVE-2026-58072",
       "CVE-2026-58067",
       "CVE-2026-58071"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
+    "severity": "high",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
+    "code": "CIVN-2026-0402",
+    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
+    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
+    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-20288",
+      "CVE-2026-20200"
     ],
     "solutionLinks": []
   },
@@ -245,6 +315,56 @@
     "solutionLinks": []
   },
   {
+    "title": "Heap-based Buffer Overflow Vulnerability in Adobe Format Plugins",
+    "severity": "high",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0392",
+    "code": "CIVN-2026-0392",
+    "summary": "A vulnerability has been reported in Adobe Format Plugins which could allow an attacker to execute arbitrary code on the affected system.",
+    "description": "Adobe Format Plugins are software components used by Adobe applications to parse, import, export and process various file formats. This vulnerability exists in Adobe Format Plugins due to improper handling of memory while processing specially crafted files. An attacker could exploit this vulnerability by convincing a victim to open a maliciously crafted file. Successful exploitation may result in arbitrary code execution in the security context of the currently logged-in user, allowing the attacker to perform unauthorized actions on the affected system.",
+    "softwareAffected": [
+      "Adobe Format Plugins versions prior to 2026.07"
+    ],
+    "targetAudience": "All organizations and individuals using Adobe Format Plugins.",
+    "riskAssessment": "High risk of arbitrary code execution and complete system compromise.",
+    "impactAssessment": "Potential High impact on Confidentiality, Integrity and Availability of the System.",
+    "cves": [
+      "CVE-2026-48372"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab",
+    "severity": "high",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0389",
+    "code": "CIVN-2026-0389",
+    "summary": "Multiple vulnerabilities have been reported in GitLab CE/EE which could allow a remote attacker to gain unauthorized access to sensitive information, modify CI/CD or project configurations, bypass security restrictions, execute cross-site scripting (XSS) attacks or cause a denial-of-service (DoS) condition on the targeted system.",
+    "description": "GitLab is a web-based DevOps platform that provides tools for software developments, including source code management, continuous integration and continuous deployment. It is available in both open-source Community Edition (CE) and Enterprise Edition (EE) versions. Multiple vulnerabilities exist in GitLab Community Edition (CE) and Enterprise Edition (EE) due to insufficient access controls, improper authorization, improper validation of user-supplied attributes, mass assignment, race conditions, improper sanitization of user-controlled input, insufficient resource throttling, improper handling of sensitive information, prompt injection in AI-assisted functionality and incorrect security-token generation. Successful exploitation of these vulnerabilities could allow a remote attacker to gain unauthorized access to sensitive information, modify CI/CD or project configurations, bypass security restrictions, execute cross-site scripting (XSS) attacks or cause a denial-of-service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "GitLab versions prior to 19.0.5, 19.1.3, and 19.2.1 for GitLab Community Edition (CE) and Enterprise Edition (EE)"
+    ],
+    "targetAudience": "Organizations and individuals using GitLab CE/EE instances.",
+    "riskAssessment": "High risk of unauthorized access to sensitive information, unauthorized modification of CI/CD and project configurations, bypassing of security controls, cross-site scripting and disruption of services.",
+    "impactAssessment": "Potential for unauthorized disclosure of sensitive information, modification of CI/CD and protected-branch configurations, bypassing of merge-request approval and governance controls, cross-site scripting attacks and denial-of-service conditions.",
+    "cves": [
+      "CVE-2026-6267",
+      "CVE-2026-12436",
+      "CVE-2026-15975",
+      "CVE-2026-13113",
+      "CVE-2026-16553",
+      "CVE-2026-6336",
+      "CVE-2026-14341",
+      "CVE-2026-3093",
+      "CVE-2026-15077",
+      "CVE-2026-15831",
+      "CVE-2026-14351",
+      "CVE-2026-4672",
+      "CVE-2026-14562"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Arbitrary Code Vulnerability in vBulletin",
     "severity": "critical",
     "date": "2026-08-05",
@@ -286,52 +406,32 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in GitLab",
+    "title": "Multiple Vulnerabilities in VMware Products",
     "severity": "high",
-    "date": "2026-08-05",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0389",
-    "code": "CIVN-2026-0389",
-    "summary": "Multiple vulnerabilities have been reported in GitLab CE/EE which could allow a remote attacker to gain unauthorized access to sensitive information, modify CI/CD or project configurations, bypass security restrictions, execute cross-site scripting (XSS) attacks or cause a denial-of-service (DoS) condition on the targeted system.",
-    "description": "GitLab is a web-based DevOps platform that provides tools for software developments, including source code management, continuous integration and continuous deployment. It is available in both open-source Community Edition (CE) and Enterprise Edition (EE) versions. Multiple vulnerabilities exist in GitLab Community Edition (CE) and Enterprise Edition (EE) due to insufficient access controls, improper authorization, improper validation of user-supplied attributes, mass assignment, race conditions, improper sanitization of user-controlled input, insufficient resource throttling, improper handling of sensitive information, prompt injection in AI-assisted functionality and incorrect security-token generation. Successful exploitation of these vulnerabilities could allow a remote attacker to gain unauthorized access to sensitive information, modify CI/CD or project configurations, bypass security restrictions, execute cross-site scripting (XSS) attacks or cause a denial-of-service (DoS) condition on the targeted system.",
+    "date": "2026-08-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0386",
+    "code": "CIVN-2026-0386",
+    "summary": "Multiple vulnerabilities have been reported in VMware products, which could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, or cause denial of service on the affected systems.",
+    "description": "VMware ESXi, VMware vCenter Server, VMware Workstation Pro, VMware Fusion, VMware Cloud Foundation, VMware Telco Cloud Platform, and VMware Telco Cloud Infrastructure are virtualization and cloud infrastructure products used to deploy and manage enterprise virtual environments. These vulnerabilities exist in VMware products due to improper input validation, insufficient validation of user-supplied input, authorization issues, and other implementation flaws in various product components. Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
     "softwareAffected": [
-      "GitLab versions prior to 19.0.5, 19.1.3, and 19.2.1 for GitLab Community Edition (CE) and Enterprise Edition (EE)"
+      "VMware vCenter Server 8.0 versions prior to 8.0 U3e",
+      "VMware vCenter Server 7.0 versions prior to 7.0 U3v",
+      "VMware ESXi 8.0 versions prior to ESXi80U3e",
+      "VMware ESXi 7.0 versions prior to ESXi70U3v",
+      "VMware Workstation Pro 17.x versions prior to 17.6.4",
+      "VMware Fusion 13.x versions prior to 13.6.4",
+      "VMware Cloud Foundation deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
+      "VMware Telco Cloud Platform deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
+      "VMware Telco Cloud Infrastructure deployments containing the affected versions of VMware ESXi and VMware vCenter Server"
     ],
-    "targetAudience": "Organizations and individuals using GitLab CE/EE instances.",
-    "riskAssessment": "High risk of unauthorized access to sensitive information, unauthorized modification of CI/CD and project configurations, bypassing of security controls, cross-site scripting and disruption of services.",
-    "impactAssessment": "Potential for unauthorized disclosure of sensitive information, modification of CI/CD and protected-branch configurations, bypassing of merge-request approval and governance controls, cross-site scripting attacks and denial-of-service conditions.",
+    "targetAudience": "All organizations and individuals using the affected VMware products.",
+    "riskAssessment": "High risk of arbitrary code execution, privilege escalation, unauthorized file operations, sensitive information disclosure, and denial of service.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
     "cves": [
-      "CVE-2026-6267",
-      "CVE-2026-12436",
-      "CVE-2026-15975",
-      "CVE-2026-13113",
-      "CVE-2026-16553",
-      "CVE-2026-6336",
-      "CVE-2026-14341",
-      "CVE-2026-3093",
-      "CVE-2026-15077",
-      "CVE-2026-15831",
-      "CVE-2026-14351",
-      "CVE-2026-4672",
-      "CVE-2026-14562"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Heap-based Buffer Overflow Vulnerability in Adobe Format Plugins",
-    "severity": "high",
-    "date": "2026-08-05",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0392",
-    "code": "CIVN-2026-0392",
-    "summary": "A vulnerability has been reported in Adobe Format Plugins which could allow an attacker to execute arbitrary code on the affected system.",
-    "description": "Adobe Format Plugins are software components used by Adobe applications to parse, import, export and process various file formats. This vulnerability exists in Adobe Format Plugins due to improper handling of memory while processing specially crafted files. An attacker could exploit this vulnerability by convincing a victim to open a maliciously crafted file. Successful exploitation may result in arbitrary code execution in the security context of the currently logged-in user, allowing the attacker to perform unauthorized actions on the affected system.",
-    "softwareAffected": [
-      "Adobe Format Plugins versions prior to 2026.07"
-    ],
-    "targetAudience": "All organizations and individuals using Adobe Format Plugins.",
-    "riskAssessment": "High risk of arbitrary code execution and complete system compromise.",
-    "impactAssessment": "Potential High impact on Confidentiality, Integrity and Availability of the System.",
-    "cves": [
-      "CVE-2026-48372"
+      "CVE-2025-41225",
+      "CVE-2025-41226",
+      "CVE-2025-41227",
+      "CVE-2025-41228"
     ],
     "solutionLinks": []
   },
@@ -444,36 +544,6 @@
       "CVE-2026-16410",
       "CVE-2026-16411",
       "CVE-2026-14899"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in VMware Products",
-    "severity": "high",
-    "date": "2026-08-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0386",
-    "code": "CIVN-2026-0386",
-    "summary": "Multiple vulnerabilities have been reported in VMware products, which could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, or cause denial of service on the affected systems.",
-    "description": "VMware ESXi, VMware vCenter Server, VMware Workstation Pro, VMware Fusion, VMware Cloud Foundation, VMware Telco Cloud Platform, and VMware Telco Cloud Infrastructure are virtualization and cloud infrastructure products used to deploy and manage enterprise virtual environments. These vulnerabilities exist in VMware products due to improper input validation, insufficient validation of user-supplied input, authorization issues, and other implementation flaws in various product components. Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
-    "softwareAffected": [
-      "VMware vCenter Server 8.0 versions prior to 8.0 U3e",
-      "VMware vCenter Server 7.0 versions prior to 7.0 U3v",
-      "VMware ESXi 8.0 versions prior to ESXi80U3e",
-      "VMware ESXi 7.0 versions prior to ESXi70U3v",
-      "VMware Workstation Pro 17.x versions prior to 17.6.4",
-      "VMware Fusion 13.x versions prior to 13.6.4",
-      "VMware Cloud Foundation deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
-      "VMware Telco Cloud Platform deployments containing the affected versions of VMware ESXi and VMware vCenter Server",
-      "VMware Telco Cloud Infrastructure deployments containing the affected versions of VMware ESXi and VMware vCenter Server"
-    ],
-    "targetAudience": "All organizations and individuals using the affected VMware products.",
-    "riskAssessment": "High risk of arbitrary code execution, privilege escalation, unauthorized file operations, sensitive information disclosure, and denial of service.",
-    "impactAssessment": "Successful exploitation of these vulnerabilities could allow an authenticated or local attacker to execute arbitrary code, escalate privileges, perform unauthorized file operations, disclose sensitive information, cause denial of service, and compromise the confidentiality, integrity, and availability of the affected systems.",
-    "cves": [
-      "CVE-2025-41225",
-      "CVE-2025-41226",
-      "CVE-2025-41227",
-      "CVE-2025-41228"
     ],
     "solutionLinks": []
   },
@@ -2395,6 +2465,21 @@
     "code": "CIVN-2026-0320"
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -2419,21 +2504,6 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
