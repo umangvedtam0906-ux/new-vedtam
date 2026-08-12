@@ -1,5 +1,26 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Progress Kemp LoadMaster",
+    "severity": "critical",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0405",
+    "code": "CIVN-2026-0405",
+    "summary": "Multiple vulnerabilities have been reported in Progress Kemp LoadMaster that could allow an unauthenticated attacker to execute arbitrary commands or bypass file upload security controls on the targeted system.",
+    "description": "Progress Kemp LoadMaster is an application delivery controller and load balancing platform used to manage and distribute network traffic across applications and services. Multiple vulnerabilities have been reported in Progress Kemp LoadMaster due to improper neutralization of special elements used in commands and improper validation of filenames during file upload processing. Successful exploitation of these vulnerabilities could allow an unauthenticated attacker to execute arbitrary commands or bypass file upload security controls on the targeted system.",
+    "softwareAffected": [
+      "Progress Kemp LoadMaster version GA v7.2.63.1 and older",
+      "Progress Kemp LoadMaster version LTSF v7.2.54.17 and older"
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of Progress Kemp LoadMaster.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access and security control bypass.",
+    "impactAssessment": "Potential for arbitrary command execution and bypass of security controls.",
+    "cves": [
+      "CVE-2026-8037",
+      "CVE-2026-33691"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Drupal Plugins",
     "severity": "high",
     "date": "2026-08-11",
@@ -315,6 +336,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Heap-based Buffer Overflow Vulnerability in Adobe Format Plugins",
+    "severity": "high",
+    "date": "2026-08-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0392",
+    "code": "CIVN-2026-0392",
+    "summary": "A vulnerability has been reported in Adobe Format Plugins which could allow an attacker to execute arbitrary code on the affected system.",
+    "description": "Adobe Format Plugins are software components used by Adobe applications to parse, import, export and process various file formats. This vulnerability exists in Adobe Format Plugins due to improper handling of memory while processing specially crafted files. An attacker could exploit this vulnerability by convincing a victim to open a maliciously crafted file. Successful exploitation may result in arbitrary code execution in the security context of the currently logged-in user, allowing the attacker to perform unauthorized actions on the affected system.",
+    "softwareAffected": [
+      "Adobe Format Plugins versions prior to 2026.07"
+    ],
+    "targetAudience": "All organizations and individuals using Adobe Format Plugins.",
+    "riskAssessment": "High risk of arbitrary code execution and complete system compromise.",
+    "impactAssessment": "Potential High impact on Confidentiality, Integrity and Availability of the System.",
+    "cves": [
+      "CVE-2026-48372"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Arbitrary Code Vulnerability in vBulletin",
     "severity": "critical",
     "date": "2026-08-05",
@@ -352,25 +392,6 @@
       "CVE-2026-18556",
       "cve-2026-18577",
       "CVE-2026-18577"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Heap-based Buffer Overflow Vulnerability in Adobe Format Plugins",
-    "severity": "high",
-    "date": "2026-08-05",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0392",
-    "code": "CIVN-2026-0392",
-    "summary": "A vulnerability has been reported in Adobe Format Plugins which could allow an attacker to execute arbitrary code on the affected system.",
-    "description": "Adobe Format Plugins are software components used by Adobe applications to parse, import, export and process various file formats. This vulnerability exists in Adobe Format Plugins due to improper handling of memory while processing specially crafted files. An attacker could exploit this vulnerability by convincing a victim to open a maliciously crafted file. Successful exploitation may result in arbitrary code execution in the security context of the currently logged-in user, allowing the attacker to perform unauthorized actions on the affected system.",
-    "softwareAffected": [
-      "Adobe Format Plugins versions prior to 2026.07"
-    ],
-    "targetAudience": "All organizations and individuals using Adobe Format Plugins.",
-    "riskAssessment": "High risk of arbitrary code execution and complete system compromise.",
-    "impactAssessment": "Potential High impact on Confidentiality, Integrity and Availability of the System.",
-    "cves": [
-      "CVE-2026-48372"
     ],
     "solutionLinks": []
   },
