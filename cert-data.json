@@ -186,6 +186,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Authentication Bypass Vulnerability in Apple macOS",
+    "severity": "high",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0398",
+    "code": "CIVN-2026-0398",
+    "summary": "A vulnerability has been reported in Apple macOS that could allow an attacker on the network to authenticate to screen sharing without valid credentials on the targeted system.",
+    "description": "Apple macOS is an operating system developed by Apple Inc. for Mac computers. It is designed to provide a secure, efficient, and seamless computing experience on Apple Mac computers. A vulnerability has been reported in Apple macOS due to authentication issue in Screen Sharing. Successful exploitation of this vulnerability could allow an attacker on the network to authenticate to Screen Sharing without valid credentials on the targeted system.",
+    "softwareAffected": [
+      "MacOS Sonoma versions prior to 14.8.9",
+      "MacOS Sequoia versions prior to 15.7.9",
+      "MacOS Tahoe versions prior to 26.6.1"
+    ],
+    "targetAudience": "Individuals and organizations using the affected versions of Apple macOS.",
+    "riskAssessment": "High risk of unauthorized access and sensitive data disclosure.",
+    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "cves": [
+      "CVE-2026-65400"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
     "severity": "high",
     "date": "2026-08-10",
@@ -265,27 +286,6 @@
       "CVE-2026-58072",
       "CVE-2026-58067",
       "CVE-2026-58071"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in Apple macOS",
-    "severity": "high",
-    "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0398",
-    "code": "CIVN-2026-0398",
-    "summary": "A vulnerability has been reported in Apple macOS that could allow an attacker on the network to authenticate to screen sharing without valid credentials on the targeted system.",
-    "description": "Apple macOS is an operating system developed by Apple Inc. for Mac computers. It is designed to provide a secure, efficient, and seamless computing experience on Apple Mac computers. A vulnerability has been reported in Apple macOS due to authentication issue in Screen Sharing. Successful exploitation of this vulnerability could allow an attacker on the network to authenticate to Screen Sharing without valid credentials on the targeted system.",
-    "softwareAffected": [
-      "MacOS Sonoma versions prior to 14.8.9",
-      "MacOS Sequoia versions prior to 15.7.9",
-      "MacOS Tahoe versions prior to 26.6.1"
-    ],
-    "targetAudience": "Individuals and organizations using the affected versions of Apple macOS.",
-    "riskAssessment": "High risk of unauthorized access and sensitive data disclosure.",
-    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
-    "cves": [
-      "CVE-2026-65400"
     ],
     "solutionLinks": []
   },
