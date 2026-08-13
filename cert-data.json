@@ -1,5 +1,22 @@
 [
   {
+    "title": "SQL Injection vulnerability in Metabase",
+    "severity": "critical",
+    "date": "2026-08-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0409",
+    "code": "CIVN-2026-0409",
+    "summary": "A vulnerability exists in Metabase which could allow an unauthenticated remote attacker to perform SQL injection in the Metabase application.",
+    "description": "Metabase is a business intelligence and data analytics application allowing users to connect to databases for preparing charts, dashboards, reports from the data. A SQL Injection vulnerability exists in Metabase due to improper validation of user input used for SQL commands. An unauthenticated remote attacker could exploit this vulnerability by injecting arbitrary SQL through the \"/reset_password\" database endpoint. Successful exploitation of these vulnerabilities could allow the attacker to gain unauthorized administrator access to the Metabase instance, change the application configuration, read and export data.",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using and maintaining Metabase application.",
+    "riskAssessment": "High risk of unauthorized access to the Metabase instance.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-72898"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Langflow OSS",
     "severity": "critical",
     "date": "2026-08-12",
@@ -15,6 +32,36 @@
     "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
     "cves": [
       "CVE-2026-9198"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0038",
+    "code": "CIAD-2026-0038",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-68820: This vulnerability exists in the Microsoft Windows Ancillary Function Driver for WinSock due to a use-after-free condition. A locally authenticated attacker could exploit this vulnerability to elevate privileges and execute code with SYSTEM-level privileges on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "Developer Tools",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-68820"
     ],
     "solutionLinks": []
   },
@@ -82,36 +129,6 @@
       "CVE-2026-20346",
       "CVE-2026-20347",
       "CVE-2026-20348"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0038",
-    "code": "CIAD-2026-0038",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-68820: This vulnerability exists in the Microsoft Windows Ancillary Function Driver for WinSock due to a use-after-free condition. A locally authenticated attacker could exploit this vulnerability to elevate privileges and execute code with SYSTEM-level privileges on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "Developer Tools",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-68820"
     ],
     "solutionLinks": []
   },
