@@ -17,6 +17,46 @@
     "solutionLinks": []
   },
   {
+    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
+    "code": "CIVN-2026-0408",
+    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using WordPress.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
+    "cves": [
+      "CVE-2026-64638"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Progress Kemp LoadMaster",
+    "severity": "critical",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0405",
+    "code": "CIVN-2026-0405",
+    "summary": "Multiple vulnerabilities have been reported in Progress Kemp LoadMaster that could allow an unauthenticated attacker to execute arbitrary commands or bypass file upload security controls on the targeted system.",
+    "description": "Progress Kemp LoadMaster is an application delivery controller and load balancing platform used to manage and distribute network traffic across applications and services. Multiple vulnerabilities have been reported in Progress Kemp LoadMaster due to improper neutralization of special elements used in commands and improper validation of filenames during file upload processing. Successful exploitation of these vulnerabilities could allow an unauthenticated attacker to execute arbitrary commands or bypass file upload security controls on the targeted system.",
+    "softwareAffected": [
+      "Progress Kemp LoadMaster version GA v7.2.63.1 and older",
+      "Progress Kemp LoadMaster version LTSF v7.2.54.17 and older"
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of Progress Kemp LoadMaster.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access and security control bypass.",
+    "impactAssessment": "Potential for arbitrary command execution and bypass of security controls.",
+    "cves": [
+      "CVE-2026-8037",
+      "CVE-2026-33691"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Langflow OSS",
     "severity": "critical",
     "date": "2026-08-12",
@@ -62,46 +102,6 @@
     "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
     "cves": [
       "CVE-2026-68820"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Progress Kemp LoadMaster",
-    "severity": "critical",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0405",
-    "code": "CIVN-2026-0405",
-    "summary": "Multiple vulnerabilities have been reported in Progress Kemp LoadMaster that could allow an unauthenticated attacker to execute arbitrary commands or bypass file upload security controls on the targeted system.",
-    "description": "Progress Kemp LoadMaster is an application delivery controller and load balancing platform used to manage and distribute network traffic across applications and services. Multiple vulnerabilities have been reported in Progress Kemp LoadMaster due to improper neutralization of special elements used in commands and improper validation of filenames during file upload processing. Successful exploitation of these vulnerabilities could allow an unauthenticated attacker to execute arbitrary commands or bypass file upload security controls on the targeted system.",
-    "softwareAffected": [
-      "Progress Kemp LoadMaster version GA v7.2.63.1 and older",
-      "Progress Kemp LoadMaster version LTSF v7.2.54.17 and older"
-    ],
-    "targetAudience": "All organizations and individuals using affected versions of Progress Kemp LoadMaster.",
-    "riskAssessment": "High risk of remote code execution, unauthorized access and security control bypass.",
-    "impactAssessment": "Potential for arbitrary command execution and bypass of security controls.",
-    "cves": [
-      "CVE-2026-8037",
-      "CVE-2026-33691"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
-    "code": "CIVN-2026-0408",
-    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using WordPress.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
-    "cves": [
-      "CVE-2026-64638"
     ],
     "solutionLinks": []
   },
@@ -203,24 +203,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
-    "severity": "high",
-    "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
-    "code": "CIVN-2026-0402",
-    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
-    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
-    "softwareAffected": "",
-    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
-    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
-    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
-    "cves": [
-      "CVE-2026-20288",
-      "CVE-2026-20200"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in JetBrains TeamCity",
     "severity": "critical",
     "date": "2026-08-10",
@@ -286,6 +268,24 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
+    "severity": "high",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
+    "code": "CIVN-2026-0402",
+    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
+    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
+    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-20288",
+      "CVE-2026-20200"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Authentication Bypass Vulnerability in Apple macOS",
     "severity": "high",
     "date": "2026-08-10",
@@ -303,43 +303,6 @@
     "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
     "cves": [
       "CVE-2026-65400"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Omada ZTP",
-    "severity": "high",
-    "date": "2026-08-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0396",
-    "code": "CIVN-2026-0396",
-    "summary": "Multiple vulnerabilities have been reported in Omada ZTP, which could allow an attacker to perform remote code execution, device hijacking and spoofing, client-side code execution, gain unauthorized access, disclose sensitive information, or otherwise compromise the targeted system.",
-    "description": "Multiple vulnerabilities exist in Omada ZTP due to improper input validation, insufficient access controls, hard-coded cryptographic keys, inadequate certificate validation, weaknesses in device-to-controller communication, insecure cloud management interfaces, and other security flaws. Successful exploitation of these vulnerabilities could allow an attacker to perform remote code execution, device hijacking and spoofing, client-side code execution, gain unauthorized access, disclose sensitive information, or otherwise compromise the targeted system.",
-    "softwareAffected": [
-      "Omada Controllers",
-      "Omada Gateways",
-      "Omada Switches",
-      "Omada Access Points",
-      "Omada OLT platforms",
-      "Omada Cloud services",
-      "TP Link mobile applications"
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected TP-LinkOmadaproducts.",
-    "riskAssessment": "High risk of unauthorized access, execution of arbitrary code or commands, disclosure of sensitive information, authentication and authorization bypass, and compromise of affected systems.",
-    "impactAssessment": "Potential remote code execution, unauthorized access, information disclosure, data compromise, and disruption of affected systems.",
-    "cves": [
-      "CVE-2025-7850",
-      "CVE-2025-7851",
-      "CVE-2025-9289",
-      "CVE-2025-9290",
-      "CVE-2025-9291",
-      "CVE-2025-9292",
-      "CVE-2025-9293",
-      "CVE-2025-15544",
-      "CVE-2025-15627",
-      "CVE-2025-15628",
-      "CVE-2025-15629",
-      "CVE-2025-15630",
-      "CVE-2025-15631"
     ],
     "solutionLinks": []
   },
@@ -388,22 +351,39 @@
     "solutionLinks": []
   },
   {
-    "title": "Server-Side Request Forgery (SSRF) Vulnerability in Next.js",
+    "title": "Multiple Vulnerabilities in Omada ZTP",
     "severity": "high",
-    "date": "2026-08-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0394",
-    "code": "CIVN-2026-0394",
-    "summary": "A Server-Side Request Forgery (SSRF) vulnerability exists in the Next.js framework. An unauthenticated remote attacker may exploit this vulnerability to cause the server to issue requests to arbitrary internal or external hosts or perform Open Redirect attacks.",
-    "description": "Next.js is a React-based web application framework used for building server-rendered and full-stack web applications. Next.js framework is affected by the Server-Side Request Forgery (SSRF) vulnerability. This vulnerability exists due to improper validation of request-controlled inputs during the processing of rewrites() and redirects() configuration rules where destination hostname is dynamically generated from request-controlled inputs. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted requests that manipulate the destination hostname to an arbitrary host instead of the intended destination. Successful exploitation could allow the attacker to perform Server-Side Request Forgery (SSRF), resulting in unauthorized access to internal or external network resources in applications using the affected rewrites() configurations, or perform Open Redirect attacks in applications using the affected redirects() configurations.",
+    "date": "2026-08-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0396",
+    "code": "CIVN-2026-0396",
+    "summary": "Multiple vulnerabilities have been reported in Omada ZTP, which could allow an attacker to perform remote code execution, device hijacking and spoofing, client-side code execution, gain unauthorized access, disclose sensitive information, or otherwise compromise the targeted system.",
+    "description": "Multiple vulnerabilities exist in Omada ZTP due to improper input validation, insufficient access controls, hard-coded cryptographic keys, inadequate certificate validation, weaknesses in device-to-controller communication, insecure cloud management interfaces, and other security flaws. Successful exploitation of these vulnerabilities could allow an attacker to perform remote code execution, device hijacking and spoofing, client-side code execution, gain unauthorized access, disclose sensitive information, or otherwise compromise the targeted system.",
     "softwareAffected": [
-      "Next.js version 12.0.0 or higher and prior to 15.5.21",
-      "Next.js version 16.0.0 or higher and prior to 16.2.11"
+      "Omada Controllers",
+      "Omada Gateways",
+      "Omada Switches",
+      "Omada Access Points",
+      "Omada OLT platforms",
+      "Omada Cloud services",
+      "TP Link mobile applications"
     ],
-    "targetAudience": "Organizations developing or hosting web applications using the Next.js framework.",
-    "riskAssessment": "High risk of unauthorized access to internal network resources and disclosure of sensitive information.",
-    "impactAssessment": "Potential High impact on Confidentiality of the System.",
+    "targetAudience": "All end-user organizations and individuals using the affected TP-LinkOmadaproducts.",
+    "riskAssessment": "High risk of unauthorized access, execution of arbitrary code or commands, disclosure of sensitive information, authentication and authorization bypass, and compromise of affected systems.",
+    "impactAssessment": "Potential remote code execution, unauthorized access, information disclosure, data compromise, and disruption of affected systems.",
     "cves": [
-      "CVE-2026-64645"
+      "CVE-2025-7850",
+      "CVE-2025-7851",
+      "CVE-2025-9289",
+      "CVE-2025-9290",
+      "CVE-2025-9291",
+      "CVE-2025-9292",
+      "CVE-2025-9293",
+      "CVE-2025-15544",
+      "CVE-2025-15627",
+      "CVE-2025-15628",
+      "CVE-2025-15629",
+      "CVE-2025-15630",
+      "CVE-2025-15631"
     ],
     "solutionLinks": []
   },
@@ -423,6 +403,26 @@
     "impactAssessment": "Authentication bypass, arbitrary command execution, unauthorized administrative access, and complete compromise of the Server.",
     "cves": [
       "CVE-2026-18574"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Server-Side Request Forgery (SSRF) Vulnerability in Next.js",
+    "severity": "high",
+    "date": "2026-08-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0394",
+    "code": "CIVN-2026-0394",
+    "summary": "A Server-Side Request Forgery (SSRF) vulnerability exists in the Next.js framework. An unauthenticated remote attacker may exploit this vulnerability to cause the server to issue requests to arbitrary internal or external hosts or perform Open Redirect attacks.",
+    "description": "Next.js is a React-based web application framework used for building server-rendered and full-stack web applications. Next.js framework is affected by the Server-Side Request Forgery (SSRF) vulnerability. This vulnerability exists due to improper validation of request-controlled inputs during the processing of rewrites() and redirects() configuration rules where destination hostname is dynamically generated from request-controlled inputs. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted requests that manipulate the destination hostname to an arbitrary host instead of the intended destination. Successful exploitation could allow the attacker to perform Server-Side Request Forgery (SSRF), resulting in unauthorized access to internal or external network resources in applications using the affected rewrites() configurations, or perform Open Redirect attacks in applications using the affected redirects() configurations.",
+    "softwareAffected": [
+      "Next.js version 12.0.0 or higher and prior to 15.5.21",
+      "Next.js version 16.0.0 or higher and prior to 16.2.11"
+    ],
+    "targetAudience": "Organizations developing or hosting web applications using the Next.js framework.",
+    "riskAssessment": "High risk of unauthorized access to internal network resources and disclosure of sensitive information.",
+    "impactAssessment": "Potential High impact on Confidentiality of the System.",
+    "cves": [
+      "CVE-2026-64645"
     ],
     "solutionLinks": []
   },
