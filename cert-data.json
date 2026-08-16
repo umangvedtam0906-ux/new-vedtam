@@ -56,6 +56,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
+    "code": "CIVN-2026-0408",
+    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using WordPress.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
+    "cves": [
+      "CVE-2026-64638"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-08-12",
@@ -86,6 +105,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in Langflow OSS",
+    "severity": "critical",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0407",
+    "code": "CIVN-2026-0407",
+    "summary": "A remote code execution vulnerability has been reported in Langflow OSS, which could allow an unauthenticated remote attacker to execute arbitrary code on the affected system.",
+    "description": "Langflow OSS is an open-source platform for building and deploying AI-powered workflows and applications. An unauthenticated remote code execution vulnerability exists in Langflow OSS due to improper authentication and unsafe handling of user-supplied Python code. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to obtain a SUPERUSER bearer token through the auto-login endpoint and subsequently execute arbitrary Python code on the affected Langflow server through the code validation endpoint. The attacker may thereby execute arbitrary commands with the privileges of the Langflow process. According to the vendor, the vulnerability affects default deployments where the auto-login feature is enabled and the validation endpoint is network-accessible. Successful exploitation could allow an attacker to compromise the confidentiality, integrity, and availability of the affected system.",
+    "softwareAffected": [
+      "Langflow OSS 1.0.0 through 1.10.0"
+    ],
+    "targetAudience": "All organizations and individuals using Langflow OSS.",
+    "riskAssessment": "Critical risk of arbitrary code execution, which could lead to complete compromise of the affected Langflow instance and the underlying system.",
+    "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
+    "cves": [
+      "CVE-2026-9198"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Progress Kemp LoadMaster",
     "severity": "critical",
     "date": "2026-08-12",
@@ -103,44 +141,6 @@
     "cves": [
       "CVE-2026-8037",
       "CVE-2026-33691"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
-    "code": "CIVN-2026-0408",
-    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using WordPress.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
-    "cves": [
-      "CVE-2026-64638"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Langflow OSS",
-    "severity": "critical",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0407",
-    "code": "CIVN-2026-0407",
-    "summary": "A remote code execution vulnerability has been reported in Langflow OSS, which could allow an unauthenticated remote attacker to execute arbitrary code on the affected system.",
-    "description": "Langflow OSS is an open-source platform for building and deploying AI-powered workflows and applications. An unauthenticated remote code execution vulnerability exists in Langflow OSS due to improper authentication and unsafe handling of user-supplied Python code. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to obtain a SUPERUSER bearer token through the auto-login endpoint and subsequently execute arbitrary Python code on the affected Langflow server through the code validation endpoint. The attacker may thereby execute arbitrary commands with the privileges of the Langflow process. According to the vendor, the vulnerability affects default deployments where the auto-login feature is enabled and the validation endpoint is network-accessible. Successful exploitation could allow an attacker to compromise the confidentiality, integrity, and availability of the affected system.",
-    "softwareAffected": [
-      "Langflow OSS 1.0.0 through 1.10.0"
-    ],
-    "targetAudience": "All organizations and individuals using Langflow OSS.",
-    "riskAssessment": "Critical risk of arbitrary code execution, which could lead to complete compromise of the affected Langflow instance and the underlying system.",
-    "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
-    "cves": [
-      "CVE-2026-9198"
     ],
     "solutionLinks": []
   },
