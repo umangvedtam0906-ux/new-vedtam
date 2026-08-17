@@ -1,5 +1,56 @@
 [
   {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "critical",
+    "date": "2026-08-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0413",
+    "code": "CIVN-2026-0413",
+    "summary": "Multiple vulnerabilities have been reported in MongoDB Products, which could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
+    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to improper authorization, insufficient input validation, improper input processing, missing authorization, Improper Authentication, Out-of-Bounds Read, Cleartext Storage of Sensitive Information, and memory handling issues. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
+    "softwareAffected": [
+      "MongoDB Server 7.0 versions prior to 7.0.40",
+      "MongoDB Server 8.0 versions prior to 8.0.29",
+      "MongoDB Server 8.3 versions prior to 8.3.8",
+      "MongoDB Driver 4.11.0 affects versions prior to 5.9.2",
+      "Schema Builder CLI 1.0.0 affects versions prior to 1.2.1",
+      "BI Connector ODBC Driver 1.0.0 affects versions prior to 1.4.9",
+      "Atlas SQL ODBC Driver 1.0.0 affects versions prior to 2.0.9"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
+    "riskAssessment": "High risk of security control bypass, information disclosure, and denial of service",
+    "impactAssessment": "Potential of memory corruption, perform unauthorized operations, and system compromise.",
+    "cves": [
+      "CVE-2026-19003",
+      "CVE-2026-19004",
+      "CVE-2026-18888",
+      "CVE-2026-19001",
+      "CVE-2026-19002",
+      "CVE-2026-19503",
+      "CVE-2026-19502",
+      "CVE-2026-18710",
+      "CVE-2026-18712",
+      "CVE-2026-18711",
+      "CVE-2026-18709",
+      "CVE-2026-18698",
+      "CVE-2026-18690",
+      "CVE-2026-18699",
+      "CVE-2026-18691",
+      "CVE-2026-18702",
+      "CVE-2026-18694",
+      "CVE-2026-18708",
+      "CVE-2026-18696",
+      "CVE-2026-18700",
+      "CVE-2026-18701",
+      "CVE-2026-18697",
+      "CVE-2026-18693",
+      "CVE-2026-18705",
+      "CVE-2026-18704",
+      "CVE-2026-18692",
+      "CVE-2026-18688"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-08-17",
@@ -111,6 +162,21 @@
     "solutionLinks": []
   },
   {
+    "title": "Reports on Apple Threat Notifications",
+    "severity": "high",
+    "date": "2026-08-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
+    "code": "CIAD-2026-0039",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-08-14",
@@ -132,21 +198,6 @@
       "CVE-2026-19559",
       "CVE-2026-19560"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Reports on Apple Threat Notifications",
-    "severity": "high",
-    "date": "2026-08-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
-    "code": "CIAD-2026-0039",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
