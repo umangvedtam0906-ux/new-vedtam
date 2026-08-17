@@ -56,52 +56,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
-    "code": "CIVN-2026-0408",
-    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using WordPress.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
-    "cves": [
-      "CVE-2026-64638"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in ClamAV",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0406",
-    "code": "CIVN-2026-0406",
-    "summary": "Multiple vulnerabilities have been reported in ClamAV, which could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on the affected system.",
-    "description": "ClamAV is an open-source cross-platform antivirus software toolkit owned and maintained by Cisco. Multiple vulnerabilities exist in ClamAV, due to improper boundary checking, memory handling, integer overflow, and improper processing of specially crafted file formats. Successful exploitation of these vulnerabilities could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on an affected system.",
-    "softwareAffected": [
-      "Secure Endpoint Connector for Linux.",
-      "Secure Endpoint Connector for Mac.",
-      "Secure Endpoint Connector for Windows."
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected Secure Endpoint Connector products.",
-    "riskAssessment": "High risk of denial-of-service, interruption of malware-scanning operations, and memory corruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-20337",
-      "CVE-2026-20338",
-      "CVE-2026-20339",
-      "CVE-2026-20345",
-      "CVE-2026-20346",
-      "CVE-2026-20347",
-      "CVE-2026-20348"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-08-12",
@@ -151,6 +105,33 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in ClamAV",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0406",
+    "code": "CIVN-2026-0406",
+    "summary": "Multiple vulnerabilities have been reported in ClamAV, which could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on the affected system.",
+    "description": "ClamAV is an open-source cross-platform antivirus software toolkit owned and maintained by Cisco. Multiple vulnerabilities exist in ClamAV, due to improper boundary checking, memory handling, integer overflow, and improper processing of specially crafted file formats. Successful exploitation of these vulnerabilities could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on an affected system.",
+    "softwareAffected": [
+      "Secure Endpoint Connector for Linux.",
+      "Secure Endpoint Connector for Mac.",
+      "Secure Endpoint Connector for Windows."
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Secure Endpoint Connector products.",
+    "riskAssessment": "High risk of denial-of-service, interruption of malware-scanning operations, and memory corruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20337",
+      "CVE-2026-20338",
+      "CVE-2026-20339",
+      "CVE-2026-20345",
+      "CVE-2026-20346",
+      "CVE-2026-20347",
+      "CVE-2026-20348"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Progress Kemp LoadMaster",
     "severity": "critical",
     "date": "2026-08-12",
@@ -168,6 +149,25 @@
     "cves": [
       "CVE-2026-8037",
       "CVE-2026-33691"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
+    "code": "CIVN-2026-0408",
+    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using WordPress.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
+    "cves": [
+      "CVE-2026-64638"
     ],
     "solutionLinks": []
   },
@@ -242,6 +242,28 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Veeam Service Provider Console",
+    "severity": "critical",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0399",
+    "code": "CIVN-2026-0399",
+    "summary": "Multiple vulnerabilities have been reported in Veeam Service Provider Console, which could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
+    "description": "Veeam Service Provider Console is a centralized management platform that enables service providers to monitor, manage, and deliver Veeam-powered backup, disaster recovery, and data protection services to multiple customers from a single console. Multiple vulnerabilities have been reported in Veeam Service Provider Console due to missing authentication for critical function, exhaust host memory, authentication bypass using an alternate path or channel, and Improper limitation of a pathname to a restricted directory. Successful exploitation of these vulnerabilities could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
+    "softwareAffected": [
+      "Veeam Service Provider Console 9.2.1.33875 and all earlier version 9 builds."
+    ],
+    "targetAudience": "All organizations and individuals using the affected Veeam Service Provider Console.",
+    "riskAssessment": "High risk of complete system compromise, execution of arbitrary commands, and denial of service (DoS) condition.",
+    "impactAssessment": "Potential for Authentication bypass, arbitrary command execution, and unauthorized administrative access.",
+    "cves": [
+      "CVE-2026-58073",
+      "CVE-2026-58072",
+      "CVE-2026-58067",
+      "CVE-2026-58071"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
     "severity": "high",
     "date": "2026-08-10",
@@ -303,28 +325,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Veeam Service Provider Console",
-    "severity": "critical",
-    "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0399",
-    "code": "CIVN-2026-0399",
-    "summary": "Multiple vulnerabilities have been reported in Veeam Service Provider Console, which could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
-    "description": "Veeam Service Provider Console is a centralized management platform that enables service providers to monitor, manage, and deliver Veeam-powered backup, disaster recovery, and data protection services to multiple customers from a single console. Multiple vulnerabilities have been reported in Veeam Service Provider Console due to missing authentication for critical function, exhaust host memory, authentication bypass using an alternate path or channel, and Improper limitation of a pathname to a restricted directory. Successful exploitation of these vulnerabilities could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
-    "softwareAffected": [
-      "Veeam Service Provider Console 9.2.1.33875 and all earlier version 9 builds."
-    ],
-    "targetAudience": "All organizations and individuals using the affected Veeam Service Provider Console.",
-    "riskAssessment": "High risk of complete system compromise, execution of arbitrary commands, and denial of service (DoS) condition.",
-    "impactAssessment": "Potential for Authentication bypass, arbitrary command execution, and unauthorized administrative access.",
-    "cves": [
-      "CVE-2026-58073",
-      "CVE-2026-58072",
-      "CVE-2026-58067",
-      "CVE-2026-58071"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Authentication Bypass Vulnerability in Apple macOS",
     "severity": "high",
     "date": "2026-08-10",
@@ -361,35 +361,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco IOS XE Software",
-    "severity": "critical",
-    "date": "2026-08-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0397",
-    "code": "CIVN-2026-0397",
-    "summary": "Multiple vulnerabilities have been identified in Cisco IOS XE Software that could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, or compromise the confidentiality, integrity, and availability of the affected devices.",
-    "description": "Cisco IOS XE Software is a network operating system used on Cisco enterprise routers, switches, wireless controllers, and other networking devices. Multiple vulnerabilities have been reported in Cisco IOS XE Software due to Unchecked Input for Loop Condition, Error Handling, Missing Release of Resource after Effective Lifetime, Improper Access Control, Improper Restriction of Operations within the Bounds of a Memory Buffer, Improper Control of a Resource Through its Lifetime, Incorrect Calculation, Insufficient Control Flow Management, Improper Neutralization of Special Elements in Output Used by a Downstream Component (\"Injection\"), and Improper Input Validation. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, inject malicious input, access unauthorized resources, or compromise the confidentiality, integrity, and availability of the affected devices.",
-    "softwareAffected": [
-      "Cisco IOS XE Software (multiple releases as identified by Cisco Software Checker)",
-      "Cisco IOS Software (for the XMCP advisory)"
-    ],
-    "targetAudience": "Individuals and organizations using Cisco IOS XE Software and Cisco IOS Software.",
-    "riskAssessment": "High risk of remote code execution, denial of service, security restriction bypass, and compromise of critical network infrastructure.",
-    "impactAssessment": "Potential remote code execution, denial of service, security restriction bypass, and disruption of network operations.",
-    "cves": [
-      "CVE-2026-20301",
-      "CVE-2026-20263",
-      "CVE-2026-20124",
-      "CVE-2026-20267",
-      "CVE-2026-20268",
-      "CVE-2026-20269",
-      "CVE-2026-20270",
-      "CVE-2026-20271",
-      "CVE-2026-20272",
-      "CVE-2026-20273"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Omada ZTP",
     "severity": "high",
     "date": "2026-08-07",
@@ -423,6 +394,35 @@
       "CVE-2025-15629",
       "CVE-2025-15630",
       "CVE-2025-15631"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco IOS XE Software",
+    "severity": "critical",
+    "date": "2026-08-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0397",
+    "code": "CIVN-2026-0397",
+    "summary": "Multiple vulnerabilities have been identified in Cisco IOS XE Software that could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, or compromise the confidentiality, integrity, and availability of the affected devices.",
+    "description": "Cisco IOS XE Software is a network operating system used on Cisco enterprise routers, switches, wireless controllers, and other networking devices. Multiple vulnerabilities have been reported in Cisco IOS XE Software due to Unchecked Input for Loop Condition, Error Handling, Missing Release of Resource after Effective Lifetime, Improper Access Control, Improper Restriction of Operations within the Bounds of a Memory Buffer, Improper Control of a Resource Through its Lifetime, Incorrect Calculation, Insufficient Control Flow Management, Improper Neutralization of Special Elements in Output Used by a Downstream Component (\"Injection\"), and Improper Input Validation. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, inject malicious input, access unauthorized resources, or compromise the confidentiality, integrity, and availability of the affected devices.",
+    "softwareAffected": [
+      "Cisco IOS XE Software (multiple releases as identified by Cisco Software Checker)",
+      "Cisco IOS Software (for the XMCP advisory)"
+    ],
+    "targetAudience": "Individuals and organizations using Cisco IOS XE Software and Cisco IOS Software.",
+    "riskAssessment": "High risk of remote code execution, denial of service, security restriction bypass, and compromise of critical network infrastructure.",
+    "impactAssessment": "Potential remote code execution, denial of service, security restriction bypass, and disruption of network operations.",
+    "cves": [
+      "CVE-2026-20301",
+      "CVE-2026-20263",
+      "CVE-2026-20124",
+      "CVE-2026-20267",
+      "CVE-2026-20268",
+      "CVE-2026-20269",
+      "CVE-2026-20270",
+      "CVE-2026-20271",
+      "CVE-2026-20272",
+      "CVE-2026-20273"
     ],
     "solutionLinks": []
   },
