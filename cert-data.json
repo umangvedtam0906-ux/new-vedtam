@@ -22,6 +22,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Apple Products",
+    "severity": "critical",
+    "date": "2026-08-19",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0041",
+    "code": "CIAD-2026-0041",
+    "summary": "Multiple vulnerabilities have been reported in Apple products which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Description:Multiple vulnerabilities exist in Apple products due to memory corruption, use-after-free, out-of-bounds read/write, buffer overflow, integer overflow, type confusion, authentication, authorization, permission, and logic issues across various Apple components, including CoreAudio, ImageIO, Kernel, WebKit, IOGPUFamily, AVEVideoEncoder, SceneKit, Model I/O, and other system frameworks. Successful exploitation of these vulnerabilities could enable targeted attacks, potentially allowing attackers to execute arbitrary code with elevated privileges, access sensitive information, compromise application or system security boundaries, or cause denial-of-service conditions on affected Apple devices. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Apple iOS versions prior to 26.6.1",
+      "Apple iPadOS versions prior to 26.6.1",
+      "Apple iOS versions prior to 18.7.10",
+      "Apple iPadOS versions prior to 18.7.10",
+      "Apple macOS Tahoe versions prior to 26.6.2"
+    ],
+    "targetAudience": "All end-user organizations and individuals using the Apple iOS, ipadOS and macOS devices.",
+    "riskAssessment": "Very High risk of extremely sophisticated attack or arbitrary code execution.",
+    "impactAssessment": "Potential for sophisticated targeted attacks.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "critical",
     "date": "2026-08-18",
@@ -82,6 +103,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
+    "severity": "high",
+    "date": "2026-08-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
+    "code": "CIVN-2026-0411",
+    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
+    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
+    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
+    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
+    "cves": [
+      "CVE-2026-20349"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in MongoDB Products",
     "severity": "critical",
     "date": "2026-08-17",
@@ -129,26 +170,6 @@
       "CVE-2026-18704",
       "CVE-2026-18692",
       "CVE-2026-18688"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
-    "severity": "high",
-    "date": "2026-08-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
-    "code": "CIVN-2026-0411",
-    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
-    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
-    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
-    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
-    "cves": [
-      "CVE-2026-20349"
     ],
     "solutionLinks": []
   },
