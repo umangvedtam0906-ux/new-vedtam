@@ -1,5 +1,27 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Wireshark",
+    "severity": "high",
+    "date": "2026-08-19",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0415",
+    "code": "CIVN-2026-0415",
+    "summary": "Multiple vulnerabilities have been reported in Wireshark that could allow an attacker to cause the application to crash, consume excessive system resources, disclose sensitive information, or potentially execute arbitrary code on the targeted system.",
+    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for troubleshooting, analysis, and security purposes. These vulnerabilities have been reported in Wireshark due to various protocol dissectors crash, file parsers crash and the sharkd utility crash. An attacker could exploit these vulnerabilities by sending a specially crafted request. Successful exploitation of these vulnerabilities could allow an attacker to crash wireshark, consume excessive system resources, disclose sensitive information or potentially execute arbitrary code.",
+    "softwareAffected": [
+      "Wireshark versions 4.6.0 to 4.6.7,",
+      "Wireshark versions 4.4.0 to 4.4.17"
+    ],
+    "targetAudience": "All end-users organisations and individuals using Wireshark.",
+    "riskAssessment": "High risk of service unavailability.",
+    "impactAssessment": "Potential for sensitive data exposure, disruption of services.",
+    "cves": [
+      "CVE-2026-19694",
+      "CVE-2026-19695",
+      "CVE-2026-19696"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "critical",
     "date": "2026-08-18",
@@ -111,6 +133,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
+    "severity": "high",
+    "date": "2026-08-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
+    "code": "CIVN-2026-0411",
+    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
+    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
+    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
+    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
+    "cves": [
+      "CVE-2026-20349"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-08-17",
@@ -202,41 +244,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
-    "severity": "high",
-    "date": "2026-08-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
-    "code": "CIVN-2026-0411",
-    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
-    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
-    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
-    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
-    "cves": [
-      "CVE-2026-20349"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Reports on Apple Threat Notifications",
-    "severity": "high",
-    "date": "2026-08-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
-    "code": "CIAD-2026-0039",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-08-14",
@@ -261,6 +268,21 @@
     "solutionLinks": []
   },
   {
+    "title": "Reports on Apple Threat Notifications",
+    "severity": "high",
+    "date": "2026-08-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
+    "code": "CIAD-2026-0039",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "SQL Injection vulnerability in Metabase",
     "severity": "critical",
     "date": "2026-08-13",
@@ -274,6 +296,52 @@
     "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
     "cves": [
       "CVE-2026-72898"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
+    "code": "CIVN-2026-0408",
+    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using WordPress.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
+    "cves": [
+      "CVE-2026-64638"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in ClamAV",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0406",
+    "code": "CIVN-2026-0406",
+    "summary": "Multiple vulnerabilities have been reported in ClamAV, which could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on the affected system.",
+    "description": "ClamAV is an open-source cross-platform antivirus software toolkit owned and maintained by Cisco. Multiple vulnerabilities exist in ClamAV, due to improper boundary checking, memory handling, integer overflow, and improper processing of specially crafted file formats. Successful exploitation of these vulnerabilities could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on an affected system.",
+    "softwareAffected": [
+      "Secure Endpoint Connector for Linux.",
+      "Secure Endpoint Connector for Mac.",
+      "Secure Endpoint Connector for Windows."
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Secure Endpoint Connector products.",
+    "riskAssessment": "High risk of denial-of-service, interruption of malware-scanning operations, and memory corruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20337",
+      "CVE-2026-20338",
+      "CVE-2026-20339",
+      "CVE-2026-20345",
+      "CVE-2026-20346",
+      "CVE-2026-20347",
+      "CVE-2026-20348"
     ],
     "solutionLinks": []
   },
@@ -308,25 +376,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
-    "code": "CIVN-2026-0408",
-    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using WordPress.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
-    "cves": [
-      "CVE-2026-64638"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in Langflow OSS",
     "severity": "critical",
     "date": "2026-08-12",
@@ -342,33 +391,6 @@
     "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
     "cves": [
       "CVE-2026-9198"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in ClamAV",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0406",
-    "code": "CIVN-2026-0406",
-    "summary": "Multiple vulnerabilities have been reported in ClamAV, which could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on the affected system.",
-    "description": "ClamAV is an open-source cross-platform antivirus software toolkit owned and maintained by Cisco. Multiple vulnerabilities exist in ClamAV, due to improper boundary checking, memory handling, integer overflow, and improper processing of specially crafted file formats. Successful exploitation of these vulnerabilities could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on an affected system.",
-    "softwareAffected": [
-      "Secure Endpoint Connector for Linux.",
-      "Secure Endpoint Connector for Mac.",
-      "Secure Endpoint Connector for Windows."
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected Secure Endpoint Connector products.",
-    "riskAssessment": "High risk of denial-of-service, interruption of malware-scanning operations, and memory corruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-20337",
-      "CVE-2026-20338",
-      "CVE-2026-20339",
-      "CVE-2026-20345",
-      "CVE-2026-20346",
-      "CVE-2026-20347",
-      "CVE-2026-20348"
     ],
     "solutionLinks": []
   },
@@ -568,6 +590,35 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Cisco IOS XE Software",
+    "severity": "critical",
+    "date": "2026-08-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0397",
+    "code": "CIVN-2026-0397",
+    "summary": "Multiple vulnerabilities have been identified in Cisco IOS XE Software that could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, or compromise the confidentiality, integrity, and availability of the affected devices.",
+    "description": "Cisco IOS XE Software is a network operating system used on Cisco enterprise routers, switches, wireless controllers, and other networking devices. Multiple vulnerabilities have been reported in Cisco IOS XE Software due to Unchecked Input for Loop Condition, Error Handling, Missing Release of Resource after Effective Lifetime, Improper Access Control, Improper Restriction of Operations within the Bounds of a Memory Buffer, Improper Control of a Resource Through its Lifetime, Incorrect Calculation, Insufficient Control Flow Management, Improper Neutralization of Special Elements in Output Used by a Downstream Component (\"Injection\"), and Improper Input Validation. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, inject malicious input, access unauthorized resources, or compromise the confidentiality, integrity, and availability of the affected devices.",
+    "softwareAffected": [
+      "Cisco IOS XE Software (multiple releases as identified by Cisco Software Checker)",
+      "Cisco IOS Software (for the XMCP advisory)"
+    ],
+    "targetAudience": "Individuals and organizations using Cisco IOS XE Software and Cisco IOS Software.",
+    "riskAssessment": "High risk of remote code execution, denial of service, security restriction bypass, and compromise of critical network infrastructure.",
+    "impactAssessment": "Potential remote code execution, denial of service, security restriction bypass, and disruption of network operations.",
+    "cves": [
+      "CVE-2026-20301",
+      "CVE-2026-20263",
+      "CVE-2026-20124",
+      "CVE-2026-20267",
+      "CVE-2026-20268",
+      "CVE-2026-20269",
+      "CVE-2026-20270",
+      "CVE-2026-20271",
+      "CVE-2026-20272",
+      "CVE-2026-20273"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Omada ZTP",
     "severity": "high",
     "date": "2026-08-07",
@@ -617,35 +668,6 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Cisco IOS XE Software",
-    "severity": "critical",
-    "date": "2026-08-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0397",
-    "code": "CIVN-2026-0397",
-    "summary": "Multiple vulnerabilities have been identified in Cisco IOS XE Software that could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, or compromise the confidentiality, integrity, and availability of the affected devices.",
-    "description": "Cisco IOS XE Software is a network operating system used on Cisco enterprise routers, switches, wireless controllers, and other networking devices. Multiple vulnerabilities have been reported in Cisco IOS XE Software due to Unchecked Input for Loop Condition, Error Handling, Missing Release of Resource after Effective Lifetime, Improper Access Control, Improper Restriction of Operations within the Bounds of a Memory Buffer, Improper Control of a Resource Through its Lifetime, Incorrect Calculation, Insufficient Control Flow Management, Improper Neutralization of Special Elements in Output Used by a Downstream Component (\"Injection\"), and Improper Input Validation. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, cause denial of service (DoS), bypass security restrictions, inject malicious input, access unauthorized resources, or compromise the confidentiality, integrity, and availability of the affected devices.",
-    "softwareAffected": [
-      "Cisco IOS XE Software (multiple releases as identified by Cisco Software Checker)",
-      "Cisco IOS Software (for the XMCP advisory)"
-    ],
-    "targetAudience": "Individuals and organizations using Cisco IOS XE Software and Cisco IOS Software.",
-    "riskAssessment": "High risk of remote code execution, denial of service, security restriction bypass, and compromise of critical network infrastructure.",
-    "impactAssessment": "Potential remote code execution, denial of service, security restriction bypass, and disruption of network operations.",
-    "cves": [
-      "CVE-2026-20301",
-      "CVE-2026-20263",
-      "CVE-2026-20124",
-      "CVE-2026-20267",
-      "CVE-2026-20268",
-      "CVE-2026-20269",
-      "CVE-2026-20270",
-      "CVE-2026-20271",
-      "CVE-2026-20272",
-      "CVE-2026-20273"
-    ],
     "solutionLinks": []
   },
   {
