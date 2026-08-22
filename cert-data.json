@@ -22,6 +22,23 @@
     "solutionLinks": []
   },
   {
+    "title": "A End of Mainstream for Windows Server 2022",
+    "severity": "high",
+    "date": "2026-08-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0042",
+    "code": "CIAD-2026-0042",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Microsoft has announced that Windows Server 2022 is approaching the end of its mainstream support lifecycle. On October 13, 2026, Windows Server 2022 will reach the end of mainstream support. The October 2026 security update will be the last mainstream support update available for this version. Upon reaching the end of mainstream support, Windows Server 2022 will transition to extended support. This transition includes security updates at no additional cost, and the system will continue to receive monthly security updates through October 14, 2031. To ensure environments remain fully supported under mainstream support, Microsoft recommends planning an upgrade to Windows Server 2025, which is the latest Long-Term Servicing Channel (LTSC) release.",
+    "softwareAffected": [
+      "Windows Server 2022"
+    ],
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Server-Side Request Forgery Vulnerability in MLflow",
     "severity": "critical",
     "date": "2026-08-20",
@@ -41,42 +58,24 @@
     "solutionLinks": []
   },
   {
-    "title": "A End of Mainstream for Windows Server 2022",
-    "severity": "high",
-    "date": "2026-08-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0042",
-    "code": "CIAD-2026-0042",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Microsoft has announced that Windows Server 2022 is approaching the end of its mainstream support lifecycle. On October 13, 2026, Windows Server 2022 will reach the end of mainstream support. The October 2026 security update will be the last mainstream support update available for this version. Upon reaching the end of mainstream support, Windows Server 2022 will transition to extended support. This transition includes security updates at no additional cost, and the system will continue to receive monthly security updates through October 14, 2031. To ensure environments remain fully supported under mainstream support, Microsoft recommends planning an upgrade to Windows Server 2025, which is the latest Long-Term Servicing Channel (LTSC) release.",
-    "softwareAffected": [
-      "Windows Server 2022"
-    ],
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Wireshark",
-    "severity": "high",
+    "title": "Multiple Vulnerabilities in Apple Products",
+    "severity": "critical",
     "date": "2026-08-19",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0415",
-    "code": "CIVN-2026-0415",
-    "summary": "Multiple vulnerabilities have been reported in Wireshark that could allow an attacker to cause the application to crash, consume excessive system resources, disclose sensitive information, or potentially execute arbitrary code on the targeted system.",
-    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for troubleshooting, analysis, and security purposes. These vulnerabilities have been reported in Wireshark due to various protocol dissectors crash, file parsers crash and the sharkd utility crash. An attacker could exploit these vulnerabilities by sending a specially crafted request. Successful exploitation of these vulnerabilities could allow an attacker to crash wireshark, consume excessive system resources, disclose sensitive information or potentially execute arbitrary code.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0041",
+    "code": "CIAD-2026-0041",
+    "summary": "Multiple vulnerabilities have been reported in Apple products which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Multiple vulnerabilities exist in Apple products due to memory corruption, use-after-free, out-of-bounds read/write, buffer overflow, integer overflow, type confusion, authentication, authorization, permission, and logic issues across various Apple components, including CoreAudio, ImageIO, Kernel, WebKit, IOGPUFamily, AVEVideoEncoder, SceneKit, Model I/O, and other system frameworks. Successful exploitation of these vulnerabilities could enable targeted attacks, potentially allowing attackers to execute arbitrary code with elevated privileges, access sensitive information, compromise application or system security boundaries, or cause denial-of-service conditions on affected Apple devices. For complete list of affected products, CVEs, workarounds and",
     "softwareAffected": [
-      "Wireshark versions 4.6.0 to 4.6.7,",
-      "Wireshark versions 4.4.0 to 4.4.17"
+      "Apple iOS versions prior to 26.6.1",
+      "Apple iPadOS versions prior to 26.6.1",
+      "Apple iOS versions prior to 18.7.10",
+      "Apple iPadOS versions prior to 18.7.10",
+      "Apple macOS Tahoe versions prior to 26.6.2"
     ],
-    "targetAudience": "All end-users organisations and individuals using Wireshark.",
-    "riskAssessment": "High risk of service unavailability.",
-    "impactAssessment": "Potential for sensitive data exposure, disruption of services.",
-    "cves": [
-      "CVE-2026-19694",
-      "CVE-2026-19695",
-      "CVE-2026-19696"
-    ],
+    "targetAudience": "All end-user organizations and individuals using the Apple iOS, ipadOS and macOS devices.",
+    "riskAssessment": "Very High risk of extremely sophisticated attack or arbitrary code execution.",
+    "impactAssessment": "Potential for sophisticated targeted attacks.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -99,24 +98,25 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Apple Products",
-    "severity": "critical",
+    "title": "Multiple Vulnerabilities in Wireshark",
+    "severity": "high",
     "date": "2026-08-19",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0041",
-    "code": "CIAD-2026-0041",
-    "summary": "Multiple vulnerabilities have been reported in Apple products which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Description:Multiple vulnerabilities exist in Apple products due to memory corruption, use-after-free, out-of-bounds read/write, buffer overflow, integer overflow, type confusion, authentication, authorization, permission, and logic issues across various Apple components, including CoreAudio, ImageIO, Kernel, WebKit, IOGPUFamily, AVEVideoEncoder, SceneKit, Model I/O, and other system frameworks. Successful exploitation of these vulnerabilities could enable targeted attacks, potentially allowing attackers to execute arbitrary code with elevated privileges, access sensitive information, compromise application or system security boundaries, or cause denial-of-service conditions on affected Apple devices. For complete list of affected products, CVEs, workarounds and",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0415",
+    "code": "CIVN-2026-0415",
+    "summary": "Multiple vulnerabilities have been reported in Wireshark that could allow an attacker to cause the application to crash, consume excessive system resources, disclose sensitive information, or potentially execute arbitrary code on the targeted system.",
+    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for troubleshooting, analysis, and security purposes. These vulnerabilities have been reported in Wireshark due to various protocol dissectors crash, file parsers crash and the sharkd utility crash. An attacker could exploit these vulnerabilities by sending a specially crafted request. Successful exploitation of these vulnerabilities could allow an attacker to crash wireshark, consume excessive system resources, disclose sensitive information or potentially execute arbitrary code.",
     "softwareAffected": [
-      "Apple iOS versions prior to 26.6.1",
-      "Apple iPadOS versions prior to 26.6.1",
-      "Apple iOS versions prior to 18.7.10",
-      "Apple iPadOS versions prior to 18.7.10",
-      "Apple macOS Tahoe versions prior to 26.6.2"
+      "Wireshark versions 4.6.0 to 4.6.7,",
+      "Wireshark versions 4.4.0 to 4.4.17"
     ],
-    "targetAudience": "All end-user organizations and individuals using the Apple iOS, ipadOS and macOS devices.",
-    "riskAssessment": "Very High risk of extremely sophisticated attack or arbitrary code execution.",
-    "impactAssessment": "Potential for sophisticated targeted attacks.",
-    "cves": [],
+    "targetAudience": "All end-users organisations and individuals using Wireshark.",
+    "riskAssessment": "High risk of service unavailability.",
+    "impactAssessment": "Potential for sensitive data exposure, disruption of services.",
+    "cves": [
+      "CVE-2026-19694",
+      "CVE-2026-19695",
+      "CVE-2026-19696"
+    ],
     "solutionLinks": []
   },
   {
@@ -176,57 +176,6 @@
       "CVE-2026-58241",
       "CVE-2026-58245",
       "CVE-2026-44762"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "critical",
-    "date": "2026-08-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0413",
-    "code": "CIVN-2026-0413",
-    "summary": "Multiple vulnerabilities have been reported in MongoDB Products, which could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
-    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to improper authorization, insufficient input validation, improper input processing, missing authorization, Improper Authentication, Out-of-Bounds Read, Cleartext Storage of Sensitive Information, and memory handling issues. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
-    "softwareAffected": [
-      "MongoDB Server 7.0 versions prior to 7.0.40",
-      "MongoDB Server 8.0 versions prior to 8.0.29",
-      "MongoDB Server 8.3 versions prior to 8.3.8",
-      "MongoDB Driver 4.11.0 affects versions prior to 5.9.2",
-      "Schema Builder CLI 1.0.0 affects versions prior to 1.2.1",
-      "BI Connector ODBC Driver 1.0.0 affects versions prior to 1.4.9",
-      "Atlas SQL ODBC Driver 1.0.0 affects versions prior to 2.0.9"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
-    "riskAssessment": "High risk of security control bypass, information disclosure, and denial of service",
-    "impactAssessment": "Potential of memory corruption, perform unauthorized operations, and system compromise.",
-    "cves": [
-      "CVE-2026-19003",
-      "CVE-2026-19004",
-      "CVE-2026-18888",
-      "CVE-2026-19001",
-      "CVE-2026-19002",
-      "CVE-2026-19503",
-      "CVE-2026-19502",
-      "CVE-2026-18710",
-      "CVE-2026-18712",
-      "CVE-2026-18711",
-      "CVE-2026-18709",
-      "CVE-2026-18698",
-      "CVE-2026-18690",
-      "CVE-2026-18699",
-      "CVE-2026-18691",
-      "CVE-2026-18702",
-      "CVE-2026-18694",
-      "CVE-2026-18708",
-      "CVE-2026-18696",
-      "CVE-2026-18700",
-      "CVE-2026-18701",
-      "CVE-2026-18697",
-      "CVE-2026-18693",
-      "CVE-2026-18705",
-      "CVE-2026-18704",
-      "CVE-2026-18692",
-      "CVE-2026-18688"
     ],
     "solutionLinks": []
   },
@@ -318,6 +267,57 @@
       "CVE-2026-71398",
       "CVE-2026-27302",
       "CVE-2026-48381"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "critical",
+    "date": "2026-08-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0413",
+    "code": "CIVN-2026-0413",
+    "summary": "Multiple vulnerabilities have been reported in MongoDB Products, which could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
+    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to improper authorization, insufficient input validation, improper input processing, missing authorization, Improper Authentication, Out-of-Bounds Read, Cleartext Storage of Sensitive Information, and memory handling issues. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
+    "softwareAffected": [
+      "MongoDB Server 7.0 versions prior to 7.0.40",
+      "MongoDB Server 8.0 versions prior to 8.0.29",
+      "MongoDB Server 8.3 versions prior to 8.3.8",
+      "MongoDB Driver 4.11.0 affects versions prior to 5.9.2",
+      "Schema Builder CLI 1.0.0 affects versions prior to 1.2.1",
+      "BI Connector ODBC Driver 1.0.0 affects versions prior to 1.4.9",
+      "Atlas SQL ODBC Driver 1.0.0 affects versions prior to 2.0.9"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
+    "riskAssessment": "High risk of security control bypass, information disclosure, and denial of service",
+    "impactAssessment": "Potential of memory corruption, perform unauthorized operations, and system compromise.",
+    "cves": [
+      "CVE-2026-19003",
+      "CVE-2026-19004",
+      "CVE-2026-18888",
+      "CVE-2026-19001",
+      "CVE-2026-19002",
+      "CVE-2026-19503",
+      "CVE-2026-19502",
+      "CVE-2026-18710",
+      "CVE-2026-18712",
+      "CVE-2026-18711",
+      "CVE-2026-18709",
+      "CVE-2026-18698",
+      "CVE-2026-18690",
+      "CVE-2026-18699",
+      "CVE-2026-18691",
+      "CVE-2026-18702",
+      "CVE-2026-18694",
+      "CVE-2026-18708",
+      "CVE-2026-18696",
+      "CVE-2026-18700",
+      "CVE-2026-18701",
+      "CVE-2026-18697",
+      "CVE-2026-18693",
+      "CVE-2026-18705",
+      "CVE-2026-18704",
+      "CVE-2026-18692",
+      "CVE-2026-18688"
     ],
     "solutionLinks": []
   },
@@ -514,27 +514,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Plugins",
-    "severity": "high",
-    "date": "2026-08-11",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
-    "code": "CIVN-2026-0404",
-    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
-    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
-    "softwareAffected": [
-      "Drupal Entity Browser module versions prior to 8.x-2.16",
-      "Drupal Edit in-place field module versions prior to 2.1.1"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
-    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
-    "cves": [
-      "CVE-2026-18985",
-      "CVE-2026-18986"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "critical",
     "date": "2026-08-11",
@@ -580,6 +559,48 @@
       "CVE-2026-63508",
       "CVE-2026-62873",
       "CVE-2026-70332"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Plugins",
+    "severity": "high",
+    "date": "2026-08-11",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
+    "code": "CIVN-2026-0404",
+    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
+    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
+    "softwareAffected": [
+      "Drupal Entity Browser module versions prior to 8.x-2.16",
+      "Drupal Edit in-place field module versions prior to 2.1.1"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
+    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
+    "cves": [
+      "CVE-2026-18985",
+      "CVE-2026-18986"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in Apple macOS",
+    "severity": "high",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0398",
+    "code": "CIVN-2026-0398",
+    "summary": "A vulnerability has been reported in Apple macOS that could allow an attacker on the network to authenticate to screen sharing without valid credentials on the targeted system.",
+    "description": "Apple macOS is an operating system developed by Apple Inc. for Mac computers. It is designed to provide a secure, efficient, and seamless computing experience on Apple Mac computers. A vulnerability has been reported in Apple macOS due to authentication issue in Screen Sharing. Successful exploitation of this vulnerability could allow an attacker on the network to authenticate to Screen Sharing without valid credentials on the targeted system.",
+    "softwareAffected": [
+      "MacOS Sonoma versions prior to 14.8.9",
+      "MacOS Sequoia versions prior to 15.7.9",
+      "MacOS Tahoe versions prior to 26.6.1"
+    ],
+    "targetAudience": "Individuals and organizations using the affected versions of Apple macOS.",
+    "riskAssessment": "High risk of unauthorized access and sensitive data disclosure.",
+    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "cves": [
+      "CVE-2026-65400"
     ],
     "solutionLinks": []
   },
@@ -663,27 +684,6 @@
     "impactAssessment": "Unauthorized access to sensitive data, data manipulation, and complete system compromise.",
     "cves": [
       "CVE-2026-63077"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in Apple macOS",
-    "severity": "high",
-    "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0398",
-    "code": "CIVN-2026-0398",
-    "summary": "A vulnerability has been reported in Apple macOS that could allow an attacker on the network to authenticate to screen sharing without valid credentials on the targeted system.",
-    "description": "Apple macOS is an operating system developed by Apple Inc. for Mac computers. It is designed to provide a secure, efficient, and seamless computing experience on Apple Mac computers. A vulnerability has been reported in Apple macOS due to authentication issue in Screen Sharing. Successful exploitation of this vulnerability could allow an attacker on the network to authenticate to Screen Sharing without valid credentials on the targeted system.",
-    "softwareAffected": [
-      "MacOS Sonoma versions prior to 14.8.9",
-      "MacOS Sequoia versions prior to 15.7.9",
-      "MacOS Tahoe versions prior to 26.6.1"
-    ],
-    "targetAudience": "Individuals and organizations using the affected versions of Apple macOS.",
-    "riskAssessment": "High risk of unauthorized access and sensitive data disclosure.",
-    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
-    "cves": [
-      "CVE-2026-65400"
     ],
     "solutionLinks": []
   },
