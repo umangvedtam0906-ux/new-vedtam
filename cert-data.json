@@ -1,5 +1,102 @@
 [
   {
+    "title": "Arbitrary Code Execution Vulnerability in Elementor Elementor Pro Plugin of Wordpress",
+    "severity": "critical",
+    "date": "2026-08-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0419",
+    "code": "CIVN-2026-0419",
+    "summary": "A vulnerability has been reported in Elementor Pro WordPress plugin which could be exploited by an attacker to upload executable files for remote code execution on the targeted system.",
+    "description": "WordPress Pro Elementor Plugin is a powerful website-building",
+    "softwareAffected": [
+      "WordPress Elementor Pro versions prior to 4.2.2"
+    ],
+    "targetAudience": "All organizations and individuals using WordPress Plugins.",
+    "riskAssessment": "Critical risks of unauthorized file upload and remote code execution.",
+    "impactAssessment": "Potential for unauthorized modification of website content, and system compromise.",
+    "cves": [
+      "CVE-2026-32475"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Mozilla Products",
+    "severity": "high",
+    "date": "2026-08-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0418",
+    "code": "CIVN-2026-0418",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla Firefox, Firefox ESR, and Thunderbird that could allow an attacker to bypass security protections, disclose sensitive information, escalate privileges, or cause denial-of-service conditions on affected systems.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by Mozilla. Firefox ESR (Extended Support Release) is a version of Firefox intended for organizations that require extended support and stability. Mozilla Thunderbird is an open-source email client developed by the Mozilla. Multiple vulnerabilities have been reported in Mozilla Firefox, Firefox ESR, and Thunderbird due to memory safety issues, use-after-free vulnerabilities, improper security boundary enforcement, race conditions, privilege escalation flaws, information disclosure issues, and other security-related flaws. Successful exploitation of these vulnerabilities could allow an attacker to bypass security protections, disclose sensitive information, escalate privileges, or cause denial-of-service conditions on affected systems.",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 154",
+      "Mozilla Firefox ESR versions prior to 115.39, 140.14 and 153.1",
+      "Mozilla Thunderbird versions prior to 140.14, 153.1 and 154"
+    ],
+    "targetAudience": "All organizations and individuals using the affected Mozilla Firefox, Firefox ESR, and Thunderbird products.",
+    "riskAssessment": "High risk of unauthorized access, privilege escalation, information disclosure, security boundary bypass, and compromise of affected systems.",
+    "impactAssessment": "Potential for data theft, sensitive information disclosure and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-74934",
+      "CVE-2026-74935",
+      "CVE-2026-74936",
+      "CVE-2026-74937",
+      "CVE-2026-74938",
+      "CVE-2026-74939",
+      "CVE-2026-74940",
+      "CVE-2026-74941",
+      "CVE-2026-74942",
+      "CVE-2026-74943",
+      "CVE-2026-74944",
+      "CVE-2026-74945",
+      "CVE-2026-74946",
+      "CVE-2026-74947",
+      "CVE-2026-74948",
+      "CVE-2026-74949",
+      "CVE-2026-74950",
+      "CVE-2026-74951",
+      "CVE-2026-74952",
+      "CVE-2026-74953",
+      "CVE-2026-74954",
+      "CVE-2026-74955",
+      "CVE-2026-74956",
+      "CVE-2026-74957",
+      "CVE-2026-74958",
+      "CVE-2026-74959",
+      "CVE-2026-74960",
+      "CVE-2026-74961",
+      "CVE-2026-74962",
+      "CVE-2026-74963",
+      "CVE-2026-74964",
+      "CVE-2026-74965",
+      "CVE-2026-74966",
+      "CVE-2026-74967",
+      "CVE-2026-74968",
+      "CVE-2026-74969",
+      "CVE-2026-74970",
+      "CVE-2026-74971",
+      "CVE-2026-74972",
+      "CVE-2026-74973",
+      "CVE-2026-74974",
+      "CVE-2026-74975",
+      "CVE-2026-74976",
+      "CVE-2026-74977",
+      "CVE-2026-74978",
+      "CVE-2026-74979",
+      "CVE-2026-74980",
+      "CVE-2026-74981",
+      "CVE-2026-74982",
+      "CVE-2026-74983",
+      "CVE-2026-74984",
+      "CVE-2026-74985",
+      "CVE-2026-74986",
+      "CVE-2026-74987",
+      "CVE-2026-74988",
+      "CVE-2026-74989",
+      "CVE-2026-74990",
+      "CVE-2026-75874"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Out-of-Band Blind XML External Entity Injection Vulnerability in Cisco BroadWorks",
     "severity": "high",
     "date": "2026-08-21",
@@ -22,6 +119,23 @@
     "solutionLinks": []
   },
   {
+    "title": "A End of Mainstream for Windows Server 2022",
+    "severity": "high",
+    "date": "2026-08-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0042",
+    "code": "CIAD-2026-0042",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Microsoft has announced that Windows Server 2022 is approaching the end of its mainstream support lifecycle. On October 13, 2026, Windows Server 2022 will reach the end of mainstream support. The October 2026 security update will be the last mainstream support update available for this version. Upon reaching the end of mainstream support, Windows Server 2022 will transition to extended support. This transition includes security updates at no additional cost, and the system will continue to receive monthly security updates through October 14, 2031. To ensure environments remain fully supported under mainstream support, Microsoft recommends planning an upgrade to Windows Server 2025, which is the latest Long-Term Servicing Channel (LTSC) release.",
+    "softwareAffected": [
+      "Windows Server 2022"
+    ],
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Server-Side Request Forgery Vulnerability in MLflow",
     "severity": "critical",
     "date": "2026-08-20",
@@ -41,19 +155,23 @@
     "solutionLinks": []
   },
   {
-    "title": "A End of Mainstream for Windows Server 2022",
-    "severity": "high",
-    "date": "2026-08-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0042",
-    "code": "CIAD-2026-0042",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Microsoft has announced that Windows Server 2022 is approaching the end of its mainstream support lifecycle. On October 13, 2026, Windows Server 2022 will reach the end of mainstream support. The October 2026 security update will be the last mainstream support update available for this version. Upon reaching the end of mainstream support, Windows Server 2022 will transition to extended support. This transition includes security updates at no additional cost, and the system will continue to receive monthly security updates through October 14, 2031. To ensure environments remain fully supported under mainstream support, Microsoft recommends planning an upgrade to Windows Server 2025, which is the latest Long-Term Servicing Channel (LTSC) release.",
+    "title": "Multiple Vulnerabilities in Apple Products",
+    "severity": "critical",
+    "date": "2026-08-19",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0041",
+    "code": "CIAD-2026-0041",
+    "summary": "Multiple vulnerabilities have been reported in Apple products which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Multiple vulnerabilities exist in Apple products due to memory corruption, use-after-free, out-of-bounds read/write, buffer overflow, integer overflow, type confusion, authentication, authorization, permission, and logic issues across various Apple components, including CoreAudio, ImageIO, Kernel, WebKit, IOGPUFamily, AVEVideoEncoder, SceneKit, Model I/O, and other system frameworks. Successful exploitation of these vulnerabilities could enable targeted attacks, potentially allowing attackers to execute arbitrary code with elevated privileges, access sensitive information, compromise application or system security boundaries, or cause denial-of-service conditions on affected Apple devices. For complete list of affected products, CVEs, workarounds and",
     "softwareAffected": [
-      "Windows Server 2022"
+      "Apple iOS versions prior to 26.6.1",
+      "Apple iPadOS versions prior to 26.6.1",
+      "Apple iOS versions prior to 18.7.10",
+      "Apple iPadOS versions prior to 18.7.10",
+      "Apple macOS Tahoe versions prior to 26.6.2"
     ],
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
+    "targetAudience": "All end-user organizations and individuals using the Apple iOS, ipadOS and macOS devices.",
+    "riskAssessment": "Very High risk of extremely sophisticated attack or arbitrary code execution.",
+    "impactAssessment": "Potential for sophisticated targeted attacks.",
     "cves": [],
     "solutionLinks": []
   },
@@ -77,27 +195,6 @@
       "CVE-2026-19695",
       "CVE-2026-19696"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Apple Products",
-    "severity": "critical",
-    "date": "2026-08-19",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0041",
-    "code": "CIAD-2026-0041",
-    "summary": "Multiple vulnerabilities have been reported in Apple products which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Multiple vulnerabilities exist in Apple products due to memory corruption, use-after-free, out-of-bounds read/write, buffer overflow, integer overflow, type confusion, authentication, authorization, permission, and logic issues across various Apple components, including CoreAudio, ImageIO, Kernel, WebKit, IOGPUFamily, AVEVideoEncoder, SceneKit, Model I/O, and other system frameworks. Successful exploitation of these vulnerabilities could enable targeted attacks, potentially allowing attackers to execute arbitrary code with elevated privileges, access sensitive information, compromise application or system security boundaries, or cause denial-of-service conditions on affected Apple devices. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Apple iOS versions prior to 26.6.1",
-      "Apple iPadOS versions prior to 26.6.1",
-      "Apple iOS versions prior to 18.7.10",
-      "Apple iPadOS versions prior to 18.7.10",
-      "Apple macOS Tahoe versions prior to 26.6.2"
-    ],
-    "targetAudience": "All end-user organizations and individuals using the Apple iOS, ipadOS and macOS devices.",
-    "riskAssessment": "Very High risk of extremely sophisticated attack or arbitrary code execution.",
-    "impactAssessment": "Potential for sophisticated targeted attacks.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -342,21 +439,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Reports on Apple Threat Notifications",
-    "severity": "high",
-    "date": "2026-08-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
-    "code": "CIAD-2026-0039",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-08-14",
@@ -381,6 +463,21 @@
     "solutionLinks": []
   },
   {
+    "title": "Reports on Apple Threat Notifications",
+    "severity": "high",
+    "date": "2026-08-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
+    "code": "CIAD-2026-0039",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "SQL Injection vulnerability in Metabase",
     "severity": "critical",
     "date": "2026-08-13",
@@ -394,6 +491,74 @@
     "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
     "cves": [
       "CVE-2026-72898"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
+    "code": "CIVN-2026-0408",
+    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using WordPress.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
+    "cves": [
+      "CVE-2026-64638"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Langflow OSS",
+    "severity": "critical",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0407",
+    "code": "CIVN-2026-0407",
+    "summary": "A remote code execution vulnerability has been reported in Langflow OSS, which could allow an unauthenticated remote attacker to execute arbitrary code on the affected system.",
+    "description": "Langflow OSS is an open-source platform for building and deploying AI-powered workflows and applications. An unauthenticated remote code execution vulnerability exists in Langflow OSS due to improper authentication and unsafe handling of user-supplied Python code. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to obtain a SUPERUSER bearer token through the auto-login endpoint and subsequently execute arbitrary Python code on the affected Langflow server through the code validation endpoint. The attacker may thereby execute arbitrary commands with the privileges of the Langflow process. According to the vendor, the vulnerability affects default deployments where the auto-login feature is enabled and the validation endpoint is network-accessible. Successful exploitation could allow an attacker to compromise the confidentiality, integrity, and availability of the affected system.",
+    "softwareAffected": [
+      "Langflow OSS 1.0.0 through 1.10.0"
+    ],
+    "targetAudience": "All organizations and individuals using Langflow OSS.",
+    "riskAssessment": "Critical risk of arbitrary code execution, which could lead to complete compromise of the affected Langflow instance and the underlying system.",
+    "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
+    "cves": [
+      "CVE-2026-9198"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0038",
+    "code": "CIAD-2026-0038",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-68820: This vulnerability exists in the Microsoft Windows Ancillary Function Driver for WinSock due to a use-after-free condition. A locally authenticated attacker could exploit this vulnerability to elevate privileges and execute code with SYSTEM-level privileges on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "Developer Tools",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-68820"
     ],
     "solutionLinks": []
   },
@@ -447,95 +612,6 @@
   },
   {
     "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0038",
-    "code": "CIAD-2026-0038",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-68820: This vulnerability exists in the Microsoft Windows Ancillary Function Driver for WinSock due to a use-after-free condition. A locally authenticated attacker could exploit this vulnerability to elevate privileges and execute code with SYSTEM-level privileges on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "Developer Tools",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-68820"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
-    "code": "CIVN-2026-0408",
-    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using WordPress.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
-    "cves": [
-      "CVE-2026-64638"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Langflow OSS",
-    "severity": "critical",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0407",
-    "code": "CIVN-2026-0407",
-    "summary": "A remote code execution vulnerability has been reported in Langflow OSS, which could allow an unauthenticated remote attacker to execute arbitrary code on the affected system.",
-    "description": "Langflow OSS is an open-source platform for building and deploying AI-powered workflows and applications. An unauthenticated remote code execution vulnerability exists in Langflow OSS due to improper authentication and unsafe handling of user-supplied Python code. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to obtain a SUPERUSER bearer token through the auto-login endpoint and subsequently execute arbitrary Python code on the affected Langflow server through the code validation endpoint. The attacker may thereby execute arbitrary commands with the privileges of the Langflow process. According to the vendor, the vulnerability affects default deployments where the auto-login feature is enabled and the validation endpoint is network-accessible. Successful exploitation could allow an attacker to compromise the confidentiality, integrity, and availability of the affected system.",
-    "softwareAffected": [
-      "Langflow OSS 1.0.0 through 1.10.0"
-    ],
-    "targetAudience": "All organizations and individuals using Langflow OSS.",
-    "riskAssessment": "Critical risk of arbitrary code execution, which could lead to complete compromise of the affected Langflow instance and the underlying system.",
-    "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
-    "cves": [
-      "CVE-2026-9198"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Drupal Plugins",
-    "severity": "high",
-    "date": "2026-08-11",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
-    "code": "CIVN-2026-0404",
-    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
-    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
-    "softwareAffected": [
-      "Drupal Entity Browser module versions prior to 8.x-2.16",
-      "Drupal Edit in-place field module versions prior to 2.1.1"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
-    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
-    "cves": [
-      "CVE-2026-18985",
-      "CVE-2026-18986"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "critical",
     "date": "2026-08-11",
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0403",
@@ -580,6 +656,69 @@
       "CVE-2026-63508",
       "CVE-2026-62873",
       "CVE-2026-70332"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Plugins",
+    "severity": "high",
+    "date": "2026-08-11",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
+    "code": "CIVN-2026-0404",
+    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
+    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
+    "softwareAffected": [
+      "Drupal Entity Browser module versions prior to 8.x-2.16",
+      "Drupal Edit in-place field module versions prior to 2.1.1"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
+    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
+    "cves": [
+      "CVE-2026-18985",
+      "CVE-2026-18986"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
+    "severity": "high",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
+    "code": "CIVN-2026-0402",
+    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
+    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
+    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-20288",
+      "CVE-2026-20200"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in cPanel & WHM",
+    "severity": "critical",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0400",
+    "code": "CIVN-2026-0400",
+    "summary": "A vulnerability has been reported in in cPanel & WHM, which could allow a remote attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
+    "description": "cPanel & WHM is a widely used web hosting control panel that provides administrative (WHM) and user-level (cPanel) interfaces for managing servers and websites. This vulnerability exists in cPanel & WHM due to improper preservation of SQL mode during database renaming in cPanel. A remote authenticated attacker could exploit this vulnerability to execute arbitrary database commands with full administrative privileges. Successful exploitation of this vulnerability could allow the attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
+    "softwareAffected": [
+      "cPanel & WHM (Web Host Manager) versions",
+      "prior to 11.136.0.32",
+      "prior to 11.134.0.48",
+      "prior to 11.126.0.78",
+      "prior to 11.110.0.137",
+      "WP Squared version prior to 138.1.6"
+    ],
+    "targetAudience": "Organizations and individuals using affected cPanel & WHM-based hosting environments.",
+    "riskAssessment": "High risk of Privilege escalation and operating-system level compromise.",
+    "impactAssessment": "Potential for execution of arbitrary database commands with full administrative privileges.",
+    "cves": [
+      "CVE-2026-58048"
     ],
     "solutionLinks": []
   },
@@ -642,48 +781,6 @@
     "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
     "cves": [
       "CVE-2026-65400"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
-    "severity": "high",
-    "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
-    "code": "CIVN-2026-0402",
-    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
-    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
-    "softwareAffected": "",
-    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
-    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
-    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
-    "cves": [
-      "CVE-2026-20288",
-      "CVE-2026-20200"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Privilege Escalation Vulnerability in cPanel & WHM",
-    "severity": "critical",
-    "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0400",
-    "code": "CIVN-2026-0400",
-    "summary": "A vulnerability has been reported in in cPanel & WHM, which could allow a remote attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
-    "description": "cPanel & WHM is a widely used web hosting control panel that provides administrative (WHM) and user-level (cPanel) interfaces for managing servers and websites. This vulnerability exists in cPanel & WHM due to improper preservation of SQL mode during database renaming in cPanel. A remote authenticated attacker could exploit this vulnerability to execute arbitrary database commands with full administrative privileges. Successful exploitation of this vulnerability could allow the attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
-    "softwareAffected": [
-      "cPanel & WHM (Web Host Manager) versions",
-      "prior to 11.136.0.32",
-      "prior to 11.134.0.48",
-      "prior to 11.126.0.78",
-      "prior to 11.110.0.137",
-      "WP Squared version prior to 138.1.6"
-    ],
-    "targetAudience": "Organizations and individuals using affected cPanel & WHM-based hosting environments.",
-    "riskAssessment": "High risk of Privilege escalation and operating-system level compromise.",
-    "impactAssessment": "Potential for execution of arbitrary database commands with full administrative privileges.",
-    "cves": [
-      "CVE-2026-58048"
     ],
     "solutionLinks": []
   },
