@@ -231,26 +231,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
-    "severity": "high",
-    "date": "2026-08-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
-    "code": "CIVN-2026-0411",
-    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
-    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
-    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
-    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
-    "cves": [
-      "CVE-2026-20349"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-08-17",
@@ -342,6 +322,41 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
+    "severity": "high",
+    "date": "2026-08-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
+    "code": "CIVN-2026-0411",
+    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
+    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
+    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
+    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
+    "cves": [
+      "CVE-2026-20349"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Reports on Apple Threat Notifications",
+    "severity": "high",
+    "date": "2026-08-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
+    "code": "CIAD-2026-0039",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-08-14",
@@ -366,21 +381,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Reports on Apple Threat Notifications",
-    "severity": "high",
-    "date": "2026-08-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
-    "code": "CIAD-2026-0039",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "SQL Injection vulnerability in Metabase",
     "severity": "critical",
     "date": "2026-08-13",
@@ -394,44 +394,6 @@
     "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
     "cves": [
       "CVE-2026-72898"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
-    "code": "CIVN-2026-0408",
-    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using WordPress.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
-    "cves": [
-      "CVE-2026-64638"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Langflow OSS",
-    "severity": "critical",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0407",
-    "code": "CIVN-2026-0407",
-    "summary": "A remote code execution vulnerability has been reported in Langflow OSS, which could allow an unauthenticated remote attacker to execute arbitrary code on the affected system.",
-    "description": "Langflow OSS is an open-source platform for building and deploying AI-powered workflows and applications. An unauthenticated remote code execution vulnerability exists in Langflow OSS due to improper authentication and unsafe handling of user-supplied Python code. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to obtain a SUPERUSER bearer token through the auto-login endpoint and subsequently execute arbitrary Python code on the affected Langflow server through the code validation endpoint. The attacker may thereby execute arbitrary commands with the privileges of the Langflow process. According to the vendor, the vulnerability affects default deployments where the auto-login feature is enabled and the validation endpoint is network-accessible. Successful exploitation could allow an attacker to compromise the confidentiality, integrity, and availability of the affected system.",
-    "softwareAffected": [
-      "Langflow OSS 1.0.0 through 1.10.0"
-    ],
-    "targetAudience": "All organizations and individuals using Langflow OSS.",
-    "riskAssessment": "Critical risk of arbitrary code execution, which could lead to complete compromise of the affected Langflow instance and the underlying system.",
-    "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
-    "cves": [
-      "CVE-2026-9198"
     ],
     "solutionLinks": []
   },
@@ -514,6 +476,65 @@
     "solutionLinks": []
   },
   {
+    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
+    "code": "CIVN-2026-0408",
+    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using WordPress.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
+    "cves": [
+      "CVE-2026-64638"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Langflow OSS",
+    "severity": "critical",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0407",
+    "code": "CIVN-2026-0407",
+    "summary": "A remote code execution vulnerability has been reported in Langflow OSS, which could allow an unauthenticated remote attacker to execute arbitrary code on the affected system.",
+    "description": "Langflow OSS is an open-source platform for building and deploying AI-powered workflows and applications. An unauthenticated remote code execution vulnerability exists in Langflow OSS due to improper authentication and unsafe handling of user-supplied Python code. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to obtain a SUPERUSER bearer token through the auto-login endpoint and subsequently execute arbitrary Python code on the affected Langflow server through the code validation endpoint. The attacker may thereby execute arbitrary commands with the privileges of the Langflow process. According to the vendor, the vulnerability affects default deployments where the auto-login feature is enabled and the validation endpoint is network-accessible. Successful exploitation could allow an attacker to compromise the confidentiality, integrity, and availability of the affected system.",
+    "softwareAffected": [
+      "Langflow OSS 1.0.0 through 1.10.0"
+    ],
+    "targetAudience": "All organizations and individuals using Langflow OSS.",
+    "riskAssessment": "Critical risk of arbitrary code execution, which could lead to complete compromise of the affected Langflow instance and the underlying system.",
+    "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
+    "cves": [
+      "CVE-2026-9198"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Plugins",
+    "severity": "high",
+    "date": "2026-08-11",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
+    "code": "CIVN-2026-0404",
+    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
+    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
+    "softwareAffected": [
+      "Drupal Entity Browser module versions prior to 8.x-2.16",
+      "Drupal Edit in-place field module versions prior to 2.1.1"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
+    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
+    "cves": [
+      "CVE-2026-18985",
+      "CVE-2026-18986"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "critical",
     "date": "2026-08-11",
@@ -563,45 +584,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Plugins",
-    "severity": "high",
-    "date": "2026-08-11",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
-    "code": "CIVN-2026-0404",
-    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
-    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
-    "softwareAffected": [
-      "Drupal Entity Browser module versions prior to 8.x-2.16",
-      "Drupal Edit in-place field module versions prior to 2.1.1"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
-    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
-    "cves": [
-      "CVE-2026-18985",
-      "CVE-2026-18986"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
-    "severity": "high",
-    "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
-    "code": "CIVN-2026-0402",
-    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
-    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
-    "softwareAffected": "",
-    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
-    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
-    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
-    "cves": [
-      "CVE-2026-20288",
-      "CVE-2026-20200"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in JetBrains TeamCity",
     "severity": "critical",
     "date": "2026-08-10",
@@ -621,26 +603,24 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in cPanel & WHM",
+    "title": "Multiple Vulnerabilities in Veeam Service Provider Console",
     "severity": "critical",
     "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0400",
-    "code": "CIVN-2026-0400",
-    "summary": "A vulnerability has been reported in in cPanel & WHM, which could allow a remote attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
-    "description": "cPanel & WHM is a widely used web hosting control panel that provides administrative (WHM) and user-level (cPanel) interfaces for managing servers and websites. This vulnerability exists in cPanel & WHM due to improper preservation of SQL mode during database renaming in cPanel. A remote authenticated attacker could exploit this vulnerability to execute arbitrary database commands with full administrative privileges. Successful exploitation of this vulnerability could allow the attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0399",
+    "code": "CIVN-2026-0399",
+    "summary": "Multiple vulnerabilities have been reported in Veeam Service Provider Console, which could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
+    "description": "Veeam Service Provider Console is a centralized management platform that enables service providers to monitor, manage, and deliver Veeam-powered backup, disaster recovery, and data protection services to multiple customers from a single console. Multiple vulnerabilities have been reported in Veeam Service Provider Console due to missing authentication for critical function, exhaust host memory, authentication bypass using an alternate path or channel, and Improper limitation of a pathname to a restricted directory. Successful exploitation of these vulnerabilities could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
     "softwareAffected": [
-      "cPanel & WHM (Web Host Manager) versions",
-      "prior to 11.136.0.32",
-      "prior to 11.134.0.48",
-      "prior to 11.126.0.78",
-      "prior to 11.110.0.137",
-      "WP Squared version prior to 138.1.6"
+      "Veeam Service Provider Console 9.2.1.33875 and all earlier version 9 builds."
     ],
-    "targetAudience": "Organizations and individuals using affected cPanel & WHM-based hosting environments.",
-    "riskAssessment": "High risk of Privilege escalation and operating-system level compromise.",
-    "impactAssessment": "Potential for execution of arbitrary database commands with full administrative privileges.",
+    "targetAudience": "All organizations and individuals using the affected Veeam Service Provider Console.",
+    "riskAssessment": "High risk of complete system compromise, execution of arbitrary commands, and denial of service (DoS) condition.",
+    "impactAssessment": "Potential for Authentication bypass, arbitrary command execution, and unauthorized administrative access.",
     "cves": [
-      "CVE-2026-58048"
+      "CVE-2026-58073",
+      "CVE-2026-58072",
+      "CVE-2026-58067",
+      "CVE-2026-58071"
     ],
     "solutionLinks": []
   },
@@ -666,24 +646,44 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Veeam Service Provider Console",
+    "title": "Multiple Vulnerabilities in Cisco Integrated Management Controller",
+    "severity": "high",
+    "date": "2026-08-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0402",
+    "code": "CIVN-2026-0402",
+    "summary": "Multiple vulnerabilities exist in the Cisco Integrated Management Controller (IMC) which could allow an authenticated remote attacker to execute arbitrary commands on the affected system.",
+    "description": "Cisco Integrated Management Controller (IMC) is an embedded remote management controller for Cisco UCS servers, providing out-of-band administration and hardware management. Multiple vulnerabilities exist in the web-based management interface of Cisco Integrated Management Controller due to improper validation of user-supplied input. An authenticated remote attacker could exploit these vulnerabilities by submitting crafted inputs to the web-based management interface of the affected software. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using and maintaining CISCO products.",
+    "riskAssessment": "High risk of arbitrary code execution on the underlying operating system.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-20288",
+      "CVE-2026-20200"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in cPanel & WHM",
     "severity": "critical",
     "date": "2026-08-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0399",
-    "code": "CIVN-2026-0399",
-    "summary": "Multiple vulnerabilities have been reported in Veeam Service Provider Console, which could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
-    "description": "Veeam Service Provider Console is a centralized management platform that enables service providers to monitor, manage, and deliver Veeam-powered backup, disaster recovery, and data protection services to multiple customers from a single console. Multiple vulnerabilities have been reported in Veeam Service Provider Console due to missing authentication for critical function, exhaust host memory, authentication bypass using an alternate path or channel, and Improper limitation of a pathname to a restricted directory. Successful exploitation of these vulnerabilities could allow an unauthenticated remote attacker to bypass authentication, arbitrary file write on the management server, cause denial of service (DoS) and gain administrative access on the targeted system.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0400",
+    "code": "CIVN-2026-0400",
+    "summary": "A vulnerability has been reported in in cPanel & WHM, which could allow a remote attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
+    "description": "cPanel & WHM is a widely used web hosting control panel that provides administrative (WHM) and user-level (cPanel) interfaces for managing servers and websites. This vulnerability exists in cPanel & WHM due to improper preservation of SQL mode during database renaming in cPanel. A remote authenticated attacker could exploit this vulnerability to execute arbitrary database commands with full administrative privileges. Successful exploitation of this vulnerability could allow the attacker to gain elevated privileges and execute arbitrary database commands with full administrative privileges on the targeted system.",
     "softwareAffected": [
-      "Veeam Service Provider Console 9.2.1.33875 and all earlier version 9 builds."
+      "cPanel & WHM (Web Host Manager) versions",
+      "prior to 11.136.0.32",
+      "prior to 11.134.0.48",
+      "prior to 11.126.0.78",
+      "prior to 11.110.0.137",
+      "WP Squared version prior to 138.1.6"
     ],
-    "targetAudience": "All organizations and individuals using the affected Veeam Service Provider Console.",
-    "riskAssessment": "High risk of complete system compromise, execution of arbitrary commands, and denial of service (DoS) condition.",
-    "impactAssessment": "Potential for Authentication bypass, arbitrary command execution, and unauthorized administrative access.",
+    "targetAudience": "Organizations and individuals using affected cPanel & WHM-based hosting environments.",
+    "riskAssessment": "High risk of Privilege escalation and operating-system level compromise.",
+    "impactAssessment": "Potential for execution of arbitrary database commands with full administrative privileges.",
     "cves": [
-      "CVE-2026-58073",
-      "CVE-2026-58072",
-      "CVE-2026-58067",
-      "CVE-2026-58071"
+      "CVE-2026-58048"
     ],
     "solutionLinks": []
   },
