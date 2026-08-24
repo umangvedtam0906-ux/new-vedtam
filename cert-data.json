@@ -1,5 +1,31 @@
 [
   {
+    "title": "Multiple vulnerabilities in Google Chrome for Desktop",
+    "severity": "critical",
+    "date": "2026-08-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0420",
+    "code": "CIVN-2026-0420",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome, which could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause Denial of Service (DoS) condition on the targeted system.",
+    "description": "Google Chrome is a popular internet browser that is used for accessing the information available on the World Wide Web. It is designed for use on desktop computers, such as those running on Windows, macOS, or Linux operating systems. These vulnerabilities exist in Google Chrome due to use after free in Chromoting, privilege elevation in Import, incorrect authorization in Workers, race condition in V8, use after free in DOM, buffer overflow in Network, and improper resource control in Linux Toolkit Theming. A remote attacker could exploit these vulnerabilities by persuading a victim to visit a specially crafted webpage. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause Denial of Service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "Google Chrome versions prior to 151.0.7922.173/.174 for Windows and Mac",
+      "Google Chrome versions prior to 151.0.7922.173 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected Google Chrome for Desktop.",
+    "riskAssessment": "Potential for unauthorized access to data, remote code execution, disruption of services.",
+    "impactAssessment": "High risk of system compromise, data theft, service disruption.",
+    "cves": [
+      "CVE-2026-76017",
+      "CVE-2026-76018",
+      "CVE-2026-76019",
+      "CVE-2026-76020",
+      "CVE-2026-76021",
+      "CVE-2026-76022",
+      "CVE-2026-76023"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Arbitrary Code Execution Vulnerability in Elementor Elementor Pro Plugin of Wordpress",
     "severity": "critical",
     "date": "2026-08-24",
