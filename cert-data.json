@@ -1,5 +1,24 @@
 [
   {
+    "title": "Arbitrary Code Execution Vulnerability in Elementor Elementor Pro Plugin of Wordpress",
+    "severity": "critical",
+    "date": "2026-08-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0419",
+    "code": "CIVN-2026-0419",
+    "summary": "A vulnerability has been reported in Elementor Pro WordPress plugin which could be exploited by an attacker to upload executable files for remote code execution on the targeted system.",
+    "description": "WordPress Pro Elementor Plugin is a powerful website-building",
+    "softwareAffected": [
+      "WordPress Elementor Pro versions prior to 4.2.2"
+    ],
+    "targetAudience": "All organizations and individuals using WordPress Plugins.",
+    "riskAssessment": "Critical risks of unauthorized file upload and remote code execution.",
+    "impactAssessment": "Potential for unauthorized modification of website content, and system compromise.",
+    "cves": [
+      "CVE-2026-32475"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
     "date": "2026-08-24",
@@ -22,25 +41,6 @@
       "CVE-2026-76021",
       "CVE-2026-76022",
       "CVE-2026-76023"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Arbitrary Code Execution Vulnerability in Elementor Elementor Pro Plugin of Wordpress",
-    "severity": "critical",
-    "date": "2026-08-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0419",
-    "code": "CIVN-2026-0419",
-    "summary": "A vulnerability has been reported in Elementor Pro WordPress plugin which could be exploited by an attacker to upload executable files for remote code execution on the targeted system.",
-    "description": "WordPress Pro Elementor Plugin is a powerful website-building",
-    "softwareAffected": [
-      "WordPress Elementor Pro versions prior to 4.2.2"
-    ],
-    "targetAudience": "All organizations and individuals using WordPress Plugins.",
-    "riskAssessment": "Critical risks of unauthorized file upload and remote code execution.",
-    "impactAssessment": "Potential for unauthorized modification of website content, and system compromise.",
-    "cves": [
-      "CVE-2026-32475"
     ],
     "solutionLinks": []
   },
@@ -181,6 +181,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Apple Products",
+    "severity": "critical",
+    "date": "2026-08-19",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0041",
+    "code": "CIAD-2026-0041",
+    "summary": "Multiple vulnerabilities have been reported in Apple products which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Multiple vulnerabilities exist in Apple products due to memory corruption, use-after-free, out-of-bounds read/write, buffer overflow, integer overflow, type confusion, authentication, authorization, permission, and logic issues across various Apple components, including CoreAudio, ImageIO, Kernel, WebKit, IOGPUFamily, AVEVideoEncoder, SceneKit, Model I/O, and other system frameworks. Successful exploitation of these vulnerabilities could enable targeted attacks, potentially allowing attackers to execute arbitrary code with elevated privileges, access sensitive information, compromise application or system security boundaries, or cause denial-of-service conditions on affected Apple devices. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Apple iOS versions prior to 26.6.1",
+      "Apple iPadOS versions prior to 26.6.1",
+      "Apple iOS versions prior to 18.7.10",
+      "Apple iPadOS versions prior to 18.7.10",
+      "Apple macOS Tahoe versions prior to 26.6.2"
+    ],
+    "targetAudience": "All end-user organizations and individuals using the Apple iOS, ipadOS and macOS devices.",
+    "riskAssessment": "Very High risk of extremely sophisticated attack or arbitrary code execution.",
+    "impactAssessment": "Potential for sophisticated targeted attacks.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Wireshark",
     "severity": "high",
     "date": "2026-08-19",
@@ -219,27 +240,6 @@
     "cves": [
       "CVE-2026-15748"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Apple Products",
-    "severity": "critical",
-    "date": "2026-08-19",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0041",
-    "code": "CIAD-2026-0041",
-    "summary": "Multiple vulnerabilities have been reported in Apple products which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Multiple vulnerabilities exist in Apple products due to memory corruption, use-after-free, out-of-bounds read/write, buffer overflow, integer overflow, type confusion, authentication, authorization, permission, and logic issues across various Apple components, including CoreAudio, ImageIO, Kernel, WebKit, IOGPUFamily, AVEVideoEncoder, SceneKit, Model I/O, and other system frameworks. Successful exploitation of these vulnerabilities could enable targeted attacks, potentially allowing attackers to execute arbitrary code with elevated privileges, access sensitive information, compromise application or system security boundaries, or cause denial-of-service conditions on affected Apple devices. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Apple iOS versions prior to 26.6.1",
-      "Apple iPadOS versions prior to 26.6.1",
-      "Apple iOS versions prior to 18.7.10",
-      "Apple iPadOS versions prior to 18.7.10",
-      "Apple macOS Tahoe versions prior to 26.6.2"
-    ],
-    "targetAudience": "All end-user organizations and individuals using the Apple iOS, ipadOS and macOS devices.",
-    "riskAssessment": "Very High risk of extremely sophisticated attack or arbitrary code execution.",
-    "impactAssessment": "Potential for sophisticated targeted attacks.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -354,26 +354,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
-    "severity": "high",
-    "date": "2026-08-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
-    "code": "CIVN-2026-0411",
-    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
-    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
-    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
-    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
-    "cves": [
-      "CVE-2026-20349"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-08-17",
@@ -465,6 +445,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
+    "severity": "high",
+    "date": "2026-08-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
+    "code": "CIVN-2026-0411",
+    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
+    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
+    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
+    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
+    "cves": [
+      "CVE-2026-20349"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-08-14",
@@ -521,6 +521,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
+    "code": "CIVN-2026-0408",
+    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
+    "softwareAffected": [
+      "WordPress versions prior to 7.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using WordPress.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
+    "cves": [
+      "CVE-2026-64638"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Langflow OSS",
     "severity": "critical",
     "date": "2026-08-12",
@@ -536,6 +555,33 @@
     "impactAssessment": "Remote unauthenticated exploitation may lead to complete system compromise.",
     "cves": [
       "CVE-2026-9198"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in ClamAV",
+    "severity": "high",
+    "date": "2026-08-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0406",
+    "code": "CIVN-2026-0406",
+    "summary": "Multiple vulnerabilities have been reported in ClamAV, which could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on the affected system.",
+    "description": "ClamAV is an open-source cross-platform antivirus software toolkit owned and maintained by Cisco. Multiple vulnerabilities exist in ClamAV, due to improper boundary checking, memory handling, integer overflow, and improper processing of specially crafted file formats. Successful exploitation of these vulnerabilities could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on an affected system.",
+    "softwareAffected": [
+      "Secure Endpoint Connector for Linux.",
+      "Secure Endpoint Connector for Mac.",
+      "Secure Endpoint Connector for Windows."
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Secure Endpoint Connector products.",
+    "riskAssessment": "High risk of denial-of-service, interruption of malware-scanning operations, and memory corruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20337",
+      "CVE-2026-20338",
+      "CVE-2026-20339",
+      "CVE-2026-20345",
+      "CVE-2026-20346",
+      "CVE-2026-20347",
+      "CVE-2026-20348"
     ],
     "solutionLinks": []
   },
@@ -557,25 +603,6 @@
     "cves": [
       "CVE-2026-8037",
       "CVE-2026-33691"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cross-Site Scripting (XSS) Vulnerability in WordPress",
-    "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0408",
-    "code": "CIVN-2026-0408",
-    "summary": "A Cross-Site Scripting (XSS) vulnerability has been reported in WordPress, which could allow an attacker to execute arbitrary JavaScript on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) used to create, manage, and publish websites and web applications. A Cross-Site Scripting (XSS) vulnerability exist in WordPress due to improper handling and sanitization of input on the login screen. An unauthenticated attacker could exploit this vulnerability to execute arbitrary JavaScript on the targeted system. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary JavaScript and, under specific conditions, potentially execute PHP code, leading to further compromise of the targeted system.",
-    "softwareAffected": [
-      "WordPress versions prior to 7.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using WordPress.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for remote code execution and/or compromise of system.",
-    "cves": [
-      "CVE-2026-64638"
     ],
     "solutionLinks": []
   },
@@ -610,29 +637,23 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in ClamAV",
+    "title": "Multiple Vulnerabilities in Drupal Plugins",
     "severity": "high",
-    "date": "2026-08-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0406",
-    "code": "CIVN-2026-0406",
-    "summary": "Multiple vulnerabilities have been reported in ClamAV, which could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on the affected system.",
-    "description": "ClamAV is an open-source cross-platform antivirus software toolkit owned and maintained by Cisco. Multiple vulnerabilities exist in ClamAV, due to improper boundary checking, memory handling, integer overflow, and improper processing of specially crafted file formats. Successful exploitation of these vulnerabilities could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations on an affected system.",
+    "date": "2026-08-11",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
+    "code": "CIVN-2026-0404",
+    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
+    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
     "softwareAffected": [
-      "Secure Endpoint Connector for Linux.",
-      "Secure Endpoint Connector for Mac.",
-      "Secure Endpoint Connector for Windows."
+      "Drupal Entity Browser module versions prior to 8.x-2.16",
+      "Drupal Edit in-place field module versions prior to 2.1.1"
     ],
-    "targetAudience": "All end-user organizations and individuals using the affected Secure Endpoint Connector products.",
-    "riskAssessment": "High risk of denial-of-service, interruption of malware-scanning operations, and memory corruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
+    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
     "cves": [
-      "CVE-2026-20337",
-      "CVE-2026-20338",
-      "CVE-2026-20339",
-      "CVE-2026-20345",
-      "CVE-2026-20346",
-      "CVE-2026-20347",
-      "CVE-2026-20348"
+      "CVE-2026-18985",
+      "CVE-2026-18986"
     ],
     "solutionLinks": []
   },
@@ -682,27 +703,6 @@
       "CVE-2026-63508",
       "CVE-2026-62873",
       "CVE-2026-70332"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Drupal Plugins",
-    "severity": "high",
-    "date": "2026-08-11",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0404",
-    "code": "CIVN-2026-0404",
-    "summary": "Multiple vulnerabilities have been reported in Drupal contributed modules which may allow an attacker to bypass access controls and modify unauthorized content or execute stored cross-site scripting (XSS) attacks through insufficient input sanitization.",
-    "description": "Drupal is an open-source content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. These vulnerabilities exist in the Drupal modules due to insufficient access control checks when editing entities and improper sanitization of tab titles, resulting in unauthorized modification of entity fields and stored cross-site scripting (XSS). Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, modify unauthorized Drupal content or fields, and perform stored cross-site scripting attacks against users of the affected system.",
-    "softwareAffected": [
-      "Drupal Entity Browser module versions prior to 8.x-2.16",
-      "Drupal Edit in-place field module versions prior to 2.1.1"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized modification of Drupal entities and fields, access control bypass, and stored cross-site scripting attacks.",
-    "impactAssessment": "Potential for unauthorized modification of content and fields, bypass of security restrictions, execution of malicious scripts in the context of affected users, and compromise of sensitive website functionality.",
-    "cves": [
-      "CVE-2026-18985",
-      "CVE-2026-18986"
     ],
     "solutionLinks": []
   },
