@@ -263,3 +263,4 @@
 [cert-updater] 2026-08-25T18:58:58.358Z — Saved 477 advisories (11 fresh).
 [cert-updater] 2026-08-26T01:59:41.322Z — Saved 478 advisories (21 fresh).
 [cert-updater] 2026-08-26T07:10:22.831Z — Saved 478 advisories (8 fresh).
+[cert-updater] 2026-08-26T13:17:39.720Z — Saved 478 advisories (19 fresh).
