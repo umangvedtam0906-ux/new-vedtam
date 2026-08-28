@@ -1,5 +1,49 @@
 [
   {
+    "title": "Hardcoded Credentials Vulnerability in CP Plus Router",
+    "severity": "high",
+    "date": "2026-08-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0428",
+    "code": "CIVN-2026-0428",
+    "summary": "A vulnerability has been reported in CP Plus Router, which could allow an attacker on the local network to gain unauthorized administrative access to the targeted device.",
+    "description": "The CP Plus CP-XR-DE21-S is a 4G LTE router designed for high-speed internet connectivity, suitable for home and small-office use. This vulnerability exists in the CP Plus Router due to the presence of hardcoded HTTP Digest authentication credentials in the firmware that are identical across all devices running the affected firmware. An attacker with access to the local network could exploit this vulnerability by obtaining the hardcoded authentication information from the firmware. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized administrative access and perform privileged operations on the targeted device. Credit This vulnerability is reported by Stalin S, Harini M, Rohit Surya A T and Reginald Alfret V.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of CP Plus CP-XR-DE21-S Router.",
+    "riskAssessment": "Unauthorized administrative access to the targeted device.",
+    "impactAssessment": "Gain full administrative control of the targeted device.",
+    "cves": [
+      "CVE-2026-19412"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-08-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0043",
+    "code": "CIAD-2026-0043",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could be exploited by a remote attacker to gain unauthorized access, execute arbitrary code, disclose sensitive information, manipulate data, bypass security controls, or cause denial-of-service conditions on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle MySQL",
+      "Oracle Access Manager",
+      "Oracle Supply Chain Products",
+      "Oracle Analytics",
+      "Oracle Commerce",
+      "Oracle Communications",
+      "Oracle Database Server",
+      "Oracle E-Business Suite",
+      "Oracle Enterprise Manager",
+      "Oracle Financial Services Applications",
+      "For complete list of affected products and versions refer to the Oracle advisory: https://www.oracle.com/security-alerts/cspuaug2026.html"
+    ],
+    "targetAudience": "Organizations and IT administrators using Oracle Corporation products.",
+    "riskAssessment": "Risk of remote code execution, unauthorized access, sensitive information disclosure, data manipulation, or denial-of-service conditions.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, data manipulation, and security control bypass, and disruption of affected systems.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-08-27",
