@@ -81,6 +81,29 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
+    "severity": "critical",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
+    "code": "CIVN-2026-0425",
+    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "softwareAffected": [
+      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
+      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
+      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
+      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of denial of service and authentication bypass.",
+    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-19489",
+      "CVE-2026-19490"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Fortinet Products",
     "severity": "high",
     "date": "2026-08-27",
@@ -109,29 +132,6 @@
       "CVE-2026-70465",
       "CVE-2026-26035",
       "CVE-2026-70468"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
-    "code": "CIVN-2026-0425",
-    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "softwareAffected": [
-      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
-      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
-      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
-      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "High risk of denial of service and authentication bypass.",
-    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-19489",
-      "CVE-2026-19490"
     ],
     "solutionLinks": []
   },
