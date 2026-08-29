@@ -44,56 +44,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
-    "code": "CIVN-2026-0425",
-    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "softwareAffected": [
-      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
-      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
-      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
-      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "High risk of denial of service and authentication bypass.",
-    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-19489",
-      "CVE-2026-19490"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Zoom Products",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0423",
-    "code": "CIVN-2026-0423",
-    "summary": "Multiple vulnerabilities have been reported in Zoom products that could allow a remote attacker to execute arbitrary code, cause a denial of service (DoS), and gain access to sensitive information on the targeted system.",
-    "description": "Zoom is a communications platform that provides video conferencing, team chat, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to memory corruption and path traversal issues. Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial of service (DoS), and perform information disclosure on targeted systems.",
-    "softwareAffected": [
-      "Zoom Workplace (all supported platforms) before versions 7.1.5 and 7.0.6 in their respective branches",
-      "Zoom Workplace VDI Client for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
-      "Zoom Workplace VDI Plugin for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
-      "Zoom Rooms (all supported platforms) before version 7.1.5",
-      "Zoom Meeting SDK (all supported platforms) before version 7.1.5",
-      "Zoom Video SDK all supported platforms before version 2.6.5"
-    ],
-    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
-    "riskAssessment": "High risk of remote code execution, denial of service, and unauthorized information disclosure.",
-    "impactAssessment": "Potential for complete compromise.",
-    "cves": [
-      "CVE-2026-53413",
-      "CVE-2026-53414",
-      "CVE-2026-53415",
-      "CVE-2026-53416"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-08-27",
@@ -163,26 +113,52 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Secure Workload",
+    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
     "severity": "critical",
-    "date": "2026-08-25",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0422",
-    "code": "CIVN-2026-0422",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Workload, which could allow an attacker to bypass authentication, gain elevated privileges, gain access to sensitive information and execute arbitrary commands on the affected system.",
-    "description": "Cisco Secure Workload is a security platform that provides application segmentation, workload protection, and visibility across data centre, cloud, and hybrid environments. Multiple vulnerabilities exist in Cisco Secure Workload due to improper access control, improper authentication, improper input validation, improper neutralization of special elements and memory corruption issues. An attacker could exploit these vulnerabilities by sending specially crafted requests or inputs to affected Cisco Secure Workload components. Successful exploitation could allow an attacker to bypass authentication, gain elevated privileges, gain access to sensitive information and execute arbitrary commands on the affected system.",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
+    "code": "CIVN-2026-0425",
+    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
     "softwareAffected": [
-      "Cisco Secure Workload versions prior to 3.10.9.1 (for 3.10 and earlier)",
-      "Cisco Secure Workload versions prior to 4.0.4.16 (for 4.0)"
+      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
+      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
+      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
+      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
     ],
-    "targetAudience": "All end user organizations and individuals using Cisco Secure Workload (SaaS and On-premises deployments).",
-    "riskAssessment": "High risk of unauthorized access, command execution, privilege escalation.",
-    "impactAssessment": "Potential for complete system compromise.",
+    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of denial of service and authentication bypass.",
+    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
     "cves": [
-      "CVE-2026-20315",
-      "CVE-2026-20317",
-      "CVE-2026-20231",
-      "CVE-2026-20318",
-      "CVE-2026-20319"
+      "CVE-2026-19489",
+      "CVE-2026-19490"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Zoom Products",
+    "severity": "critical",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0423",
+    "code": "CIVN-2026-0423",
+    "summary": "Multiple vulnerabilities have been reported in Zoom products that could allow a remote attacker to execute arbitrary code, cause a denial of service (DoS), and gain access to sensitive information on the targeted system.",
+    "description": "Zoom is a communications platform that provides video conferencing, team chat, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to memory corruption and path traversal issues. Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial of service (DoS), and perform information disclosure on targeted systems.",
+    "softwareAffected": [
+      "Zoom Workplace (all supported platforms) before versions 7.1.5 and 7.0.6 in their respective branches",
+      "Zoom Workplace VDI Client for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
+      "Zoom Workplace VDI Plugin for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
+      "Zoom Rooms (all supported platforms) before version 7.1.5",
+      "Zoom Meeting SDK (all supported platforms) before version 7.1.5",
+      "Zoom Video SDK all supported platforms before version 2.6.5"
+    ],
+    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
+    "riskAssessment": "High risk of remote code execution, denial of service, and unauthorized information disclosure.",
+    "impactAssessment": "Potential for complete compromise.",
+    "cves": [
+      "CVE-2026-53413",
+      "CVE-2026-53414",
+      "CVE-2026-53415",
+      "CVE-2026-53416"
     ],
     "solutionLinks": []
   },
@@ -265,6 +241,30 @@
       "CVE-2026-76353",
       "CVE-2026-76354",
       "CVE-2026-76355"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Secure Workload",
+    "severity": "critical",
+    "date": "2026-08-25",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0422",
+    "code": "CIVN-2026-0422",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Workload, which could allow an attacker to bypass authentication, gain elevated privileges, gain access to sensitive information and execute arbitrary commands on the affected system.",
+    "description": "Cisco Secure Workload is a security platform that provides application segmentation, workload protection, and visibility across data centre, cloud, and hybrid environments. Multiple vulnerabilities exist in Cisco Secure Workload due to improper access control, improper authentication, improper input validation, improper neutralization of special elements and memory corruption issues. An attacker could exploit these vulnerabilities by sending specially crafted requests or inputs to affected Cisco Secure Workload components. Successful exploitation could allow an attacker to bypass authentication, gain elevated privileges, gain access to sensitive information and execute arbitrary commands on the affected system.",
+    "softwareAffected": [
+      "Cisco Secure Workload versions prior to 3.10.9.1 (for 3.10 and earlier)",
+      "Cisco Secure Workload versions prior to 4.0.4.16 (for 4.0)"
+    ],
+    "targetAudience": "All end user organizations and individuals using Cisco Secure Workload (SaaS and On-premises deployments).",
+    "riskAssessment": "High risk of unauthorized access, command execution, privilege escalation.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-20315",
+      "CVE-2026-20317",
+      "CVE-2026-20231",
+      "CVE-2026-20318",
+      "CVE-2026-20319"
     ],
     "solutionLinks": []
   },
