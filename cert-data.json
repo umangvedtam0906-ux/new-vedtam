@@ -1,5 +1,22 @@
 [
   {
+    "title": "Hardcoded Credentials Vulnerability in CP Plus Router",
+    "severity": "high",
+    "date": "2026-08-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0428",
+    "code": "CIVN-2026-0428",
+    "summary": "A vulnerability has been reported in CP Plus Router, which could allow an attacker on the local network to gain unauthorized administrative access to the targeted device.",
+    "description": "The CP Plus CP-XR-DE21-S is a 4G LTE router designed for high-speed internet connectivity, suitable for home and small-office use. This vulnerability exists in the CP Plus Router due to the presence of hardcoded HTTP Digest authentication credentials in the firmware that are identical across all devices running the affected firmware. An attacker with access to the local network could exploit this vulnerability by obtaining the hardcoded authentication information from the firmware. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized administrative access and perform privileged operations on the targeted device. Credit This vulnerability is reported by Stalin S, Harini M, Rohit Surya A T and Reginald Alfret V.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of CP Plus CP-XR-DE21-S Router.",
+    "riskAssessment": "Unauthorized administrative access to the targeted device.",
+    "impactAssessment": "Gain full administrative control of the targeted device.",
+    "cves": [
+      "CVE-2026-19412"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-08-28",
@@ -27,20 +44,21 @@
     "solutionLinks": []
   },
   {
-    "title": "Hardcoded Credentials Vulnerability in CP Plus Router",
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
-    "date": "2026-08-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0428",
-    "code": "CIVN-2026-0428",
-    "summary": "A vulnerability has been reported in CP Plus Router, which could allow an attacker on the local network to gain unauthorized administrative access to the targeted device.",
-    "description": "The CP Plus CP-XR-DE21-S is a 4G LTE router designed for high-speed internet connectivity, suitable for home and small-office use. This vulnerability exists in the CP Plus Router due to the presence of hardcoded HTTP Digest authentication credentials in the firmware that are identical across all devices running the affected firmware. An attacker with access to the local network could exploit this vulnerability by obtaining the hardcoded authentication information from the firmware. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized administrative access and perform privileged operations on the targeted device. Credit This vulnerability is reported by Stalin S, Harini M, Rohit Surya A T and Reginald Alfret V.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of CP Plus CP-XR-DE21-S Router.",
-    "riskAssessment": "Unauthorized administrative access to the targeted device.",
-    "impactAssessment": "Gain full administrative control of the targeted device.",
-    "cves": [
-      "CVE-2026-19412"
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0427",
+    "code": "CIVN-2026-0427",
+    "summary": "Multiple Vulnerabilities have been reported in Google Chrome, which could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause Denial of Service (DoS) condition on the targeted system.",
+    "description": "Google Chrome is a popular internet browser that is used for accessing the information available on the World Wide Web. It is designed for use on Desktop computers, such as those running on Windows, macOS or Linux operating systems. Multiple vulnerabilities exist in Google Chrome due to use-after-free in components including ANGLE, Aura, Chromecast, Safebrowsing, WebGL, V8 and more; out-of-bounds read in ANGLE, GPU, Skia, Media, FileSystem and Tint; uninitialized resource usage in GPU, Skia, ANGLE and more; improper input validation in Chromecast, Autofill, Media and more; incorrect authorization in Sandbox, USB, Extensions and more; and race conditions in WebAppInstalls, FileSystem, Workers and more. A remote attacker could exploit these vulnerabilities by persuading a victim to visit a specially crafted webpage. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause a Denial of Service (DoS) condition on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome versions prior to 152.0.7977.64/.65 for Windows and Mac",
+      "Google Chrome versions prior to 152.0.7977.64 for Linux"
     ],
+    "targetAudience": "All end user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "Potential for unauthorized access to data, remote code execution, and disruption of services.",
+    "impactAssessment": "High risk of system compromise, data theft, and service disruption.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -142,24 +160,6 @@
       "CVE-2026-26035",
       "CVE-2026-70468"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0427",
-    "code": "CIVN-2026-0427",
-    "summary": "Multiple Vulnerabilities have been reported in Google Chrome, which could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause Denial of Service (DoS) condition on the targeted system.",
-    "description": "Google Chrome is a popular internet browser that is used for accessing the information available on the World Wide Web. It is designed for use on Desktop computers, such as those running on Windows, macOS or Linux operating systems. Multiple vulnerabilities exist in Google Chrome due to use-after-free in components including ANGLE, Aura, Chromecast, Safebrowsing, WebGL, V8 and more; out-of-bounds read in ANGLE, GPU, Skia, Media, FileSystem and Tint; uninitialized resource usage in GPU, Skia, ANGLE and more; improper input validation in Chromecast, Autofill, Media and more; incorrect authorization in Sandbox, USB, Extensions and more; and race conditions in WebAppInstalls, FileSystem, Workers and more. A remote attacker could exploit these vulnerabilities by persuading a victim to visit a specially crafted webpage. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause a Denial of Service (DoS) condition on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome versions prior to 152.0.7977.64/.65 for Windows and Mac",
-      "Google Chrome versions prior to 152.0.7977.64 for Linux"
-    ],
-    "targetAudience": "All end user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "Potential for unauthorized access to data, remote code execution, and disruption of services.",
-    "impactAssessment": "High risk of system compromise, data theft, and service disruption.",
-    "cves": [],
     "solutionLinks": []
   },
   {
