@@ -129,33 +129,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Zoom Products",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0423",
-    "code": "CIVN-2026-0423",
-    "summary": "Multiple vulnerabilities have been reported in Zoom products that could allow a remote attacker to execute arbitrary code, cause a denial of service (DoS), and gain access to sensitive information on the targeted system.",
-    "description": "Zoom is a communications platform that provides video conferencing, team chat, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to memory corruption and path traversal issues. Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial of service (DoS), and perform information disclosure on targeted systems.",
-    "softwareAffected": [
-      "Zoom Workplace (all supported platforms) before versions 7.1.5 and 7.0.6 in their respective branches",
-      "Zoom Workplace VDI Client for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
-      "Zoom Workplace VDI Plugin for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
-      "Zoom Rooms (all supported platforms) before version 7.1.5",
-      "Zoom Meeting SDK (all supported platforms) before version 7.1.5",
-      "Zoom Video SDK all supported platforms before version 2.6.5"
-    ],
-    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
-    "riskAssessment": "High risk of remote code execution, denial of service, and unauthorized information disclosure.",
-    "impactAssessment": "Potential for complete compromise.",
-    "cves": [
-      "CVE-2026-53413",
-      "CVE-2026-53414",
-      "CVE-2026-53415",
-      "CVE-2026-53416"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple vulnerabilities in Fortinet Products",
     "severity": "high",
     "date": "2026-08-27",
@@ -184,6 +157,33 @@
       "CVE-2026-70465",
       "CVE-2026-26035",
       "CVE-2026-70468"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Zoom Products",
+    "severity": "critical",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0423",
+    "code": "CIVN-2026-0423",
+    "summary": "Multiple vulnerabilities have been reported in Zoom products that could allow a remote attacker to execute arbitrary code, cause a denial of service (DoS), and gain access to sensitive information on the targeted system.",
+    "description": "Zoom is a communications platform that provides video conferencing, team chat, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to memory corruption and path traversal issues. Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial of service (DoS), and perform information disclosure on targeted systems.",
+    "softwareAffected": [
+      "Zoom Workplace (all supported platforms) before versions 7.1.5 and 7.0.6 in their respective branches",
+      "Zoom Workplace VDI Client for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
+      "Zoom Workplace VDI Plugin for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
+      "Zoom Rooms (all supported platforms) before version 7.1.5",
+      "Zoom Meeting SDK (all supported platforms) before version 7.1.5",
+      "Zoom Video SDK all supported platforms before version 2.6.5"
+    ],
+    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
+    "riskAssessment": "High risk of remote code execution, denial of service, and unauthorized information disclosure.",
+    "impactAssessment": "Potential for complete compromise.",
+    "cves": [
+      "CVE-2026-53413",
+      "CVE-2026-53414",
+      "CVE-2026-53415",
+      "CVE-2026-53416"
     ],
     "solutionLinks": []
   },
@@ -294,51 +294,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Google Chrome for Desktop",
-    "severity": "critical",
-    "date": "2026-08-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0420",
-    "code": "CIVN-2026-0420",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome, which could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause Denial of Service (DoS) condition on the targeted system.",
-    "description": "Google Chrome is a popular internet browser that is used for accessing the information available on the World Wide Web. It is designed for use on desktop computers, such as those running on Windows, macOS, or Linux operating systems. These vulnerabilities exist in Google Chrome due to use after free in Chromoting, privilege elevation in Import, incorrect authorization in Workers, race condition in V8, use after free in DOM, buffer overflow in Network, and improper resource control in Linux Toolkit Theming. A remote attacker could exploit these vulnerabilities by persuading a victim to visit a specially crafted webpage. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause Denial of Service (DoS) condition on the targeted system.",
-    "softwareAffected": [
-      "Google Chrome versions prior to 151.0.7922.173/.174 for Windows and Mac",
-      "Google Chrome versions prior to 151.0.7922.173 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected Google Chrome for Desktop.",
-    "riskAssessment": "Potential for unauthorized access to data, remote code execution, disruption of services.",
-    "impactAssessment": "High risk of system compromise, data theft, service disruption.",
-    "cves": [
-      "CVE-2026-76017",
-      "CVE-2026-76018",
-      "CVE-2026-76019",
-      "CVE-2026-76020",
-      "CVE-2026-76021",
-      "CVE-2026-76022",
-      "CVE-2026-76023"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Arbitrary Code Execution Vulnerability in Elementor Elementor Pro Plugin of Wordpress",
-    "severity": "critical",
-    "date": "2026-08-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0419",
-    "code": "CIVN-2026-0419",
-    "summary": "A vulnerability has been reported in Elementor Pro WordPress plugin which could be exploited by an attacker to upload executable files for remote code execution on the targeted system.",
-    "description": "WordPress Pro Elementor Plugin is a powerful website-building",
-    "softwareAffected": [
-      "WordPress Elementor Pro versions prior to 4.2.2"
-    ],
-    "targetAudience": "All organizations and individuals using WordPress Plugins.",
-    "riskAssessment": "Critical risks of unauthorized file upload and remote code execution.",
-    "impactAssessment": "Potential for unauthorized modification of website content, and system compromise.",
-    "cves": [
-      "CVE-2026-32475"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-08-24",
@@ -413,6 +368,51 @@
       "CVE-2026-74989",
       "CVE-2026-74990",
       "CVE-2026-75874"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Google Chrome for Desktop",
+    "severity": "critical",
+    "date": "2026-08-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0420",
+    "code": "CIVN-2026-0420",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome, which could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause Denial of Service (DoS) condition on the targeted system.",
+    "description": "Google Chrome is a popular internet browser that is used for accessing the information available on the World Wide Web. It is designed for use on desktop computers, such as those running on Windows, macOS, or Linux operating systems. These vulnerabilities exist in Google Chrome due to use after free in Chromoting, privilege elevation in Import, incorrect authorization in Workers, race condition in V8, use after free in DOM, buffer overflow in Network, and improper resource control in Linux Toolkit Theming. A remote attacker could exploit these vulnerabilities by persuading a victim to visit a specially crafted webpage. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause Denial of Service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "Google Chrome versions prior to 151.0.7922.173/.174 for Windows and Mac",
+      "Google Chrome versions prior to 151.0.7922.173 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected Google Chrome for Desktop.",
+    "riskAssessment": "Potential for unauthorized access to data, remote code execution, disruption of services.",
+    "impactAssessment": "High risk of system compromise, data theft, service disruption.",
+    "cves": [
+      "CVE-2026-76017",
+      "CVE-2026-76018",
+      "CVE-2026-76019",
+      "CVE-2026-76020",
+      "CVE-2026-76021",
+      "CVE-2026-76022",
+      "CVE-2026-76023"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Arbitrary Code Execution Vulnerability in Elementor Elementor Pro Plugin of Wordpress",
+    "severity": "critical",
+    "date": "2026-08-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0419",
+    "code": "CIVN-2026-0419",
+    "summary": "A vulnerability has been reported in Elementor Pro WordPress plugin which could be exploited by an attacker to upload executable files for remote code execution on the targeted system.",
+    "description": "WordPress Pro Elementor Plugin is a powerful website-building",
+    "softwareAffected": [
+      "WordPress Elementor Pro versions prior to 4.2.2"
+    ],
+    "targetAudience": "All organizations and individuals using WordPress Plugins.",
+    "riskAssessment": "Critical risks of unauthorized file upload and remote code execution.",
+    "impactAssessment": "Potential for unauthorized modification of website content, and system compromise.",
+    "cves": [
+      "CVE-2026-32475"
     ],
     "solutionLinks": []
   },
@@ -597,26 +597,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
-    "severity": "high",
-    "date": "2026-08-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
-    "code": "CIVN-2026-0411",
-    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
-    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
-    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
-    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
-    "cves": [
-      "CVE-2026-20349"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-08-17",
@@ -708,6 +688,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Access SSL VPN Denial-of-Service Vulnerability in Cisco Product",
+    "severity": "high",
+    "date": "2026-08-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0411",
+    "code": "CIVN-2026-0411",
+    "summary": "A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software which could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly.",
+    "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software are security platforms that provide firewall, VPN, and network security capabilities. A Remote Access SSL VPN denial-of-service vulnerability has been reported in Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Software due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to cause the affected device to reload unexpectedly, resulting in a denial-of-service condition.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of Cisco Secure Firewall ASA or FTD Software.",
+    "riskAssessment": "High risk of unauthenticated remote Denial of Service (DoS) attacks.",
+    "impactAssessment": "Potential for service disruption, including unexpected device reloads.",
+    "cves": [
+      "CVE-2026-20349"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in MongoDB Products",
     "severity": "critical",
     "date": "2026-08-17",
@@ -759,6 +759,21 @@
     "solutionLinks": []
   },
   {
+    "title": "Reports on Apple Threat Notifications",
+    "severity": "high",
+    "date": "2026-08-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
+    "code": "CIAD-2026-0039",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-08-14",
@@ -780,21 +795,6 @@
       "CVE-2026-19559",
       "CVE-2026-19560"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Reports on Apple Threat Notifications",
-    "severity": "high",
-    "date": "2026-08-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0039",
-    "code": "CIAD-2026-0039",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Apple has issued threat notifications to users worldwide, including India, warning of sophisticated attempts by mercenary spyware operators to compromise Apple devices. These attacks are typically state-sponsored or carried out by highly resourced adversaries. The notification advises users to adopt additional safeguards to secure data on their devices. Recommended measures include updating the iPhone to the latest available version (iOS 26.6) and ensuring that all other Apple devices in use are upgraded to their respective latest software releases. Users should also update messaging and cloud applications to the most recent versions and enable Lockdown Mode for enhanced protection against spyware threats. Users are strongly urged to follow Apple's guidance and keep their devices updated. In addition, they are recommended to regularly consult CERT-In Vulnerability Notes and Advisories and apply the appropriate security patches to their devices to mitigate potential risks. Any user who has received such a notification and wishes to have their Apple devices examined or avail technical assistance is requested to contact CERT-In via email at: submitmobile@cert-in.org.in. Note: Do not make any changes to the phone (resetting, deleting applications, updating, restarting etc.) as these actions could tamper evidence.",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
