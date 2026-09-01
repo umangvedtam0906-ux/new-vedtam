@@ -125,29 +125,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
-    "code": "CIVN-2026-0425",
-    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "softwareAffected": [
-      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
-      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
-      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
-      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "High risk of denial of service and authentication bypass.",
-    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-19489",
-      "CVE-2026-19490"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple vulnerabilities in Fortinet Products",
     "severity": "high",
     "date": "2026-08-27",
@@ -203,6 +180,29 @@
       "CVE-2026-53414",
       "CVE-2026-53415",
       "CVE-2026-53416"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
+    "severity": "critical",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
+    "code": "CIVN-2026-0425",
+    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "softwareAffected": [
+      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
+      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
+      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
+      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of denial of service and authentication bypass.",
+    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-19489",
+      "CVE-2026-19490"
     ],
     "solutionLinks": []
   },
@@ -339,25 +339,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Arbitrary Code Execution Vulnerability in Elementor Elementor Pro Plugin of Wordpress",
-    "severity": "critical",
-    "date": "2026-08-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0419",
-    "code": "CIVN-2026-0419",
-    "summary": "A vulnerability has been reported in Elementor Pro WordPress plugin which could be exploited by an attacker to upload executable files for remote code execution on the targeted system.",
-    "description": "WordPress Pro Elementor Plugin is a powerful website-building",
-    "softwareAffected": [
-      "WordPress Elementor Pro versions prior to 4.2.2"
-    ],
-    "targetAudience": "All organizations and individuals using WordPress Plugins.",
-    "riskAssessment": "Critical risks of unauthorized file upload and remote code execution.",
-    "impactAssessment": "Potential for unauthorized modification of website content, and system compromise.",
-    "cves": [
-      "CVE-2026-32475"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-08-24",
@@ -432,6 +413,25 @@
       "CVE-2026-74989",
       "CVE-2026-74990",
       "CVE-2026-75874"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Arbitrary Code Execution Vulnerability in Elementor Elementor Pro Plugin of Wordpress",
+    "severity": "critical",
+    "date": "2026-08-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0419",
+    "code": "CIVN-2026-0419",
+    "summary": "A vulnerability has been reported in Elementor Pro WordPress plugin which could be exploited by an attacker to upload executable files for remote code execution on the targeted system.",
+    "description": "WordPress Pro Elementor Plugin is a powerful website-building",
+    "softwareAffected": [
+      "WordPress Elementor Pro versions prior to 4.2.2"
+    ],
+    "targetAudience": "All organizations and individuals using WordPress Plugins.",
+    "riskAssessment": "Critical risks of unauthorized file upload and remote code execution.",
+    "impactAssessment": "Potential for unauthorized modification of website content, and system compromise.",
+    "cves": [
+      "CVE-2026-32475"
     ],
     "solutionLinks": []
   },
@@ -616,57 +616,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "critical",
-    "date": "2026-08-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0413",
-    "code": "CIVN-2026-0413",
-    "summary": "Multiple vulnerabilities have been reported in MongoDB Products, which could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
-    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to improper authorization, insufficient input validation, improper input processing, missing authorization, Improper Authentication, Out-of-Bounds Read, Cleartext Storage of Sensitive Information, and memory handling issues. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
-    "softwareAffected": [
-      "MongoDB Server 7.0 versions prior to 7.0.40",
-      "MongoDB Server 8.0 versions prior to 8.0.29",
-      "MongoDB Server 8.3 versions prior to 8.3.8",
-      "MongoDB Driver 4.11.0 affects versions prior to 5.9.2",
-      "Schema Builder CLI 1.0.0 affects versions prior to 1.2.1",
-      "BI Connector ODBC Driver 1.0.0 affects versions prior to 1.4.9",
-      "Atlas SQL ODBC Driver 1.0.0 affects versions prior to 2.0.9"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
-    "riskAssessment": "High risk of security control bypass, information disclosure, and denial of service",
-    "impactAssessment": "Potential of memory corruption, perform unauthorized operations, and system compromise.",
-    "cves": [
-      "CVE-2026-19003",
-      "CVE-2026-19004",
-      "CVE-2026-18888",
-      "CVE-2026-19001",
-      "CVE-2026-19002",
-      "CVE-2026-19503",
-      "CVE-2026-19502",
-      "CVE-2026-18710",
-      "CVE-2026-18712",
-      "CVE-2026-18711",
-      "CVE-2026-18709",
-      "CVE-2026-18698",
-      "CVE-2026-18690",
-      "CVE-2026-18699",
-      "CVE-2026-18691",
-      "CVE-2026-18702",
-      "CVE-2026-18694",
-      "CVE-2026-18708",
-      "CVE-2026-18696",
-      "CVE-2026-18700",
-      "CVE-2026-18701",
-      "CVE-2026-18697",
-      "CVE-2026-18693",
-      "CVE-2026-18705",
-      "CVE-2026-18704",
-      "CVE-2026-18692",
-      "CVE-2026-18688"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-08-17",
@@ -754,6 +703,57 @@
       "CVE-2026-71398",
       "CVE-2026-27302",
       "CVE-2026-48381"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "critical",
+    "date": "2026-08-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0413",
+    "code": "CIVN-2026-0413",
+    "summary": "Multiple vulnerabilities have been reported in MongoDB Products, which could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
+    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to improper authorization, insufficient input validation, improper input processing, missing authorization, Improper Authentication, Out-of-Bounds Read, Cleartext Storage of Sensitive Information, and memory handling issues. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, access or disclose sensitive information, cause denial-of-service conditions, or perform unauthorized actions.",
+    "softwareAffected": [
+      "MongoDB Server 7.0 versions prior to 7.0.40",
+      "MongoDB Server 8.0 versions prior to 8.0.29",
+      "MongoDB Server 8.3 versions prior to 8.3.8",
+      "MongoDB Driver 4.11.0 affects versions prior to 5.9.2",
+      "Schema Builder CLI 1.0.0 affects versions prior to 1.2.1",
+      "BI Connector ODBC Driver 1.0.0 affects versions prior to 1.4.9",
+      "Atlas SQL ODBC Driver 1.0.0 affects versions prior to 2.0.9"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
+    "riskAssessment": "High risk of security control bypass, information disclosure, and denial of service",
+    "impactAssessment": "Potential of memory corruption, perform unauthorized operations, and system compromise.",
+    "cves": [
+      "CVE-2026-19003",
+      "CVE-2026-19004",
+      "CVE-2026-18888",
+      "CVE-2026-19001",
+      "CVE-2026-19002",
+      "CVE-2026-19503",
+      "CVE-2026-19502",
+      "CVE-2026-18710",
+      "CVE-2026-18712",
+      "CVE-2026-18711",
+      "CVE-2026-18709",
+      "CVE-2026-18698",
+      "CVE-2026-18690",
+      "CVE-2026-18699",
+      "CVE-2026-18691",
+      "CVE-2026-18702",
+      "CVE-2026-18694",
+      "CVE-2026-18708",
+      "CVE-2026-18696",
+      "CVE-2026-18700",
+      "CVE-2026-18701",
+      "CVE-2026-18697",
+      "CVE-2026-18693",
+      "CVE-2026-18705",
+      "CVE-2026-18704",
+      "CVE-2026-18692",
+      "CVE-2026-18688"
     ],
     "solutionLinks": []
   },
