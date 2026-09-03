@@ -1,5 +1,60 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Sonicwall SMA1000",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0437",
+    "code": "CIVN-2026-0437",
+    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow a remote unauthenticated attacker to perform Server-Side Request Forgery (SSRF) or a remote authenticated administrator to execute arbitrary operating system commands.",
+    "description": "SonicWall Secure Mobile Access (SMA) 1000 Series appliances are secure remote access",
+    "softwareAffected": [
+      "12.4.3-03453 (platform-hotfix) and earlier versions",
+      "12.5.0-02835 (platform-hotfix) and earlier versions"
+    ],
+    "targetAudience": "All end-user organizations and individuals using SonicWall Secure Mobile Access (SMA) 1000 Series appliances.",
+    "riskAssessment": "Risk of arbitrary operating system command execution, Server-Side Request Forgery (SSRF), Remote Code Execution (RCE), and compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized access to sensitive functionality, unauthorized requests to internal or unintended locations, arbitrary operating system command execution, Remote Code Execution, and compromise of affected appliances.",
+    "cves": [
+      "CVE-2026-83548",
+      "CVE-2026-83549"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
+    "code": "CIVN-2026-0436",
+    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
+    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20212"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
+    "code": "CIVN-2026-0435",
+    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
+    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20223"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Next.js",
     "severity": "critical",
     "date": "2026-09-03",
@@ -214,29 +269,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
-    "code": "CIVN-2026-0425",
-    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "softwareAffected": [
-      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
-      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
-      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
-      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "High risk of denial of service and authentication bypass.",
-    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-19489",
-      "CVE-2026-19490"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Zoom Products",
     "severity": "critical",
     "date": "2026-08-27",
@@ -260,6 +292,29 @@
       "CVE-2026-53414",
       "CVE-2026-53415",
       "CVE-2026-53416"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
+    "severity": "critical",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
+    "code": "CIVN-2026-0425",
+    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "softwareAffected": [
+      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
+      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
+      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
+      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of denial of service and authentication bypass.",
+    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-19489",
+      "CVE-2026-19490"
     ],
     "solutionLinks": []
   },
