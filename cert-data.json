@@ -43,42 +43,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
-    "severity": "critical",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
-    "code": "CIVN-2026-0435",
-    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
-    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-20223"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Arbitrary Code Execution Vulnerability in GiveWP plugin for WordPress",
-    "severity": "critical",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0434",
-    "code": "CIVN-2026-0434",
-    "summary": "A vulnerability has been identified in the GiveWP plugin for WordPress, which could allow an attacker to bypass security restrictions, inject malicious serialized objects into the session database, and execute arbitrary commands on the targeted system.",
-    "description": "GiveWP is a widely used WordPress plugin designed to facilitate online donations and fundraising management. This vulnerability exists in the GiveWP plugin due to unsafe deserialization of untrusted data, allowing PHP Object Injection that can lead to remote code execution. This vulnerability can be exploited through specially crafted HTTP requests. Attackers can bypass WordPress registration settings through an exposed unauthenticated action, obtain the necessary authentication, and subsequently trigger the exploit. Successful exploitation of this vulnerability could allow an attacker to bypass security restrictions, inject malicious serialized objects into the session database, and execute arbitrary commands on the targeted system.",
-    "softwareAffected": [
-      "GiveWP plugin for WordPress versions prior to 4.16.7.2"
-    ],
-    "targetAudience": "All WordPress administrators and organizations utilizing the GiveWP plugin.",
-    "riskAssessment": "Maximum risk of remote code execution leading to complete system compromise.",
-    "impactAssessment": "Potential for full unauthorized control over the hosting server, sensitive data theft, and complete disruption of services.",
-    "cves": [
-      "CVE-2026-82222"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
     "severity": "critical",
     "date": "2026-09-03",
@@ -112,6 +76,42 @@
     "impactAssessment": "Unauthorized access to sensitive data, data manipulation, and complete system compromise.",
     "cves": [
       "CVE-2026-75604"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
+    "code": "CIVN-2026-0435",
+    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
+    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20223"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Arbitrary Code Execution Vulnerability in GiveWP plugin for WordPress",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0434",
+    "code": "CIVN-2026-0434",
+    "summary": "A vulnerability has been identified in the GiveWP plugin for WordPress, which could allow an attacker to bypass security restrictions, inject malicious serialized objects into the session database, and execute arbitrary commands on the targeted system.",
+    "description": "GiveWP is a widely used WordPress plugin designed to facilitate online donations and fundraising management. This vulnerability exists in the GiveWP plugin due to unsafe deserialization of untrusted data, allowing PHP Object Injection that can lead to remote code execution. This vulnerability can be exploited through specially crafted HTTP requests. Attackers can bypass WordPress registration settings through an exposed unauthenticated action, obtain the necessary authentication, and subsequently trigger the exploit. Successful exploitation of this vulnerability could allow an attacker to bypass security restrictions, inject malicious serialized objects into the session database, and execute arbitrary commands on the targeted system.",
+    "softwareAffected": [
+      "GiveWP plugin for WordPress versions prior to 4.16.7.2"
+    ],
+    "targetAudience": "All WordPress administrators and organizations utilizing the GiveWP plugin.",
+    "riskAssessment": "Maximum risk of remote code execution leading to complete system compromise.",
+    "impactAssessment": "Potential for full unauthorized control over the hosting server, sensitive data theft, and complete disruption of services.",
+    "cves": [
+      "CVE-2026-82222"
     ],
     "solutionLinks": []
   },
