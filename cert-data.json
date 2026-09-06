@@ -132,19 +132,19 @@
     "solutionLinks": []
   },
   {
-    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
+    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
     "severity": "critical",
     "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
-    "code": "CIVN-2026-0436",
-    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
-    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
+    "code": "CIVN-2026-0435",
+    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
+    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
     "softwareAffected": "",
     "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
     "riskAssessment": "High risk of data manipulation and service disruption.",
     "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
     "cves": [
-      "CVE-2026-20212"
+      "CVE-2026-20223"
     ],
     "solutionLinks": []
   },
@@ -188,19 +188,19 @@
     "solutionLinks": []
   },
   {
-    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
+    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
     "severity": "critical",
     "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
-    "code": "CIVN-2026-0435",
-    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
-    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
+    "code": "CIVN-2026-0436",
+    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
+    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
     "softwareAffected": "",
     "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
     "riskAssessment": "High risk of data manipulation and service disruption.",
     "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
     "cves": [
-      "CVE-2026-20223"
+      "CVE-2026-20212"
     ],
     "solutionLinks": []
   },
@@ -399,6 +399,33 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Zoom Products",
+    "severity": "critical",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0423",
+    "code": "CIVN-2026-0423",
+    "summary": "Multiple vulnerabilities have been reported in Zoom products that could allow a remote attacker to execute arbitrary code, cause a denial of service (DoS), and gain access to sensitive information on the targeted system.",
+    "description": "Zoom is a communications platform that provides video conferencing, team chat, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to memory corruption and path traversal issues. Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial of service (DoS), and perform information disclosure on targeted systems.",
+    "softwareAffected": [
+      "Zoom Workplace (all supported platforms) before versions 7.1.5 and 7.0.6 in their respective branches",
+      "Zoom Workplace VDI Client for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
+      "Zoom Workplace VDI Plugin for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
+      "Zoom Rooms (all supported platforms) before version 7.1.5",
+      "Zoom Meeting SDK (all supported platforms) before version 7.1.5",
+      "Zoom Video SDK all supported platforms before version 2.6.5"
+    ],
+    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
+    "riskAssessment": "High risk of remote code execution, denial of service, and unauthorized information disclosure.",
+    "impactAssessment": "Potential for complete compromise.",
+    "cves": [
+      "CVE-2026-53413",
+      "CVE-2026-53414",
+      "CVE-2026-53415",
+      "CVE-2026-53416"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Fortinet Products",
     "severity": "high",
     "date": "2026-08-27",
@@ -469,33 +496,6 @@
     "cves": [
       "CVE-2026-19489",
       "CVE-2026-19490"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Zoom Products",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0423",
-    "code": "CIVN-2026-0423",
-    "summary": "Multiple vulnerabilities have been reported in Zoom products that could allow a remote attacker to execute arbitrary code, cause a denial of service (DoS), and gain access to sensitive information on the targeted system.",
-    "description": "Zoom is a communications platform that provides video conferencing, team chat, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to memory corruption and path traversal issues. Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial of service (DoS), and perform information disclosure on targeted systems.",
-    "softwareAffected": [
-      "Zoom Workplace (all supported platforms) before versions 7.1.5 and 7.0.6 in their respective branches",
-      "Zoom Workplace VDI Client for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
-      "Zoom Workplace VDI Plugin for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
-      "Zoom Rooms (all supported platforms) before version 7.1.5",
-      "Zoom Meeting SDK (all supported platforms) before version 7.1.5",
-      "Zoom Video SDK all supported platforms before version 2.6.5"
-    ],
-    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
-    "riskAssessment": "High risk of remote code execution, denial of service, and unauthorized information disclosure.",
-    "impactAssessment": "Potential for complete compromise.",
-    "cves": [
-      "CVE-2026-53413",
-      "CVE-2026-53414",
-      "CVE-2026-53415",
-      "CVE-2026-53416"
     ],
     "solutionLinks": []
   },
