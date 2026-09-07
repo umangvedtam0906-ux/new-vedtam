@@ -399,6 +399,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in Gitea",
+    "severity": "critical",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0426",
+    "code": "CIVN-2026-0426",
+    "summary": "A critical vulnerability has been reported in Gitea which may allow an attacker to execute remote code on the targeted system.",
+    "description": "Gitea is an open-source, self-hosted Git repository management platform, similar to GitHub or GitLab. It provides code hosting, pull requests, issue tracking, and access management. This vulnerability exists in the Giteas diffpatch endpoint and can be exploited to install and execute a Git hook from repository-controlled content. Successful exploitation of this vulnerability could allow an attacker with repository write access to a repository to execute arbitrary shell commands as the Gitea service account.",
+    "softwareAffected": [
+      "Gitea versions from 1.17 to 1.27.0"
+    ],
+    "targetAudience": "All organizations and individuals using Gitea.",
+    "riskAssessment": "Critical risks of unauthorized access to source code and repositories.",
+    "impactAssessment": "Potential for sensitive information disclosure, unauthorized modification of repositories, credential compromise, and complete system/server compromise.",
+    "cves": [
+      "CVE-2026-60004"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
     "severity": "critical",
     "date": "2026-08-27",
@@ -418,33 +437,6 @@
     "cves": [
       "CVE-2026-19489",
       "CVE-2026-19490"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Zoom Products",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0423",
-    "code": "CIVN-2026-0423",
-    "summary": "Multiple vulnerabilities have been reported in Zoom products that could allow a remote attacker to execute arbitrary code, cause a denial of service (DoS), and gain access to sensitive information on the targeted system.",
-    "description": "Zoom is a communications platform that provides video conferencing, team chat, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to memory corruption and path traversal issues. Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial of service (DoS), and perform information disclosure on targeted systems.",
-    "softwareAffected": [
-      "Zoom Workplace (all supported platforms) before versions 7.1.5 and 7.0.6 in their respective branches",
-      "Zoom Workplace VDI Client for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
-      "Zoom Workplace VDI Plugin for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
-      "Zoom Rooms (all supported platforms) before version 7.1.5",
-      "Zoom Meeting SDK (all supported platforms) before version 7.1.5",
-      "Zoom Video SDK all supported platforms before version 2.6.5"
-    ],
-    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
-    "riskAssessment": "High risk of remote code execution, denial of service, and unauthorized information disclosure.",
-    "impactAssessment": "Potential for complete compromise.",
-    "cves": [
-      "CVE-2026-53413",
-      "CVE-2026-53414",
-      "CVE-2026-53415",
-      "CVE-2026-53416"
     ],
     "solutionLinks": []
   },
@@ -481,21 +473,29 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in Gitea",
+    "title": "Multiple Vulnerabilities in Zoom Products",
     "severity": "critical",
     "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0426",
-    "code": "CIVN-2026-0426",
-    "summary": "A critical vulnerability has been reported in Gitea which may allow an attacker to execute remote code on the targeted system.",
-    "description": "Gitea is an open-source, self-hosted Git repository management platform, similar to GitHub or GitLab. It provides code hosting, pull requests, issue tracking, and access management. This vulnerability exists in the Giteas diffpatch endpoint and can be exploited to install and execute a Git hook from repository-controlled content. Successful exploitation of this vulnerability could allow an attacker with repository write access to a repository to execute arbitrary shell commands as the Gitea service account.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0423",
+    "code": "CIVN-2026-0423",
+    "summary": "Multiple vulnerabilities have been reported in Zoom products that could allow a remote attacker to execute arbitrary code, cause a denial of service (DoS), and gain access to sensitive information on the targeted system.",
+    "description": "Zoom is a communications platform that provides video conferencing, team chat, and other collaboration services for individuals and organisations. Multiple vulnerabilities exist in Zoom products due to memory corruption and path traversal issues. Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial of service (DoS), and perform information disclosure on targeted systems.",
     "softwareAffected": [
-      "Gitea versions from 1.17 to 1.27.0"
+      "Zoom Workplace (all supported platforms) before versions 7.1.5 and 7.0.6 in their respective branches",
+      "Zoom Workplace VDI Client for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
+      "Zoom Workplace VDI Plugin for Windows before versions 7.0.11 and 6.6.16 in their respective branches",
+      "Zoom Rooms (all supported platforms) before version 7.1.5",
+      "Zoom Meeting SDK (all supported platforms) before version 7.1.5",
+      "Zoom Video SDK all supported platforms before version 2.6.5"
     ],
-    "targetAudience": "All organizations and individuals using Gitea.",
-    "riskAssessment": "Critical risks of unauthorized access to source code and repositories.",
-    "impactAssessment": "Potential for sensitive information disclosure, unauthorized modification of repositories, credential compromise, and complete system/server compromise.",
+    "targetAudience": "All end-user organisations and individuals using the affected versions of Zoom applications.",
+    "riskAssessment": "High risk of remote code execution, denial of service, and unauthorized information disclosure.",
+    "impactAssessment": "Potential for complete compromise.",
     "cves": [
-      "CVE-2026-60004"
+      "CVE-2026-53413",
+      "CVE-2026-53414",
+      "CVE-2026-53415",
+      "CVE-2026-53416"
     ],
     "solutionLinks": []
   },
