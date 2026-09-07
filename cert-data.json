@@ -1,5 +1,94 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0443",
+    "code": "CIVN-2026-0443",
+    "summary": "Multiple vulnerabilities have been reported in Google which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, perform spoofing attacks or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Shared Tab Groups, WebGL, Proxy, Browser, Dawn, WebRTC, TabStrip; Incorrect authorization in FileSystem, Navigation, SiteSettings, Chromoting, TabStrip; Information leak in Skia, MediaCapture; Improper input validation in Omnibox, DataTransfer; Improper privilege management in Downloads; Uninitialized resource in V8; Buffer overflow in GPU; Missing authorization in FileSystem; UI misrepresentation in FullScreen and Confused deputy in CredentialProvider. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, perform spoofing attacks or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "Google Chrome versions prior to 152.0.7977.75/.76 for Windows and Mac",
+      "Google Chrome versions prior to 152.0.7977.75 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
+    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
+    "cves": [
+      "CVE-2026-84323",
+      "CVE-2026-84324",
+      "CVE-2026-84325",
+      "CVE-2026-84326",
+      "CVE-2026-84327",
+      "CVE-2026-84328",
+      "CVE-2026-84329",
+      "CVE-2026-84330",
+      "CVE-2026-84331",
+      "CVE-2026-84332",
+      "CVE-2026-84333",
+      "CVE-2026-84334",
+      "CVE-2026-84335",
+      "CVE-2026-84347",
+      "CVE-2026-84348",
+      "CVE-2026-84349",
+      "CVE-2026-84350",
+      "CVE-2026-84351",
+      "CVE-2026-84352",
+      "CVE-2026-84353",
+      "CVE-2026-84354",
+      "CVE-2026-84355",
+      "CVE-2026-84356",
+      "CVE-2026-84357",
+      "CVE-2026-84358",
+      "CVE-2026-84359"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in Keycloak",
+    "severity": "critical",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
+    "code": "CIVN-2026-0442",
+    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
+    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
+    "softwareAffected": [
+      "Keycloak versions prior to 26.7.2.",
+      "Red Hat build of Keycloak (RHBK)",
+      "Versions 26.4 prior to 26.4.15",
+      "Versions 26.6 prior to 26.6.6"
+    ],
+    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
+    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
+    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
+    "cves": [
+      "CVE-2026-18963"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
+    "severity": "high",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
+    "code": "CIVN-2026-0441",
+    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "softwareAffected": [
+      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
+    ],
+    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
+    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
+    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "cves": [
+      "CVE-2026-19118",
+      "CVE-2026-18730",
+      "CVE-2026-51764",
+      "CVE-2026-76851"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Apache Tomcat",
     "severity": "critical",
     "date": "2026-09-04",
