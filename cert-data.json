@@ -1,46 +1,43 @@
 [
   {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0443",
-    "code": "CIVN-2026-0443",
-    "summary": "Multiple vulnerabilities have been reported in Google which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, perform spoofing attacks or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Shared Tab Groups, WebGL, Proxy, Browser, Dawn, WebRTC, TabStrip; Incorrect authorization in FileSystem, Navigation, SiteSettings, Chromoting, TabStrip; Information leak in Skia, MediaCapture; Improper input validation in Omnibox, DataTransfer; Improper privilege management in Downloads; Uninitialized resource in V8; Buffer overflow in GPU; Missing authorization in FileSystem; UI misrepresentation in FullScreen and Confused deputy in CredentialProvider. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, perform spoofing attacks or cause denial of service (DoS) conditions on the targeted system.",
+    "title": "Multiple Vulnerabilities in PaperCut NG/MF Application Server",
+    "severity": "critical",
+    "date": "2026-09-08",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0445",
+    "code": "CIVN-2026-0445",
+    "summary": "Multiple vulnerabilities have been reported in PaperCut NG/MF Application Server, which could allow an unauthenticated remote attacker to bypass authentication, modify system configurations, execute arbitrary Java bytecode, and compromise affected systems.",
+    "description": "PaperCut NG and PaperCut MF are print management",
     "softwareAffected": [
-      "Google Chrome versions prior to 152.0.7977.75/.76 for Windows and Mac",
-      "Google Chrome versions prior to 152.0.7977.75 for Linux"
+      "All PaperCut NG versions prior to Emergency Patch Release 3",
+      "All PaperCut MF versions prior to Emergency Patch Release 3",
+      "PaperCut NG/MF versions 23 and earlier are advised to be upgraded to the latest version."
     ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
-    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
+    "targetAudience": "All organizations and administrators using affected PaperCut NG/MF Application Server deployments.",
+    "riskAssessment": "Critical risk of authentication bypass, arbitrary code execution, unauthorized modification of system configurations, and compromise of affected systems.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could result in authentication bypass, arbitrary code execution, unauthorized modification of system configurations, unauthorized access, and compromise of the confidentiality, integrity, and availability of affected systems.",
     "cves": [
-      "CVE-2026-84323",
-      "CVE-2026-84324",
-      "CVE-2026-84325",
-      "CVE-2026-84326",
-      "CVE-2026-84327",
-      "CVE-2026-84328",
-      "CVE-2026-84329",
-      "CVE-2026-84330",
-      "CVE-2026-84331",
-      "CVE-2026-84332",
-      "CVE-2026-84333",
-      "CVE-2026-84334",
-      "CVE-2026-84335",
-      "CVE-2026-84347",
-      "CVE-2026-84348",
-      "CVE-2026-84349",
-      "CVE-2026-84350",
-      "CVE-2026-84351",
-      "CVE-2026-84352",
-      "CVE-2026-84353",
-      "CVE-2026-84354",
-      "CVE-2026-84355",
-      "CVE-2026-84356",
-      "CVE-2026-84357",
-      "CVE-2026-84358",
-      "CVE-2026-84359"
+      "CVE-2026-81578",
+      "CVE-2026-82078"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Secure Email",
+    "severity": "medium",
+    "date": "2026-09-08",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0444",
+    "code": "CIVN-2026-0444",
+    "summary": "Multiple vulnerabilities in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email could allow an unauthenticated, remote attacker to recover plain text from encrypted email messages.",
+    "description": "These vulnerabilities exist in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email due to insufficient validation of message integrity. An attacker could exploit the vulnerabilities by using a machine-in-the-middle technique to intercept and modify traffic between email gateways. Successful exploitation could allow an unauthenticated, remote attacker to obtain plaintext content from encrypted communication.",
+    "softwareAffected": [
+      "Cisco Secure Email (running Cisco AsyncOS Software Release 16.5.0 or earlier and having S/MIME configured for communication between email gateways)"
+    ],
+    "targetAudience": "All IT administrators and individuals using Cisco products.",
+    "riskAssessment": "Risk of information disclosure.",
+    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
+    "cves": [
+      "CVE-2026-20354",
+      "CVE-2026-20355"
     ],
     "solutionLinks": []
   },
@@ -85,6 +82,51 @@
       "CVE-2026-18730",
       "CVE-2026-51764",
       "CVE-2026-76851"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0443",
+    "code": "CIVN-2026-0443",
+    "summary": "Multiple vulnerabilities have been reported in Google which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, perform spoofing attacks or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Shared Tab Groups, WebGL, Proxy, Browser, Dawn, WebRTC, TabStrip; Incorrect authorization in FileSystem, Navigation, SiteSettings, Chromoting, TabStrip; Information leak in Skia, MediaCapture; Improper input validation in Omnibox, DataTransfer; Improper privilege management in Downloads; Uninitialized resource in V8; Buffer overflow in GPU; Missing authorization in FileSystem; UI misrepresentation in FullScreen and Confused deputy in CredentialProvider. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, perform spoofing attacks or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "Google Chrome versions prior to 152.0.7977.75/.76 for Windows and Mac",
+      "Google Chrome versions prior to 152.0.7977.75 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
+    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
+    "cves": [
+      "CVE-2026-84323",
+      "CVE-2026-84324",
+      "CVE-2026-84325",
+      "CVE-2026-84326",
+      "CVE-2026-84327",
+      "CVE-2026-84328",
+      "CVE-2026-84329",
+      "CVE-2026-84330",
+      "CVE-2026-84331",
+      "CVE-2026-84332",
+      "CVE-2026-84333",
+      "CVE-2026-84334",
+      "CVE-2026-84335",
+      "CVE-2026-84347",
+      "CVE-2026-84348",
+      "CVE-2026-84349",
+      "CVE-2026-84350",
+      "CVE-2026-84351",
+      "CVE-2026-84352",
+      "CVE-2026-84353",
+      "CVE-2026-84354",
+      "CVE-2026-84355",
+      "CVE-2026-84356",
+      "CVE-2026-84357",
+      "CVE-2026-84358",
+      "CVE-2026-84359"
     ],
     "solutionLinks": []
   },
@@ -238,23 +280,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
-    "severity": "critical",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
-    "code": "CIVN-2026-0435",
-    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
-    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-20223"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Arbitrary Code Execution Vulnerability in GiveWP plugin for WordPress",
     "severity": "critical",
     "date": "2026-09-03",
@@ -270,6 +295,23 @@
     "impactAssessment": "Potential for full unauthorized control over the hosting server, sensitive data theft, and complete disruption of services.",
     "cves": [
       "CVE-2026-82222"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
+    "code": "CIVN-2026-0435",
+    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
+    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20223"
     ],
     "solutionLinks": []
   },
@@ -426,6 +468,23 @@
     "solutionLinks": []
   },
   {
+    "title": "Hardcoded Credentials Vulnerability in CP Plus Router",
+    "severity": "high",
+    "date": "2026-08-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0428",
+    "code": "CIVN-2026-0428",
+    "summary": "A vulnerability has been reported in CP Plus Router, which could allow an attacker on the local network to gain unauthorized administrative access to the targeted device.",
+    "description": "The CP Plus CP-XR-DE21-S is a 4G LTE router designed for high-speed internet connectivity, suitable for home and small-office use. This vulnerability exists in the CP Plus Router due to the presence of hardcoded HTTP Digest authentication credentials in the firmware that are identical across all devices running the affected firmware. An attacker with access to the local network could exploit this vulnerability by obtaining the hardcoded authentication information from the firmware. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized administrative access and perform privileged operations on the targeted device. Credit This vulnerability is reported by Stalin S, Harini M, Rohit Surya A T and Reginald Alfret V.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of CP Plus CP-XR-DE21-S Router.",
+    "riskAssessment": "Unauthorized administrative access to the targeted device.",
+    "impactAssessment": "Gain full administrative control of the targeted device.",
+    "cves": [
+      "CVE-2026-19412"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-08-28",
@@ -450,46 +509,6 @@
     "riskAssessment": "Risk of remote code execution, unauthorized access, sensitive information disclosure, data manipulation, or denial-of-service conditions.",
     "impactAssessment": "Potential unauthorized access to sensitive information, data manipulation, and security control bypass, and disruption of affected systems.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Hardcoded Credentials Vulnerability in CP Plus Router",
-    "severity": "high",
-    "date": "2026-08-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0428",
-    "code": "CIVN-2026-0428",
-    "summary": "A vulnerability has been reported in CP Plus Router, which could allow an attacker on the local network to gain unauthorized administrative access to the targeted device.",
-    "description": "The CP Plus CP-XR-DE21-S is a 4G LTE router designed for high-speed internet connectivity, suitable for home and small-office use. This vulnerability exists in the CP Plus Router due to the presence of hardcoded HTTP Digest authentication credentials in the firmware that are identical across all devices running the affected firmware. An attacker with access to the local network could exploit this vulnerability by obtaining the hardcoded authentication information from the firmware. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized administrative access and perform privileged operations on the targeted device. Credit This vulnerability is reported by Stalin S, Harini M, Rohit Surya A T and Reginald Alfret V.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of CP Plus CP-XR-DE21-S Router.",
-    "riskAssessment": "Unauthorized administrative access to the targeted device.",
-    "impactAssessment": "Gain full administrative control of the targeted device.",
-    "cves": [
-      "CVE-2026-19412"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
-    "severity": "critical",
-    "date": "2026-08-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
-    "code": "CIVN-2026-0425",
-    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
-    "softwareAffected": [
-      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
-      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
-      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
-      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "High risk of denial of service and authentication bypass.",
-    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-19489",
-      "CVE-2026-19490"
-    ],
     "solutionLinks": []
   },
   {
@@ -526,6 +545,29 @@
     "impactAssessment": "Potential for sensitive information disclosure, unauthorized modification of repositories, credential compromise, and complete system/server compromise.",
     "cves": [
       "CVE-2026-60004"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in NetScaler ADC and NetScaler Gateway",
+    "severity": "critical",
+    "date": "2026-08-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0425",
+    "code": "CIVN-2026-0425",
+    "summary": "Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway, which could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "description": "NetScaler ADC is a network appliance used for application delivery and security, while NetScaler Gateway provides secure remote access to enterprise resources. Multiple vulnerabilities have been reported in NetScaler ADC and NetScaler Gateway due to a memory overflow vulnerability associated with SIP ALG enabled on a Large Scale NAT (LSN) group and an authentication bypass vulnerability using an alternate authentication path in appliance configured as Gateway/AAA virtual server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial of service, bypass authentication and gain unauthorized access to the targeted system.",
+    "softwareAffected": [
+      "NetScaler ADC and NetScaler Gateway&#8239;14.1&#8239;before 14.1-73.32",
+      "NetScaler ADC and NetScaler Gateway&#8239;13.1&#8239;before 13.1-63.21",
+      "NetScaler ADC FIPS before 14.1-73.32 FIPS",
+      "NetScaler ADC FIPS and NDcPP before 13.1-37.277"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected versions of NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of denial of service and authentication bypass.",
+    "impactAssessment": "Potential for denial of service, authentication bypass, unauthorized access, and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-19489",
+      "CVE-2026-19490"
     ],
     "solutionLinks": []
   },
@@ -3797,21 +3839,6 @@
     "code": "CIVN-2026-0320"
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -3836,6 +3863,21 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
