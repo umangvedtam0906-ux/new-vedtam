@@ -1,5 +1,66 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0447",
+    "code": "CIVN-2026-0447",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass access controls, disclose sensitive information, execute malicious scripts, manipulate application data, or compromise user accounts.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist due to improper access controls, inadequate input validation, and insufficient authorization checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in unauthorized access, sensitive information disclosure, cross site scripting, data manipulation, or account compromise.",
+    "softwareAffected": [
+      "Webform Submissions Delete module prior to versions 1.2.0",
+      "Unpublished Node Permissions module prior to versions 1.8.0",
+      "PhotoSwipe - Responsive JavaScript Modal Image Gallery module versions prior to 5.0.9",
+      "Monobank payment API module versions prior to 1.0.3",
+      "Media Library Importer module versions prior to 2.1.6",
+      "Mailer Plus Log module versions prior to 1.2.7",
+      "Jsonapi Role Access module versions prior to 2.0.2",
+      "Islandora versions module versions prior to 2.19.0",
+      "Email Verification / SMS Verification / OTP Verification module versions prior to 2.4.0",
+      "Component blocks module versions prior to 1.2.7",
+      "Calculate Working Days module versions prior to 2.0.3",
+      "AI translate module versions prior to 1.3.2",
+      "AI translate module versions from versions 1.4.0 through 1.4.1",
+      "AI (Artificial Intelligence) module versions prior to 1.3.13",
+      "AI (Artificial Intelligence) module versions from 1.4.0 through 1.4.8",
+      "Advanced Search module versions prior to 2.4.5"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise..",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
+    "code": "CIAD-2026-0044",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-81963",
+      "CVE-2026-85880"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in PaperCut NG/MF Application Server",
     "severity": "critical",
     "date": "2026-09-08",
@@ -38,6 +99,28 @@
     "cves": [
       "CVE-2026-20354",
       "CVE-2026-20355"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in Keycloak",
+    "severity": "critical",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
+    "code": "CIVN-2026-0442",
+    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
+    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
+    "softwareAffected": [
+      "Keycloak versions prior to 26.7.2.",
+      "Red Hat build of Keycloak (RHBK)",
+      "Versions 26.4 prior to 26.4.15",
+      "Versions 26.6 prior to 26.6.6"
+    ],
+    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
+    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
+    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
+    "cves": [
+      "CVE-2026-18963"
     ],
     "solutionLinks": []
   },
@@ -83,28 +166,6 @@
       "CVE-2026-84357",
       "CVE-2026-84358",
       "CVE-2026-84359"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in Keycloak",
-    "severity": "critical",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
-    "code": "CIVN-2026-0442",
-    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
-    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
-    "softwareAffected": [
-      "Keycloak versions prior to 26.7.2.",
-      "Red Hat build of Keycloak (RHBK)",
-      "Versions 26.4 prior to 26.4.15",
-      "Versions 26.6 prior to 26.6.6"
-    ],
-    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
-    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
-    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
-    "cves": [
-      "CVE-2026-18963"
     ],
     "solutionLinks": []
   },
@@ -336,6 +397,30 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in cPanel",
+    "severity": "high",
+    "date": "2026-09-02",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0431",
+    "code": "CIVN-2026-0431",
+    "summary": "A vulnerability has been reported in cPanel's Domain Parking functionality which could allow a remote authenticated users to execute arbitrary code as root giving an attacker full control of the server.",
+    "description": "cPanel & WHM is a web hosting control panel that provides administrative (WHM) and user-level (cPanel) interfaces for managing servers and websites. This vulnerability exists in cPanels Domain Parking functionality due to insufficient restrictions on file creation. Successful exploitation of this vulnerability could allow a remote authenticated users to execute arbitrary code as root giving an attacker full control of the server.",
+    "softwareAffected": [
+      "cPanel & WHM (Web Host Manager) Versions:",
+      "prior to 11.110.0.141",
+      "prior to 11.134.0.53",
+      "prior to 11.136.0.37",
+      "prior to 11.138.0.2",
+      "WP2 Versions prior to 11.138.1.7"
+    ],
+    "targetAudience": "Individuals and organizations using affected cPanel hosting environment.",
+    "riskAssessment": "High risk of remote code execution and sensitive data exposure.",
+    "impactAssessment": "Unauthorized access and full server compromise.",
+    "cves": [
+      "CVE-2026-65643"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Adobe products",
     "severity": "critical",
     "date": "2026-09-02",
@@ -396,30 +481,6 @@
       "CVE-2026-76197",
       "CVE-2026-76195",
       "CVE-2026-76193"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in cPanel",
-    "severity": "high",
-    "date": "2026-09-02",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0431",
-    "code": "CIVN-2026-0431",
-    "summary": "A vulnerability has been reported in cPanel's Domain Parking functionality which could allow a remote authenticated users to execute arbitrary code as root giving an attacker full control of the server.",
-    "description": "cPanel & WHM is a web hosting control panel that provides administrative (WHM) and user-level (cPanel) interfaces for managing servers and websites. This vulnerability exists in cPanels Domain Parking functionality due to insufficient restrictions on file creation. Successful exploitation of this vulnerability could allow a remote authenticated users to execute arbitrary code as root giving an attacker full control of the server.",
-    "softwareAffected": [
-      "cPanel & WHM (Web Host Manager) Versions:",
-      "prior to 11.110.0.141",
-      "prior to 11.134.0.53",
-      "prior to 11.136.0.37",
-      "prior to 11.138.0.2",
-      "WP2 Versions prior to 11.138.1.7"
-    ],
-    "targetAudience": "Individuals and organizations using affected cPanel hosting environment.",
-    "riskAssessment": "High risk of remote code execution and sensitive data exposure.",
-    "impactAssessment": "Unauthorized access and full server compromise.",
-    "cves": [
-      "CVE-2026-65643"
     ],
     "solutionLinks": []
   },
