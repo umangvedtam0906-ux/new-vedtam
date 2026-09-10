@@ -1,5 +1,55 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0452",
+    "code": "CIVN-2026-0452",
+    "summary": "Multiple vulnerabilities have been reported in Google which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Type confusion in V8, Compositing; Out of bounds read in CrashReporting; Out of bounds write in WebGL; Incomplete cleanup in Network; Use after free in Compositing, DevTools, Skia; Race condition in V8; Improper resource exposure in CacheStorage; Improper input validation in Transactions Platform and Use of released resource in Mobile. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system. Note: CVE-2026-85046 is being actively exploited in the wild.",
+    "softwareAffected": [
+      "Google Chrome versions prior to 152.0.7977.82/.83 for Windows and Mac",
+      "Google Chrome versions prior to 152.0.7977.82 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
+    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
+    "cves": [
+      "CVE-2026-85046",
+      "CVE-2026-85042",
+      "CVE-2026-85043",
+      "CVE-2026-85044",
+      "CVE-2026-85045",
+      "CVE-2026-85047",
+      "CVE-2026-85048",
+      "CVE-2026-85049",
+      "CVE-2026-85050",
+      "CVE-2026-85051",
+      "CVE-2026-85052",
+      "CVE-2026-85053"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
+    "code": "CIVN-2026-0451",
+    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "softwareAffected": [
+      "All-in-One WP Migration and Backup versions 7.109 and prior"
+    ],
+    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
+    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
+    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
+    "cves": [
+      "CVE-2026-19949"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-09-09",
@@ -25,6 +75,76 @@
     "cves": [
       "CVE-2026-81963",
       "CVE-2026-85880"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in HPE Aruba Networking Fabric Composer",
+    "severity": "critical",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0446",
+    "code": "CIVN-2026-0446",
+    "summary": "Multiple vulnerabilities have been reported in HPE Aruba Networking Fabric Composer which could be exploited by a remote attacker to bypass security restrictions, escalate privileges to administrative levels, execute arbitrary code on the underlying operating system, or cause denial-of-service (DoS) conditions on the target system.",
+    "description": "HPE Aruba Networking Fabric Composer is a centralized management",
+    "softwareAffected": [
+      "HPE Networking Fabric Composer versions prior to 7.3.4"
+    ],
+    "targetAudience": "All organizations using HPE Aruba Networking Fabric Composer for network management.",
+    "riskAssessment": "High risk of unauthorized administrative access, remote code execution (RCE), and complete system compromise.",
+    "impactAssessment": "Potential for unauthenticated remote code execution, authentication bypass, privilege escalation, and denial-of-service (DoS).",
+    "cves": [
+      "CVE-2026-76657",
+      "CVE-2026-76658",
+      "CVE-2026-19766",
+      "CVE-2026-73700",
+      "CVE-2026-73701",
+      "CVE-2026-73702",
+      "CVE-2026-73703",
+      "CVE-2026-73704",
+      "CVE-2026-73705",
+      "CVE-2026-73706",
+      "CVE-2026-73707",
+      "CVE-2026-73708",
+      "CVE-2026-73709",
+      "CVE-2026-73710",
+      "CVE-2026-73711",
+      "CVE-2026-73712",
+      "CVE-2026-73713",
+      "CVE-2026-73714",
+      "CVE-2026-73715",
+      "CVE-2026-73716",
+      "CVE-2026-73717",
+      "CVE-2026-73718",
+      "CVE-2026-73719",
+      "CVE-2026-73720",
+      "CVE-2026-73721",
+      "CVE-2026-73722",
+      "CVE-2026-73723",
+      "CVE-2026-73724",
+      "CVE-2026-73725",
+      "CVE-2026-73726",
+      "CVE-2026-73727",
+      "CVE-2026-73728",
+      "CVE-2026-73729",
+      "CVE-2026-73730",
+      "CVE-2026-73731",
+      "CVE-2026-73732",
+      "CVE-2026-73733",
+      "CVE-2026-73734",
+      "CVE-2026-73735",
+      "CVE-2026-73736",
+      "CVE-2026-73737",
+      "CVE-2026-73738",
+      "CVE-2026-73739",
+      "CVE-2026-73740",
+      "CVE-2026-73741",
+      "CVE-2026-73742",
+      "CVE-2026-73743",
+      "CVE-2026-73744",
+      "CVE-2026-73745",
+      "CVE-2026-73746",
+      "CVE-2026-73747",
+      "CVE-2026-73748"
     ],
     "solutionLinks": []
   },
@@ -199,56 +319,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0452",
-    "code": "CIVN-2026-0452",
-    "summary": "Multiple vulnerabilities have been reported in Google which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Type confusion in V8, Compositing; Out of bounds read in CrashReporting; Out of bounds write in WebGL; Incomplete cleanup in Network; Use after free in Compositing, DevTools, Skia; Race condition in V8; Improper resource exposure in CacheStorage; Improper input validation in Transactions Platform and Use of released resource in Mobile. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system. Note: CVE-2026-85046 is being actively exploited in the wild.",
-    "softwareAffected": [
-      "Google Chrome versions prior to 152.0.7977.82/.83 for Windows and Mac",
-      "Google Chrome versions prior to 152.0.7977.82 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
-    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
-    "cves": [
-      "CVE-2026-85046",
-      "CVE-2026-85042",
-      "CVE-2026-85043",
-      "CVE-2026-85044",
-      "CVE-2026-85045",
-      "CVE-2026-85047",
-      "CVE-2026-85048",
-      "CVE-2026-85049",
-      "CVE-2026-85050",
-      "CVE-2026-85051",
-      "CVE-2026-85052",
-      "CVE-2026-85053"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
-    "code": "CIVN-2026-0451",
-    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "softwareAffected": [
-      "All-in-One WP Migration and Backup versions 7.109 and prior"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
-    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
-    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
-    "cves": [
-      "CVE-2026-19949"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Drupal Modules",
     "severity": "high",
     "date": "2026-09-09",
@@ -281,72 +351,22 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in HPE Aruba Networking Fabric Composer",
-    "severity": "critical",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0446",
-    "code": "CIVN-2026-0446",
-    "summary": "Multiple vulnerabilities have been reported in HPE Aruba Networking Fabric Composer which could be exploited by a remote attacker to bypass security restrictions, escalate privileges to administrative levels, execute arbitrary code on the underlying operating system, or cause denial-of-service (DoS) conditions on the target system.",
-    "description": "HPE Aruba Networking Fabric Composer is a centralized management",
+    "title": "Multiple Vulnerabilities in Cisco Secure Email",
+    "severity": "medium",
+    "date": "2026-09-08",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0444",
+    "code": "CIVN-2026-0444",
+    "summary": "Multiple vulnerabilities in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email could allow an unauthenticated, remote attacker to recover plain text from encrypted email messages.",
+    "description": "These vulnerabilities exist in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email due to insufficient validation of message integrity. An attacker could exploit the vulnerabilities by using a machine-in-the-middle technique to intercept and modify traffic between email gateways. Successful exploitation could allow an unauthenticated, remote attacker to obtain plaintext content from encrypted communication.",
     "softwareAffected": [
-      "HPE Networking Fabric Composer versions prior to 7.3.4"
+      "Cisco Secure Email (running Cisco AsyncOS Software Release 16.5.0 or earlier and having S/MIME configured for communication between email gateways)"
     ],
-    "targetAudience": "All organizations using HPE Aruba Networking Fabric Composer for network management.",
-    "riskAssessment": "High risk of unauthorized administrative access, remote code execution (RCE), and complete system compromise.",
-    "impactAssessment": "Potential for unauthenticated remote code execution, authentication bypass, privilege escalation, and denial-of-service (DoS).",
+    "targetAudience": "All IT administrators and individuals using Cisco products.",
+    "riskAssessment": "Risk of information disclosure.",
+    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
     "cves": [
-      "CVE-2026-76657",
-      "CVE-2026-76658",
-      "CVE-2026-19766",
-      "CVE-2026-73700",
-      "CVE-2026-73701",
-      "CVE-2026-73702",
-      "CVE-2026-73703",
-      "CVE-2026-73704",
-      "CVE-2026-73705",
-      "CVE-2026-73706",
-      "CVE-2026-73707",
-      "CVE-2026-73708",
-      "CVE-2026-73709",
-      "CVE-2026-73710",
-      "CVE-2026-73711",
-      "CVE-2026-73712",
-      "CVE-2026-73713",
-      "CVE-2026-73714",
-      "CVE-2026-73715",
-      "CVE-2026-73716",
-      "CVE-2026-73717",
-      "CVE-2026-73718",
-      "CVE-2026-73719",
-      "CVE-2026-73720",
-      "CVE-2026-73721",
-      "CVE-2026-73722",
-      "CVE-2026-73723",
-      "CVE-2026-73724",
-      "CVE-2026-73725",
-      "CVE-2026-73726",
-      "CVE-2026-73727",
-      "CVE-2026-73728",
-      "CVE-2026-73729",
-      "CVE-2026-73730",
-      "CVE-2026-73731",
-      "CVE-2026-73732",
-      "CVE-2026-73733",
-      "CVE-2026-73734",
-      "CVE-2026-73735",
-      "CVE-2026-73736",
-      "CVE-2026-73737",
-      "CVE-2026-73738",
-      "CVE-2026-73739",
-      "CVE-2026-73740",
-      "CVE-2026-73741",
-      "CVE-2026-73742",
-      "CVE-2026-73743",
-      "CVE-2026-73744",
-      "CVE-2026-73745",
-      "CVE-2026-73746",
-      "CVE-2026-73747",
-      "CVE-2026-73748"
+      "CVE-2026-20354",
+      "CVE-2026-20355"
     ],
     "solutionLinks": []
   },
@@ -373,22 +393,46 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Secure Email",
-    "severity": "medium",
-    "date": "2026-09-08",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0444",
-    "code": "CIVN-2026-0444",
-    "summary": "Multiple vulnerabilities in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email could allow an unauthenticated, remote attacker to recover plain text from encrypted email messages.",
-    "description": "These vulnerabilities exist in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email due to insufficient validation of message integrity. An attacker could exploit the vulnerabilities by using a machine-in-the-middle technique to intercept and modify traffic between email gateways. Successful exploitation could allow an unauthenticated, remote attacker to obtain plaintext content from encrypted communication.",
+    "title": "Authentication Bypass Vulnerability in Keycloak",
+    "severity": "critical",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
+    "code": "CIVN-2026-0442",
+    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
+    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
     "softwareAffected": [
-      "Cisco Secure Email (running Cisco AsyncOS Software Release 16.5.0 or earlier and having S/MIME configured for communication between email gateways)"
+      "Keycloak versions prior to 26.7.2.",
+      "Red Hat build of Keycloak (RHBK)",
+      "Versions 26.4 prior to 26.4.15",
+      "Versions 26.6 prior to 26.6.6"
     ],
-    "targetAudience": "All IT administrators and individuals using Cisco products.",
-    "riskAssessment": "Risk of information disclosure.",
-    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
+    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
+    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
+    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
     "cves": [
-      "CVE-2026-20354",
-      "CVE-2026-20355"
+      "CVE-2026-18963"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
+    "severity": "high",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
+    "code": "CIVN-2026-0441",
+    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "softwareAffected": [
+      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
+    ],
+    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
+    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
+    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "cves": [
+      "CVE-2026-19118",
+      "CVE-2026-18730",
+      "CVE-2026-51764",
+      "CVE-2026-76851"
     ],
     "solutionLinks": []
   },
@@ -434,50 +478,6 @@
       "CVE-2026-84357",
       "CVE-2026-84358",
       "CVE-2026-84359"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in Keycloak",
-    "severity": "critical",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
-    "code": "CIVN-2026-0442",
-    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
-    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
-    "softwareAffected": [
-      "Keycloak versions prior to 26.7.2.",
-      "Red Hat build of Keycloak (RHBK)",
-      "Versions 26.4 prior to 26.4.15",
-      "Versions 26.6 prior to 26.6.6"
-    ],
-    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
-    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
-    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
-    "cves": [
-      "CVE-2026-18963"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
-    "severity": "high",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
-    "code": "CIVN-2026-0441",
-    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "softwareAffected": [
-      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
-    ],
-    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
-    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
-    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "cves": [
-      "CVE-2026-19118",
-      "CVE-2026-18730",
-      "CVE-2026-51764",
-      "CVE-2026-76851"
     ],
     "solutionLinks": []
   },
@@ -593,6 +593,23 @@
     "solutionLinks": []
   },
   {
+    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
+    "code": "CIVN-2026-0436",
+    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
+    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20212"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Sonicwall SMA1000",
     "severity": "critical",
     "date": "2026-09-03",
@@ -647,23 +664,6 @@
     "impactAssessment": "Unauthorized access to sensitive data, data manipulation, and complete system compromise.",
     "cves": [
       "CVE-2026-75604"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
-    "severity": "critical",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
-    "code": "CIVN-2026-0436",
-    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
-    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-20212"
     ],
     "solutionLinks": []
   },
