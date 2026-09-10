@@ -1,5 +1,24 @@
 [
   {
+    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
+    "severity": "high",
+    "date": "2026-09-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
+    "code": "CIVN-2026-0453",
+    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
+    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
+    "softwareAffected": [
+      "Microsoft Malware Protection Engine"
+    ],
+    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
+    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
+    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
+    "cves": [
+      "CVE-2026-69414"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-09",
@@ -27,124 +46,6 @@
       "CVE-2026-85051",
       "CVE-2026-85052",
       "CVE-2026-85053"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
-    "code": "CIVN-2026-0451",
-    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "softwareAffected": [
-      "All-in-One WP Migration and Backup versions 7.109 and prior"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
-    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
-    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
-    "cves": [
-      "CVE-2026-19949"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
-    "code": "CIAD-2026-0044",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-81963",
-      "CVE-2026-85880"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in HPE Aruba Networking Fabric Composer",
-    "severity": "critical",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0446",
-    "code": "CIVN-2026-0446",
-    "summary": "Multiple vulnerabilities have been reported in HPE Aruba Networking Fabric Composer which could be exploited by a remote attacker to bypass security restrictions, escalate privileges to administrative levels, execute arbitrary code on the underlying operating system, or cause denial-of-service (DoS) conditions on the target system.",
-    "description": "HPE Aruba Networking Fabric Composer is a centralized management",
-    "softwareAffected": [
-      "HPE Networking Fabric Composer versions prior to 7.3.4"
-    ],
-    "targetAudience": "All organizations using HPE Aruba Networking Fabric Composer for network management.",
-    "riskAssessment": "High risk of unauthorized administrative access, remote code execution (RCE), and complete system compromise.",
-    "impactAssessment": "Potential for unauthenticated remote code execution, authentication bypass, privilege escalation, and denial-of-service (DoS).",
-    "cves": [
-      "CVE-2026-76657",
-      "CVE-2026-76658",
-      "CVE-2026-19766",
-      "CVE-2026-73700",
-      "CVE-2026-73701",
-      "CVE-2026-73702",
-      "CVE-2026-73703",
-      "CVE-2026-73704",
-      "CVE-2026-73705",
-      "CVE-2026-73706",
-      "CVE-2026-73707",
-      "CVE-2026-73708",
-      "CVE-2026-73709",
-      "CVE-2026-73710",
-      "CVE-2026-73711",
-      "CVE-2026-73712",
-      "CVE-2026-73713",
-      "CVE-2026-73714",
-      "CVE-2026-73715",
-      "CVE-2026-73716",
-      "CVE-2026-73717",
-      "CVE-2026-73718",
-      "CVE-2026-73719",
-      "CVE-2026-73720",
-      "CVE-2026-73721",
-      "CVE-2026-73722",
-      "CVE-2026-73723",
-      "CVE-2026-73724",
-      "CVE-2026-73725",
-      "CVE-2026-73726",
-      "CVE-2026-73727",
-      "CVE-2026-73728",
-      "CVE-2026-73729",
-      "CVE-2026-73730",
-      "CVE-2026-73731",
-      "CVE-2026-73732",
-      "CVE-2026-73733",
-      "CVE-2026-73734",
-      "CVE-2026-73735",
-      "CVE-2026-73736",
-      "CVE-2026-73737",
-      "CVE-2026-73738",
-      "CVE-2026-73739",
-      "CVE-2026-73740",
-      "CVE-2026-73741",
-      "CVE-2026-73742",
-      "CVE-2026-73743",
-      "CVE-2026-73744",
-      "CVE-2026-73745",
-      "CVE-2026-73746",
-      "CVE-2026-73747",
-      "CVE-2026-73748"
     ],
     "solutionLinks": []
   },
@@ -285,6 +186,156 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0447",
+    "code": "CIVN-2026-0447",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass access controls, disclose sensitive information, execute malicious scripts, manipulate application data, or compromise user accounts.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist due to improper access controls, inadequate input validation, and insufficient authorization checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in unauthorized access, sensitive information disclosure, cross site scripting, data manipulation, or account compromise.",
+    "softwareAffected": [
+      "Webform Submissions Delete module prior to versions 1.2.0",
+      "Unpublished Node Permissions module prior to versions 1.8.0",
+      "PhotoSwipe - Responsive JavaScript Modal Image Gallery module versions prior to 5.0.9",
+      "Monobank payment API module versions prior to 1.0.3",
+      "Media Library Importer module versions prior to 2.1.6",
+      "Mailer Plus Log module versions prior to 1.2.7",
+      "Jsonapi Role Access module versions prior to 2.0.2",
+      "Islandora versions module versions prior to 2.19.0",
+      "Email Verification / SMS Verification / OTP Verification module versions prior to 2.4.0",
+      "Component blocks module versions prior to 1.2.7",
+      "Calculate Working Days module versions prior to 2.0.3",
+      "AI translate module versions prior to 1.3.2",
+      "AI translate module versions from versions 1.4.0 through 1.4.1",
+      "AI (Artificial Intelligence) module versions prior to 1.3.13",
+      "AI (Artificial Intelligence) module versions from 1.4.0 through 1.4.8",
+      "Advanced Search module versions prior to 2.4.5"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise..",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in HPE Aruba Networking Fabric Composer",
+    "severity": "critical",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0446",
+    "code": "CIVN-2026-0446",
+    "summary": "Multiple vulnerabilities have been reported in HPE Aruba Networking Fabric Composer which could be exploited by a remote attacker to bypass security restrictions, escalate privileges to administrative levels, execute arbitrary code on the underlying operating system, or cause denial-of-service (DoS) conditions on the target system.",
+    "description": "HPE Aruba Networking Fabric Composer is a centralized management",
+    "softwareAffected": [
+      "HPE Networking Fabric Composer versions prior to 7.3.4"
+    ],
+    "targetAudience": "All organizations using HPE Aruba Networking Fabric Composer for network management.",
+    "riskAssessment": "High risk of unauthorized administrative access, remote code execution (RCE), and complete system compromise.",
+    "impactAssessment": "Potential for unauthenticated remote code execution, authentication bypass, privilege escalation, and denial-of-service (DoS).",
+    "cves": [
+      "CVE-2026-76657",
+      "CVE-2026-76658",
+      "CVE-2026-19766",
+      "CVE-2026-73700",
+      "CVE-2026-73701",
+      "CVE-2026-73702",
+      "CVE-2026-73703",
+      "CVE-2026-73704",
+      "CVE-2026-73705",
+      "CVE-2026-73706",
+      "CVE-2026-73707",
+      "CVE-2026-73708",
+      "CVE-2026-73709",
+      "CVE-2026-73710",
+      "CVE-2026-73711",
+      "CVE-2026-73712",
+      "CVE-2026-73713",
+      "CVE-2026-73714",
+      "CVE-2026-73715",
+      "CVE-2026-73716",
+      "CVE-2026-73717",
+      "CVE-2026-73718",
+      "CVE-2026-73719",
+      "CVE-2026-73720",
+      "CVE-2026-73721",
+      "CVE-2026-73722",
+      "CVE-2026-73723",
+      "CVE-2026-73724",
+      "CVE-2026-73725",
+      "CVE-2026-73726",
+      "CVE-2026-73727",
+      "CVE-2026-73728",
+      "CVE-2026-73729",
+      "CVE-2026-73730",
+      "CVE-2026-73731",
+      "CVE-2026-73732",
+      "CVE-2026-73733",
+      "CVE-2026-73734",
+      "CVE-2026-73735",
+      "CVE-2026-73736",
+      "CVE-2026-73737",
+      "CVE-2026-73738",
+      "CVE-2026-73739",
+      "CVE-2026-73740",
+      "CVE-2026-73741",
+      "CVE-2026-73742",
+      "CVE-2026-73743",
+      "CVE-2026-73744",
+      "CVE-2026-73745",
+      "CVE-2026-73746",
+      "CVE-2026-73747",
+      "CVE-2026-73748"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
+    "code": "CIVN-2026-0451",
+    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "softwareAffected": [
+      "All-in-One WP Migration and Backup versions 7.109 and prior"
+    ],
+    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
+    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
+    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
+    "cves": [
+      "CVE-2026-19949"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
+    "code": "CIAD-2026-0044",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-81963",
+      "CVE-2026-85880"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Microsoft Products",
     "severity": "critical",
     "date": "2026-09-09",
@@ -319,35 +370,25 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0447",
-    "code": "CIVN-2026-0447",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass access controls, disclose sensitive information, execute malicious scripts, manipulate application data, or compromise user accounts.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist due to improper access controls, inadequate input validation, and insufficient authorization checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in unauthorized access, sensitive information disclosure, cross site scripting, data manipulation, or account compromise.",
+    "title": "Multiple Vulnerabilities in PaperCut NG/MF Application Server",
+    "severity": "critical",
+    "date": "2026-09-08",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0445",
+    "code": "CIVN-2026-0445",
+    "summary": "Multiple vulnerabilities have been reported in PaperCut NG/MF Application Server, which could allow an unauthenticated remote attacker to bypass authentication, modify system configurations, execute arbitrary Java bytecode, and compromise affected systems.",
+    "description": "PaperCut NG and PaperCut MF are print management",
     "softwareAffected": [
-      "Webform Submissions Delete module prior to versions 1.2.0",
-      "Unpublished Node Permissions module prior to versions 1.8.0",
-      "PhotoSwipe - Responsive JavaScript Modal Image Gallery module versions prior to 5.0.9",
-      "Monobank payment API module versions prior to 1.0.3",
-      "Media Library Importer module versions prior to 2.1.6",
-      "Mailer Plus Log module versions prior to 1.2.7",
-      "Jsonapi Role Access module versions prior to 2.0.2",
-      "Islandora versions module versions prior to 2.19.0",
-      "Email Verification / SMS Verification / OTP Verification module versions prior to 2.4.0",
-      "Component blocks module versions prior to 1.2.7",
-      "Calculate Working Days module versions prior to 2.0.3",
-      "AI translate module versions prior to 1.3.2",
-      "AI translate module versions from versions 1.4.0 through 1.4.1",
-      "AI (Artificial Intelligence) module versions prior to 1.3.13",
-      "AI (Artificial Intelligence) module versions from 1.4.0 through 1.4.8",
-      "Advanced Search module versions prior to 2.4.5"
+      "All PaperCut NG versions prior to Emergency Patch Release 3",
+      "All PaperCut MF versions prior to Emergency Patch Release 3",
+      "PaperCut NG/MF versions 23 and earlier are advised to be upgraded to the latest version."
     ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise..",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [],
+    "targetAudience": "All organizations and administrators using affected PaperCut NG/MF Application Server deployments.",
+    "riskAssessment": "Critical risk of authentication bypass, arbitrary code execution, unauthorized modification of system configurations, and compromise of affected systems.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could result in authentication bypass, arbitrary code execution, unauthorized modification of system configurations, unauthorized access, and compromise of the confidentiality, integrity, and availability of affected systems.",
+    "cves": [
+      "CVE-2026-81578",
+      "CVE-2026-82078"
+    ],
     "solutionLinks": []
   },
   {
@@ -367,28 +408,6 @@
     "cves": [
       "CVE-2026-20354",
       "CVE-2026-20355"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in PaperCut NG/MF Application Server",
-    "severity": "critical",
-    "date": "2026-09-08",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0445",
-    "code": "CIVN-2026-0445",
-    "summary": "Multiple vulnerabilities have been reported in PaperCut NG/MF Application Server, which could allow an unauthenticated remote attacker to bypass authentication, modify system configurations, execute arbitrary Java bytecode, and compromise affected systems.",
-    "description": "PaperCut NG and PaperCut MF are print management",
-    "softwareAffected": [
-      "All PaperCut NG versions prior to Emergency Patch Release 3",
-      "All PaperCut MF versions prior to Emergency Patch Release 3",
-      "PaperCut NG/MF versions 23 and earlier are advised to be upgraded to the latest version."
-    ],
-    "targetAudience": "All organizations and administrators using affected PaperCut NG/MF Application Server deployments.",
-    "riskAssessment": "Critical risk of authentication bypass, arbitrary code execution, unauthorized modification of system configurations, and compromise of affected systems.",
-    "impactAssessment": "Successful exploitation of these vulnerabilities could result in authentication bypass, arbitrary code execution, unauthorized modification of system configurations, unauthorized access, and compromise of the confidentiality, integrity, and availability of affected systems.",
-    "cves": [
-      "CVE-2026-81578",
-      "CVE-2026-82078"
     ],
     "solutionLinks": []
   },
@@ -593,23 +612,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
-    "severity": "critical",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
-    "code": "CIVN-2026-0436",
-    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
-    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-20212"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Sonicwall SMA1000",
     "severity": "critical",
     "date": "2026-09-03",
@@ -627,6 +629,23 @@
     "cves": [
       "CVE-2026-83548",
       "CVE-2026-83549"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
+    "code": "CIVN-2026-0436",
+    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
+    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20212"
     ],
     "solutionLinks": []
   },
