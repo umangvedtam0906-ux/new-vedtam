@@ -19,6 +19,60 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in SAP Products",
+    "severity": "high",
+    "date": "2026-09-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0045",
+    "code": "CIAD-2026-0045",
+    "summary": "Multiple vulnerabilities have been reported in various SAP products which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, manipulate application data, and perform server-side request forgery (SSRF) on the targeted system.",
+    "description": "SAP provides a wide range of enterprise software",
+    "softwareAffected": [
+      "SAP Extended Passport (EPP) Processing",
+      "SAP NetWeaver (Message Server)",
+      "SAP Cloud Application Programming Model (CAP)",
+      "SAP NetWeaver (SAP GUI for Java)",
+      "SAP ABAP Developer Tools",
+      "SAP Integration Suite",
+      "SAP NetWeaver Business Client",
+      "SAP NetWeaver Application Server for ABAP and ABAP Platform",
+      "SAP Commerce Cloud (Search And Navigation)",
+      "SAP Web Dispatcher, Internet Communication Manager and SAP Content Server",
+      "SAP S/4HANA (Intercompany Matching and Reconciliation)",
+      "SAP Manufacturing Integration and Intelligence",
+      "SAPUI5 (Frame Options Allowlist)",
+      "SAP S/4HANA (Finance for Advanced Payment Management)",
+      "SAP S/4HANA (Manage Bank Chains app)",
+      "SAP NetWeaver and ABAP Platform",
+      "SAP Process Integration (SOAP Adapter)"
+    ],
+    "targetAudience": "Users of SAP products.",
+    "riskAssessment": "High risk of complete system compromise, unauthorized access, and denial of service.",
+    "impactAssessment": "Potential for execute arbitrary code, elevate privileges, disclose sensitive information, and cause denial of service (DoS) conditions.",
+    "cves": [
+      "CVE-2026-44756",
+      "CVE-2026-58240",
+      "CVE-2026-76969",
+      "CVE-2026-66768",
+      "CVE-2026-58243",
+      "CVE-2026-76958",
+      "CVE-2026-76967",
+      "CVE-2026-66767",
+      "CVE-2026-2332",
+      "CVE-2026-76968",
+      "CVE-2026-44766",
+      "CVE-2026-76971",
+      "CVE-2026-34477",
+      "CVE-2026-76977",
+      "CVE-2026-76960",
+      "CVE-2026-76961",
+      "CVE-2026-76959",
+      "CVE-2026-76962",
+      "CVE-2026-76963",
+      "CVE-2026-58234"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-09",
@@ -46,6 +100,54 @@
       "CVE-2026-85051",
       "CVE-2026-85052",
       "CVE-2026-85053"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
+    "code": "CIVN-2026-0451",
+    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "softwareAffected": [
+      "All-in-One WP Migration and Backup versions 7.109 and prior"
+    ],
+    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
+    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
+    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
+    "cves": [
+      "CVE-2026-19949"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
+    "code": "CIAD-2026-0044",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-81963",
+      "CVE-2026-85880"
     ],
     "solutionLinks": []
   },
@@ -186,6 +288,40 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in Microsoft Products",
+    "severity": "critical",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0448",
+    "code": "CIVN-2026-0448",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products which could allow an unauthenticated, remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
+    "description": "These vulnerabilities exist in the Microsoft products due to improper input validation, access control weakness or incorrect name re",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using affected Microsoft products.",
+    "riskAssessment": "High risk of remote code execution, service disruption and sensitive information disclosure on the underlying system.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-69502",
+      "CVE-2026-69419",
+      "CVE-2026-68782",
+      "CVE-2026-66800",
+      "CVE-2026-70105",
+      "CVE-2026-69855",
+      "CVE-2026-69543",
+      "CVE-2026-69558",
+      "CVE-2026-69555",
+      "CVE-2026-69400",
+      "CVE-2026-66309",
+      "CVE-2026-65816",
+      "CVE-2026-63509",
+      "CVE-2026-65770",
+      "CVE-2026-55013",
+      "CVE-2026-55015",
+      "CVE-2026-69836",
+      "CVE-2026-69851"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Drupal Modules",
     "severity": "high",
     "date": "2026-09-09",
@@ -288,88 +424,6 @@
     "solutionLinks": []
   },
   {
-    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
-    "code": "CIVN-2026-0451",
-    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "softwareAffected": [
-      "All-in-One WP Migration and Backup versions 7.109 and prior"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
-    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
-    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
-    "cves": [
-      "CVE-2026-19949"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
-    "code": "CIAD-2026-0044",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-81963",
-      "CVE-2026-85880"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Microsoft Products",
-    "severity": "critical",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0448",
-    "code": "CIVN-2026-0448",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products which could allow an unauthenticated, remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
-    "description": "These vulnerabilities exist in the Microsoft products due to improper input validation, access control weakness or incorrect name re",
-    "softwareAffected": "",
-    "targetAudience": "All organizations and individuals using affected Microsoft products.",
-    "riskAssessment": "High risk of remote code execution, service disruption and sensitive information disclosure on the underlying system.",
-    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
-    "cves": [
-      "CVE-2026-69502",
-      "CVE-2026-69419",
-      "CVE-2026-68782",
-      "CVE-2026-66800",
-      "CVE-2026-70105",
-      "CVE-2026-69855",
-      "CVE-2026-69543",
-      "CVE-2026-69558",
-      "CVE-2026-69555",
-      "CVE-2026-69400",
-      "CVE-2026-66309",
-      "CVE-2026-65816",
-      "CVE-2026-63509",
-      "CVE-2026-65770",
-      "CVE-2026-55013",
-      "CVE-2026-55015",
-      "CVE-2026-69836",
-      "CVE-2026-69851"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in PaperCut NG/MF Application Server",
     "severity": "critical",
     "date": "2026-09-08",
@@ -408,50 +462,6 @@
     "cves": [
       "CVE-2026-20354",
       "CVE-2026-20355"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in Keycloak",
-    "severity": "critical",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
-    "code": "CIVN-2026-0442",
-    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
-    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
-    "softwareAffected": [
-      "Keycloak versions prior to 26.7.2.",
-      "Red Hat build of Keycloak (RHBK)",
-      "Versions 26.4 prior to 26.4.15",
-      "Versions 26.6 prior to 26.6.6"
-    ],
-    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
-    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
-    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
-    "cves": [
-      "CVE-2026-18963"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
-    "severity": "high",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
-    "code": "CIVN-2026-0441",
-    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "softwareAffected": [
-      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
-    ],
-    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
-    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
-    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "cves": [
-      "CVE-2026-19118",
-      "CVE-2026-18730",
-      "CVE-2026-51764",
-      "CVE-2026-76851"
     ],
     "solutionLinks": []
   },
@@ -497,6 +507,50 @@
       "CVE-2026-84357",
       "CVE-2026-84358",
       "CVE-2026-84359"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
+    "severity": "high",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
+    "code": "CIVN-2026-0441",
+    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "softwareAffected": [
+      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
+    ],
+    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
+    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
+    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "cves": [
+      "CVE-2026-19118",
+      "CVE-2026-18730",
+      "CVE-2026-51764",
+      "CVE-2026-76851"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in Keycloak",
+    "severity": "critical",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
+    "code": "CIVN-2026-0442",
+    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
+    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
+    "softwareAffected": [
+      "Keycloak versions prior to 26.7.2.",
+      "Red Hat build of Keycloak (RHBK)",
+      "Versions 26.4 prior to 26.4.15",
+      "Versions 26.6 prior to 26.6.6"
+    ],
+    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
+    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
+    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
+    "cves": [
+      "CVE-2026-18963"
     ],
     "solutionLinks": []
   },
@@ -667,6 +721,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Arbitrary Code Execution Vulnerability in GiveWP plugin for WordPress",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0434",
+    "code": "CIVN-2026-0434",
+    "summary": "A vulnerability has been identified in the GiveWP plugin for WordPress, which could allow an attacker to bypass security restrictions, inject malicious serialized objects into the session database, and execute arbitrary commands on the targeted system.",
+    "description": "GiveWP is a widely used WordPress plugin designed to facilitate online donations and fundraising management. This vulnerability exists in the GiveWP plugin due to unsafe deserialization of untrusted data, allowing PHP Object Injection that can lead to remote code execution. This vulnerability can be exploited through specially crafted HTTP requests. Attackers can bypass WordPress registration settings through an exposed unauthenticated action, obtain the necessary authentication, and subsequently trigger the exploit. Successful exploitation of this vulnerability could allow an attacker to bypass security restrictions, inject malicious serialized objects into the session database, and execute arbitrary commands on the targeted system.",
+    "softwareAffected": [
+      "GiveWP plugin for WordPress versions prior to 4.16.7.2"
+    ],
+    "targetAudience": "All WordPress administrators and organizations utilizing the GiveWP plugin.",
+    "riskAssessment": "Maximum risk of remote code execution leading to complete system compromise.",
+    "impactAssessment": "Potential for full unauthorized control over the hosting server, sensitive data theft, and complete disruption of services.",
+    "cves": [
+      "CVE-2026-82222"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Next.js",
     "severity": "critical",
     "date": "2026-09-03",
@@ -683,25 +756,6 @@
     "impactAssessment": "Unauthorized access to sensitive data, data manipulation, and complete system compromise.",
     "cves": [
       "CVE-2026-75604"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Arbitrary Code Execution Vulnerability in GiveWP plugin for WordPress",
-    "severity": "critical",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0434",
-    "code": "CIVN-2026-0434",
-    "summary": "A vulnerability has been identified in the GiveWP plugin for WordPress, which could allow an attacker to bypass security restrictions, inject malicious serialized objects into the session database, and execute arbitrary commands on the targeted system.",
-    "description": "GiveWP is a widely used WordPress plugin designed to facilitate online donations and fundraising management. This vulnerability exists in the GiveWP plugin due to unsafe deserialization of untrusted data, allowing PHP Object Injection that can lead to remote code execution. This vulnerability can be exploited through specially crafted HTTP requests. Attackers can bypass WordPress registration settings through an exposed unauthenticated action, obtain the necessary authentication, and subsequently trigger the exploit. Successful exploitation of this vulnerability could allow an attacker to bypass security restrictions, inject malicious serialized objects into the session database, and execute arbitrary commands on the targeted system.",
-    "softwareAffected": [
-      "GiveWP plugin for WordPress versions prior to 4.16.7.2"
-    ],
-    "targetAudience": "All WordPress administrators and organizations utilizing the GiveWP plugin.",
-    "riskAssessment": "Maximum risk of remote code execution leading to complete system compromise.",
-    "impactAssessment": "Potential for full unauthorized control over the hosting server, sensitive data theft, and complete disruption of services.",
-    "cves": [
-      "CVE-2026-82222"
     ],
     "solutionLinks": []
   },
@@ -4209,6 +4263,21 @@
     "code": "CIVN-2026-0320"
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -4233,21 +4302,6 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
