@@ -73,31 +73,21 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
     "severity": "high",
     "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
-    "code": "CIAD-2026-0044",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
+    "code": "CIVN-2026-0451",
+    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
     "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software"
+      "All-in-One WP Migration and Backup versions 7.109 and prior"
     ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
+    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
+    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
     "cves": [
-      "CVE-2026-81963",
-      "CVE-2026-85880"
+      "CVE-2026-19949"
     ],
     "solutionLinks": []
   },
@@ -156,6 +146,67 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0447",
+    "code": "CIVN-2026-0447",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass access controls, disclose sensitive information, execute malicious scripts, manipulate application data, or compromise user accounts.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist due to improper access controls, inadequate input validation, and insufficient authorization checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in unauthorized access, sensitive information disclosure, cross site scripting, data manipulation, or account compromise.",
+    "softwareAffected": [
+      "Webform Submissions Delete module prior to versions 1.2.0",
+      "Unpublished Node Permissions module prior to versions 1.8.0",
+      "PhotoSwipe - Responsive JavaScript Modal Image Gallery module versions prior to 5.0.9",
+      "Monobank payment API module versions prior to 1.0.3",
+      "Media Library Importer module versions prior to 2.1.6",
+      "Mailer Plus Log module versions prior to 1.2.7",
+      "Jsonapi Role Access module versions prior to 2.0.2",
+      "Islandora versions module versions prior to 2.19.0",
+      "Email Verification / SMS Verification / OTP Verification module versions prior to 2.4.0",
+      "Component blocks module versions prior to 1.2.7",
+      "Calculate Working Days module versions prior to 2.0.3",
+      "AI translate module versions prior to 1.3.2",
+      "AI translate module versions from versions 1.4.0 through 1.4.1",
+      "AI (Artificial Intelligence) module versions prior to 1.3.13",
+      "AI (Artificial Intelligence) module versions from 1.4.0 through 1.4.8",
+      "Advanced Search module versions prior to 2.4.5"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise..",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
+    "code": "CIAD-2026-0044",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-81963",
+      "CVE-2026-85880"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-09",
@@ -183,25 +234,6 @@
       "CVE-2026-85051",
       "CVE-2026-85052",
       "CVE-2026-85053"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
-    "code": "CIVN-2026-0451",
-    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "softwareAffected": [
-      "All-in-One WP Migration and Backup versions 7.109 and prior"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
-    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
-    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
-    "cves": [
-      "CVE-2026-19949"
     ],
     "solutionLinks": []
   },
@@ -322,38 +354,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0447",
-    "code": "CIVN-2026-0447",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass access controls, disclose sensitive information, execute malicious scripts, manipulate application data, or compromise user accounts.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist due to improper access controls, inadequate input validation, and insufficient authorization checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in unauthorized access, sensitive information disclosure, cross site scripting, data manipulation, or account compromise.",
-    "softwareAffected": [
-      "Webform Submissions Delete module prior to versions 1.2.0",
-      "Unpublished Node Permissions module prior to versions 1.8.0",
-      "PhotoSwipe - Responsive JavaScript Modal Image Gallery module versions prior to 5.0.9",
-      "Monobank payment API module versions prior to 1.0.3",
-      "Media Library Importer module versions prior to 2.1.6",
-      "Mailer Plus Log module versions prior to 1.2.7",
-      "Jsonapi Role Access module versions prior to 2.0.2",
-      "Islandora versions module versions prior to 2.19.0",
-      "Email Verification / SMS Verification / OTP Verification module versions prior to 2.4.0",
-      "Component blocks module versions prior to 1.2.7",
-      "Calculate Working Days module versions prior to 2.0.3",
-      "AI translate module versions prior to 1.3.2",
-      "AI translate module versions from versions 1.4.0 through 1.4.1",
-      "AI (Artificial Intelligence) module versions prior to 1.3.13",
-      "AI (Artificial Intelligence) module versions from 1.4.0 through 1.4.8",
-      "Advanced Search module versions prior to 2.4.5"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise..",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in HPE Aruba Networking Fabric Composer",
     "severity": "critical",
     "date": "2026-09-09",
@@ -424,26 +424,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Secure Email",
-    "severity": "medium",
-    "date": "2026-09-08",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0444",
-    "code": "CIVN-2026-0444",
-    "summary": "Multiple vulnerabilities in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email could allow an unauthenticated, remote attacker to recover plain text from encrypted email messages.",
-    "description": "These vulnerabilities exist in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email due to insufficient validation of message integrity. An attacker could exploit the vulnerabilities by using a machine-in-the-middle technique to intercept and modify traffic between email gateways. Successful exploitation could allow an unauthenticated, remote attacker to obtain plaintext content from encrypted communication.",
-    "softwareAffected": [
-      "Cisco Secure Email (running Cisco AsyncOS Software Release 16.5.0 or earlier and having S/MIME configured for communication between email gateways)"
-    ],
-    "targetAudience": "All IT administrators and individuals using Cisco products.",
-    "riskAssessment": "Risk of information disclosure.",
-    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
-    "cves": [
-      "CVE-2026-20354",
-      "CVE-2026-20355"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in PaperCut NG/MF Application Server",
     "severity": "critical",
     "date": "2026-09-08",
@@ -462,6 +442,26 @@
     "cves": [
       "CVE-2026-81578",
       "CVE-2026-82078"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Secure Email",
+    "severity": "medium",
+    "date": "2026-09-08",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0444",
+    "code": "CIVN-2026-0444",
+    "summary": "Multiple vulnerabilities in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email could allow an unauthenticated, remote attacker to recover plain text from encrypted email messages.",
+    "description": "These vulnerabilities exist in the Secure/Multipurpose Internet Mail Extensions (S/MIME) decryption functionality of Cisco Secure Email due to insufficient validation of message integrity. An attacker could exploit the vulnerabilities by using a machine-in-the-middle technique to intercept and modify traffic between email gateways. Successful exploitation could allow an unauthenticated, remote attacker to obtain plaintext content from encrypted communication.",
+    "softwareAffected": [
+      "Cisco Secure Email (running Cisco AsyncOS Software Release 16.5.0 or earlier and having S/MIME configured for communication between email gateways)"
+    ],
+    "targetAudience": "All IT administrators and individuals using Cisco products.",
+    "riskAssessment": "Risk of information disclosure.",
+    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
+    "cves": [
+      "CVE-2026-20354",
+      "CVE-2026-20355"
     ],
     "solutionLinks": []
   },
@@ -511,28 +511,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
-    "severity": "high",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
-    "code": "CIVN-2026-0441",
-    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "softwareAffected": [
-      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
-    ],
-    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
-    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
-    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "cves": [
-      "CVE-2026-19118",
-      "CVE-2026-18730",
-      "CVE-2026-51764",
-      "CVE-2026-76851"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Authentication Bypass Vulnerability in Keycloak",
     "severity": "critical",
     "date": "2026-09-07",
@@ -551,6 +529,28 @@
     "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
     "cves": [
       "CVE-2026-18963"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
+    "severity": "high",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
+    "code": "CIVN-2026-0441",
+    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "softwareAffected": [
+      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
+    ],
+    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
+    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
+    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "cves": [
+      "CVE-2026-19118",
+      "CVE-2026-18730",
+      "CVE-2026-51764",
+      "CVE-2026-76851"
     ],
     "solutionLinks": []
   },
@@ -644,45 +644,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
-    "severity": "critical",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
-    "code": "CIVN-2026-0436",
-    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
-    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-20212"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Zimbra",
-    "severity": "high",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0438",
-    "code": "CIVN-2026-0438",
-    "summary": "Multiple vulnerabilities have been reported in Zimbra Collaboration Suite (ZCS) which could allow an attacker to bypass mail forwarding restrictions, bypass access-control or authorization restrictions, or execute arbitrary operating system commands on the targeted system.",
-    "description": "Zimbra is an open-source email and collaboration platform that provides services such as email, calendaring, contacts, and file sharing. Multiple vulnerabilities have been reported in Zimbra due to improper access controls, authorization weaknesses, and improper input validation in the SNMP monitoring component. An attacker could exploit these vulnerabilities to bypass mail forwarding restrictions, bypass access-control or authorization restrictions, or exfiltrate emails. An unauthenticated attacker could also exploit the SNMP monitoring vulnerability, when the optional zimbra-snmp package is installed and SNMP notifications are enabled, to execute arbitrary operating system commands on the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to exfiltrate emails, bypass access-control or authorization restrictions, or execute arbitrary operating system commands on the targeted system. Note - CVE-2026-73570 is being actively exploited in the wild.",
-    "softwareAffected": [
-      "Zimbra Collaboration Suite (ZCS) version prior to 10.1.20."
-    ],
-    "targetAudience": "All end-user organizations and individuals using Zimbra.",
-    "riskAssessment": "High risk of mail forwarding restriction bypass, access-control or authorization bypass and arbitrary command execution.",
-    "impactAssessment": "Potential for email exfiltration, access-control or authorization bypass and arbitrary command execution.",
-    "cves": [
-      "CVE-2026-73570",
-      "CVE-2026-50055",
-      "CVE-2026-10631",
-      "CVE-2026-50054"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Sonicwall SMA1000",
     "severity": "critical",
     "date": "2026-09-03",
@@ -700,6 +661,23 @@
     "cves": [
       "CVE-2026-83548",
       "CVE-2026-83549"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0436",
+    "code": "CIVN-2026-0436",
+    "summary": "A vulnerability has been reported in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to remote attacker to execute code with root privileges.",
+    "description": "This vulnerability exists due to TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and forwarding (VRF). An attacker could exploit this vulnerability by sending crafted input that could be executed as code with root privileges. Successful exploitation of this vulnerability could allow the attacker the S1HAL process to crash, which could cause the device to reload.",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20212"
     ],
     "solutionLinks": []
   },
@@ -736,6 +714,28 @@
     "impactAssessment": "Potential for full unauthorized control over the hosting server, sensitive data theft, and complete disruption of services.",
     "cves": [
       "CVE-2026-82222"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Zimbra",
+    "severity": "high",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0438",
+    "code": "CIVN-2026-0438",
+    "summary": "Multiple vulnerabilities have been reported in Zimbra Collaboration Suite (ZCS) which could allow an attacker to bypass mail forwarding restrictions, bypass access-control or authorization restrictions, or execute arbitrary operating system commands on the targeted system.",
+    "description": "Zimbra is an open-source email and collaboration platform that provides services such as email, calendaring, contacts, and file sharing. Multiple vulnerabilities have been reported in Zimbra due to improper access controls, authorization weaknesses, and improper input validation in the SNMP monitoring component. An attacker could exploit these vulnerabilities to bypass mail forwarding restrictions, bypass access-control or authorization restrictions, or exfiltrate emails. An unauthenticated attacker could also exploit the SNMP monitoring vulnerability, when the optional zimbra-snmp package is installed and SNMP notifications are enabled, to execute arbitrary operating system commands on the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to exfiltrate emails, bypass access-control or authorization restrictions, or execute arbitrary operating system commands on the targeted system. Note - CVE-2026-73570 is being actively exploited in the wild.",
+    "softwareAffected": [
+      "Zimbra Collaboration Suite (ZCS) version prior to 10.1.20."
+    ],
+    "targetAudience": "All end-user organizations and individuals using Zimbra.",
+    "riskAssessment": "High risk of mail forwarding restriction bypass, access-control or authorization bypass and arbitrary command execution.",
+    "impactAssessment": "Potential for email exfiltration, access-control or authorization bypass and arbitrary command execution.",
+    "cves": [
+      "CVE-2026-73570",
+      "CVE-2026-50055",
+      "CVE-2026-10631",
+      "CVE-2026-50054"
     ],
     "solutionLinks": []
   },
