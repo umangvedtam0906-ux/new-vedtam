@@ -104,6 +104,159 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
+    "code": "CIAD-2026-0044",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-81963",
+      "CVE-2026-85880"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
+    "code": "CIVN-2026-0450",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.36 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
+    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-87491"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Microsoft Products",
+    "severity": "critical",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0448",
+    "code": "CIVN-2026-0448",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products which could allow an unauthenticated, remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
+    "description": "These vulnerabilities exist in the Microsoft products due to improper input validation, access control weakness or incorrect name re",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using affected Microsoft products.",
+    "riskAssessment": "High risk of remote code execution, service disruption and sensitive information disclosure on the underlying system.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-69502",
+      "CVE-2026-69419",
+      "CVE-2026-68782",
+      "CVE-2026-66800",
+      "CVE-2026-70105",
+      "CVE-2026-69855",
+      "CVE-2026-69543",
+      "CVE-2026-69558",
+      "CVE-2026-69555",
+      "CVE-2026-69400",
+      "CVE-2026-66309",
+      "CVE-2026-65816",
+      "CVE-2026-63509",
+      "CVE-2026-65770",
+      "CVE-2026-55013",
+      "CVE-2026-55015",
+      "CVE-2026-69836",
+      "CVE-2026-69851"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in HPE Aruba Networking Fabric Composer",
+    "severity": "critical",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0446",
+    "code": "CIVN-2026-0446",
+    "summary": "Multiple vulnerabilities have been reported in HPE Aruba Networking Fabric Composer which could be exploited by a remote attacker to bypass security restrictions, escalate privileges to administrative levels, execute arbitrary code on the underlying operating system, or cause denial-of-service (DoS) conditions on the target system.",
+    "description": "HPE Aruba Networking Fabric Composer is a centralized management",
+    "softwareAffected": [
+      "HPE Networking Fabric Composer versions prior to 7.3.4"
+    ],
+    "targetAudience": "All organizations using HPE Aruba Networking Fabric Composer for network management.",
+    "riskAssessment": "High risk of unauthorized administrative access, remote code execution (RCE), and complete system compromise.",
+    "impactAssessment": "Potential for unauthenticated remote code execution, authentication bypass, privilege escalation, and denial-of-service (DoS).",
+    "cves": [
+      "CVE-2026-76657",
+      "CVE-2026-76658",
+      "CVE-2026-19766",
+      "CVE-2026-73700",
+      "CVE-2026-73701",
+      "CVE-2026-73702",
+      "CVE-2026-73703",
+      "CVE-2026-73704",
+      "CVE-2026-73705",
+      "CVE-2026-73706",
+      "CVE-2026-73707",
+      "CVE-2026-73708",
+      "CVE-2026-73709",
+      "CVE-2026-73710",
+      "CVE-2026-73711",
+      "CVE-2026-73712",
+      "CVE-2026-73713",
+      "CVE-2026-73714",
+      "CVE-2026-73715",
+      "CVE-2026-73716",
+      "CVE-2026-73717",
+      "CVE-2026-73718",
+      "CVE-2026-73719",
+      "CVE-2026-73720",
+      "CVE-2026-73721",
+      "CVE-2026-73722",
+      "CVE-2026-73723",
+      "CVE-2026-73724",
+      "CVE-2026-73725",
+      "CVE-2026-73726",
+      "CVE-2026-73727",
+      "CVE-2026-73728",
+      "CVE-2026-73729",
+      "CVE-2026-73730",
+      "CVE-2026-73731",
+      "CVE-2026-73732",
+      "CVE-2026-73733",
+      "CVE-2026-73734",
+      "CVE-2026-73735",
+      "CVE-2026-73736",
+      "CVE-2026-73737",
+      "CVE-2026-73738",
+      "CVE-2026-73739",
+      "CVE-2026-73740",
+      "CVE-2026-73741",
+      "CVE-2026-73742",
+      "CVE-2026-73743",
+      "CVE-2026-73744",
+      "CVE-2026-73745",
+      "CVE-2026-73746",
+      "CVE-2026-73747",
+      "CVE-2026-73748"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
     "severity": "high",
     "date": "2026-09-09",
@@ -239,130 +392,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in HPE Aruba Networking Fabric Composer",
-    "severity": "critical",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0446",
-    "code": "CIVN-2026-0446",
-    "summary": "Multiple vulnerabilities have been reported in HPE Aruba Networking Fabric Composer which could be exploited by a remote attacker to bypass security restrictions, escalate privileges to administrative levels, execute arbitrary code on the underlying operating system, or cause denial-of-service (DoS) conditions on the target system.",
-    "description": "HPE Aruba Networking Fabric Composer is a centralized management",
-    "softwareAffected": [
-      "HPE Networking Fabric Composer versions prior to 7.3.4"
-    ],
-    "targetAudience": "All organizations using HPE Aruba Networking Fabric Composer for network management.",
-    "riskAssessment": "High risk of unauthorized administrative access, remote code execution (RCE), and complete system compromise.",
-    "impactAssessment": "Potential for unauthenticated remote code execution, authentication bypass, privilege escalation, and denial-of-service (DoS).",
-    "cves": [
-      "CVE-2026-76657",
-      "CVE-2026-76658",
-      "CVE-2026-19766",
-      "CVE-2026-73700",
-      "CVE-2026-73701",
-      "CVE-2026-73702",
-      "CVE-2026-73703",
-      "CVE-2026-73704",
-      "CVE-2026-73705",
-      "CVE-2026-73706",
-      "CVE-2026-73707",
-      "CVE-2026-73708",
-      "CVE-2026-73709",
-      "CVE-2026-73710",
-      "CVE-2026-73711",
-      "CVE-2026-73712",
-      "CVE-2026-73713",
-      "CVE-2026-73714",
-      "CVE-2026-73715",
-      "CVE-2026-73716",
-      "CVE-2026-73717",
-      "CVE-2026-73718",
-      "CVE-2026-73719",
-      "CVE-2026-73720",
-      "CVE-2026-73721",
-      "CVE-2026-73722",
-      "CVE-2026-73723",
-      "CVE-2026-73724",
-      "CVE-2026-73725",
-      "CVE-2026-73726",
-      "CVE-2026-73727",
-      "CVE-2026-73728",
-      "CVE-2026-73729",
-      "CVE-2026-73730",
-      "CVE-2026-73731",
-      "CVE-2026-73732",
-      "CVE-2026-73733",
-      "CVE-2026-73734",
-      "CVE-2026-73735",
-      "CVE-2026-73736",
-      "CVE-2026-73737",
-      "CVE-2026-73738",
-      "CVE-2026-73739",
-      "CVE-2026-73740",
-      "CVE-2026-73741",
-      "CVE-2026-73742",
-      "CVE-2026-73743",
-      "CVE-2026-73744",
-      "CVE-2026-73745",
-      "CVE-2026-73746",
-      "CVE-2026-73747",
-      "CVE-2026-73748"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
-    "code": "CIVN-2026-0450",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
-      "Google Chrome versions prior to 153.0.8010.36 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
-    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-87491"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Microsoft Products",
-    "severity": "critical",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0448",
-    "code": "CIVN-2026-0448",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products which could allow an unauthenticated, remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
-    "description": "These vulnerabilities exist in the Microsoft products due to improper input validation, access control weakness or incorrect name re",
-    "softwareAffected": "",
-    "targetAudience": "All organizations and individuals using affected Microsoft products.",
-    "riskAssessment": "High risk of remote code execution, service disruption and sensitive information disclosure on the underlying system.",
-    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
-    "cves": [
-      "CVE-2026-69502",
-      "CVE-2026-69419",
-      "CVE-2026-68782",
-      "CVE-2026-66800",
-      "CVE-2026-70105",
-      "CVE-2026-69855",
-      "CVE-2026-69543",
-      "CVE-2026-69558",
-      "CVE-2026-69555",
-      "CVE-2026-69400",
-      "CVE-2026-66309",
-      "CVE-2026-65816",
-      "CVE-2026-63509",
-      "CVE-2026-65770",
-      "CVE-2026-55013",
-      "CVE-2026-55015",
-      "CVE-2026-69836",
-      "CVE-2026-69851"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Drupal Modules",
     "severity": "high",
     "date": "2026-09-09",
@@ -392,35 +421,6 @@
     "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise..",
     "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
-    "code": "CIAD-2026-0044",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-81963",
-      "CVE-2026-85880"
-    ],
     "solutionLinks": []
   },
   {
@@ -462,6 +462,28 @@
     "cves": [
       "CVE-2026-20354",
       "CVE-2026-20355"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
+    "severity": "high",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
+    "code": "CIVN-2026-0441",
+    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "softwareAffected": [
+      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
+    ],
+    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
+    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
+    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "cves": [
+      "CVE-2026-19118",
+      "CVE-2026-18730",
+      "CVE-2026-51764",
+      "CVE-2026-76851"
     ],
     "solutionLinks": []
   },
@@ -533,58 +555,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
-    "severity": "high",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
-    "code": "CIVN-2026-0441",
-    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "softwareAffected": [
-      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
-    ],
-    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
-    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
-    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "cves": [
-      "CVE-2026-19118",
-      "CVE-2026-18730",
-      "CVE-2026-51764",
-      "CVE-2026-76851"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Apache Tomcat",
-    "severity": "critical",
-    "date": "2026-09-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0440",
-    "code": "CIVN-2026-0440",
-    "summary": "Multiple vulnerabilities have been reported in Apache Tomcat that could allow an attacker to bypass authentication or security constraints, cause denial-of-service conditions, perform limited replay attacks, or gain unauthorized access on the targeted system.",
-    "description": "Apache Tomcat is an open-source web server and servlet container that runs java-base web applications. These vulnerabilities exist in Apache Tomcat due to improper handling of authentication and authorization, request handling, session management, and access-control mechanisms. Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication or security constraints, cause denial-of-service conditions, perform limited replay attacks, or gain unauthorized access on the targeted system.",
-    "softwareAffected": [
-      "Apache Tomcat 9.0.x versions 9.0.120 and prior",
-      "Apache Tomcat 10.1.x versions 10.1.57 and prior"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected versions Apache Tomcat.",
-    "riskAssessment": "High risk of unauthorized access to sensitive data, denial-of-service conditions, perform limited replay attacks.",
-    "impactAssessment": "Potential for compromise of the affected system.",
-    "cves": [
-      "CVE-2026-73180",
-      "CVE-2026-68763",
-      "CVE-2026-68569",
-      "CVE-2026-68525",
-      "CVE-2026-66422",
-      "CVE-2026-66299",
-      "CVE-2026-65927",
-      "CVE-2026-65905",
-      "CVE-2026-65637",
-      "CVE-2026-65183",
-      "CVE-2026-65182"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-09-04",
@@ -644,6 +614,36 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Apache Tomcat",
+    "severity": "critical",
+    "date": "2026-09-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0440",
+    "code": "CIVN-2026-0440",
+    "summary": "Multiple vulnerabilities have been reported in Apache Tomcat that could allow an attacker to bypass authentication or security constraints, cause denial-of-service conditions, perform limited replay attacks, or gain unauthorized access on the targeted system.",
+    "description": "Apache Tomcat is an open-source web server and servlet container that runs java-base web applications. These vulnerabilities exist in Apache Tomcat due to improper handling of authentication and authorization, request handling, session management, and access-control mechanisms. Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication or security constraints, cause denial-of-service conditions, perform limited replay attacks, or gain unauthorized access on the targeted system.",
+    "softwareAffected": [
+      "Apache Tomcat 9.0.x versions 9.0.120 and prior",
+      "Apache Tomcat 10.1.x versions 10.1.57 and prior"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected versions Apache Tomcat.",
+    "riskAssessment": "High risk of unauthorized access to sensitive data, denial-of-service conditions, perform limited replay attacks.",
+    "impactAssessment": "Potential for compromise of the affected system.",
+    "cves": [
+      "CVE-2026-73180",
+      "CVE-2026-68763",
+      "CVE-2026-68569",
+      "CVE-2026-68525",
+      "CVE-2026-66422",
+      "CVE-2026-66299",
+      "CVE-2026-65927",
+      "CVE-2026-65905",
+      "CVE-2026-65637",
+      "CVE-2026-65183",
+      "CVE-2026-65182"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Sonicwall SMA1000",
     "severity": "critical",
     "date": "2026-09-03",
@@ -661,23 +661,6 @@
     "cves": [
       "CVE-2026-83548",
       "CVE-2026-83549"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
-    "severity": "critical",
-    "date": "2026-09-03",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
-    "code": "CIVN-2026-0435",
-    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
-    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-20223"
     ],
     "solutionLinks": []
   },
@@ -714,6 +697,23 @@
     "impactAssessment": "Potential for full unauthorized control over the hosting server, sensitive data theft, and complete disruption of services.",
     "cves": [
       "CVE-2026-82222"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cisco Secure Workload Unauthorized API Access Vulnerability",
+    "severity": "critical",
+    "date": "2026-09-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0435",
+    "code": "CIVN-2026-0435",
+    "summary": "A vulnerability has been reported in the access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the Site Admin role.",
+    "description": "This vulnerability exists due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read sensitive information and make configuration changes across tenant boundaries with the privileges of the Site Admin user.",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-20223"
     ],
     "solutionLinks": []
   },
