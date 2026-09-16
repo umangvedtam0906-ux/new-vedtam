@@ -1,5 +1,89 @@
 [
   {
+    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
+    "code": "CIVN-2026-0460",
+    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
+    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
+    "softwareAffected": [
+      "Mikrotik router OS version 7.24 and prior to 7.24.2",
+      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
+      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
+    ],
+    "targetAudience": "All organizations and individuals using MikroTik Router.",
+    "riskAssessment": "High risks of bypass authentication and data breach.",
+    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
+    "cves": [
+      "CVE-2026-67277",
+      "CVE-2026-86060",
+      "CVE-2026-67276"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Check Point VPN Products",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
+    "code": "CIVN-2026-0459",
+    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
+    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
+    "softwareAffected": [
+      "Security Gateway, Security Management Server, and Spark Firewall.",
+      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
+      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
+      "Not Affected Versions: R82.20"
+    ],
+    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
+    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
+    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
+    "cves": [
+      "CVE-2026-85102",
+      "CVE-2026-85103"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
+    "code": "CIVN-2026-0457",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
+      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
+      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
+    ],
+    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-85706",
+      "CVE-2026-87719",
+      "CVE-2026-88765",
+      "CVE-2026-79708",
+      "CVE-2026-78252",
+      "CVE-2026-13210",
+      "CVE-2025-14871",
+      "CVE-2026-1168",
+      "CVE-2024-11222",
+      "CVE-2026-12910",
+      "CVE-2026-82837",
+      "CVE-2026-19619",
+      "CVE-2026-86341",
+      "CVE-2026-86340",
+      "CVE-2026-7514",
+      "CVE-2026-8030",
+      "CVE-2026-16794",
+      "CVE-2026-3855"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in MongoDB Products",
     "severity": "medium",
     "date": "2026-09-16",
@@ -229,35 +313,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
-    "code": "CIAD-2026-0044",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-81963",
-      "CVE-2026-85880"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
     "severity": "high",
     "date": "2026-09-09",
@@ -273,26 +328,6 @@
     "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
     "cves": [
       "CVE-2026-19949"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
-    "code": "CIVN-2026-0450",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
-      "Google Chrome versions prior to 153.0.8010.36 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
-    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-87491"
     ],
     "solutionLinks": []
   },
@@ -549,6 +584,55 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
+    "code": "CIAD-2026-0044",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-81963",
+      "CVE-2026-85880"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
+    "code": "CIVN-2026-0450",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.36 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
+    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-87491"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-09",
@@ -622,6 +706,50 @@
     "solutionLinks": []
   },
   {
+    "title": "Authentication Bypass Vulnerability in Keycloak",
+    "severity": "critical",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
+    "code": "CIVN-2026-0442",
+    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
+    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
+    "softwareAffected": [
+      "Keycloak versions prior to 26.7.2.",
+      "Red Hat build of Keycloak (RHBK)",
+      "Versions 26.4 prior to 26.4.15",
+      "Versions 26.6 prior to 26.6.6"
+    ],
+    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
+    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
+    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
+    "cves": [
+      "CVE-2026-18963"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
+    "severity": "high",
+    "date": "2026-09-07",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
+    "code": "CIVN-2026-0441",
+    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "softwareAffected": [
+      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
+    ],
+    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
+    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
+    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
+    "cves": [
+      "CVE-2026-19118",
+      "CVE-2026-18730",
+      "CVE-2026-51764",
+      "CVE-2026-76851"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-07",
@@ -663,50 +791,6 @@
       "CVE-2026-84357",
       "CVE-2026-84358",
       "CVE-2026-84359"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in Keycloak",
-    "severity": "critical",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0442",
-    "code": "CIVN-2026-0442",
-    "summary": "A critical vulnerability has been reported in Keycloak, which could allow an unauthenticated attacker to bypass the password reset mechanism and take over arbitrary user accounts, including administrative accounts.",
-    "description": "Keycloak is an open-source identity and access management platform used to provide authentication and authorization services for applications and services. A vulnerability has been reported in Keycloak due to improper state validation within the reset-credentials authentication flow. An attacker may send a specially crafted request to the reset-credentials endpoint, causing the authentication session to transition directly to the password update phase without requiring the action token normally delivered through email. Successful exploitation could allow an unauthenticated attacker to bypass the password reset mechanism and take over user accounts, including administrative accounts.",
-    "softwareAffected": [
-      "Keycloak versions prior to 26.7.2.",
-      "Red Hat build of Keycloak (RHBK)",
-      "Versions 26.4 prior to 26.4.15",
-      "Versions 26.6 prior to 26.6.6"
-    ],
-    "targetAudience": "Organizations and administrators using affected versions of Keycloak and Red Hat build of Keycloak (RHBK).",
-    "riskAssessment": "Critical risk of unauthenticated account takeover, unauthorized access, and compromise of administrative accounts.",
-    "impactAssessment": "Potential for authentication bypass, unauthorized password reset, account takeover, and privilege escalation through compromised administrative accounts.",
-    "cves": [
-      "CVE-2026-18963"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in GitHub Enterprise Server",
-    "severity": "high",
-    "date": "2026-09-07",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0441",
-    "code": "CIVN-2026-0441",
-    "summary": "Multiple vulnerabilities have been reported in GitHub Enterprise Server, which could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "description": "GitHub Enterprise Server is a self-hosted version of GitHub designed for enterprises to securely manage, develop, and collaborate on code within their own infrastructure. Multiple vulnerabilities exist in GitHub Enterprise Server due to improper input validation, insufficient network isolation, insecure handling of internal requests, a Time-of-Check Time-of-Use (TOCTOU) race condition in upload processing and a vulnerable SMTP/Postfix configuration. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "softwareAffected": [
-      "GitHub Enterprise Server versions 3.21.0 to 3.21.4"
-    ],
-    "targetAudience": "Individuals and organizations using affected versions of GitHub Enterprise Server.",
-    "riskAssessment": "Potential for arbitrary code execution and compromise of privileged GitHub Enterprise Server (GHES) services.",
-    "impactAssessment": "Remote code execution, unauthorized access to privileged internal services or management credentials and bypass certain email security controls.",
-    "cves": [
-      "CVE-2026-19118",
-      "CVE-2026-18730",
-      "CVE-2026-51764",
-      "CVE-2026-76851"
     ],
     "solutionLinks": []
   },
