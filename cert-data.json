@@ -45,6 +45,30 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Cisco Secure Email Gateway",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0461",
+    "code": "CIVN-2026-0461",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Email Gateway and Cisco Secure Email and Web Manager that could allow an attacker to gain unauthorized access to files outside restricted directories, bypass authorization controls and access restricted resources, inject malicious input, consume excessive system resources, degrade service availability, or cause a denial-of-service (DoS) condition on the targeted system.",
+    "description": "1. Path Traversal Vulnerability ( CVE-2026-76440 ) This vulnerability exists due to improper validation and re",
+    "softwareAffected": [
+      "Cisco Secure Email Gateway 15.5 and earlier",
+      "Cisco Secure Email and Web Manager 15.5 and earlier"
+    ],
+    "targetAudience": "All IT administrators and individuals using Cisco products.",
+    "riskAssessment": "Risk of information disclosure.",
+    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
+    "cves": [
+      "CVE-2026-76440",
+      "CVE-2026-76441",
+      "CVE-2026-76442",
+      "CVE-2026-76443",
+      "CVE-2026-20353"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Cisco Identity Services Engine",
     "severity": "critical",
     "date": "2026-09-17",
@@ -136,44 +160,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
-    "code": "CIVN-2026-0457",
-    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
-      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
-      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
-    ],
-    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
-    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [
-      "CVE-2026-85706",
-      "CVE-2026-87719",
-      "CVE-2026-88765",
-      "CVE-2026-79708",
-      "CVE-2026-78252",
-      "CVE-2026-13210",
-      "CVE-2025-14871",
-      "CVE-2026-1168",
-      "CVE-2024-11222",
-      "CVE-2026-12910",
-      "CVE-2026-82837",
-      "CVE-2026-19619",
-      "CVE-2026-86341",
-      "CVE-2026-86340",
-      "CVE-2026-7514",
-      "CVE-2026-8030",
-      "CVE-2026-16794",
-      "CVE-2026-3855"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in MikroTik RouterOS",
     "severity": "critical",
     "date": "2026-09-16",
@@ -217,30 +203,6 @@
       "CVE-2026-85102",
       "CVE-2026-85103"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
-    "code": "CIVN-2026-0456",
-    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "softwareAffected": [
-      "MongoDB Server 8.3 versions prior to 8.3.9",
-      "MongoDB Server 8.0 versions prior to 8.0.30",
-      "MongoDB Server 7.0 versions prior to 7.0.41",
-      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
-      "Laravel MongoDB (PHP) versions prior to 5.11.0",
-      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
-      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
-      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
-    "riskAssessment": "High risk of compromise of affected systems.",
-    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -391,6 +353,68 @@
       "CVE-2026-82006",
       "CVE-2026-82007"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
+    "code": "CIVN-2026-0457",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
+      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
+      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
+    ],
+    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-85706",
+      "CVE-2026-87719",
+      "CVE-2026-88765",
+      "CVE-2026-79708",
+      "CVE-2026-78252",
+      "CVE-2026-13210",
+      "CVE-2025-14871",
+      "CVE-2026-1168",
+      "CVE-2024-11222",
+      "CVE-2026-12910",
+      "CVE-2026-82837",
+      "CVE-2026-19619",
+      "CVE-2026-86341",
+      "CVE-2026-86340",
+      "CVE-2026-7514",
+      "CVE-2026-8030",
+      "CVE-2026-16794",
+      "CVE-2026-3855"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
+    "code": "CIVN-2026-0456",
+    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "softwareAffected": [
+      "MongoDB Server 8.3 versions prior to 8.3.9",
+      "MongoDB Server 8.0 versions prior to 8.0.30",
+      "MongoDB Server 7.0 versions prior to 7.0.41",
+      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
+      "Laravel MongoDB (PHP) versions prior to 5.11.0",
+      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
+      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
+      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
+    "riskAssessment": "High risk of compromise of affected systems.",
+    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -599,26 +623,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
-    "code": "CIVN-2026-0450",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
-      "Google Chrome versions prior to 153.0.8010.36 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
-    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-87491"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-09-09",
@@ -644,6 +648,26 @@
     "cves": [
       "CVE-2026-81963",
       "CVE-2026-85880"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
+    "code": "CIVN-2026-0450",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.36 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
+    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-87491"
     ],
     "solutionLinks": []
   },
