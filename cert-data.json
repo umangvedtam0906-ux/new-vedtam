@@ -550,6 +550,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
+    "severity": "high",
+    "date": "2026-09-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
+    "code": "CIVN-2026-0453",
+    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
+    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
+    "softwareAffected": [
+      "Microsoft Malware Protection Engine"
+    ],
+    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
+    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
+    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
+    "cves": [
+      "CVE-2026-69414"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "high",
     "date": "2026-09-10",
@@ -604,74 +623,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
-    "severity": "high",
-    "date": "2026-09-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
-    "code": "CIVN-2026-0453",
-    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
-    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
-    "softwareAffected": [
-      "Microsoft Malware Protection Engine"
-    ],
-    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
-    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
-    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
-    "cves": [
-      "CVE-2026-69414"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
-    "code": "CIAD-2026-0044",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-81963",
-      "CVE-2026-85880"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
-    "code": "CIVN-2026-0450",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
-      "Google Chrome versions prior to 153.0.8010.36 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
-    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-87491"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-09",
@@ -718,6 +669,26 @@
     "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
     "cves": [
       "CVE-2026-19949"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
+    "code": "CIVN-2026-0450",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.36 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
+    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-87491"
     ],
     "solutionLinks": []
   },
@@ -834,6 +805,35 @@
       "CVE-2026-80175",
       "CVE-2026-79727",
       "CVE-2026-79966"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
+    "code": "CIAD-2026-0044",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-81963",
+      "CVE-2026-85880"
     ],
     "solutionLinks": []
   },
