@@ -1,25 +1,5 @@
 [
   {
-    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
-    "severity": "high",
-    "date": "2026-09-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
-    "code": "CIVN-2026-0466",
-    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
-    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
-    "softwareAffected": [
-      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
-      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
-    ],
-    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
-    "cves": [
-      "CVE-2026-87886"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in Check Point Security Management and Log Servers",
     "severity": "critical",
     "date": "2026-09-18",
@@ -41,6 +21,64 @@
     "impactAssessment": "Potential for execute arbitrary code and elevate privileges on the targeted system.",
     "cves": [
       "CVE-2026-91843"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
+    "severity": "high",
+    "date": "2026-09-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
+    "code": "CIVN-2026-0466",
+    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
+    "softwareAffected": [
+      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
+    ],
+    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "cves": [
+      "CVE-2026-87886"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0464",
+    "code": "CIVN-2026-0464",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Firewall products, which could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system.",
+    "description": "Cisco Secure Firewall products provide network security capabilities including firewalling, VPN, threat prevention, application control, and centralized management. Multiple vulnerabilities exist in Cisco Secure Firewall products due to improper handling of exceptional conditions, improper access control, incorrect initialization of encryption parameters, unsecured deserialization of untrusted data, improper input validation and other security weaknesses. An attacker could exploit these vulnerabilities by sending specially crafted packets, requests, HTTP payloads, sftunnel remote procedure calls (RPCs), serialized data or session tokens, depending on the affected vulnerability. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system. Note: Two of the reported vulnerabilities are known to be exploited in wild.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software",
+      "Cisco Secure Firewall Management Center (FMC)"
+    ],
+    "targetAudience": "All IT administrators and organizations using Cisco Secure Firewall products.",
+    "riskAssessment": "High risk of unauthorized access, arbitrary command execution and privilege escalation.",
+    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-20242",
+      "CVE-2026-20324",
+      "CVE-2026-20329",
+      "CVE-2026-20330",
+      "CVE-2026-20331",
+      "CVE-2026-20332",
+      "CVE-2026-20333",
+      "CVE-2026-20334",
+      "CVE-2026-20335",
+      "CVE-2026-20336",
+      "CVE-2026-20340",
+      "CVE-2026-20341",
+      "CVE-2026-20342",
+      "CVE-2026-20343",
+      "CVE-2026-20344",
+      "CVE-2026-76412",
+      "CVE-2026-76413",
+      "CVE-2026-76420"
     ],
     "solutionLinks": []
   },
@@ -122,44 +160,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
-    "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0464",
-    "code": "CIVN-2026-0464",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Firewall products, which could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system.",
-    "description": "Cisco Secure Firewall products provide network security capabilities including firewalling, VPN, threat prevention, application control, and centralized management. Multiple vulnerabilities exist in Cisco Secure Firewall products due to improper handling of exceptional conditions, improper access control, incorrect initialization of encryption parameters, unsecured deserialization of untrusted data, improper input validation and other security weaknesses. An attacker could exploit these vulnerabilities by sending specially crafted packets, requests, HTTP payloads, sftunnel remote procedure calls (RPCs), serialized data or session tokens, depending on the affected vulnerability. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system. Note: Two of the reported vulnerabilities are known to be exploited in wild.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software",
-      "Cisco Secure Firewall Management Center (FMC)"
-    ],
-    "targetAudience": "All IT administrators and organizations using Cisco Secure Firewall products.",
-    "riskAssessment": "High risk of unauthorized access, arbitrary command execution and privilege escalation.",
-    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-20242",
-      "CVE-2026-20324",
-      "CVE-2026-20329",
-      "CVE-2026-20330",
-      "CVE-2026-20331",
-      "CVE-2026-20332",
-      "CVE-2026-20333",
-      "CVE-2026-20334",
-      "CVE-2026-20335",
-      "CVE-2026-20336",
-      "CVE-2026-20340",
-      "CVE-2026-20341",
-      "CVE-2026-20342",
-      "CVE-2026-20343",
-      "CVE-2026-20344",
-      "CVE-2026-76412",
-      "CVE-2026-76413",
-      "CVE-2026-76420"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Check Point VPN Products",
     "severity": "critical",
     "date": "2026-09-16",
@@ -179,6 +179,44 @@
     "cves": [
       "CVE-2026-85102",
       "CVE-2026-85103"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
+    "code": "CIVN-2026-0457",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
+      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
+      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
+    ],
+    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-85706",
+      "CVE-2026-87719",
+      "CVE-2026-88765",
+      "CVE-2026-79708",
+      "CVE-2026-78252",
+      "CVE-2026-13210",
+      "CVE-2025-14871",
+      "CVE-2026-1168",
+      "CVE-2024-11222",
+      "CVE-2026-12910",
+      "CVE-2026-82837",
+      "CVE-2026-19619",
+      "CVE-2026-86341",
+      "CVE-2026-86340",
+      "CVE-2026-7514",
+      "CVE-2026-8030",
+      "CVE-2026-16794",
+      "CVE-2026-3855"
     ],
     "solutionLinks": []
   },
@@ -329,44 +367,6 @@
       "CVE-2026-82005",
       "CVE-2026-82006",
       "CVE-2026-82007"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
-    "code": "CIVN-2026-0457",
-    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
-      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
-      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
-    ],
-    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
-    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [
-      "CVE-2026-85706",
-      "CVE-2026-87719",
-      "CVE-2026-88765",
-      "CVE-2026-79708",
-      "CVE-2026-78252",
-      "CVE-2026-13210",
-      "CVE-2025-14871",
-      "CVE-2026-1168",
-      "CVE-2024-11222",
-      "CVE-2026-12910",
-      "CVE-2026-82837",
-      "CVE-2026-19619",
-      "CVE-2026-86341",
-      "CVE-2026-86340",
-      "CVE-2026-7514",
-      "CVE-2026-8030",
-      "CVE-2026-16794",
-      "CVE-2026-3855"
     ],
     "solutionLinks": []
   },
@@ -550,6 +550,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
+    "severity": "high",
+    "date": "2026-09-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
+    "code": "CIVN-2026-0453",
+    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
+    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
+    "softwareAffected": [
+      "Microsoft Malware Protection Engine"
+    ],
+    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
+    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
+    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
+    "cves": [
+      "CVE-2026-69414"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "high",
     "date": "2026-09-10",
@@ -600,25 +619,6 @@
       "CVE-2026-76962",
       "CVE-2026-76963",
       "CVE-2026-58234"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
-    "severity": "high",
-    "date": "2026-09-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
-    "code": "CIVN-2026-0453",
-    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
-    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
-    "softwareAffected": [
-      "Microsoft Malware Protection Engine"
-    ],
-    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
-    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
-    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
-    "cves": [
-      "CVE-2026-69414"
     ],
     "solutionLinks": []
   },
@@ -680,57 +680,6 @@
       "CVE-2026-85052",
       "CVE-2026-85053"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
-    "code": "CIVN-2026-0451",
-    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "softwareAffected": [
-      "All-in-One WP Migration and Backup versions 7.109 and prior"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
-    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
-    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
-    "cves": [
-      "CVE-2026-19949"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0447",
-    "code": "CIVN-2026-0447",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass access controls, disclose sensitive information, execute malicious scripts, manipulate application data, or compromise user accounts.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist due to improper access controls, inadequate input validation, and insufficient authorization checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in unauthorized access, sensitive information disclosure, cross site scripting, data manipulation, or account compromise.",
-    "softwareAffected": [
-      "Webform Submissions Delete module prior to versions 1.2.0",
-      "Unpublished Node Permissions module prior to versions 1.8.0",
-      "PhotoSwipe - Responsive JavaScript Modal Image Gallery module versions prior to 5.0.9",
-      "Monobank payment API module versions prior to 1.0.3",
-      "Media Library Importer module versions prior to 2.1.6",
-      "Mailer Plus Log module versions prior to 1.2.7",
-      "Jsonapi Role Access module versions prior to 2.0.2",
-      "Islandora versions module versions prior to 2.19.0",
-      "Email Verification / SMS Verification / OTP Verification module versions prior to 2.4.0",
-      "Component blocks module versions prior to 1.2.7",
-      "Calculate Working Days module versions prior to 2.0.3",
-      "AI translate module versions prior to 1.3.2",
-      "AI translate module versions from versions 1.4.0 through 1.4.1",
-      "AI (Artificial Intelligence) module versions prior to 1.3.13",
-      "AI (Artificial Intelligence) module versions from 1.4.0 through 1.4.8",
-      "Advanced Search module versions prior to 2.4.5"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise..",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -900,6 +849,57 @@
       "CVE-2026-55015",
       "CVE-2026-69836",
       "CVE-2026-69851"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0447",
+    "code": "CIVN-2026-0447",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass access controls, disclose sensitive information, execute malicious scripts, manipulate application data, or compromise user accounts.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist due to improper access controls, inadequate input validation, and insufficient authorization checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in unauthorized access, sensitive information disclosure, cross site scripting, data manipulation, or account compromise.",
+    "softwareAffected": [
+      "Webform Submissions Delete module prior to versions 1.2.0",
+      "Unpublished Node Permissions module prior to versions 1.8.0",
+      "PhotoSwipe - Responsive JavaScript Modal Image Gallery module versions prior to 5.0.9",
+      "Monobank payment API module versions prior to 1.0.3",
+      "Media Library Importer module versions prior to 2.1.6",
+      "Mailer Plus Log module versions prior to 1.2.7",
+      "Jsonapi Role Access module versions prior to 2.0.2",
+      "Islandora versions module versions prior to 2.19.0",
+      "Email Verification / SMS Verification / OTP Verification module versions prior to 2.4.0",
+      "Component blocks module versions prior to 1.2.7",
+      "Calculate Working Days module versions prior to 2.0.3",
+      "AI translate module versions prior to 1.3.2",
+      "AI translate module versions from versions 1.4.0 through 1.4.1",
+      "AI (Artificial Intelligence) module versions prior to 1.3.13",
+      "AI (Artificial Intelligence) module versions from 1.4.0 through 1.4.8",
+      "Advanced Search module versions prior to 2.4.5"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise..",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
+    "code": "CIVN-2026-0451",
+    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "softwareAffected": [
+      "All-in-One WP Migration and Backup versions 7.109 and prior"
+    ],
+    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
+    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
+    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
+    "cves": [
+      "CVE-2026-19949"
     ],
     "solutionLinks": []
   },
