@@ -1,5 +1,25 @@
 [
   {
+    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
+    "severity": "high",
+    "date": "2026-09-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
+    "code": "CIVN-2026-0466",
+    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
+    "softwareAffected": [
+      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
+    ],
+    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "cves": [
+      "CVE-2026-87886"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Check Point Security Management and Log Servers",
     "severity": "critical",
     "date": "2026-09-18",
@@ -25,22 +45,33 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
-    "severity": "high",
-    "date": "2026-09-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
-    "code": "CIVN-2026-0466",
-    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
-    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
-    "softwareAffected": [
-      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
-      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
-    ],
-    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "title": "Multiple Vulnerabilities in Cisco Identity Services Engine",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0462",
+    "code": "CIVN-2026-0462",
+    "summary": "Multiple vulnerabilities have been reported across various components of Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) which could allow remote attackers to bypass authentication entirely, execute arbitrary code or commands as the root user, conduct SQL injection attacks, perform XML External Entity (XXE) injections, and gain full write access to the underlying operating system.",
+    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76460 CVE-2026-20130 CVE-2026-20192 CVE-2026-20194 CVE-2026-20234 CVE-2026-20237 CVE-2026-20287 ) This vulnerability exists due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface. 2. Command Injection Vulnerability ( CVE-2026-20305 CVE-2026-20306 ) These vulnerabilities exist due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary code on the device and elevate privileges to root. 3. SQL Injection Vulnerability ( CVE-2026-20284 ) This vulnerability exists due to insufficient validation of user-supplied input in REST API calls. An attacker could exploit this vulnerability by sending crafted input to an affected device. Successful exploitation of this vulnerability could allow the attacker to view or modify data on the underlying database for the affected device. 4. Command Injection Vulnerability ( CVE-2026-20283 ) This vulnerability exists due to insufficient validation of user-supplied input in IPsec Open API calls. An attacker could exploit this vulnerability by sending a crafted input to the IPsec Open API endpoint on an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary commands on the underlying operating system. 5. Authenticated Write Vulnerability ( CVE-2026-20282 ) This vulnerability exists due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by a crafted HTTP request to an affected device. Successful exploitation of this vulnerability could allow the attacker to obtain write access to the underlying operating system. 6. Remote Code Execution Vulnerability ( CVE-2026-76176 CVE-2026-20211 CVE-2026-20307 ) These vulnerabilities exist due to insecure deserialization of a user-supplied Java byte stream or insufficient validation of user-supplied input. An attacker could exploit these vulnerabilities by sending a crafted serialized Java object to the web-based management interface of an affected device and HTTP request to an affected device. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on the device, obtain system-level access to the underlying operating system, user-level access to the underlying operating system and elevate privileges to root",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating this software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
     "cves": [
-      "CVE-2026-87886"
+      "CVE-2026-76460",
+      "CVE-2026-20130",
+      "CVE-2026-20192",
+      "CVE-2026-20194",
+      "CVE-2026-20234",
+      "CVE-2026-20237",
+      "CVE-2026-20287",
+      "CVE-2026-20305",
+      "CVE-2026-20306",
+      "CVE-2026-20284",
+      "CVE-2026-20283",
+      "CVE-2026-20282",
+      "CVE-2026-76176",
+      "CVE-2026-20211",
+      "CVE-2026-20307"
     ],
     "solutionLinks": []
   },
@@ -105,37 +136,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Identity Services Engine",
-    "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0462",
-    "code": "CIVN-2026-0462",
-    "summary": "Multiple vulnerabilities have been reported across various components of Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) which could allow remote attackers to bypass authentication entirely, execute arbitrary code or commands as the root user, conduct SQL injection attacks, perform XML External Entity (XXE) injections, and gain full write access to the underlying operating system.",
-    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76460 CVE-2026-20130 CVE-2026-20192 CVE-2026-20194 CVE-2026-20234 CVE-2026-20237 CVE-2026-20287 ) This vulnerability exists due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface. 2. Command Injection Vulnerability ( CVE-2026-20305 CVE-2026-20306 ) These vulnerabilities exist due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary code on the device and elevate privileges to root. 3. SQL Injection Vulnerability ( CVE-2026-20284 ) This vulnerability exists due to insufficient validation of user-supplied input in REST API calls. An attacker could exploit this vulnerability by sending crafted input to an affected device. Successful exploitation of this vulnerability could allow the attacker to view or modify data on the underlying database for the affected device. 4. Command Injection Vulnerability ( CVE-2026-20283 ) This vulnerability exists due to insufficient validation of user-supplied input in IPsec Open API calls. An attacker could exploit this vulnerability by sending a crafted input to the IPsec Open API endpoint on an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary commands on the underlying operating system. 5. Authenticated Write Vulnerability ( CVE-2026-20282 ) This vulnerability exists due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by a crafted HTTP request to an affected device. Successful exploitation of this vulnerability could allow the attacker to obtain write access to the underlying operating system. 6. Remote Code Execution Vulnerability ( CVE-2026-76176 CVE-2026-20211 CVE-2026-20307 ) These vulnerabilities exist due to insecure deserialization of a user-supplied Java byte stream or insufficient validation of user-supplied input. An attacker could exploit these vulnerabilities by sending a crafted serialized Java object to the web-based management interface of an affected device and HTTP request to an affected device. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on the device, obtain system-level access to the underlying operating system, user-level access to the underlying operating system and elevate privileges to root",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating this software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-76460",
-      "CVE-2026-20130",
-      "CVE-2026-20192",
-      "CVE-2026-20194",
-      "CVE-2026-20234",
-      "CVE-2026-20237",
-      "CVE-2026-20287",
-      "CVE-2026-20305",
-      "CVE-2026-20306",
-      "CVE-2026-20284",
-      "CVE-2026-20283",
-      "CVE-2026-20282",
-      "CVE-2026-76176",
-      "CVE-2026-20211",
-      "CVE-2026-20307"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Cisco Secure Email Gateway",
     "severity": "critical",
     "date": "2026-09-17",
@@ -156,52 +156,6 @@
       "CVE-2026-76442",
       "CVE-2026-76443",
       "CVE-2026-20353"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
-    "code": "CIVN-2026-0460",
-    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
-    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
-    "softwareAffected": [
-      "Mikrotik router OS version 7.24 and prior to 7.24.2",
-      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
-      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
-    ],
-    "targetAudience": "All organizations and individuals using MikroTik Router.",
-    "riskAssessment": "High risks of bypass authentication and data breach.",
-    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
-    "cves": [
-      "CVE-2026-67277",
-      "CVE-2026-86060",
-      "CVE-2026-67276"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Check Point VPN Products",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
-    "code": "CIVN-2026-0459",
-    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
-    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
-    "softwareAffected": [
-      "Security Gateway, Security Management Server, and Spark Firewall.",
-      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
-      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
-      "Not Affected Versions: R82.20"
-    ],
-    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
-    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
-    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
-    "cves": [
-      "CVE-2026-85102",
-      "CVE-2026-85103"
     ],
     "solutionLinks": []
   },
@@ -418,6 +372,52 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
+    "code": "CIVN-2026-0460",
+    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
+    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
+    "softwareAffected": [
+      "Mikrotik router OS version 7.24 and prior to 7.24.2",
+      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
+      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
+    ],
+    "targetAudience": "All organizations and individuals using MikroTik Router.",
+    "riskAssessment": "High risks of bypass authentication and data breach.",
+    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
+    "cves": [
+      "CVE-2026-67277",
+      "CVE-2026-86060",
+      "CVE-2026-67276"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Check Point VPN Products",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
+    "code": "CIVN-2026-0459",
+    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
+    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
+    "softwareAffected": [
+      "Security Gateway, Security Management Server, and Spark Firewall.",
+      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
+      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
+      "Not Affected Versions: R82.20"
+    ],
+    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
+    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
+    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
+    "cves": [
+      "CVE-2026-85102",
+      "CVE-2026-85103"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Improper Privilege Management Vulnerability in ConnectWise ScreenConnect Client",
     "severity": "critical",
     "date": "2026-09-15",
@@ -623,35 +623,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
-    "code": "CIAD-2026-0044",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-81963",
-      "CVE-2026-85880"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
     "severity": "high",
     "date": "2026-09-09",
@@ -817,6 +788,35 @@
       "CVE-2026-55015",
       "CVE-2026-69836",
       "CVE-2026-69851"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
+    "code": "CIAD-2026-0044",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-81963: This vulnerability exists in the Microsoft Windows Update Stack due to improper link re",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-81963",
+      "CVE-2026-85880"
     ],
     "solutionLinks": []
   },
