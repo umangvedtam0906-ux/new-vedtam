@@ -207,26 +207,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
-    "severity": "high",
-    "date": "2026-09-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
-    "code": "CIVN-2026-0466",
-    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
-    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
-    "softwareAffected": [
-      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
-      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
-    ],
-    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
-    "cves": [
-      "CVE-2026-87886"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in Check Point Security Management and Log Servers",
     "severity": "critical",
     "date": "2026-09-18",
@@ -248,6 +228,26 @@
     "impactAssessment": "Potential for execute arbitrary code and elevate privileges on the targeted system.",
     "cves": [
       "CVE-2026-91843"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
+    "severity": "high",
+    "date": "2026-09-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
+    "code": "CIVN-2026-0466",
+    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
+    "softwareAffected": [
+      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
+    ],
+    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "cves": [
+      "CVE-2026-87886"
     ],
     "solutionLinks": []
   },
@@ -367,25 +367,25 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
+    "title": "Multiple Vulnerabilities in Check Point VPN Products",
     "severity": "critical",
     "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
-    "code": "CIVN-2026-0460",
-    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
-    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
+    "code": "CIVN-2026-0459",
+    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
+    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
     "softwareAffected": [
-      "Mikrotik router OS version 7.24 and prior to 7.24.2",
-      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
-      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
+      "Security Gateway, Security Management Server, and Spark Firewall.",
+      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
+      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
+      "Not Affected Versions: R82.20"
     ],
-    "targetAudience": "All organizations and individuals using MikroTik Router.",
-    "riskAssessment": "High risks of bypass authentication and data breach.",
-    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
+    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
+    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
+    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
     "cves": [
-      "CVE-2026-67277",
-      "CVE-2026-86060",
-      "CVE-2026-67276"
+      "CVE-2026-85102",
+      "CVE-2026-85103"
     ],
     "solutionLinks": []
   },
@@ -428,6 +428,29 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
+    "code": "CIVN-2026-0460",
+    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
+    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
+    "softwareAffected": [
+      "Mikrotik router OS version 7.24 and prior to 7.24.2",
+      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
+      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
+    ],
+    "targetAudience": "All organizations and individuals using MikroTik Router.",
+    "riskAssessment": "High risks of bypass authentication and data breach.",
+    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
+    "cves": [
+      "CVE-2026-67277",
+      "CVE-2026-86060",
+      "CVE-2026-67276"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in MongoDB Products",
     "severity": "medium",
     "date": "2026-09-16",
@@ -449,29 +472,6 @@
     "riskAssessment": "High risk of compromise of affected systems.",
     "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Check Point VPN Products",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
-    "code": "CIVN-2026-0459",
-    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
-    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
-    "softwareAffected": [
-      "Security Gateway, Security Management Server, and Spark Firewall.",
-      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
-      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
-      "Not Affected Versions: R82.20"
-    ],
-    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
-    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
-    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
-    "cves": [
-      "CVE-2026-85102",
-      "CVE-2026-85103"
-    ],
     "solutionLinks": []
   },
   {
