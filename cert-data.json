@@ -757,25 +757,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
-    "severity": "high",
-    "date": "2026-09-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
-    "code": "CIVN-2026-0453",
-    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
-    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
-    "softwareAffected": [
-      "Microsoft Malware Protection Engine"
-    ],
-    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
-    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
-    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
-    "cves": [
-      "CVE-2026-69414"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "high",
     "date": "2026-09-10",
@@ -826,6 +807,25 @@
       "CVE-2026-76962",
       "CVE-2026-76963",
       "CVE-2026-58234"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
+    "severity": "high",
+    "date": "2026-09-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
+    "code": "CIVN-2026-0453",
+    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
+    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
+    "softwareAffected": [
+      "Microsoft Malware Protection Engine"
+    ],
+    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
+    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
+    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
+    "cves": [
+      "CVE-2026-69414"
     ],
     "solutionLinks": []
   },
