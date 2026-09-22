@@ -215,6 +215,52 @@
     "solutionLinks": []
   },
   {
+    "title": "Cisco Identity Services Engine Vulnerabilities",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0463",
+    "code": "CIVN-2026-0463",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) could allow a remote attacker to bypass authentication to the REST API, achieve remote code execution, perform SQL injection, and conduct XML External Entity injection attacks on an affected device.",
+    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76423 ) This vulnerability exists due to REST API web service being exposed with insufficient authorization checks. An attacker could exploit this vulnerability by sending a crafted HTTP request to the exposed REST API port. Successful exploitation of this vulnerability could allow the attacker to read and modify ISE configuration and identity data with administrative privileges. 2. Arbitrary File Access Vulnerability ( CVE-2026-76424 ) This vulnerability exists due to insufficient validation in file operations. An attacker could exploit this vulnerability by uploading a file with a crafted path. Successful exploitation of this vulnerability could allow the attacker to upload files to arbitrary locations and execute arbitrary commands as root on the affected device. 3. SQL Injection Vulnerability ( CVE-2026-76425 CVE-2026-76426 CVE-2026-76428 ) These vulnerabilities exist due to insufficient validation of certain parameters that are concatenated directly into an SQL query, certain parameters being concatenated directly into SQL clauses without parameterization. An attacker could exploit this vulnerability by sending a crafted request that contains SQL statements to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read arbitrary content from the SQL database and conduct server-side request forgery (SSRF) attacks. 4. External Entity Injection Vulnerability ( CVE-2026-76427 ) This vulnerability exists due to the parsing of attacker-controlled feed metadata with an XML parser that does not disable external entity re",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-76423",
+      "CVE-2026-76424",
+      "CVE-2026-76425",
+      "CVE-2026-76426",
+      "CVE-2026-76428",
+      "CVE-2026-76427"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Secure Email Gateway",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0461",
+    "code": "CIVN-2026-0461",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Email Gateway and Cisco Secure Email and Web Manager that could allow an attacker to gain unauthorized access to files outside restricted directories, bypass authorization controls and access restricted resources, inject malicious input, consume excessive system resources, degrade service availability, or cause a denial-of-service (DoS) condition on the targeted system.",
+    "description": "1. Path Traversal Vulnerability ( CVE-2026-76440 ) This vulnerability exists due to improper validation and re",
+    "softwareAffected": [
+      "Cisco Secure Email Gateway 15.5 and earlier",
+      "Cisco Secure Email and Web Manager 15.5 and earlier"
+    ],
+    "targetAudience": "All IT administrators and individuals using Cisco products.",
+    "riskAssessment": "Risk of information disclosure.",
+    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
+    "cves": [
+      "CVE-2026-76440",
+      "CVE-2026-76441",
+      "CVE-2026-76442",
+      "CVE-2026-76443",
+      "CVE-2026-20353"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
     "severity": "critical",
     "date": "2026-09-17",
@@ -253,28 +299,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Cisco Identity Services Engine Vulnerabilities",
-    "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0463",
-    "code": "CIVN-2026-0463",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) could allow a remote attacker to bypass authentication to the REST API, achieve remote code execution, perform SQL injection, and conduct XML External Entity injection attacks on an affected device.",
-    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76423 ) This vulnerability exists due to REST API web service being exposed with insufficient authorization checks. An attacker could exploit this vulnerability by sending a crafted HTTP request to the exposed REST API port. Successful exploitation of this vulnerability could allow the attacker to read and modify ISE configuration and identity data with administrative privileges. 2. Arbitrary File Access Vulnerability ( CVE-2026-76424 ) This vulnerability exists due to insufficient validation in file operations. An attacker could exploit this vulnerability by uploading a file with a crafted path. Successful exploitation of this vulnerability could allow the attacker to upload files to arbitrary locations and execute arbitrary commands as root on the affected device. 3. SQL Injection Vulnerability ( CVE-2026-76425 CVE-2026-76426 CVE-2026-76428 ) These vulnerabilities exist due to insufficient validation of certain parameters that are concatenated directly into an SQL query, certain parameters being concatenated directly into SQL clauses without parameterization. An attacker could exploit this vulnerability by sending a crafted request that contains SQL statements to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read arbitrary content from the SQL database and conduct server-side request forgery (SSRF) attacks. 4. External Entity Injection Vulnerability ( CVE-2026-76427 ) This vulnerability exists due to the parsing of attacker-controlled feed metadata with an XML parser that does not disable external entity re",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-76423",
-      "CVE-2026-76424",
-      "CVE-2026-76425",
-      "CVE-2026-76426",
-      "CVE-2026-76428",
-      "CVE-2026-76427"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Cisco Identity Services Engine",
     "severity": "critical",
     "date": "2026-09-17",
@@ -306,27 +330,50 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Secure Email Gateway",
+    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
     "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0461",
-    "code": "CIVN-2026-0461",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Email Gateway and Cisco Secure Email and Web Manager that could allow an attacker to gain unauthorized access to files outside restricted directories, bypass authorization controls and access restricted resources, inject malicious input, consume excessive system resources, degrade service availability, or cause a denial-of-service (DoS) condition on the targeted system.",
-    "description": "1. Path Traversal Vulnerability ( CVE-2026-76440 ) This vulnerability exists due to improper validation and re",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
+    "code": "CIVN-2026-0460",
+    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
+    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
     "softwareAffected": [
-      "Cisco Secure Email Gateway 15.5 and earlier",
-      "Cisco Secure Email and Web Manager 15.5 and earlier"
+      "Mikrotik router OS version 7.24 and prior to 7.24.2",
+      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
+      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
     ],
-    "targetAudience": "All IT administrators and individuals using Cisco products.",
-    "riskAssessment": "Risk of information disclosure.",
-    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
+    "targetAudience": "All organizations and individuals using MikroTik Router.",
+    "riskAssessment": "High risks of bypass authentication and data breach.",
+    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
     "cves": [
-      "CVE-2026-76440",
-      "CVE-2026-76441",
-      "CVE-2026-76442",
-      "CVE-2026-76443",
-      "CVE-2026-20353"
+      "CVE-2026-67277",
+      "CVE-2026-86060",
+      "CVE-2026-67276"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
+    "code": "CIVN-2026-0456",
+    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "softwareAffected": [
+      "MongoDB Server 8.3 versions prior to 8.3.9",
+      "MongoDB Server 8.0 versions prior to 8.0.30",
+      "MongoDB Server 7.0 versions prior to 7.0.41",
+      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
+      "Laravel MongoDB (PHP) versions prior to 5.11.0",
+      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
+      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
+      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
+    "riskAssessment": "High risk of compromise of affected systems.",
+    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -503,30 +550,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
-    "code": "CIVN-2026-0456",
-    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "softwareAffected": [
-      "MongoDB Server 8.3 versions prior to 8.3.9",
-      "MongoDB Server 8.0 versions prior to 8.0.30",
-      "MongoDB Server 7.0 versions prior to 7.0.41",
-      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
-      "Laravel MongoDB (PHP) versions prior to 5.11.0",
-      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
-      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
-      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
-    "riskAssessment": "High risk of compromise of affected systems.",
-    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "critical",
     "date": "2026-09-16",
@@ -561,29 +584,6 @@
       "CVE-2026-8030",
       "CVE-2026-16794",
       "CVE-2026-3855"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
-    "code": "CIVN-2026-0460",
-    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
-    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
-    "softwareAffected": [
-      "Mikrotik router OS version 7.24 and prior to 7.24.2",
-      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
-      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
-    ],
-    "targetAudience": "All organizations and individuals using MikroTik Router.",
-    "riskAssessment": "High risks of bypass authentication and data breach.",
-    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
-    "cves": [
-      "CVE-2026-67277",
-      "CVE-2026-86060",
-      "CVE-2026-67276"
     ],
     "solutionLinks": []
   },
@@ -720,6 +720,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
+    "severity": "high",
+    "date": "2026-09-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
+    "code": "CIVN-2026-0453",
+    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
+    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
+    "softwareAffected": [
+      "Microsoft Malware Protection Engine"
+    ],
+    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
+    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
+    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
+    "cves": [
+      "CVE-2026-69414"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "high",
     "date": "2026-09-10",
@@ -774,21 +793,22 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
-    "date": "2026-09-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
-    "code": "CIVN-2026-0453",
-    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
-    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
+    "code": "CIVN-2026-0450",
+    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
     "softwareAffected": [
-      "Microsoft Malware Protection Engine"
+      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.36 for Linux"
     ],
-    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
-    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
-    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
+    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
     "cves": [
-      "CVE-2026-69414"
+      "CVE-2026-87491"
     ],
     "solutionLinks": []
   },
@@ -868,26 +888,6 @@
     "cves": [
       "CVE-2026-81963",
       "CVE-2026-85880"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0450",
-    "code": "CIVN-2026-0450",
-    "summary": "Multiple vulnerabilities have been reported in Google Chrome for Desktop which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome for Desktop, which could allow a remote attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome versions prior to 153.0.8010.36/.37 for Windows and Mac",
-      "Google Chrome versions prior to 153.0.8010.36 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive information, execution of arbitrary code, privilege escalation and compromise of affected systems. The risk is particularly significant because Google has confirmed exploitation of CVE-2026-87491 in the wild.",
-    "impactAssessment": "Potential for remote code execution, elevate privileges, bypass security restrictions, and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-87491"
     ],
     "solutionLinks": []
   },
