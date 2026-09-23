@@ -1,24 +1,5 @@
 [
   {
-    "title": "Remote Code Execution Vulnerability in WordPress",
-    "severity": "critical",
-    "date": "2026-09-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
-    "code": "CIVN-2026-0472",
-    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
-    "softwareAffected": [
-      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
-    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
-    "cves": [
-      "CVE-2026-87902"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Improper Input Validation Vulnerability in VeloCloud Orchestrator",
     "severity": "high",
     "date": "2026-09-23",
@@ -41,6 +22,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in WordPress",
+    "severity": "critical",
+    "date": "2026-09-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
+    "code": "CIVN-2026-0472",
+    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
+    "softwareAffected": [
+      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
+    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
+    "cves": [
+      "CVE-2026-87902"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in SolarWinds Access Rights Manager",
     "severity": "high",
     "date": "2026-09-22",
@@ -56,25 +56,6 @@
       "cve-2026-28326",
       "CVE-2026-28326"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cross-Site Scripting Vulnerability in Drupal Core",
-    "severity": "medium",
-    "date": "2026-09-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0469",
-    "code": "CIVN-2026-0469",
-    "summary": "Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core, which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Drupal Core is an open-source content management system used to build and manage websites and web applications. Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core due to a security flaw in the third-party CKEditor library used for WYSIWYG editing. An attacker could exploit this vulnerability to inject malicious content that is subsequently processed by CKEditor and execute arbitrary JavaScript in the browser of a targeted user on the targeted system. Successful exploitation of this vulnerability could allow an attacker to compromise user sessions, access sensitive information, or perform unauthorized actions with the privileges of the targeted user on the targeted system.",
-    "softwareAffected": [
-      "Drupal Core versions between 10.5.0 and 10.6.17",
-      "Drupal Core versions between 11.0.0 and 11.3.17",
-      "Drupal Core versions between 11.4.0 and 11.4.7"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Drupal.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for arbitrary script execution and/or compromise of system.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -111,6 +92,25 @@
       "CVE-2026-81563",
       "CVE-2026-81736"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cross-Site Scripting Vulnerability in Drupal Core",
+    "severity": "medium",
+    "date": "2026-09-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0469",
+    "code": "CIVN-2026-0469",
+    "summary": "Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core, which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Drupal Core is an open-source content management system used to build and manage websites and web applications. Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core due to a security flaw in the third-party CKEditor library used for WYSIWYG editing. An attacker could exploit this vulnerability to inject malicious content that is subsequently processed by CKEditor and execute arbitrary JavaScript in the browser of a targeted user on the targeted system. Successful exploitation of this vulnerability could allow an attacker to compromise user sessions, access sensitive information, or perform unauthorized actions with the privileges of the targeted user on the targeted system.",
+    "softwareAffected": [
+      "Drupal Core versions between 10.5.0 and 10.6.17",
+      "Drupal Core versions between 11.0.0 and 11.3.17",
+      "Drupal Core versions between 11.4.0 and 11.4.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Drupal.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for arbitrary script execution and/or compromise of system.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -293,6 +293,44 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0464",
+    "code": "CIVN-2026-0464",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Firewall products, which could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system.",
+    "description": "Cisco Secure Firewall products provide network security capabilities including firewalling, VPN, threat prevention, application control, and centralized management. Multiple vulnerabilities exist in Cisco Secure Firewall products due to improper handling of exceptional conditions, improper access control, incorrect initialization of encryption parameters, unsecured deserialization of untrusted data, improper input validation and other security weaknesses. An attacker could exploit these vulnerabilities by sending specially crafted packets, requests, HTTP payloads, sftunnel remote procedure calls (RPCs), serialized data or session tokens, depending on the affected vulnerability. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system. Note: Two of the reported vulnerabilities are known to be exploited in wild.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software",
+      "Cisco Secure Firewall Management Center (FMC)"
+    ],
+    "targetAudience": "All IT administrators and organizations using Cisco Secure Firewall products.",
+    "riskAssessment": "High risk of unauthorized access, arbitrary command execution and privilege escalation.",
+    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-20242",
+      "CVE-2026-20324",
+      "CVE-2026-20329",
+      "CVE-2026-20330",
+      "CVE-2026-20331",
+      "CVE-2026-20332",
+      "CVE-2026-20333",
+      "CVE-2026-20334",
+      "CVE-2026-20335",
+      "CVE-2026-20336",
+      "CVE-2026-20340",
+      "CVE-2026-20341",
+      "CVE-2026-20342",
+      "CVE-2026-20343",
+      "CVE-2026-20344",
+      "CVE-2026-76412",
+      "CVE-2026-76413",
+      "CVE-2026-76420"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Cisco Identity Services Engine Vulnerabilities",
     "severity": "critical",
     "date": "2026-09-17",
@@ -366,44 +404,6 @@
       "CVE-2026-76442",
       "CVE-2026-76443",
       "CVE-2026-20353"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
-    "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0464",
-    "code": "CIVN-2026-0464",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Firewall products, which could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system.",
-    "description": "Cisco Secure Firewall products provide network security capabilities including firewalling, VPN, threat prevention, application control, and centralized management. Multiple vulnerabilities exist in Cisco Secure Firewall products due to improper handling of exceptional conditions, improper access control, incorrect initialization of encryption parameters, unsecured deserialization of untrusted data, improper input validation and other security weaknesses. An attacker could exploit these vulnerabilities by sending specially crafted packets, requests, HTTP payloads, sftunnel remote procedure calls (RPCs), serialized data or session tokens, depending on the affected vulnerability. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system. Note: Two of the reported vulnerabilities are known to be exploited in wild.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software",
-      "Cisco Secure Firewall Management Center (FMC)"
-    ],
-    "targetAudience": "All IT administrators and organizations using Cisco Secure Firewall products.",
-    "riskAssessment": "High risk of unauthorized access, arbitrary command execution and privilege escalation.",
-    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-20242",
-      "CVE-2026-20324",
-      "CVE-2026-20329",
-      "CVE-2026-20330",
-      "CVE-2026-20331",
-      "CVE-2026-20332",
-      "CVE-2026-20333",
-      "CVE-2026-20334",
-      "CVE-2026-20335",
-      "CVE-2026-20336",
-      "CVE-2026-20340",
-      "CVE-2026-20341",
-      "CVE-2026-20342",
-      "CVE-2026-20343",
-      "CVE-2026-20344",
-      "CVE-2026-76412",
-      "CVE-2026-76413",
-      "CVE-2026-76420"
     ],
     "solutionLinks": []
   },
@@ -5061,21 +5061,6 @@
     "code": "CIVN-2026-0320"
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -5100,6 +5085,21 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
