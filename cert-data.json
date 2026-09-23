@@ -18,6 +18,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Cross-Site Scripting Vulnerability in Drupal Core",
+    "severity": "medium",
+    "date": "2026-09-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0469",
+    "code": "CIVN-2026-0469",
+    "summary": "Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core, which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Drupal Core is an open-source content management system used to build and manage websites and web applications. Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core due to a security flaw in the third-party CKEditor library used for WYSIWYG editing. An attacker could exploit this vulnerability to inject malicious content that is subsequently processed by CKEditor and execute arbitrary JavaScript in the browser of a targeted user on the targeted system. Successful exploitation of this vulnerability could allow an attacker to compromise user sessions, access sensitive information, or perform unauthorized actions with the privileges of the targeted user on the targeted system.",
+    "softwareAffected": [
+      "Drupal Core versions between 10.5.0 and 10.6.17",
+      "Drupal Core versions between 11.0.0 and 11.3.17",
+      "Drupal Core versions between 11.4.0 and 11.4.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Drupal.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for arbitrary script execution and/or compromise of system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Apple Products",
     "severity": "high",
     "date": "2026-09-21",
@@ -149,25 +168,6 @@
       "CVE-2026-84636",
       "CVE-2026-84617"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Cross-Site Scripting Vulnerability in Drupal Core",
-    "severity": "medium",
-    "date": "2026-09-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0469",
-    "code": "CIVN-2026-0469",
-    "summary": "Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core, which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Drupal Core is an open-source content management system used to build and manage websites and web applications. Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core due to a security flaw in the third-party CKEditor library used for WYSIWYG editing. An attacker could exploit this vulnerability to inject malicious content that is subsequently processed by CKEditor and execute arbitrary JavaScript in the browser of a targeted user on the targeted system. Successful exploitation of this vulnerability could allow an attacker to compromise user sessions, access sensitive information, or perform unauthorized actions with the privileges of the targeted user on the targeted system.",
-    "softwareAffected": [
-      "Drupal Core versions between 10.5.0 and 10.6.17",
-      "Drupal Core versions between 11.0.0 and 11.3.17",
-      "Drupal Core versions between 11.4.0 and 11.4.7"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Drupal.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for arbitrary script execution and/or compromise of system.",
-    "cves": [],
     "solutionLinks": []
   },
   {
