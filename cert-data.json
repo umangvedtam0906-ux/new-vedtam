@@ -18,25 +18,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Cross-Site Scripting Vulnerability in Drupal Core",
-    "severity": "medium",
-    "date": "2026-09-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0469",
-    "code": "CIVN-2026-0469",
-    "summary": "Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core, which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Drupal Core is an open-source content management system used to build and manage websites and web applications. Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core due to a security flaw in the third-party CKEditor library used for WYSIWYG editing. An attacker could exploit this vulnerability to inject malicious content that is subsequently processed by CKEditor and execute arbitrary JavaScript in the browser of a targeted user on the targeted system. Successful exploitation of this vulnerability could allow an attacker to compromise user sessions, access sensitive information, or perform unauthorized actions with the privileges of the targeted user on the targeted system.",
-    "softwareAffected": [
-      "Drupal Core versions between 10.5.0 and 10.6.17",
-      "Drupal Core versions between 11.0.0 and 11.3.17",
-      "Drupal Core versions between 11.4.0 and 11.4.7"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Drupal.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for arbitrary script execution and/or compromise of system.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Apple Products",
     "severity": "high",
     "date": "2026-09-21",
@@ -171,6 +152,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Cross-Site Scripting Vulnerability in Drupal Core",
+    "severity": "medium",
+    "date": "2026-09-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0469",
+    "code": "CIVN-2026-0469",
+    "summary": "Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core, which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Drupal Core is an open-source content management system used to build and manage websites and web applications. Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core due to a security flaw in the third-party CKEditor library used for WYSIWYG editing. An attacker could exploit this vulnerability to inject malicious content that is subsequently processed by CKEditor and execute arbitrary JavaScript in the browser of a targeted user on the targeted system. Successful exploitation of this vulnerability could allow an attacker to compromise user sessions, access sensitive information, or perform unauthorized actions with the privileges of the targeted user on the targeted system.",
+    "softwareAffected": [
+      "Drupal Core versions between 10.5.0 and 10.6.17",
+      "Drupal Core versions between 11.0.0 and 11.3.17",
+      "Drupal Core versions between 11.4.0 and 11.4.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Drupal.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for arbitrary script execution and/or compromise of system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in ISC BIND",
     "severity": "high",
     "date": "2026-09-21",
@@ -207,6 +207,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
+    "severity": "high",
+    "date": "2026-09-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
+    "code": "CIVN-2026-0466",
+    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
+    "softwareAffected": [
+      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
+    ],
+    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "cves": [
+      "CVE-2026-87886"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Check Point Security Management and Log Servers",
     "severity": "critical",
     "date": "2026-09-18",
@@ -228,26 +248,6 @@
     "impactAssessment": "Potential for execute arbitrary code and elevate privileges on the targeted system.",
     "cves": [
       "CVE-2026-91843"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
-    "severity": "high",
-    "date": "2026-09-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
-    "code": "CIVN-2026-0466",
-    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
-    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
-    "softwareAffected": [
-      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
-      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
-    ],
-    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
-    "cves": [
-      "CVE-2026-87886"
     ],
     "solutionLinks": []
   },
@@ -367,67 +367,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Check Point VPN Products",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
-    "code": "CIVN-2026-0459",
-    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
-    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
-    "softwareAffected": [
-      "Security Gateway, Security Management Server, and Spark Firewall.",
-      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
-      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
-      "Not Affected Versions: R82.20"
-    ],
-    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
-    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
-    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
-    "cves": [
-      "CVE-2026-85102",
-      "CVE-2026-85103"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
-    "code": "CIVN-2026-0457",
-    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
-      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
-      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
-    ],
-    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
-    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [
-      "CVE-2026-85706",
-      "CVE-2026-87719",
-      "CVE-2026-88765",
-      "CVE-2026-79708",
-      "CVE-2026-78252",
-      "CVE-2026-13210",
-      "CVE-2025-14871",
-      "CVE-2026-1168",
-      "CVE-2024-11222",
-      "CVE-2026-12910",
-      "CVE-2026-82837",
-      "CVE-2026-19619",
-      "CVE-2026-86341",
-      "CVE-2026-86340",
-      "CVE-2026-7514",
-      "CVE-2026-8030",
-      "CVE-2026-16794",
-      "CVE-2026-3855"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in MikroTik RouterOS",
     "severity": "critical",
     "date": "2026-09-16",
@@ -451,27 +390,26 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
+    "title": "Multiple Vulnerabilities in Check Point VPN Products",
+    "severity": "critical",
     "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
-    "code": "CIVN-2026-0456",
-    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
+    "code": "CIVN-2026-0459",
+    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
+    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
     "softwareAffected": [
-      "MongoDB Server 8.3 versions prior to 8.3.9",
-      "MongoDB Server 8.0 versions prior to 8.0.30",
-      "MongoDB Server 7.0 versions prior to 7.0.41",
-      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
-      "Laravel MongoDB (PHP) versions prior to 5.11.0",
-      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
-      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
-      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
+      "Security Gateway, Security Management Server, and Spark Firewall.",
+      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
+      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
+      "Not Affected Versions: R82.20"
     ],
-    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
-    "riskAssessment": "High risk of compromise of affected systems.",
-    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
-    "cves": [],
+    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
+    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
+    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
+    "cves": [
+      "CVE-2026-85102",
+      "CVE-2026-85103"
+    ],
     "solutionLinks": []
   },
   {
@@ -622,6 +560,68 @@
       "CVE-2026-82006",
       "CVE-2026-82007"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
+    "code": "CIVN-2026-0457",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
+      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
+      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
+    ],
+    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-85706",
+      "CVE-2026-87719",
+      "CVE-2026-88765",
+      "CVE-2026-79708",
+      "CVE-2026-78252",
+      "CVE-2026-13210",
+      "CVE-2025-14871",
+      "CVE-2026-1168",
+      "CVE-2024-11222",
+      "CVE-2026-12910",
+      "CVE-2026-82837",
+      "CVE-2026-19619",
+      "CVE-2026-86341",
+      "CVE-2026-86340",
+      "CVE-2026-7514",
+      "CVE-2026-8030",
+      "CVE-2026-16794",
+      "CVE-2026-3855"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
+    "code": "CIVN-2026-0456",
+    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "softwareAffected": [
+      "MongoDB Server 8.3 versions prior to 8.3.9",
+      "MongoDB Server 8.0 versions prior to 8.0.30",
+      "MongoDB Server 7.0 versions prior to 7.0.41",
+      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
+      "Laravel MongoDB (PHP) versions prior to 5.11.0",
+      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
+      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
+      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
+    "riskAssessment": "High risk of compromise of affected systems.",
+    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -859,6 +859,25 @@
     "solutionLinks": []
   },
   {
+    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
+    "severity": "high",
+    "date": "2026-09-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
+    "code": "CIVN-2026-0451",
+    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
+    "softwareAffected": [
+      "All-in-One WP Migration and Backup versions 7.109 and prior"
+    ],
+    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
+    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
+    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
+    "cves": [
+      "CVE-2026-19949"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-09",
@@ -906,25 +925,6 @@
       "CVE-2026-85051",
       "CVE-2026-85052",
       "CVE-2026-85053"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in All-in-One WP Migration and Backup Plugin for WordPress",
-    "severity": "high",
-    "date": "2026-09-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0451",
-    "code": "CIVN-2026-0451",
-    "summary": "A SQL Injection vulnerability has been reported in All-in-One WP Migration and Backup plugin for WordPress, which could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "description": "All-in-One WP Migration and Backup is a WordPress plugin developed by ServMask, providing website migration, backup, export, and restoration capabilities for WordPress websites. This vulnerability exists in the All-in-One WP Migration and Backup plugin due to improper neutralization of special elements used in an SQL Command, including insufficient escaping and improper handling of user-supplied input. An unauthenticated attacker could exploit this vulnerability by submitting specially crafted input that is stored and subsequently processed during archive restoration. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to inject malicious SQL statements, access sensitive database information, obtain the plugin�s secret key, and potentially execute arbitrary code on affected WordPress installations.",
-    "softwareAffected": [
-      "All-in-One WP Migration and Backup versions 7.109 and prior"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of the All-in-One WP Migration and Backup plugin for WordPress.",
-    "riskAssessment": "High risk of sensitive data exposure and compromise of affected WordPress installations.",
-    "impactAssessment": "Potential for malicious SQL execution, disclosure of sensitive database information, compromise of the plugin�s secret key, arbitrary code execution, and complete compromise of affected WordPress installations.",
-    "cves": [
-      "CVE-2026-19949"
     ],
     "solutionLinks": []
   },
