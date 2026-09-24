@@ -1,23 +1,53 @@
 [
   {
-    "title": "Improper Input Validation Vulnerability in VeloCloud Orchestrator",
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
-    "date": "2026-09-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0471",
-    "code": "CIVN-2026-0471",
-    "summary": "A vulnerability has been reported in VeloCloud Orchestrator (VCO) which could allow a remote attacker to gain unauthorized access and compromise of affected systems.",
-    "description": "VeloCloud Orchestrator (VCO) on-prem has a security issue due to improper authorization. A remote attacker could exploit these vulnerabilities by accessing the VCO web interface. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access and compromise f affected systems. Note: This vulnerability is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0474",
+    "code": "CIVN-2026-0474",
+    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, perform spoofing attack, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Dawn, PDFium, Extensions; Buffer overflow in WebGL, PDFium; Incorrect reference re",
     "softwareAffected": [
-      "VeloCloud Orchestrator On-Prem 5.2.3.15 or earlier",
-      "VeloCloud Orchestrator On-Prem 6.1.3.7 or earlier",
-      "VeloCloud Orchestrator On-Prem 6.4.2.7 or earlier",
-      "VeloCloud Orchestrator On-Prem 7.0.0.2 or earlier"
+      "Google Chrome versions prior to 153.0.8010.52/.53 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.52 for Linux"
     ],
-    "targetAudience": "Users of VeloCloud Orchestrator (VCO) On-Prem.",
-    "riskAssessment": "High risk of unauthorized access and compromise of affected systems.",
-    "impactAssessment": "Potential for loss of confidentiality, integrity, and availability of the orchestrator and managed data.",
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
+    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
     "cves": [
-      "CVE-2026-93952"
+      "CVE-2026-93372",
+      "CVE-2026-93373",
+      "CVE-2026-93374",
+      "CVE-2026-93375",
+      "CVE-2026-93376",
+      "CVE-2026-93377",
+      "CVE-2026-93378",
+      "CVE-2026-93379",
+      "CVE-2026-93380",
+      "CVE-2026-93381",
+      "CVE-2026-93382",
+      "CVE-2026-93383",
+      "CVE-2026-93384",
+      "CVE-2026-93385",
+      "CVE-2026-93386",
+      "CVE-2026-93387"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Command Injection Vulnerability in Netlink ICT HG323RW Router",
+    "severity": "high",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0473",
+    "code": "CIVN-2026-0473",
+    "summary": "A vulnerability has been reported in Netlink ICT HG323RW router, which could allow an authenticated low privileged attacker to execute arbitrary operating system commands with root privileges on the targeted device.",
+    "description": "The Netlink ICT HG323RW is a router that provides network connectivity and includes a web based management interface for device configuration and administration. This vulnerability exists in the Netlink ICT HG323RW router due to insufficient authorization and input validation controls in the diagnostic script import functionality. An authenticated attacker could exploit this vulnerability by uploading and executing a specially crafted script through the web management interface. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary operating system commands with root privileges resulting in complete compromise of the affected device. Credit This vulnerability is reported by Muhammed Safvan.",
+    "softwareAffected": "",
+    "targetAudience": "Users and administrators of Netlink ICT HG323RW router.",
+    "riskAssessment": "Remote code execution with root privileges by an authenticated low privileged attacker.",
+    "impactAssessment": "Privilege escalation and complete compromise of the targeted device.",
+    "cves": [
+      "CVE-2026-96515"
     ],
     "solutionLinks": []
   },
@@ -41,6 +71,28 @@
     "solutionLinks": []
   },
   {
+    "title": "Improper Input Validation Vulnerability in VeloCloud Orchestrator",
+    "severity": "high",
+    "date": "2026-09-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0471",
+    "code": "CIVN-2026-0471",
+    "summary": "A vulnerability has been reported in VeloCloud Orchestrator (VCO) which could allow a remote attacker to gain unauthorized access and compromise of affected systems.",
+    "description": "VeloCloud Orchestrator (VCO) on-prem has a security issue due to improper authorization. A remote attacker could exploit these vulnerabilities by accessing the VCO web interface. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access and compromise f affected systems. Note: This vulnerability is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "VeloCloud Orchestrator On-Prem 5.2.3.15 or earlier",
+      "VeloCloud Orchestrator On-Prem 6.1.3.7 or earlier",
+      "VeloCloud Orchestrator On-Prem 6.4.2.7 or earlier",
+      "VeloCloud Orchestrator On-Prem 7.0.0.2 or earlier"
+    ],
+    "targetAudience": "Users of VeloCloud Orchestrator (VCO) On-Prem.",
+    "riskAssessment": "High risk of unauthorized access and compromise of affected systems.",
+    "impactAssessment": "Potential for loss of confidentiality, integrity, and availability of the orchestrator and managed data.",
+    "cves": [
+      "CVE-2026-93952"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in SolarWinds Access Rights Manager",
     "severity": "high",
     "date": "2026-09-22",
@@ -55,42 +107,6 @@
     "cves": [
       "cve-2026-28326",
       "CVE-2026-28326"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in ISC BIND",
-    "severity": "high",
-    "date": "2026-09-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0467",
-    "code": "CIVN-2026-0467",
-    "summary": "Multiple vulnerabilities have been identified in ISC BIND that could allow a remote attacker to cause denial-of-service (DoS) conditions, bypass security restrictions, conduct spoofing or cache-poisoning attacks, or cause unauthorized data to be added to a DNS zone, depending on the specific vulnerability and configuration of the affected system.",
-    "description": "ISC BIND is an open-source DNS server software package that provides both authoritative and recursive DNS services. The vulnerabilities affect ISC BIND due to issues including Use-After-Free, Numeric Truncation Error, Excessive Platform Resource Consumption within a Loop, Missing Release of Memory after Effective Lifetime, Reachable Assertion, Acceptance of Extraneous Untrusted Data with Trusted Data, Null Pointer Dereference, Origin Validation Error, Asymmetric Resource Consumption (Amplification), Insufficient Verification of Data Authenticity, and Inefficient Algorithmic Complexity. A remote attacker could exploit these vulnerabilities by sending specially crafted DNS queries, DNS responses, DNSSEC-related records, zone-transfer data, TKEY requests, SVCB/HTTPS records, or DNS-over-HTTPS requests to an affected BIND server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial-of-service (DoS) conditions, bypass security restrictions, conduct spoofing or cache-poisoning attacks, or cause unauthorized data to be added to a DNS zone, depending on the specific vulnerability and configuration of the affected system.",
-    "softwareAffected": [
-      "BIND version 9.11.0 to 9.18.50",
-      "BIND version 9.20.0 to 9.20.27",
-      "BIND version 9.21.0 to 9.21.25",
-      "BIND Supported Preview Edition version 9.11.3-S1 to 9.18.50-S1",
-      "BIND Supported Preview Edition version 9.20.9-S1 to 9.20.27-S1"
-    ],
-    "targetAudience": "Network Administrators and Security Professionals",
-    "riskAssessment": "High risk of denial-of-service (DoS) conditions, bypass of security restrictions, spoofing, cache poisoning, and unauthorized modification of DNS zone data.",
-    "impactAssessment": "Potential for denial-of-service (DoS) conditions, bypass of security restrictions, spoofing or cache-poisoning attacks, and unauthorized DNS zone data modification.",
-    "cves": [
-      "CVE-2026-19033",
-      "CVE-2026-19662",
-      "CVE-2026-19666",
-      "CVE-2026-19667",
-      "CVE-2026-19668",
-      "CVE-2026-19941",
-      "CVE-2026-75029",
-      "CVE-2026-76163",
-      "CVE-2026-77119",
-      "CVE-2026-77692",
-      "CVE-2026-78301",
-      "CVE-2026-80274",
-      "CVE-2026-81563",
-      "CVE-2026-81736"
     ],
     "solutionLinks": []
   },
@@ -244,6 +260,42 @@
       "CVE-2026-43674",
       "CVE-2026-84636",
       "CVE-2026-84617"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in ISC BIND",
+    "severity": "high",
+    "date": "2026-09-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0467",
+    "code": "CIVN-2026-0467",
+    "summary": "Multiple vulnerabilities have been identified in ISC BIND that could allow a remote attacker to cause denial-of-service (DoS) conditions, bypass security restrictions, conduct spoofing or cache-poisoning attacks, or cause unauthorized data to be added to a DNS zone, depending on the specific vulnerability and configuration of the affected system.",
+    "description": "ISC BIND is an open-source DNS server software package that provides both authoritative and recursive DNS services. The vulnerabilities affect ISC BIND due to issues including Use-After-Free, Numeric Truncation Error, Excessive Platform Resource Consumption within a Loop, Missing Release of Memory after Effective Lifetime, Reachable Assertion, Acceptance of Extraneous Untrusted Data with Trusted Data, Null Pointer Dereference, Origin Validation Error, Asymmetric Resource Consumption (Amplification), Insufficient Verification of Data Authenticity, and Inefficient Algorithmic Complexity. A remote attacker could exploit these vulnerabilities by sending specially crafted DNS queries, DNS responses, DNSSEC-related records, zone-transfer data, TKEY requests, SVCB/HTTPS records, or DNS-over-HTTPS requests to an affected BIND server. Successful exploitation of these vulnerabilities could allow an attacker to cause denial-of-service (DoS) conditions, bypass security restrictions, conduct spoofing or cache-poisoning attacks, or cause unauthorized data to be added to a DNS zone, depending on the specific vulnerability and configuration of the affected system.",
+    "softwareAffected": [
+      "BIND version 9.11.0 to 9.18.50",
+      "BIND version 9.20.0 to 9.20.27",
+      "BIND version 9.21.0 to 9.21.25",
+      "BIND Supported Preview Edition version 9.11.3-S1 to 9.18.50-S1",
+      "BIND Supported Preview Edition version 9.20.9-S1 to 9.20.27-S1"
+    ],
+    "targetAudience": "Network Administrators and Security Professionals",
+    "riskAssessment": "High risk of denial-of-service (DoS) conditions, bypass of security restrictions, spoofing, cache poisoning, and unauthorized modification of DNS zone data.",
+    "impactAssessment": "Potential for denial-of-service (DoS) conditions, bypass of security restrictions, spoofing or cache-poisoning attacks, and unauthorized DNS zone data modification.",
+    "cves": [
+      "CVE-2026-19033",
+      "CVE-2026-19662",
+      "CVE-2026-19666",
+      "CVE-2026-19667",
+      "CVE-2026-19668",
+      "CVE-2026-19941",
+      "CVE-2026-75029",
+      "CVE-2026-76163",
+      "CVE-2026-77119",
+      "CVE-2026-77692",
+      "CVE-2026-78301",
+      "CVE-2026-80274",
+      "CVE-2026-81563",
+      "CVE-2026-81736"
     ],
     "solutionLinks": []
   },
@@ -404,6 +456,29 @@
       "CVE-2026-76442",
       "CVE-2026-76443",
       "CVE-2026-20353"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
+    "code": "CIVN-2026-0460",
+    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
+    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
+    "softwareAffected": [
+      "Mikrotik router OS version 7.24 and prior to 7.24.2",
+      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
+      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
+    ],
+    "targetAudience": "All organizations and individuals using MikroTik Router.",
+    "riskAssessment": "High risks of bypass authentication and data breach.",
+    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
+    "cves": [
+      "CVE-2026-67277",
+      "CVE-2026-86060",
+      "CVE-2026-67276"
     ],
     "solutionLinks": []
   },
@@ -581,53 +656,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
-    "code": "CIVN-2026-0456",
-    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "softwareAffected": [
-      "MongoDB Server 8.3 versions prior to 8.3.9",
-      "MongoDB Server 8.0 versions prior to 8.0.30",
-      "MongoDB Server 7.0 versions prior to 7.0.41",
-      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
-      "Laravel MongoDB (PHP) versions prior to 5.11.0",
-      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
-      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
-      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
-    "riskAssessment": "High risk of compromise of affected systems.",
-    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
-    "code": "CIVN-2026-0460",
-    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
-    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
-    "softwareAffected": [
-      "Mikrotik router OS version 7.24 and prior to 7.24.2",
-      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
-      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
-    ],
-    "targetAudience": "All organizations and individuals using MikroTik Router.",
-    "riskAssessment": "High risks of bypass authentication and data breach.",
-    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
-    "cves": [
-      "CVE-2026-67277",
-      "CVE-2026-86060",
-      "CVE-2026-67276"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "critical",
     "date": "2026-09-16",
@@ -663,6 +691,30 @@
       "CVE-2026-16794",
       "CVE-2026-3855"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
+    "code": "CIVN-2026-0456",
+    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "softwareAffected": [
+      "MongoDB Server 8.3 versions prior to 8.3.9",
+      "MongoDB Server 8.0 versions prior to 8.0.30",
+      "MongoDB Server 7.0 versions prior to 7.0.41",
+      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
+      "Laravel MongoDB (PHP) versions prior to 5.11.0",
+      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
+      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
+      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
+    "riskAssessment": "High risk of compromise of affected systems.",
+    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -5061,6 +5113,21 @@
     "code": "CIVN-2026-0320"
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -5085,21 +5152,6 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
