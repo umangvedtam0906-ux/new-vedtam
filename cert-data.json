@@ -408,29 +408,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
-    "code": "CIVN-2026-0460",
-    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
-    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
-    "softwareAffected": [
-      "Mikrotik router OS version 7.24 and prior to 7.24.2",
-      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
-      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
-    ],
-    "targetAudience": "All organizations and individuals using MikroTik Router.",
-    "riskAssessment": "High risks of bypass authentication and data breach.",
-    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
-    "cves": [
-      "CVE-2026-67277",
-      "CVE-2026-86060",
-      "CVE-2026-67276"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Check Point VPN Products",
     "severity": "critical",
     "date": "2026-09-16",
@@ -604,6 +581,53 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
+    "code": "CIVN-2026-0456",
+    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
+    "softwareAffected": [
+      "MongoDB Server 8.3 versions prior to 8.3.9",
+      "MongoDB Server 8.0 versions prior to 8.0.30",
+      "MongoDB Server 7.0 versions prior to 7.0.41",
+      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
+      "Laravel MongoDB (PHP) versions prior to 5.11.0",
+      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
+      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
+      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
+    ],
+    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
+    "riskAssessment": "High risk of compromise of affected systems.",
+    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MikroTik RouterOS",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0460",
+    "code": "CIVN-2026-0460",
+    "summary": "Multiple vulnerabilities have been reported in MikroTik RouterOS that could allow attackers to escalate privileges, bypass authentication, and cause denial-of-service (DoS) attacks on affected systems.",
+    "description": "1. Denial of Service Vulnerability ( CVE-2026-67277 ) A vulnerability exists in MikroTik RouterOS due to a missing authentication check in MikroTik RouterOSs bandwidth-test (btest) service. An attacker could exploit this vulnerability by sending specially crafted network requests to the exposed btest service. Successful exploitation of this vulnerability could allow the attacker to read portions of uninitialized kernel memory and cause the router to crash or restart, resulting in a denial-of-service condition. 2. Privilege Escalation Vulnerability ( CVE-2026-86060 ) A vulnerability exists in MikroTik RouterOS due to improper handling and neutralization of argument delimiters in the RouterOS SSH login path. An attacker could exploit this vulnerability by sending a crafted username or command argument through an accessible SSH login session to alter the RouterOS policy mask. Successful exploitation of this vulnerability could allow the attacker to escalate privileges and use the compromised router to access internal systems. 3. Authentication Bypass Vulnerability ( CVE-2026-67276 ) A vulnerability exists in MikroTik RouterOS due to an incomplete verification of RSA public keys during MikroTik RouterOS SSH authentication. An attacker could exploit this vulnerability by sending a specially crafted SSH public-key authentication request containing a forged RSA key and signature. Successful exploitation of this vulnerability could allow the attacker to bypass authentication and potentially gain full administrative control of the targeted system.",
+    "softwareAffected": [
+      "Mikrotik router OS version 7.24 and prior to 7.24.2",
+      "Mikrotik router OS version 7.0.0 and prior to 7.23.4",
+      "Mikrotik router OS version 6.0.0 and prior to 6.49.21"
+    ],
+    "targetAudience": "All organizations and individuals using MikroTik Router.",
+    "riskAssessment": "High risks of bypass authentication and data breach.",
+    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the system.",
+    "cves": [
+      "CVE-2026-67277",
+      "CVE-2026-86060",
+      "CVE-2026-67276"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "critical",
     "date": "2026-09-16",
@@ -639,30 +663,6 @@
       "CVE-2026-16794",
       "CVE-2026-3855"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0456",
-    "code": "CIVN-2026-0456",
-    "summary": "Multiple vulnerabilities have been reported in various MongoDB components which could allow an attacker to execute arbitrary code, elevate privileges, obtain sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "description": "MongoDB is a document-based database that stores information in flexible, JSON-like documents rather than traditional tables and rows, making it well suited for handling large or evolving data structures. Multiple vulnerabilities exist in MongoDB products due to race conditions, improper neutralization of special elements in data query logic, integer overflows, uncontrolled resource consumption, incorrect authorization, insufficient validation of configuration options, and use-after-free errors. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, obtain/disclose sensitive information, bypass security restrictions, cause memory corruption, cause denial of service (DoS) conditions, gain unauthorized access, and manipulate application data on the targeted system.",
-    "softwareAffected": [
-      "MongoDB Server 8.3 versions prior to 8.3.9",
-      "MongoDB Server 8.0 versions prior to 8.0.30",
-      "MongoDB Server 7.0 versions prior to 7.0.41",
-      "MongoDB Java Driver, MongoDB Crypt Library, and Reactive Streams Driver versions prior to 5.11.1",
-      "Laravel MongoDB (PHP) versions prior to 5.11.0",
-      "MongoDB C# Driver 2.14.0 versions prior to 3.11.1",
-      "MongoDB C Driver 1.17.0 versions prior to 1.30.9",
-      "MongoDB C Driver 2.0.0 versions prior to 2.5.2"
-    ],
-    "targetAudience": "All organizations and individuals using the affected versions of MongoDB Products.",
-    "riskAssessment": "High risk of compromise of affected systems.",
-    "impactAssessment": "Potential for memory corruption, unauthorized access, and manipulate application data.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -798,25 +798,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
-    "severity": "high",
-    "date": "2026-09-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
-    "code": "CIVN-2026-0453",
-    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
-    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
-    "softwareAffected": [
-      "Microsoft Malware Protection Engine"
-    ],
-    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
-    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
-    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
-    "cves": [
-      "CVE-2026-69414"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "high",
     "date": "2026-09-10",
@@ -867,6 +848,25 @@
       "CVE-2026-76962",
       "CVE-2026-76963",
       "CVE-2026-58234"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in Microsoft Defender",
+    "severity": "high",
+    "date": "2026-09-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0453",
+    "code": "CIVN-2026-0453",
+    "summary": "A vulnerability has been reported in Microsoft Malware Protection Engine which could allow an attacker with low-level local access to elevate privileges on an affected system.",
+    "description": "Microsoft Malware Protection Engine (MMPE) is a core security component used by Microsoft security products, including Microsoft Defender Antivirus, to detect, analyze, and help remove malware and other potentially unwanted or malicious software from Windows systems. This vulnerability exists due to improper access control/privilege management within the Microsoft Malware Protection Engine. Successful exploitation of this vulnerability could allow an attacker with low-level local access to elevate privileges on an affected system, potentially resulting in unauthorized access to protected resources and the complete compromise of the affected system.",
+    "softwareAffected": [
+      "Microsoft Malware Protection Engine"
+    ],
+    "targetAudience": "Organizations and individuals using Microsoft Malware Protection Engine",
+    "riskAssessment": "High risk of privilege escalation and potential compromise of the affected system.",
+    "impactAssessment": "Potential for unauthorized access of data and compromise of the affected system.",
+    "cves": [
+      "CVE-2026-69414"
     ],
     "solutionLinks": []
   },
