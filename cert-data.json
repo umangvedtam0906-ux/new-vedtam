@@ -1,5 +1,90 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Adobe Products",
+    "severity": "critical",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0476",
+    "code": "CIVN-2026-0476",
+    "summary": "Multiple vulnerabilities have been reported in Adobe products, which could allow an attacker to execute arbitrary code, gain elevated privileges, bypass security features, read arbitrary files, expose sensitive memory or cause application denial-of-service.",
+    "description": "Adobe provides a range of software products for digital content creation, 3D designs and content creation, graphic design, user experience design, content authenticity, and marketing campaign management. Multiple vulnerabilities exist in Adobe products due to improper input validation, SQL injection, cross-site scripting (XSS), path traversal, server-side request forgery (SSRF), incorrect authorization, cross-site request forgery (CSRF), buffer overflow, out-of-bounds read/write, uncontrolled resource consumption, integer overflow, uncontrolled recursion, improper certificate validation and NULL pointer dereference vulnerabilities. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain elevated privileges, bypass security features, read arbitrary files, access sensitive memory or cause denial-of-service on the targeted system.",
+    "softwareAffected": [
+      "Adobe InDesign versions prior to ID21.6 and ID20.5.5",
+      "Adobe Content Credentials Rust SDK versions prior to c2pa-v0.90.17",
+      "Adobe C2PA Tool versions prior to c2patool-v0.27.17",
+      "Adobe Bridge versions prior to 15.1.8 (LTS) and 16.0.7",
+      "Adobe Connect versions prior to 12.12",
+      "Adobe Connect Android Mobile App versions prior to 4.5",
+      "Adobe Experience Manager (AEM) 6.5 LTS Forms versions prior to Service Pack 3",
+      "Adobe Experience Manager (AEM) 6.5 Forms versions prior to 6.5.25 (AEMForms-6.5.0-0134 Hotfix)",
+      "Adobe Substance 3D Modeler versions prior to 1.22.6",
+      "Adobe Premiere versions prior to 26.5",
+      "Adobe Premiere Pro versions prior to 25.6.6"
+    ],
+    "targetAudience": "Individuals and organizations using the affected Adobe products.",
+    "riskAssessment": "High risk of arbitrary code execution, privilege escalation, and denial-of-service on affected systems.",
+    "impactAssessment": "Potential for compromise of affected applications/systems, unauthorized access to sensitive information, and disruption of application availability.",
+    "cves": [
+      "CVE-2026-84396",
+      "CVE-2026-76192",
+      "CVE-2026-19480",
+      "CVE-2026-75632",
+      "CVE-2026-75638",
+      "CVE-2026-75633",
+      "CVE-2026-89277",
+      "CVE-2026-75634",
+      "CVE-2026-76194",
+      "CVE-2026-75649",
+      "CVE-2026-75676",
+      "CVE-2026-75665",
+      "CVE-2026-75655",
+      "CVE-2026-75663",
+      "CVE-2026-75658",
+      "CVE-2026-75656",
+      "CVE-2026-75682",
+      "CVE-2026-75684",
+      "CVE-2026-75686",
+      "CVE-2026-75689",
+      "CVE-2026-75697",
+      "CVE-2026-75698",
+      "CVE-2026-34689",
+      "CVE-2026-83964",
+      "CVE-2026-48361",
+      "CVE-2026-75745",
+      "CVE-2026-81995",
+      "CVE-2026-82000",
+      "CVE-2026-81999",
+      "CVE-2026-75744",
+      "CVE-2026-75743",
+      "CVE-2026-79906",
+      "CVE-2026-81998",
+      "CVE-2026-83962",
+      "CVE-2026-83963",
+      "CVE-2026-84395"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Heap-based Buffer Overflow Vulnerability in F5 BIG-IP APM",
+    "severity": "critical",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0475",
+    "code": "CIVN-2026-0475",
+    "summary": "A heap-based buffer overflow vulnerability has been reported in F5 BIG-IP APM that could allow an unauthenticated remote attacker to execute arbitrary code on the targeted system.",
+    "description": "F5 BIG-IP APM (Access Policy Manager) is a secure access management",
+    "softwareAffected": [
+      "F5 BIG-IP APM version 21.1.0 before Hotfix-BIGIP-21.1.0.2.0.30.22-ENG",
+      "F5 BIG-IP APM version 17.5.0 before Hotfix-BIGIP-17.5.1.9.0.160.12-ENG",
+      "F5 BIG-IP APM version 17.1.0 before Hotfix-BIGIP-17.1.3.5.0.41.14-ENG"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected versions of F5 BIG-IP APM.",
+    "riskAssessment": "High risk of remote code execution.",
+    "impactAssessment": "Potential for remote code execution.",
+    "cves": [
+      "CVE-2026-94127"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-24",
@@ -300,26 +385,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
-    "severity": "high",
-    "date": "2026-09-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
-    "code": "CIVN-2026-0466",
-    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
-    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
-    "softwareAffected": [
-      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
-      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
-    ],
-    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
-    "cves": [
-      "CVE-2026-87886"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in Check Point Security Management and Log Servers",
     "severity": "critical",
     "date": "2026-09-18",
@@ -341,6 +406,26 @@
     "impactAssessment": "Potential for execute arbitrary code and elevate privileges on the targeted system.",
     "cves": [
       "CVE-2026-91843"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
+    "severity": "high",
+    "date": "2026-09-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
+    "code": "CIVN-2026-0466",
+    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
+    "softwareAffected": [
+      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
+    ],
+    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "cves": [
+      "CVE-2026-87886"
     ],
     "solutionLinks": []
   },
@@ -5113,21 +5198,6 @@
     "code": "CIVN-2026-0320"
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -5152,6 +5222,21 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
