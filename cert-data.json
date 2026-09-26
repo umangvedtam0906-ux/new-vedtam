@@ -430,44 +430,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
-    "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0464",
-    "code": "CIVN-2026-0464",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Firewall products, which could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system.",
-    "description": "Cisco Secure Firewall products provide network security capabilities including firewalling, VPN, threat prevention, application control, and centralized management. Multiple vulnerabilities exist in Cisco Secure Firewall products due to improper handling of exceptional conditions, improper access control, incorrect initialization of encryption parameters, unsecured deserialization of untrusted data, improper input validation and other security weaknesses. An attacker could exploit these vulnerabilities by sending specially crafted packets, requests, HTTP payloads, sftunnel remote procedure calls (RPCs), serialized data or session tokens, depending on the affected vulnerability. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system. Note: Two of the reported vulnerabilities are known to be exploited in wild.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software",
-      "Cisco Secure Firewall Management Center (FMC)"
-    ],
-    "targetAudience": "All IT administrators and organizations using Cisco Secure Firewall products.",
-    "riskAssessment": "High risk of unauthorized access, arbitrary command execution and privilege escalation.",
-    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-20242",
-      "CVE-2026-20324",
-      "CVE-2026-20329",
-      "CVE-2026-20330",
-      "CVE-2026-20331",
-      "CVE-2026-20332",
-      "CVE-2026-20333",
-      "CVE-2026-20334",
-      "CVE-2026-20335",
-      "CVE-2026-20336",
-      "CVE-2026-20340",
-      "CVE-2026-20341",
-      "CVE-2026-20342",
-      "CVE-2026-20343",
-      "CVE-2026-20344",
-      "CVE-2026-76412",
-      "CVE-2026-76413",
-      "CVE-2026-76420"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Cisco Identity Services Engine Vulnerabilities",
     "severity": "critical",
     "date": "2026-09-17",
@@ -510,6 +472,44 @@
       "CVE-2026-76442",
       "CVE-2026-76443",
       "CVE-2026-20353"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0464",
+    "code": "CIVN-2026-0464",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Firewall products, which could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system.",
+    "description": "Cisco Secure Firewall products provide network security capabilities including firewalling, VPN, threat prevention, application control, and centralized management. Multiple vulnerabilities exist in Cisco Secure Firewall products due to improper handling of exceptional conditions, improper access control, incorrect initialization of encryption parameters, unsecured deserialization of untrusted data, improper input validation and other security weaknesses. An attacker could exploit these vulnerabilities by sending specially crafted packets, requests, HTTP payloads, sftunnel remote procedure calls (RPCs), serialized data or session tokens, depending on the affected vulnerability. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system. Note: Two of the reported vulnerabilities are known to be exploited in wild.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software",
+      "Cisco Secure Firewall Management Center (FMC)"
+    ],
+    "targetAudience": "All IT administrators and organizations using Cisco Secure Firewall products.",
+    "riskAssessment": "High risk of unauthorized access, arbitrary command execution and privilege escalation.",
+    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-20242",
+      "CVE-2026-20324",
+      "CVE-2026-20329",
+      "CVE-2026-20330",
+      "CVE-2026-20331",
+      "CVE-2026-20332",
+      "CVE-2026-20333",
+      "CVE-2026-20334",
+      "CVE-2026-20335",
+      "CVE-2026-20336",
+      "CVE-2026-20340",
+      "CVE-2026-20341",
+      "CVE-2026-20342",
+      "CVE-2026-20343",
+      "CVE-2026-20344",
+      "CVE-2026-76412",
+      "CVE-2026-76413",
+      "CVE-2026-76420"
     ],
     "solutionLinks": []
   },
@@ -564,67 +564,6 @@
       "CVE-2026-67277",
       "CVE-2026-86060",
       "CVE-2026-67276"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Check Point VPN Products",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
-    "code": "CIVN-2026-0459",
-    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
-    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
-    "softwareAffected": [
-      "Security Gateway, Security Management Server, and Spark Firewall.",
-      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
-      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
-      "Not Affected Versions: R82.20"
-    ],
-    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
-    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
-    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
-    "cves": [
-      "CVE-2026-85102",
-      "CVE-2026-85103"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
-    "code": "CIVN-2026-0457",
-    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
-      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
-      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
-    ],
-    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
-    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [
-      "CVE-2026-85706",
-      "CVE-2026-87719",
-      "CVE-2026-88765",
-      "CVE-2026-79708",
-      "CVE-2026-78252",
-      "CVE-2026-13210",
-      "CVE-2025-14871",
-      "CVE-2026-1168",
-      "CVE-2024-11222",
-      "CVE-2026-12910",
-      "CVE-2026-82837",
-      "CVE-2026-19619",
-      "CVE-2026-86341",
-      "CVE-2026-86340",
-      "CVE-2026-7514",
-      "CVE-2026-8030",
-      "CVE-2026-16794",
-      "CVE-2026-3855"
     ],
     "solutionLinks": []
   },
@@ -775,6 +714,67 @@
       "CVE-2026-82005",
       "CVE-2026-82006",
       "CVE-2026-82007"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Check Point VPN Products",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0459",
+    "code": "CIVN-2026-0459",
+    "summary": "Multiple critical vulnerabilities have been reported in Check Point VPN products which could allow an unauthenticated remote attacker to execute arbitrary code on affected systems, potentially resulting in complete compromise of the affected Security Gateway or Security Management Server, unauthorized access to sensitive information, and disruption of network operations.",
+    "description": "Check Point VPN is a secure remote access and site-to-site connectivity",
+    "softwareAffected": [
+      "Security Gateway, Security Management Server, and Spark Firewall.",
+      "Supported Versions: R81.20, R82, R82.10, R81.10.x, and R82.00.x.",
+      "End-of-Support (EoS) Versions: R80 through R80.40, R81, and R81.10.",
+      "Not Affected Versions: R82.20"
+    ],
+    "targetAudience": "Organizations and administrators using affected Check Point VPN products",
+    "riskAssessment": "Critical risk of unauthenticated remote code execution, complete compromise of affected systems, unauthorized access to confidential data and disruption of operations.",
+    "impactAssessment": "Potential for remote code execution, complete system compromise, unauthorized access to or modification of confidential data and disruption of network operations.",
+    "cves": [
+      "CVE-2026-85102",
+      "CVE-2026-85103"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
+    "code": "CIVN-2026-0457",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
+      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
+      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
+    ],
+    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-85706",
+      "CVE-2026-87719",
+      "CVE-2026-88765",
+      "CVE-2026-79708",
+      "CVE-2026-78252",
+      "CVE-2026-13210",
+      "CVE-2025-14871",
+      "CVE-2026-1168",
+      "CVE-2024-11222",
+      "CVE-2026-12910",
+      "CVE-2026-82837",
+      "CVE-2026-19619",
+      "CVE-2026-86341",
+      "CVE-2026-86340",
+      "CVE-2026-7514",
+      "CVE-2026-8030",
+      "CVE-2026-16794",
+      "CVE-2026-3855"
     ],
     "solutionLinks": []
   },
