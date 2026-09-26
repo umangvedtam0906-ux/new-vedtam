@@ -137,6 +137,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in WordPress",
+    "severity": "critical",
+    "date": "2026-09-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
+    "code": "CIVN-2026-0472",
+    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
+    "softwareAffected": [
+      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
+    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
+    "cves": [
+      "CVE-2026-87902"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Improper Input Validation Vulnerability in VeloCloud Orchestrator",
     "severity": "high",
     "date": "2026-09-23",
@@ -155,25 +174,6 @@
     "impactAssessment": "Potential for loss of confidentiality, integrity, and availability of the orchestrator and managed data.",
     "cves": [
       "CVE-2026-93952"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in WordPress",
-    "severity": "critical",
-    "date": "2026-09-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
-    "code": "CIVN-2026-0472",
-    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
-    "softwareAffected": [
-      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
-    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
-    "cves": [
-      "CVE-2026-87902"
     ],
     "solutionLinks": []
   },
@@ -5198,6 +5198,21 @@
     "code": "CIVN-2026-0320"
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -5222,21 +5237,6 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
