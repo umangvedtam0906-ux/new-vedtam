@@ -137,25 +137,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in WordPress",
-    "severity": "critical",
-    "date": "2026-09-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
-    "code": "CIVN-2026-0472",
-    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
-    "softwareAffected": [
-      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
-    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
-    "cves": [
-      "CVE-2026-87902"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Improper Input Validation Vulnerability in VeloCloud Orchestrator",
     "severity": "high",
     "date": "2026-09-23",
@@ -174,6 +155,25 @@
     "impactAssessment": "Potential for loss of confidentiality, integrity, and availability of the orchestrator and managed data.",
     "cves": [
       "CVE-2026-93952"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in WordPress",
+    "severity": "critical",
+    "date": "2026-09-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
+    "code": "CIVN-2026-0472",
+    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
+    "softwareAffected": [
+      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
+    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
+    "cves": [
+      "CVE-2026-87902"
     ],
     "solutionLinks": []
   },
@@ -430,61 +430,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Cisco Identity Services Engine",
-    "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0462",
-    "code": "CIVN-2026-0462",
-    "summary": "Multiple vulnerabilities have been reported across various components of Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) which could allow remote attackers to bypass authentication entirely, execute arbitrary code or commands as the root user, conduct SQL injection attacks, perform XML External Entity (XXE) injections, and gain full write access to the underlying operating system.",
-    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76460 CVE-2026-20130 CVE-2026-20192 CVE-2026-20194 CVE-2026-20234 CVE-2026-20237 CVE-2026-20287 ) This vulnerability exists due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface. 2. Command Injection Vulnerability ( CVE-2026-20305 CVE-2026-20306 ) These vulnerabilities exist due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary code on the device and elevate privileges to root. 3. SQL Injection Vulnerability ( CVE-2026-20284 ) This vulnerability exists due to insufficient validation of user-supplied input in REST API calls. An attacker could exploit this vulnerability by sending crafted input to an affected device. Successful exploitation of this vulnerability could allow the attacker to view or modify data on the underlying database for the affected device. 4. Command Injection Vulnerability ( CVE-2026-20283 ) This vulnerability exists due to insufficient validation of user-supplied input in IPsec Open API calls. An attacker could exploit this vulnerability by sending a crafted input to the IPsec Open API endpoint on an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary commands on the underlying operating system. 5. Authenticated Write Vulnerability ( CVE-2026-20282 ) This vulnerability exists due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by a crafted HTTP request to an affected device. Successful exploitation of this vulnerability could allow the attacker to obtain write access to the underlying operating system. 6. Remote Code Execution Vulnerability ( CVE-2026-76176 CVE-2026-20211 CVE-2026-20307 ) These vulnerabilities exist due to insecure deserialization of a user-supplied Java byte stream or insufficient validation of user-supplied input. An attacker could exploit these vulnerabilities by sending a crafted serialized Java object to the web-based management interface of an affected device and HTTP request to an affected device. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on the device, obtain system-level access to the underlying operating system, user-level access to the underlying operating system and elevate privileges to root",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating this software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-76460",
-      "CVE-2026-20130",
-      "CVE-2026-20192",
-      "CVE-2026-20194",
-      "CVE-2026-20234",
-      "CVE-2026-20237",
-      "CVE-2026-20287",
-      "CVE-2026-20305",
-      "CVE-2026-20306",
-      "CVE-2026-20284",
-      "CVE-2026-20283",
-      "CVE-2026-20282",
-      "CVE-2026-76176",
-      "CVE-2026-20211",
-      "CVE-2026-20307"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Cisco Secure Email Gateway",
-    "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0461",
-    "code": "CIVN-2026-0461",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Email Gateway and Cisco Secure Email and Web Manager that could allow an attacker to gain unauthorized access to files outside restricted directories, bypass authorization controls and access restricted resources, inject malicious input, consume excessive system resources, degrade service availability, or cause a denial-of-service (DoS) condition on the targeted system.",
-    "description": "1. Path Traversal Vulnerability ( CVE-2026-76440 ) This vulnerability exists due to improper validation and re",
-    "softwareAffected": [
-      "Cisco Secure Email Gateway 15.5 and earlier",
-      "Cisco Secure Email and Web Manager 15.5 and earlier"
-    ],
-    "targetAudience": "All IT administrators and individuals using Cisco products.",
-    "riskAssessment": "Risk of information disclosure.",
-    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
-    "cves": [
-      "CVE-2026-76440",
-      "CVE-2026-76441",
-      "CVE-2026-76442",
-      "CVE-2026-76443",
-      "CVE-2026-20353"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
     "severity": "critical",
     "date": "2026-09-17",
@@ -545,40 +490,57 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "title": "Multiple Vulnerabilities in Cisco Secure Email Gateway",
     "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
-    "code": "CIVN-2026-0457",
-    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0461",
+    "code": "CIVN-2026-0461",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Email Gateway and Cisco Secure Email and Web Manager that could allow an attacker to gain unauthorized access to files outside restricted directories, bypass authorization controls and access restricted resources, inject malicious input, consume excessive system resources, degrade service availability, or cause a denial-of-service (DoS) condition on the targeted system.",
+    "description": "1. Path Traversal Vulnerability ( CVE-2026-76440 ) This vulnerability exists due to improper validation and re",
     "softwareAffected": [
-      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
-      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
-      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
+      "Cisco Secure Email Gateway 15.5 and earlier",
+      "Cisco Secure Email and Web Manager 15.5 and earlier"
     ],
-    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
-    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for complete system compromise.",
+    "targetAudience": "All IT administrators and individuals using Cisco products.",
+    "riskAssessment": "Risk of information disclosure.",
+    "impactAssessment": "Potential for disclosure of sensitive information and compromise of confidentiality.",
     "cves": [
-      "CVE-2026-85706",
-      "CVE-2026-87719",
-      "CVE-2026-88765",
-      "CVE-2026-79708",
-      "CVE-2026-78252",
-      "CVE-2026-13210",
-      "CVE-2025-14871",
-      "CVE-2026-1168",
-      "CVE-2024-11222",
-      "CVE-2026-12910",
-      "CVE-2026-82837",
-      "CVE-2026-19619",
-      "CVE-2026-86341",
-      "CVE-2026-86340",
-      "CVE-2026-7514",
-      "CVE-2026-8030",
-      "CVE-2026-16794",
-      "CVE-2026-3855"
+      "CVE-2026-76440",
+      "CVE-2026-76441",
+      "CVE-2026-76442",
+      "CVE-2026-76443",
+      "CVE-2026-20353"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Cisco Identity Services Engine",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0462",
+    "code": "CIVN-2026-0462",
+    "summary": "Multiple vulnerabilities have been reported across various components of Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) which could allow remote attackers to bypass authentication entirely, execute arbitrary code or commands as the root user, conduct SQL injection attacks, perform XML External Entity (XXE) injections, and gain full write access to the underlying operating system.",
+    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76460 CVE-2026-20130 CVE-2026-20192 CVE-2026-20194 CVE-2026-20234 CVE-2026-20237 CVE-2026-20287 ) This vulnerability exists due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface. 2. Command Injection Vulnerability ( CVE-2026-20305 CVE-2026-20306 ) These vulnerabilities exist due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary code on the device and elevate privileges to root. 3. SQL Injection Vulnerability ( CVE-2026-20284 ) This vulnerability exists due to insufficient validation of user-supplied input in REST API calls. An attacker could exploit this vulnerability by sending crafted input to an affected device. Successful exploitation of this vulnerability could allow the attacker to view or modify data on the underlying database for the affected device. 4. Command Injection Vulnerability ( CVE-2026-20283 ) This vulnerability exists due to insufficient validation of user-supplied input in IPsec Open API calls. An attacker could exploit this vulnerability by sending a crafted input to the IPsec Open API endpoint on an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary commands on the underlying operating system. 5. Authenticated Write Vulnerability ( CVE-2026-20282 ) This vulnerability exists due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by a crafted HTTP request to an affected device. Successful exploitation of this vulnerability could allow the attacker to obtain write access to the underlying operating system. 6. Remote Code Execution Vulnerability ( CVE-2026-76176 CVE-2026-20211 CVE-2026-20307 ) These vulnerabilities exist due to insecure deserialization of a user-supplied Java byte stream or insufficient validation of user-supplied input. An attacker could exploit these vulnerabilities by sending a crafted serialized Java object to the web-based management interface of an affected device and HTTP request to an affected device. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on the device, obtain system-level access to the underlying operating system, user-level access to the underlying operating system and elevate privileges to root",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating this software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-76460",
+      "CVE-2026-20130",
+      "CVE-2026-20192",
+      "CVE-2026-20194",
+      "CVE-2026-20234",
+      "CVE-2026-20237",
+      "CVE-2026-20287",
+      "CVE-2026-20305",
+      "CVE-2026-20306",
+      "CVE-2026-20284",
+      "CVE-2026-20283",
+      "CVE-2026-20282",
+      "CVE-2026-76176",
+      "CVE-2026-20211",
+      "CVE-2026-20307"
     ],
     "solutionLinks": []
   },
@@ -625,6 +587,44 @@
     "cves": [
       "CVE-2026-85102",
       "CVE-2026-85103"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
+    "code": "CIVN-2026-0457",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
+      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
+      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
+    ],
+    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-85706",
+      "CVE-2026-87719",
+      "CVE-2026-88765",
+      "CVE-2026-79708",
+      "CVE-2026-78252",
+      "CVE-2026-13210",
+      "CVE-2025-14871",
+      "CVE-2026-1168",
+      "CVE-2024-11222",
+      "CVE-2026-12910",
+      "CVE-2026-82837",
+      "CVE-2026-19619",
+      "CVE-2026-86341",
+      "CVE-2026-86340",
+      "CVE-2026-7514",
+      "CVE-2026-8030",
+      "CVE-2026-16794",
+      "CVE-2026-3855"
     ],
     "solutionLinks": []
   },
@@ -5198,21 +5198,6 @@
     "code": "CIVN-2026-0320"
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -5237,6 +5222,21 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
