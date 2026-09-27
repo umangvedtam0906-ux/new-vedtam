@@ -1,5 +1,22 @@
 [
   {
+    "title": "Command Injection Vulnerability in Netlink ICT HG323RW Router",
+    "severity": "high",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0473",
+    "code": "CIVN-2026-0473",
+    "summary": "A vulnerability has been reported in Netlink ICT HG323RW router, which could allow an authenticated low privileged attacker to execute arbitrary operating system commands with root privileges on the targeted device.",
+    "description": "The Netlink ICT HG323RW is a router that provides network connectivity and includes a web based management interface for device configuration and administration. This vulnerability exists in the Netlink ICT HG323RW router due to insufficient authorization and input validation controls in the diagnostic script import functionality. An authenticated attacker could exploit this vulnerability by uploading and executing a specially crafted script through the web management interface. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary operating system commands with root privileges resulting in complete compromise of the affected device. Credit This vulnerability is reported by Muhammed Safvan.",
+    "softwareAffected": "",
+    "targetAudience": "Users and administrators of Netlink ICT HG323RW router.",
+    "riskAssessment": "Remote code execution with root privileges by an authenticated low privileged attacker.",
+    "impactAssessment": "Privilege escalation and complete compromise of the targeted device.",
+    "cves": [
+      "CVE-2026-96515"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-09-24",
@@ -85,23 +102,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Command Injection Vulnerability in Netlink ICT HG323RW Router",
-    "severity": "high",
-    "date": "2026-09-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0473",
-    "code": "CIVN-2026-0473",
-    "summary": "A vulnerability has been reported in Netlink ICT HG323RW router, which could allow an authenticated low privileged attacker to execute arbitrary operating system commands with root privileges on the targeted device.",
-    "description": "The Netlink ICT HG323RW is a router that provides network connectivity and includes a web based management interface for device configuration and administration. This vulnerability exists in the Netlink ICT HG323RW router due to insufficient authorization and input validation controls in the diagnostic script import functionality. An authenticated attacker could exploit this vulnerability by uploading and executing a specially crafted script through the web management interface. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary operating system commands with root privileges resulting in complete compromise of the affected device. Credit This vulnerability is reported by Muhammed Safvan.",
-    "softwareAffected": "",
-    "targetAudience": "Users and administrators of Netlink ICT HG323RW router.",
-    "riskAssessment": "Remote code execution with root privileges by an authenticated low privileged attacker.",
-    "impactAssessment": "Privilege escalation and complete compromise of the targeted device.",
-    "cves": [
-      "CVE-2026-96515"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "high",
     "date": "2026-09-24",
@@ -137,6 +137,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in WordPress",
+    "severity": "critical",
+    "date": "2026-09-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
+    "code": "CIVN-2026-0472",
+    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
+    "softwareAffected": [
+      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
+    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
+    "cves": [
+      "CVE-2026-87902"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Improper Input Validation Vulnerability in VeloCloud Orchestrator",
     "severity": "high",
     "date": "2026-09-23",
@@ -159,25 +178,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in WordPress",
-    "severity": "critical",
-    "date": "2026-09-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
-    "code": "CIVN-2026-0472",
-    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
-    "softwareAffected": [
-      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
-    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
-    "cves": [
-      "CVE-2026-87902"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in SolarWinds Access Rights Manager",
     "severity": "high",
     "date": "2026-09-22",
@@ -193,6 +193,25 @@
       "cve-2026-28326",
       "CVE-2026-28326"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Cross-Site Scripting Vulnerability in Drupal Core",
+    "severity": "medium",
+    "date": "2026-09-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0469",
+    "code": "CIVN-2026-0469",
+    "summary": "Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core, which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Drupal Core is an open-source content management system used to build and manage websites and web applications. Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core due to a security flaw in the third-party CKEditor library used for WYSIWYG editing. An attacker could exploit this vulnerability to inject malicious content that is subsequently processed by CKEditor and execute arbitrary JavaScript in the browser of a targeted user on the targeted system. Successful exploitation of this vulnerability could allow an attacker to compromise user sessions, access sensitive information, or perform unauthorized actions with the privileges of the targeted user on the targeted system.",
+    "softwareAffected": [
+      "Drupal Core versions between 10.5.0 and 10.6.17",
+      "Drupal Core versions between 11.0.0 and 11.3.17",
+      "Drupal Core versions between 11.4.0 and 11.4.7"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Drupal.",
+    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
+    "impactAssessment": "Potential for arbitrary script execution and/or compromise of system.",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -366,22 +385,23 @@
     "solutionLinks": []
   },
   {
-    "title": "Cross-Site Scripting Vulnerability in Drupal Core",
-    "severity": "medium",
-    "date": "2026-09-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0469",
-    "code": "CIVN-2026-0469",
-    "summary": "Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core, which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Drupal Core is an open-source content management system used to build and manage websites and web applications. Cross-Site Scripting (XSS) vulnerability has been reported in Drupal Core due to a security flaw in the third-party CKEditor library used for WYSIWYG editing. An attacker could exploit this vulnerability to inject malicious content that is subsequently processed by CKEditor and execute arbitrary JavaScript in the browser of a targeted user on the targeted system. Successful exploitation of this vulnerability could allow an attacker to compromise user sessions, access sensitive information, or perform unauthorized actions with the privileges of the targeted user on the targeted system.",
+    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
+    "severity": "high",
+    "date": "2026-09-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
+    "code": "CIVN-2026-0466",
+    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
     "softwareAffected": [
-      "Drupal Core versions between 10.5.0 and 10.6.17",
-      "Drupal Core versions between 11.0.0 and 11.3.17",
-      "Drupal Core versions between 11.4.0 and 11.4.7"
+      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
     ],
-    "targetAudience": "All end-user organizations and individuals using Drupal.",
-    "riskAssessment": "High risk of unauthenticated XSS exploitation.",
-    "impactAssessment": "Potential for arbitrary script execution and/or compromise of system.",
-    "cves": [],
+    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "cves": [
+      "CVE-2026-87886"
+    ],
     "solutionLinks": []
   },
   {
@@ -410,60 +430,24 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
-    "severity": "high",
-    "date": "2026-09-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
-    "code": "CIVN-2026-0466",
-    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
-    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
-    "softwareAffected": [
-      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
-      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
-    ],
-    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
-    "cves": [
-      "CVE-2026-87886"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
+    "title": "Cisco Identity Services Engine Vulnerabilities",
     "severity": "critical",
     "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0464",
-    "code": "CIVN-2026-0464",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Firewall products, which could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system.",
-    "description": "Cisco Secure Firewall products provide network security capabilities including firewalling, VPN, threat prevention, application control, and centralized management. Multiple vulnerabilities exist in Cisco Secure Firewall products due to improper handling of exceptional conditions, improper access control, incorrect initialization of encryption parameters, unsecured deserialization of untrusted data, improper input validation and other security weaknesses. An attacker could exploit these vulnerabilities by sending specially crafted packets, requests, HTTP payloads, sftunnel remote procedure calls (RPCs), serialized data or session tokens, depending on the affected vulnerability. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system. Note: Two of the reported vulnerabilities are known to be exploited in wild.",
-    "softwareAffected": [
-      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
-      "Cisco Secure Firewall Threat Defense (FTD) Software",
-      "Cisco Secure Firewall Management Center (FMC)"
-    ],
-    "targetAudience": "All IT administrators and organizations using Cisco Secure Firewall products.",
-    "riskAssessment": "High risk of unauthorized access, arbitrary command execution and privilege escalation.",
-    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0463",
+    "code": "CIVN-2026-0463",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) could allow a remote attacker to bypass authentication to the REST API, achieve remote code execution, perform SQL injection, and conduct XML External Entity injection attacks on an affected device.",
+    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76423 ) This vulnerability exists due to REST API web service being exposed with insufficient authorization checks. An attacker could exploit this vulnerability by sending a crafted HTTP request to the exposed REST API port. Successful exploitation of this vulnerability could allow the attacker to read and modify ISE configuration and identity data with administrative privileges. 2. Arbitrary File Access Vulnerability ( CVE-2026-76424 ) This vulnerability exists due to insufficient validation in file operations. An attacker could exploit this vulnerability by uploading a file with a crafted path. Successful exploitation of this vulnerability could allow the attacker to upload files to arbitrary locations and execute arbitrary commands as root on the affected device. 3. SQL Injection Vulnerability ( CVE-2026-76425 CVE-2026-76426 CVE-2026-76428 ) These vulnerabilities exist due to insufficient validation of certain parameters that are concatenated directly into an SQL query, certain parameters being concatenated directly into SQL clauses without parameterization. An attacker could exploit this vulnerability by sending a crafted request that contains SQL statements to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read arbitrary content from the SQL database and conduct server-side request forgery (SSRF) attacks. 4. External Entity Injection Vulnerability ( CVE-2026-76427 ) This vulnerability exists due to the parsing of attacker-controlled feed metadata with an XML parser that does not disable external entity re",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
     "cves": [
-      "CVE-2026-20242",
-      "CVE-2026-20324",
-      "CVE-2026-20329",
-      "CVE-2026-20330",
-      "CVE-2026-20331",
-      "CVE-2026-20332",
-      "CVE-2026-20333",
-      "CVE-2026-20334",
-      "CVE-2026-20335",
-      "CVE-2026-20336",
-      "CVE-2026-20340",
-      "CVE-2026-20341",
-      "CVE-2026-20342",
-      "CVE-2026-20343",
-      "CVE-2026-20344",
-      "CVE-2026-76412",
-      "CVE-2026-76413",
-      "CVE-2026-76420"
+      "CVE-2026-76423",
+      "CVE-2026-76424",
+      "CVE-2026-76425",
+      "CVE-2026-76426",
+      "CVE-2026-76428",
+      "CVE-2026-76427"
     ],
     "solutionLinks": []
   },
@@ -523,24 +507,40 @@
     "solutionLinks": []
   },
   {
-    "title": "Cisco Identity Services Engine Vulnerabilities",
+    "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
     "severity": "critical",
     "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0463",
-    "code": "CIVN-2026-0463",
-    "summary": "Multiple vulnerabilities have been reported in Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) could allow a remote attacker to bypass authentication to the REST API, achieve remote code execution, perform SQL injection, and conduct XML External Entity injection attacks on an affected device.",
-    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76423 ) This vulnerability exists due to REST API web service being exposed with insufficient authorization checks. An attacker could exploit this vulnerability by sending a crafted HTTP request to the exposed REST API port. Successful exploitation of this vulnerability could allow the attacker to read and modify ISE configuration and identity data with administrative privileges. 2. Arbitrary File Access Vulnerability ( CVE-2026-76424 ) This vulnerability exists due to insufficient validation in file operations. An attacker could exploit this vulnerability by uploading a file with a crafted path. Successful exploitation of this vulnerability could allow the attacker to upload files to arbitrary locations and execute arbitrary commands as root on the affected device. 3. SQL Injection Vulnerability ( CVE-2026-76425 CVE-2026-76426 CVE-2026-76428 ) These vulnerabilities exist due to insufficient validation of certain parameters that are concatenated directly into an SQL query, certain parameters being concatenated directly into SQL clauses without parameterization. An attacker could exploit this vulnerability by sending a crafted request that contains SQL statements to an affected endpoint. Successful exploitation of this vulnerability could allow the attacker to read arbitrary content from the SQL database and conduct server-side request forgery (SSRF) attacks. 4. External Entity Injection Vulnerability ( CVE-2026-76427 ) This vulnerability exists due to the parsing of attacker-controlled feed metadata with an XML parser that does not disable external entity re",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating in Software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0464",
+    "code": "CIVN-2026-0464",
+    "summary": "Multiple vulnerabilities have been reported in Cisco Secure Firewall products, which could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system.",
+    "description": "Cisco Secure Firewall products provide network security capabilities including firewalling, VPN, threat prevention, application control, and centralized management. Multiple vulnerabilities exist in Cisco Secure Firewall products due to improper handling of exceptional conditions, improper access control, incorrect initialization of encryption parameters, unsecured deserialization of untrusted data, improper input validation and other security weaknesses. An attacker could exploit these vulnerabilities by sending specially crafted packets, requests, HTTP payloads, sftunnel remote procedure calls (RPCs), serialized data or session tokens, depending on the affected vulnerability. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary commands, gain elevated privileges, bypass authentication or session controls, access sensitive information, or cause denial of service (DoS) conditions on the affected system. Note: Two of the reported vulnerabilities are known to be exploited in wild.",
+    "softwareAffected": [
+      "Cisco Secure Firewall Adaptive Security Appliance (ASA) Software",
+      "Cisco Secure Firewall Threat Defense (FTD) Software",
+      "Cisco Secure Firewall Management Center (FMC)"
+    ],
+    "targetAudience": "All IT administrators and organizations using Cisco Secure Firewall products.",
+    "riskAssessment": "High risk of unauthorized access, arbitrary command execution and privilege escalation.",
+    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
     "cves": [
-      "CVE-2026-76423",
-      "CVE-2026-76424",
-      "CVE-2026-76425",
-      "CVE-2026-76426",
-      "CVE-2026-76428",
-      "CVE-2026-76427"
+      "CVE-2026-20242",
+      "CVE-2026-20324",
+      "CVE-2026-20329",
+      "CVE-2026-20330",
+      "CVE-2026-20331",
+      "CVE-2026-20332",
+      "CVE-2026-20333",
+      "CVE-2026-20334",
+      "CVE-2026-20335",
+      "CVE-2026-20336",
+      "CVE-2026-20340",
+      "CVE-2026-20341",
+      "CVE-2026-20342",
+      "CVE-2026-20343",
+      "CVE-2026-20344",
+      "CVE-2026-76412",
+      "CVE-2026-76413",
+      "CVE-2026-76420"
     ],
     "solutionLinks": []
   },
@@ -564,6 +564,44 @@
       "CVE-2026-67277",
       "CVE-2026-86060",
       "CVE-2026-67276"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "critical",
+    "date": "2026-09-16",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
+    "code": "CIVN-2026-0457",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
+      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
+      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
+    ],
+    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-85706",
+      "CVE-2026-87719",
+      "CVE-2026-88765",
+      "CVE-2026-79708",
+      "CVE-2026-78252",
+      "CVE-2026-13210",
+      "CVE-2025-14871",
+      "CVE-2026-1168",
+      "CVE-2024-11222",
+      "CVE-2026-12910",
+      "CVE-2026-82837",
+      "CVE-2026-19619",
+      "CVE-2026-86341",
+      "CVE-2026-86340",
+      "CVE-2026-7514",
+      "CVE-2026-8030",
+      "CVE-2026-16794",
+      "CVE-2026-3855"
     ],
     "solutionLinks": []
   },
@@ -737,44 +775,6 @@
       "CVE-2026-82005",
       "CVE-2026-82006",
       "CVE-2026-82007"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
-    "severity": "critical",
-    "date": "2026-09-16",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0457",
-    "code": "CIVN-2026-0457",
-    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE) that could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to improper path confinement, insecure deserialization, buffer overflow, insufficient scope validation, improper sanitization, improper input validation, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending specially crafted requests to the affected GitLab components. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain access to sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. Note:CVE-2026-85706 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "GitLab CE/EE 19.3.x versions prior to 19.3.2",
-      "GitLab CE/EE 19.2.x versions prior to 19.2.6",
-      "GitLab CE/EE from 10.1.0 to versions prior to 19.1.8"
-    ],
-    "targetAudience": "Organizations and system administrators using self-managed GitLab CE or EE installations.",
-    "riskAssessment": "High risk of remote code execution, unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [
-      "CVE-2026-85706",
-      "CVE-2026-87719",
-      "CVE-2026-88765",
-      "CVE-2026-79708",
-      "CVE-2026-78252",
-      "CVE-2026-13210",
-      "CVE-2025-14871",
-      "CVE-2026-1168",
-      "CVE-2024-11222",
-      "CVE-2026-12910",
-      "CVE-2026-82837",
-      "CVE-2026-19619",
-      "CVE-2026-86341",
-      "CVE-2026-86340",
-      "CVE-2026-7514",
-      "CVE-2026-8030",
-      "CVE-2026-16794",
-      "CVE-2026-3855"
     ],
     "solutionLinks": []
   },
