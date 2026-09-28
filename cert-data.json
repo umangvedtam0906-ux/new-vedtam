@@ -1,5 +1,143 @@
 [
   {
+    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
+    "severity": "high",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
+    "code": "CIVN-2026-0480",
+    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
+    "softwareAffected": [
+      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
+    ],
+    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
+    "riskAssessment": "High risk of remote code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-70125"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway",
+    "severity": "critical",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0479",
+    "code": "CIVN-2026-0479",
+    "summary": "Multiple vulnerabilities have been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to execute arbitrary code, bypass security restrictions, cause denial of service (DoS) conditions, and perform spoofing on the targeted system.",
+    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
+    "softwareAffected": [
+      "Citrix NetScaler ADC and Citrix NetScaler Gateway 14.1 versions prior to 14.1-73.37",
+      "Citrix NetScaler ADC and Citrix NetScaler Gateway 13.1 versions prior to 13.1-64.23",
+      "Citrix NetScaler ADC FIPS versions prior to 14.1-73.37 FIPS",
+      "Citrix NetScaler ADC FIPS and NDcPP versions prior to 13.1-37.279"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of remote code execution, denial-of-service conditions, and unauthorized access.",
+    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772",
+      "CVE-2026-88773",
+      "CVE-2026-88774",
+      "CVE-2026-88775",
+      "CVE-2026-88776",
+      "CVE-2026-88777",
+      "CVE-2026-88778"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
+    "severity": "critical",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0478",
+    "code": "CIVN-2026-0478",
+    "summary": "A directory traversal and file upload vulnerability has been reported in Check Point Security Management Server and related products, which could allow an unauthenticated attacker to upload and execute arbitrary scripts on the targeted system.",
+    "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent provide centralized management and security event management capabilities for Check Point security deployments. These vulnerabilities exist in Check Point products due to directory traversal and file upload weaknesses. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow an unauthenticated attacker to execute arbitrary scripts on the targeted system. NOTE: CVE-2026-93616 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent.",
+      "Check Point R82.20",
+      "Check Point R82.10 with Jumbo Hotfix Take 44 or below",
+      "Check Point R82 with Jumbo Hotfix Take 126 or below",
+      "Check Point R81.20 with Jumbo Hotfix Take 166 or below",
+      "Check Point R81.10 with Jumbo Hotfix Take 190 or below",
+      "Check Point R80, R80.10, R80.20, R80.30, R80.40 and R81"
+    ],
+    "targetAudience": "All organizations and individuals using the affected Check Point products.",
+    "riskAssessment": "High risk of unauthorized access and arbitrary script execution on the affected Management Server.",
+    "impactAssessment": "Potential for execute malicious scripts and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-93616"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Buffer Overflow Vulnerability in Zyxel",
+    "severity": "high",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0477",
+    "code": "CIVN-2026-0477",
+    "summary": "A stack-based buffer overflow vulnerability has been reported in the CGI program of Zyxel GS1900 series switch firmware which could allow an unauthenticated attacker with LAN level access to execute OS commands on affected device.",
+    "description": "Zyxel GS1900 series switches are network switching devices designed to provide wired network connectivity and network management capabilities for organizational networks. This vulnerability exists in Zyxel products due to stack-based buffer overflow in CGI program of its GS1900 series switch firmware. A LAN-based, unauthenticated attacker could exploit this vulnerability by sending a specially crafted HTTP request. Successful exploitation of this vulnerability could allow an unauthenticated attacker with LAN level access to execute OS commands on affected device.",
+    "softwareAffected": [
+      "Zyxel GS1900-8 firmware version 2.90(AAHH.1)C0 and earlier",
+      "Zyxel GS1900-8HP firmware version 2.90(AAHI.1)C0 and earlier",
+      "Zyxel GS1900-10HP firmware version 2.90(AAZI.1)C0 and earlier",
+      "Zyxel GS1900-16 firmware version 2.90(AAHJ.1)C0 and earlier",
+      "Zyxel GS1900-24 firmware version 2.90(AAHL.1)C0 and earlier",
+      "Zyxel GS1900-24E firmware version 2.90(AAHK.1)C0 and earlier",
+      "Zyxel GS1900-24EP firmware version 2.90(ABTO.1)C0 and earlier",
+      "Zyxel GS1900-24HPv2 firmware version 2.90(ABTP.1)C0 and earlier",
+      "Zyxel GS1900-48 firmware version 2.90(AAHN.1)C0 and earlier",
+      "Zyxel GS1900-48HPv2 firmware version 2.90(ABTQ.1)C0 and earlier"
+    ],
+    "targetAudience": "Organizations and network administrators using affected Zyxel products.",
+    "riskAssessment": "High risk of unauthorized OS command execution, potential compromise of affected network switches and disruption of network operations.",
+    "impactAssessment": "Potential for OS command execution and compromise of affected network switches, with possible impact to confidentiality, integrity, and availability.",
+    "cves": [
+      "CVE-2026-7273"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0474",
+    "code": "CIVN-2026-0474",
+    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, perform spoofing attack, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Dawn, PDFium, Extensions; Buffer overflow in WebGL, PDFium; Incorrect reference re",
+    "softwareAffected": [
+      "Google Chrome versions prior to 153.0.8010.52/.53 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.52 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
+    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
+    "cves": [
+      "CVE-2026-93372",
+      "CVE-2026-93373",
+      "CVE-2026-93374",
+      "CVE-2026-93375",
+      "CVE-2026-93376",
+      "CVE-2026-93377",
+      "CVE-2026-93378",
+      "CVE-2026-93379",
+      "CVE-2026-93380",
+      "CVE-2026-93381",
+      "CVE-2026-93382",
+      "CVE-2026-93383",
+      "CVE-2026-93384",
+      "CVE-2026-93385",
+      "CVE-2026-93386",
+      "CVE-2026-93387"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-09-24",
@@ -81,41 +219,6 @@
     "impactAssessment": "Potential for remote code execution.",
     "cves": [
       "CVE-2026-94127"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0474",
-    "code": "CIVN-2026-0474",
-    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, perform spoofing attack, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Dawn, PDFium, Extensions; Buffer overflow in WebGL, PDFium; Incorrect reference re",
-    "softwareAffected": [
-      "Google Chrome versions prior to 153.0.8010.52/.53 for Windows and Mac",
-      "Google Chrome versions prior to 153.0.8010.52 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
-    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
-    "cves": [
-      "CVE-2026-93372",
-      "CVE-2026-93373",
-      "CVE-2026-93374",
-      "CVE-2026-93375",
-      "CVE-2026-93376",
-      "CVE-2026-93377",
-      "CVE-2026-93378",
-      "CVE-2026-93379",
-      "CVE-2026-93380",
-      "CVE-2026-93381",
-      "CVE-2026-93382",
-      "CVE-2026-93383",
-      "CVE-2026-93384",
-      "CVE-2026-93385",
-      "CVE-2026-93386",
-      "CVE-2026-93387"
     ],
     "solutionLinks": []
   },
@@ -430,6 +533,37 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Cisco Identity Services Engine",
+    "severity": "critical",
+    "date": "2026-09-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0462",
+    "code": "CIVN-2026-0462",
+    "summary": "Multiple vulnerabilities have been reported across various components of Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) which could allow remote attackers to bypass authentication entirely, execute arbitrary code or commands as the root user, conduct SQL injection attacks, perform XML External Entity (XXE) injections, and gain full write access to the underlying operating system.",
+    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76460 CVE-2026-20130 CVE-2026-20192 CVE-2026-20194 CVE-2026-20234 CVE-2026-20237 CVE-2026-20287 ) This vulnerability exists due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface. 2. Command Injection Vulnerability ( CVE-2026-20305 CVE-2026-20306 ) These vulnerabilities exist due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary code on the device and elevate privileges to root. 3. SQL Injection Vulnerability ( CVE-2026-20284 ) This vulnerability exists due to insufficient validation of user-supplied input in REST API calls. An attacker could exploit this vulnerability by sending crafted input to an affected device. Successful exploitation of this vulnerability could allow the attacker to view or modify data on the underlying database for the affected device. 4. Command Injection Vulnerability ( CVE-2026-20283 ) This vulnerability exists due to insufficient validation of user-supplied input in IPsec Open API calls. An attacker could exploit this vulnerability by sending a crafted input to the IPsec Open API endpoint on an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary commands on the underlying operating system. 5. Authenticated Write Vulnerability ( CVE-2026-20282 ) This vulnerability exists due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by a crafted HTTP request to an affected device. Successful exploitation of this vulnerability could allow the attacker to obtain write access to the underlying operating system. 6. Remote Code Execution Vulnerability ( CVE-2026-76176 CVE-2026-20211 CVE-2026-20307 ) These vulnerabilities exist due to insecure deserialization of a user-supplied Java byte stream or insufficient validation of user-supplied input. An attacker could exploit these vulnerabilities by sending a crafted serialized Java object to the web-based management interface of an affected device and HTTP request to an affected device. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on the device, obtain system-level access to the underlying operating system, user-level access to the underlying operating system and elevate privileges to root",
+    "softwareAffected": "",
+    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating this software.",
+    "riskAssessment": "High risk of data manipulation and service disruption.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-76460",
+      "CVE-2026-20130",
+      "CVE-2026-20192",
+      "CVE-2026-20194",
+      "CVE-2026-20234",
+      "CVE-2026-20237",
+      "CVE-2026-20287",
+      "CVE-2026-20305",
+      "CVE-2026-20306",
+      "CVE-2026-20284",
+      "CVE-2026-20283",
+      "CVE-2026-20282",
+      "CVE-2026-76176",
+      "CVE-2026-20211",
+      "CVE-2026-20307"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Cisco Secure Firewall Products",
     "severity": "critical",
     "date": "2026-09-17",
@@ -486,37 +620,6 @@
       "CVE-2026-76426",
       "CVE-2026-76428",
       "CVE-2026-76427"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Cisco Identity Services Engine",
-    "severity": "critical",
-    "date": "2026-09-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0462",
-    "code": "CIVN-2026-0462",
-    "summary": "Multiple vulnerabilities have been reported across various components of Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) which could allow remote attackers to bypass authentication entirely, execute arbitrary code or commands as the root user, conduct SQL injection attacks, perform XML External Entity (XXE) injections, and gain full write access to the underlying operating system.",
-    "description": "1. Authentication Bypass Vulnerability ( CVE-2026-76460 CVE-2026-20130 CVE-2026-20192 CVE-2026-20194 CVE-2026-20234 CVE-2026-20237 CVE-2026-20287 ) This vulnerability exists due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface. 2. Command Injection Vulnerability ( CVE-2026-20305 CVE-2026-20306 ) These vulnerabilities exist due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary code on the device and elevate privileges to root. 3. SQL Injection Vulnerability ( CVE-2026-20284 ) This vulnerability exists due to insufficient validation of user-supplied input in REST API calls. An attacker could exploit this vulnerability by sending crafted input to an affected device. Successful exploitation of this vulnerability could allow the attacker to view or modify data on the underlying database for the affected device. 4. Command Injection Vulnerability ( CVE-2026-20283 ) This vulnerability exists due to insufficient validation of user-supplied input in IPsec Open API calls. An attacker could exploit this vulnerability by sending a crafted input to the IPsec Open API endpoint on an affected device. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary commands on the underlying operating system. 5. Authenticated Write Vulnerability ( CVE-2026-20282 ) This vulnerability exists due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by a crafted HTTP request to an affected device. Successful exploitation of this vulnerability could allow the attacker to obtain write access to the underlying operating system. 6. Remote Code Execution Vulnerability ( CVE-2026-76176 CVE-2026-20211 CVE-2026-20307 ) These vulnerabilities exist due to insecure deserialization of a user-supplied Java byte stream or insufficient validation of user-supplied input. An attacker could exploit these vulnerabilities by sending a crafted serialized Java object to the web-based management interface of an affected device and HTTP request to an affected device. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on the device, obtain system-level access to the underlying operating system, user-level access to the underlying operating system and elevate privileges to root",
-    "softwareAffected": "",
-    "targetAudience": "All IT administrators and individuals responsible for maintaining and updating this software.",
-    "riskAssessment": "High risk of data manipulation and service disruption.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-76460",
-      "CVE-2026-20130",
-      "CVE-2026-20192",
-      "CVE-2026-20194",
-      "CVE-2026-20234",
-      "CVE-2026-20237",
-      "CVE-2026-20287",
-      "CVE-2026-20305",
-      "CVE-2026-20306",
-      "CVE-2026-20284",
-      "CVE-2026-20283",
-      "CVE-2026-20282",
-      "CVE-2026-76176",
-      "CVE-2026-20211",
-      "CVE-2026-20307"
     ],
     "solutionLinks": []
   },
@@ -5198,6 +5301,21 @@
     "code": "CIVN-2026-0320"
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -5222,21 +5340,6 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
