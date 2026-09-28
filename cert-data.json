@@ -1,57 +1,5 @@
 [
   {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0474",
-    "code": "CIVN-2026-0474",
-    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, perform spoofing attack, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Dawn, PDFium, Extensions; Buffer overflow in WebGL, PDFium; Incorrect reference re",
-    "softwareAffected": [
-      "Google Chrome versions prior to 153.0.8010.52/.53 for Windows and Mac",
-      "Google Chrome versions prior to 153.0.8010.52 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
-    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
-    "cves": [
-      "CVE-2026-93372",
-      "CVE-2026-93373",
-      "CVE-2026-93374",
-      "CVE-2026-93375",
-      "CVE-2026-93376",
-      "CVE-2026-93377",
-      "CVE-2026-93378",
-      "CVE-2026-93379",
-      "CVE-2026-93380",
-      "CVE-2026-93381",
-      "CVE-2026-93382",
-      "CVE-2026-93383",
-      "CVE-2026-93384",
-      "CVE-2026-93385",
-      "CVE-2026-93386",
-      "CVE-2026-93387"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Command Injection Vulnerability in Netlink ICT HG323RW Router",
-    "severity": "high",
-    "date": "2026-09-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0473",
-    "code": "CIVN-2026-0473",
-    "summary": "A vulnerability has been reported in Netlink ICT HG323RW router, which could allow an authenticated low privileged attacker to execute arbitrary operating system commands with root privileges on the targeted device.",
-    "description": "The Netlink ICT HG323RW is a router that provides network connectivity and includes a web based management interface for device configuration and administration. This vulnerability exists in the Netlink ICT HG323RW router due to insufficient authorization and input validation controls in the diagnostic script import functionality. An authenticated attacker could exploit this vulnerability by uploading and executing a specially crafted script through the web management interface. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary operating system commands with root privileges resulting in complete compromise of the affected device. Credit This vulnerability is reported by Muhammed Safvan.",
-    "softwareAffected": "",
-    "targetAudience": "Users and administrators of Netlink ICT HG323RW router.",
-    "riskAssessment": "Remote code execution with root privileges by an authenticated low privileged attacker.",
-    "impactAssessment": "Privilege escalation and complete compromise of the targeted device.",
-    "cves": [
-      "CVE-2026-96515"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-09-24",
@@ -133,6 +81,58 @@
     "impactAssessment": "Potential for remote code execution.",
     "cves": [
       "CVE-2026-94127"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0474",
+    "code": "CIVN-2026-0474",
+    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, perform spoofing attack, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Dawn, PDFium, Extensions; Buffer overflow in WebGL, PDFium; Incorrect reference re",
+    "softwareAffected": [
+      "Google Chrome versions prior to 153.0.8010.52/.53 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.52 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
+    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
+    "cves": [
+      "CVE-2026-93372",
+      "CVE-2026-93373",
+      "CVE-2026-93374",
+      "CVE-2026-93375",
+      "CVE-2026-93376",
+      "CVE-2026-93377",
+      "CVE-2026-93378",
+      "CVE-2026-93379",
+      "CVE-2026-93380",
+      "CVE-2026-93381",
+      "CVE-2026-93382",
+      "CVE-2026-93383",
+      "CVE-2026-93384",
+      "CVE-2026-93385",
+      "CVE-2026-93386",
+      "CVE-2026-93387"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Command Injection Vulnerability in Netlink ICT HG323RW Router",
+    "severity": "high",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0473",
+    "code": "CIVN-2026-0473",
+    "summary": "A vulnerability has been reported in Netlink ICT HG323RW router, which could allow an authenticated low privileged attacker to execute arbitrary operating system commands with root privileges on the targeted device.",
+    "description": "The Netlink ICT HG323RW is a router that provides network connectivity and includes a web based management interface for device configuration and administration. This vulnerability exists in the Netlink ICT HG323RW router due to insufficient authorization and input validation controls in the diagnostic script import functionality. An authenticated attacker could exploit this vulnerability by uploading and executing a specially crafted script through the web management interface. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary operating system commands with root privileges resulting in complete compromise of the affected device. Credit This vulnerability is reported by Muhammed Safvan.",
+    "softwareAffected": "",
+    "targetAudience": "Users and administrators of Netlink ICT HG323RW router.",
+    "riskAssessment": "Remote code execution with root privileges by an authenticated low privileged attacker.",
+    "impactAssessment": "Privilege escalation and complete compromise of the targeted device.",
+    "cves": [
+      "CVE-2026-96515"
     ],
     "solutionLinks": []
   },
