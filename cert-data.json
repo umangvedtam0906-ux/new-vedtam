@@ -50,6 +50,34 @@
     "solutionLinks": []
   },
   {
+    "title": "Buffer Overflow Vulnerability in Zyxel",
+    "severity": "high",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0477",
+    "code": "CIVN-2026-0477",
+    "summary": "A stack-based buffer overflow vulnerability has been reported in the CGI program of Zyxel GS1900 series switch firmware which could allow an unauthenticated attacker with LAN level access to execute OS commands on affected device.",
+    "description": "Zyxel GS1900 series switches are network switching devices designed to provide wired network connectivity and network management capabilities for organizational networks. This vulnerability exists in Zyxel products due to stack-based buffer overflow in CGI program of its GS1900 series switch firmware. A LAN-based, unauthenticated attacker could exploit this vulnerability by sending a specially crafted HTTP request. Successful exploitation of this vulnerability could allow an unauthenticated attacker with LAN level access to execute OS commands on affected device.",
+    "softwareAffected": [
+      "Zyxel GS1900-8 firmware version 2.90(AAHH.1)C0 and earlier",
+      "Zyxel GS1900-8HP firmware version 2.90(AAHI.1)C0 and earlier",
+      "Zyxel GS1900-10HP firmware version 2.90(AAZI.1)C0 and earlier",
+      "Zyxel GS1900-16 firmware version 2.90(AAHJ.1)C0 and earlier",
+      "Zyxel GS1900-24 firmware version 2.90(AAHL.1)C0 and earlier",
+      "Zyxel GS1900-24E firmware version 2.90(AAHK.1)C0 and earlier",
+      "Zyxel GS1900-24EP firmware version 2.90(ABTO.1)C0 and earlier",
+      "Zyxel GS1900-24HPv2 firmware version 2.90(ABTP.1)C0 and earlier",
+      "Zyxel GS1900-48 firmware version 2.90(AAHN.1)C0 and earlier",
+      "Zyxel GS1900-48HPv2 firmware version 2.90(ABTQ.1)C0 and earlier"
+    ],
+    "targetAudience": "Organizations and network administrators using affected Zyxel products.",
+    "riskAssessment": "High risk of unauthorized OS command execution, potential compromise of affected network switches and disruption of network operations.",
+    "impactAssessment": "Potential for OS command execution and compromise of affected network switches, with possible impact to confidentiality, integrity, and availability.",
+    "cves": [
+      "CVE-2026-7273"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-09-28",
@@ -75,30 +103,40 @@
     "solutionLinks": []
   },
   {
-    "title": "Buffer Overflow Vulnerability in Zyxel",
-    "severity": "high",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0477",
-    "code": "CIVN-2026-0477",
-    "summary": "A stack-based buffer overflow vulnerability has been reported in the CGI program of Zyxel GS1900 series switch firmware which could allow an unauthenticated attacker with LAN level access to execute OS commands on affected device.",
-    "description": "Zyxel GS1900 series switches are network switching devices designed to provide wired network connectivity and network management capabilities for organizational networks. This vulnerability exists in Zyxel products due to stack-based buffer overflow in CGI program of its GS1900 series switch firmware. A LAN-based, unauthenticated attacker could exploit this vulnerability by sending a specially crafted HTTP request. Successful exploitation of this vulnerability could allow an unauthenticated attacker with LAN level access to execute OS commands on affected device.",
+    "title": "Heap-based Buffer Overflow Vulnerability in F5 BIG-IP APM",
+    "severity": "critical",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0475",
+    "code": "CIVN-2026-0475",
+    "summary": "A heap-based buffer overflow vulnerability has been reported in F5 BIG-IP APM that could allow an unauthenticated remote attacker to execute arbitrary code on the targeted system.",
+    "description": "F5 BIG-IP APM (Access Policy Manager) is a secure access management",
     "softwareAffected": [
-      "Zyxel GS1900-8 firmware version 2.90(AAHH.1)C0 and earlier",
-      "Zyxel GS1900-8HP firmware version 2.90(AAHI.1)C0 and earlier",
-      "Zyxel GS1900-10HP firmware version 2.90(AAZI.1)C0 and earlier",
-      "Zyxel GS1900-16 firmware version 2.90(AAHJ.1)C0 and earlier",
-      "Zyxel GS1900-24 firmware version 2.90(AAHL.1)C0 and earlier",
-      "Zyxel GS1900-24E firmware version 2.90(AAHK.1)C0 and earlier",
-      "Zyxel GS1900-24EP firmware version 2.90(ABTO.1)C0 and earlier",
-      "Zyxel GS1900-24HPv2 firmware version 2.90(ABTP.1)C0 and earlier",
-      "Zyxel GS1900-48 firmware version 2.90(AAHN.1)C0 and earlier",
-      "Zyxel GS1900-48HPv2 firmware version 2.90(ABTQ.1)C0 and earlier"
+      "F5 BIG-IP APM version 21.1.0 before Hotfix-BIGIP-21.1.0.2.0.30.22-ENG",
+      "F5 BIG-IP APM version 17.5.0 before Hotfix-BIGIP-17.5.1.9.0.160.12-ENG",
+      "F5 BIG-IP APM version 17.1.0 before Hotfix-BIGIP-17.1.3.5.0.41.14-ENG"
     ],
-    "targetAudience": "Organizations and network administrators using affected Zyxel products.",
-    "riskAssessment": "High risk of unauthorized OS command execution, potential compromise of affected network switches and disruption of network operations.",
-    "impactAssessment": "Potential for OS command execution and compromise of affected network switches, with possible impact to confidentiality, integrity, and availability.",
+    "targetAudience": "All end-user organizations and individuals using affected versions of F5 BIG-IP APM.",
+    "riskAssessment": "High risk of remote code execution.",
+    "impactAssessment": "Potential for remote code execution.",
     "cves": [
-      "CVE-2026-7273"
+      "CVE-2026-94127"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Command Injection Vulnerability in Netlink ICT HG323RW Router",
+    "severity": "high",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0473",
+    "code": "CIVN-2026-0473",
+    "summary": "A vulnerability has been reported in Netlink ICT HG323RW router, which could allow an authenticated low privileged attacker to execute arbitrary operating system commands with root privileges on the targeted device.",
+    "description": "The Netlink ICT HG323RW is a router that provides network connectivity and includes a web based management interface for device configuration and administration. This vulnerability exists in the Netlink ICT HG323RW router due to insufficient authorization and input validation controls in the diagnostic script import functionality. An authenticated attacker could exploit this vulnerability by uploading and executing a specially crafted script through the web management interface. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary operating system commands with root privileges resulting in complete compromise of the affected device. Credit This vulnerability is reported by Muhammed Safvan.",
+    "softwareAffected": "",
+    "targetAudience": "Users and administrators of Netlink ICT HG323RW router.",
+    "riskAssessment": "Remote code execution with root privileges by an authenticated low privileged attacker.",
+    "impactAssessment": "Privilege escalation and complete compromise of the targeted device.",
+    "cves": [
+      "CVE-2026-96515"
     ],
     "solutionLinks": []
   },
@@ -134,23 +172,6 @@
       "CVE-2026-93385",
       "CVE-2026-93386",
       "CVE-2026-93387"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Command Injection Vulnerability in Netlink ICT HG323RW Router",
-    "severity": "high",
-    "date": "2026-09-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0473",
-    "code": "CIVN-2026-0473",
-    "summary": "A vulnerability has been reported in Netlink ICT HG323RW router, which could allow an authenticated low privileged attacker to execute arbitrary operating system commands with root privileges on the targeted device.",
-    "description": "The Netlink ICT HG323RW is a router that provides network connectivity and includes a web based management interface for device configuration and administration. This vulnerability exists in the Netlink ICT HG323RW router due to insufficient authorization and input validation controls in the diagnostic script import functionality. An authenticated attacker could exploit this vulnerability by uploading and executing a specially crafted script through the web management interface. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary operating system commands with root privileges resulting in complete compromise of the affected device. Credit This vulnerability is reported by Muhammed Safvan.",
-    "softwareAffected": "",
-    "targetAudience": "Users and administrators of Netlink ICT HG323RW router.",
-    "riskAssessment": "Remote code execution with root privileges by an authenticated low privileged attacker.",
-    "impactAssessment": "Privilege escalation and complete compromise of the targeted device.",
-    "cves": [
-      "CVE-2026-96515"
     ],
     "solutionLinks": []
   },
@@ -219,23 +240,21 @@
     "solutionLinks": []
   },
   {
-    "title": "Heap-based Buffer Overflow Vulnerability in F5 BIG-IP APM",
+    "title": "Remote Code Execution Vulnerability in WordPress",
     "severity": "critical",
-    "date": "2026-09-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0475",
-    "code": "CIVN-2026-0475",
-    "summary": "A heap-based buffer overflow vulnerability has been reported in F5 BIG-IP APM that could allow an unauthenticated remote attacker to execute arbitrary code on the targeted system.",
-    "description": "F5 BIG-IP APM (Access Policy Manager) is a secure access management",
+    "date": "2026-09-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
+    "code": "CIVN-2026-0472",
+    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
     "softwareAffected": [
-      "F5 BIG-IP APM version 21.1.0 before Hotfix-BIGIP-21.1.0.2.0.30.22-ENG",
-      "F5 BIG-IP APM version 17.5.0 before Hotfix-BIGIP-17.5.1.9.0.160.12-ENG",
-      "F5 BIG-IP APM version 17.1.0 before Hotfix-BIGIP-17.1.3.5.0.41.14-ENG"
+      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
     ],
-    "targetAudience": "All end-user organizations and individuals using affected versions of F5 BIG-IP APM.",
-    "riskAssessment": "High risk of remote code execution.",
-    "impactAssessment": "Potential for remote code execution.",
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
+    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
     "cves": [
-      "CVE-2026-94127"
+      "CVE-2026-87902"
     ],
     "solutionLinks": []
   },
@@ -258,25 +277,6 @@
     "impactAssessment": "Potential for loss of confidentiality, integrity, and availability of the orchestrator and managed data.",
     "cves": [
       "CVE-2026-93952"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in WordPress",
-    "severity": "critical",
-    "date": "2026-09-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
-    "code": "CIVN-2026-0472",
-    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
-    "softwareAffected": [
-      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
-    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
-    "cves": [
-      "CVE-2026-87902"
     ],
     "solutionLinks": []
   },
@@ -488,6 +488,26 @@
     "solutionLinks": []
   },
   {
+    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
+    "severity": "high",
+    "date": "2026-09-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
+    "code": "CIVN-2026-0466",
+    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
+    "softwareAffected": [
+      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
+    ],
+    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "cves": [
+      "CVE-2026-87886"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Check Point Security Management and Log Servers",
     "severity": "critical",
     "date": "2026-09-18",
@@ -509,26 +529,6 @@
     "impactAssessment": "Potential for execute arbitrary code and elevate privileges on the targeted system.",
     "cves": [
       "CVE-2026-91843"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
-    "severity": "high",
-    "date": "2026-09-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
-    "code": "CIVN-2026-0466",
-    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
-    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
-    "softwareAffected": [
-      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
-      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
-    ],
-    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
-    "cves": [
-      "CVE-2026-87886"
     ],
     "solutionLinks": []
   },
