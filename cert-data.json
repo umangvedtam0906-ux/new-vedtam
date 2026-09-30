@@ -538,26 +538,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
-    "severity": "high",
-    "date": "2026-09-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
-    "code": "CIVN-2026-0466",
-    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
-    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
-    "softwareAffected": [
-      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
-      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
-    ],
-    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
-    "cves": [
-      "CVE-2026-87886"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in Check Point Security Management and Log Servers",
     "severity": "critical",
     "date": "2026-09-18",
@@ -579,6 +559,26 @@
     "impactAssessment": "Potential for execute arbitrary code and elevate privileges on the targeted system.",
     "cves": [
       "CVE-2026-91843"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Privilege Escalation Vulnerability in Acronis cPanel Backup Plugin",
+    "severity": "high",
+    "date": "2026-09-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0466",
+    "code": "CIVN-2026-0466",
+    "summary": "A vulnerability has been reported in Acronis Backup plugins for cPanel, WHM, and Plesk which could allow a remote attacker to gain elevated privileges on the targeted system.",
+    "description": "Acronis Backup Plugin for cPanel is a software extension that integrates Acroniss enterprise cloud backup features directly into the cPanel & WHM (Web Host Manager) control panel. This vulnerability exist in Acronis Backup plugins for cPanel, WHM, and Plesk due to insecure file permissions. A remote attacker could exploit this vulnerability by gaining access to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges, execute arbitrary code, or perform unauthorized actions on the targeted system.",
+    "softwareAffected": [
+      "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+      "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
+    ],
+    "targetAudience": "System administrators using the affected Acronis Backup plugins.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for unauthorized actions or execution of arbitrary code.",
+    "cves": [
+      "CVE-2026-87886"
     ],
     "solutionLinks": []
   },
