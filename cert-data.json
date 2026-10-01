@@ -236,6 +236,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
+    "severity": "high",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
+    "code": "CIVN-2026-0480",
+    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
+    "softwareAffected": [
+      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
+    ],
+    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
+    "riskAssessment": "High risk of remote code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-70125"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-09-28",
@@ -285,27 +306,6 @@
     "impactAssessment": "Potential for OS command execution and compromise of affected network switches, with possible impact to confidentiality, integrity, and availability.",
     "cves": [
       "CVE-2026-7273"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
-    "severity": "high",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
-    "code": "CIVN-2026-0480",
-    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
-    "softwareAffected": [
-      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
-      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
-      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
-    ],
-    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
-    "riskAssessment": "High risk of remote code execution.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-70125"
     ],
     "solutionLinks": []
   },
@@ -403,6 +403,41 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "high",
+    "date": "2026-09-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0474",
+    "code": "CIVN-2026-0474",
+    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, perform spoofing attack, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Dawn, PDFium, Extensions; Buffer overflow in WebGL, PDFium; Incorrect reference re",
+    "softwareAffected": [
+      "Google Chrome versions prior to 153.0.8010.52/.53 for Windows and Mac",
+      "Google Chrome versions prior to 153.0.8010.52 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
+    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
+    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
+    "cves": [
+      "CVE-2026-93372",
+      "CVE-2026-93373",
+      "CVE-2026-93374",
+      "CVE-2026-93375",
+      "CVE-2026-93376",
+      "CVE-2026-93377",
+      "CVE-2026-93378",
+      "CVE-2026-93379",
+      "CVE-2026-93380",
+      "CVE-2026-93381",
+      "CVE-2026-93382",
+      "CVE-2026-93383",
+      "CVE-2026-93384",
+      "CVE-2026-93385",
+      "CVE-2026-93386",
+      "CVE-2026-93387"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Heap-based Buffer Overflow Vulnerability in F5 BIG-IP APM",
     "severity": "critical",
     "date": "2026-09-24",
@@ -437,41 +472,6 @@
     "impactAssessment": "Privilege escalation and complete compromise of the targeted device.",
     "cves": [
       "CVE-2026-96515"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "high",
-    "date": "2026-09-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0474",
-    "code": "CIVN-2026-0474",
-    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, perform spoofing attack, bypass security restrictions or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities exist in Google Chrome due to Use after free in Dawn, PDFium, Extensions; Buffer overflow in WebGL, PDFium; Incorrect reference re",
-    "softwareAffected": [
-      "Google Chrome versions prior to 153.0.8010.52/.53 for Windows and Mac",
-      "Google Chrome versions prior to 153.0.8010.52 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Google Chrome for Desktop.",
-    "riskAssessment": "High risk of unauthorized access to sensitive data, system compromise.",
-    "impactAssessment": "Potential for remote code execution and denial of service (DoS).",
-    "cves": [
-      "CVE-2026-93372",
-      "CVE-2026-93373",
-      "CVE-2026-93374",
-      "CVE-2026-93375",
-      "CVE-2026-93376",
-      "CVE-2026-93377",
-      "CVE-2026-93378",
-      "CVE-2026-93379",
-      "CVE-2026-93380",
-      "CVE-2026-93381",
-      "CVE-2026-93382",
-      "CVE-2026-93383",
-      "CVE-2026-93384",
-      "CVE-2026-93385",
-      "CVE-2026-93386",
-      "CVE-2026-93387"
     ],
     "solutionLinks": []
   },
