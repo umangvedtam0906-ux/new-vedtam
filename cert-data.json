@@ -1,5 +1,27 @@
 [
   {
+    "title": "Path Traversal Vulnerability in Fortinet FortiMail",
+    "severity": "critical",
+    "date": "2026-10-02",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0487",
+    "code": "CIVN-2026-0487",
+    "summary": "A critical path traversal vulnerability has been reported in Fortinet FortiMail, which could be exploited by an unauthenticated attacker to execute arbitrary code on the targeted system.",
+    "description": "Fortinet FortiMail is an email security",
+    "softwareAffected": [
+      "FortiMail 8.0.0 through 8.0.1",
+      "FortiMail 7.6.0 through 7.6.6",
+      "FortiMail 7.4.0 through 7.4.8",
+      "FortiMail 7.2.0 through 7.2.9"
+    ],
+    "targetAudience": "System administrators, network security teams, and organizations deploying or managing Fortinet FortiMail appliances.",
+    "riskAssessment": "High risk of unauthorized file writes, arbitrary code execution, and compromise of affected FortiMail appliances.",
+    "impactAssessment": "Successful exploitation could result in system compromise, execution of unauthorized commands, modification of system files, disruption of email security services, and potential exposure of sensitive information.",
+    "cves": [
+      "CVE-2026-104286"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
     "date": "2026-10-01",
