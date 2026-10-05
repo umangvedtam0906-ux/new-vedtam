@@ -22,6 +22,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in Apple Products",
+    "severity": "high",
+    "date": "2026-10-01",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0485",
+    "code": "CIVN-2026-0485",
+    "summary": "A vulnerability has been reported in iOS, iPadOS and macOS, which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Apple Inc. is a technology company that develops devices like iPhones, iPads, and MacBook along with their operating systems. iOS (for iPhones), iPadOS (for iPads), and macOS (for MacBook) are the software platforms that run and manage these devices. A vulnerability exists in iOS, iPadOS and macOS due to an out-of-bounds write issue. A remote attacker could exploit this vulnerability by persuading a victim to open a maliciously crafted file. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-86950) is being actively exploited in an extremely sophisticated attack against specific targeted individuals on affected system. Users are strongly advised to apply the latest patches immediately. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help",
+    "softwareAffected": [
+      "iOS and iPadOS versions prior to 26.7.1",
+      "macOS Sequoia versions prior to 15.8.1",
+      "macOS Tahoe versions prior to 26.7.1"
+    ],
+    "targetAudience": "Users of Apple iOS, iPadOS, macOS Sequoia, and macOS Tahoe.",
+    "riskAssessment": "High risk of arbitrary code execution.",
+    "impactAssessment": "Potential for remote code execution and sensitive information disclosure.",
+    "cves": [
+      "CVE-2026-86950"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
     "date": "2026-10-01",
@@ -69,27 +90,6 @@
       "CVE-2026-102329",
       "CVE-2026-102330",
       "CVE-2026-102331"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Apple Products",
-    "severity": "high",
-    "date": "2026-10-01",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0485",
-    "code": "CIVN-2026-0485",
-    "summary": "A vulnerability has been reported in iOS, iPadOS and macOS, which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Apple Inc. is a technology company that develops devices like iPhones, iPads, and MacBook along with their operating systems. iOS (for iPhones), iPadOS (for iPads), and macOS (for MacBook) are the software platforms that run and manage these devices. A vulnerability exists in iOS, iPadOS and macOS due to an out-of-bounds write issue. A remote attacker could exploit this vulnerability by persuading a victim to open a maliciously crafted file. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-86950) is being actively exploited in an extremely sophisticated attack against specific targeted individuals on affected system. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "iOS and iPadOS versions prior to 26.7.1",
-      "macOS Sequoia versions prior to 15.8.1",
-      "macOS Tahoe versions prior to 26.7.1"
-    ],
-    "targetAudience": "Users of Apple iOS, iPadOS, macOS Sequoia, and macOS Tahoe.",
-    "riskAssessment": "High risk of arbitrary code execution.",
-    "impactAssessment": "Potential for remote code execution and sensitive information disclosure.",
-    "cves": [
-      "CVE-2026-86950"
     ],
     "solutionLinks": []
   },
@@ -1376,28 +1376,7 @@
     "targetAudience": "Users of SAP products.",
     "riskAssessment": "High risk of complete system compromise, unauthorized access, and denial of service.",
     "impactAssessment": "Potential for execute arbitrary code, elevate privileges, disclose sensitive information, and cause denial of service (DoS) conditions.",
-    "cves": [
-      "CVE-2026-44756",
-      "CVE-2026-58240",
-      "CVE-2026-76969",
-      "CVE-2026-66768",
-      "CVE-2026-58243",
-      "CVE-2026-76958",
-      "CVE-2026-76967",
-      "CVE-2026-66767",
-      "CVE-2026-2332",
-      "CVE-2026-76968",
-      "CVE-2026-44766",
-      "CVE-2026-76971",
-      "CVE-2026-34477",
-      "CVE-2026-76977",
-      "CVE-2026-76960",
-      "CVE-2026-76961",
-      "CVE-2026-76959",
-      "CVE-2026-76962",
-      "CVE-2026-76963",
-      "CVE-2026-58234"
-    ],
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -2659,7 +2638,7 @@
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0042",
     "code": "CIAD-2026-0042",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "Microsoft has announced that Windows Server 2022 is approaching the end of its mainstream support lifecycle. On October 13, 2026, Windows Server 2022 will reach the end of mainstream support. The October 2026 security update will be the last mainstream support update available for this version. Upon reaching the end of mainstream support, Windows Server 2022 will transition to extended support. This transition includes security updates at no additional cost, and the system will continue to receive monthly security updates through October 14, 2031. To ensure environments remain fully supported under mainstream support, Microsoft recommends planning an upgrade to Windows Server 2025, which is the latest Long-Term Servicing Channel (LTSC) release.",
+    "description": "Microsoft has announced that Windows Server 2022 is approaching the end of its mainstream support lifecycle. On October 13, 2026, Windows Server 2022 will reach the end of mainstream support. The October 2026 security update will be the last mainstream support update available for this version. Upon reaching the end of mainstream support, Windows Server 2022 will transition to extended support. This transition includes security updates at no additional cost, and the system will continue to receive monthly security updates through October 14, 2031. To ensure environments remain fully supported under mainstream support, Microsoft recommends planning an upgrade to Windows Server 2025, which is the latest Long-Term Servicing Channel (LTSC) release. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On October 05, 2026",
     "softwareAffected": [
       "Windows Server 2022"
     ],
