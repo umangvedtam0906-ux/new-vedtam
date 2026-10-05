@@ -28,7 +28,7 @@
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0485",
     "code": "CIVN-2026-0485",
     "summary": "A vulnerability has been reported in iOS, iPadOS and macOS, which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Apple Inc. is a technology company that develops devices like iPhones, iPads, and MacBook along with their operating systems. iOS (for iPhones), iPadOS (for iPads), and macOS (for MacBook) are the software platforms that run and manage these devices. A vulnerability exists in iOS, iPadOS and macOS due to an out-of-bounds write issue. A remote attacker could exploit this vulnerability by persuading a victim to open a maliciously crafted file. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-86950) is being actively exploited in an extremely sophisticated attack against specific targeted individuals on affected system. Users are strongly advised to apply the latest patches immediately. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help",
+    "description": "Apple Inc. is a technology company that develops devices like iPhones, iPads, and MacBook along with their operating systems. iOS (for iPhones), iPadOS (for iPads), and macOS (for MacBook) are the software platforms that run and manage these devices. A vulnerability exists in iOS, iPadOS and macOS due to an out-of-bounds write issue. A remote attacker could exploit this vulnerability by persuading a victim to open a maliciously crafted file. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-86950) is being actively exploited in an extremely sophisticated attack against specific targeted individuals on affected system. Users are strongly advised to apply the latest patches immediately.",
     "softwareAffected": [
       "iOS and iPadOS versions prior to 26.7.1",
       "macOS Sequoia versions prior to 15.8.1",
@@ -309,56 +309,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
-    "severity": "high",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
-    "code": "CIVN-2026-0480",
-    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
-    "softwareAffected": [
-      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
-      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
-      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
-    ],
-    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
-    "riskAssessment": "High risk of remote code execution.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-70125"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway",
-    "severity": "critical",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0479",
-    "code": "CIVN-2026-0479",
-    "summary": "Multiple vulnerabilities have been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to execute arbitrary code, bypass security restrictions, cause denial of service (DoS) conditions, and perform spoofing on the targeted system.",
-    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
-    "softwareAffected": [
-      "Citrix NetScaler ADC and Citrix NetScaler Gateway 14.1 versions prior to 14.1-73.37",
-      "Citrix NetScaler ADC and Citrix NetScaler Gateway 13.1 versions prior to 13.1-64.23",
-      "Citrix NetScaler ADC FIPS versions prior to 14.1-73.37 FIPS",
-      "Citrix NetScaler ADC FIPS and NDcPP versions prior to 13.1-37.279"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "High risk of remote code execution, denial-of-service conditions, and unauthorized access.",
-    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
-    "cves": [
-      "CVE-2026-88771",
-      "CVE-2026-88772",
-      "CVE-2026-88773",
-      "CVE-2026-88774",
-      "CVE-2026-88775",
-      "CVE-2026-88776",
-      "CVE-2026-88777",
-      "CVE-2026-88778"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-09-28",
@@ -408,6 +358,56 @@
     "impactAssessment": "Potential for OS command execution and compromise of affected network switches, with possible impact to confidentiality, integrity, and availability.",
     "cves": [
       "CVE-2026-7273"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
+    "severity": "high",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
+    "code": "CIVN-2026-0480",
+    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
+    "softwareAffected": [
+      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
+    ],
+    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
+    "riskAssessment": "High risk of remote code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-70125"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway",
+    "severity": "critical",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0479",
+    "code": "CIVN-2026-0479",
+    "summary": "Multiple vulnerabilities have been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to execute arbitrary code, bypass security restrictions, cause denial of service (DoS) conditions, and perform spoofing on the targeted system.",
+    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
+    "softwareAffected": [
+      "Citrix NetScaler ADC and Citrix NetScaler Gateway 14.1 versions prior to 14.1-73.37",
+      "Citrix NetScaler ADC and Citrix NetScaler Gateway 13.1 versions prior to 13.1-64.23",
+      "Citrix NetScaler ADC FIPS versions prior to 14.1-73.37 FIPS",
+      "Citrix NetScaler ADC FIPS and NDcPP versions prior to 13.1-37.279"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of remote code execution, denial-of-service conditions, and unauthorized access.",
+    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772",
+      "CVE-2026-88773",
+      "CVE-2026-88774",
+      "CVE-2026-88775",
+      "CVE-2026-88776",
+      "CVE-2026-88777",
+      "CVE-2026-88778"
     ],
     "solutionLinks": []
   },
@@ -2638,7 +2638,7 @@
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0042",
     "code": "CIAD-2026-0042",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "Microsoft has announced that Windows Server 2022 is approaching the end of its mainstream support lifecycle. On October 13, 2026, Windows Server 2022 will reach the end of mainstream support. The October 2026 security update will be the last mainstream support update available for this version. Upon reaching the end of mainstream support, Windows Server 2022 will transition to extended support. This transition includes security updates at no additional cost, and the system will continue to receive monthly security updates through October 14, 2031. To ensure environments remain fully supported under mainstream support, Microsoft recommends planning an upgrade to Windows Server 2025, which is the latest Long-Term Servicing Channel (LTSC) release. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On October 05, 2026",
+    "description": "Microsoft has announced that Windows Server 2022 is approaching the end of its mainstream support lifecycle. On October 13, 2026, Windows Server 2022 will reach the end of mainstream support. The October 2026 security update will be the last mainstream support update available for this version. Upon reaching the end of mainstream support, Windows Server 2022 will transition to extended support. This transition includes security updates at no additional cost, and the system will continue to receive monthly security updates through October 14, 2031. To ensure environments remain fully supported under mainstream support, Microsoft recommends planning an upgrade to Windows Server 2025, which is the latest Long-Term Servicing Channel (LTSC) release.",
     "softwareAffected": [
       "Windows Server 2022"
     ],
