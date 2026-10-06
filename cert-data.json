@@ -309,6 +309,56 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
+    "severity": "high",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
+    "code": "CIVN-2026-0480",
+    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
+    "softwareAffected": [
+      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
+    ],
+    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
+    "riskAssessment": "High risk of remote code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-70125"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway",
+    "severity": "critical",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0479",
+    "code": "CIVN-2026-0479",
+    "summary": "Multiple vulnerabilities have been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to execute arbitrary code, bypass security restrictions, cause denial of service (DoS) conditions, and perform spoofing on the targeted system.",
+    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
+    "softwareAffected": [
+      "Citrix NetScaler ADC and Citrix NetScaler Gateway 14.1 versions prior to 14.1-73.37",
+      "Citrix NetScaler ADC and Citrix NetScaler Gateway 13.1 versions prior to 13.1-64.23",
+      "Citrix NetScaler ADC FIPS versions prior to 14.1-73.37 FIPS",
+      "Citrix NetScaler ADC FIPS and NDcPP versions prior to 13.1-37.279"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of remote code execution, denial-of-service conditions, and unauthorized access.",
+    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772",
+      "CVE-2026-88773",
+      "CVE-2026-88774",
+      "CVE-2026-88775",
+      "CVE-2026-88776",
+      "CVE-2026-88777",
+      "CVE-2026-88778"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-09-28",
@@ -358,56 +408,6 @@
     "impactAssessment": "Potential for OS command execution and compromise of affected network switches, with possible impact to confidentiality, integrity, and availability.",
     "cves": [
       "CVE-2026-7273"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
-    "severity": "high",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
-    "code": "CIVN-2026-0480",
-    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
-    "softwareAffected": [
-      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
-      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
-      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
-    ],
-    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
-    "riskAssessment": "High risk of remote code execution.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-70125"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway",
-    "severity": "critical",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0479",
-    "code": "CIVN-2026-0479",
-    "summary": "Multiple vulnerabilities have been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to execute arbitrary code, bypass security restrictions, cause denial of service (DoS) conditions, and perform spoofing on the targeted system.",
-    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
-    "softwareAffected": [
-      "Citrix NetScaler ADC and Citrix NetScaler Gateway 14.1 versions prior to 14.1-73.37",
-      "Citrix NetScaler ADC and Citrix NetScaler Gateway 13.1 versions prior to 13.1-64.23",
-      "Citrix NetScaler ADC FIPS versions prior to 14.1-73.37 FIPS",
-      "Citrix NetScaler ADC FIPS and NDcPP versions prior to 13.1-37.279"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "High risk of remote code execution, denial-of-service conditions, and unauthorized access.",
-    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
-    "cves": [
-      "CVE-2026-88771",
-      "CVE-2026-88772",
-      "CVE-2026-88773",
-      "CVE-2026-88774",
-      "CVE-2026-88775",
-      "CVE-2026-88776",
-      "CVE-2026-88777",
-      "CVE-2026-88778"
     ],
     "solutionLinks": []
   },
@@ -549,25 +549,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in WordPress",
-    "severity": "critical",
-    "date": "2026-09-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
-    "code": "CIVN-2026-0472",
-    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
-    "softwareAffected": [
-      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
-    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
-    "cves": [
-      "CVE-2026-87902"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Improper Input Validation Vulnerability in VeloCloud Orchestrator",
     "severity": "high",
     "date": "2026-09-23",
@@ -586,6 +567,25 @@
     "impactAssessment": "Potential for loss of confidentiality, integrity, and availability of the orchestrator and managed data.",
     "cves": [
       "CVE-2026-93952"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in WordPress",
+    "severity": "critical",
+    "date": "2026-09-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
+    "code": "CIVN-2026-0472",
+    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
+    "softwareAffected": [
+      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
+    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
+    "cves": [
+      "CVE-2026-87902"
     ],
     "solutionLinks": []
   },
@@ -1376,7 +1376,28 @@
     "targetAudience": "Users of SAP products.",
     "riskAssessment": "High risk of complete system compromise, unauthorized access, and denial of service.",
     "impactAssessment": "Potential for execute arbitrary code, elevate privileges, disclose sensitive information, and cause denial of service (DoS) conditions.",
-    "cves": [],
+    "cves": [
+      "CVE-2026-44756",
+      "CVE-2026-58240",
+      "CVE-2026-76969",
+      "CVE-2026-66768",
+      "CVE-2026-58243",
+      "CVE-2026-76958",
+      "CVE-2026-76967",
+      "CVE-2026-66767",
+      "CVE-2026-2332",
+      "CVE-2026-76968",
+      "CVE-2026-44766",
+      "CVE-2026-76971",
+      "CVE-2026-34477",
+      "CVE-2026-76977",
+      "CVE-2026-76960",
+      "CVE-2026-76961",
+      "CVE-2026-76959",
+      "CVE-2026-76962",
+      "CVE-2026-76963",
+      "CVE-2026-58234"
+    ],
     "solutionLinks": []
   },
   {
