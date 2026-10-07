@@ -50,7 +50,10 @@
     "code": "CIVN-2026-0490",
     "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
     "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Out of bounds write in WebGL, Incorrect authorization in FileSystem, Integer overflow in Compositing, Use after free in FedCM, Contextual Tasks, SVG, MediaStream; Type confusion in V8, Integer overflow in Skia, Buffer overflow in WebRTC and Information leak in SVG. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "softwareAffected": "",
+    "softwareAffected": [
+      "Google Chrome prior to 154.0.8037.97/.98 for Windows and Mac",
+      "Google Chrome prior to 154.0.8037.97 for Linux"
+    ],
     "targetAudience": "All end-user organizations and individuals using affected version of Google Chrome for Desktop.",
     "riskAssessment": "High risk of remote code execution and bypass security restrictions.",
     "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
@@ -206,6 +209,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in Apple Products",
+    "severity": "high",
+    "date": "2026-10-01",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0485",
+    "code": "CIVN-2026-0485",
+    "summary": "A vulnerability has been reported in iOS, iPadOS and macOS, which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Apple Inc. is a technology company that develops devices like iPhones, iPads, and MacBook along with their operating systems. iOS (for iPhones), iPadOS (for iPads), and macOS (for MacBook) are the software platforms that run and manage these devices. A vulnerability exists in iOS, iPadOS and macOS due to an out-of-bounds write issue. A remote attacker could exploit this vulnerability by persuading a victim to open a maliciously crafted file. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-86950) is being actively exploited in an extremely sophisticated attack against specific targeted individuals on affected system. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "iOS and iPadOS versions prior to 26.7.1",
+      "macOS Sequoia versions prior to 15.8.1",
+      "macOS Tahoe versions prior to 26.7.1"
+    ],
+    "targetAudience": "Users of Apple iOS, iPadOS, macOS Sequoia, and macOS Tahoe.",
+    "riskAssessment": "High risk of arbitrary code execution.",
+    "impactAssessment": "Potential for remote code execution and sensitive information disclosure.",
+    "cves": [
+      "CVE-2026-86950"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
     "date": "2026-10-01",
@@ -253,27 +277,6 @@
       "CVE-2026-102329",
       "CVE-2026-102330",
       "CVE-2026-102331"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Apple Products",
-    "severity": "high",
-    "date": "2026-10-01",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0485",
-    "code": "CIVN-2026-0485",
-    "summary": "A vulnerability has been reported in iOS, iPadOS and macOS, which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Apple Inc. is a technology company that develops devices like iPhones, iPads, and MacBook along with their operating systems. iOS (for iPhones), iPadOS (for iPads), and macOS (for MacBook) are the software platforms that run and manage these devices. A vulnerability exists in iOS, iPadOS and macOS due to an out-of-bounds write issue. A remote attacker could exploit this vulnerability by persuading a victim to open a maliciously crafted file. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-86950) is being actively exploited in an extremely sophisticated attack against specific targeted individuals on affected system. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "iOS and iPadOS versions prior to 26.7.1",
-      "macOS Sequoia versions prior to 15.8.1",
-      "macOS Tahoe versions prior to 26.7.1"
-    ],
-    "targetAudience": "Users of Apple iOS, iPadOS, macOS Sequoia, and macOS Tahoe.",
-    "riskAssessment": "High risk of arbitrary code execution.",
-    "impactAssessment": "Potential for remote code execution and sensitive information disclosure.",
-    "cves": [
-      "CVE-2026-86950"
     ],
     "solutionLinks": []
   },
@@ -493,35 +496,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway",
-    "severity": "critical",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0479",
-    "code": "CIVN-2026-0479",
-    "summary": "Multiple vulnerabilities have been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to execute arbitrary code, bypass security restrictions, cause denial of service (DoS) conditions, and perform spoofing on the targeted system.",
-    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
-    "softwareAffected": [
-      "Citrix NetScaler ADC and Citrix NetScaler Gateway 14.1 versions prior to 14.1-73.37",
-      "Citrix NetScaler ADC and Citrix NetScaler Gateway 13.1 versions prior to 13.1-64.23",
-      "Citrix NetScaler ADC FIPS versions prior to 14.1-73.37 FIPS",
-      "Citrix NetScaler ADC FIPS and NDcPP versions prior to 13.1-37.279"
-    ],
-    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "High risk of remote code execution, denial-of-service conditions, and unauthorized access.",
-    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
-    "cves": [
-      "CVE-2026-88771",
-      "CVE-2026-88772",
-      "CVE-2026-88773",
-      "CVE-2026-88774",
-      "CVE-2026-88775",
-      "CVE-2026-88776",
-      "CVE-2026-88777",
-      "CVE-2026-88778"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
     "severity": "critical",
     "date": "2026-09-28",
@@ -571,6 +545,35 @@
     "impactAssessment": "Potential for OS command execution and compromise of affected network switches, with possible impact to confidentiality, integrity, and availability.",
     "cves": [
       "CVE-2026-7273"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway",
+    "severity": "critical",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0479",
+    "code": "CIVN-2026-0479",
+    "summary": "Multiple vulnerabilities have been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to execute arbitrary code, bypass security restrictions, cause denial of service (DoS) conditions, and perform spoofing on the targeted system.",
+    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
+    "softwareAffected": [
+      "Citrix NetScaler ADC and Citrix NetScaler Gateway 14.1 versions prior to 14.1-73.37",
+      "Citrix NetScaler ADC and Citrix NetScaler Gateway 13.1 versions prior to 13.1-64.23",
+      "Citrix NetScaler ADC FIPS versions prior to 14.1-73.37 FIPS",
+      "Citrix NetScaler ADC FIPS and NDcPP versions prior to 13.1-37.279"
+    ],
+    "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "High risk of remote code execution, denial-of-service conditions, and unauthorized access.",
+    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772",
+      "CVE-2026-88773",
+      "CVE-2026-88774",
+      "CVE-2026-88775",
+      "CVE-2026-88776",
+      "CVE-2026-88777",
+      "CVE-2026-88778"
     ],
     "solutionLinks": []
   },
