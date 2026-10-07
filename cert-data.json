@@ -493,27 +493,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
-    "severity": "high",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
-    "code": "CIVN-2026-0480",
-    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
-    "softwareAffected": [
-      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
-      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
-      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
-    ],
-    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
-    "riskAssessment": "High risk of remote code execution.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-70125"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway",
     "severity": "critical",
     "date": "2026-09-28",
@@ -592,6 +571,27 @@
     "impactAssessment": "Potential for OS command execution and compromise of affected network switches, with possible impact to confidentiality, integrity, and availability.",
     "cves": [
       "CVE-2026-7273"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
+    "severity": "high",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0480",
+    "code": "CIVN-2026-0480",
+    "summary": "A vulnerability has been reported in Microsoft Outlook which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Microsoft Outlook is an email and personal information manager created by Microsoft that combines email, calendars, contact lists, and task management into a single platform. This vulnerability exists in Microsoft Outlook due to improper input validation. A remote attacker could exploit this vulnerability by sending a specially crafted payload. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code and compromise of affected systems on the targeted system.",
+    "softwareAffected": [
+      "Microsoft 365 Apps for Enterprise for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2021 for 32-bit and 64-bit",
+      "Microsoft Office LTSC 2024 for 32-bit and 64-bit"
+    ],
+    "targetAudience": "All organizations and individuals using the above-mentioned Microsoft products.",
+    "riskAssessment": "High risk of remote code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-70125"
     ],
     "solutionLinks": []
   },
