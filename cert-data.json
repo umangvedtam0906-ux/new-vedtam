@@ -70,6 +70,23 @@
     "solutionLinks": []
   },
   {
+    "title": "Information Disclosure Vulnerability in Schmooze dating mobile Application",
+    "severity": "critical",
+    "date": "2026-10-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0489",
+    "code": "CIVN-2026-0489",
+    "summary": "A vulnerability has been reported in Schmooze dating app, which could allow a remote attacker to gain unauthorized access to sensitive information of the targeted system.",
+    "description": "Schmooze is a meme based dating app that matches people based on their shared sense of humor and meme p",
+    "softwareAffected": "",
+    "targetAudience": "End-users of Schmooze.",
+    "riskAssessment": "Exposure of sensitive credentials and cryptographic keys of application�s production infrastructure.",
+    "impactAssessment": "Potential for unauthorized access to backend/ cloud resources and the ability to forge client request signatures.",
+    "cves": [
+      "CVE-2026-85153"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-10-05",
@@ -388,6 +405,44 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Wireshark",
+    "severity": "high",
+    "date": "2026-09-29",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0483",
+    "code": "CIVN-2026-0483",
+    "summary": "Multiple vulnerabilities have been reported in Wireshark which could allow an attacker to cause the application to crash, consume excessive system resources or potentially execute arbitrary code on the targeted system.",
+    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for trouble shooting, analysis, and security purposes. These vulnerabilities exist in Wireshark due to improper handling of specially crafted or malformed input in various protocol dissectors, file parsers, utilities, and profile import functionality. An attacker could exploit these vulnerabilities by injecting specially crafted or malformed network traffic, providing a malicious packet capture or other malformed file, or persuading a victim to import a malicious configuration profile. Successful exploitation of these vulnerabilities could allow an attacker to cause Wireshark to crash, consume excessive system resources, cause memory leaks, or potentially execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "Wireshark 4.6.0 to 4.6.8",
+      "Wireshark 4.4.0 to 4.4.18"
+    ],
+    "targetAudience": "All organizations and individuals using Wireshark.",
+    "riskAssessment": "High risk of application crashes, denial of service, excessive resource consumption, and potential arbitrary code execution.",
+    "impactAssessment": "Potential for application crashes, excessive system resource consumption, denial of service conditions, memory leaks, and arbitrary code execution.",
+    "cves": [
+      "CVE-2026-96415",
+      "CVE-2026-96416",
+      "CVE-2026-96423",
+      "CVE-2026-96418",
+      "CVE-2026-96419",
+      "CVE-2026-96420",
+      "CVE-2026-96417",
+      "CVE-2026-96421",
+      "CVE-2026-96422",
+      "CVE-2026-95388",
+      "CVE-2026-95392",
+      "CVE-2026-95393",
+      "CVE-2026-95394",
+      "CVE-2026-95387",
+      "CVE-2026-95395",
+      "CVE-2026-95390",
+      "CVE-2026-95386",
+      "CVE-2026-95389",
+      "CVE-2026-95391"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Cisco Nexus Dashboard Software",
     "severity": "critical",
     "date": "2026-09-29",
@@ -438,69 +493,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Wireshark",
-    "severity": "high",
-    "date": "2026-09-29",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0483",
-    "code": "CIVN-2026-0483",
-    "summary": "Multiple vulnerabilities have been reported in Wireshark which could allow an attacker to cause the application to crash, consume excessive system resources or potentially execute arbitrary code on the targeted system.",
-    "description": "Wireshark is a network protocol analyzer used to capture and inspect data packets in real time for trouble shooting, analysis, and security purposes. These vulnerabilities exist in Wireshark due to improper handling of specially crafted or malformed input in various protocol dissectors, file parsers, utilities, and profile import functionality. An attacker could exploit these vulnerabilities by injecting specially crafted or malformed network traffic, providing a malicious packet capture or other malformed file, or persuading a victim to import a malicious configuration profile. Successful exploitation of these vulnerabilities could allow an attacker to cause Wireshark to crash, consume excessive system resources, cause memory leaks, or potentially execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "Wireshark 4.6.0 to 4.6.8",
-      "Wireshark 4.4.0 to 4.4.18"
-    ],
-    "targetAudience": "All organizations and individuals using Wireshark.",
-    "riskAssessment": "High risk of application crashes, denial of service, excessive resource consumption, and potential arbitrary code execution.",
-    "impactAssessment": "Potential for application crashes, excessive system resource consumption, denial of service conditions, memory leaks, and arbitrary code execution.",
-    "cves": [
-      "CVE-2026-96415",
-      "CVE-2026-96416",
-      "CVE-2026-96423",
-      "CVE-2026-96418",
-      "CVE-2026-96419",
-      "CVE-2026-96420",
-      "CVE-2026-96417",
-      "CVE-2026-96421",
-      "CVE-2026-96422",
-      "CVE-2026-95388",
-      "CVE-2026-95392",
-      "CVE-2026-95393",
-      "CVE-2026-95394",
-      "CVE-2026-95387",
-      "CVE-2026-95395",
-      "CVE-2026-95390",
-      "CVE-2026-95386",
-      "CVE-2026-95389",
-      "CVE-2026-95391"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
-    "severity": "critical",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0478",
-    "code": "CIVN-2026-0478",
-    "summary": "A directory traversal and file upload vulnerability has been reported in Check Point Security Management Server and related products, which could allow an unauthenticated attacker to upload and execute arbitrary scripts on the targeted system.",
-    "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent provide centralized management and security event management capabilities for Check Point security deployments. This vulnerability exists in Check Point products due to directory traversal and file upload weaknesses. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow an unauthenticated attacker to execute arbitrary scripts on the targeted system. NOTE: CVE-2026-93616 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent.",
-      "Check Point R82.20",
-      "Check Point R82.10 with Jumbo Hotfix Take 44 or below",
-      "Check Point R82 with Jumbo Hotfix Take 126 or below",
-      "Check Point R81.20 with Jumbo Hotfix Take 166 or below",
-      "Check Point R81.10 with Jumbo Hotfix Take 190 or below",
-      "Check Point R80, R80.10, R80.20, R80.30, R80.40 and R81"
-    ],
-    "targetAudience": "All organizations and individuals using the affected Check Point products.",
-    "riskAssessment": "High risk of unauthorized access and arbitrary script execution on the affected Management Server.",
-    "impactAssessment": "Potential for execute malicious scripts and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-93616"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
     "severity": "high",
     "date": "2026-09-28",
@@ -547,6 +539,31 @@
       "CVE-2026-88776",
       "CVE-2026-88777",
       "CVE-2026-88778"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
+    "severity": "critical",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0478",
+    "code": "CIVN-2026-0478",
+    "summary": "A directory traversal and file upload vulnerability has been reported in Check Point Security Management Server and related products, which could allow an unauthenticated attacker to upload and execute arbitrary scripts on the targeted system.",
+    "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent provide centralized management and security event management capabilities for Check Point security deployments. This vulnerability exists in Check Point products due to directory traversal and file upload weaknesses. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow an unauthenticated attacker to execute arbitrary scripts on the targeted system. NOTE: CVE-2026-93616 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent.",
+      "Check Point R82.20",
+      "Check Point R82.10 with Jumbo Hotfix Take 44 or below",
+      "Check Point R82 with Jumbo Hotfix Take 126 or below",
+      "Check Point R81.20 with Jumbo Hotfix Take 166 or below",
+      "Check Point R81.10 with Jumbo Hotfix Take 190 or below",
+      "Check Point R80, R80.10, R80.20, R80.30, R80.40 and R81"
+    ],
+    "targetAudience": "All organizations and individuals using the affected Check Point products.",
+    "riskAssessment": "High risk of unauthorized access and arbitrary script execution on the affected Management Server.",
+    "impactAssessment": "Potential for execute malicious scripts and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-93616"
     ],
     "solutionLinks": []
   },
@@ -716,6 +733,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in WordPress",
+    "severity": "critical",
+    "date": "2026-09-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
+    "code": "CIVN-2026-0472",
+    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
+    "softwareAffected": [
+      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
+    ],
+    "targetAudience": "Users of affected WordPress versions.",
+    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
+    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
+    "cves": [
+      "CVE-2026-87902"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Improper Input Validation Vulnerability in VeloCloud Orchestrator",
     "severity": "high",
     "date": "2026-09-23",
@@ -734,25 +770,6 @@
     "impactAssessment": "Potential for loss of confidentiality, integrity, and availability of the orchestrator and managed data.",
     "cves": [
       "CVE-2026-93952"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in WordPress",
-    "severity": "critical",
-    "date": "2026-09-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0472",
-    "code": "CIVN-2026-0472",
-    "summary": "A vulnerability has been reported in WordPress which could allow an attacker disclose sensitive information or execute arbitrary code on the targeted system.",
-    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. This vulnerability exists in WordPress due to improper page-template re",
-    "softwareAffected": [
-      "WordPress versions prior to 7.1.2, 7.0.6, 6.9.9, 6.8.10, 6.7.9, 6.6.9, 6.5.12, 6.4.12, 6.3.12, 6.2.13, 6.1.14, 6.0.16, 5.9.18, 5.8.17, 5.7.19, 5.6.21, 5.5.22, 5.4.23, 5.3.25, 5.2.28, 5.1.26, 5.0.29, 4.9.33, 4.8.32, 4.7.37"
-    ],
-    "targetAudience": "Users of affected WordPress versions.",
-    "riskAssessment": "Risk of remote code execution (RCE), local file inclusion, and unauthorized access to sensitive information.",
-    "impactAssessment": "Potential for arbitrary code execution, information disclosure, and full system compromise.",
-    "cves": [
-      "CVE-2026-87902"
     ],
     "solutionLinks": []
   },
