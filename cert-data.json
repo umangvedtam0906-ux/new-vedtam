@@ -1,5 +1,20 @@
 [
   {
+    "title": "Threat Actors Exploiting Payment and Disbursement APIs for Unauthorized Fund Transfers in BFSI Entities",
+    "severity": "critical",
+    "date": "2026-10-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0046",
+    "code": "CIAD-2026-0046",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "CERT-In/CSIRT-Fin has observed multiple cyber attack campaigns targeting non-banking financial companies (NBFCs), digital lending platforms, fintech entities, payment service providers and wallet operators. Threat actors compromise internet-facing applications, exposed APIs and privileged endpoints, steal payment aggregator/gateway and partner-bank API credentials, and invoke disbursal/fund-transfer APIs directly from within the entities' own whitelisted infrastructure, completely bypassing application-level controls such as loan creation, KYC, sanction, beneficiary verification, balance sufficiency and per-transaction limits. The fraudulent transactions carry dummy reference identifiers, exceed per-transaction limits, and credit funds to attacker-controlled mule accounts across multiple banks. Analysis of these attacks further indicates the possible use of AI-assisted offensive tooling, with the interval between initial compromise and fraudulent fund transfer reducing significantly in recent incidents. Attacker IPs are predominantly associated with hosting infrastructure. Attack Vector Initial compromise is achieved through: • Exploitation of exposed internet-facing applications and application server middleware vulnerabilities. • • Abuse of deprecated, unauthenticated or unused APIs with unrestricted file-upload functionality. • • Use of stolen long-lived static API tokens hard-coded in source code. • • Supply-chain compromise of source-code repositories via forged commits. • • Exploitation of plaintext credentials in configuration files, source code or databases. • • Access to applications and remote services lacking MFA. • Post-compromise, attackers establish persistence via web shells and backdoors, conduct reconnaissance of payment databases and API integrations, steal payment aggregator/gateway and bank API credentials, and directly invoke disbursal/fund-transfer APIs to execute unauthorized transactions. Key TTPs Observed • Direct invocation of disbursal/fund-transfer APIs from whitelisted infrastructure using valid credentials. • • Bypassing of application-level checks (KYC, sanction, beneficiary verification, balance sufficiency). • • Supply of dummy loan/transaction reference numbers with no corresponding records. • • Rapid execution of multiple high-value transactions through IMPS/NEFT rails. • • Transfer of funds to mule accounts across multiple banks with immediate withdrawal. • • Deletion/truncation of logs, tampering with EDR tools, and anti-forensic cleanup. • • Possible use of AI-assisted offensive frameworks and large numbers of custom scripts. • Recommended Actions • Enforce MFA for payment platforms, administrative portals, payment/bank APIs and remote access services. • • Maintain a complete API inventory; formally decommission deprecated and unused APIs. • • Enforce per-session authentication on all APIs; eliminate long-lived static tokens. • • Bind multi-stage transaction flows cryptographically so debit-stage APIs cannot be invoked without preceding validation stages. • • Implement maker-checker or second-level verification for all fund movement. • • Validate every payout against sanctioned/approved records; reject reference identifiers with no corresponding records. • • Enforce per-transaction and per-day cumulative ceilings at the API/payment stage. • • Apply beneficiary validation (penny-drop, name-to-account matching) and velocity limits on all disbursement paths. • • Restrict outbound (egress) traffic from production servers through allow-listing. • • Store all API keys and credentials in secure secret management",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Dell Container Storage Modules",
     "severity": "critical",
     "date": "2026-10-08",
@@ -5874,21 +5889,6 @@
     "code": "CIVN-2026-0320"
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3531",
-    "severity": "high",
-    "date": "2026-06-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
-    "code": "CICA-2026-3531",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "critical",
     "date": "2026-06-18",
@@ -5913,6 +5913,21 @@
     "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
     "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, data manipulation, information disclosure and privilege escalation.",
     "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, data manipulation, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3531",
+    "severity": "high",
+    "date": "2026-06-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3531",
+    "code": "CICA-2026-3531",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
     "cves": [],
     "solutionLinks": []
   },
