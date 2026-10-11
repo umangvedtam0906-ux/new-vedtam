@@ -110,7 +110,7 @@
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0492",
     "code": "CIVN-2026-0492",
     "summary": "A vulnerability has been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to cause denial of service (DoS) conditions on the targeted system.",
-    "description": "",
+    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
     "softwareAffected": [
       "Citrix NetScaler ADC and Citrix NetScaler Gateway 14.1 before 14.1-73.41",
       "Citrix NetScaler ADC and Citrix NetScaler Gateway 13.1 before 13.1-64.28",
@@ -119,37 +119,9 @@
     ],
     "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
     "riskAssessment": "High risk of denial-of-service condition.",
-    "impactAssessment": "Potential for disruption of service. CERT-IN - Computer Emergency Response Team - Page Requested Currently Not available CERT-IN - Computer Emergency Response Team - Page Requested Currently Not available",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "critical",
-    "date": "2026-10-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0490",
-    "code": "CIVN-2026-0490",
-    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Out of bounds write in WebGL, Incorrect authorization in FileSystem, Integer overflow in Compositing, Use after free in FedCM, Contextual Tasks, SVG, MediaStream; Type confusion in V8, Integer overflow in Skia, Buffer overflow in WebRTC and Information leak in SVG. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "Google Chrome prior to 154.0.8037.97/.98 for Windows and Mac",
-      "Google Chrome prior to 154.0.8037.97 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected version of Google Chrome for Desktop.",
-    "riskAssessment": "High risk of remote code execution and bypass security restrictions.",
-    "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
+    "impactAssessment": "Potential for disruption of service.",
     "cves": [
-      "CVE-2026-103621",
-      "CVE-2026-103622",
-      "CVE-2026-103623",
-      "CVE-2026-103624",
-      "CVE-2026-103625",
-      "CVE-2026-103626",
-      "CVE-2026-103627",
-      "CVE-2026-103628",
-      "CVE-2026-103629",
-      "CVE-2026-103630",
-      "CVE-2026-103631"
+      "CVE-2026-88779"
     ],
     "solutionLinks": []
   },
@@ -197,6 +169,36 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "critical",
+    "date": "2026-10-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0490",
+    "code": "CIVN-2026-0490",
+    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Out of bounds write in WebGL, Incorrect authorization in FileSystem, Integer overflow in Compositing, Use after free in FedCM, Contextual Tasks, SVG, MediaStream; Type confusion in V8, Integer overflow in Skia, Buffer overflow in WebRTC and Information leak in SVG. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "Google Chrome prior to 154.0.8037.97/.98 for Windows and Mac",
+      "Google Chrome prior to 154.0.8037.97 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected version of Google Chrome for Desktop.",
+    "riskAssessment": "High risk of remote code execution and bypass security restrictions.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
+    "cves": [
+      "CVE-2026-103621",
+      "CVE-2026-103622",
+      "CVE-2026-103623",
+      "CVE-2026-103624",
+      "CVE-2026-103625",
+      "CVE-2026-103626",
+      "CVE-2026-103627",
+      "CVE-2026-103628",
+      "CVE-2026-103629",
+      "CVE-2026-103630",
+      "CVE-2026-103631"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Information Disclosure Vulnerability in Schmooze dating mobile Application",
     "severity": "critical",
     "date": "2026-10-06",
@@ -218,7 +220,7 @@
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0488",
     "code": "CIVN-2026-0488",
     "summary": "Multiple vulnerabilities have been reported in Mozilla Products that could allow an attacker to cause denial of service, gain elevated privileges, bypass security restrictions and same-origin policies, disclose sensitive information, escape the security sandbox, bypass security mitigations, and perform spoofing attacks on the affected systems.",
-    "description": "",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by Mozilla. Firefox ESR (Extended Support Release) is a version of Firefox intended for organizations that require extended support and stability. Mozilla Thunderbird is an open-source email client developed by Mozilla. Multiple vulnerabilities have been reported in Mozilla Firefox, Firefox ESR, and Thunderbird due to memory safety issues, use-after-free vulnerabilities, incorrect boundary conditions, uninitialized memory, improper security boundary enforcement, race conditions, privilege escalation flaws, information disclosure issues, sandbox escape issues, JIT miscompilation, invalid pointers, mitigation bypasses, same-origin policy bypasses, site isolation issues, cryptography misuse, spoofing issues, denial-of-service issues, and other security related flaws. Successful exploitation of these vulnerabilities could potentially allow an attacker to cause denial of service, gain elevated privileges, bypass security restrictions and same-origin policies, disclose sensitive information, escape the security sandbox, bypass security mitigations, and perform spoofing attacks on the affected systems.",
     "softwareAffected": [
       "Mozilla Firefox versions prior to 157",
       "Mozilla Firefox ESR versions prior to 115.42, 140.17, and 153.4",
@@ -226,8 +228,86 @@
     ],
     "targetAudience": "All organizations and individuals using the affected Mozilla Firefox, Firefox ESR, and Thunderbird products.",
     "riskAssessment": "High risk of unauthorized access, privilege escalation, information disclosure, security restriction bypass, and sandbox escape.",
-    "impactAssessment": "Potential for sensitive information disclosure, pri CERT-IN - Computer Emergency Response Team - Page Requested Currently Not available CERT-IN - Computer Emergency Response Team - Page Requested Currently Not available",
-    "cves": [],
+    "impactAssessment": "Potential for sensitive information disclosure, privilege escalation, security restriction bypass, denial of service, sandbox escape, and spoofing.",
+    "cves": [
+      "CVE-2026-92035",
+      "CVE-2026-96869",
+      "CVE-2026-100756",
+      "CVE-2026-100757",
+      "CVE-2026-100758",
+      "CVE-2026-100759",
+      "CVE-2026-100760",
+      "CVE-2026-100761",
+      "CVE-2026-100762",
+      "CVE-2026-100763",
+      "CVE-2026-100764",
+      "CVE-2026-100765",
+      "CVE-2026-100766",
+      "CVE-2026-100767",
+      "CVE-2026-100768",
+      "CVE-2026-100769",
+      "CVE-2026-100770",
+      "CVE-2026-100771",
+      "CVE-2026-100772",
+      "CVE-2026-100773",
+      "CVE-2026-100774",
+      "CVE-2026-100775",
+      "CVE-2026-100776",
+      "CVE-2026-100777",
+      "CVE-2026-100778",
+      "CVE-2026-100779",
+      "CVE-2026-100780",
+      "CVE-2026-100781",
+      "CVE-2026-100782",
+      "CVE-2026-100783",
+      "CVE-2026-100785",
+      "CVE-2026-100786",
+      "CVE-2026-100787",
+      "CVE-2026-100788",
+      "CVE-2026-100789",
+      "CVE-2026-100790",
+      "CVE-2026-100791",
+      "CVE-2026-100792",
+      "CVE-2026-100793",
+      "CVE-2026-100794",
+      "CVE-2026-100795",
+      "CVE-2026-100796",
+      "CVE-2026-100797",
+      "CVE-2026-100799",
+      "CVE-2026-100800",
+      "CVE-2026-100801",
+      "CVE-2026-100802",
+      "CVE-2026-100803",
+      "CVE-2026-100804",
+      "CVE-2026-100805",
+      "CVE-2026-100806",
+      "CVE-2026-100807",
+      "CVE-2026-100808",
+      "CVE-2026-100809",
+      "CVE-2026-100810",
+      "CVE-2026-100811",
+      "CVE-2026-100812",
+      "CVE-2026-100813",
+      "CVE-2026-100814",
+      "CVE-2026-100815",
+      "CVE-2026-100816",
+      "CVE-2026-100817",
+      "CVE-2026-100818",
+      "CVE-2026-100819",
+      "CVE-2026-100820",
+      "CVE-2026-100821",
+      "CVE-2026-100822",
+      "CVE-2026-100823",
+      "CVE-2026-100824",
+      "CVE-2026-100825",
+      "CVE-2026-100826",
+      "CVE-2026-100828",
+      "CVE-2026-100829",
+      "CVE-2026-100830",
+      "CVE-2026-100831",
+      "CVE-2026-100832",
+      "CVE-2026-103500"
+    ],
     "solutionLinks": []
   },
   {
@@ -249,27 +329,6 @@
     "impactAssessment": "Successful exploitation could result in system compromise, execution of unauthorized commands, modification of system files, disruption of email security services, and potential exposure of sensitive information.",
     "cves": [
       "CVE-2026-104286"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Apple Products",
-    "severity": "high",
-    "date": "2026-10-01",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0485",
-    "code": "CIVN-2026-0485",
-    "summary": "A vulnerability has been reported in iOS, iPadOS and macOS, which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Apple Inc. is a technology company that develops devices like iPhones, iPads, and MacBook along with their operating systems. iOS (for iPhones), iPadOS (for iPads), and macOS (for MacBook) are the software platforms that run and manage these devices. A vulnerability exists in iOS, iPadOS and macOS due to an out-of-bounds write issue. A remote attacker could exploit this vulnerability by persuading a victim to open a maliciously crafted file. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-86950) is being actively exploited in an extremely sophisticated attack against specific targeted individuals on affected system. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "iOS and iPadOS versions prior to 26.7.1",
-      "macOS Sequoia versions prior to 15.8.1",
-      "macOS Tahoe versions prior to 26.7.1"
-    ],
-    "targetAudience": "Users of Apple iOS, iPadOS, macOS Sequoia, and macOS Tahoe.",
-    "riskAssessment": "High risk of arbitrary code execution.",
-    "impactAssessment": "Potential for remote code execution and sensitive information disclosure.",
-    "cves": [
-      "CVE-2026-86950"
     ],
     "solutionLinks": []
   },
@@ -321,6 +380,27 @@
       "CVE-2026-102329",
       "CVE-2026-102330",
       "CVE-2026-102331"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Apple Products",
+    "severity": "high",
+    "date": "2026-10-01",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0485",
+    "code": "CIVN-2026-0485",
+    "summary": "A vulnerability has been reported in iOS, iPadOS and macOS, which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Apple Inc. is a technology company that develops devices like iPhones, iPads, and MacBook along with their operating systems. iOS (for iPhones), iPadOS (for iPads), and macOS (for MacBook) are the software platforms that run and manage these devices. A vulnerability exists in iOS, iPadOS and macOS due to an out-of-bounds write issue. A remote attacker could exploit this vulnerability by persuading a victim to open a maliciously crafted file. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-86950) is being actively exploited in an extremely sophisticated attack against specific targeted individuals on affected system. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "iOS and iPadOS versions prior to 26.7.1",
+      "macOS Sequoia versions prior to 15.8.1",
+      "macOS Tahoe versions prior to 26.7.1"
+    ],
+    "targetAudience": "Users of Apple iOS, iPadOS, macOS Sequoia, and macOS Tahoe.",
+    "riskAssessment": "High risk of arbitrary code execution.",
+    "impactAssessment": "Potential for remote code execution and sensitive information disclosure.",
+    "cves": [
+      "CVE-2026-86950"
     ],
     "solutionLinks": []
   },
@@ -533,6 +613,31 @@
     "solutionLinks": []
   },
   {
+    "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
+    "severity": "critical",
+    "date": "2026-09-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0478",
+    "code": "CIVN-2026-0478",
+    "summary": "A directory traversal and file upload vulnerability has been reported in Check Point Security Management Server and related products, which could allow an unauthenticated attacker to upload and execute arbitrary scripts on the targeted system.",
+    "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent provide centralized management and security event management capabilities for Check Point security deployments. This vulnerability exists in Check Point products due to directory traversal and file upload weaknesses. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow an unauthenticated attacker to execute arbitrary scripts on the targeted system. NOTE: CVE-2026-93616 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent.",
+      "Check Point R82.20",
+      "Check Point R82.10 with Jumbo Hotfix Take 44 or below",
+      "Check Point R82 with Jumbo Hotfix Take 126 or below",
+      "Check Point R81.20 with Jumbo Hotfix Take 166 or below",
+      "Check Point R81.10 with Jumbo Hotfix Take 190 or below",
+      "Check Point R80, R80.10, R80.20, R80.30, R80.40 and R81"
+    ],
+    "targetAudience": "All organizations and individuals using the affected Check Point products.",
+    "riskAssessment": "High risk of unauthorized access and arbitrary script execution on the affected Management Server.",
+    "impactAssessment": "Potential for execute malicious scripts and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-93616"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Microsoft Outlook",
     "severity": "high",
     "date": "2026-09-28",
@@ -579,31 +684,6 @@
       "CVE-2026-88776",
       "CVE-2026-88777",
       "CVE-2026-88778"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Directory Traversal and File Upload Vulnerability in Check Point Products",
-    "severity": "critical",
-    "date": "2026-09-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0478",
-    "code": "CIVN-2026-0478",
-    "summary": "A directory traversal and file upload vulnerability has been reported in Check Point Security Management Server and related products, which could allow an unauthenticated attacker to upload and execute arbitrary scripts on the targeted system.",
-    "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent provide centralized management and security event management capabilities for Check Point security deployments. This vulnerability exists in Check Point products due to directory traversal and file upload weaknesses. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow an unauthenticated attacker to execute arbitrary scripts on the targeted system. NOTE: CVE-2026-93616 is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent.",
-      "Check Point R82.20",
-      "Check Point R82.10 with Jumbo Hotfix Take 44 or below",
-      "Check Point R82 with Jumbo Hotfix Take 126 or below",
-      "Check Point R81.20 with Jumbo Hotfix Take 166 or below",
-      "Check Point R81.10 with Jumbo Hotfix Take 190 or below",
-      "Check Point R80, R80.10, R80.20, R80.30, R80.40 and R81"
-    ],
-    "targetAudience": "All organizations and individuals using the affected Check Point products.",
-    "riskAssessment": "High risk of unauthorized access and arbitrary script execution on the affected Management Server.",
-    "impactAssessment": "Potential for execute malicious scripts and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-93616"
     ],
     "solutionLinks": []
   },
