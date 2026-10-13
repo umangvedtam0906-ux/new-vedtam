@@ -52,27 +52,6 @@
     "solutionLinks": []
   },
   {
-    "title": "SSH Pre-Authentication Rekey State Bypass Vulnerability in MikroTik RouterOS",
-    "severity": "medium",
-    "date": "2026-10-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0494",
-    "code": "CIVN-2026-0494",
-    "summary": "A pre-authentication rekey state bypass vulnerability has been reported in MikroTik RouterOS which could allow an unauthenticated remote attacker to bypass the expected SSH authentication workflow, open a session channel and send an execution request on affected devices.",
-    "description": "MikroTik RouterOS is an operating system used in MikroTik networking devices. It provides routing, network management and remote administration capabilities, including administration through the SSH protocol. A pre-authentication rekey state bypass vulnerability exists in the SSH implementation of affected MikroTik RouterOS versions due to improper enforcement of the expected authentication workflow. An unauthenticated remote attacker could exploit this vulnerability to open a session channel and send an execution request without completing user authentication. Successful exploitation of this vulnerability, could allow an unauthenticated attacker to perform unauthorized operations within the RouterOS managed file namespace, including creation, overwriting and reconstruction of files containing configuration and diagnostic information.",
-    "softwareAffected": [
-      "MikroTik RouterOS 6.0.0 to versions below 6.49.21",
-      "MikroTik RouterOS 7.0.0 to versions below 7.23.4",
-      "MikroTik RouterOS 7.24 to versions below 7.24.2"
-    ],
-    "targetAudience": "Organizations and network administrators using affected MikroTik RouterOS devices.",
-    "riskAssessment": "Risk of unauthorized operations within the RouterOS managed file namespace, including creation, overwriting and reconstruction of files containing configuration and diagnostic information.",
-    "impactAssessment": "Potential for unauthorized file creation, modification or reconstruction, including files containing configuration and diagnostic information, and unauthorized operations on affected RouterOS devices.",
-    "cves": [
-      "CVE-2026-67279"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Threat Actors Exploiting Payment and Disbursement APIs for Unauthorized Fund Transfers in BFSI Entities",
     "severity": "critical",
     "date": "2026-10-09",
@@ -100,6 +79,27 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "SSH Pre-Authentication Rekey State Bypass Vulnerability in MikroTik RouterOS",
+    "severity": "medium",
+    "date": "2026-10-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0494",
+    "code": "CIVN-2026-0494",
+    "summary": "A pre-authentication rekey state bypass vulnerability has been reported in MikroTik RouterOS which could allow an unauthenticated remote attacker to bypass the expected SSH authentication workflow, open a session channel and send an execution request on affected devices.",
+    "description": "MikroTik RouterOS is an operating system used in MikroTik networking devices. It provides routing, network management and remote administration capabilities, including administration through the SSH protocol. A pre-authentication rekey state bypass vulnerability exists in the SSH implementation of affected MikroTik RouterOS versions due to improper enforcement of the expected authentication workflow. An unauthenticated remote attacker could exploit this vulnerability to open a session channel and send an execution request without completing user authentication. Successful exploitation of this vulnerability, could allow an unauthenticated attacker to perform unauthorized operations within the RouterOS managed file namespace, including creation, overwriting and reconstruction of files containing configuration and diagnostic information.",
+    "softwareAffected": [
+      "MikroTik RouterOS 6.0.0 to versions below 6.49.21",
+      "MikroTik RouterOS 7.0.0 to versions below 7.23.4",
+      "MikroTik RouterOS 7.24 to versions below 7.24.2"
+    ],
+    "targetAudience": "Organizations and network administrators using affected MikroTik RouterOS devices.",
+    "riskAssessment": "Risk of unauthorized operations within the RouterOS managed file namespace, including creation, overwriting and reconstruction of files containing configuration and diagnostic information.",
+    "impactAssessment": "Potential for unauthorized file creation, modification or reconstruction, including files containing configuration and diagnostic information, and unauthorized operations on affected RouterOS devices.",
+    "cves": [
+      "CVE-2026-67279"
+    ],
     "solutionLinks": []
   },
   {
@@ -223,6 +223,23 @@
     "solutionLinks": []
   },
   {
+    "title": "Information Disclosure Vulnerability in Schmooze dating mobile Application",
+    "severity": "critical",
+    "date": "2026-10-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0489",
+    "code": "CIVN-2026-0489",
+    "summary": "A vulnerability has been reported in Schmooze dating app, which could allow a remote attacker to gain unauthorized access to sensitive information of the targeted system.",
+    "description": "Schmooze is a meme based dating app that matches people based on their shared sense of humor and meme p",
+    "softwareAffected": "",
+    "targetAudience": "End-users of Schmooze.",
+    "riskAssessment": "Exposure of sensitive credentials and cryptographic keys of application�s production infrastructure.",
+    "impactAssessment": "Potential for unauthorized access to backend/ cloud resources and the ability to forge client request signatures.",
+    "cves": [
+      "CVE-2026-85153"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
     "date": "2026-10-06",
@@ -249,23 +266,6 @@
       "CVE-2026-103629",
       "CVE-2026-103630",
       "CVE-2026-103631"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Information Disclosure Vulnerability in Schmooze dating mobile Application",
-    "severity": "critical",
-    "date": "2026-10-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0489",
-    "code": "CIVN-2026-0489",
-    "summary": "A vulnerability has been reported in Schmooze dating app, which could allow a remote attacker to gain unauthorized access to sensitive information of the targeted system.",
-    "description": "Schmooze is a meme based dating app that matches people based on their shared sense of humor and meme p",
-    "softwareAffected": "",
-    "targetAudience": "End-users of Schmooze.",
-    "riskAssessment": "Exposure of sensitive credentials and cryptographic keys of application�s production infrastructure.",
-    "impactAssessment": "Potential for unauthorized access to backend/ cloud resources and the ability to forge client request signatures.",
-    "cves": [
-      "CVE-2026-85153"
     ],
     "solutionLinks": []
   },
@@ -626,6 +626,31 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in SolarWinds Products",
+    "severity": "high",
+    "date": "2026-09-29",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0481",
+    "code": "CIVN-2026-0481",
+    "summary": "Multiple vulnerabilities have been reported in SolarWinds products which could allow a remote unauthenticated attacker to execute arbitrary code on the targeted system.",
+    "description": "SolarWinds offers a comprehensive range of",
+    "softwareAffected": [
+      "SolarWinds Observability Self-Hosted version 2026.2.2 and prior",
+      "SolarWinds Access Rights Manager version 2026.2 and prior"
+    ],
+    "targetAudience": "All organizations and individuals using SolarWinds products.",
+    "riskAssessment": "Risk of arbitrary code execution.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "cve-2026-28324",
+      "cve-2026-28325",
+      "cve-2026-28326",
+      "CVE-2026-28324",
+      "CVE-2026-28325",
+      "CVE-2026-28326"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Cisco Nexus Dashboard Software",
     "severity": "critical",
     "date": "2026-09-29",
@@ -648,24 +673,6 @@
       "CVE-2026-20361",
       "CVE-2026-76409"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in SolarWinds Products",
-    "severity": "high",
-    "date": "2026-09-29",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0481",
-    "code": "CIVN-2026-0481",
-    "summary": "Multiple vulnerabilities have been reported in SolarWinds products which could allow a remote unauthenticated attacker to execute arbitrary code on the targeted system.",
-    "description": "SolarWinds offers a comprehensive range of",
-    "softwareAffected": [
-      "SolarWinds Observability Self-Hosted version 2026.2.2 and prior",
-      "SolarWinds Access Rights Manager version 2026.2 and prior"
-    ],
-    "targetAudience": "All organizations and individuals using SolarWinds products.",
-    "riskAssessment": "Risk of arbitrary code execution.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [],
     "solutionLinks": []
   },
   {
