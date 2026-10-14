@@ -1,49 +1,5 @@
 [
   {
-    "title": "Multiple vulnerabilities in Microsoft Products",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0506",
-    "code": "CIVN-2026-0506",
-    "summary": "Multiple vulnerabilities have been reported in various Microsoft products which could allow a remote attacker to execute arbitrary code, elevate privileges, disclose sensitive information, or perform spoofing on the targeted system.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products due to improper authorization, missing authentication, improper certificate validation, and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, disclose sensitive information, or perform spoofing on the targeted system.",
-    "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using the affected Microsoft Products.",
-    "riskAssessment": "High risk of unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for compromise on confidentiality, integrity and availability of the system.",
-    "cves": [
-      "CVE-2026-94510",
-      "CVE-2026-96207",
-      "CVE-2026-83947",
-      "CVE-2026-88131",
-      "CVE-2026-83943",
-      "CVE-2026-77900",
-      "CVE-2026-69435",
-      "CVE-2026-69345"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Incorrect Privilege Assignment vulnerability in Docker Hub",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0504",
-    "code": "CIVN-2026-0504",
-    "summary": "A vulnerability has been reported in Docker Hub, which could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated user's permissions.",
-    "description": "Docker Hub is an online registry used to store, share and download container images templates that package everything needed for an application to run in an isolated environment. The vulnerability exists in Docker Hub due to improper reassignment of personal access tokens (PATs) during Docker Hub account-to-organization conversions. An authenticated attacker could reassign a PAT under their control to another Docker Hub user without the token secret being rotated or revoked. As a result, the unchanged PAT could authenticate to the Docker Hub registry as the recipient user, enabling the attacker to pull, push, or delete container images within the tokens assigned scopes and the recipient users repository permissions, including access to organization repositories. Successful exploitation of this vulnerability could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated users permissions.",
-    "softwareAffected": [
-      "Docker Hub"
-    ],
-    "targetAudience": "All organizations and individuals using Docker Hub.",
-    "riskAssessment": "High risk of software supply chain compromise due to potential user impersonation and unauthorized access to container repositories.",
-    "impactAssessment": "Potential for unauthorized access to container repositories and allow attackers to publish malicious container images under a legitimate user's identity, potentially compromising image integrity and downstream deployments.",
-    "cves": [
-      "cve-2026-105445",
-      "CVE-2026-105445"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-10-14",
@@ -78,6 +34,35 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Ivanti Products",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0502",
+    "code": "CIVN-2026-0502",
+    "summary": "Multiple vulnerabilities have been reported in Ivanti products which could allow a remote attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, or gain unauthorized access on the targeted system.",
+    "description": "Multiple vulnerabilities have been reported in Ivanti Connect Secure, Ivanti Neurons Patch for Intune, and Ivanti Xtraction due to authentication bypass, path traversal, improper limitation of a pathname, exposure of sensitive information and exposed dangerous endpoints. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, gain unauthorized access, or bypass authentication mechanism on the targeted system.",
+    "softwareAffected": [
+      "Ivanti Connect Secure (ICS) version 25.1.1.1 and prior",
+      "Ivanti Connect Secure (ICS) version 25.1.2.2 and prior",
+      "Ivanti Connect Secure (ICS) version 22.8R2.4 and prior",
+      "Ivanti Neurons Patch for Intune (Cloud services automatically updated as of September 16, 2026)",
+      "Ivanti Xtraction version 2026.2.1 and prior"
+    ],
+    "targetAudience": "Individuals and end-user organizations using affected Ivanti Products.",
+    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
+    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-104935",
+      "CVE-2026-109412",
+      "CVE-2026-106034",
+      "CVE-2026-106035",
+      "CVE-2026-106042",
+      "CVE-2026-106043",
+      "CVE-2026-106047"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Elevation of Privilege Vulnerability in Microsoft Exchange Server",
     "severity": "critical",
     "date": "2026-10-14",
@@ -91,34 +76,6 @@
     "impactAssessment": "Potential for unauthorized access to sensitive information and disclosure of confidential emails and mailbox data.",
     "cves": [
       "CVE-2026-96940"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0500",
-    "code": "CIVN-2026-0500",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to conduct remote code execution, cross-site request forgery, and disclosure of credentials or other sensitive information.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist in various modules of Drupal due to improper request validation, inadequate input sanitization, and insufficient security checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in remote code execution, disclosure of sensitive information, conduct cross-site scripting attacks, or compromise connected infrastructure of the target system.",
-    "softwareAffected": [
-      "Tawk.to - Live chat application module prior to version 3.0.4",
-      "Project Browser module versions prior to 2.0.3",
-      "Project Browser module versions from 2.1.0 and before 2.1.5",
-      "Cloud module prior to version 7.0.1",
-      "Webform module versions prior to 6.2.12",
-      "Webform module versions from 6.3.0 and before 6.3.1"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [
-      "CVE-2026-96388",
-      "CVE-2026-96374",
-      "CVE-2026-96376",
-      "CVE-2026-96375",
-      "CVE-2026-96355"
     ],
     "solutionLinks": []
   },
@@ -172,35 +129,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Ivanti Products",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0502",
-    "code": "CIVN-2026-0502",
-    "summary": "Multiple vulnerabilities have been reported in Ivanti products which could allow a remote attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, or gain unauthorized access on the targeted system.",
-    "description": "Multiple vulnerabilities have been reported in Ivanti Connect Secure, Ivanti Neurons Patch for Intune, and Ivanti Xtraction due to authentication bypass, path traversal, improper limitation of a pathname, exposure of sensitive information and exposed dangerous endpoints. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, gain unauthorized access, or bypass authentication mechanism on the targeted system.",
-    "softwareAffected": [
-      "Ivanti Connect Secure (ICS) version 25.1.1.1 and prior",
-      "Ivanti Connect Secure (ICS) version 25.1.2.2 and prior",
-      "Ivanti Connect Secure (ICS) version 22.8R2.4 and prior",
-      "Ivanti Neurons Patch for Intune (Cloud services automatically updated as of September 16, 2026)",
-      "Ivanti Xtraction version 2026.2.1 and prior"
-    ],
-    "targetAudience": "Individuals and end-user organizations using affected Ivanti Products.",
-    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
-    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-104935",
-      "CVE-2026-109412",
-      "CVE-2026-106034",
-      "CVE-2026-106035",
-      "CVE-2026-106042",
-      "CVE-2026-106043",
-      "CVE-2026-106047"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Elevation on Privilege Vulnerability in Microsoft Windows",
     "severity": "high",
     "date": "2026-10-14",
@@ -214,6 +142,78 @@
     "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
     "cves": [
       "CVE-2026-85921"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Microsoft Products",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0506",
+    "code": "CIVN-2026-0506",
+    "summary": "Multiple vulnerabilities have been reported in various Microsoft products which could allow a remote attacker to execute arbitrary code, elevate privileges, disclose sensitive information, or perform spoofing on the targeted system.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products due to improper authorization, missing authentication, improper certificate validation, and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, disclose sensitive information, or perform spoofing on the targeted system.",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using the affected Microsoft Products.",
+    "riskAssessment": "High risk of unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for compromise on confidentiality, integrity and availability of the system.",
+    "cves": [
+      "CVE-2026-94510",
+      "CVE-2026-96207",
+      "CVE-2026-83947",
+      "CVE-2026-88131",
+      "CVE-2026-83943",
+      "CVE-2026-77900",
+      "CVE-2026-69435",
+      "CVE-2026-69345"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Incorrect Privilege Assignment vulnerability in Docker Hub",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0504",
+    "code": "CIVN-2026-0504",
+    "summary": "A vulnerability has been reported in Docker Hub, which could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated user's permissions.",
+    "description": "Docker Hub is an online registry used to store, share and download container images templates that package everything needed for an application to run in an isolated environment. The vulnerability exists in Docker Hub due to improper reassignment of personal access tokens (PATs) during Docker Hub account-to-organization conversions. An authenticated attacker could reassign a PAT under their control to another Docker Hub user without the token secret being rotated or revoked. As a result, the unchanged PAT could authenticate to the Docker Hub registry as the recipient user, enabling the attacker to pull, push, or delete container images within the tokens assigned scopes and the recipient users repository permissions, including access to organization repositories. Successful exploitation of this vulnerability could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated users permissions.",
+    "softwareAffected": [
+      "Docker Hub"
+    ],
+    "targetAudience": "All organizations and individuals using Docker Hub.",
+    "riskAssessment": "High risk of software supply chain compromise due to potential user impersonation and unauthorized access to container repositories.",
+    "impactAssessment": "Potential for unauthorized access to container repositories and allow attackers to publish malicious container images under a legitimate user's identity, potentially compromising image integrity and downstream deployments.",
+    "cves": [
+      "cve-2026-105445",
+      "CVE-2026-105445"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0500",
+    "code": "CIVN-2026-0500",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to conduct remote code execution, cross-site request forgery, and disclosure of credentials or other sensitive information.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Drupal modules are essential extensions that enhance Drupals core functionality by adding features such as content management, user authentication, search, APIs, security controls, and third-party integrations. These vulnerabilities exist in various modules of Drupal due to improper request validation, inadequate input sanitization, and insufficient security checks. An attacker could exploit these vulnerabilities by executing crafted requests or malicious input. Successful exploitation could result in remote code execution, disclosure of sensitive information, conduct cross-site scripting attacks, or compromise connected infrastructure of the target system.",
+    "softwareAffected": [
+      "Tawk.to - Live chat application module prior to version 3.0.4",
+      "Project Browser module versions prior to 2.0.3",
+      "Project Browser module versions from 2.1.0 and before 2.1.5",
+      "Cloud module prior to version 7.0.1",
+      "Webform module versions prior to 6.2.12",
+      "Webform module versions from 6.3.0 and before 6.3.1"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [
+      "CVE-2026-96388",
+      "CVE-2026-96374",
+      "CVE-2026-96376",
+      "CVE-2026-96375",
+      "CVE-2026-96355"
     ],
     "solutionLinks": []
   },
