@@ -1,5 +1,49 @@
 [
   {
+    "title": "Multiple Vulnerabilities in GitLab CE/EE",
+    "severity": "high",
+    "date": "2026-10-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0497",
+    "code": "CIVN-2026-0497",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE), which could allow a remote attacker to execute arbitrary code, gain unauthorized access to restricted resources, disclose sensitive information, bypass security restrictions, manipulate data, or perform server-side request forgery (SSRF) on the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. Multiple vulnerabilities exist in GitLab CE/EE due to integer overflow, cross-site scripting (XSS), improper authorization, permissive regular expressions, improper neutralization of input, insufficient granularity of access control, and server-side request forgery (SSRF). A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system, such as through a specially crafted regular expression in a CI/CD configuration or by interacting with specific API endpoints and web interfaces. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to restricted resources, disclose sensitive information, bypass security restrictions, manipulate data, or perform server-side request forgery (SSRF) on the targeted system.",
+    "softwareAffected": [
+      "GitLab CE/EE: All versions from 10.3 to versions prior to 19.2.8, 19.3.5, and 19.4.2.",
+      "GitLab EE: All versions from 13.6 to versions prior to 19.2.8, 19.3.5, and 19.4.2."
+    ],
+    "targetAudience": "Administrators and organizations using affected versions of GitLab Community Edition (CE) and Enterprise Edition (EE).",
+    "riskAssessment": "Critical risk of remote code execution, unauthorized access, and sensitive information disclosure in affected GitLab installations.",
+    "impactAssessment": "Potential for arbitrary code execution, sensitive information disclosure, unauthorized modification of resources, and bypass of access controls.",
+    "cves": [
+      "cve-2026-97229",
+      "CVE-2026-97229",
+      "CVE-2026-92883",
+      "CVE-2026-16301",
+      "CVE-2026-14814",
+      "CVE-2026-81839",
+      "CVE-2026-96893",
+      "CVE-2026-101168",
+      "CVE-2026-7767",
+      "CVE-2026-16275",
+      "CVE-2026-84284",
+      "CVE-2026-85529",
+      "CVE-2026-100755",
+      "CVE-2026-14552",
+      "CVE-2026-6567",
+      "CVE-2026-104661",
+      "CVE-2026-14210",
+      "CVE-2026-105458",
+      "CVE-2026-5954",
+      "CVE-2026-92528",
+      "CVE-2026-78335",
+      "CVE-2026-100104",
+      "CVE-2026-82632",
+      "CVE-2026-103549",
+      "CVE-2026-9268"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Arbitrary File Access Vulnerability in Multiple Atlassian Products",
     "severity": "critical",
     "date": "2026-10-12",
@@ -67,6 +111,21 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3610",
+    "severity": "high",
+    "date": "2026-10-09",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3610",
+    "code": "CICA-2026-3610",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "SSH Pre-Authentication Rekey State Bypass Vulnerability in MikroTik RouterOS",
     "severity": "medium",
     "date": "2026-10-09",
@@ -85,21 +144,6 @@
     "cves": [
       "CVE-2026-67279"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3610",
-    "severity": "high",
-    "date": "2026-10-09",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3610",
-    "code": "CICA-2026-3610",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
