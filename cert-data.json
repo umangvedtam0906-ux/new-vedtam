@@ -1,5 +1,29 @@
 [
   {
+    "title": "Multiple Vulnerabilities in SonicWall SMA1000",
+    "severity": "critical",
+    "date": "2026-10-19",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0508",
+    "code": "CIVN-2026-0508",
+    "summary": "Multiple vulnerabilities have been reported in SonicWall Secure Mobile Access (SMA) 1000 Series appliances, which could allow an attacker to direct the appliance to access internal functionality and perform unauthorized operations, execute arbitrary operating system commands, perform unauthorized file operations, or inject malicious scripts into web pages, potentially affecting the confidentiality, integrity and availability of the targeted systems.",
+    "description": "SonicWall is a cybersecurity company that provides network security and secure remote access",
+    "softwareAffected": [
+      "SMA 1000 (6210, 7210, 8200v - all hypervisors)",
+      "Platform-hotfix version 12.4.3-03526 and earlier versions.",
+      "Platform-hotfix version 12.5.0-02952 and earlier versions."
+    ],
+    "targetAudience": "All organizations and individuals using affected SonicWall SMA 1000 Series appliances.",
+    "riskAssessment": "High to critical risk due to SSRF, remote code execution, path traversal, and stored cross-site scripting.",
+    "impactAssessment": "Potential for unauthorized operations, arbitrary OS command execution, unauthorized file access, exposure of sensitive information.",
+    "cves": [
+      "CVE-2026-102255",
+      "CVE-2026-102256",
+      "CVE-2026-102257",
+      "CVE-2026-102258"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in PAN OS",
     "severity": "high",
     "date": "2026-10-16",
@@ -62,6 +86,98 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in SAP Products",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0048",
+    "code": "CIAD-2026-0048",
+    "summary": "Multiple vulnerabilities have been reported in SAP products, which could allow an attacker to execute arbitrary code or commands, bypass security controls, gain unauthorized access, disclose sensitive information, manipulate data, or cause denial-of-service conditions on the targeted system.",
+    "description": "SAP is an enterprise software provider offering business applications and platforms for enterprise resource planning, application development, data management, manufacturing integration, e-commerce, and cloud services. Multiple vulnerabilities exist in SAP products due to improper access control, missing authorization checks, server-side request forgery (SSRF), code injection, SQL injection, memory corruption, cross-site scripting (XSS), open redirection, operating system command injection, information disclosure, and improper authentication. An attacker could exploit these vulnerabilities by sending specially crafted requests, providing malicious input, or accessing functions without proper authorization to bypass security controls, execute arbitrary code or commands, access sensitive information, or manipulate data on the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code or commands, gain unauthorized access, disclose sensitive information, manipulate data, or disrupt the availability of the targeted system.",
+    "softwareAffected": [
+      "SAP Cloud SDK for Python versions prior to 0.45.2",
+      "SAP NetWeaver Visual Composer � VC70RUNTIME 7.50",
+      "SAP S/4HANA (Manage Substitution/Validation Rules) � S4CORE versions 105, 106, 107, 108, 109",
+      "SAP Manufacturing Integration and Intelligence (SAP MII) � XMII versions 15.4 and 15.5",
+      "SAP Commerce Cloud � COM_CLOUD version 2211-JDK21",
+      "SAP NetWeaver and SAP Web Dispatcher (Internet Communication Manager) � HDB 2.00; KRNL64UC 7.53; WEBDISP 7.53, 7.54, 7.77, 7.93, 9.16; XS_ADVANCED_RUNTIME 1.00; SAP_EXTENDED_APP_SERVICES 1; CONTSERV 7.53, 7.54; KERNEL 7.53, 7.54, 7.77, 7.93, 9.16, 9.18, 9.19, 9.20",
+      "SAP ABAP Platform � KERNEL versions 7.93 and 9.16",
+      "CLA-Assistant versions prior to or equal to 2.13.1",
+      "SAP NetWeaver Application Server for ABAP � SAP_BASIS versions 740, 750, 752, 753, 754, 755, 756, 757, 758, 816, 918",
+      "SAP NetWeaver ABAP Platform � S4CRM versions 100, 200, 204, 205, 206; S4CEXT versions 107, 108; BBPCRM versions 713, 714",
+      "SAP NetWeaver Enterprise Portal � EP-ADMIN 7.50; EP-RUNTIME 7.50",
+      "SAPUI5 (Support Assistant Overlay) � SAP_UI 754",
+      "Yeoman-UI / Application Wizard Extension for Visual Studio Code versions prior to or equal to 1.25.1",
+      "SAP NetWeaver Application Server ABAP (applications based on SAP GUI for HTML) � SAP_BASIS versions 731, 740, 750, 751, 752, 753, 754, 755, 756, 757, 758, 816",
+      "SAPUI5 � SAP_UI versions 750, 754, 755, 756, 757, 758, 816; UI_700 version 200",
+      "SAP S/4HANA (Linear Asset Management RAP Business Object) � S4CORE 109",
+      "SAP Global Trade Services, edition for SAP HANA � GTSCORE versions 200 and 300",
+      "SAP Cloud Security Services Integration Library versions 3.6.6 and later, but prior to 4.1.1",
+      "SAP Cloud Connector � SAP_CLOUD_CONNECTOR 2.0"
+    ],
+    "targetAudience": "All end-user organizations and individuals using SAP Products.",
+    "riskAssessment": "High risk of security restriction bypass, remote code execution, sensitive information disclosure, denial-of-service.",
+    "impactAssessment": "Potential for remote code execution, security restriction bypass, information disclosure and/or denial-of-service.",
+    "cves": [
+      "CVE-2026-89110",
+      "CVE-2026-89107",
+      "CVE-2026-89108",
+      "CVE-2026-89113",
+      "CVE-2026-58249",
+      "CVE-2026-89120",
+      "CVE-2026-89112",
+      "CVE-2026-76972",
+      "CVE-2026-24316",
+      "CVE-2025-42938",
+      "CVE-2026-89117",
+      "CVE-2026-76975",
+      "CVE-2026-89122",
+      "CVE-2026-89116",
+      "CVE-2026-76976",
+      "CVE-2026-89118",
+      "CVE-2026-89121",
+      "CVE-2026-89106",
+      "CVE-2026-89124",
+      "CVE-2025-89105",
+      "CVE-2026-58242",
+      "CVE-2026-89111"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
     "date": "2026-10-14",
@@ -119,60 +235,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Incorrect Privilege Assignment vulnerability in Docker Hub",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0504",
-    "code": "CIVN-2026-0504",
-    "summary": "A vulnerability has been reported in Docker Hub, which could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated user's permissions.",
-    "description": "Docker Hub is an online registry used to store, share and download container images templates that package everything needed for an application to run in an isolated environment. The vulnerability exists in Docker Hub due to improper reassignment of personal access tokens (PATs) during Docker Hub account-to-organization conversions. An authenticated attacker could reassign a PAT under their control to another Docker Hub user without the token secret being rotated or revoked. As a result, the unchanged PAT could authenticate to the Docker Hub registry as the recipient user, enabling the attacker to pull, push, or delete container images within the tokens assigned scopes and the recipient users repository permissions, including access to organization repositories. Successful exploitation of this vulnerability could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated users permissions.",
-    "softwareAffected": [
-      "Docker Hub"
-    ],
-    "targetAudience": "All organizations and individuals using Docker Hub.",
-    "riskAssessment": "High risk of software supply chain compromise due to potential user impersonation and unauthorized access to container repositories.",
-    "impactAssessment": "Potential for unauthorized access to container repositories and allow attackers to publish malicious container images under a legitimate user's identity, potentially compromising image integrity and downstream deployments.",
-    "cves": [
-      "cve-2026-105445",
-      "CVE-2026-105445"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Memory overflow vulnerability in Citrix Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -193,6 +255,35 @@
     "impactAssessment": "Potential for disruption of service or remote code execution.",
     "cves": [
       "CVE-2026-107406"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Ivanti Products",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0502",
+    "code": "CIVN-2026-0502",
+    "summary": "Multiple vulnerabilities have been reported in Ivanti products which could allow a remote attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, or gain unauthorized access on the targeted system.",
+    "description": "Multiple vulnerabilities have been reported in Ivanti Connect Secure, Ivanti Neurons Patch for Intune, and Ivanti Xtraction due to authentication bypass, path traversal, improper limitation of a pathname, exposure of sensitive information and exposed dangerous endpoints. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, gain unauthorized access, or bypass authentication mechanism on the targeted system.",
+    "softwareAffected": [
+      "Ivanti Connect Secure (ICS) version 25.1.1.1 and prior",
+      "Ivanti Connect Secure (ICS) version 25.1.2.2 and prior",
+      "Ivanti Connect Secure (ICS) version 22.8R2.4 and prior",
+      "Ivanti Neurons Patch for Intune (Cloud services automatically updated as of September 16, 2026)",
+      "Ivanti Xtraction version 2026.2.1 and prior"
+    ],
+    "targetAudience": "Individuals and end-user organizations using affected Ivanti Products.",
+    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
+    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-104935",
+      "CVE-2026-109412",
+      "CVE-2026-106034",
+      "CVE-2026-106035",
+      "CVE-2026-106042",
+      "CVE-2026-106043",
+      "CVE-2026-106047"
     ],
     "solutionLinks": []
   },
@@ -291,6 +382,43 @@
     "solutionLinks": []
   },
   {
+    "title": "Elevation on Privilege Vulnerability in Microsoft Windows",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0498",
+    "code": "CIVN-2026-0498",
+    "summary": "A vulnerability exists in Windows 11 which could allow a local attacker to elevate privileges on the affected system.",
+    "description": "An elevation of privilege vulnerability exists in Windows Microsoft Operating Systems due to improper Memory management. A local attacker could exploit this vulnerability in the Secure Kernel to obtain elevated privileges. Successful exploitation of this vulnerability could allow the attacker to elevate privileges and exploit the affected systems.",
+    "softwareAffected": "",
+    "targetAudience": "All organizations and individuals using affected Microsoft Windows Operating system.",
+    "riskAssessment": "High risk of privilege escalation and exploitation on affected Windows systems.",
+    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
+    "cves": [
+      "CVE-2026-85921"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Incorrect Privilege Assignment vulnerability in Docker Hub",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0504",
+    "code": "CIVN-2026-0504",
+    "summary": "A vulnerability has been reported in Docker Hub, which could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated user's permissions.",
+    "description": "Docker Hub is an online registry used to store, share and download container images templates that package everything needed for an application to run in an isolated environment. The vulnerability exists in Docker Hub due to improper reassignment of personal access tokens (PATs) during Docker Hub account-to-organization conversions. An authenticated attacker could reassign a PAT under their control to another Docker Hub user without the token secret being rotated or revoked. As a result, the unchanged PAT could authenticate to the Docker Hub registry as the recipient user, enabling the attacker to pull, push, or delete container images within the tokens assigned scopes and the recipient users repository permissions, including access to organization repositories. Successful exploitation of this vulnerability could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated users permissions.",
+    "softwareAffected": [
+      "Docker Hub"
+    ],
+    "targetAudience": "All organizations and individuals using Docker Hub.",
+    "riskAssessment": "High risk of software supply chain compromise due to potential user impersonation and unauthorized access to container repositories.",
+    "impactAssessment": "Potential for unauthorized access to container repositories and allow attackers to publish malicious container images under a legitimate user's identity, potentially compromising image integrity and downstream deployments.",
+    "cves": [
+      "cve-2026-105445",
+      "CVE-2026-105445"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Microsoft Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -311,110 +439,6 @@
       "CVE-2026-77900",
       "CVE-2026-69435",
       "CVE-2026-69345"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in SAP Products",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0048",
-    "code": "CIAD-2026-0048",
-    "summary": "Multiple vulnerabilities have been reported in SAP products, which could allow an attacker to execute arbitrary code or commands, bypass security controls, gain unauthorized access, disclose sensitive information, manipulate data, or cause denial-of-service conditions on the targeted system.",
-    "description": "SAP is an enterprise software provider offering business applications and platforms for enterprise resource planning, application development, data management, manufacturing integration, e-commerce, and cloud services. Multiple vulnerabilities exist in SAP products due to improper access control, missing authorization checks, server-side request forgery (SSRF), code injection, SQL injection, memory corruption, cross-site scripting (XSS), open redirection, operating system command injection, information disclosure, and improper authentication. An attacker could exploit these vulnerabilities by sending specially crafted requests, providing malicious input, or accessing functions without proper authorization to bypass security controls, execute arbitrary code or commands, access sensitive information, or manipulate data on the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code or commands, gain unauthorized access, disclose sensitive information, manipulate data, or disrupt the availability of the targeted system.",
-    "softwareAffected": [
-      "SAP Cloud SDK for Python versions prior to 0.45.2",
-      "SAP NetWeaver Visual Composer � VC70RUNTIME 7.50",
-      "SAP S/4HANA (Manage Substitution/Validation Rules) � S4CORE versions 105, 106, 107, 108, 109",
-      "SAP Manufacturing Integration and Intelligence (SAP MII) � XMII versions 15.4 and 15.5",
-      "SAP Commerce Cloud � COM_CLOUD version 2211-JDK21",
-      "SAP NetWeaver and SAP Web Dispatcher (Internet Communication Manager) � HDB 2.00; KRNL64UC 7.53; WEBDISP 7.53, 7.54, 7.77, 7.93, 9.16; XS_ADVANCED_RUNTIME 1.00; SAP_EXTENDED_APP_SERVICES 1; CONTSERV 7.53, 7.54; KERNEL 7.53, 7.54, 7.77, 7.93, 9.16, 9.18, 9.19, 9.20",
-      "SAP ABAP Platform � KERNEL versions 7.93 and 9.16",
-      "CLA-Assistant versions prior to or equal to 2.13.1",
-      "SAP NetWeaver Application Server for ABAP � SAP_BASIS versions 740, 750, 752, 753, 754, 755, 756, 757, 758, 816, 918",
-      "SAP NetWeaver ABAP Platform � S4CRM versions 100, 200, 204, 205, 206; S4CEXT versions 107, 108; BBPCRM versions 713, 714",
-      "SAP NetWeaver Enterprise Portal � EP-ADMIN 7.50; EP-RUNTIME 7.50",
-      "SAPUI5 (Support Assistant Overlay) � SAP_UI 754",
-      "Yeoman-UI / Application Wizard Extension for Visual Studio Code versions prior to or equal to 1.25.1",
-      "SAP NetWeaver Application Server ABAP (applications based on SAP GUI for HTML) � SAP_BASIS versions 731, 740, 750, 751, 752, 753, 754, 755, 756, 757, 758, 816",
-      "SAPUI5 � SAP_UI versions 750, 754, 755, 756, 757, 758, 816; UI_700 version 200",
-      "SAP S/4HANA (Linear Asset Management RAP Business Object) � S4CORE 109",
-      "SAP Global Trade Services, edition for SAP HANA � GTSCORE versions 200 and 300",
-      "SAP Cloud Security Services Integration Library versions 3.6.6 and later, but prior to 4.1.1",
-      "SAP Cloud Connector � SAP_CLOUD_CONNECTOR 2.0"
-    ],
-    "targetAudience": "All end-user organizations and individuals using SAP Products.",
-    "riskAssessment": "High risk of security restriction bypass, remote code execution, sensitive information disclosure, denial-of-service.",
-    "impactAssessment": "Potential for remote code execution, security restriction bypass, information disclosure and/or denial-of-service.",
-    "cves": [
-      "CVE-2026-89110",
-      "CVE-2026-89107",
-      "CVE-2026-89108",
-      "CVE-2026-89113",
-      "CVE-2026-58249",
-      "CVE-2026-89120",
-      "CVE-2026-89112",
-      "CVE-2026-76972",
-      "CVE-2026-24316",
-      "CVE-2025-42938",
-      "CVE-2026-89117",
-      "CVE-2026-76975",
-      "CVE-2026-89122",
-      "CVE-2026-89116",
-      "CVE-2026-76976",
-      "CVE-2026-89118",
-      "CVE-2026-89121",
-      "CVE-2026-89106",
-      "CVE-2026-89124",
-      "CVE-2025-89105",
-      "CVE-2026-58242",
-      "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Ivanti Products",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0502",
-    "code": "CIVN-2026-0502",
-    "summary": "Multiple vulnerabilities have been reported in Ivanti products which could allow a remote attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, or gain unauthorized access on the targeted system.",
-    "description": "Multiple vulnerabilities have been reported in Ivanti Connect Secure, Ivanti Neurons Patch for Intune, and Ivanti Xtraction due to authentication bypass, path traversal, improper limitation of a pathname, exposure of sensitive information and exposed dangerous endpoints. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, gain unauthorized access, or bypass authentication mechanism on the targeted system.",
-    "softwareAffected": [
-      "Ivanti Connect Secure (ICS) version 25.1.1.1 and prior",
-      "Ivanti Connect Secure (ICS) version 25.1.2.2 and prior",
-      "Ivanti Connect Secure (ICS) version 22.8R2.4 and prior",
-      "Ivanti Neurons Patch for Intune (Cloud services automatically updated as of September 16, 2026)",
-      "Ivanti Xtraction version 2026.2.1 and prior"
-    ],
-    "targetAudience": "Individuals and end-user organizations using affected Ivanti Products.",
-    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
-    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-104935",
-      "CVE-2026-109412",
-      "CVE-2026-106034",
-      "CVE-2026-106035",
-      "CVE-2026-106042",
-      "CVE-2026-106043",
-      "CVE-2026-106047"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Elevation on Privilege Vulnerability in Microsoft Windows",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0498",
-    "code": "CIVN-2026-0498",
-    "summary": "A vulnerability exists in Windows 11 which could allow a local attacker to elevate privileges on the affected system.",
-    "description": "An elevation of privilege vulnerability exists in Windows Microsoft Operating Systems due to improper Memory management. A local attacker could exploit this vulnerability in the Secure Kernel to obtain elevated privileges. Successful exploitation of this vulnerability could allow the attacker to elevate privileges and exploit the affected systems.",
-    "softwareAffected": "",
-    "targetAudience": "All organizations and individuals using affected Microsoft Windows Operating system.",
-    "riskAssessment": "High risk of privilege escalation and exploitation on affected Windows systems.",
-    "impactAssessment": "High impact on Confidentiality, Integrity and Availability of the system.",
-    "cves": [
-      "CVE-2026-85921"
     ],
     "solutionLinks": []
   },
@@ -643,6 +667,23 @@
     "solutionLinks": []
   },
   {
+    "title": "Information Disclosure Vulnerability in Schmooze dating mobile Application",
+    "severity": "critical",
+    "date": "2026-10-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0489",
+    "code": "CIVN-2026-0489",
+    "summary": "A vulnerability has been reported in Schmooze dating app, which could allow a remote attacker to gain unauthorized access to sensitive information of the targeted system.",
+    "description": "Schmooze is a meme based dating app that matches people based on their shared sense of humor and meme p",
+    "softwareAffected": "",
+    "targetAudience": "End-users of Schmooze.",
+    "riskAssessment": "Exposure of sensitive credentials and cryptographic keys of application�s production infrastructure.",
+    "impactAssessment": "Potential for unauthorized access to backend/ cloud resources and the ability to forge client request signatures.",
+    "cves": [
+      "CVE-2026-85153"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Android OS",
     "severity": "high",
     "date": "2026-10-06",
@@ -712,23 +753,6 @@
       "CVE-2026-103629",
       "CVE-2026-103630",
       "CVE-2026-103631"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Information Disclosure Vulnerability in Schmooze dating mobile Application",
-    "severity": "critical",
-    "date": "2026-10-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0489",
-    "code": "CIVN-2026-0489",
-    "summary": "A vulnerability has been reported in Schmooze dating app, which could allow a remote attacker to gain unauthorized access to sensitive information of the targeted system.",
-    "description": "Schmooze is a meme based dating app that matches people based on their shared sense of humor and meme p",
-    "softwareAffected": "",
-    "targetAudience": "End-users of Schmooze.",
-    "riskAssessment": "Exposure of sensitive credentials and cryptographic keys of application�s production infrastructure.",
-    "impactAssessment": "Potential for unauthorized access to backend/ cloud resources and the ability to forge client request signatures.",
-    "cves": [
-      "CVE-2026-85153"
     ],
     "solutionLinks": []
   },
