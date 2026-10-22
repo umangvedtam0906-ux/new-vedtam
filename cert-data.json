@@ -101,6 +101,21 @@
     "solutionLinks": []
   },
   {
+    "title": "Elevation of Privilege Vulnerability in Microsoft Exchange Server",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0501",
+    "code": "CIVN-2026-0501",
+    "summary": "A vulnerability has been reported in Microsoft Exchange Server which could allow a remote attacker to elevate privileges on the targeted system.",
+    "description": "Microsoft Exchange Server is an enterprise email and collaboration platform used by organizations to manage email, calendars, contacts, tasks, and shared mailboxes. An elevation of privilege vulnerability exists in Microsoft Exchange Server due to weak authorization. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges and gain unauthorized access to other users mailboxes within the same organization, including reading email messages and attachments, on the targeted system.",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using the Microsoft Exchange Server.",
+    "riskAssessment": "High risk of elevating privileges, bypass security restrictions, and gaining unauthorized access.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information and disclosure of confidential emails and mailbox data.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -396,23 +411,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Elevation of Privilege Vulnerability in Microsoft Exchange Server",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0501",
-    "code": "CIVN-2026-0501",
-    "summary": "A vulnerability has been reported in Microsoft Exchange Server which could allow a remote attacker to elevate privileges on the targeted system.",
-    "description": "Microsoft Exchange Server is an enterprise email and collaboration platform used by organizations to manage email, calendars, contacts, tasks, and shared mailboxes. An elevation of privilege vulnerability exists in Microsoft Exchange Server due to weak authorization. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow an attacker to elevate privileges and gain unauthorized access to other users mailboxes within the same organization, including reading email messages and attachments, on the targeted system.",
-    "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using the Microsoft Exchange Server.",
-    "riskAssessment": "High risk of elevating privileges, bypass security restrictions, and gaining unauthorized access.",
-    "impactAssessment": "Potential for unauthorized access to sensitive information and disclosure of confidential emails and mailbox data.",
-    "cves": [
-      "CVE-2026-96940"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Drupal Modules",
     "severity": "critical",
     "date": "2026-10-14",
@@ -464,16 +462,15 @@
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0497",
     "code": "CIVN-2026-0497",
     "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE), which could allow a remote attacker to execute arbitrary code, gain unauthorized access to restricted resources, disclose sensitive information, bypass security restrictions, manipulate data, or perform server-side request forgery (SSRF) on the targeted system.",
-    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. Multiple vulnerabilities exist in GitLab CE/EE due to integer overflow, cross-site scripting (XSS), improper authorization, permissive regular expressions, improper neutralization of input, insufficient granularity of access control, and server-side request forgery (SSRF). A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system, such as through a specially crafted regular expression in a CI/CD configuration or by interacting with specific API endpoints and web interfaces. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, gain unauthorized access to restricted resources, disclose sensitive information, bypass security restrictions, manipulate data, or perform server-side request forgery (SSRF) on the targeted system.",
+    "description": "",
     "softwareAffected": [
       "GitLab CE/EE: All versions from 10.3 to versions prior to 19.2.8, 19.3.5, and 19.4.2.",
       "GitLab EE: All versions from 13.6 to versions prior to 19.2.8, 19.3.5, and 19.4.2."
     ],
     "targetAudience": "Administrators and organizations using affected versions of GitLab Community Edition (CE) and Enterprise Edition (EE).",
     "riskAssessment": "Critical risk of remote code execution, unauthorized access, and sensitive information disclosure in affected GitLab installations.",
-    "impactAssessment": "Potential for arbitrary code execution, sensitive information disclosure, unauthorized modification of resources, and bypass of access controls.",
+    "impactAssessment": "Potential for arbitrary code execution, sensitive information disclosure, unauthorized modification of resources, and bypass of access controls. CVE Name CVE-2026-97229 CVE-2026-92883 CVE-2026-16301 CVE-2026-14814 CVE-2026-81839 CVE-2026-96893 CVE-2026-101168 CVE-2026-7767 CVE-2026-16275 CVE-2026-84284 CVE-2026-85529 CVE-2026-100755 CVE-2026-14552 CVE-2026-6567 CVE-2026-104661 CVE-2026-14210 CVE-2026-105458 CVE-2026-5954 CVE-2026-92528 CVE-2026-78335 CVE-2026-100104 CVE-2026-82632 CVE-2026-103549 CVE-2026-9268 Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On October 22, 2026",
     "cves": [
-      "cve-2026-97229",
       "CVE-2026-97229",
       "CVE-2026-92883",
       "CVE-2026-16301",
@@ -676,9 +673,7 @@
     "targetAudience": "All end-user organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
     "riskAssessment": "High risk of denial-of-service condition.",
     "impactAssessment": "Potential for disruption of service.",
-    "cves": [
-      "CVE-2026-88779"
-    ],
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -695,33 +690,7 @@
     "targetAudience": "All end user organizations and individuals using Android.",
     "riskAssessment": "High risk of elevation of privilege, denial of service, and unauthorized access to sensitive information.",
     "impactAssessment": "Potential for unauthorized access, arbitrary code execution, sensitive information disclosure and system disruption.",
-    "cves": [
-      "CVE-2026-58865",
-      "CVE-2026-55270",
-      "CVE-2026-58815",
-      "CVE-2026-58841",
-      "CVE-2026-58854",
-      "CVE-2026-58856",
-      "CVE-2026-58834",
-      "CVE-2026-55269",
-      "CVE-2026-55280",
-      "CVE-2026-58835",
-      "CVE-2026-58880",
-      "CVE-2026-49933",
-      "CVE-2026-55265",
-      "CVE-2026-49878",
-      "CVE-2026-45513",
-      "CVE-2026-49880",
-      "CVE-2026-49885",
-      "CVE-2026-55286",
-      "CVE-2026-28667",
-      "CVE-2026-45516",
-      "CVE-2026-45524",
-      "CVE-2026-49937",
-      "CVE-2026-55266",
-      "CVE-2026-55279",
-      "CVE-2026-58859"
-    ],
+    "cves": [],
     "solutionLinks": []
   },
   {
