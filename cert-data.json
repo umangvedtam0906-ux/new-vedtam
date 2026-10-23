@@ -1,5 +1,24 @@
 [
   {
+    "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
+    "severity": "critical",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0518",
+    "code": "CIVN-2026-0518",
+    "summary": "Authentication Bypass vulnerability has been reported in BeyondTrust Remote Support, which could allow a remote attacker to perform unauthorized file operations on the targeted system.",
+    "description": "BeyondTrust Remote Support (RS) is a remote support",
+    "softwareAffected": [
+      "BeyondTrust Remote Support versions 26.2.3 and earlier."
+    ],
+    "targetAudience": "All end-user organizations and individuals using BeyondTrust Remote Support.",
+    "riskAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "impactAssessment": "Potential for unauthorized file operations.",
+    "cves": [
+      "CVE-2026-102764"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in ISC BIND",
     "severity": "high",
     "date": "2026-10-23",
@@ -28,25 +47,6 @@
       "CVE-2026-94300",
       "CVE-2026-96888",
       "CVE-2026-97313"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
-    "severity": "critical",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0518",
-    "code": "CIVN-2026-0518",
-    "summary": "Authentication Bypass vulnerability has been reported in BeyondTrust Remote Support, which could allow a remote attacker to perform unauthorized file operations on the targeted system.",
-    "description": "BeyondTrust Remote Support (RS) is a remote support",
-    "softwareAffected": [
-      "BeyondTrust Remote Support versions 26.2.3 and earlier."
-    ],
-    "targetAudience": "All end-user organizations and individuals using BeyondTrust Remote Support.",
-    "riskAssessment": "Potential for compromise on confidentiality and integrity of the system.",
-    "impactAssessment": "Potential for unauthorized file operations.",
-    "cves": [
-      "CVE-2026-102764"
     ],
     "solutionLinks": []
   },
@@ -141,6 +141,42 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0516",
+    "code": "CIVN-2026-0516",
+    "summary": "Multiple vulnerabilities have been reported in GitLab Community Edition (CE) and Enterprise Edition (EE), which could allow an unauthenticated attacker to execute arbitrary code, take over user accounts, disclose sensitive information, bypass authorization mechanisms, modify access permissions, or disrupt the security and integrity of the targeted system.",
+    "description": "GitLab is a complete DevOps platform that provides source code management, CI/CD, and security features. These vulnerabilities exist in GitLab CE/EE due to incorrect authorization, authorization bypass through user controlled key, use of incorrectly resolved name or reference, improper neutralization of special elements used in an LDAP query, use of cache containing sensitive information, insertion of sensitive information into sent data, integer overflow or wraparound, inconsistent interpretation of HTTP requests, improper clean up on thrown exception, and use of less trusted source. An attacker could exploit these vulnerabilities by submitting specially crafted regular expressions or requests, manipulating OAuth/OIDC discovery responses, or accessing functions without proper authorization. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, take over user accounts, disclose sensitive information, bypass authorization mechanisms, modify access permissions, or disrupt the security and integrity of the targeted system.",
+    "softwareAffected": [
+      "GitLab CE/EE: all versions from 7.0 prior to 18.11.13.",
+      "GitLab CE/EE: versions 19.0 prior to 19.0.10.",
+      "GitLab CE/EE: versions 19.1 prior to 19.1.9.",
+      "GitLab CE/EE: versions 19.2 prior to 19.2.9.",
+      "GitLab CE/EE: versions 19.3 prior to 19.3.6.",
+      "GitLab CE/EE: versions 19.4 prior to 19.4.3.",
+      "GitLab CE/EE: versions 19.5 prior to 19.5.1."
+    ],
+    "targetAudience": "All end-user organizations and individuals using GitLab Community Edition (CE) and Enterprise Edition (EE).",
+    "riskAssessment": "Critical risk of remote code execution, unauthorized access, sensitive information disclosure, bypass of security controls.",
+    "impactAssessment": "Potential for remote code execution unauthorized access, sensitive information disclosure, and/or bypass of security controls.",
+    "cves": [
+      "CVE-2026-12664",
+      "CVE-2026-13319",
+      "CVE-2026-14288",
+      "CVE-2026-15723",
+      "CVE-2026-16255",
+      "CVE-2026-103515",
+      "CVE-2026-105711",
+      "CVE-2026-105777",
+      "CVE-2026-110264",
+      "CVE-2026-112212",
+      "CVE-2026-112326",
+      "CVE-2026-112378"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Cisco Expressway Series",
     "severity": "critical",
     "date": "2026-10-22",
@@ -154,6 +190,32 @@
     "impactAssessment": "Potential for unauthorized access, sensitive information disclosure, and arbitrary code execution.",
     "cves": [
       "CVE-2026-76466"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
+    "code": "CIVN-2026-0511",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [
+      "CVE-2026-114573",
+      "CVE-2026-114530",
+      "CVE-2026-114524",
+      "CVE-2026-114525",
+      "CVE-2026-114526",
+      "CVE-2026-114528",
+      "CVE-2026-114527",
+      "CVE-2026-114523",
+      "CVE-2026-108099",
+      "CVE-2026-110738"
     ],
     "solutionLinks": []
   },
@@ -259,32 +321,6 @@
       "CVE-2026-106070",
       "CVE-2026-106071",
       "CVE-2026-106073"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
-    "code": "CIVN-2026-0511",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [
-      "CVE-2026-114573",
-      "CVE-2026-114530",
-      "CVE-2026-114524",
-      "CVE-2026-114525",
-      "CVE-2026-114526",
-      "CVE-2026-114528",
-      "CVE-2026-114527",
-      "CVE-2026-114523",
-      "CVE-2026-108099",
-      "CVE-2026-110738"
     ],
     "solutionLinks": []
   },
@@ -452,6 +488,21 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3630",
+    "severity": "high",
+    "date": "2026-10-15",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630",
+    "code": "CICA-2026-3630",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "AI Agents as Attack Vectors: Unauthorized Access by Agents under Evaluation and Misuse of Open-Source Agentic AI Tools Targeting Indian ICT Assets",
     "severity": "critical",
     "date": "2026-10-15",
@@ -467,18 +518,110 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3630",
+    "title": "Incorrect Privilege Assignment vulnerability in Docker Hub",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0504",
+    "code": "CIVN-2026-0504",
+    "summary": "A vulnerability has been reported in Docker Hub, which could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated user's permissions.",
+    "description": "Docker Hub is an online registry used to store, share and download container images templates that package everything needed for an application to run in an isolated environment. The vulnerability exists in Docker Hub due to improper reassignment of personal access tokens (PATs) during Docker Hub account-to-organization conversions. An authenticated attacker could reassign a PAT under their control to another Docker Hub user without the token secret being rotated or revoked. As a result, the unchanged PAT could authenticate to the Docker Hub registry as the recipient user, enabling the attacker to pull, push, or delete container images within the tokens assigned scopes and the recipient users repository permissions, including access to organization repositories. Successful exploitation of this vulnerability could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated users permissions.",
+    "softwareAffected": [
+      "Docker Hub"
+    ],
+    "targetAudience": "All organizations and individuals using Docker Hub.",
+    "riskAssessment": "High risk of software supply chain compromise due to potential user impersonation and unauthorized access to container repositories.",
+    "impactAssessment": "Potential for unauthorized access to container repositories and allow attackers to publish malicious container images under a legitimate user's identity, potentially compromising image integrity and downstream deployments.",
+    "cves": [
+      "cve-2026-105445",
+      "CVE-2026-105445"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Memory overflow vulnerability in Citrix Products",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0503",
+    "code": "CIVN-2026-0503",
+    "summary": "A vulnerability has been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to achieve remote code execution (RCE) or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
+    "softwareAffected": [
+      "Citrix NetScaler ADC before 14.1-73.46",
+      "Citrix NetScaler ADC before 13.1-64.29",
+      "Citrix NetScaler ADC 14.1-FIPS before 14.1-73.46",
+      "Citrix NetScaler ADC 13.1-FIPS and 13.1-NDcPP before 13.1.37.283",
+      "Citrix NetScaler Gateway before 14.1-73.46",
+      "Citrix NetScaler Gateway before 13.1-64.29"
+    ],
+    "targetAudience": "All organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
+    "riskAssessment": "Critical risk of disruption of service or remote code execution.",
+    "impactAssessment": "Potential for disruption of service or remote code execution.",
+    "cves": [
+      "CVE-2026-107406"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Ivanti Products",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0502",
+    "code": "CIVN-2026-0502",
+    "summary": "Multiple vulnerabilities have been reported in Ivanti products which could allow a remote attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, or gain unauthorized access on the targeted system.",
+    "description": "Multiple vulnerabilities have been reported in Ivanti Connect Secure, Ivanti Neurons Patch for Intune, and Ivanti Xtraction due to authentication bypass, path traversal, improper limitation of a pathname, exposure of sensitive information and exposed dangerous endpoints. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, gain unauthorized access, or bypass authentication mechanism on the targeted system.",
+    "softwareAffected": [
+      "Ivanti Connect Secure (ICS) version 25.1.1.1 and prior",
+      "Ivanti Connect Secure (ICS) version 25.1.2.2 and prior",
+      "Ivanti Connect Secure (ICS) version 22.8R2.4 and prior",
+      "Ivanti Neurons Patch for Intune (Cloud services automatically updated as of September 16, 2026)",
+      "Ivanti Xtraction version 2026.2.1 and prior"
+    ],
+    "targetAudience": "Individuals and end-user organizations using affected Ivanti Products.",
+    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
+    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-104935",
+      "CVE-2026-109412",
+      "CVE-2026-106034",
+      "CVE-2026-106035",
+      "CVE-2026-106042",
+      "CVE-2026-106043",
+      "CVE-2026-106047"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
-    "date": "2026-10-15",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630",
-    "code": "CICA-2026-3630",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951"
+    ],
     "solutionLinks": []
   },
   {
@@ -559,26 +702,6 @@
       "CVE-2026-110167",
       "CVE-2026-110171",
       "CVE-2026-110142"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Incorrect Privilege Assignment vulnerability in Docker Hub",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0504",
-    "code": "CIVN-2026-0504",
-    "summary": "A vulnerability has been reported in Docker Hub, which could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated user's permissions.",
-    "description": "Docker Hub is an online registry used to store, share and download container images templates that package everything needed for an application to run in an isolated environment. The vulnerability exists in Docker Hub due to improper reassignment of personal access tokens (PATs) during Docker Hub account-to-organization conversions. An authenticated attacker could reassign a PAT under their control to another Docker Hub user without the token secret being rotated or revoked. As a result, the unchanged PAT could authenticate to the Docker Hub registry as the recipient user, enabling the attacker to pull, push, or delete container images within the tokens assigned scopes and the recipient users repository permissions, including access to organization repositories. Successful exploitation of this vulnerability could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated users permissions.",
-    "softwareAffected": [
-      "Docker Hub"
-    ],
-    "targetAudience": "All organizations and individuals using Docker Hub.",
-    "riskAssessment": "High risk of software supply chain compromise due to potential user impersonation and unauthorized access to container repositories.",
-    "impactAssessment": "Potential for unauthorized access to container repositories and allow attackers to publish malicious container images under a legitimate user's identity, potentially compromising image integrity and downstream deployments.",
-    "cves": [
-      "cve-2026-105445",
-      "CVE-2026-105445"
     ],
     "solutionLinks": []
   },
@@ -682,93 +805,6 @@
       "CVE-2025-89105",
       "CVE-2026-58242",
       "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Ivanti Products",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0502",
-    "code": "CIVN-2026-0502",
-    "summary": "Multiple vulnerabilities have been reported in Ivanti products which could allow a remote attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, or gain unauthorized access on the targeted system.",
-    "description": "Multiple vulnerabilities have been reported in Ivanti Connect Secure, Ivanti Neurons Patch for Intune, and Ivanti Xtraction due to authentication bypass, path traversal, improper limitation of a pathname, exposure of sensitive information and exposed dangerous endpoints. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary commands, access restricted files or directories, disclose sensitive information, gain unauthorized access, or bypass authentication mechanism on the targeted system.",
-    "softwareAffected": [
-      "Ivanti Connect Secure (ICS) version 25.1.1.1 and prior",
-      "Ivanti Connect Secure (ICS) version 25.1.2.2 and prior",
-      "Ivanti Connect Secure (ICS) version 22.8R2.4 and prior",
-      "Ivanti Neurons Patch for Intune (Cloud services automatically updated as of September 16, 2026)",
-      "Ivanti Xtraction version 2026.2.1 and prior"
-    ],
-    "targetAudience": "Individuals and end-user organizations using affected Ivanti Products.",
-    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
-    "impactAssessment": "Potential for complete system compromise and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-104935",
-      "CVE-2026-109412",
-      "CVE-2026-106034",
-      "CVE-2026-106035",
-      "CVE-2026-106042",
-      "CVE-2026-106043",
-      "CVE-2026-106047"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Memory overflow vulnerability in Citrix Products",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0503",
-    "code": "CIVN-2026-0503",
-    "summary": "A vulnerability has been reported in Citrix NetScaler ADC and Citrix NetScaler Gateway which could allow a remote attacker to achieve remote code execution (RCE) or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "NetScaler ADC and NetScaler Gateway are application delivery controller (ADC) and secure remote access",
-    "softwareAffected": [
-      "Citrix NetScaler ADC before 14.1-73.46",
-      "Citrix NetScaler ADC before 13.1-64.29",
-      "Citrix NetScaler ADC 14.1-FIPS before 14.1-73.46",
-      "Citrix NetScaler ADC 13.1-FIPS and 13.1-NDcPP before 13.1.37.283",
-      "Citrix NetScaler Gateway before 14.1-73.46",
-      "Citrix NetScaler Gateway before 13.1-64.29"
-    ],
-    "targetAudience": "All organizations and individuals using Citrix NetScaler ADC and NetScaler Gateway.",
-    "riskAssessment": "Critical risk of disruption of service or remote code execution.",
-    "impactAssessment": "Potential for disruption of service or remote code execution.",
-    "cves": [
-      "CVE-2026-107406"
     ],
     "solutionLinks": []
   },
