@@ -1,20 +1,20 @@
 [
   {
-    "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
+    "title": "Directory Traversal Vulnerability in FortiSIEM",
     "severity": "critical",
     "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0518",
-    "code": "CIVN-2026-0518",
-    "summary": "Authentication Bypass vulnerability has been reported in BeyondTrust Remote Support, which could allow a remote attacker to perform unauthorized file operations on the targeted system.",
-    "description": "BeyondTrust Remote Support (RS) is a remote support",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
+    "code": "CIVN-2026-0521",
+    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
+    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
     "softwareAffected": [
-      "BeyondTrust Remote Support versions 26.2.3 and earlier."
+      "Fortinet FortiSIEM versions prior to 7.5.1"
     ],
-    "targetAudience": "All end-user organizations and individuals using BeyondTrust Remote Support.",
-    "riskAssessment": "Potential for compromise on confidentiality and integrity of the system.",
-    "impactAssessment": "Potential for unauthorized file operations.",
+    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
+    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
     "cves": [
-      "CVE-2026-102764"
+      "CVE-2026-106173"
     ],
     "solutionLinks": []
   },
@@ -63,6 +63,25 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
+    "severity": "critical",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0518",
+    "code": "CIVN-2026-0518",
+    "summary": "Authentication Bypass vulnerability has been reported in BeyondTrust Remote Support, which could allow a remote attacker to perform unauthorized file operations on the targeted system.",
+    "description": "BeyondTrust Remote Support (RS) is a remote support",
+    "softwareAffected": [
+      "BeyondTrust Remote Support versions 26.2.3 and earlier."
+    ],
+    "targetAudience": "All end-user organizations and individuals using BeyondTrust Remote Support.",
+    "riskAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "impactAssessment": "Potential for unauthorized file operations.",
+    "cves": [
+      "CVE-2026-102764"
+    ],
     "solutionLinks": []
   },
   {
@@ -194,32 +213,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
-    "code": "CIVN-2026-0511",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [
-      "CVE-2026-114573",
-      "CVE-2026-114530",
-      "CVE-2026-114524",
-      "CVE-2026-114525",
-      "CVE-2026-114526",
-      "CVE-2026-114528",
-      "CVE-2026-114527",
-      "CVE-2026-114523",
-      "CVE-2026-108099",
-      "CVE-2026-110738"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-10-22",
@@ -321,6 +314,32 @@
       "CVE-2026-106070",
       "CVE-2026-106071",
       "CVE-2026-106073"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
+    "code": "CIVN-2026-0511",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [
+      "CVE-2026-114573",
+      "CVE-2026-114530",
+      "CVE-2026-114524",
+      "CVE-2026-114525",
+      "CVE-2026-114526",
+      "CVE-2026-114528",
+      "CVE-2026-114527",
+      "CVE-2026-114523",
+      "CVE-2026-108099",
+      "CVE-2026-110738"
     ],
     "solutionLinks": []
   },
