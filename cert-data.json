@@ -1,5 +1,59 @@
 [
   {
+    "title": "Improper Certificate Vulnerability in Oracle Java SE and GraalVM",
+    "severity": "critical",
+    "date": "2026-10-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0522",
+    "code": "CIVN-2026-0522",
+    "summary": "A vulnerability has been reported in Oracle Java SE and GraalVM products which could allow a remote unauthenticated attacker to obtain sensitive information and manipulate critical data on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle GraalVM Enterprise Edition version 21.3.20",
+      "Oracle GraalVM for JDK versions 17.0.21, 21.0.13",
+      "Oracle Java SE versions 8u511, 8u511-perf, 11.0.33, 17.0.21, 21.0.13, 25.0.5, 27.0.1"
+    ],
+    "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
+    "riskAssessment": "High risk of unauthorized access, data manipulation, and information disclosure.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, and data manipulation.",
+    "cves": [
+      "cve-2026-91403",
+      "CVE-2026-91403"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in ISC BIND",
+    "severity": "high",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0519",
+    "code": "CIVN-2026-0519",
+    "summary": "Multiple vulnerabilities have been reported in ISC BIND that could allow an attacker to cause denial-of-service (DoS) conditions or potentially execute arbitrary code. Successful exploitation could disrupt DNS services and affect the availability and security of affected systems.",
+    "description": "ISC BIND is an open-source Domain Name System (DNS) software suite used to resolve domain names and provide authoritative DNS services. Multiple vulnerabilities have been reported in BIND 9 due to excessive resource consumption during DNS message processing, memory corruption involving GSS-TSIG-signed UDP messages, and assertion failures triggered by specific DNS configurations and query patterns involving redirect zones, strict QNAME minimization, and Response Policy Zones (RPZ). Successful exploitation could cause the named process to terminate unexpectedly, resulting in denial-of-service conditions. The memory corruption vulnerability could potentially allow remote code execution under specific conditions.",
+    "softwareAffected": [
+      "BIND 9",
+      "Versions 9.11.0 through 9.18.50.",
+      "Versions 9.20.0 through 9.20.29.",
+      "Versions 9.21.0 through 9.21.26.",
+      "BIND Supported Preview Edition",
+      "Versions 9.11.3-S1 through 9.18.50-S1.",
+      "Versions 9.20.9-S1 through 9.20.29-S1."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of ISC BIND.",
+    "riskAssessment": "High risk of denial-of-service and potential remote code execution, which could disrupt DNS re",
+    "impactAssessment": "Successful exploitation could cause the BIND named process to terminate unexpectedly, exhaust system resources, or potentially allow remote code execution, affecting DNS service availability and system security.",
+    "cves": [
+      "cve-2026-19630",
+      "cve-2026-94300",
+      "cve-2026-96888",
+      "cve-2026-97313",
+      "CVE-2026-19630",
+      "CVE-2026-94300",
+      "CVE-2026-96888",
+      "CVE-2026-97313"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in MongoDB Products",
     "severity": "medium",
     "date": "2026-10-23",
@@ -66,38 +120,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in ISC BIND",
-    "severity": "high",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0519",
-    "code": "CIVN-2026-0519",
-    "summary": "Multiple vulnerabilities have been reported in ISC BIND that could allow an attacker to cause denial-of-service (DoS) conditions or potentially execute arbitrary code. Successful exploitation could disrupt DNS services and affect the availability and security of affected systems.",
-    "description": "ISC BIND is an open-source Domain Name System (DNS) software suite used to resolve domain names and provide authoritative DNS services. Multiple vulnerabilities have been reported in BIND 9 due to excessive resource consumption during DNS message processing, memory corruption involving GSS-TSIG-signed UDP messages, and assertion failures triggered by specific DNS configurations and query patterns involving redirect zones, strict QNAME minimization, and Response Policy Zones (RPZ). Successful exploitation could cause the named process to terminate unexpectedly, resulting in denial-of-service conditions. The memory corruption vulnerability could potentially allow remote code execution under specific conditions.",
-    "softwareAffected": [
-      "BIND 9",
-      "Versions 9.11.0 through 9.18.50.",
-      "Versions 9.20.0 through 9.20.29.",
-      "Versions 9.21.0 through 9.21.26.",
-      "BIND Supported Preview Edition",
-      "Versions 9.11.3-S1 through 9.18.50-S1.",
-      "Versions 9.20.9-S1 through 9.20.29-S1."
-    ],
-    "targetAudience": "All organizations and individuals using affected versions of ISC BIND.",
-    "riskAssessment": "High risk of denial-of-service and potential remote code execution, which could disrupt DNS re",
-    "impactAssessment": "Successful exploitation could cause the BIND named process to terminate unexpectedly, exhaust system resources, or potentially allow remote code execution, affecting DNS service availability and system security.",
-    "cves": [
-      "cve-2026-19630",
-      "cve-2026-94300",
-      "cve-2026-96888",
-      "cve-2026-97313",
-      "CVE-2026-19630",
-      "CVE-2026-94300",
-      "CVE-2026-96888",
-      "CVE-2026-97313"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Compromise of LiteLLM PyPI Package and Docker Images",
     "severity": "high",
     "date": "2026-10-23",
@@ -110,6 +132,82 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in F5 Products",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
+    "code": "CIVN-2026-0517",
+    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
+    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
+    "softwareAffected": [
+      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
+      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
+      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
+      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
+      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
+      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
+      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
+      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
+      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
+    ],
+    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
+    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
+    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-15176",
+      "CVE-2026-97205",
+      "CVE-2026-93479"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Cisco Expressway Series",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0515",
+    "code": "CIVN-2026-0515",
+    "summary": "A vulnerability has been reported in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as root.",
+    "description": "The Cisco Expressway Series is a collaboration",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using Cisco Expressway Series.",
+    "riskAssessment": "Critical risks on system confidentiality, integrity, and availability of the system.",
+    "impactAssessment": "Potential for unauthorized access, sensitive information disclosure, and arbitrary code execution.",
+    "cves": [
+      "CVE-2026-76466"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Node.js",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0512",
+    "code": "CIVN-2026-0512",
+    "summary": "Multiple vulnerabilities have been reported in Node.js which could allow a remote attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Node.js is an open-source, cross-platform JavaScript runtime environment that enables developers to build scalable server-side and network applications using JavaScript. These vulnerabilities exist in Node.js due to memory corruption, improper certificate validation, improper input validation, and access control weakness. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "Node.js 26.x prior to v26.12.1",
+      "Node.js 24.x prior to v24.22.1",
+      "Node.js 22.x prior to v22.23.4"
+    ],
+    "targetAudience": "All organizations and individuals using Node.js.",
+    "riskAssessment": "High risk of remote code execution, bypass of security restrictions, and denial of service.",
+    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
+    "cves": [
+      "CVE-2026-105482",
+      "CVE-2026-105483",
+      "CVE-2026-106069",
+      "CVE-2026-111497",
+      "CVE-2026-105481",
+      "CVE-2026-106072",
+      "CVE-2026-106074",
+      "CVE-2026-106070",
+      "CVE-2026-106071",
+      "CVE-2026-106073"
+    ],
     "solutionLinks": []
   },
   {
@@ -215,52 +313,6 @@
     "cves": [
       "CVE-2026-109618",
       "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in F5 Products",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
-    "code": "CIVN-2026-0517",
-    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
-    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
-    "softwareAffected": [
-      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
-      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
-      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
-      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
-      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
-      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
-      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
-      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
-      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
-    ],
-    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
-    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
-    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-15176",
-      "CVE-2026-97205",
-      "CVE-2026-93479"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Cisco Expressway Series",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0515",
-    "code": "CIVN-2026-0515",
-    "summary": "A vulnerability has been reported in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as root.",
-    "description": "The Cisco Expressway Series is a collaboration",
-    "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using Cisco Expressway Series.",
-    "riskAssessment": "Critical risks on system confidentiality, integrity, and availability of the system.",
-    "impactAssessment": "Potential for unauthorized access, sensitive information disclosure, and arbitrary code execution.",
-    "cves": [
-      "CVE-2026-76466"
     ],
     "solutionLinks": []
   },
@@ -373,36 +425,6 @@
       "CVE-2026-112212",
       "CVE-2026-112326",
       "CVE-2026-112378"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Node.js",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0512",
-    "code": "CIVN-2026-0512",
-    "summary": "Multiple vulnerabilities have been reported in Node.js which could allow a remote attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Node.js is an open-source, cross-platform JavaScript runtime environment that enables developers to build scalable server-side and network applications using JavaScript. These vulnerabilities exist in Node.js due to memory corruption, improper certificate validation, improper input validation, and access control weakness. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "Node.js 26.x prior to v26.12.1",
-      "Node.js 24.x prior to v24.22.1",
-      "Node.js 22.x prior to v22.23.4"
-    ],
-    "targetAudience": "All organizations and individuals using Node.js.",
-    "riskAssessment": "High risk of remote code execution, bypass of security restrictions, and denial of service.",
-    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
-    "cves": [
-      "CVE-2026-105482",
-      "CVE-2026-105483",
-      "CVE-2026-106069",
-      "CVE-2026-111497",
-      "CVE-2026-105481",
-      "CVE-2026-106072",
-      "CVE-2026-106074",
-      "CVE-2026-106070",
-      "CVE-2026-106071",
-      "CVE-2026-106073"
     ],
     "solutionLinks": []
   },
@@ -565,6 +587,60 @@
     "solutionLinks": []
   },
   {
+    "title": "Incorrect Privilege Assignment vulnerability in Docker Hub",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0504",
+    "code": "CIVN-2026-0504",
+    "summary": "A vulnerability has been reported in Docker Hub, which could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated user's permissions.",
+    "description": "Docker Hub is an online registry used to store, share and download container images templates that package everything needed for an application to run in an isolated environment. The vulnerability exists in Docker Hub due to improper reassignment of personal access tokens (PATs) during Docker Hub account-to-organization conversions. An authenticated attacker could reassign a PAT under their control to another Docker Hub user without the token secret being rotated or revoked. As a result, the unchanged PAT could authenticate to the Docker Hub registry as the recipient user, enabling the attacker to pull, push, or delete container images within the tokens assigned scopes and the recipient users repository permissions, including access to organization repositories. Successful exploitation of this vulnerability could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated users permissions.",
+    "softwareAffected": [
+      "Docker Hub"
+    ],
+    "targetAudience": "All organizations and individuals using Docker Hub.",
+    "riskAssessment": "High risk of software supply chain compromise due to potential user impersonation and unauthorized access to container repositories.",
+    "impactAssessment": "Potential for unauthorized access to container repositories and allow attackers to publish malicious container images under a legitimate user's identity, potentially compromising image integrity and downstream deployments.",
+    "cves": [
+      "cve-2026-105445",
+      "CVE-2026-105445"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Microsoft Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -642,26 +718,6 @@
       "CVE-2026-110167",
       "CVE-2026-110171",
       "CVE-2026-110142"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Incorrect Privilege Assignment vulnerability in Docker Hub",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0504",
-    "code": "CIVN-2026-0504",
-    "summary": "A vulnerability has been reported in Docker Hub, which could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated user's permissions.",
-    "description": "Docker Hub is an online registry used to store, share and download container images templates that package everything needed for an application to run in an isolated environment. The vulnerability exists in Docker Hub due to improper reassignment of personal access tokens (PATs) during Docker Hub account-to-organization conversions. An authenticated attacker could reassign a PAT under their control to another Docker Hub user without the token secret being rotated or revoked. As a result, the unchanged PAT could authenticate to the Docker Hub registry as the recipient user, enabling the attacker to pull, push, or delete container images within the tokens assigned scopes and the recipient users repository permissions, including access to organization repositories. Successful exploitation of this vulnerability could allow an authenticated attacker to impersonate another user at the registry level and pull, push, or delete container images within the scope of the impersonated users permissions.",
-    "softwareAffected": [
-      "Docker Hub"
-    ],
-    "targetAudience": "All organizations and individuals using Docker Hub.",
-    "riskAssessment": "High risk of software supply chain compromise due to potential user impersonation and unauthorized access to container repositories.",
-    "impactAssessment": "Potential for unauthorized access to container repositories and allow attackers to publish malicious container images under a legitimate user's identity, potentially compromising image integrity and downstream deployments.",
-    "cves": [
-      "cve-2026-105445",
-      "CVE-2026-105445"
     ],
     "solutionLinks": []
   },
@@ -744,40 +800,6 @@
       "CVE-2025-89105",
       "CVE-2026-58242",
       "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951"
     ],
     "solutionLinks": []
   },
