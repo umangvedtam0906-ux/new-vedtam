@@ -1,5 +1,20 @@
 [
   {
+    "title": "Multiple vulnerabilities in Fortinet Products",
+    "severity": "high",
+    "date": "2026-10-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
+    "code": "CIAD-2026-0054",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Improper Certificate Vulnerability in Oracle Java SE and GraalVM",
     "severity": "critical",
     "date": "2026-10-24",
@@ -18,40 +33,6 @@
     "cves": [
       "cve-2026-91403",
       "CVE-2026-91403"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Fortinet Products",
-    "severity": "high",
-    "date": "2026-10-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
-    "code": "CIAD-2026-0054",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Directory Traversal Vulnerability in FortiSIEM",
-    "severity": "critical",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
-    "code": "CIVN-2026-0521",
-    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
-    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
-    "softwareAffected": [
-      "Fortinet FortiSIEM versions prior to 7.5.1"
-    ],
-    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
-    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
-    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
-    "cves": [
-      "CVE-2026-106173"
     ],
     "solutionLinks": []
   },
@@ -131,6 +112,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Directory Traversal Vulnerability in FortiSIEM",
+    "severity": "critical",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
+    "code": "CIVN-2026-0521",
+    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
+    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
+    "softwareAffected": [
+      "Fortinet FortiSIEM versions prior to 7.5.1"
+    ],
+    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
+    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
+    "cves": [
+      "CVE-2026-106173"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
     "severity": "critical",
     "date": "2026-10-23",
@@ -169,6 +169,35 @@
     "cves": [
       "CVE-2026-109618",
       "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in F5 Products",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
+    "code": "CIVN-2026-0517",
+    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
+    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
+    "softwareAffected": [
+      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
+      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
+      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
+      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
+      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
+      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
+      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
+      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
+      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
+    ],
+    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
+    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
+    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-15176",
+      "CVE-2026-97205",
+      "CVE-2026-93479"
     ],
     "solutionLinks": []
   },
@@ -222,6 +251,82 @@
     "impactAssessment": "Potential for unauthorized access, sensitive information disclosure, and arbitrary code execution.",
     "cves": [
       "CVE-2026-76466"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0514",
+    "code": "CIVN-2026-0514",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products which could allow a remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products due to improper authorization, missing authentication, improper certificate validation, security weaknesses, and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted systems. Successful exploitation of these vulnerabilities could allow a remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using affected Microsoft products.",
+    "riskAssessment": "Critical risk of arbitrary code execution, privilege escalation, security feature bypass, sensitive information disclosure and compromise of affected systems.",
+    "impactAssessment": "Potential for arbitrary code execution, privilege escalation, unauthorized access to or modification of sensitive information and files, security feature bypass and denial-of-service (DoS) conditions.",
+    "cves": [
+      "CVE-2026-96202",
+      "CVE-2026-109461",
+      "CVE-2026-80092",
+      "CVE-2026-109468",
+      "CVE-2026-108455",
+      "CVE-2026-108454",
+      "CVE-2026-108453",
+      "CVE-2026-108452",
+      "CVE-2026-108451",
+      "CVE-2026-108450",
+      "CVE-2026-108449",
+      "CVE-2026-108448",
+      "CVE-2026-108447",
+      "CVE-2026-108446",
+      "CVE-2026-108445",
+      "CVE-2026-108444",
+      "CVE-2026-108443",
+      "CVE-2026-108442",
+      "CVE-2026-108441",
+      "CVE-2026-108440",
+      "CVE-2026-108439",
+      "CVE-2026-108438",
+      "CVE-2026-108437",
+      "CVE-2026-108436",
+      "CVE-2026-108435",
+      "CVE-2026-108434",
+      "CVE-2026-108433",
+      "CVE-2026-108432",
+      "CVE-2026-108431",
+      "CVE-2026-108430",
+      "CVE-2026-108429",
+      "CVE-2026-108428",
+      "CVE-2026-108427",
+      "CVE-2026-108426"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
+    "code": "CIVN-2026-0511",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [
+      "CVE-2026-114573",
+      "CVE-2026-114530",
+      "CVE-2026-114524",
+      "CVE-2026-114525",
+      "CVE-2026-114526",
+      "CVE-2026-114528",
+      "CVE-2026-114527",
+      "CVE-2026-114523",
+      "CVE-2026-108099",
+      "CVE-2026-110738"
     ],
     "solutionLinks": []
   },
@@ -281,61 +386,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
-    "code": "CIVN-2026-0511",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [
-      "CVE-2026-114573",
-      "CVE-2026-114530",
-      "CVE-2026-114524",
-      "CVE-2026-114525",
-      "CVE-2026-114526",
-      "CVE-2026-114528",
-      "CVE-2026-114527",
-      "CVE-2026-114523",
-      "CVE-2026-108099",
-      "CVE-2026-110738"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in F5 Products",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
-    "code": "CIVN-2026-0517",
-    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
-    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
-    "softwareAffected": [
-      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
-      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
-      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
-      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
-      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
-      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
-      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
-      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
-      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
-    ],
-    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
-    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
-    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-15176",
-      "CVE-2026-97205",
-      "CVE-2026-93479"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-10-22",
@@ -390,56 +440,6 @@
     "cves": [
       "CVE-2026-109618",
       "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0514",
-    "code": "CIVN-2026-0514",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products which could allow a remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products due to improper authorization, missing authentication, improper certificate validation, security weaknesses, and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted systems. Successful exploitation of these vulnerabilities could allow a remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
-    "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using affected Microsoft products.",
-    "riskAssessment": "Critical risk of arbitrary code execution, privilege escalation, security feature bypass, sensitive information disclosure and compromise of affected systems.",
-    "impactAssessment": "Potential for arbitrary code execution, privilege escalation, unauthorized access to or modification of sensitive information and files, security feature bypass and denial-of-service (DoS) conditions.",
-    "cves": [
-      "CVE-2026-96202",
-      "CVE-2026-109461",
-      "CVE-2026-80092",
-      "CVE-2026-109468",
-      "CVE-2026-108455",
-      "CVE-2026-108454",
-      "CVE-2026-108453",
-      "CVE-2026-108452",
-      "CVE-2026-108451",
-      "CVE-2026-108450",
-      "CVE-2026-108449",
-      "CVE-2026-108448",
-      "CVE-2026-108447",
-      "CVE-2026-108446",
-      "CVE-2026-108445",
-      "CVE-2026-108444",
-      "CVE-2026-108443",
-      "CVE-2026-108442",
-      "CVE-2026-108441",
-      "CVE-2026-108440",
-      "CVE-2026-108439",
-      "CVE-2026-108438",
-      "CVE-2026-108437",
-      "CVE-2026-108436",
-      "CVE-2026-108435",
-      "CVE-2026-108434",
-      "CVE-2026-108433",
-      "CVE-2026-108432",
-      "CVE-2026-108431",
-      "CVE-2026-108430",
-      "CVE-2026-108429",
-      "CVE-2026-108428",
-      "CVE-2026-108427",
-      "CVE-2026-108426"
     ],
     "solutionLinks": []
   },
@@ -602,6 +602,30 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in Microsoft Products",
+    "severity": "critical",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0506",
+    "code": "CIVN-2026-0506",
+    "summary": "Multiple vulnerabilities have been reported in various Microsoft products which could allow a remote attacker to execute arbitrary code, elevate privileges, disclose sensitive information, or perform spoofing on the targeted system.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products due to improper authorization, missing authentication, improper certificate validation, and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, disclose sensitive information, or perform spoofing on the targeted system.",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using the affected Microsoft Products.",
+    "riskAssessment": "High risk of unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for compromise on confidentiality, integrity and availability of the system.",
+    "cves": [
+      "CVE-2026-94510",
+      "CVE-2026-96207",
+      "CVE-2026-83947",
+      "CVE-2026-88131",
+      "CVE-2026-83943",
+      "CVE-2026-77900",
+      "CVE-2026-69435",
+      "CVE-2026-69345"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
     "date": "2026-10-14",
@@ -733,30 +757,6 @@
     "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
     "cves": [
       "CVE-2026-96951"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in Microsoft Products",
-    "severity": "critical",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0506",
-    "code": "CIVN-2026-0506",
-    "summary": "Multiple vulnerabilities have been reported in various Microsoft products which could allow a remote attacker to execute arbitrary code, elevate privileges, disclose sensitive information, or perform spoofing on the targeted system.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products due to improper authorization, missing authentication, improper certificate validation, and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, disclose sensitive information, or perform spoofing on the targeted system.",
-    "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using the affected Microsoft Products.",
-    "riskAssessment": "High risk of unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for compromise on confidentiality, integrity and availability of the system.",
-    "cves": [
-      "CVE-2026-94510",
-      "CVE-2026-96207",
-      "CVE-2026-83947",
-      "CVE-2026-88131",
-      "CVE-2026-83943",
-      "CVE-2026-77900",
-      "CVE-2026-69435",
-      "CVE-2026-69345"
     ],
     "solutionLinks": []
   },
