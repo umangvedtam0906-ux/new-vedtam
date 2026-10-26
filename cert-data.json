@@ -37,6 +37,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Directory Traversal Vulnerability in FortiSIEM",
+    "severity": "critical",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
+    "code": "CIVN-2026-0521",
+    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
+    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
+    "softwareAffected": [
+      "Fortinet FortiSIEM versions prior to 7.5.1"
+    ],
+    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
+    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
+    "cves": [
+      "CVE-2026-106173"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in MongoDB Products",
     "severity": "medium",
     "date": "2026-10-23",
@@ -127,25 +146,6 @@
     "impactAssessment": "Potential for unauthorized file operations.",
     "cves": [
       "CVE-2026-102764"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Directory Traversal Vulnerability in FortiSIEM",
-    "severity": "critical",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
-    "code": "CIVN-2026-0521",
-    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
-    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
-    "softwareAffected": [
-      "Fortinet FortiSIEM versions prior to 7.5.1"
-    ],
-    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
-    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
-    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
-    "cves": [
-      "CVE-2026-106173"
     ],
     "solutionLinks": []
   },
@@ -602,6 +602,40 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple vulnerabilities in Microsoft Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -781,40 +815,6 @@
       "CVE-2025-89105",
       "CVE-2026-58242",
       "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951"
     ],
     "solutionLinks": []
   },
