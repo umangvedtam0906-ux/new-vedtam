@@ -133,6 +133,85 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
+    "code": "CIVN-2026-0520",
+    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
+      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
+      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
+      "MongoDB libmongocrypt versions prior to 1.20.5"
+    ],
+    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
+    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-112368",
+      "CVE-2026-104005",
+      "CVE-2026-96299",
+      "CVE-2026-104004",
+      "CVE-2026-107325",
+      "CVE-2026-107324",
+      "CVE-2026-106433"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in ISC BIND",
+    "severity": "high",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0519",
+    "code": "CIVN-2026-0519",
+    "summary": "Multiple vulnerabilities have been reported in ISC BIND that could allow an attacker to cause denial-of-service (DoS) conditions or potentially execute arbitrary code. Successful exploitation could disrupt DNS services and affect the availability and security of affected systems.",
+    "description": "ISC BIND is an open-source Domain Name System (DNS) software suite used to resolve domain names and provide authoritative DNS services. Multiple vulnerabilities have been reported in BIND 9 due to excessive resource consumption during DNS message processing, memory corruption involving GSS-TSIG-signed UDP messages, and assertion failures triggered by specific DNS configurations and query patterns involving redirect zones, strict QNAME minimization, and Response Policy Zones (RPZ). Successful exploitation could cause the named process to terminate unexpectedly, resulting in denial-of-service conditions. The memory corruption vulnerability could potentially allow remote code execution under specific conditions.",
+    "softwareAffected": [
+      "BIND 9",
+      "Versions 9.11.0 through 9.18.50.",
+      "Versions 9.20.0 through 9.20.29.",
+      "Versions 9.21.0 through 9.21.26.",
+      "BIND Supported Preview Edition",
+      "Versions 9.11.3-S1 through 9.18.50-S1.",
+      "Versions 9.20.9-S1 through 9.20.29-S1."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of ISC BIND.",
+    "riskAssessment": "High risk of denial-of-service and potential remote code execution, which could disrupt DNS re",
+    "impactAssessment": "Successful exploitation could cause the BIND named process to terminate unexpectedly, exhaust system resources, or potentially allow remote code execution, affecting DNS service availability and system security.",
+    "cves": [
+      "cve-2026-19630",
+      "cve-2026-94300",
+      "cve-2026-96888",
+      "cve-2026-97313",
+      "CVE-2026-19630",
+      "CVE-2026-94300",
+      "CVE-2026-96888",
+      "CVE-2026-97313"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
+    "severity": "critical",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0518",
+    "code": "CIVN-2026-0518",
+    "summary": "Authentication Bypass vulnerability has been reported in BeyondTrust Remote Support, which could allow a remote attacker to perform unauthorized file operations on the targeted system.",
+    "description": "BeyondTrust Remote Support (RS) is a remote support",
+    "softwareAffected": [
+      "BeyondTrust Remote Support versions 26.2.3 and earlier."
+    ],
+    "targetAudience": "All end-user organizations and individuals using BeyondTrust Remote Support.",
+    "riskAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "impactAssessment": "Potential for unauthorized file operations.",
+    "cves": [
+      "CVE-2026-102764"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Compromise of LiteLLM PyPI Package and Docker Images",
     "severity": "high",
     "date": "2026-10-23",
@@ -167,81 +246,83 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
-    "code": "CIVN-2026-0520",
-    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
-      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
-      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
-      "MongoDB libmongocrypt versions prior to 1.20.5"
-    ],
-    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
-    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
-    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-112368",
-      "CVE-2026-104005",
-      "CVE-2026-96299",
-      "CVE-2026-104004",
-      "CVE-2026-107325",
-      "CVE-2026-107324",
-      "CVE-2026-106433"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
+    "title": "Multiple Vulnerabilities in Drupal Core",
     "severity": "critical",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0518",
-    "code": "CIVN-2026-0518",
-    "summary": "Authentication Bypass vulnerability has been reported in BeyondTrust Remote Support, which could allow a remote attacker to perform unauthorized file operations on the targeted system.",
-    "description": "BeyondTrust Remote Support (RS) is a remote support",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0513",
+    "code": "CIVN-2026-0513",
+    "summary": "Multiple vulnerabilities have been reported in Drupal core, including a critical remote code execution vulnerability in the Field UI module and two cross-site scripting (XSS) vulnerabilities in the Link and Navigation modules. Successful exploitation could allow an attacker to execute arbitrary code or inject malicious scripts into affected Drupal websites.",
+    "description": "Drupal is an open-source content management system used to build and manage websites and web applications. Multiple vulnerabilities exist in Drupal core. The Field UI module contains a remote code execution vulnerability that may be exploitable through contributed modules or custom code, with at least one known exploitation path not requiring authentication. Additionally, the Link module insufficiently sanitizes certain markup, while the Navigation module fails to adequately sanitize specific attributes, potentially resulting in cross-site scripting (XSS). Successful exploitation could allow an attacker to execute arbitrary code on the server or inject malicious scripts into users browsers, potentially resulting in unauthorized operations, compromise of affected websites, or exposure of sensitive information.",
     "softwareAffected": [
-      "BeyondTrust Remote Support versions 26.2.3 and earlier."
+      "Drupal Core versions between 8.9.0 and 10.6.18.",
+      "Drupal Core versions between 11.0.0 and 11.3.18.",
+      "Drupal Core versions between 11.4.0 and 11.4.9.",
+      "Drupal Core versions from 12.0.0-alpha1 to versions prior to 12.0.0-beta2.",
+      "Drupal 8 and Drupal 9 are end-of-life and no longer receive security coverage."
     ],
-    "targetAudience": "All end-user organizations and individuals using BeyondTrust Remote Support.",
-    "riskAssessment": "Potential for compromise on confidentiality and integrity of the system.",
-    "impactAssessment": "Potential for unauthorized file operations.",
+    "targetAudience": "All organizations and individuals using affected versions of Drupal core.",
+    "riskAssessment": "Critical risk of remote code execution and unauthorized script execution, potentially leading to compromise of affected Drupal websites.",
+    "impactAssessment": "Successful exploitation could allow arbitrary code execution on the server or execution of malicious scripts in users' browsers, potentially compromising system integrity and exposing sensitive information.",
     "cves": [
-      "CVE-2026-102764"
+      "CVE-2026-108097",
+      "CVE-2026-108514",
+      "CVE-2026-108515"
     ],
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in ISC BIND",
+    "title": "Multiple Vulnerabilities in Node.js",
     "severity": "high",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0519",
-    "code": "CIVN-2026-0519",
-    "summary": "Multiple vulnerabilities have been reported in ISC BIND that could allow an attacker to cause denial-of-service (DoS) conditions or potentially execute arbitrary code. Successful exploitation could disrupt DNS services and affect the availability and security of affected systems.",
-    "description": "ISC BIND is an open-source Domain Name System (DNS) software suite used to resolve domain names and provide authoritative DNS services. Multiple vulnerabilities have been reported in BIND 9 due to excessive resource consumption during DNS message processing, memory corruption involving GSS-TSIG-signed UDP messages, and assertion failures triggered by specific DNS configurations and query patterns involving redirect zones, strict QNAME minimization, and Response Policy Zones (RPZ). Successful exploitation could cause the named process to terminate unexpectedly, resulting in denial-of-service conditions. The memory corruption vulnerability could potentially allow remote code execution under specific conditions.",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0512",
+    "code": "CIVN-2026-0512",
+    "summary": "Multiple vulnerabilities have been reported in Node.js which could allow a remote attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Node.js is an open-source, cross-platform JavaScript runtime environment that enables developers to build scalable server-side and network applications using JavaScript. These vulnerabilities exist in Node.js due to memory corruption, improper certificate validation, improper input validation, and access control weakness. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
     "softwareAffected": [
-      "BIND 9",
-      "Versions 9.11.0 through 9.18.50.",
-      "Versions 9.20.0 through 9.20.29.",
-      "Versions 9.21.0 through 9.21.26.",
-      "BIND Supported Preview Edition",
-      "Versions 9.11.3-S1 through 9.18.50-S1.",
-      "Versions 9.20.9-S1 through 9.20.29-S1."
+      "Node.js 26.x prior to v26.12.1",
+      "Node.js 24.x prior to v24.22.1",
+      "Node.js 22.x prior to v22.23.4"
     ],
-    "targetAudience": "All organizations and individuals using affected versions of ISC BIND.",
-    "riskAssessment": "High risk of denial-of-service and potential remote code execution, which could disrupt DNS re",
-    "impactAssessment": "Successful exploitation could cause the BIND named process to terminate unexpectedly, exhaust system resources, or potentially allow remote code execution, affecting DNS service availability and system security.",
+    "targetAudience": "All organizations and individuals using Node.js.",
+    "riskAssessment": "High risk of remote code execution, bypass of security restrictions, and denial of service.",
+    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
     "cves": [
-      "cve-2026-19630",
-      "cve-2026-94300",
-      "cve-2026-96888",
-      "cve-2026-97313",
-      "CVE-2026-19630",
-      "CVE-2026-94300",
-      "CVE-2026-96888",
-      "CVE-2026-97313"
+      "CVE-2026-105482",
+      "CVE-2026-105483",
+      "CVE-2026-106069",
+      "CVE-2026-111497",
+      "CVE-2026-105481",
+      "CVE-2026-106072",
+      "CVE-2026-106074",
+      "CVE-2026-106070",
+      "CVE-2026-106071",
+      "CVE-2026-106073"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
+    "code": "CIVN-2026-0511",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [
+      "CVE-2026-114573",
+      "CVE-2026-114530",
+      "CVE-2026-114524",
+      "CVE-2026-114525",
+      "CVE-2026-114526",
+      "CVE-2026-114528",
+      "CVE-2026-114527",
+      "CVE-2026-114523",
+      "CVE-2026-108099",
+      "CVE-2026-110738"
     ],
     "solutionLinks": []
   },
@@ -338,32 +419,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
-    "code": "CIVN-2026-0511",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [
-      "CVE-2026-114573",
-      "CVE-2026-114530",
-      "CVE-2026-114524",
-      "CVE-2026-114525",
-      "CVE-2026-114526",
-      "CVE-2026-114528",
-      "CVE-2026-114527",
-      "CVE-2026-114523",
-      "CVE-2026-108099",
-      "CVE-2026-110738"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-10-22",
@@ -449,31 +504,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Core",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0513",
-    "code": "CIVN-2026-0513",
-    "summary": "Multiple vulnerabilities have been reported in Drupal core, including a critical remote code execution vulnerability in the Field UI module and two cross-site scripting (XSS) vulnerabilities in the Link and Navigation modules. Successful exploitation could allow an attacker to execute arbitrary code or inject malicious scripts into affected Drupal websites.",
-    "description": "Drupal is an open-source content management system used to build and manage websites and web applications. Multiple vulnerabilities exist in Drupal core. The Field UI module contains a remote code execution vulnerability that may be exploitable through contributed modules or custom code, with at least one known exploitation path not requiring authentication. Additionally, the Link module insufficiently sanitizes certain markup, while the Navigation module fails to adequately sanitize specific attributes, potentially resulting in cross-site scripting (XSS). Successful exploitation could allow an attacker to execute arbitrary code on the server or inject malicious scripts into users browsers, potentially resulting in unauthorized operations, compromise of affected websites, or exposure of sensitive information.",
-    "softwareAffected": [
-      "Drupal Core versions between 8.9.0 and 10.6.18.",
-      "Drupal Core versions between 11.0.0 and 11.3.18.",
-      "Drupal Core versions between 11.4.0 and 11.4.9.",
-      "Drupal Core versions from 12.0.0-alpha1 to versions prior to 12.0.0-beta2.",
-      "Drupal 8 and Drupal 9 are end-of-life and no longer receive security coverage."
-    ],
-    "targetAudience": "All organizations and individuals using affected versions of Drupal core.",
-    "riskAssessment": "Critical risk of remote code execution and unauthorized script execution, potentially leading to compromise of affected Drupal websites.",
-    "impactAssessment": "Successful exploitation could allow arbitrary code execution on the server or execution of malicious scripts in users' browsers, potentially compromising system integrity and exposing sensitive information.",
-    "cves": [
-      "CVE-2026-108097",
-      "CVE-2026-108514",
-      "CVE-2026-108515"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -510,33 +540,33 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Node.js",
+    "title": "CERT-In Advisory CICA-2026-3649",
     "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0512",
-    "code": "CIVN-2026-0512",
-    "summary": "Multiple vulnerabilities have been reported in Node.js which could allow a remote attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Node.js is an open-source, cross-platform JavaScript runtime environment that enables developers to build scalable server-side and network applications using JavaScript. These vulnerabilities exist in Node.js due to memory corruption, improper certificate validation, improper input validation, and access control weakness. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "Node.js 26.x prior to v26.12.1",
-      "Node.js 24.x prior to v24.22.1",
-      "Node.js 22.x prior to v22.23.4"
-    ],
-    "targetAudience": "All organizations and individuals using Node.js.",
-    "riskAssessment": "High risk of remote code execution, bypass of security restrictions, and denial of service.",
-    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
-    "cves": [
-      "CVE-2026-105482",
-      "CVE-2026-105483",
-      "CVE-2026-106069",
-      "CVE-2026-111497",
-      "CVE-2026-105481",
-      "CVE-2026-106072",
-      "CVE-2026-106074",
-      "CVE-2026-106070",
-      "CVE-2026-106071",
-      "CVE-2026-106073"
-    ],
+    "date": "2026-10-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3649",
+    "code": "CICA-2026-3649",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
+    "softwareAffected": "",
+    "targetAudience": "Government departments, organisations, enterprises, internet service providers, software vendors, website administrators, application developers, system and network administrators, operators of embedded devices, and users relying on TLS certificates and affected certificate trust stores. Best Practices • Apply security updates: Update Firefox, Firefox ESR, Chrome, supported Android components, and other affected browsers, applications and operating systems to the latest security releases provided by their respective vendors. • Update certificate trust stores: Ensure that operating systems, applications, servers and devices receive the latest certificate revocation and distrust information from their respective vendors. Verify that affected certificate chains are rejected by the relevant clients. • Review certificate dependencies: Identify certificates and services chaining to the affected intermediate CAs or emSign ECC Root CA - G3. Assess the impact of the intermediate-certificate blocking measures and root-store changes on websites, applications and other dependent services. Include relevant cross-signed certificate chains in the review. • Replace affected certificates: Obtain replacement TLS certificates from a trusted, unaffected PKI hierarchy where required. Administrators should also replace otherwise legitimate certificates chaining to emSign ECC Root CA - G3 if they will no longer be trusted by the relevant clients. • Verify TLS certificates: Validate certificate chains, issuer information, validity periods and revocation status. Do not bypass certificate-validation warnings or disable certificate verification. Confirm that applications reject certificates chaining through the compromised intermediate CA keys. • Monitor certificate issuance: Monitor Certificate Transparency logs and security alerts for unauthorised certificate issuance, unexpected certificate changes and other suspicious activity involving affected domains or services. CT monitoring should supplement, rather than replace, certificate revocation and trust-store controls. • Review independent certificate trust stores: Examine applications, programming-language runtimes, container images, TLS libraries, network appliances and embedded systems that maintain separate CA certificate bundles or do not reliably check certificate revocation. Apply applicable vendor updates and redeploy affected components where necessary. • Review code-signing trust: Software vendors and administrators should verify the trust and revocation status of relevant code-signing certificate chains and use additional software integrity and provenance checks where appropriate. • Strengthen CA key management: Certification authorities should use approved cryptographically secure random number generators, implement appropriate hardware security module (HSM) controls, and review key-generation procedures and key-lifecycle management to prevent recurrence of similar weaknesses. Independent verification of generated key parameters, key identifiers, certificate-signing request (CSR) mappings and maker-checker controls should form part of the key-generation process. • Maintain secure configurations: Ensure that applications, embedded devices and other systems receive timely security and trust-store updates. Where vendor support is unavailable, assess exposure and implement appropriate compensating controls. •",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Compromise of eMudhra Intermediate CA Certificates",
+    "severity": "high",
+    "date": "2026-10-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0050",
+    "code": "CIAD-2026-0050",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "eMudhra Limited, operates in two distinct areas: • Issuance of digital signature certificates and eSign services, regulated by the Controller of Certifying Authorities (CCA) under MeitY. • Issuance of digital certificates trusted by major browsers and operating systems, used to secure websites, software and online communications. • This advisory pertains to the reported incident in public domain to the second area. The issuance of digital signature certificates and eSign services, regulated by the Controller of Certifying Authorities (CCA) under MeitY are not impacted. The second function is international in nature and operates under global trust framework. It is governed by international standards and subject to independent audits, including Web Trust audits conducted by BDO International Limited. The affected private keys were generated with insufficient cryptographic randomness. The P-384 elliptic-curve private keys had values smaller than 256 and could be recovered almost instantly from their corresponding public keys. The weakness arose during key generation and does not indicate a vulnerability in the P-384 cryptographic algorithm itself. Whereas eMudhra has stated in its public press release, \"A flaw in the key generation ceremony caused a wrap / unwrap step to produce a second set of weak keys along side the original strong keys. The weak keys were the ones published to the browser root stores.\" An attacker who recovers these private keys could issue fraudulent certificates for domains they do not control. Such TLS certificates could be used to impersonate legitimate websites and facilitate man-in-the-middle (MitM) attacks, potentially enabling the interception or modification of encrypted communications where an attacker can intercept network traffic and the affected certificate chains remain trusted by the client. The compromised code-signing keys could also be used to issue fraudulent code-signing certificates. According to eMudhra, none of the affected intermediate CAs had issued end-entity certificates. The company stated that only one of the affected intermediates had been deployed in production. The company has stated that the incident is limited to the affected intermediates and does not involve its root CA private keys or other intermediate CAs. As per the reports, eMudhra�s domestic Indian Digital Signature Certificate (DSC) and eSign infrastructure remained completely unaffected due to strict architectural isolation, utilizing distinct cryptographic keys generated under different regulatory compliance frameworks. eMudhra revoked the eight affected intermediate certificates on October 18, 2026. M/s Mozilla blocked the six affected TLS intermediate certificates through its OneCRL certificate block list on October 17, 2026. Mozilla released Firefox 158.0.1 for desktop and Android, Firefox ESR 115.43.1 and Firefox ESR 153.5.1 to protect users whose configurations prevent them from receiving OneCRL updates. Mozilla has also updated the trusted certificate list in Network Security Services (NSS) 3.131.1 to remove the root certificate emSign ECC Root CA - G3, which signed the affected intermediates. M/s Google blocked the public keys of the affected TLS intermediates in Chrome through a Certificate Revocation List Set (CRLSet) update on October 17, 2026. The blocking was based on the Subject Public Key Information (SPKI) hashes, protecting against certificates using the affected public keys. Google also reported deploying equivalent protections to supported Android devices through Google Play services. Google has also announced the removal of emSign ECC Root CA - G3 from the Chrome Root Store. The change is expected to reach devices relying on the Chrome Root Store on October 27, 2026. The root-store changes are intended to protect applications and devices that do not receive or enforce intermediate-certificate revocation information. Impact An attacker able to exploit the compromised TLS private keys could issue fraudulent TLS certificates and potentially impersonate legitimate websites or intercept or modify data exchanged between users and servers, potentially facilitating credential theft, sensitive data exposure, and financial fraud. Compromised code-signing keys could be used to issue fraudulent certificates, enabling malicious software to appear digitally signed by a trusted publisher. Google reported that no TLS certificates chaining to the six affected TLS intermediates were recorded in Certificate Transparency (CT) logs before its blocking action. eMudhra has also stated that the affected intermediates had not issued end-entity certificates. As of October 21, 2026, the cited public disclosures do not establish confirmed malicious exploitation of the affected keys. Removal of emSign ECC Root CA - G3 from browser and application trust stores could render legitimate certificates issued under that root untrusted, potentially disrupting affected websites and services.",
+    "softwareAffected": "",
+    "targetAudience": "Government departments, organisations, enterprises, internet service providers, software vendors, website administrators, application developers, system and network administrators, operators of embedded devices, and users relying on TLS certificates and affected certificate trust stores. Best Practices • Apply security updates: Update Firefox, Firefox ESR, Chrome, supported Android components, and other affected browsers, applications and operating systems to the latest security releases provided by their respective vendors. • Update certificate trust stores: Ensure that operating systems, applications, servers and devices receive the latest certificate revocation and distrust information from their respective vendors. Verify that affected certificate chains are rejected by the relevant clients. • Review certificate dependencies: Identify certificates and services chaining to the affected intermediate CAs or emSign ECC Root CA - G3. Assess the impact of the intermediate-certificate blocking measures and root-store changes on websites, applications and other dependent services. Include relevant cross-signed certificate chains in the review. • Replace affected certificates: Obtain replacement TLS certificates from a trusted, unaffected PKI hierarchy where required. Administrators should also replace otherwise legitimate certificates chaining to emSign ECC Root CA - G3 if they will no longer be trusted by the relevant clients. • Verify TLS certificates: Validate certificate chains, issuer information, validity periods and revocation status. Do not bypass certificate-validation warnings or disable certificate verification. Confirm that applications reject certificates chaining through the compromised intermediate CA keys. • Monitor certificate issuance: Monitor Certificate Transparency logs and security alerts for unauthorised certificate issuance, unexpected certificate changes and other suspicious activity involving affected domains or services. CT monitoring should supplement, rather than replace, certificate revocation and trust-store controls. • Review independent certificate trust stores: Examine applications, programming-language runtimes, container images, TLS libraries, network appliances and embedded systems that maintain separate CA certificate bundles or do not reliably check certificate revocation. Apply applicable vendor updates and redeploy affected components where necessary. • Review code-signing trust: Software vendors and administrators should verify the trust and revocation status of relevant code-signing certificate chains and use additional software integrity and provenance checks where appropriate. • Strengthen CA key management: Certification authorities should use approved cryptographically secure random number generators, implement appropriate hardware security module (HSM) controls, and review key-generation procedures and key-lifecycle management to prevent recurrence of similar weaknesses. Independent verification of generated key parameters, key identifiers, certificate-signing request (CSR) mappings and maker-checker controls should form part of the key-generation process. • Maintain secure configurations: Ensure that applications, embedded devices and other systems receive timely security and trust-store updates. Where vendor support is unavailable, assess exposure and implement appropriate compensating controls. •",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -579,36 +609,6 @@
     "cves": [
       "CVE-2026-99999"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3649",
-    "severity": "high",
-    "date": "2026-10-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3649",
-    "code": "CICA-2026-3649",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "Government departments, organisations, enterprises, internet service providers, software vendors, website administrators, application developers, system and network administrators, operators of embedded devices, and users relying on TLS certificates and affected certificate trust stores. Best Practices • Apply security updates: Update Firefox, Firefox ESR, Chrome, supported Android components, and other affected browsers, applications and operating systems to the latest security releases provided by their respective vendors. • Update certificate trust stores: Ensure that operating systems, applications, servers and devices receive the latest certificate revocation and distrust information from their respective vendors. Verify that affected certificate chains are rejected by the relevant clients. • Review certificate dependencies: Identify certificates and services chaining to the affected intermediate CAs or emSign ECC Root CA - G3. Assess the impact of the intermediate-certificate blocking measures and root-store changes on websites, applications and other dependent services. Include relevant cross-signed certificate chains in the review. • Replace affected certificates: Obtain replacement TLS certificates from a trusted, unaffected PKI hierarchy where required. Administrators should also replace otherwise legitimate certificates chaining to emSign ECC Root CA - G3 if they will no longer be trusted by the relevant clients. • Verify TLS certificates: Validate certificate chains, issuer information, validity periods and revocation status. Do not bypass certificate-validation warnings or disable certificate verification. Confirm that applications reject certificates chaining through the compromised intermediate CA keys. • Monitor certificate issuance: Monitor Certificate Transparency logs and security alerts for unauthorised certificate issuance, unexpected certificate changes and other suspicious activity involving affected domains or services. CT monitoring should supplement, rather than replace, certificate revocation and trust-store controls. • Review independent certificate trust stores: Examine applications, programming-language runtimes, container images, TLS libraries, network appliances and embedded systems that maintain separate CA certificate bundles or do not reliably check certificate revocation. Apply applicable vendor updates and redeploy affected components where necessary. • Review code-signing trust: Software vendors and administrators should verify the trust and revocation status of relevant code-signing certificate chains and use additional software integrity and provenance checks where appropriate. • Strengthen CA key management: Certification authorities should use approved cryptographically secure random number generators, implement appropriate hardware security module (HSM) controls, and review key-generation procedures and key-lifecycle management to prevent recurrence of similar weaknesses. Independent verification of generated key parameters, key identifiers, certificate-signing request (CSR) mappings and maker-checker controls should form part of the key-generation process. • Maintain secure configurations: Ensure that applications, embedded devices and other systems receive timely security and trust-store updates. Where vendor support is unavailable, assess exposure and implement appropriate compensating controls. •",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Compromise of eMudhra Intermediate CA Certificates",
-    "severity": "high",
-    "date": "2026-10-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0050",
-    "code": "CIAD-2026-0050",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "eMudhra Limited, operates in two distinct areas: • Issuance of digital signature certificates and eSign services, regulated by the Controller of Certifying Authorities (CCA) under MeitY. • Issuance of digital certificates trusted by major browsers and operating systems, used to secure websites, software and online communications. • This advisory pertains to the reported incident in public domain to the second area. The issuance of digital signature certificates and eSign services, regulated by the Controller of Certifying Authorities (CCA) under MeitY are not impacted. The second function is international in nature and operates under global trust framework. It is governed by international standards and subject to independent audits, including Web Trust audits conducted by BDO International Limited. The affected private keys were generated with insufficient cryptographic randomness. The P-384 elliptic-curve private keys had values smaller than 256 and could be recovered almost instantly from their corresponding public keys. The weakness arose during key generation and does not indicate a vulnerability in the P-384 cryptographic algorithm itself. Whereas eMudhra has stated in its public press release, \"A flaw in the key generation ceremony caused a wrap / unwrap step to produce a second set of weak keys along side the original strong keys. The weak keys were the ones published to the browser root stores.\" An attacker who recovers these private keys could issue fraudulent certificates for domains they do not control. Such TLS certificates could be used to impersonate legitimate websites and facilitate man-in-the-middle (MitM) attacks, potentially enabling the interception or modification of encrypted communications where an attacker can intercept network traffic and the affected certificate chains remain trusted by the client. The compromised code-signing keys could also be used to issue fraudulent code-signing certificates. According to eMudhra, none of the affected intermediate CAs had issued end-entity certificates. The company stated that only one of the affected intermediates had been deployed in production. The company has stated that the incident is limited to the affected intermediates and does not involve its root CA private keys or other intermediate CAs. As per the reports, eMudhra�s domestic Indian Digital Signature Certificate (DSC) and eSign infrastructure remained completely unaffected due to strict architectural isolation, utilizing distinct cryptographic keys generated under different regulatory compliance frameworks. eMudhra revoked the eight affected intermediate certificates on October 18, 2026. M/s Mozilla blocked the six affected TLS intermediate certificates through its OneCRL certificate block list on October 17, 2026. Mozilla released Firefox 158.0.1 for desktop and Android, Firefox ESR 115.43.1 and Firefox ESR 153.5.1 to protect users whose configurations prevent them from receiving OneCRL updates. Mozilla has also updated the trusted certificate list in Network Security Services (NSS) 3.131.1 to remove the root certificate emSign ECC Root CA - G3, which signed the affected intermediates. M/s Google blocked the public keys of the affected TLS intermediates in Chrome through a Certificate Revocation List Set (CRLSet) update on October 17, 2026. The blocking was based on the Subject Public Key Information (SPKI) hashes, protecting against certificates using the affected public keys. Google also reported deploying equivalent protections to supported Android devices through Google Play services. Google has also announced the removal of emSign ECC Root CA - G3 from the Chrome Root Store. The change is expected to reach devices relying on the Chrome Root Store on October 27, 2026. The root-store changes are intended to protect applications and devices that do not receive or enforce intermediate-certificate revocation information. Impact An attacker able to exploit the compromised TLS private keys could issue fraudulent TLS certificates and potentially impersonate legitimate websites or intercept or modify data exchanged between users and servers, potentially facilitating credential theft, sensitive data exposure, and financial fraud. Compromised code-signing keys could be used to issue fraudulent certificates, enabling malicious software to appear digitally signed by a trusted publisher. Google reported that no TLS certificates chaining to the six affected TLS intermediates were recorded in Certificate Transparency (CT) logs before its blocking action. eMudhra has also stated that the affected intermediates had not issued end-entity certificates. As of October 21, 2026, the cited public disclosures do not establish confirmed malicious exploitation of the affected keys. Removal of emSign ECC Root CA - G3 from browser and application trust stores could render legitimate certificates issued under that root untrusted, potentially disrupting affected websites and services.",
-    "softwareAffected": "",
-    "targetAudience": "Government departments, organisations, enterprises, internet service providers, software vendors, website administrators, application developers, system and network administrators, operators of embedded devices, and users relying on TLS certificates and affected certificate trust stores. Best Practices • Apply security updates: Update Firefox, Firefox ESR, Chrome, supported Android components, and other affected browsers, applications and operating systems to the latest security releases provided by their respective vendors. • Update certificate trust stores: Ensure that operating systems, applications, servers and devices receive the latest certificate revocation and distrust information from their respective vendors. Verify that affected certificate chains are rejected by the relevant clients. • Review certificate dependencies: Identify certificates and services chaining to the affected intermediate CAs or emSign ECC Root CA - G3. Assess the impact of the intermediate-certificate blocking measures and root-store changes on websites, applications and other dependent services. Include relevant cross-signed certificate chains in the review. • Replace affected certificates: Obtain replacement TLS certificates from a trusted, unaffected PKI hierarchy where required. Administrators should also replace otherwise legitimate certificates chaining to emSign ECC Root CA - G3 if they will no longer be trusted by the relevant clients. • Verify TLS certificates: Validate certificate chains, issuer information, validity periods and revocation status. Do not bypass certificate-validation warnings or disable certificate verification. Confirm that applications reject certificates chaining through the compromised intermediate CA keys. • Monitor certificate issuance: Monitor Certificate Transparency logs and security alerts for unauthorised certificate issuance, unexpected certificate changes and other suspicious activity involving affected domains or services. CT monitoring should supplement, rather than replace, certificate revocation and trust-store controls. • Review independent certificate trust stores: Examine applications, programming-language runtimes, container images, TLS libraries, network appliances and embedded systems that maintain separate CA certificate bundles or do not reliably check certificate revocation. Apply applicable vendor updates and redeploy affected components where necessary. • Review code-signing trust: Software vendors and administrators should verify the trust and revocation status of relevant code-signing certificate chains and use additional software integrity and provenance checks where appropriate. • Strengthen CA key management: Certification authorities should use approved cryptographically secure random number generators, implement appropriate hardware security module (HSM) controls, and review key-generation procedures and key-lifecycle management to prevent recurrence of similar weaknesses. Independent verification of generated key parameters, key identifiers, certificate-signing request (CSR) mappings and maker-checker controls should form part of the key-generation process. • Maintain secure configurations: Ensure that applications, embedded devices and other systems receive timely security and trust-store updates. Where vendor support is unavailable, assess exposure and implement appropriate compensating controls. •",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
