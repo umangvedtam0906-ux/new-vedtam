@@ -542,6 +542,64 @@
     "solutionLinks": []
   },
   {
+    "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
+    "code": "CIAD-2026-0052",
+    "summary": "Multiple vulnerabilities have been reported in PHP which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities (collectively referred to as \"PHP2Shell\") exist in PHP due to memory corruption and improper resource control. An unauthenticated remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on an affected server, potentially exposing or modifying website content, customer data, databases, and other linked resources. Micro, Small and Medium Enterprises (MSME) operating PHP-based websites, content-management systems, e-commerce platforms, or third-party applications could face security risks, particularly where PHP comes bundled with their hosting services or other software. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently. Recommendations: MSMEs are advised to undertake the following actions: • Identify PHP usage: Check whether the website, hosting account, content-management system, or business application uses PHP. If the PHP version is unknown, contact the hosting provider or software vendor for confirmation. • Apply security updates: Upgrade affected PHP installations to the appropriate fixed versions: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or vendor's fixed package. • Prioritise internet-facing systems: Remediate public-facing websites and applications first. After applying updates, restart the relevant services as needed and verify that the updated PHP runtime is actually in use. • Address unsupported versions: PHP 8.1 and earlier versions are no longer supported by the upstream PHP project. Upgrade to a supported release, or obtain and verify a security-fixed package from the relevant vendor. • Restrict exposure where patching is delayed: If an affected system cannot be patched immediately, consider restricting access to trusted networks until remediation is completed. Also follow mitigation steps mentioned by the vendor. • Check for signs of compromise: Check for signs of compromise by reviewing available web-server and application logs for unusual requests, unexpected file changes, newly created administrator accounts, suspicious processes, and unexplained outbound connections. If compromise or suspicious activity is detected, preserve relevant logs, contain the incident, and promptly report it with available evidence to CERT-In at incident@cert-in.org.in • Secure business information: Protect business information by maintaining regular offline or otherwise secure backups, testing that restoration works, and ensuring administrative accounts use strong, unique passwords and multi-factor authentication wherever supported. •",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.3"
+    ],
+    "targetAudience": "All MSME organizations using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0051",
+    "code": "CIAD-2026-0051",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products, which could be exploited by a remote attacker to trigger elevation of privilege, denial of service condition, remote code execution, data manipulation, sensitive information disclosure and security restriction bypass on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle Database Server",
+      "Oracle E-Business Suite",
+      "Oracle Fusion Middleware and Oracle WebLogic Server",
+      "Oracle Enterprise Manager",
+      "Oracle Java SE, JavaFX and GraalVM",
+      "Oracle MySQL products",
+      "Oracle PeopleSoft Enterprise",
+      "Oracle JD Edwards EnterpriseOne",
+      "Oracle Siebel CRM",
+      "Oracle Analytics and BI Publisher",
+      "Oracle HealthCare Applications",
+      "Oracle Hospitality Applications",
+      "Oracle GoldenGate",
+      "Oracle REST Data Services",
+      "Oracle NoSQL Database",
+      "Oracle Solaris and Oracle VM VirtualBox",
+      "Oracle Retail, Financial Services, Communications,",
+      "Utilities and Supply Chain applications",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpuoct2026.html"
+    ],
+    "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
+    "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -667,64 +725,6 @@
       "CVE-2026-108514",
       "CVE-2026-108515"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
-    "code": "CIAD-2026-0052",
-    "summary": "Multiple vulnerabilities have been reported in PHP which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities (collectively referred to as \"PHP2Shell\") exist in PHP due to memory corruption and improper resource control. An unauthenticated remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on an affected server, potentially exposing or modifying website content, customer data, databases, and other linked resources. Micro, Small and Medium Enterprises (MSME) operating PHP-based websites, content-management systems, e-commerce platforms, or third-party applications could face security risks, particularly where PHP comes bundled with their hosting services or other software. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently. Recommendations: MSMEs are advised to undertake the following actions: • Identify PHP usage: Check whether the website, hosting account, content-management system, or business application uses PHP. If the PHP version is unknown, contact the hosting provider or software vendor for confirmation. • Apply security updates: Upgrade affected PHP installations to the appropriate fixed versions: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or vendor's fixed package. • Prioritise internet-facing systems: Remediate public-facing websites and applications first. After applying updates, restart the relevant services as needed and verify that the updated PHP runtime is actually in use. • Address unsupported versions: PHP 8.1 and earlier versions are no longer supported by the upstream PHP project. Upgrade to a supported release, or obtain and verify a security-fixed package from the relevant vendor. • Restrict exposure where patching is delayed: If an affected system cannot be patched immediately, consider restricting access to trusted networks until remediation is completed. Also follow mitigation steps mentioned by the vendor. • Check for signs of compromise: Check for signs of compromise by reviewing available web-server and application logs for unusual requests, unexpected file changes, newly created administrator accounts, suspicious processes, and unexplained outbound connections. If compromise or suspicious activity is detected, preserve relevant logs, contain the incident, and promptly report it with available evidence to CERT-In at incident@cert-in.org.in • Secure business information: Protect business information by maintaining regular offline or otherwise secure backups, testing that restoration works, and ensuring administrative accounts use strong, unique passwords and multi-factor authentication wherever supported. •",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.3"
-    ],
-    "targetAudience": "All MSME organizations using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0051",
-    "code": "CIAD-2026-0051",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products, which could be exploited by a remote attacker to trigger elevation of privilege, denial of service condition, remote code execution, data manipulation, sensitive information disclosure and security restriction bypass on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle Database Server",
-      "Oracle E-Business Suite",
-      "Oracle Fusion Middleware and Oracle WebLogic Server",
-      "Oracle Enterprise Manager",
-      "Oracle Java SE, JavaFX and GraalVM",
-      "Oracle MySQL products",
-      "Oracle PeopleSoft Enterprise",
-      "Oracle JD Edwards EnterpriseOne",
-      "Oracle Siebel CRM",
-      "Oracle Analytics and BI Publisher",
-      "Oracle HealthCare Applications",
-      "Oracle Hospitality Applications",
-      "Oracle GoldenGate",
-      "Oracle REST Data Services",
-      "Oracle NoSQL Database",
-      "Oracle Solaris and Oracle VM VirtualBox",
-      "Oracle Retail, Financial Services, Communications,",
-      "Utilities and Supply Chain applications",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpuoct2026.html"
-    ],
-    "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
-    "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
-    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -964,13 +964,13 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3630",
-    "severity": "high",
+    "title": "AI Agents as Attack Vectors: Unauthorized Access by Agents under Evaluation and Misuse of Open-Source Agentic AI Tools Targeting Indian ICT Assets",
+    "severity": "critical",
     "date": "2026-10-15",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630",
-    "code": "CICA-2026-3630",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0049",
+    "code": "CIAD-2026-0049",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "",
+    "description": "CERT-In has observed different categories of cyber incidents in which the attacker was an AI agent, that is, a software system capable of autonomously planning work, issuing commands, invoking tools and acting on the internet over extended periods. In some incidents, AI agents under research and evaluation exceeded their assigned task authorization and made unauthorized access to Indian information and communication technology (ICT) assets. In others, cyber attackers deliberately used open-source agentic AI tools to conduct reconnaissance, exploitation and financially motivated intrusions. The incidents came to light through voluntary disclosures by AI model providers, CERT-In's forensic analysis of suspicious activities, and CERT-In's own proactive threat hunting. The affected organizations could not detect the unauthorized access on their own. Categories of Incidents Observed Voluntary Disclosures 1. AI agents exceeding task authorization during research and evaluation: unauthorized access to Indian ICT assets • Recently, CERT-In has received multiple voluntary disclosures from AI model providers stating that their models, during research and evaluation activity on the internet, had reached the live systems of Indian organizations. • The recorded activity involved reading business records, including personal data and confidential material, through credentials and connection settings exposed in application configuration, public code repositories and permissive cloud service roles. • In the disclosed cases, the models' actions exceeded the authorization of their assigned tasks. • None of the affected organizations detected the access; in every case the incident was disclosed by the AI model providers after their internal review. • CERT-In's Threat Hunting 2. Cyber attackers using open-source agentic AI tools • CERT-In has observed financially motivated campaign against Indian entities in which cyber threat actors abused publicly available AI-native offensive-security frameworks. • These frameworks continue to be misused and rebranded, with a large number of deployments observed across infrastructure in multiple countries, indicating the widespread availability of ready-made agentic intrusion capabilities. • Observations based on analysis by CERT-In 3. Weaknesses exploited at machine speed • In the financially motivated campaign against Indian entities, agentic tooling compressed the time between initial access and final impact from days to a few hours. • In addition, the campaign highlighted that multi-agent operations run in parallel for hours to days to achieve the attacker goals, consistent with the documented multi-agent capability of these tools. • Further, victim entities in the campaign that remediated incompletely were attacked again within days, at greater scale. • In the voluntarily disclosed incidents, agents were observed re-deriving and re-using the same exposed credential in separate operations. • 4. The weaknesses exploited are conventional Across all AI agent driven incidents observed recently, the root weaknesses are conventional: • Credentials and keys exposed in source code, public repository history, configuration files, client applications and public web content; • Dormant, deprecated and test application programming interfaces (APIs) left reachable from the internet; • Payment-API keys stored in plaintext and readable from application runtimes; • Over-permissive cloud and backend-as-a-service roles permitting broad reads and writes by ordinary or anonymous callers; • Internet-exposed management interfaces and unpatched application middleware with weak credentials or no multi-factor authentication. • In the incidents observed, AI found and exploited these conventional weaknesses faster, more exhaustively and at greater scale than human attackers. Recommended Actions A. For AI model developers, research laboratories and evaluation agencies • Isolate research and evaluation workloads with default-deny network egress, permitting only the destinations a task strictly requires. Enforce the restriction at the network layer, not through instructions to the model. • Use synthetic targets, synthetic credentials and disposable infrastructure. Keep production data and real credentials out of the evaluation environment. • Define in every task the systems and actions that are in scope, and treat everything else as out of scope. Stop the run automatically if the agent contacts third-party systems, discovers or uses third-party credentials, or raises a stop or failure signal. Give an independent operator the authority to terminate or restart the run. • Monitor agent activity in real time. Log model-initiated requests as completely as feasible, including destination, port, protocol and result. Do not rely on after-the-fact transcript review alone; on its own it can miss activity that a model's reasoning makes appear legitimate. • Block the re-use of every third-party credential an agent encounters: suppress it in all future runs and flag the exposure for review and remediation. • If an agent accesses a real system, notify the affected organization and CERT-In promptly. Assist the organization's remediation. • Publish the safeguards adopted so that the community benefits. • B. For organizations and service providers • Implement the baseline measures as outlined in the CERT-In \"Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure\". • Audit for exposed credentials in source code, repositories (including commit history), continuous integration and continuous delivery (CI/CD) variables, configuration files, client applications and cloud storage. • Rotate any exposed credential, purge it from history and verify the fix externally. Scan every commit and build for secrets. Keep credentials out of code, configuration files and databases. • Keep a complete inventory of APIs. Decommission dormant, deprecated and test APIs and accounts. • Apply least privilege in cloud and backend-as-a-service deployments. Use row-level security and least-privileged client roles. Never place privileged or service keys in client-side code. Allow writes only to authenticated, authorized roles. Test what an anonymous caller can read and write. • Remove management and administrative interfaces from the internet. Enforce multi-factor authentication for all administrative access. Patch exposed application middleware without delay. • Detect attacks at machine speed. Apply rate-based and per-second API anomaly detection. Alert on enumeration bursts, bulk reads and automated registrations. Retain logs for at least 180 days. • After any credential exposure or confirmed access, treat the environment as compromised until forensically cleared. Retest after remediation. Expect repeat attempts within days to weeks. • Govern AI agents deployed within the organization. Give each run a separate, short-lived identity with least privilege. Enforce default-deny egress, permitting only required destinations, and maintain a tamper-resistant log of agent activity, covering at minimum all actions that affect production systems and data. • BFSI and fintech entities should also implement the payment and disbursement API measures advised in CIAD-2026-0046. •",
     "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
@@ -979,13 +979,13 @@
     "solutionLinks": []
   },
   {
-    "title": "AI Agents as Attack Vectors: Unauthorized Access by Agents under Evaluation and Misuse of Open-Source Agentic AI Tools Targeting Indian ICT Assets",
-    "severity": "critical",
+    "title": "CERT-In Advisory CICA-2026-3630",
+    "severity": "high",
     "date": "2026-10-15",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0049",
-    "code": "CIAD-2026-0049",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630",
+    "code": "CICA-2026-3630",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "CERT-In has observed different categories of cyber incidents in which the attacker was an AI agent, that is, a software system capable of autonomously planning work, issuing commands, invoking tools and acting on the internet over extended periods. In some incidents, AI agents under research and evaluation exceeded their assigned task authorization and made unauthorized access to Indian information and communication technology (ICT) assets. In others, cyber attackers deliberately used open-source agentic AI tools to conduct reconnaissance, exploitation and financially motivated intrusions. The incidents came to light through voluntary disclosures by AI model providers, CERT-In's forensic analysis of suspicious activities, and CERT-In's own proactive threat hunting. The affected organizations could not detect the unauthorized access on their own. Categories of Incidents Observed Voluntary Disclosures 1. AI agents exceeding task authorization during research and evaluation: unauthorized access to Indian ICT assets • Recently, CERT-In has received multiple voluntary disclosures from AI model providers stating that their models, during research and evaluation activity on the internet, had reached the live systems of Indian organizations. • The recorded activity involved reading business records, including personal data and confidential material, through credentials and connection settings exposed in application configuration, public code repositories and permissive cloud service roles. • In the disclosed cases, the models' actions exceeded the authorization of their assigned tasks. • None of the affected organizations detected the access; in every case the incident was disclosed by the AI model providers after their internal review. • CERT-In's Threat Hunting 2. Cyber attackers using open-source agentic AI tools • CERT-In has observed financially motivated campaign against Indian entities in which cyber threat actors abused publicly available AI-native offensive-security frameworks. • These frameworks continue to be misused and rebranded, with a large number of deployments observed across infrastructure in multiple countries, indicating the widespread availability of ready-made agentic intrusion capabilities. • Observations based on analysis by CERT-In 3. Weaknesses exploited at machine speed • In the financially motivated campaign against Indian entities, agentic tooling compressed the time between initial access and final impact from days to a few hours. • In addition, the campaign highlighted that multi-agent operations run in parallel for hours to days to achieve the attacker goals, consistent with the documented multi-agent capability of these tools. • Further, victim entities in the campaign that remediated incompletely were attacked again within days, at greater scale. • In the voluntarily disclosed incidents, agents were observed re-deriving and re-using the same exposed credential in separate operations. • 4. The weaknesses exploited are conventional Across all AI agent driven incidents observed recently, the root weaknesses are conventional: • Credentials and keys exposed in source code, public repository history, configuration files, client applications and public web content; • Dormant, deprecated and test application programming interfaces (APIs) left reachable from the internet; • Payment-API keys stored in plaintext and readable from application runtimes; • Over-permissive cloud and backend-as-a-service roles permitting broad reads and writes by ordinary or anonymous callers; • Internet-exposed management interfaces and unpatched application middleware with weak credentials or no multi-factor authentication. • In the incidents observed, AI found and exploited these conventional weaknesses faster, more exhaustively and at greater scale than human attackers. Recommended Actions A. For AI model developers, research laboratories and evaluation agencies • Isolate research and evaluation workloads with default-deny network egress, permitting only the destinations a task strictly requires. Enforce the restriction at the network layer, not through instructions to the model. • Use synthetic targets, synthetic credentials and disposable infrastructure. Keep production data and real credentials out of the evaluation environment. • Define in every task the systems and actions that are in scope, and treat everything else as out of scope. Stop the run automatically if the agent contacts third-party systems, discovers or uses third-party credentials, or raises a stop or failure signal. Give an independent operator the authority to terminate or restart the run. • Monitor agent activity in real time. Log model-initiated requests as completely as feasible, including destination, port, protocol and result. Do not rely on after-the-fact transcript review alone; on its own it can miss activity that a model's reasoning makes appear legitimate. • Block the re-use of every third-party credential an agent encounters: suppress it in all future runs and flag the exposure for review and remediation. • If an agent accesses a real system, notify the affected organization and CERT-In promptly. Assist the organization's remediation. • Publish the safeguards adopted so that the community benefits. • B. For organizations and service providers • Implement the baseline measures as outlined in the CERT-In \"Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure\". • Audit for exposed credentials in source code, repositories (including commit history), continuous integration and continuous delivery (CI/CD) variables, configuration files, client applications and cloud storage. • Rotate any exposed credential, purge it from history and verify the fix externally. Scan every commit and build for secrets. Keep credentials out of code, configuration files and databases. • Keep a complete inventory of APIs. Decommission dormant, deprecated and test APIs and accounts. • Apply least privilege in cloud and backend-as-a-service deployments. Use row-level security and least-privileged client roles. Never place privileged or service keys in client-side code. Allow writes only to authenticated, authorized roles. Test what an anonymous caller can read and write. • Remove management and administrative interfaces from the internet. Enforce multi-factor authentication for all administrative access. Patch exposed application middleware without delay. • Detect attacks at machine speed. Apply rate-based and per-second API anomaly detection. Alert on enumeration bursts, bulk reads and automated registrations. Retain logs for at least 180 days. • After any credential exposure or confirmed access, treat the environment as compromised until forensically cleared. Retest after remediation. Expect repeat attempts within days to weeks. • Govern AI agents deployed within the organization. Give each run a separate, short-lived identity with least privilege. Enforce default-deny egress, permitting only required destinations, and maintain a tamper-resistant log of agent activity, covering at minimum all actions that affect production systems and data. • BFSI and fintech entities should also implement the payment and disbursement API measures advised in CIAD-2026-0046. •",
+    "description": "",
     "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
