@@ -1,20 +1,40 @@
 [
   {
-    "title": "DLL Sideloading Vulnerability in Siemens Software Center",
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
     "severity": "high",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0527",
-    "code": "CIVN-2026-0527",
-    "summary": "A vulnerability has been reported in Siemens Software Center which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Siemens Software Center is a software management tool. This vulnerability exists in Siemens Software Center due to uncontrolled search path element. A remote attacker could exploit these vulnerabilities by persuading a victim to open a malicious file. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-110936) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "Siemens Software Center versions prior to V4.0.9.8"
-    ],
-    "targetAudience": "All organizations and individuals using Siemens Software Center.",
-    "riskAssessment": "High risk of arbitrary code execution.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
     "cves": [
-      "CVE-2026-110936"
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in PHP",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
+    "code": "CIVN-2026-0528",
+    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "PHP 8.2 versions prior to 8.2.35",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.5 versions prior to 8.5.12"
+    ],
+    "targetAudience": "Administrators and users of PHP-based web applications.",
+    "riskAssessment": "High risk of information disclosure and remote code execution.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-109619"
     ],
     "solutionLinks": []
   },
@@ -36,6 +56,25 @@
     "impactAssessment": "Potential for unauthorized access to sensitive orchestrator data and information it manages, disruption or compromise of the VCO host.",
     "cves": [
       "CVE-2026-114625"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "DLL Sideloading Vulnerability in Siemens Software Center",
+    "severity": "high",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0527",
+    "code": "CIVN-2026-0527",
+    "summary": "A vulnerability has been reported in Siemens Software Center which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Siemens Software Center is a software management tool. This vulnerability exists in Siemens Software Center due to uncontrolled search path element. A remote attacker could exploit these vulnerabilities by persuading a victim to open a malicious file. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-110936) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "Siemens Software Center versions prior to V4.0.9.8"
+    ],
+    "targetAudience": "All organizations and individuals using Siemens Software Center.",
+    "riskAssessment": "High risk of arbitrary code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-110936"
     ],
     "solutionLinks": []
   },
@@ -246,29 +285,6 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in F5 Products",
     "severity": "critical",
     "date": "2026-10-22",
@@ -294,6 +310,135 @@
       "CVE-2026-15176",
       "CVE-2026-97205",
       "CVE-2026-93479"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0514",
+    "code": "CIVN-2026-0514",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products which could allow a remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products due to improper authorization, missing authentication, improper certificate validation, security weaknesses, and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted systems. Successful exploitation of these vulnerabilities could allow a remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using affected Microsoft products.",
+    "riskAssessment": "Critical risk of arbitrary code execution, privilege escalation, security feature bypass, sensitive information disclosure and compromise of affected systems.",
+    "impactAssessment": "Potential for arbitrary code execution, privilege escalation, unauthorized access to or modification of sensitive information and files, security feature bypass and denial-of-service (DoS) conditions.",
+    "cves": [
+      "CVE-2026-96202",
+      "CVE-2026-109461",
+      "CVE-2026-80092",
+      "CVE-2026-109468",
+      "CVE-2026-108455",
+      "CVE-2026-108454",
+      "CVE-2026-108453",
+      "CVE-2026-108452",
+      "CVE-2026-108451",
+      "CVE-2026-108450",
+      "CVE-2026-108449",
+      "CVE-2026-108448",
+      "CVE-2026-108447",
+      "CVE-2026-108446",
+      "CVE-2026-108445",
+      "CVE-2026-108444",
+      "CVE-2026-108443",
+      "CVE-2026-108442",
+      "CVE-2026-108441",
+      "CVE-2026-108440",
+      "CVE-2026-108439",
+      "CVE-2026-108438",
+      "CVE-2026-108437",
+      "CVE-2026-108436",
+      "CVE-2026-108435",
+      "CVE-2026-108434",
+      "CVE-2026-108433",
+      "CVE-2026-108432",
+      "CVE-2026-108431",
+      "CVE-2026-108430",
+      "CVE-2026-108429",
+      "CVE-2026-108428",
+      "CVE-2026-108427",
+      "CVE-2026-108426"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Node.js",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0512",
+    "code": "CIVN-2026-0512",
+    "summary": "Multiple vulnerabilities have been reported in Node.js which could allow a remote attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Node.js is an open-source, cross-platform JavaScript runtime environment that enables developers to build scalable server-side and network applications using JavaScript. These vulnerabilities exist in Node.js due to memory corruption, improper certificate validation, improper input validation, and access control weakness. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "Node.js 26.x prior to v26.12.1",
+      "Node.js 24.x prior to v24.22.1",
+      "Node.js 22.x prior to v22.23.4"
+    ],
+    "targetAudience": "All organizations and individuals using Node.js.",
+    "riskAssessment": "High risk of remote code execution, bypass of security restrictions, and denial of service.",
+    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
+    "cves": [
+      "CVE-2026-105482",
+      "CVE-2026-105483",
+      "CVE-2026-106069",
+      "CVE-2026-111497",
+      "CVE-2026-105481",
+      "CVE-2026-106072",
+      "CVE-2026-106074",
+      "CVE-2026-106070",
+      "CVE-2026-106071",
+      "CVE-2026-106073"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
+    "code": "CIVN-2026-0511",
+    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
+    "cves": [
+      "CVE-2026-114573",
+      "CVE-2026-114530",
+      "CVE-2026-114524",
+      "CVE-2026-114525",
+      "CVE-2026-114526",
+      "CVE-2026-114528",
+      "CVE-2026-114527",
+      "CVE-2026-114523",
+      "CVE-2026-108099",
+      "CVE-2026-110738"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
     ],
     "solutionLinks": []
   },
@@ -359,32 +504,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0511",
-    "code": "CIVN-2026-0511",
-    "summary": "Multiple vulnerabilities have been reported in various contributed modules and themes of Drupal, which could allow an attacker to execute arbitrary code, conduct cross-site scripting (XSS) attacks or disclose sensitive information.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various modules of Drupal due to unsafe PHP object deserialization, insufficient input validation and sanitization, inadequate access checks or improper handling of user-supplied data. An attacker could exploit these vulnerabilities by executing specially crafted requests or malicious input. Successful exploitation could result in remote code execution, cross-site scripting or unauthorized disclosure of information, leading to further compromise of affected websites.",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise.",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites.",
-    "cves": [
-      "CVE-2026-114573",
-      "CVE-2026-114530",
-      "CVE-2026-114524",
-      "CVE-2026-114525",
-      "CVE-2026-114526",
-      "CVE-2026-114528",
-      "CVE-2026-114527",
-      "CVE-2026-114523",
-      "CVE-2026-108099",
-      "CVE-2026-110738"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -404,36 +523,6 @@
     "cves": [
       "CVE-2026-109618",
       "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Node.js",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0512",
-    "code": "CIVN-2026-0512",
-    "summary": "Multiple vulnerabilities have been reported in Node.js which could allow a remote attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Node.js is an open-source, cross-platform JavaScript runtime environment that enables developers to build scalable server-side and network applications using JavaScript. These vulnerabilities exist in Node.js due to memory corruption, improper certificate validation, improper input validation, and access control weakness. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "Node.js 26.x prior to v26.12.1",
-      "Node.js 24.x prior to v24.22.1",
-      "Node.js 22.x prior to v22.23.4"
-    ],
-    "targetAudience": "All organizations and individuals using Node.js.",
-    "riskAssessment": "High risk of remote code execution, bypass of security restrictions, and denial of service.",
-    "impactAssessment": "Potential for complete system compromise, denial of service, and bypass of security mechanisms.",
-    "cves": [
-      "CVE-2026-105482",
-      "CVE-2026-105483",
-      "CVE-2026-106069",
-      "CVE-2026-111497",
-      "CVE-2026-105481",
-      "CVE-2026-106072",
-      "CVE-2026-106074",
-      "CVE-2026-106070",
-      "CVE-2026-106071",
-      "CVE-2026-106073"
     ],
     "solutionLinks": []
   },
@@ -490,53 +579,18 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "title": "CERT-In Advisory CICA-2026-3649",
     "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0514",
-    "code": "CIVN-2026-0514",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products which could allow a remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products due to improper authorization, missing authentication, improper certificate validation, security weaknesses, and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted systems. Successful exploitation of these vulnerabilities could allow a remote attacker to elevate privileges, execute arbitrary code, disclose sensitive information, perform spoofing or cause denial of services on the affected systems.",
+    "date": "2026-10-21",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3649",
+    "code": "CICA-2026-3649",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "",
     "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using affected Microsoft products.",
-    "riskAssessment": "Critical risk of arbitrary code execution, privilege escalation, security feature bypass, sensitive information disclosure and compromise of affected systems.",
-    "impactAssessment": "Potential for arbitrary code execution, privilege escalation, unauthorized access to or modification of sensitive information and files, security feature bypass and denial-of-service (DoS) conditions.",
-    "cves": [
-      "CVE-2026-96202",
-      "CVE-2026-109461",
-      "CVE-2026-80092",
-      "CVE-2026-109468",
-      "CVE-2026-108455",
-      "CVE-2026-108454",
-      "CVE-2026-108453",
-      "CVE-2026-108452",
-      "CVE-2026-108451",
-      "CVE-2026-108450",
-      "CVE-2026-108449",
-      "CVE-2026-108448",
-      "CVE-2026-108447",
-      "CVE-2026-108446",
-      "CVE-2026-108445",
-      "CVE-2026-108444",
-      "CVE-2026-108443",
-      "CVE-2026-108442",
-      "CVE-2026-108441",
-      "CVE-2026-108440",
-      "CVE-2026-108439",
-      "CVE-2026-108438",
-      "CVE-2026-108437",
-      "CVE-2026-108436",
-      "CVE-2026-108435",
-      "CVE-2026-108434",
-      "CVE-2026-108433",
-      "CVE-2026-108432",
-      "CVE-2026-108431",
-      "CVE-2026-108430",
-      "CVE-2026-108429",
-      "CVE-2026-108428",
-      "CVE-2026-108427",
-      "CVE-2026-108426"
-    ],
+    "targetAudience": "Government departments, organisations, enterprises, internet service providers, software vendors, website administrators, application developers, system and network administrators, operators of embedded devices, and users relying on TLS certificates and affected certificate trust stores. Best Practices • Apply security updates: Update Firefox, Firefox ESR, Chrome, supported Android components, and other affected browsers, applications and operating systems to the latest security releases provided by their respective vendors. • Update certificate trust stores: Ensure that operating systems, applications, servers and devices receive the latest certificate revocation and distrust information from their respective vendors. Verify that affected certificate chains are rejected by the relevant clients. • Review certificate dependencies: Identify certificates and services chaining to the affected intermediate CAs or emSign ECC Root CA - G3. Assess the impact of the intermediate-certificate blocking measures and root-store changes on websites, applications and other dependent services. Include relevant cross-signed certificate chains in the review. • Replace affected certificates: Obtain replacement TLS certificates from a trusted, unaffected PKI hierarchy where required. Administrators should also replace otherwise legitimate certificates chaining to emSign ECC Root CA - G3 if they will no longer be trusted by the relevant clients. • Verify TLS certificates: Validate certificate chains, issuer information, validity periods and revocation status. Do not bypass certificate-validation warnings or disable certificate verification. Confirm that applications reject certificates chaining through the compromised intermediate CA keys. • Monitor certificate issuance: Monitor Certificate Transparency logs and security alerts for unauthorised certificate issuance, unexpected certificate changes and other suspicious activity involving affected domains or services. CT monitoring should supplement, rather than replace, certificate revocation and trust-store controls. • Review independent certificate trust stores: Examine applications, programming-language runtimes, container images, TLS libraries, network appliances and embedded systems that maintain separate CA certificate bundles or do not reliably check certificate revocation. Apply applicable vendor updates and redeploy affected components where necessary. • Review code-signing trust: Software vendors and administrators should verify the trust and revocation status of relevant code-signing certificate chains and use additional software integrity and provenance checks where appropriate. • Strengthen CA key management: Certification authorities should use approved cryptographically secure random number generators, implement appropriate hardware security module (HSM) controls, and review key-generation procedures and key-lifecycle management to prevent recurrence of similar weaknesses. Independent verification of generated key parameters, key identifiers, certificate-signing request (CSR) mappings and maker-checker controls should form part of the key-generation process. • Maintain secure configurations: Ensure that applications, embedded devices and other systems receive timely security and trust-store updates. Where vendor support is unavailable, assess exposure and implement appropriate compensating controls. •",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -560,21 +614,6 @@
       "CVE-2026-109618",
       "CVE-2026-109619"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3649",
-    "severity": "high",
-    "date": "2026-10-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3649",
-    "code": "CICA-2026-3649",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "",
-    "softwareAffected": "",
-    "targetAudience": "Government departments, organisations, enterprises, internet service providers, software vendors, website administrators, application developers, system and network administrators, operators of embedded devices, and users relying on TLS certificates and affected certificate trust stores. Best Practices • Apply security updates: Update Firefox, Firefox ESR, Chrome, supported Android components, and other affected browsers, applications and operating systems to the latest security releases provided by their respective vendors. • Update certificate trust stores: Ensure that operating systems, applications, servers and devices receive the latest certificate revocation and distrust information from their respective vendors. Verify that affected certificate chains are rejected by the relevant clients. • Review certificate dependencies: Identify certificates and services chaining to the affected intermediate CAs or emSign ECC Root CA - G3. Assess the impact of the intermediate-certificate blocking measures and root-store changes on websites, applications and other dependent services. Include relevant cross-signed certificate chains in the review. • Replace affected certificates: Obtain replacement TLS certificates from a trusted, unaffected PKI hierarchy where required. Administrators should also replace otherwise legitimate certificates chaining to emSign ECC Root CA - G3 if they will no longer be trusted by the relevant clients. • Verify TLS certificates: Validate certificate chains, issuer information, validity periods and revocation status. Do not bypass certificate-validation warnings or disable certificate verification. Confirm that applications reject certificates chaining through the compromised intermediate CA keys. • Monitor certificate issuance: Monitor Certificate Transparency logs and security alerts for unauthorised certificate issuance, unexpected certificate changes and other suspicious activity involving affected domains or services. CT monitoring should supplement, rather than replace, certificate revocation and trust-store controls. • Review independent certificate trust stores: Examine applications, programming-language runtimes, container images, TLS libraries, network appliances and embedded systems that maintain separate CA certificate bundles or do not reliably check certificate revocation. Apply applicable vendor updates and redeploy affected components where necessary. • Review code-signing trust: Software vendors and administrators should verify the trust and revocation status of relevant code-signing certificate chains and use additional software integrity and provenance checks where appropriate. • Strengthen CA key management: Certification authorities should use approved cryptographically secure random number generators, implement appropriate hardware security module (HSM) controls, and review key-generation procedures and key-lifecycle management to prevent recurrence of similar weaknesses. Independent verification of generated key parameters, key identifiers, certificate-signing request (CSR) mappings and maker-checker controls should form part of the key-generation process. • Maintain secure configurations: Ensure that applications, embedded devices and other systems receive timely security and trust-store updates. Where vendor support is unavailable, assess exposure and implement appropriate compensating controls. •",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
