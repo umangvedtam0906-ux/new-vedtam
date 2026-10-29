@@ -97,6 +97,23 @@
     "solutionLinks": []
   },
   {
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "severity": "high",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "cves": [
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Apple Products",
     "severity": "high",
     "date": "2026-10-27",
@@ -305,23 +322,6 @@
     "solutionLinks": []
   },
   {
-    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
-    "severity": "high",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
-    "code": "CIVN-2026-0529",
-    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
-    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
-    "riskAssessment": "Manipulation of application logic and information disclosure.",
-    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
-    "cves": [
-      "CVE-2026-114358"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in PHP",
     "severity": "critical",
     "date": "2026-10-27",
@@ -362,41 +362,21 @@
     "solutionLinks": []
   },
   {
-    "title": "VeloCloud Orchestrator (VCO) SQL Injection Vulnerability",
-    "severity": "critical",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0525",
-    "code": "CIVN-2026-0525",
-    "summary": "A vulnerability has been reported in VeloCloud Orchestrator (VCO), which could allow a remote attacker to escalate privileges and gain unauthorized access to privileged functionality on affected systems.",
-    "description": "VeloCloud Orchestrator (VCO) is a centralized management and orchestration platform used to configure, monitor, and manage VMware VeloCloud SD-WAN networks, including edge devices, network policies, and connectivity across distributed sites. A vulnerability exist in VeloCloud Orchestrator (VCO) due to improper neutralization of special elements used in SQL commands. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted VCO web interface using a valid authenticated session. Successful exploitation of this vulnerability may compromise the confidentiality, integrity, and availability of the orchestrator and the data it manages. Note: This vulnerability (CVE-2026-114625) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "VeloCloud Orchestrator On-Prem 5.2.x prior to 5.2.3.18",
-      "VeloCloud Orchestrator On-Prem 6.1.x prior to 6.1.3.10",
-      "VeloCloud Orchestrator On-Prem 6.4.x prior to 6.4.2.12"
-    ],
-    "targetAudience": "Network Administrators, IT Security Professionals, and organizations operating affected on-premises Velo-Cloud Orchestrator (VCO) deployments.",
-    "riskAssessment": "High risk of privilege escalation, data compromise, disruption of network management services.",
-    "impactAssessment": "Potential for unauthorized access to sensitive orchestrator data and information it manages, disruption or compromise of the VCO host.",
-    "cves": [
-      "CVE-2026-114625"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in CreditNirvana Products",
+    "title": "DLL Sideloading Vulnerability in Siemens Software Center",
     "severity": "high",
     "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0523",
-    "code": "CIVN-2026-0523",
-    "summary": "Multiple vulnerabilities have been reported in CreditNirvana, which could allow an unauthenticated remote attacker to bypass authentication controls, access sensitive information and perform actions with the privileges of an impersonated user.",
-    "description": "CreditNirvana Agentic AI Call Centre is an application with associated REST APIs for accessing call related information. CreditNirvana Collections Platform provides authentication, user management and API based functionality for collection related operations across tenant deployments. 1. Hardcoded API Key Vulnerability ( CVE-2026-110474 ) This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system. 2. Improper Authentication Vulnerability ( CVE-2026-110475 ) This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user. Credit These vulnerabilities are reported by Eaton Zveare.",
-    "softwareAffected": "",
-    "targetAudience": "Organizations, system administrators and maintainers of the affected platform.",
-    "riskAssessment": "Risk of authentication bypass, unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
-    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0527",
+    "code": "CIVN-2026-0527",
+    "summary": "A vulnerability has been reported in Siemens Software Center which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Siemens Software Center is a software management tool. This vulnerability exists in Siemens Software Center due to uncontrolled search path element. A remote attacker could exploit these vulnerabilities by persuading a victim to open a malicious file. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-110936) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "Siemens Software Center versions prior to V4.0.9.8"
+    ],
+    "targetAudience": "All organizations and individuals using Siemens Software Center.",
+    "riskAssessment": "High risk of arbitrary code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
     "cves": [
-      "CVE-2026-110474",
-      "CVE-2026-110475"
+      "CVE-2026-110936"
     ],
     "solutionLinks": []
   },
@@ -419,21 +399,41 @@
     "solutionLinks": []
   },
   {
-    "title": "DLL Sideloading Vulnerability in Siemens Software Center",
+    "title": "Multiple Vulnerabilities in CreditNirvana Products",
     "severity": "high",
     "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0527",
-    "code": "CIVN-2026-0527",
-    "summary": "A vulnerability has been reported in Siemens Software Center which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Siemens Software Center is a software management tool. This vulnerability exists in Siemens Software Center due to uncontrolled search path element. A remote attacker could exploit these vulnerabilities by persuading a victim to open a malicious file. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-110936) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "Siemens Software Center versions prior to V4.0.9.8"
-    ],
-    "targetAudience": "All organizations and individuals using Siemens Software Center.",
-    "riskAssessment": "High risk of arbitrary code execution.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0523",
+    "code": "CIVN-2026-0523",
+    "summary": "Multiple vulnerabilities have been reported in CreditNirvana, which could allow an unauthenticated remote attacker to bypass authentication controls, access sensitive information and perform actions with the privileges of an impersonated user.",
+    "description": "CreditNirvana Agentic AI Call Centre is an application with associated REST APIs for accessing call related information. CreditNirvana Collections Platform provides authentication, user management and API based functionality for collection related operations across tenant deployments. 1. Hardcoded API Key Vulnerability ( CVE-2026-110474 ) This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system. 2. Improper Authentication Vulnerability ( CVE-2026-110475 ) This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user. Credit These vulnerabilities are reported by Eaton Zveare.",
+    "softwareAffected": "",
+    "targetAudience": "Organizations, system administrators and maintainers of the affected platform.",
+    "riskAssessment": "Risk of authentication bypass, unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
+    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
     "cves": [
-      "CVE-2026-110936"
+      "CVE-2026-110474",
+      "CVE-2026-110475"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "VeloCloud Orchestrator (VCO) SQL Injection Vulnerability",
+    "severity": "critical",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0525",
+    "code": "CIVN-2026-0525",
+    "summary": "A vulnerability has been reported in VeloCloud Orchestrator (VCO), which could allow a remote attacker to escalate privileges and gain unauthorized access to privileged functionality on affected systems.",
+    "description": "VeloCloud Orchestrator (VCO) is a centralized management and orchestration platform used to configure, monitor, and manage VMware VeloCloud SD-WAN networks, including edge devices, network policies, and connectivity across distributed sites. A vulnerability exist in VeloCloud Orchestrator (VCO) due to improper neutralization of special elements used in SQL commands. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted VCO web interface using a valid authenticated session. Successful exploitation of this vulnerability may compromise the confidentiality, integrity, and availability of the orchestrator and the data it manages. Note: This vulnerability (CVE-2026-114625) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "VeloCloud Orchestrator On-Prem 5.2.x prior to 5.2.3.18",
+      "VeloCloud Orchestrator On-Prem 6.1.x prior to 6.1.3.10",
+      "VeloCloud Orchestrator On-Prem 6.4.x prior to 6.4.2.12"
+    ],
+    "targetAudience": "Network Administrators, IT Security Professionals, and organizations operating affected on-premises Velo-Cloud Orchestrator (VCO) deployments.",
+    "riskAssessment": "High risk of privilege escalation, data compromise, disruption of network management services.",
+    "impactAssessment": "Potential for unauthorized access to sensitive orchestrator data and information it manages, disruption or compromise of the VCO host.",
+    "cves": [
+      "CVE-2026-114625"
     ],
     "solutionLinks": []
   },
@@ -455,6 +455,21 @@
     "cves": [
       "CVE-2026-92392"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Fortinet Products",
+    "severity": "high",
+    "date": "2026-10-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
+    "code": "CIAD-2026-0054",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -480,21 +495,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Fortinet Products",
-    "severity": "high",
-    "date": "2026-10-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
-    "code": "CIAD-2026-0054",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Directory Traversal Vulnerability in FortiSIEM",
     "severity": "critical",
     "date": "2026-10-23",
@@ -510,6 +510,34 @@
     "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
     "cves": [
       "CVE-2026-106173"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
+    "code": "CIVN-2026-0520",
+    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
+      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
+      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
+      "MongoDB libmongocrypt versions prior to 1.20.5"
+    ],
+    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
+    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-112368",
+      "CVE-2026-104005",
+      "CVE-2026-96299",
+      "CVE-2026-104004",
+      "CVE-2026-107325",
+      "CVE-2026-107324",
+      "CVE-2026-106433"
     ],
     "solutionLinks": []
   },
@@ -580,30 +608,73 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
-    "code": "CIVN-2026-0520",
-    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "title": "Multiple Vulnerabilities in F5 Products",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
+    "code": "CIVN-2026-0517",
+    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
+    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
     "softwareAffected": [
-      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
-      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
-      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
-      "MongoDB libmongocrypt versions prior to 1.20.5"
+      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
+      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
+      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
+      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
+      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
+      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
+      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
+      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
+      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
     ],
-    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
-    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
-    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
+    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
+    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
     "cves": [
-      "CVE-2026-112368",
-      "CVE-2026-104005",
-      "CVE-2026-96299",
-      "CVE-2026-104004",
-      "CVE-2026-107325",
-      "CVE-2026-107324",
-      "CVE-2026-106433"
+      "CVE-2026-15176",
+      "CVE-2026-97205",
+      "CVE-2026-93479"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Cisco Expressway Series",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0515",
+    "code": "CIVN-2026-0515",
+    "summary": "A vulnerability has been reported in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as root.",
+    "description": "The Cisco Expressway Series is a collaboration",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using Cisco Expressway Series.",
+    "riskAssessment": "Critical risks on system confidentiality, integrity, and availability of the system.",
+    "impactAssessment": "Potential for unauthorized access, sensitive information disclosure, and arbitrary code execution.",
+    "cves": [
+      "CVE-2026-76466"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Core",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0513",
+    "code": "CIVN-2026-0513",
+    "summary": "Multiple vulnerabilities have been reported in Drupal core, including a critical remote code execution vulnerability in the Field UI module and two cross-site scripting (XSS) vulnerabilities in the Link and Navigation modules. Successful exploitation could allow an attacker to execute arbitrary code or inject malicious scripts into affected Drupal websites.",
+    "description": "Drupal is an open-source content management system used to build and manage websites and web applications. Multiple vulnerabilities exist in Drupal core. The Field UI module contains a remote code execution vulnerability that may be exploitable through contributed modules or custom code, with at least one known exploitation path not requiring authentication. Additionally, the Link module insufficiently sanitizes certain markup, while the Navigation module fails to adequately sanitize specific attributes, potentially resulting in cross-site scripting (XSS). Successful exploitation could allow an attacker to execute arbitrary code on the server or inject malicious scripts into users browsers, potentially resulting in unauthorized operations, compromise of affected websites, or exposure of sensitive information.",
+    "softwareAffected": [
+      "Drupal Core versions between 8.9.0 and 10.6.18.",
+      "Drupal Core versions between 11.0.0 and 11.3.18.",
+      "Drupal Core versions between 11.4.0 and 11.4.9.",
+      "Drupal Core versions from 12.0.0-alpha1 to versions prior to 12.0.0-beta2.",
+      "Drupal 8 and Drupal 9 are end-of-life and no longer receive security coverage."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of Drupal core.",
+    "riskAssessment": "Critical risk of remote code execution and unauthorized script execution, potentially leading to compromise of affected Drupal websites.",
+    "impactAssessment": "Successful exploitation could allow arbitrary code execution on the server or execution of malicious scripts in users' browsers, potentially compromising system integrity and exposing sensitive information.",
+    "cves": [
+      "CVE-2026-108097",
+      "CVE-2026-108514",
+      "CVE-2026-108515"
     ],
     "solutionLinks": []
   },
@@ -667,60 +738,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in F5 Products",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
-    "code": "CIVN-2026-0517",
-    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
-    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
-    "softwareAffected": [
-      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
-      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
-      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
-      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
-      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
-      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
-      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
-      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
-      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
-    ],
-    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
-    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
-    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-15176",
-      "CVE-2026-97205",
-      "CVE-2026-93479"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Drupal Core",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0513",
-    "code": "CIVN-2026-0513",
-    "summary": "Multiple vulnerabilities have been reported in Drupal core, including a critical remote code execution vulnerability in the Field UI module and two cross-site scripting (XSS) vulnerabilities in the Link and Navigation modules. Successful exploitation could allow an attacker to execute arbitrary code or inject malicious scripts into affected Drupal websites.",
-    "description": "Drupal is an open-source content management system used to build and manage websites and web applications. Multiple vulnerabilities exist in Drupal core. The Field UI module contains a remote code execution vulnerability that may be exploitable through contributed modules or custom code, with at least one known exploitation path not requiring authentication. Additionally, the Link module insufficiently sanitizes certain markup, while the Navigation module fails to adequately sanitize specific attributes, potentially resulting in cross-site scripting (XSS). Successful exploitation could allow an attacker to execute arbitrary code on the server or inject malicious scripts into users browsers, potentially resulting in unauthorized operations, compromise of affected websites, or exposure of sensitive information.",
-    "softwareAffected": [
-      "Drupal Core versions between 8.9.0 and 10.6.18.",
-      "Drupal Core versions between 11.0.0 and 11.3.18.",
-      "Drupal Core versions between 11.4.0 and 11.4.9.",
-      "Drupal Core versions from 12.0.0-alpha1 to versions prior to 12.0.0-beta2.",
-      "Drupal 8 and Drupal 9 are end-of-life and no longer receive security coverage."
-    ],
-    "targetAudience": "All organizations and individuals using affected versions of Drupal core.",
-    "riskAssessment": "Critical risk of remote code execution and unauthorized script execution, potentially leading to compromise of affected Drupal websites.",
-    "impactAssessment": "Successful exploitation could allow arbitrary code execution on the server or execution of malicious scripts in users' browsers, potentially compromising system integrity and exposing sensitive information.",
-    "cves": [
-      "CVE-2026-108097",
-      "CVE-2026-108514",
-      "CVE-2026-108515"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-10-22",
@@ -775,23 +792,6 @@
     "cves": [
       "CVE-2026-109618",
       "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Cisco Expressway Series",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0515",
-    "code": "CIVN-2026-0515",
-    "summary": "A vulnerability has been reported in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as root.",
-    "description": "The Cisco Expressway Series is a collaboration",
-    "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using Cisco Expressway Series.",
-    "riskAssessment": "Critical risks on system confidentiality, integrity, and availability of the system.",
-    "impactAssessment": "Potential for unauthorized access, sensitive information disclosure, and arbitrary code execution.",
-    "cves": [
-      "CVE-2026-76466"
     ],
     "solutionLinks": []
   },
