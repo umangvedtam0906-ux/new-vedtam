@@ -1,5 +1,24 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Mozilla Products",
+    "severity": "critical",
+    "date": "2026-10-30",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0533",
+    "code": "CIVN-2026-0533",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla products which could allow a remote attacker to gain elevated privileges, bypass security restrictions, disclose sensitive information, manipulate data, and conduct spoofing attacks on the targeted system.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation, while Firefox ESR (Extended Support Release) is a stable version designed for organizations requiring long-term support with security and maintenance updates. Mozilla Thunderbird is an open-source email client developed by the Mozilla Foundation. Multiple vulnerabilities have been reported in Mozilla products due to use-after-free, memory safety issues, incorrect boundary conditions, uninitialized memory, race condition, privilege escalation flaws, Same-origin policy bypass issues and more across various components, including browser navigation, networking, memory management, JavaScript processing, application security mechanisms, and others. Successful exploitation of these vulnerabilities could allow a remote attacker to gain elevated privileges, bypass security restrictions, disclose sensitive information, manipulate data, and conduct spoofing attacks on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 159",
+      "Mozilla Firefox ESR versions prior to 115.44 and 153.6",
+      "Mozilla Thunderbird versions prior to 153.6 and 159"
+    ],
+    "targetAudience": "All organizations and individuals using the affected Mozilla Firefox, Firefox ESR, and Thunderbird products.",
+    "riskAssessment": "Risk of privilege escalation, security restriction bypass, sensitive information disclosure.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, privilege escalation, spoofing, data manipulation.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Apache Tomcat",
     "severity": "critical",
     "date": "2026-10-29",
@@ -18,6 +37,32 @@
     "cves": [
       "CVE-2026-101356",
       "CVE-2026-101296"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Zoom Workplace Clients",
+    "severity": "high",
+    "date": "2026-10-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0530",
+    "code": "CIVN-2026-0530",
+    "summary": "Multiple vulnerabilities have been reported in Zoom Workplace Clients, which could be exploited by an attacker to trigger elevation of privilege and obtain sensitive information on the targeted system.",
+    "description": "Zoom Workplace is a unified collaboration platform that provides video conferencing, team chat, phone, whiteboard, mail, calendar, and other productivity services across desktop, mobile, and virtual desktop infrastructure (VDI) environments. Multiple vulnerabilities exist in Zoom Workplace Clients due to improper certificate validation, buffer overflow and improper authorization issues. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could be exploited by an attacker to trigger elevation of privilege and obtain sensitive information on the targeted system.",
+    "softwareAffected": [
+      "Zoom Workplace for Android versions prior to 7.2.1",
+      "Zoom Workplace for Windows, MacOS and Linux versions prior to 7.2.0 (including the 7.1.9 branch)",
+      "Zoom Workplace for iOS versions prior to 7.2.0",
+      "Zoom Workplace VDI Client for Windows versions 7.0.11 up to 7.0.13",
+      "Zoom Rooms for Windows versions 7.0.0 up to 7.1.7"
+    ],
+    "targetAudience": "All end-user organisations and individuals using Zoom applications.",
+    "riskAssessment": "Risk of sensitive information disclosure and privilege escalation.",
+    "impactAssessment": "Potential for unauthorized access.",
+    "cves": [
+      "CVE-2026-108185",
+      "CVE-2026-108184",
+      "CVE-2026-53420",
+      "CVE-2026-53418"
     ],
     "solutionLinks": []
   },
@@ -49,32 +94,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Zoom Workplace Clients",
-    "severity": "high",
-    "date": "2026-10-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0530",
-    "code": "CIVN-2026-0530",
-    "summary": "Multiple vulnerabilities have been reported in Zoom Workplace Clients, which could be exploited by an attacker to trigger elevation of privilege and obtain sensitive information on the targeted system.",
-    "description": "Zoom Workplace is a unified collaboration platform that provides video conferencing, team chat, phone, whiteboard, mail, calendar, and other productivity services across desktop, mobile, and virtual desktop infrastructure (VDI) environments. Multiple vulnerabilities exist in Zoom Workplace Clients due to improper certificate validation, buffer overflow and improper authorization issues. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could be exploited by an attacker to trigger elevation of privilege and obtain sensitive information on the targeted system.",
-    "softwareAffected": [
-      "Zoom Workplace for Android versions prior to 7.2.1",
-      "Zoom Workplace for Windows, MacOS and Linux versions prior to 7.2.0 (including the 7.1.9 branch)",
-      "Zoom Workplace for iOS versions prior to 7.2.0",
-      "Zoom Workplace VDI Client for Windows versions 7.0.11 up to 7.0.13",
-      "Zoom Rooms for Windows versions 7.0.0 up to 7.1.7"
-    ],
-    "targetAudience": "All end-user organisations and individuals using Zoom applications.",
-    "riskAssessment": "Risk of sensitive information disclosure and privilege escalation.",
-    "impactAssessment": "Potential for unauthorized access.",
-    "cves": [
-      "CVE-2026-108185",
-      "CVE-2026-108184",
-      "CVE-2026-53420",
-      "CVE-2026-53418"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple vulnerabilities in GoAhead Web Server",
     "severity": "critical",
     "date": "2026-10-28",
@@ -93,6 +112,45 @@
     "cves": [
       "CVE-2026-115881",
       "CVE-2026-115884"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "severity": "high",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "cves": [
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in PHP",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
+    "code": "CIVN-2026-0528",
+    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "PHP 8.2 versions prior to 8.2.35",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.5 versions prior to 8.5.12"
+    ],
+    "targetAudience": "Administrators and users of PHP-based web applications.",
+    "riskAssessment": "High risk of information disclosure and remote code execution.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-109619"
     ],
     "solutionLinks": []
   },
@@ -323,41 +381,58 @@
     "solutionLinks": []
   },
   {
-    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "title": "Use-After-Free Vulnerability in curl and libcurl",
     "severity": "high",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
-    "code": "CIVN-2026-0529",
-    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
-    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
-    "riskAssessment": "Manipulation of application logic and information disclosure.",
-    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0526",
+    "code": "CIVN-2026-0526",
+    "summary": "A Use-After-Free vulnerability has been reported in curl and libcurl, which could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition on affected systems.",
+    "description": "curl is a command-line tool and libcurl is a library used for transferring data over various network protocols, including HTTP and HTTPS. A Use-After-Free vulnerability exists in curl and libcurl due to improper handling of HTTP/2 stream reset responses received from a server during data uploads. The vulnerability could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition under specific conditions.",
+    "softwareAffected": [
+      "curl versions 8.12.0 to 8.22.0",
+      "libcurl versions corresponding to the affected releases"
+    ],
+    "targetAudience": "All organizations and administrators using affected versions of curl and libcurl.",
+    "riskAssessment": "High risk of remote code execution and denial of service under specific conditions.",
+    "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
     "cves": [
-      "CVE-2026-114358"
+      "CVE-2026-92392"
     ],
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in PHP",
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
-    "code": "CIVN-2026-0528",
-    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
-    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0524",
+    "code": "CIVN-2026-0524",
+    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Use after free, Memory corruption, Improper input validation, Out of bounds read, Type confusion, Range error, Improper access control, Missing authorization, Information leak and Out of bounds write across multiple components. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
     "softwareAffected": [
-      "PHP 8.2 versions prior to 8.2.35",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.5 versions prior to 8.5.12"
+      "Google Chrome prior to 156.0.8078.47/.48 for Windows and Mac",
+      "Google Chrome prior to 156.0.8078.47 for Linux"
     ],
-    "targetAudience": "Administrators and users of PHP-based web applications.",
-    "riskAssessment": "High risk of information disclosure and remote code execution.",
-    "impactAssessment": "Potential for complete system compromise.",
+    "targetAudience": "All end-user organizations and individuals using the affected Google Chrome for Desktop.",
+    "riskAssessment": "High risk of remote code execution, bypass security restrictions.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in CreditNirvana Products",
+    "severity": "high",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0523",
+    "code": "CIVN-2026-0523",
+    "summary": "Multiple vulnerabilities have been reported in CreditNirvana, which could allow an unauthenticated remote attacker to bypass authentication controls, access sensitive information and perform actions with the privileges of an impersonated user.",
+    "description": "CreditNirvana Agentic AI Call Centre is an application with associated REST APIs for accessing call related information. CreditNirvana Collections Platform provides authentication, user management and API based functionality for collection related operations across tenant deployments. 1. Hardcoded API Key Vulnerability ( CVE-2026-110474 ) This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system. 2. Improper Authentication Vulnerability ( CVE-2026-110475 ) This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user. Credit These vulnerabilities are reported by Eaton Zveare.",
+    "softwareAffected": "",
+    "targetAudience": "Organizations, system administrators and maintainers of the affected platform.",
+    "riskAssessment": "Risk of authentication bypass, unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
+    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
     "cves": [
-      "CVE-2026-109619"
+      "CVE-2026-110474",
+      "CVE-2026-110475"
     ],
     "solutionLinks": []
   },
@@ -402,59 +477,18 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "critical",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0524",
-    "code": "CIVN-2026-0524",
-    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Use after free, Memory corruption, Improper input validation, Out of bounds read, Type confusion, Range error, Improper access control, Missing authorization, Information leak and Out of bounds write across multiple components. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome prior to 156.0.8078.47/.48 for Windows and Mac",
-      "Google Chrome prior to 156.0.8078.47 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected Google Chrome for Desktop.",
-    "riskAssessment": "High risk of remote code execution, bypass security restrictions.",
-    "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in CreditNirvana Products",
+    "title": "Multiple vulnerabilities in Fortinet Products",
     "severity": "high",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0523",
-    "code": "CIVN-2026-0523",
-    "summary": "Multiple vulnerabilities have been reported in CreditNirvana, which could allow an unauthenticated remote attacker to bypass authentication controls, access sensitive information and perform actions with the privileges of an impersonated user.",
-    "description": "CreditNirvana Agentic AI Call Centre is an application with associated REST APIs for accessing call related information. CreditNirvana Collections Platform provides authentication, user management and API based functionality for collection related operations across tenant deployments. 1. Hardcoded API Key Vulnerability ( CVE-2026-110474 ) This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system. 2. Improper Authentication Vulnerability ( CVE-2026-110475 ) This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user. Credit These vulnerabilities are reported by Eaton Zveare.",
+    "date": "2026-10-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
+    "code": "CIAD-2026-0054",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
     "softwareAffected": "",
-    "targetAudience": "Organizations, system administrators and maintainers of the affected platform.",
-    "riskAssessment": "Risk of authentication bypass, unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
-    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
-    "cves": [
-      "CVE-2026-110474",
-      "CVE-2026-110475"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Use-After-Free Vulnerability in curl and libcurl",
-    "severity": "high",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0526",
-    "code": "CIVN-2026-0526",
-    "summary": "A Use-After-Free vulnerability has been reported in curl and libcurl, which could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition on affected systems.",
-    "description": "curl is a command-line tool and libcurl is a library used for transferring data over various network protocols, including HTTP and HTTPS. A Use-After-Free vulnerability exists in curl and libcurl due to improper handling of HTTP/2 stream reset responses received from a server during data uploads. The vulnerability could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition under specific conditions.",
-    "softwareAffected": [
-      "curl versions 8.12.0 to 8.22.0",
-      "libcurl versions corresponding to the affected releases"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of curl and libcurl.",
-    "riskAssessment": "High risk of remote code execution and denial of service under specific conditions.",
-    "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
-    "cves": [
-      "CVE-2026-92392"
-    ],
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -480,45 +514,21 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Fortinet Products",
-    "severity": "high",
-    "date": "2026-10-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
-    "code": "CIAD-2026-0054",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
+    "title": "Directory Traversal Vulnerability in FortiSIEM",
+    "severity": "critical",
     "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
-    "code": "CIVN-2026-0520",
-    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
+    "code": "CIVN-2026-0521",
+    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
+    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
     "softwareAffected": [
-      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
-      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
-      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
-      "MongoDB libmongocrypt versions prior to 1.20.5"
+      "Fortinet FortiSIEM versions prior to 7.5.1"
     ],
-    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
-    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
-    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
+    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
     "cves": [
-      "CVE-2026-112368",
-      "CVE-2026-104005",
-      "CVE-2026-96299",
-      "CVE-2026-104004",
-      "CVE-2026-107325",
-      "CVE-2026-107324",
-      "CVE-2026-106433"
+      "CVE-2026-106173"
     ],
     "solutionLinks": []
   },
@@ -574,21 +584,30 @@
     "solutionLinks": []
   },
   {
-    "title": "Directory Traversal Vulnerability in FortiSIEM",
-    "severity": "critical",
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
     "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
-    "code": "CIVN-2026-0521",
-    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
-    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
+    "code": "CIVN-2026-0520",
+    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
     "softwareAffected": [
-      "Fortinet FortiSIEM versions prior to 7.5.1"
+      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
+      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
+      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
+      "MongoDB libmongocrypt versions prior to 1.20.5"
     ],
-    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
-    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
-    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
+    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
+    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
     "cves": [
-      "CVE-2026-106173"
+      "CVE-2026-112368",
+      "CVE-2026-104005",
+      "CVE-2026-96299",
+      "CVE-2026-104004",
+      "CVE-2026-107325",
+      "CVE-2026-107324",
+      "CVE-2026-106433"
     ],
     "solutionLinks": []
   },
@@ -605,29 +624,6 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
     "solutionLinks": []
   },
   {
@@ -713,89 +709,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Core",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0513",
-    "code": "CIVN-2026-0513",
-    "summary": "Multiple vulnerabilities have been reported in Drupal core, including a critical remote code execution vulnerability in the Field UI module and two cross-site scripting (XSS) vulnerabilities in the Link and Navigation modules. Successful exploitation could allow an attacker to execute arbitrary code or inject malicious scripts into affected Drupal websites.",
-    "description": "Drupal is an open-source content management system used to build and manage websites and web applications. Multiple vulnerabilities exist in Drupal core. The Field UI module contains a remote code execution vulnerability that may be exploitable through contributed modules or custom code, with at least one known exploitation path not requiring authentication. Additionally, the Link module insufficiently sanitizes certain markup, while the Navigation module fails to adequately sanitize specific attributes, potentially resulting in cross-site scripting (XSS). Successful exploitation could allow an attacker to execute arbitrary code on the server or inject malicious scripts into users browsers, potentially resulting in unauthorized operations, compromise of affected websites, or exposure of sensitive information.",
-    "softwareAffected": [
-      "Drupal Core versions between 8.9.0 and 10.6.18.",
-      "Drupal Core versions between 11.0.0 and 11.3.18.",
-      "Drupal Core versions between 11.4.0 and 11.4.9.",
-      "Drupal Core versions from 12.0.0-alpha1 to versions prior to 12.0.0-beta2.",
-      "Drupal 8 and Drupal 9 are end-of-life and no longer receive security coverage."
-    ],
-    "targetAudience": "All organizations and individuals using affected versions of Drupal core.",
-    "riskAssessment": "Critical risk of remote code execution and unauthorized script execution, potentially leading to compromise of affected Drupal websites.",
-    "impactAssessment": "Successful exploitation could allow arbitrary code execution on the server or execution of malicious scripts in users' browsers, potentially compromising system integrity and exposing sensitive information.",
-    "cves": [
-      "CVE-2026-108097",
-      "CVE-2026-108514",
-      "CVE-2026-108515"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
-    "code": "CIAD-2026-0052",
-    "summary": "Multiple vulnerabilities have been reported in PHP which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities (collectively referred to as \"PHP2Shell\") exist in PHP due to memory corruption and improper resource control. An unauthenticated remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on an affected server, potentially exposing or modifying website content, customer data, databases, and other linked resources. Micro, Small and Medium Enterprises (MSME) operating PHP-based websites, content-management systems, e-commerce platforms, or third-party applications could face security risks, particularly where PHP comes bundled with their hosting services or other software. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently. Recommendations: MSMEs are advised to undertake the following actions: • Identify PHP usage: Check whether the website, hosting account, content-management system, or business application uses PHP. If the PHP version is unknown, contact the hosting provider or software vendor for confirmation. • Apply security updates: Upgrade affected PHP installations to the appropriate fixed versions: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or vendor's fixed package. • Prioritise internet-facing systems: Remediate public-facing websites and applications first. After applying updates, restart the relevant services as needed and verify that the updated PHP runtime is actually in use. • Address unsupported versions: PHP 8.1 and earlier versions are no longer supported by the upstream PHP project. Upgrade to a supported release, or obtain and verify a security-fixed package from the relevant vendor. • Restrict exposure where patching is delayed: If an affected system cannot be patched immediately, consider restricting access to trusted networks until remediation is completed. Also follow mitigation steps mentioned by the vendor. • Check for signs of compromise: Check for signs of compromise by reviewing available web-server and application logs for unusual requests, unexpected file changes, newly created administrator accounts, suspicious processes, and unexplained outbound connections. If compromise or suspicious activity is detected, preserve relevant logs, contain the incident, and promptly report it with available evidence to CERT-In at incident@cert-in.org.in • Secure business information: Protect business information by maintaining regular offline or otherwise secure backups, testing that restoration works, and ensuring administrative accounts use strong, unique passwords and multi-factor authentication wherever supported. •",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.3"
-    ],
-    "targetAudience": "All MSME organizations using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0051",
-    "code": "CIAD-2026-0051",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products, which could be exploited by a remote attacker to trigger elevation of privilege, denial of service condition, remote code execution, data manipulation, sensitive information disclosure and security restriction bypass on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle Database Server",
-      "Oracle E-Business Suite",
-      "Oracle Fusion Middleware and Oracle WebLogic Server",
-      "Oracle Enterprise Manager",
-      "Oracle Java SE, JavaFX and GraalVM",
-      "Oracle MySQL products",
-      "Oracle PeopleSoft Enterprise",
-      "Oracle JD Edwards EnterpriseOne",
-      "Oracle Siebel CRM",
-      "Oracle Analytics and BI Publisher",
-      "Oracle HealthCare Applications",
-      "Oracle Hospitality Applications",
-      "Oracle GoldenGate",
-      "Oracle REST Data Services",
-      "Oracle NoSQL Database",
-      "Oracle Solaris and Oracle VM VirtualBox",
-      "Oracle Retail, Financial Services, Communications,",
-      "Utilities and Supply Chain applications",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpuoct2026.html"
-    ],
-    "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
-    "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
-    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-10-22",
@@ -842,6 +755,112 @@
       "CVE-2026-108428",
       "CVE-2026-108427",
       "CVE-2026-108426"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0051",
+    "code": "CIAD-2026-0051",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products, which could be exploited by a remote attacker to trigger elevation of privilege, denial of service condition, remote code execution, data manipulation, sensitive information disclosure and security restriction bypass on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle Database Server",
+      "Oracle E-Business Suite",
+      "Oracle Fusion Middleware and Oracle WebLogic Server",
+      "Oracle Enterprise Manager",
+      "Oracle Java SE, JavaFX and GraalVM",
+      "Oracle MySQL products",
+      "Oracle PeopleSoft Enterprise",
+      "Oracle JD Edwards EnterpriseOne",
+      "Oracle Siebel CRM",
+      "Oracle Analytics and BI Publisher",
+      "Oracle HealthCare Applications",
+      "Oracle Hospitality Applications",
+      "Oracle GoldenGate",
+      "Oracle REST Data Services",
+      "Oracle NoSQL Database",
+      "Oracle Solaris and Oracle VM VirtualBox",
+      "Oracle Retail, Financial Services, Communications,",
+      "Utilities and Supply Chain applications",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cpuoct2026.html"
+    ],
+    "targetAudience": "Individuals and organisational users of the above-mentioned Oracle products.",
+    "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
+    "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Core",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0513",
+    "code": "CIVN-2026-0513",
+    "summary": "Multiple vulnerabilities have been reported in Drupal core, including a critical remote code execution vulnerability in the Field UI module and two cross-site scripting (XSS) vulnerabilities in the Link and Navigation modules. Successful exploitation could allow an attacker to execute arbitrary code or inject malicious scripts into affected Drupal websites.",
+    "description": "Drupal is an open-source content management system used to build and manage websites and web applications. Multiple vulnerabilities exist in Drupal core. The Field UI module contains a remote code execution vulnerability that may be exploitable through contributed modules or custom code, with at least one known exploitation path not requiring authentication. Additionally, the Link module insufficiently sanitizes certain markup, while the Navigation module fails to adequately sanitize specific attributes, potentially resulting in cross-site scripting (XSS). Successful exploitation could allow an attacker to execute arbitrary code on the server or inject malicious scripts into users browsers, potentially resulting in unauthorized operations, compromise of affected websites, or exposure of sensitive information.",
+    "softwareAffected": [
+      "Drupal Core versions between 8.9.0 and 10.6.18.",
+      "Drupal Core versions between 11.0.0 and 11.3.18.",
+      "Drupal Core versions between 11.4.0 and 11.4.9.",
+      "Drupal Core versions from 12.0.0-alpha1 to versions prior to 12.0.0-beta2.",
+      "Drupal 8 and Drupal 9 are end-of-life and no longer receive security coverage."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of Drupal core.",
+    "riskAssessment": "Critical risk of remote code execution and unauthorized script execution, potentially leading to compromise of affected Drupal websites.",
+    "impactAssessment": "Successful exploitation could allow arbitrary code execution on the server or execution of malicious scripts in users' browsers, potentially compromising system integrity and exposing sensitive information.",
+    "cves": [
+      "CVE-2026-108097",
+      "CVE-2026-108514",
+      "CVE-2026-108515"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
+    "code": "CIAD-2026-0052",
+    "summary": "Multiple vulnerabilities have been reported in PHP which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities (collectively referred to as \"PHP2Shell\") exist in PHP due to memory corruption and improper resource control. An unauthenticated remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on an affected server, potentially exposing or modifying website content, customer data, databases, and other linked resources. Micro, Small and Medium Enterprises (MSME) operating PHP-based websites, content-management systems, e-commerce platforms, or third-party applications could face security risks, particularly where PHP comes bundled with their hosting services or other software. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently. Recommendations: MSMEs are advised to undertake the following actions: • Identify PHP usage: Check whether the website, hosting account, content-management system, or business application uses PHP. If the PHP version is unknown, contact the hosting provider or software vendor for confirmation. • Apply security updates: Upgrade affected PHP installations to the appropriate fixed versions: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or vendor's fixed package. • Prioritise internet-facing systems: Remediate public-facing websites and applications first. After applying updates, restart the relevant services as needed and verify that the updated PHP runtime is actually in use. • Address unsupported versions: PHP 8.1 and earlier versions are no longer supported by the upstream PHP project. Upgrade to a supported release, or obtain and verify a security-fixed package from the relevant vendor. • Restrict exposure where patching is delayed: If an affected system cannot be patched immediately, consider restricting access to trusted networks until remediation is completed. Also follow mitigation steps mentioned by the vendor. • Check for signs of compromise: Check for signs of compromise by reviewing available web-server and application logs for unusual requests, unexpected file changes, newly created administrator accounts, suspicious processes, and unexplained outbound connections. If compromise or suspicious activity is detected, preserve relevant logs, contain the incident, and promptly report it with available evidence to CERT-In at incident@cert-in.org.in • Secure business information: Protect business information by maintaining regular offline or otherwise secure backups, testing that restoration works, and ensuring administrative accounts use strong, unique passwords and multi-factor authentication wherever supported. •",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.3"
+    ],
+    "targetAudience": "All MSME organizations using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
     ],
     "solutionLinks": []
   },
@@ -902,13 +921,13 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3649",
+    "title": "Compromise of eMudhra Intermediate CA Certificates",
     "severity": "high",
     "date": "2026-10-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3649",
-    "code": "CICA-2026-3649",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0050",
+    "code": "CIAD-2026-0050",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "",
+    "description": "eMudhra Limited, operates in two distinct areas: • Issuance of digital signature certificates and eSign services, regulated by the Controller of Certifying Authorities (CCA) under MeitY. • Issuance of digital certificates trusted by major browsers and operating systems, used to secure websites, software and online communications. • This advisory pertains to the reported incident in public domain to the second area. The issuance of digital signature certificates and eSign services, regulated by the Controller of Certifying Authorities (CCA) under MeitY are not impacted. The second function is international in nature and operates under global trust framework. It is governed by international standards and subject to independent audits, including Web Trust audits conducted by BDO International Limited. The affected private keys were generated with insufficient cryptographic randomness. The P-384 elliptic-curve private keys had values smaller than 256 and could be recovered almost instantly from their corresponding public keys. The weakness arose during key generation and does not indicate a vulnerability in the P-384 cryptographic algorithm itself. Whereas eMudhra has stated in its public press release, \"A flaw in the key generation ceremony caused a wrap / unwrap step to produce a second set of weak keys along side the original strong keys. The weak keys were the ones published to the browser root stores.\" An attacker who recovers these private keys could issue fraudulent certificates for domains they do not control. Such TLS certificates could be used to impersonate legitimate websites and facilitate man-in-the-middle (MitM) attacks, potentially enabling the interception or modification of encrypted communications where an attacker can intercept network traffic and the affected certificate chains remain trusted by the client. The compromised code-signing keys could also be used to issue fraudulent code-signing certificates. According to eMudhra, none of the affected intermediate CAs had issued end-entity certificates. The company stated that only one of the affected intermediates had been deployed in production. The company has stated that the incident is limited to the affected intermediates and does not involve its root CA private keys or other intermediate CAs. As per the reports, eMudhra�s domestic Indian Digital Signature Certificate (DSC) and eSign infrastructure remained completely unaffected due to strict architectural isolation, utilizing distinct cryptographic keys generated under different regulatory compliance frameworks. eMudhra revoked the eight affected intermediate certificates on October 18, 2026. M/s Mozilla blocked the six affected TLS intermediate certificates through its OneCRL certificate block list on October 17, 2026. Mozilla released Firefox 158.0.1 for desktop and Android, Firefox ESR 115.43.1 and Firefox ESR 153.5.1 to protect users whose configurations prevent them from receiving OneCRL updates. Mozilla has also updated the trusted certificate list in Network Security Services (NSS) 3.131.1 to remove the root certificate emSign ECC Root CA - G3, which signed the affected intermediates. M/s Google blocked the public keys of the affected TLS intermediates in Chrome through a Certificate Revocation List Set (CRLSet) update on October 17, 2026. The blocking was based on the Subject Public Key Information (SPKI) hashes, protecting against certificates using the affected public keys. Google also reported deploying equivalent protections to supported Android devices through Google Play services. Google has also announced the removal of emSign ECC Root CA - G3 from the Chrome Root Store. The change is expected to reach devices relying on the Chrome Root Store on October 27, 2026. The root-store changes are intended to protect applications and devices that do not receive or enforce intermediate-certificate revocation information. Impact An attacker able to exploit the compromised TLS private keys could issue fraudulent TLS certificates and potentially impersonate legitimate websites or intercept or modify data exchanged between users and servers, potentially facilitating credential theft, sensitive data exposure, and financial fraud. Compromised code-signing keys could be used to issue fraudulent certificates, enabling malicious software to appear digitally signed by a trusted publisher. Google reported that no TLS certificates chaining to the six affected TLS intermediates were recorded in Certificate Transparency (CT) logs before its blocking action. eMudhra has also stated that the affected intermediates had not issued end-entity certificates. As of October 21, 2026, the cited public disclosures do not establish confirmed malicious exploitation of the affected keys. Removal of emSign ECC Root CA - G3 from browser and application trust stores could render legitimate certificates issued under that root untrusted, potentially disrupting affected websites and services.",
     "softwareAffected": "",
     "targetAudience": "Government departments, organisations, enterprises, internet service providers, software vendors, website administrators, application developers, system and network administrators, operators of embedded devices, and users relying on TLS certificates and affected certificate trust stores. Best Practices • Apply security updates: Update Firefox, Firefox ESR, Chrome, supported Android components, and other affected browsers, applications and operating systems to the latest security releases provided by their respective vendors. • Update certificate trust stores: Ensure that operating systems, applications, servers and devices receive the latest certificate revocation and distrust information from their respective vendors. Verify that affected certificate chains are rejected by the relevant clients. • Review certificate dependencies: Identify certificates and services chaining to the affected intermediate CAs or emSign ECC Root CA - G3. Assess the impact of the intermediate-certificate blocking measures and root-store changes on websites, applications and other dependent services. Include relevant cross-signed certificate chains in the review. • Replace affected certificates: Obtain replacement TLS certificates from a trusted, unaffected PKI hierarchy where required. Administrators should also replace otherwise legitimate certificates chaining to emSign ECC Root CA - G3 if they will no longer be trusted by the relevant clients. • Verify TLS certificates: Validate certificate chains, issuer information, validity periods and revocation status. Do not bypass certificate-validation warnings or disable certificate verification. Confirm that applications reject certificates chaining through the compromised intermediate CA keys. • Monitor certificate issuance: Monitor Certificate Transparency logs and security alerts for unauthorised certificate issuance, unexpected certificate changes and other suspicious activity involving affected domains or services. CT monitoring should supplement, rather than replace, certificate revocation and trust-store controls. • Review independent certificate trust stores: Examine applications, programming-language runtimes, container images, TLS libraries, network appliances and embedded systems that maintain separate CA certificate bundles or do not reliably check certificate revocation. Apply applicable vendor updates and redeploy affected components where necessary. • Review code-signing trust: Software vendors and administrators should verify the trust and revocation status of relevant code-signing certificate chains and use additional software integrity and provenance checks where appropriate. • Strengthen CA key management: Certification authorities should use approved cryptographically secure random number generators, implement appropriate hardware security module (HSM) controls, and review key-generation procedures and key-lifecycle management to prevent recurrence of similar weaknesses. Independent verification of generated key parameters, key identifiers, certificate-signing request (CSR) mappings and maker-checker controls should form part of the key-generation process. • Maintain secure configurations: Ensure that applications, embedded devices and other systems receive timely security and trust-store updates. Where vendor support is unavailable, assess exposure and implement appropriate compensating controls. •",
     "riskAssessment": "",
@@ -917,13 +936,13 @@
     "solutionLinks": []
   },
   {
-    "title": "Compromise of eMudhra Intermediate CA Certificates",
+    "title": "CERT-In Advisory CICA-2026-3649",
     "severity": "high",
     "date": "2026-10-21",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0050",
-    "code": "CIAD-2026-0050",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3649",
+    "code": "CICA-2026-3649",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "eMudhra Limited, operates in two distinct areas: • Issuance of digital signature certificates and eSign services, regulated by the Controller of Certifying Authorities (CCA) under MeitY. • Issuance of digital certificates trusted by major browsers and operating systems, used to secure websites, software and online communications. • This advisory pertains to the reported incident in public domain to the second area. The issuance of digital signature certificates and eSign services, regulated by the Controller of Certifying Authorities (CCA) under MeitY are not impacted. The second function is international in nature and operates under global trust framework. It is governed by international standards and subject to independent audits, including Web Trust audits conducted by BDO International Limited. The affected private keys were generated with insufficient cryptographic randomness. The P-384 elliptic-curve private keys had values smaller than 256 and could be recovered almost instantly from their corresponding public keys. The weakness arose during key generation and does not indicate a vulnerability in the P-384 cryptographic algorithm itself. Whereas eMudhra has stated in its public press release, \"A flaw in the key generation ceremony caused a wrap / unwrap step to produce a second set of weak keys along side the original strong keys. The weak keys were the ones published to the browser root stores.\" An attacker who recovers these private keys could issue fraudulent certificates for domains they do not control. Such TLS certificates could be used to impersonate legitimate websites and facilitate man-in-the-middle (MitM) attacks, potentially enabling the interception or modification of encrypted communications where an attacker can intercept network traffic and the affected certificate chains remain trusted by the client. The compromised code-signing keys could also be used to issue fraudulent code-signing certificates. According to eMudhra, none of the affected intermediate CAs had issued end-entity certificates. The company stated that only one of the affected intermediates had been deployed in production. The company has stated that the incident is limited to the affected intermediates and does not involve its root CA private keys or other intermediate CAs. As per the reports, eMudhra�s domestic Indian Digital Signature Certificate (DSC) and eSign infrastructure remained completely unaffected due to strict architectural isolation, utilizing distinct cryptographic keys generated under different regulatory compliance frameworks. eMudhra revoked the eight affected intermediate certificates on October 18, 2026. M/s Mozilla blocked the six affected TLS intermediate certificates through its OneCRL certificate block list on October 17, 2026. Mozilla released Firefox 158.0.1 for desktop and Android, Firefox ESR 115.43.1 and Firefox ESR 153.5.1 to protect users whose configurations prevent them from receiving OneCRL updates. Mozilla has also updated the trusted certificate list in Network Security Services (NSS) 3.131.1 to remove the root certificate emSign ECC Root CA - G3, which signed the affected intermediates. M/s Google blocked the public keys of the affected TLS intermediates in Chrome through a Certificate Revocation List Set (CRLSet) update on October 17, 2026. The blocking was based on the Subject Public Key Information (SPKI) hashes, protecting against certificates using the affected public keys. Google also reported deploying equivalent protections to supported Android devices through Google Play services. Google has also announced the removal of emSign ECC Root CA - G3 from the Chrome Root Store. The change is expected to reach devices relying on the Chrome Root Store on October 27, 2026. The root-store changes are intended to protect applications and devices that do not receive or enforce intermediate-certificate revocation information. Impact An attacker able to exploit the compromised TLS private keys could issue fraudulent TLS certificates and potentially impersonate legitimate websites or intercept or modify data exchanged between users and servers, potentially facilitating credential theft, sensitive data exposure, and financial fraud. Compromised code-signing keys could be used to issue fraudulent certificates, enabling malicious software to appear digitally signed by a trusted publisher. Google reported that no TLS certificates chaining to the six affected TLS intermediates were recorded in Certificate Transparency (CT) logs before its blocking action. eMudhra has also stated that the affected intermediates had not issued end-entity certificates. As of October 21, 2026, the cited public disclosures do not establish confirmed malicious exploitation of the affected keys. Removal of emSign ECC Root CA - G3 from browser and application trust stores could render legitimate certificates issued under that root untrusted, potentially disrupting affected websites and services.",
+    "description": "",
     "softwareAffected": "",
     "targetAudience": "Government departments, organisations, enterprises, internet service providers, software vendors, website administrators, application developers, system and network administrators, operators of embedded devices, and users relying on TLS certificates and affected certificate trust stores. Best Practices • Apply security updates: Update Firefox, Firefox ESR, Chrome, supported Android components, and other affected browsers, applications and operating systems to the latest security releases provided by their respective vendors. • Update certificate trust stores: Ensure that operating systems, applications, servers and devices receive the latest certificate revocation and distrust information from their respective vendors. Verify that affected certificate chains are rejected by the relevant clients. • Review certificate dependencies: Identify certificates and services chaining to the affected intermediate CAs or emSign ECC Root CA - G3. Assess the impact of the intermediate-certificate blocking measures and root-store changes on websites, applications and other dependent services. Include relevant cross-signed certificate chains in the review. • Replace affected certificates: Obtain replacement TLS certificates from a trusted, unaffected PKI hierarchy where required. Administrators should also replace otherwise legitimate certificates chaining to emSign ECC Root CA - G3 if they will no longer be trusted by the relevant clients. • Verify TLS certificates: Validate certificate chains, issuer information, validity periods and revocation status. Do not bypass certificate-validation warnings or disable certificate verification. Confirm that applications reject certificates chaining through the compromised intermediate CA keys. • Monitor certificate issuance: Monitor Certificate Transparency logs and security alerts for unauthorised certificate issuance, unexpected certificate changes and other suspicious activity involving affected domains or services. CT monitoring should supplement, rather than replace, certificate revocation and trust-store controls. • Review independent certificate trust stores: Examine applications, programming-language runtimes, container images, TLS libraries, network appliances and embedded systems that maintain separate CA certificate bundles or do not reliably check certificate revocation. Apply applicable vendor updates and redeploy affected components where necessary. • Review code-signing trust: Software vendors and administrators should verify the trust and revocation status of relevant code-signing certificate chains and use additional software integrity and provenance checks where appropriate. • Strengthen CA key management: Certification authorities should use approved cryptographically secure random number generators, implement appropriate hardware security module (HSM) controls, and review key-generation procedures and key-lifecycle management to prevent recurrence of similar weaknesses. Independent verification of generated key parameters, key identifiers, certificate-signing request (CSR) mappings and maker-checker controls should form part of the key-generation process. • Maintain secure configurations: Ensure that applications, embedded devices and other systems receive timely security and trust-store updates. Where vendor support is unavailable, assess exposure and implement appropriate compensating controls. •",
     "riskAssessment": "",
