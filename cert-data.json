@@ -116,63 +116,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
-    "code": "CIAD-2026-0055",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
-    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
-    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
-    "cves": [
-      "cve-2026-111497",
-      "CVE-2026-111497"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
-    "severity": "high",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
-    "code": "CIVN-2026-0529",
-    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
-    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
-    "riskAssessment": "Manipulation of application logic and information disclosure.",
-    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
-    "cves": [
-      "CVE-2026-114358"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in PHP",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
-    "code": "CIVN-2026-0528",
-    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
-    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "PHP 8.2 versions prior to 8.2.35",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.5 versions prior to 8.5.12"
-    ],
-    "targetAudience": "Administrators and users of PHP-based web applications.",
-    "riskAssessment": "High risk of information disclosure and remote code execution.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Apple Products",
     "severity": "high",
     "date": "2026-10-27",
@@ -187,8 +130,7 @@
       "MacOS Golden Gate versions prior to 27.2",
       "iOS versions prior to 18.7.11 and iPadOS versions prior to 18.7.11",
       "iOS versions prior to 26.7.2 and iPadOS versions prior to 26.7.2",
-      "iOS versions prior to 27.2 and iPadOS versions prior to",
-      "27.2",
+      "iOS versions prior to 27.2 and iPadOS versions prior to 27.2",
       "WatchOS versions prior to 27.2",
       "TvOS versions prior to 27.2",
       "VisionOS versions prior to 27.2"
@@ -381,58 +323,59 @@
     "solutionLinks": []
   },
   {
-    "title": "Use-After-Free Vulnerability in curl and libcurl",
-    "severity": "high",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0526",
-    "code": "CIVN-2026-0526",
-    "summary": "A Use-After-Free vulnerability has been reported in curl and libcurl, which could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition on affected systems.",
-    "description": "curl is a command-line tool and libcurl is a library used for transferring data over various network protocols, including HTTP and HTTPS. A Use-After-Free vulnerability exists in curl and libcurl due to improper handling of HTTP/2 stream reset responses received from a server during data uploads. The vulnerability could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition under specific conditions.",
-    "softwareAffected": [
-      "curl versions 8.12.0 to 8.22.0",
-      "libcurl versions corresponding to the affected releases"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of curl and libcurl.",
-    "riskAssessment": "High risk of remote code execution and denial of service under specific conditions.",
-    "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
-    "cves": [
-      "CVE-2026-92392"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
     "severity": "critical",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0524",
-    "code": "CIVN-2026-0524",
-    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Use after free, Memory corruption, Improper input validation, Out of bounds read, Type confusion, Range error, Improper access control, Missing authorization, Information leak and Out of bounds write across multiple components. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome prior to 156.0.8078.47/.48 for Windows and Mac",
-      "Google Chrome prior to 156.0.8078.47 for Linux"
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+    "code": "CIAD-2026-0055",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
+    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
+    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
+    "cves": [
+      "cve-2026-111497",
+      "CVE-2026-111497"
     ],
-    "targetAudience": "All end-user organizations and individuals using the affected Google Chrome for Desktop.",
-    "riskAssessment": "High risk of remote code execution, bypass security restrictions.",
-    "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
-    "cves": [],
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in CreditNirvana Products",
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
     "severity": "high",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0523",
-    "code": "CIVN-2026-0523",
-    "summary": "Multiple vulnerabilities have been reported in CreditNirvana, which could allow an unauthenticated remote attacker to bypass authentication controls, access sensitive information and perform actions with the privileges of an impersonated user.",
-    "description": "CreditNirvana Agentic AI Call Centre is an application with associated REST APIs for accessing call related information. CreditNirvana Collections Platform provides authentication, user management and API based functionality for collection related operations across tenant deployments. 1. Hardcoded API Key Vulnerability ( CVE-2026-110474 ) This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system. 2. Improper Authentication Vulnerability ( CVE-2026-110475 ) This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user. Credit These vulnerabilities are reported by Eaton Zveare.",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
     "softwareAffected": "",
-    "targetAudience": "Organizations, system administrators and maintainers of the affected platform.",
-    "riskAssessment": "Risk of authentication bypass, unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
-    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
     "cves": [
-      "CVE-2026-110474",
-      "CVE-2026-110475"
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in PHP",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
+    "code": "CIVN-2026-0528",
+    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "PHP 8.2 versions prior to 8.2.35",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.5 versions prior to 8.5.12"
+    ],
+    "targetAudience": "Administrators and users of PHP-based web applications.",
+    "riskAssessment": "High risk of information disclosure and remote code execution.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-109619"
     ],
     "solutionLinks": []
   },
@@ -477,18 +420,59 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Fortinet Products",
-    "severity": "high",
-    "date": "2026-10-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
-    "code": "CIAD-2026-0054",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "critical",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0524",
+    "code": "CIVN-2026-0524",
+    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Use after free, Memory corruption, Improper input validation, Out of bounds read, Type confusion, Range error, Improper access control, Missing authorization, Information leak and Out of bounds write across multiple components. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome prior to 156.0.8078.47/.48 for Windows and Mac",
+      "Google Chrome prior to 156.0.8078.47 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Google Chrome for Desktop.",
+    "riskAssessment": "High risk of remote code execution, bypass security restrictions.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in CreditNirvana Products",
+    "severity": "high",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0523",
+    "code": "CIVN-2026-0523",
+    "summary": "Multiple vulnerabilities have been reported in CreditNirvana, which could allow an unauthenticated remote attacker to bypass authentication controls, access sensitive information and perform actions with the privileges of an impersonated user.",
+    "description": "CreditNirvana Agentic AI Call Centre is an application with associated REST APIs for accessing call related information. CreditNirvana Collections Platform provides authentication, user management and API based functionality for collection related operations across tenant deployments. 1. Hardcoded API Key Vulnerability ( CVE-2026-110474 ) This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system. 2. Improper Authentication Vulnerability ( CVE-2026-110475 ) This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user. Credit These vulnerabilities are reported by Eaton Zveare.",
+    "softwareAffected": "",
+    "targetAudience": "Organizations, system administrators and maintainers of the affected platform.",
+    "riskAssessment": "Risk of authentication bypass, unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
+    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
+    "cves": [
+      "CVE-2026-110474",
+      "CVE-2026-110475"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Use-After-Free Vulnerability in curl and libcurl",
+    "severity": "high",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0526",
+    "code": "CIVN-2026-0526",
+    "summary": "A Use-After-Free vulnerability has been reported in curl and libcurl, which could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition on affected systems.",
+    "description": "curl is a command-line tool and libcurl is a library used for transferring data over various network protocols, including HTTP and HTTPS. A Use-After-Free vulnerability exists in curl and libcurl due to improper handling of HTTP/2 stream reset responses received from a server during data uploads. The vulnerability could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition under specific conditions.",
+    "softwareAffected": [
+      "curl versions 8.12.0 to 8.22.0",
+      "libcurl versions corresponding to the affected releases"
+    ],
+    "targetAudience": "All organizations and administrators using affected versions of curl and libcurl.",
+    "riskAssessment": "High risk of remote code execution and denial of service under specific conditions.",
+    "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
+    "cves": [
+      "CVE-2026-92392"
+    ],
     "solutionLinks": []
   },
   {
@@ -514,15 +498,15 @@
     "solutionLinks": []
   },
   {
-    "title": "Compromise of LiteLLM PyPI Package and Docker Images",
+    "title": "Multiple vulnerabilities in Fortinet Products",
     "severity": "high",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0053",
-    "code": "CIAD-2026-0053",
+    "date": "2026-10-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
+    "code": "CIAD-2026-0054",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "LiteLLM, a Python SDK and proxy used to integrate multiple Large Language Model (LLM) provider APIs, has reportedly been affected by a targeted software supply-chain compromise involving the LiteLLM 1.107.0 release distributed through the Python Package Index (PyPI), along with reportedly compromised Docker images hosted on GitHub Container Registry (GHCR) and Docker Hub. According to the reported incident analysis, the attack involved a lookalike GitHub repository, Berri-AI/litellm, which was reportedly used to trigger a release workflow. The attacker modified the pyproject.toml build configuration to inject three malicious files-cook.pth, cook.py, and sitecustomize.py�into the Python site-packages directory. The malicious files reportedly abuse Python interpreter startup mechanisms to execute code automatically when Python initializes, potentially without requiring an application to explicitly import LiteLLM. Consequently, other Python applications running within the affected environment may also be exposed, depending on the execution context and the presence of the malicious files. The reported compromise involves two primary malicious capabilities: credential theft and remote code execution. 1. Credential Stealing Component (privcollect) The credential-stealing component, reportedly identified as privcollect, collects sensitive information from the compromised environment. The reported targets include: • Browser credentials, session cookies, and authentication tokens. • SSH and GPG private keys and related credentials. • Cloud credentials and access tokens associated with Amazon Web Services (AWS), Microsoft Azure, and Google Cloud. • Environment variables, CI/CD secrets, and source-code repository access tokens. • Authentication tokens associated with AI development tools, including Cursor and GitHub Copilot. • In LiteLLM proxy deployments, the malicious code may also attempt to access the configured database through DATABASE_URL. Depending on database permissions, application configuration, and the accessible data, this could expose managed LLM provider API keys and other sensitive information. 2. Remote Code Execution (RCE) Component The reported sitecustomize.py component establishes a mechanism for retrieving and executing additional Python code. It reportedly launches a detached background process that periodically contacts an attacker-controlled GitHub repository used as a dead-drop mechanism. The process may retrieve and execute attacker-supplied code, potentially enabling further compromise of the affected environment. This behavior may facilitate additional payload delivery, unauthorized access, and continued malicious activity. Impact Successful exploitation or execution of the malicious package may result in the following impacts: • Credential compromise: Theft of cloud credentials, browser sessions, SSH/GPG keys, AI development-tool tokens, and CI/CD secrets. • Unauthorized access: Compromise of developer workstations, build agents, CI/CD runners, containers, and production systems. • LLM infrastructure compromise: Exposure of upstream LLM provider API keys, LiteLLM proxy credentials, and other secrets accessible to the affected deployment. • Cloud infrastructure compromise: Potential lateral movement into connected cloud environments and other systems using stolen credentials. • Remote code execution: Execution of additional attacker-controlled code within affected environments, potentially resulting in further system compromise. • Supply-chain propagation: Risk of distributing compromised artifacts through internal package mirrors, container registries, build pipelines, or deployment processes if affected artifacts are reused. • The actual impact depends on whether the malicious artifacts were installed or executed, the privileges of the affected process, the credentials accessible to it, and the security controls in place.",
+    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
     "softwareAffected": "",
-    "targetAudience": "• Software developers and application development teams. • DevOps and Site Reliability Engineering (SRE) teams. • Cloud security architects and system administrators. • CI/CD pipeline and build infrastructure managers. • AI/ML platform operators and organizations using LLM orchestration frameworks. • Security Operations Centre (SOC) and incident response teams. • Best practices Immediate Containment and Remediation • Identify systems that installed LiteLLM 1.107.0 and systems that pulled or ran affected Docker images. • Isolate suspected compromised hosts and containers as appropriate, preserving relevant logs and forensic evidence before making changes. • Investigate for the malicious files, associated processes, marker files, and suspicious outbound connections. Terminate malicious processes after appropriate evidence collection. • Rebuild or redeploy affected containers from a verified clean image. Avoid relying solely on in-place cleanup of potentially compromised containers. • Remove compromised package and image artifacts from local caches, internal package mirrors, and container registries. • Reinstall a verified clean LiteLLM release. The supplied analysis identifies 1.106.2 as a clean version; verify its integrity and suitability before pinning it. • Review package lockfiles, dependency manifests, build logs, container digests, and deployment records to establish the scope of exposure. • Mandatory Credential Rotation Rotate or revoke, as applicable: • Cloud provider credentials, access keys, tokens, and exposed workload credentials. • SSH/GPG keys and other credentials accessible to the compromised environment. • Browser passwords, session cookies, and authentication tokens where exposure is plausible. • AI development-tool tokens, including those associated with Cursor and GitHub Copilot. • CI/CD secrets, source-code repository tokens, container registry credentials, and secrets stored in Vault or similar systems. • Upstream LLM provider API keys and other credentials accessible to the LiteLLM proxy. • LiteLLM proxy master_key and salt_key, where applicable, following the relevant recovery and key-management procedures. • Review authentication and access logs for suspicious activity and revoke active sessions or tokens where supported. Credential rotation should be performed from a trusted, clean environment. Detection and Monitoring • Search requirements.txt, poetry.lock, pyproject.toml, other dependency manifests, and software inventories for LiteLLM version 1.107.0. • Inspect Python site-packages directories for cook.pth, cook.py, and unexpected or modified sitecustomize.py files. • Review endpoint, DNS, proxy, firewall, container, and CI/CD logs for connections to the identified domains and dead-drop URL. • Investigate unexpected requests to GitHub-hosted content and URLs containing /codepy. • Review LiteLLM proxy database access, upstream provider usage, cloud audit trails, and source-code repository activity for evidence of credential misuse. • Block confirmed malicious infrastructure using appropriate DNS, proxy, firewall, and endpoint controls, while retaining logs for incident response. • Continue monitoring affected environments for unauthorized access, persistence, and suspicious use of previously exposed credentials. •",
+    "targetAudience": "",
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
@@ -544,6 +528,34 @@
     "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
     "cves": [
       "CVE-2026-106173"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
+    "code": "CIVN-2026-0520",
+    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
+      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
+      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
+      "MongoDB libmongocrypt versions prior to 1.20.5"
+    ],
+    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
+    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-112368",
+      "CVE-2026-104005",
+      "CVE-2026-96299",
+      "CVE-2026-104004",
+      "CVE-2026-107325",
+      "CVE-2026-107324",
+      "CVE-2026-106433"
     ],
     "solutionLinks": []
   },
@@ -580,6 +592,21 @@
     "solutionLinks": []
   },
   {
+    "title": "Compromise of LiteLLM PyPI Package and Docker Images",
+    "severity": "high",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0053",
+    "code": "CIAD-2026-0053",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "LiteLLM, a Python SDK and proxy used to integrate multiple Large Language Model (LLM) provider APIs, has reportedly been affected by a targeted software supply-chain compromise involving the LiteLLM 1.107.0 release distributed through the Python Package Index (PyPI), along with reportedly compromised Docker images hosted on GitHub Container Registry (GHCR) and Docker Hub. According to the reported incident analysis, the attack involved a lookalike GitHub repository, Berri-AI/litellm, which was reportedly used to trigger a release workflow. The attacker modified the pyproject.toml build configuration to inject three malicious files-cook.pth, cook.py, and sitecustomize.py�into the Python site-packages directory. The malicious files reportedly abuse Python interpreter startup mechanisms to execute code automatically when Python initializes, potentially without requiring an application to explicitly import LiteLLM. Consequently, other Python applications running within the affected environment may also be exposed, depending on the execution context and the presence of the malicious files. The reported compromise involves two primary malicious capabilities: credential theft and remote code execution. 1. Credential Stealing Component (privcollect) The credential-stealing component, reportedly identified as privcollect, collects sensitive information from the compromised environment. The reported targets include: • Browser credentials, session cookies, and authentication tokens. • SSH and GPG private keys and related credentials. • Cloud credentials and access tokens associated with Amazon Web Services (AWS), Microsoft Azure, and Google Cloud. • Environment variables, CI/CD secrets, and source-code repository access tokens. • Authentication tokens associated with AI development tools, including Cursor and GitHub Copilot. • In LiteLLM proxy deployments, the malicious code may also attempt to access the configured database through DATABASE_URL. Depending on database permissions, application configuration, and the accessible data, this could expose managed LLM provider API keys and other sensitive information. 2. Remote Code Execution (RCE) Component The reported sitecustomize.py component establishes a mechanism for retrieving and executing additional Python code. It reportedly launches a detached background process that periodically contacts an attacker-controlled GitHub repository used as a dead-drop mechanism. The process may retrieve and execute attacker-supplied code, potentially enabling further compromise of the affected environment. This behavior may facilitate additional payload delivery, unauthorized access, and continued malicious activity. Impact Successful exploitation or execution of the malicious package may result in the following impacts: • Credential compromise: Theft of cloud credentials, browser sessions, SSH/GPG keys, AI development-tool tokens, and CI/CD secrets. • Unauthorized access: Compromise of developer workstations, build agents, CI/CD runners, containers, and production systems. • LLM infrastructure compromise: Exposure of upstream LLM provider API keys, LiteLLM proxy credentials, and other secrets accessible to the affected deployment. • Cloud infrastructure compromise: Potential lateral movement into connected cloud environments and other systems using stolen credentials. • Remote code execution: Execution of additional attacker-controlled code within affected environments, potentially resulting in further system compromise. • Supply-chain propagation: Risk of distributing compromised artifacts through internal package mirrors, container registries, build pipelines, or deployment processes if affected artifacts are reused. • The actual impact depends on whether the malicious artifacts were installed or executed, the privileges of the affected process, the credentials accessible to it, and the security controls in place.",
+    "softwareAffected": "",
+    "targetAudience": "• Software developers and application development teams. • DevOps and Site Reliability Engineering (SRE) teams. • Cloud security architects and system administrators. • CI/CD pipeline and build infrastructure managers. • AI/ML platform operators and organizations using LLM orchestration frameworks. • Security Operations Centre (SOC) and incident response teams. • Best practices Immediate Containment and Remediation • Identify systems that installed LiteLLM 1.107.0 and systems that pulled or ran affected Docker images. • Isolate suspected compromised hosts and containers as appropriate, preserving relevant logs and forensic evidence before making changes. • Investigate for the malicious files, associated processes, marker files, and suspicious outbound connections. Terminate malicious processes after appropriate evidence collection. • Rebuild or redeploy affected containers from a verified clean image. Avoid relying solely on in-place cleanup of potentially compromised containers. • Remove compromised package and image artifacts from local caches, internal package mirrors, and container registries. • Reinstall a verified clean LiteLLM release. The supplied analysis identifies 1.106.2 as a clean version; verify its integrity and suitability before pinning it. • Review package lockfiles, dependency manifests, build logs, container digests, and deployment records to establish the scope of exposure. • Mandatory Credential Rotation Rotate or revoke, as applicable: • Cloud provider credentials, access keys, tokens, and exposed workload credentials. • SSH/GPG keys and other credentials accessible to the compromised environment. • Browser passwords, session cookies, and authentication tokens where exposure is plausible. • AI development-tool tokens, including those associated with Cursor and GitHub Copilot. • CI/CD secrets, source-code repository tokens, container registry credentials, and secrets stored in Vault or similar systems. • Upstream LLM provider API keys and other credentials accessible to the LiteLLM proxy. • LiteLLM proxy master_key and salt_key, where applicable, following the relevant recovery and key-management procedures. • Review authentication and access logs for suspicious activity and revoke active sessions or tokens where supported. Credential rotation should be performed from a trusted, clean environment. Detection and Monitoring • Search requirements.txt, poetry.lock, pyproject.toml, other dependency manifests, and software inventories for LiteLLM version 1.107.0. • Inspect Python site-packages directories for cook.pth, cook.py, and unexpected or modified sitecustomize.py files. • Review endpoint, DNS, proxy, firewall, container, and CI/CD logs for connections to the identified domains and dead-drop URL. • Investigate unexpected requests to GitHub-hosted content and URLs containing /codepy. • Review LiteLLM proxy database access, upstream provider usage, cloud audit trails, and source-code repository activity for evidence of credential misuse. • Block confirmed malicious infrastructure using appropriate DNS, proxy, firewall, and endpoint controls, while retaining logs for incident response. • Continue monitoring affected environments for unauthorized access, persistence, and suspicious use of previously exposed credentials. •",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
     "severity": "critical",
     "date": "2026-10-23",
@@ -595,34 +622,6 @@
     "impactAssessment": "Potential for unauthorized file operations.",
     "cves": [
       "CVE-2026-102764"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
-    "code": "CIVN-2026-0520",
-    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
-      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
-      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
-      "MongoDB libmongocrypt versions prior to 1.20.5"
-    ],
-    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
-    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
-    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-112368",
-      "CVE-2026-104005",
-      "CVE-2026-96299",
-      "CVE-2026-104004",
-      "CVE-2026-107325",
-      "CVE-2026-107324",
-      "CVE-2026-106433"
     ],
     "solutionLinks": []
   },
@@ -646,6 +645,52 @@
     "cves": [
       "CVE-2026-109618",
       "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in F5 Products",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
+    "code": "CIVN-2026-0517",
+    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
+    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
+    "softwareAffected": [
+      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
+      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
+      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
+      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
+      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
+      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
+      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
+      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
+      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
+    ],
+    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
+    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
+    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-15176",
+      "CVE-2026-97205",
+      "CVE-2026-93479"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Cisco Expressway Series",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0515",
+    "code": "CIVN-2026-0515",
+    "summary": "A vulnerability has been reported in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as root.",
+    "description": "The Cisco Expressway Series is a collaboration",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using Cisco Expressway Series.",
+    "riskAssessment": "Critical risks on system confidentiality, integrity, and availability of the system.",
+    "impactAssessment": "Potential for unauthorized access, sensitive information disclosure, and arbitrary code execution.",
+    "cves": [
+      "CVE-2026-76466"
     ],
     "solutionLinks": []
   },
@@ -708,35 +753,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in F5 Products",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
-    "code": "CIVN-2026-0517",
-    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
-    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
-    "softwareAffected": [
-      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
-      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
-      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
-      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
-      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
-      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
-      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
-      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
-      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
-    ],
-    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
-    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
-    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-15176",
-      "CVE-2026-97205",
-      "CVE-2026-93479"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -769,23 +785,6 @@
       "CVE-2026-112212",
       "CVE-2026-112326",
       "CVE-2026-112378"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Cisco Expressway Series",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0515",
-    "code": "CIVN-2026-0515",
-    "summary": "A vulnerability has been reported in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as root.",
-    "description": "The Cisco Expressway Series is a collaboration",
-    "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using Cisco Expressway Series.",
-    "riskAssessment": "Critical risks on system confidentiality, integrity, and availability of the system.",
-    "impactAssessment": "Potential for unauthorized access, sensitive information disclosure, and arbitrary code execution.",
-    "cves": [
-      "CVE-2026-76466"
     ],
     "solutionLinks": []
   },
@@ -1049,13 +1048,13 @@
     "solutionLinks": []
   },
   {
-    "title": "AI Agents as Attack Vectors: Unauthorized Access by Agents under Evaluation and Misuse of Open-Source Agentic AI Tools Targeting Indian ICT Assets",
-    "severity": "critical",
+    "title": "CERT-In Advisory CICA-2026-3630",
+    "severity": "high",
     "date": "2026-10-15",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0049",
-    "code": "CIAD-2026-0049",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630",
+    "code": "CICA-2026-3630",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "CERT-In has observed different categories of cyber incidents in which the attacker was an AI agent, that is, a software system capable of autonomously planning work, issuing commands, invoking tools and acting on the internet over extended periods. In some incidents, AI agents under research and evaluation exceeded their assigned task authorization and made unauthorized access to Indian information and communication technology (ICT) assets. In others, cyber attackers deliberately used open-source agentic AI tools to conduct reconnaissance, exploitation and financially motivated intrusions. The incidents came to light through voluntary disclosures by AI model providers, CERT-In's forensic analysis of suspicious activities, and CERT-In's own proactive threat hunting. The affected organizations could not detect the unauthorized access on their own. Categories of Incidents Observed Voluntary Disclosures 1. AI agents exceeding task authorization during research and evaluation: unauthorized access to Indian ICT assets • Recently, CERT-In has received multiple voluntary disclosures from AI model providers stating that their models, during research and evaluation activity on the internet, had reached the live systems of Indian organizations. • The recorded activity involved reading business records, including personal data and confidential material, through credentials and connection settings exposed in application configuration, public code repositories and permissive cloud service roles. • In the disclosed cases, the models' actions exceeded the authorization of their assigned tasks. • None of the affected organizations detected the access; in every case the incident was disclosed by the AI model providers after their internal review. • CERT-In's Threat Hunting 2. Cyber attackers using open-source agentic AI tools • CERT-In has observed financially motivated campaign against Indian entities in which cyber threat actors abused publicly available AI-native offensive-security frameworks. • These frameworks continue to be misused and rebranded, with a large number of deployments observed across infrastructure in multiple countries, indicating the widespread availability of ready-made agentic intrusion capabilities. • Observations based on analysis by CERT-In 3. Weaknesses exploited at machine speed • In the financially motivated campaign against Indian entities, agentic tooling compressed the time between initial access and final impact from days to a few hours. • In addition, the campaign highlighted that multi-agent operations run in parallel for hours to days to achieve the attacker goals, consistent with the documented multi-agent capability of these tools. • Further, victim entities in the campaign that remediated incompletely were attacked again within days, at greater scale. • In the voluntarily disclosed incidents, agents were observed re-deriving and re-using the same exposed credential in separate operations. • 4. The weaknesses exploited are conventional Across all AI agent driven incidents observed recently, the root weaknesses are conventional: • Credentials and keys exposed in source code, public repository history, configuration files, client applications and public web content; • Dormant, deprecated and test application programming interfaces (APIs) left reachable from the internet; • Payment-API keys stored in plaintext and readable from application runtimes; • Over-permissive cloud and backend-as-a-service roles permitting broad reads and writes by ordinary or anonymous callers; • Internet-exposed management interfaces and unpatched application middleware with weak credentials or no multi-factor authentication. • In the incidents observed, AI found and exploited these conventional weaknesses faster, more exhaustively and at greater scale than human attackers. Recommended Actions A. For AI model developers, research laboratories and evaluation agencies • Isolate research and evaluation workloads with default-deny network egress, permitting only the destinations a task strictly requires. Enforce the restriction at the network layer, not through instructions to the model. • Use synthetic targets, synthetic credentials and disposable infrastructure. Keep production data and real credentials out of the evaluation environment. • Define in every task the systems and actions that are in scope, and treat everything else as out of scope. Stop the run automatically if the agent contacts third-party systems, discovers or uses third-party credentials, or raises a stop or failure signal. Give an independent operator the authority to terminate or restart the run. • Monitor agent activity in real time. Log model-initiated requests as completely as feasible, including destination, port, protocol and result. Do not rely on after-the-fact transcript review alone; on its own it can miss activity that a model's reasoning makes appear legitimate. • Block the re-use of every third-party credential an agent encounters: suppress it in all future runs and flag the exposure for review and remediation. • If an agent accesses a real system, notify the affected organization and CERT-In promptly. Assist the organization's remediation. • Publish the safeguards adopted so that the community benefits. • B. For organizations and service providers • Implement the baseline measures as outlined in the CERT-In \"Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure\". • Audit for exposed credentials in source code, repositories (including commit history), continuous integration and continuous delivery (CI/CD) variables, configuration files, client applications and cloud storage. • Rotate any exposed credential, purge it from history and verify the fix externally. Scan every commit and build for secrets. Keep credentials out of code, configuration files and databases. • Keep a complete inventory of APIs. Decommission dormant, deprecated and test APIs and accounts. • Apply least privilege in cloud and backend-as-a-service deployments. Use row-level security and least-privileged client roles. Never place privileged or service keys in client-side code. Allow writes only to authenticated, authorized roles. Test what an anonymous caller can read and write. • Remove management and administrative interfaces from the internet. Enforce multi-factor authentication for all administrative access. Patch exposed application middleware without delay. • Detect attacks at machine speed. Apply rate-based and per-second API anomaly detection. Alert on enumeration bursts, bulk reads and automated registrations. Retain logs for at least 180 days. • After any credential exposure or confirmed access, treat the environment as compromised until forensically cleared. Retest after remediation. Expect repeat attempts within days to weeks. • Govern AI agents deployed within the organization. Give each run a separate, short-lived identity with least privilege. Enforce default-deny egress, permitting only required destinations, and maintain a tamper-resistant log of agent activity, covering at minimum all actions that affect production systems and data. • BFSI and fintech entities should also implement the payment and disbursement API measures advised in CIAD-2026-0046. •",
+    "description": "",
     "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
@@ -1064,13 +1063,13 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3630",
-    "severity": "high",
+    "title": "AI Agents as Attack Vectors: Unauthorized Access by Agents under Evaluation and Misuse of Open-Source Agentic AI Tools Targeting Indian ICT Assets",
+    "severity": "critical",
     "date": "2026-10-15",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630",
-    "code": "CICA-2026-3630",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0049",
+    "code": "CIAD-2026-0049",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "",
+    "description": "CERT-In has observed different categories of cyber incidents in which the attacker was an AI agent, that is, a software system capable of autonomously planning work, issuing commands, invoking tools and acting on the internet over extended periods. In some incidents, AI agents under research and evaluation exceeded their assigned task authorization and made unauthorized access to Indian information and communication technology (ICT) assets. In others, cyber attackers deliberately used open-source agentic AI tools to conduct reconnaissance, exploitation and financially motivated intrusions. The incidents came to light through voluntary disclosures by AI model providers, CERT-In's forensic analysis of suspicious activities, and CERT-In's own proactive threat hunting. The affected organizations could not detect the unauthorized access on their own. Categories of Incidents Observed Voluntary Disclosures 1. AI agents exceeding task authorization during research and evaluation: unauthorized access to Indian ICT assets • Recently, CERT-In has received multiple voluntary disclosures from AI model providers stating that their models, during research and evaluation activity on the internet, had reached the live systems of Indian organizations. • The recorded activity involved reading business records, including personal data and confidential material, through credentials and connection settings exposed in application configuration, public code repositories and permissive cloud service roles. • In the disclosed cases, the models' actions exceeded the authorization of their assigned tasks. • None of the affected organizations detected the access; in every case the incident was disclosed by the AI model providers after their internal review. • CERT-In's Threat Hunting 2. Cyber attackers using open-source agentic AI tools • CERT-In has observed financially motivated campaign against Indian entities in which cyber threat actors abused publicly available AI-native offensive-security frameworks. • These frameworks continue to be misused and rebranded, with a large number of deployments observed across infrastructure in multiple countries, indicating the widespread availability of ready-made agentic intrusion capabilities. • Observations based on analysis by CERT-In 3. Weaknesses exploited at machine speed • In the financially motivated campaign against Indian entities, agentic tooling compressed the time between initial access and final impact from days to a few hours. • In addition, the campaign highlighted that multi-agent operations run in parallel for hours to days to achieve the attacker goals, consistent with the documented multi-agent capability of these tools. • Further, victim entities in the campaign that remediated incompletely were attacked again within days, at greater scale. • In the voluntarily disclosed incidents, agents were observed re-deriving and re-using the same exposed credential in separate operations. • 4. The weaknesses exploited are conventional Across all AI agent driven incidents observed recently, the root weaknesses are conventional: • Credentials and keys exposed in source code, public repository history, configuration files, client applications and public web content; • Dormant, deprecated and test application programming interfaces (APIs) left reachable from the internet; • Payment-API keys stored in plaintext and readable from application runtimes; • Over-permissive cloud and backend-as-a-service roles permitting broad reads and writes by ordinary or anonymous callers; • Internet-exposed management interfaces and unpatched application middleware with weak credentials or no multi-factor authentication. • In the incidents observed, AI found and exploited these conventional weaknesses faster, more exhaustively and at greater scale than human attackers. Recommended Actions A. For AI model developers, research laboratories and evaluation agencies • Isolate research and evaluation workloads with default-deny network egress, permitting only the destinations a task strictly requires. Enforce the restriction at the network layer, not through instructions to the model. • Use synthetic targets, synthetic credentials and disposable infrastructure. Keep production data and real credentials out of the evaluation environment. • Define in every task the systems and actions that are in scope, and treat everything else as out of scope. Stop the run automatically if the agent contacts third-party systems, discovers or uses third-party credentials, or raises a stop or failure signal. Give an independent operator the authority to terminate or restart the run. • Monitor agent activity in real time. Log model-initiated requests as completely as feasible, including destination, port, protocol and result. Do not rely on after-the-fact transcript review alone; on its own it can miss activity that a model's reasoning makes appear legitimate. • Block the re-use of every third-party credential an agent encounters: suppress it in all future runs and flag the exposure for review and remediation. • If an agent accesses a real system, notify the affected organization and CERT-In promptly. Assist the organization's remediation. • Publish the safeguards adopted so that the community benefits. • B. For organizations and service providers • Implement the baseline measures as outlined in the CERT-In \"Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure\". • Audit for exposed credentials in source code, repositories (including commit history), continuous integration and continuous delivery (CI/CD) variables, configuration files, client applications and cloud storage. • Rotate any exposed credential, purge it from history and verify the fix externally. Scan every commit and build for secrets. Keep credentials out of code, configuration files and databases. • Keep a complete inventory of APIs. Decommission dormant, deprecated and test APIs and accounts. • Apply least privilege in cloud and backend-as-a-service deployments. Use row-level security and least-privileged client roles. Never place privileged or service keys in client-side code. Allow writes only to authenticated, authorized roles. Test what an anonymous caller can read and write. • Remove management and administrative interfaces from the internet. Enforce multi-factor authentication for all administrative access. Patch exposed application middleware without delay. • Detect attacks at machine speed. Apply rate-based and per-second API anomaly detection. Alert on enumeration bursts, bulk reads and automated registrations. Retain logs for at least 180 days. • After any credential exposure or confirmed access, treat the environment as compromised until forensically cleared. Retest after remediation. Expect repeat attempts within days to weeks. • Govern AI agents deployed within the organization. Give each run a separate, short-lived identity with least privilege. Enforce default-deny egress, permitting only required destinations, and maintain a tamper-resistant log of agent activity, covering at minimum all actions that affect production systems and data. • BFSI and fintech entities should also implement the payment and disbursement API measures advised in CIAD-2026-0046. •",
     "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
