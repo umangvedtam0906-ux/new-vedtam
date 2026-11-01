@@ -41,32 +41,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Zoom Workplace Clients",
-    "severity": "high",
-    "date": "2026-10-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0530",
-    "code": "CIVN-2026-0530",
-    "summary": "Multiple vulnerabilities have been reported in Zoom Workplace Clients, which could be exploited by an attacker to trigger elevation of privilege and obtain sensitive information on the targeted system.",
-    "description": "Zoom Workplace is a unified collaboration platform that provides video conferencing, team chat, phone, whiteboard, mail, calendar, and other productivity services across desktop, mobile, and virtual desktop infrastructure (VDI) environments. Multiple vulnerabilities exist in Zoom Workplace Clients due to improper certificate validation, buffer overflow and improper authorization issues. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could be exploited by an attacker to trigger elevation of privilege and obtain sensitive information on the targeted system.",
-    "softwareAffected": [
-      "Zoom Workplace for Android versions prior to 7.2.1",
-      "Zoom Workplace for Windows, MacOS and Linux versions prior to 7.2.0 (including the 7.1.9 branch)",
-      "Zoom Workplace for iOS versions prior to 7.2.0",
-      "Zoom Workplace VDI Client for Windows versions 7.0.11 up to 7.0.13",
-      "Zoom Rooms for Windows versions 7.0.0 up to 7.1.7"
-    ],
-    "targetAudience": "All end-user organisations and individuals using Zoom applications.",
-    "riskAssessment": "Risk of sensitive information disclosure and privilege escalation.",
-    "impactAssessment": "Potential for unauthorized access.",
-    "cves": [
-      "CVE-2026-108185",
-      "CVE-2026-108184",
-      "CVE-2026-53420",
-      "CVE-2026-53418"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-10-28",
@@ -116,37 +90,28 @@
     "solutionLinks": []
   },
   {
-    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
-    "code": "CIAD-2026-0055",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
-    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
-    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
-    "cves": [
-      "cve-2026-111497",
-      "CVE-2026-111497"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "title": "Multiple Vulnerabilities in Zoom Workplace Clients",
     "severity": "high",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
-    "code": "CIVN-2026-0529",
-    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
-    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
-    "riskAssessment": "Manipulation of application logic and information disclosure.",
-    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "date": "2026-10-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0530",
+    "code": "CIVN-2026-0530",
+    "summary": "Multiple vulnerabilities have been reported in Zoom Workplace Clients, which could be exploited by an attacker to trigger elevation of privilege and obtain sensitive information on the targeted system.",
+    "description": "Zoom Workplace is a unified collaboration platform that provides video conferencing, team chat, phone, whiteboard, mail, calendar, and other productivity services across desktop, mobile, and virtual desktop infrastructure (VDI) environments. Multiple vulnerabilities exist in Zoom Workplace Clients due to improper certificate validation, buffer overflow and improper authorization issues. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could be exploited by an attacker to trigger elevation of privilege and obtain sensitive information on the targeted system.",
+    "softwareAffected": [
+      "Zoom Workplace for Android versions prior to 7.2.1",
+      "Zoom Workplace for Windows, MacOS and Linux versions prior to 7.2.0 (including the 7.1.9 branch)",
+      "Zoom Workplace for iOS versions prior to 7.2.0",
+      "Zoom Workplace VDI Client for Windows versions 7.0.11 up to 7.0.13",
+      "Zoom Rooms for Windows versions 7.0.0 up to 7.1.7"
+    ],
+    "targetAudience": "All end-user organisations and individuals using Zoom applications.",
+    "riskAssessment": "Risk of sensitive information disclosure and privilege escalation.",
+    "impactAssessment": "Potential for unauthorized access.",
     "cves": [
-      "CVE-2026-114358"
+      "CVE-2026-108185",
+      "CVE-2026-108184",
+      "CVE-2026-53420",
+      "CVE-2026-53418"
     ],
     "solutionLinks": []
   },
@@ -358,6 +323,23 @@
     "solutionLinks": []
   },
   {
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "severity": "high",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "cves": [
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in PHP",
     "severity": "critical",
     "date": "2026-10-27",
@@ -380,6 +362,24 @@
     "solutionLinks": []
   },
   {
+    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+    "code": "CIAD-2026-0055",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
+    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
+    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
+    "cves": [
+      "cve-2026-111497",
+      "CVE-2026-111497"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "DLL Sideloading Vulnerability in Siemens Software Center",
     "severity": "high",
     "date": "2026-10-26",
@@ -395,6 +395,26 @@
     "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
     "cves": [
       "CVE-2026-110936"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Use-After-Free Vulnerability in curl and libcurl",
+    "severity": "high",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0526",
+    "code": "CIVN-2026-0526",
+    "summary": "A Use-After-Free vulnerability has been reported in curl and libcurl, which could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition on affected systems.",
+    "description": "curl is a command-line tool and libcurl is a library used for transferring data over various network protocols, including HTTP and HTTPS. A Use-After-Free vulnerability exists in curl and libcurl due to improper handling of HTTP/2 stream reset responses received from a server during data uploads. The vulnerability could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition under specific conditions.",
+    "softwareAffected": [
+      "curl versions 8.12.0 to 8.22.0",
+      "libcurl versions corresponding to the affected releases"
+    ],
+    "targetAudience": "All organizations and administrators using affected versions of curl and libcurl.",
+    "riskAssessment": "High risk of remote code execution and denial of service under specific conditions.",
+    "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
+    "cves": [
+      "CVE-2026-92392"
     ],
     "solutionLinks": []
   },
@@ -456,23 +476,18 @@
     "solutionLinks": []
   },
   {
-    "title": "Use-After-Free Vulnerability in curl and libcurl",
+    "title": "Multiple vulnerabilities in Fortinet Products",
     "severity": "high",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0526",
-    "code": "CIVN-2026-0526",
-    "summary": "A Use-After-Free vulnerability has been reported in curl and libcurl, which could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition on affected systems.",
-    "description": "curl is a command-line tool and libcurl is a library used for transferring data over various network protocols, including HTTP and HTTPS. A Use-After-Free vulnerability exists in curl and libcurl due to improper handling of HTTP/2 stream reset responses received from a server during data uploads. The vulnerability could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition under specific conditions.",
-    "softwareAffected": [
-      "curl versions 8.12.0 to 8.22.0",
-      "libcurl versions corresponding to the affected releases"
-    ],
-    "targetAudience": "All organizations and administrators using affected versions of curl and libcurl.",
-    "riskAssessment": "High risk of remote code execution and denial of service under specific conditions.",
-    "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
-    "cves": [
-      "CVE-2026-92392"
-    ],
+    "date": "2026-10-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
+    "code": "CIAD-2026-0054",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -498,21 +513,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Fortinet Products",
-    "severity": "high",
-    "date": "2026-10-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
-    "code": "CIAD-2026-0054",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Directory Traversal Vulnerability in FortiSIEM",
     "severity": "critical",
     "date": "2026-10-23",
@@ -528,6 +528,34 @@
     "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
     "cves": [
       "CVE-2026-106173"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in MongoDB Products",
+    "severity": "medium",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
+    "code": "CIVN-2026-0520",
+    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
+      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
+      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
+      "MongoDB libmongocrypt versions prior to 1.20.5"
+    ],
+    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
+    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
+    "cves": [
+      "CVE-2026-112368",
+      "CVE-2026-104005",
+      "CVE-2026-96299",
+      "CVE-2026-104004",
+      "CVE-2026-107325",
+      "CVE-2026-107324",
+      "CVE-2026-106433"
     ],
     "solutionLinks": []
   },
@@ -595,34 +623,6 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in MongoDB Products",
-    "severity": "medium",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0520",
-    "code": "CIVN-2026-0520",
-    "summary": "Multiple vulnerabilities have been reported in MongoDB products which could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "MongoDB is a NoSQL database platform that provides data storage, querying, aggregation, and application connectivity through language-specific drivers and supporting libraries. These vulnerabilities exist in MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver and MongoDB libmongocrypt due to uncontrolled recursion in BSON decoding, missing authorization checks, improper handling of collection validator expressions, missing BSON array-length validation, integer overflow and improper memory management. A remote attacker could exploit these vulnerabilities by sending specially crafted BSON data, submitting specially formed aggregation pipelines, or providing malformed key documents to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to cause memory corruption, disclose sensitive information or cause denial of service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "MongoDB PHP Driver versions prior to 1.21.12, 2.1.12, and 2.5.5",
-      "MongoDB Server versions 8.0 prior to 8.0.34, 8.3 prior to 8.3.13, and 9.0 prior to 9.0.4",
-      "MongoDB Go Driver 1.17.10 and prior, and 2.x versions prior to 2.9.2",
-      "MongoDB libmongocrypt versions prior to 1.20.5"
-    ],
-    "targetAudience": "Users and administrators of MongoDB Server, MongoDB PHP Driver, MongoDB Go Driver, and MongoDB libmongocrypt.",
-    "riskAssessment": "High risk of denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
-    "impactAssessment": "Potential for denial of service (DoS) conditions, memory corruption, and disclosure of sensitive information.",
-    "cves": [
-      "CVE-2026-112368",
-      "CVE-2026-104005",
-      "CVE-2026-96299",
-      "CVE-2026-104004",
-      "CVE-2026-107325",
-      "CVE-2026-107324",
-      "CVE-2026-106433"
-    ],
     "solutionLinks": []
   },
   {
@@ -716,35 +716,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in F5 Products",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
-    "code": "CIVN-2026-0517",
-    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
-    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
-    "softwareAffected": [
-      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
-      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
-      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
-      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
-      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
-      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
-      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
-      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
-      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
-    ],
-    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
-    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
-    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-15176",
-      "CVE-2026-97205",
-      "CVE-2026-93479"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -800,6 +771,35 @@
     "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
     "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in F5 Products",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
+    "code": "CIVN-2026-0517",
+    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
+    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
+    "softwareAffected": [
+      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
+      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
+      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
+      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
+      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
+      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
+      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
+      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
+      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
+    ],
+    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
+    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
+    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-15176",
+      "CVE-2026-97205",
+      "CVE-2026-93479"
+    ],
     "solutionLinks": []
   },
   {
@@ -1078,6 +1078,40 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -1132,40 +1166,6 @@
       "CVE-2025-89105",
       "CVE-2026-58242",
       "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951"
     ],
     "solutionLinks": []
   },
