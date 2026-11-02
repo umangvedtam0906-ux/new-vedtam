@@ -41,6 +41,28 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in GoAhead Web Server",
+    "severity": "critical",
+    "date": "2026-10-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
+    "code": "CIAD-2026-0057",
+    "summary": "Multiple vulnerabilities have been reported in GoAhead Web Server which could allow a remote attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
+    "description": "GoAhead is an embedded web server used for device management in various IoT, firewall, and industrial control devices. These vulnerabilities exist in GoAhead due to improper certificate validation. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
+    "softwareAffected": [
+      "GoAhead Web Server versions 3.4.5 to 6.1.0 with OpenSSL TLS build",
+      "GoAhead Web Server versions 4.0.2 to 6.1.0 with Mbed TLS build",
+      "GoAhead Web Server versions 6.1.0 and prior with LibreSSL Legacy TLS build"
+    ],
+    "targetAudience": "All organizations and Individuals using GoAhead Web Server.",
+    "riskAssessment": "High risk of bypassing security restrictions and obtaining sensitive information.",
+    "impactAssessment": "Potential for unauthorized access, disclosure of sensitive information, and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-115881",
+      "CVE-2026-115884"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-10-28",
@@ -90,28 +112,6 @@
       "CVE-2026-108184",
       "CVE-2026-53420",
       "CVE-2026-53418"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in GoAhead Web Server",
-    "severity": "critical",
-    "date": "2026-10-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
-    "code": "CIAD-2026-0057",
-    "summary": "Multiple vulnerabilities have been reported in GoAhead Web Server which could allow a remote attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
-    "description": "GoAhead is an embedded web server used for device management in various IoT, firewall, and industrial control devices. These vulnerabilities exist in GoAhead due to improper certificate validation. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
-    "softwareAffected": [
-      "GoAhead Web Server versions 3.4.5 to 6.1.0 with OpenSSL TLS build",
-      "GoAhead Web Server versions 4.0.2 to 6.1.0 with Mbed TLS build",
-      "GoAhead Web Server versions 6.1.0 and prior with LibreSSL Legacy TLS build"
-    ],
-    "targetAudience": "All organizations and Individuals using GoAhead Web Server.",
-    "riskAssessment": "High risk of bypassing security restrictions and obtaining sensitive information.",
-    "impactAssessment": "Potential for unauthorized access, disclosure of sensitive information, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-115881",
-      "CVE-2026-115884"
     ],
     "solutionLinks": []
   },
@@ -323,6 +323,23 @@
     "solutionLinks": []
   },
   {
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "severity": "high",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "cves": [
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
     "severity": "critical",
     "date": "2026-10-27",
@@ -337,23 +354,6 @@
     "cves": [
       "cve-2026-111497",
       "CVE-2026-111497"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
-    "severity": "high",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
-    "code": "CIVN-2026-0529",
-    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
-    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
-    "riskAssessment": "Manipulation of application logic and information disclosure.",
-    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
-    "cves": [
-      "CVE-2026-114358"
     ],
     "solutionLinks": []
   },
@@ -380,21 +380,22 @@
     "solutionLinks": []
   },
   {
-    "title": "DLL Sideloading Vulnerability in Siemens Software Center",
+    "title": "Use-After-Free Vulnerability in curl and libcurl",
     "severity": "high",
     "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0527",
-    "code": "CIVN-2026-0527",
-    "summary": "A vulnerability has been reported in Siemens Software Center which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Siemens Software Center is a software management tool. This vulnerability exists in Siemens Software Center due to uncontrolled search path element. A remote attacker could exploit these vulnerabilities by persuading a victim to open a malicious file. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-110936) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0526",
+    "code": "CIVN-2026-0526",
+    "summary": "A Use-After-Free vulnerability has been reported in curl and libcurl, which could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition on affected systems.",
+    "description": "curl is a command-line tool and libcurl is a library used for transferring data over various network protocols, including HTTP and HTTPS. A Use-After-Free vulnerability exists in curl and libcurl due to improper handling of HTTP/2 stream reset responses received from a server during data uploads. The vulnerability could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition under specific conditions.",
     "softwareAffected": [
-      "Siemens Software Center versions prior to V4.0.9.8"
+      "curl versions 8.12.0 to 8.22.0",
+      "libcurl versions corresponding to the affected releases"
     ],
-    "targetAudience": "All organizations and individuals using Siemens Software Center.",
-    "riskAssessment": "High risk of arbitrary code execution.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "targetAudience": "All organizations and administrators using affected versions of curl and libcurl.",
+    "riskAssessment": "High risk of remote code execution and denial of service under specific conditions.",
+    "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
     "cves": [
-      "CVE-2026-110936"
+      "CVE-2026-92392"
     ],
     "solutionLinks": []
   },
@@ -456,22 +457,21 @@
     "solutionLinks": []
   },
   {
-    "title": "Use-After-Free Vulnerability in curl and libcurl",
+    "title": "DLL Sideloading Vulnerability in Siemens Software Center",
     "severity": "high",
     "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0526",
-    "code": "CIVN-2026-0526",
-    "summary": "A Use-After-Free vulnerability has been reported in curl and libcurl, which could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition on affected systems.",
-    "description": "curl is a command-line tool and libcurl is a library used for transferring data over various network protocols, including HTTP and HTTPS. A Use-After-Free vulnerability exists in curl and libcurl due to improper handling of HTTP/2 stream reset responses received from a server during data uploads. The vulnerability could allow a remote attacker to execute arbitrary code or cause a denial-of-service condition under specific conditions.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0527",
+    "code": "CIVN-2026-0527",
+    "summary": "A vulnerability has been reported in Siemens Software Center which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Siemens Software Center is a software management tool. This vulnerability exists in Siemens Software Center due to uncontrolled search path element. A remote attacker could exploit these vulnerabilities by persuading a victim to open a malicious file. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-110936) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
     "softwareAffected": [
-      "curl versions 8.12.0 to 8.22.0",
-      "libcurl versions corresponding to the affected releases"
+      "Siemens Software Center versions prior to V4.0.9.8"
     ],
-    "targetAudience": "All organizations and administrators using affected versions of curl and libcurl.",
-    "riskAssessment": "High risk of remote code execution and denial of service under specific conditions.",
-    "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
+    "targetAudience": "All organizations and individuals using Siemens Software Center.",
+    "riskAssessment": "High risk of arbitrary code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
     "cves": [
-      "CVE-2026-92392"
+      "CVE-2026-110936"
     ],
     "solutionLinks": []
   },
@@ -510,25 +510,6 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Directory Traversal Vulnerability in FortiSIEM",
-    "severity": "critical",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
-    "code": "CIVN-2026-0521",
-    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
-    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
-    "softwareAffected": [
-      "Fortinet FortiSIEM versions prior to 7.5.1"
-    ],
-    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
-    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
-    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
-    "cves": [
-      "CVE-2026-106173"
-    ],
     "solutionLinks": []
   },
   {
@@ -611,6 +592,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Directory Traversal Vulnerability in FortiSIEM",
+    "severity": "critical",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0521",
+    "code": "CIVN-2026-0521",
+    "summary": "A directory traversal vulnerability has been reported in Fortinet FortiSIEM which could allow an unauthenticated remote attacker to execute arbitrary code or commands on the targeted system.",
+    "description": "Fortinet FortiSIEM is a security information and event management (SIEM)",
+    "softwareAffected": [
+      "Fortinet FortiSIEM versions prior to 7.5.1"
+    ],
+    "targetAudience": "Organizations and system administrators using Fortinet FortiSIEM.",
+    "riskAssessment": "High risk of remote code execution, compromise of affected systems.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, disruption of services.",
+    "cves": [
+      "CVE-2026-106173"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Compromise of LiteLLM PyPI Package and Docker Images",
     "severity": "high",
     "date": "2026-10-23",
@@ -623,6 +623,29 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
     "solutionLinks": []
   },
   {
@@ -755,29 +778,6 @@
       "PHP 8.2 versions prior to 8.2.35"
     ],
     "targetAudience": "All MSME organizations using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
     "riskAssessment": "High risk of remote code execution and complete system compromise.",
     "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
     "cves": [
