@@ -533,6 +533,38 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in ISC BIND",
+    "severity": "high",
+    "date": "2026-10-23",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0519",
+    "code": "CIVN-2026-0519",
+    "summary": "Multiple vulnerabilities have been reported in ISC BIND that could allow an attacker to cause denial-of-service (DoS) conditions or potentially execute arbitrary code. Successful exploitation could disrupt DNS services and affect the availability and security of affected systems.",
+    "description": "ISC BIND is an open-source Domain Name System (DNS) software suite used to resolve domain names and provide authoritative DNS services. Multiple vulnerabilities have been reported in BIND 9 due to excessive resource consumption during DNS message processing, memory corruption involving GSS-TSIG-signed UDP messages, and assertion failures triggered by specific DNS configurations and query patterns involving redirect zones, strict QNAME minimization, and Response Policy Zones (RPZ). Successful exploitation could cause the named process to terminate unexpectedly, resulting in denial-of-service conditions. The memory corruption vulnerability could potentially allow remote code execution under specific conditions.",
+    "softwareAffected": [
+      "BIND 9",
+      "Versions 9.11.0 through 9.18.50.",
+      "Versions 9.20.0 through 9.20.29.",
+      "Versions 9.21.0 through 9.21.26.",
+      "BIND Supported Preview Edition",
+      "Versions 9.11.3-S1 through 9.18.50-S1.",
+      "Versions 9.20.9-S1 through 9.20.29-S1."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of ISC BIND.",
+    "riskAssessment": "High risk of denial-of-service and potential remote code execution, which could disrupt DNS re",
+    "impactAssessment": "Successful exploitation could cause the BIND named process to terminate unexpectedly, exhaust system resources, or potentially allow remote code execution, affecting DNS service availability and system security.",
+    "cves": [
+      "cve-2026-19630",
+      "cve-2026-94300",
+      "cve-2026-96888",
+      "cve-2026-97313",
+      "CVE-2026-19630",
+      "CVE-2026-94300",
+      "CVE-2026-96888",
+      "CVE-2026-97313"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Directory Traversal Vulnerability in FortiSIEM",
     "severity": "critical",
     "date": "2026-10-23",
@@ -595,38 +627,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in ISC BIND",
-    "severity": "high",
-    "date": "2026-10-23",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0519",
-    "code": "CIVN-2026-0519",
-    "summary": "Multiple vulnerabilities have been reported in ISC BIND that could allow an attacker to cause denial-of-service (DoS) conditions or potentially execute arbitrary code. Successful exploitation could disrupt DNS services and affect the availability and security of affected systems.",
-    "description": "ISC BIND is an open-source Domain Name System (DNS) software suite used to resolve domain names and provide authoritative DNS services. Multiple vulnerabilities have been reported in BIND 9 due to excessive resource consumption during DNS message processing, memory corruption involving GSS-TSIG-signed UDP messages, and assertion failures triggered by specific DNS configurations and query patterns involving redirect zones, strict QNAME minimization, and Response Policy Zones (RPZ). Successful exploitation could cause the named process to terminate unexpectedly, resulting in denial-of-service conditions. The memory corruption vulnerability could potentially allow remote code execution under specific conditions.",
-    "softwareAffected": [
-      "BIND 9",
-      "Versions 9.11.0 through 9.18.50.",
-      "Versions 9.20.0 through 9.20.29.",
-      "Versions 9.21.0 through 9.21.26.",
-      "BIND Supported Preview Edition",
-      "Versions 9.11.3-S1 through 9.18.50-S1.",
-      "Versions 9.20.9-S1 through 9.20.29-S1."
-    ],
-    "targetAudience": "All organizations and individuals using affected versions of ISC BIND.",
-    "riskAssessment": "High risk of denial-of-service and potential remote code execution, which could disrupt DNS re",
-    "impactAssessment": "Successful exploitation could cause the BIND named process to terminate unexpectedly, exhaust system resources, or potentially allow remote code execution, affecting DNS service availability and system security.",
-    "cves": [
-      "cve-2026-19630",
-      "cve-2026-94300",
-      "cve-2026-96888",
-      "cve-2026-97313",
-      "CVE-2026-19630",
-      "CVE-2026-94300",
-      "CVE-2026-96888",
-      "CVE-2026-97313"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Authentication Bypass Vulnerability in BeyondTrust Remote Support",
     "severity": "critical",
     "date": "2026-10-23",
@@ -642,6 +642,58 @@
     "impactAssessment": "Potential for unauthorized file operations.",
     "cves": [
       "CVE-2026-102764"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in F5 Products",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
+    "code": "CIVN-2026-0517",
+    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
+    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
+    "softwareAffected": [
+      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
+      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
+      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
+      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
+      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
+      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
+      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
+      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
+      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
+    ],
+    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
+    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
+    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
+    "cves": [
+      "CVE-2026-15176",
+      "CVE-2026-97205",
+      "CVE-2026-93479"
     ],
     "solutionLinks": []
   },
@@ -704,29 +756,6 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in GitLab Community Edition (CE) and Enterprise Edition (EE)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -759,35 +788,6 @@
       "CVE-2026-112212",
       "CVE-2026-112326",
       "CVE-2026-112378"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in F5 Products",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0517",
-    "code": "CIVN-2026-0517",
-    "summary": "Multiple vulnerabilities have been reported in F5 NGINX products which could allow an attacker to execute arbitrary code, cause unexpected termination or restart of NGINX worker processes, or denial of service (DoS) conditions on the targeted system.",
-    "description": "F5 provides several NGINX software products, including NGINX Plus, NGINX Open Source, NGINX Ingress Controller, NGINX Gateway Fabric, and NGINX Instance Manager. NGINX Plus and NGINX Open Source are widely used web server and reverse proxy",
-    "softwareAffected": [
-      "NGINX Plus versions 37x and Rx: 37.0.0 to 37.0.4 and R33 to R36",
-      "NGINX Open Source versions 1x: 1.31.0 to 1.31.6 and 1.0.0 to 1.30.5",
-      "NGINX Instance Manager versions 2x: 2.18.0 to 2.23.0",
-      "F5 WAF for NGINX versions 5.x: 5.9.0 to 5.15.0",
-      "NGINX App Protect WAF versions 5x and 4x: 5.4.0 to 5.8.0 and 4.12.0 to 4.16.0",
-      "F5 DoS for NGINX versions 4x: 4.8.0 to 4.10.0",
-      "NGINX App Protect DoS versions 4x: 4.5.0 to 4.7.0",
-      "NGINX Gateway Fabric versions 2x: 2.1.0 to 2.7.2",
-      "NGINX Ingress Controller versions 5x: 5.6.0 to 5.6.3"
-    ],
-    "targetAudience": "Organizations and system administrators using the affected F5 NGINX products.",
-    "riskAssessment": "Critical risk of remote code execution and denial of service (DoS) conditions.",
-    "impactAssessment": "Potential for execute arbitrary code and cause denial of service (DoS).",
-    "cves": [
-      "CVE-2026-15176",
-      "CVE-2026-97205",
-      "CVE-2026-93479"
     ],
     "solutionLinks": []
   },
