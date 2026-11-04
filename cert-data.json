@@ -1,5 +1,55 @@
 [
   {
+    "title": "CERT-In Advisory CICA-2026-3651",
+    "severity": "high",
+    "date": "2026-11-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3651",
+    "code": "CICA-2026-3651",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email:info@cert-in.org.in Phone: +91-11-22902657 Postal Address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 05, 2026",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Adobe Products",
+    "severity": "critical",
+    "date": "2026-11-03",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0535",
+    "code": "CIVN-2026-0535",
+    "summary": "Multiple vulnerabilities have been reported in Adobe products which could allow a remote attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause memory corruption on the targeted system.",
+    "description": "Adobe provides a range of software products for digital content creation, 3D designs and content creation, graphic design, user experience design, content authenticity, and marketing campaign management. Multiple vulnerabilities exist in Adobe products due to code injection, OS command injection, SQL injection, incorrect authorization, cross-site scripting (XSS), uncontrolled search path element, stack-based buffer overflow, and out-of-bounds read, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, elevate privileges, bypass security restrictions, or cause memory corruption on the targeted system.",
+    "softwareAffected": [
+      "Adobe Campaign Classic versions prior to 7.4.4 build 9403",
+      "Adobe Connect Desktop App versions prior to 2026.9.61 (Windows)",
+      "Adobe Connect Desktop App versions prior to 2026.10.66 (Mac Silicon)",
+      "Adobe Connect Desktop App versions prior to 2026.10.170 (Mac Intel)",
+      "Adobe Creative Cloud Desktop Application versions prior to 6.11.0.478.6",
+      "Adobe Substance 3D Painter versions prior to 12.2.0"
+    ],
+    "targetAudience": "Individuals and organizations using affected Adobe products.",
+    "riskAssessment": "High risk of arbitrary code execution, privilege escalation, and security bypass.",
+    "impactAssessment": "Potential for complete system compromise, unauthorized access, and service disruption.",
+    "cves": [
+      "CVE-2026-48379",
+      "CVE-2026-48380",
+      "CVE-2026-104351",
+      "CVE-2026-104353",
+      "CVE-2026-105780",
+      "CVE-2026-105489",
+      "CVE-2026-105781",
+      "CVE-2026-104350",
+      "CVE-2026-104354",
+      "CVE-2026-105779",
+      "CVE-2026-104349",
+      "CVE-2026-48360"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Denial of Service Vulnerability in Cisco product",
     "severity": "high",
     "date": "2026-11-02",
@@ -61,6 +111,28 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in GoAhead Web Server",
+    "severity": "critical",
+    "date": "2026-10-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
+    "code": "CIAD-2026-0057",
+    "summary": "Multiple vulnerabilities have been reported in GoAhead Web Server which could allow a remote attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
+    "description": "GoAhead is an embedded web server used for device management in various IoT, firewall, and industrial control devices. These vulnerabilities exist in GoAhead due to improper certificate validation. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
+    "softwareAffected": [
+      "GoAhead Web Server versions 3.4.5 to 6.1.0 with OpenSSL TLS build",
+      "GoAhead Web Server versions 4.0.2 to 6.1.0 with Mbed TLS build",
+      "GoAhead Web Server versions 6.1.0 and prior with LibreSSL Legacy TLS build"
+    ],
+    "targetAudience": "All organizations and Individuals using GoAhead Web Server.",
+    "riskAssessment": "High risk of bypassing security restrictions and obtaining sensitive information.",
+    "impactAssessment": "Potential for unauthorized access, disclosure of sensitive information, and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-115881",
+      "CVE-2026-115884"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-10-28",
@@ -84,28 +156,6 @@
       "CVE-2026-113866",
       "CVE-2026-113867",
       "CVE-2026-113868"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple vulnerabilities in GoAhead Web Server",
-    "severity": "critical",
-    "date": "2026-10-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
-    "code": "CIAD-2026-0057",
-    "summary": "Multiple vulnerabilities have been reported in GoAhead Web Server which could allow a remote attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
-    "description": "GoAhead is an embedded web server used for device management in various IoT, firewall, and industrial control devices. These vulnerabilities exist in GoAhead due to improper certificate validation. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
-    "softwareAffected": [
-      "GoAhead Web Server versions 3.4.5 to 6.1.0 with OpenSSL TLS build",
-      "GoAhead Web Server versions 4.0.2 to 6.1.0 with Mbed TLS build",
-      "GoAhead Web Server versions 6.1.0 and prior with LibreSSL Legacy TLS build"
-    ],
-    "targetAudience": "All organizations and Individuals using GoAhead Web Server.",
-    "riskAssessment": "High risk of bypassing security restrictions and obtaining sensitive information.",
-    "impactAssessment": "Potential for unauthorized access, disclosure of sensitive information, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-115881",
-      "CVE-2026-115884"
     ],
     "solutionLinks": []
   },
@@ -400,25 +450,6 @@
     "solutionLinks": []
   },
   {
-    "title": "DLL Sideloading Vulnerability in Siemens Software Center",
-    "severity": "high",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0527",
-    "code": "CIVN-2026-0527",
-    "summary": "A vulnerability has been reported in Siemens Software Center which could allow an attacker to execute arbitrary code on the targeted system.",
-    "description": "Siemens Software Center is a software management tool. This vulnerability exists in Siemens Software Center due to uncontrolled search path element. A remote attacker could exploit these vulnerabilities by persuading a victim to open a malicious file. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-110936) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
-    "softwareAffected": [
-      "Siemens Software Center versions prior to V4.0.9.8"
-    ],
-    "targetAudience": "All organizations and individuals using Siemens Software Center.",
-    "riskAssessment": "High risk of arbitrary code execution.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-110936"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Use-After-Free Vulnerability in curl and libcurl",
     "severity": "high",
     "date": "2026-10-26",
@@ -435,42 +466,6 @@
     "impactAssessment": "Successful exploitation could lead to arbitrary code execution or application crashes.",
     "cves": [
       "CVE-2026-92392"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
-    "severity": "critical",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0524",
-    "code": "CIVN-2026-0524",
-    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
-    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Use after free, Memory corruption, Improper input validation, Out of bounds read, Type confusion, Range error, Improper access control, Missing authorization, Information leak and Out of bounds write across multiple components. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Google Chrome prior to 156.0.8078.47/.48 for Windows and Mac",
-      "Google Chrome prior to 156.0.8078.47 for Linux"
-    ],
-    "targetAudience": "All end-user organizations and individuals using the affected Google Chrome for Desktop.",
-    "riskAssessment": "High risk of remote code execution, bypass security restrictions.",
-    "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in CreditNirvana Products",
-    "severity": "high",
-    "date": "2026-10-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0523",
-    "code": "CIVN-2026-0523",
-    "summary": "Multiple vulnerabilities have been reported in CreditNirvana, which could allow an unauthenticated remote attacker to bypass authentication controls, access sensitive information and perform actions with the privileges of an impersonated user.",
-    "description": "CreditNirvana Agentic AI Call Centre is an application with associated REST APIs for accessing call related information. CreditNirvana Collections Platform provides authentication, user management and API based functionality for collection related operations across tenant deployments. 1. Hardcoded API Key Vulnerability ( CVE-2026-110474 ) This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system. 2. Improper Authentication Vulnerability ( CVE-2026-110475 ) This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user. Credit These vulnerabilities are reported by Eaton Zveare.",
-    "softwareAffected": "",
-    "targetAudience": "Organizations, system administrators and maintainers of the affected platform.",
-    "riskAssessment": "Risk of authentication bypass, unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
-    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
-    "cves": [
-      "CVE-2026-110474",
-      "CVE-2026-110475"
     ],
     "solutionLinks": []
   },
@@ -496,18 +491,58 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in Fortinet Products",
-    "severity": "high",
-    "date": "2026-10-24",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
-    "code": "CIAD-2026-0054",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
+    "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
+    "severity": "critical",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0524",
+    "code": "CIVN-2026-0524",
+    "summary": "Multiple vulnerabilities have been reported in Google chrome for Desktop which could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Google Chrome is a popular internet browser used for accessing information on the World Wide Web. It is designed for use on desktop systems including Windows, macOS and Linux. Multiple vulnerabilities have been reported in Google Chrome due to Use after free, Memory corruption, Improper input validation, Out of bounds read, Type confusion, Range error, Improper access control, Missing authorization, Information leak and Out of bounds write across multiple components. A remote attacker could exploit these vulnerabilities by convincing a victim to open a specially crafted web request. Successful exploitation of these vulnerabilities could allow a remote attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or cause denial of service (DoS) conditions on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Google Chrome prior to 156.0.8078.47/.48 for Windows and Mac",
+      "Google Chrome prior to 156.0.8078.47 for Linux"
+    ],
+    "targetAudience": "All end-user organizations and individuals using the affected Google Chrome for Desktop.",
+    "riskAssessment": "High risk of remote code execution, bypass security restrictions.",
+    "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "DLL Sideloading Vulnerability in Siemens Software Center",
+    "severity": "high",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0527",
+    "code": "CIVN-2026-0527",
+    "summary": "A vulnerability has been reported in Siemens Software Center which could allow an attacker to execute arbitrary code on the targeted system.",
+    "description": "Siemens Software Center is a software management tool. This vulnerability exists in Siemens Software Center due to uncontrolled search path element. A remote attacker could exploit these vulnerabilities by persuading a victim to open a malicious file. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code on the targeted system. Note: This vulnerability (CVE-2026-110936) is being actively exploited in the wild. Users are strongly advised to apply the latest patches immediately.",
+    "softwareAffected": [
+      "Siemens Software Center versions prior to V4.0.9.8"
+    ],
+    "targetAudience": "All organizations and individuals using Siemens Software Center.",
+    "riskAssessment": "High risk of arbitrary code execution.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-110936"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in CreditNirvana Products",
+    "severity": "high",
+    "date": "2026-10-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0523",
+    "code": "CIVN-2026-0523",
+    "summary": "Multiple vulnerabilities have been reported in CreditNirvana, which could allow an unauthenticated remote attacker to bypass authentication controls, access sensitive information and perform actions with the privileges of an impersonated user.",
+    "description": "CreditNirvana Agentic AI Call Centre is an application with associated REST APIs for accessing call related information. CreditNirvana Collections Platform provides authentication, user management and API based functionality for collection related operations across tenant deployments. 1. Hardcoded API Key Vulnerability ( CVE-2026-110474 ) This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system. 2. Improper Authentication Vulnerability ( CVE-2026-110475 ) This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated session on the targeted system. Successful exploitation of this vulnerability could allow the attacker to enumerate platform users, establish sessions as arbitrary users including administrative users, access and modify sensitive information with the privileges of the impersonated user. Credit These vulnerabilities are reported by Eaton Zveare.",
+    "softwareAffected": "",
+    "targetAudience": "Organizations, system administrators and maintainers of the affected platform.",
+    "riskAssessment": "Risk of authentication bypass, unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
+    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
+    "cves": [
+      "CVE-2026-110474",
+      "CVE-2026-110475"
+    ],
     "solutionLinks": []
   },
   {
@@ -530,6 +565,21 @@
       "cve-2026-91403",
       "CVE-2026-91403"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple vulnerabilities in Fortinet Products",
+    "severity": "high",
+    "date": "2026-10-24",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0054",
+    "code": "CIAD-2026-0054",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Fortinet has issued an urgent security hardening release addressing multiple critical and high-severity vulnerabilities across several core products, including FortiOS, FortiManager, FortiMail, FortiAuthenticator and FortiAnalyzer. According to Fortinet, these vulnerabilities were identified through advanced frontier AI-assisted security testing. Due to the increasing capability of adversaries to use AI for patch diffing (reverse-engineering patches to find weaknesses) and vulnerability chaining (linking low-severity flaws into severe exploit chains), Fortinet warns that the window between patch release and active exploitation is shrinking rapidly. This should be treated as a priority emergency change, not routine maintenance. Internet facing devices and systems exposed to untrusted networks should be prioritized for remediation. Affected Products / Components: Organizations are urged to upgrade to the following versions immediately. Prioritize internet-facing devices. Note: Detailed CVE identifiers and CVSS scores will be released by Fortinet PSIRT on November 10, 2026. For further details refer url: https://www.fortiguard.com/psirt. Recommended Actions: Immediate Remediation (Primary) • Inventory: Identify all Fortinet assets, specifically mapping internet-facing FortiOS instances and FortiManager controllers. • • Backup: Perform a full configuration backup of all affected devices before initiating any upgrade. • • Patching: Execute emergency maintenance windows to apply the fixed versions listed above. • Interim Mitigations (If immediate patching is not possible) If an immediate upgrade is technically unfeasible, implement the following compensatory controls to reduce the attack surface: • Restrict Management Interfaces: Limit access to HTTPS and SSH management ports to known, trusted IP addresses only. Disable these interfaces on all external/public-facing interfaces. • • Isolate FortiManager: Ensure that FortiManager administration is strictly internal and not reachable from the public internet. • • Enforce MFA: Mandatory Multi-Factor Authentication (MFA) must be enabled for all administrator accounts. • • Network Segmentation: Move critical resources behind a VPN or SASE",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -1068,6 +1118,21 @@
     "solutionLinks": []
   },
   {
+    "title": "AI Agents as Attack Vectors: Unauthorized Access by Agents under Evaluation and Misuse of Open-Source Agentic AI Tools Targeting Indian ICT Assets",
+    "severity": "critical",
+    "date": "2026-10-15",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0049",
+    "code": "CIAD-2026-0049",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "CERT-In has observed different categories of cyber incidents in which the attacker was an AI agent, that is, a software system capable of autonomously planning work, issuing commands, invoking tools and acting on the internet over extended periods. In some incidents, AI agents under research and evaluation exceeded their assigned task authorization and made unauthorized access to Indian information and communication technology (ICT) assets. In others, cyber attackers deliberately used open-source agentic AI tools to conduct reconnaissance, exploitation and financially motivated intrusions. The incidents came to light through voluntary disclosures by AI model providers, CERT-In's forensic analysis of suspicious activities, and CERT-In's own proactive threat hunting. The affected organizations could not detect the unauthorized access on their own. Categories of Incidents Observed Voluntary Disclosures 1. AI agents exceeding task authorization during research and evaluation: unauthorized access to Indian ICT assets • Recently, CERT-In has received multiple voluntary disclosures from AI model providers stating that their models, during research and evaluation activity on the internet, had reached the live systems of Indian organizations. • The recorded activity involved reading business records, including personal data and confidential material, through credentials and connection settings exposed in application configuration, public code repositories and permissive cloud service roles. • In the disclosed cases, the models' actions exceeded the authorization of their assigned tasks. • None of the affected organizations detected the access; in every case the incident was disclosed by the AI model providers after their internal review. • CERT-In's Threat Hunting 2. Cyber attackers using open-source agentic AI tools • CERT-In has observed financially motivated campaign against Indian entities in which cyber threat actors abused publicly available AI-native offensive-security frameworks. • These frameworks continue to be misused and rebranded, with a large number of deployments observed across infrastructure in multiple countries, indicating the widespread availability of ready-made agentic intrusion capabilities. • Observations based on analysis by CERT-In 3. Weaknesses exploited at machine speed • In the financially motivated campaign against Indian entities, agentic tooling compressed the time between initial access and final impact from days to a few hours. • In addition, the campaign highlighted that multi-agent operations run in parallel for hours to days to achieve the attacker goals, consistent with the documented multi-agent capability of these tools. • Further, victim entities in the campaign that remediated incompletely were attacked again within days, at greater scale. • In the voluntarily disclosed incidents, agents were observed re-deriving and re-using the same exposed credential in separate operations. • 4. The weaknesses exploited are conventional Across all AI agent driven incidents observed recently, the root weaknesses are conventional: • Credentials and keys exposed in source code, public repository history, configuration files, client applications and public web content; • Dormant, deprecated and test application programming interfaces (APIs) left reachable from the internet; • Payment-API keys stored in plaintext and readable from application runtimes; • Over-permissive cloud and backend-as-a-service roles permitting broad reads and writes by ordinary or anonymous callers; • Internet-exposed management interfaces and unpatched application middleware with weak credentials or no multi-factor authentication. • In the incidents observed, AI found and exploited these conventional weaknesses faster, more exhaustively and at greater scale than human attackers. Recommended Actions A. For AI model developers, research laboratories and evaluation agencies • Isolate research and evaluation workloads with default-deny network egress, permitting only the destinations a task strictly requires. Enforce the restriction at the network layer, not through instructions to the model. • Use synthetic targets, synthetic credentials and disposable infrastructure. Keep production data and real credentials out of the evaluation environment. • Define in every task the systems and actions that are in scope, and treat everything else as out of scope. Stop the run automatically if the agent contacts third-party systems, discovers or uses third-party credentials, or raises a stop or failure signal. Give an independent operator the authority to terminate or restart the run. • Monitor agent activity in real time. Log model-initiated requests as completely as feasible, including destination, port, protocol and result. Do not rely on after-the-fact transcript review alone; on its own it can miss activity that a model's reasoning makes appear legitimate. • Block the re-use of every third-party credential an agent encounters: suppress it in all future runs and flag the exposure for review and remediation. • If an agent accesses a real system, notify the affected organization and CERT-In promptly. Assist the organization's remediation. • Publish the safeguards adopted so that the community benefits. • B. For organizations and service providers • Implement the baseline measures as outlined in the CERT-In \"Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure\". • Audit for exposed credentials in source code, repositories (including commit history), continuous integration and continuous delivery (CI/CD) variables, configuration files, client applications and cloud storage. • Rotate any exposed credential, purge it from history and verify the fix externally. Scan every commit and build for secrets. Keep credentials out of code, configuration files and databases. • Keep a complete inventory of APIs. Decommission dormant, deprecated and test APIs and accounts. • Apply least privilege in cloud and backend-as-a-service deployments. Use row-level security and least-privileged client roles. Never place privileged or service keys in client-side code. Allow writes only to authenticated, authorized roles. Test what an anonymous caller can read and write. • Remove management and administrative interfaces from the internet. Enforce multi-factor authentication for all administrative access. Patch exposed application middleware without delay. • Detect attacks at machine speed. Apply rate-based and per-second API anomaly detection. Alert on enumeration bursts, bulk reads and automated registrations. Retain logs for at least 180 days. • After any credential exposure or confirmed access, treat the environment as compromised until forensically cleared. Retest after remediation. Expect repeat attempts within days to weeks. • Govern AI agents deployed within the organization. Give each run a separate, short-lived identity with least privilege. Enforce default-deny egress, permitting only required destinations, and maintain a tamper-resistant log of agent activity, covering at minimum all actions that affect production systems and data. • BFSI and fintech entities should also implement the payment and disbursement API measures advised in CIAD-2026-0046. •",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "CERT-In Advisory CICA-2026-3630",
     "severity": "high",
     "date": "2026-10-15",
@@ -1083,18 +1148,37 @@
     "solutionLinks": []
   },
   {
-    "title": "AI Agents as Attack Vectors: Unauthorized Access by Agents under Evaluation and Misuse of Open-Source Agentic AI Tools Targeting Indian ICT Assets",
-    "severity": "critical",
-    "date": "2026-10-15",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0049",
-    "code": "CIAD-2026-0049",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "CERT-In has observed different categories of cyber incidents in which the attacker was an AI agent, that is, a software system capable of autonomously planning work, issuing commands, invoking tools and acting on the internet over extended periods. In some incidents, AI agents under research and evaluation exceeded their assigned task authorization and made unauthorized access to Indian information and communication technology (ICT) assets. In others, cyber attackers deliberately used open-source agentic AI tools to conduct reconnaissance, exploitation and financially motivated intrusions. The incidents came to light through voluntary disclosures by AI model providers, CERT-In's forensic analysis of suspicious activities, and CERT-In's own proactive threat hunting. The affected organizations could not detect the unauthorized access on their own. Categories of Incidents Observed Voluntary Disclosures 1. AI agents exceeding task authorization during research and evaluation: unauthorized access to Indian ICT assets • Recently, CERT-In has received multiple voluntary disclosures from AI model providers stating that their models, during research and evaluation activity on the internet, had reached the live systems of Indian organizations. • The recorded activity involved reading business records, including personal data and confidential material, through credentials and connection settings exposed in application configuration, public code repositories and permissive cloud service roles. • In the disclosed cases, the models' actions exceeded the authorization of their assigned tasks. • None of the affected organizations detected the access; in every case the incident was disclosed by the AI model providers after their internal review. • CERT-In's Threat Hunting 2. Cyber attackers using open-source agentic AI tools • CERT-In has observed financially motivated campaign against Indian entities in which cyber threat actors abused publicly available AI-native offensive-security frameworks. • These frameworks continue to be misused and rebranded, with a large number of deployments observed across infrastructure in multiple countries, indicating the widespread availability of ready-made agentic intrusion capabilities. • Observations based on analysis by CERT-In 3. Weaknesses exploited at machine speed • In the financially motivated campaign against Indian entities, agentic tooling compressed the time between initial access and final impact from days to a few hours. • In addition, the campaign highlighted that multi-agent operations run in parallel for hours to days to achieve the attacker goals, consistent with the documented multi-agent capability of these tools. • Further, victim entities in the campaign that remediated incompletely were attacked again within days, at greater scale. • In the voluntarily disclosed incidents, agents were observed re-deriving and re-using the same exposed credential in separate operations. • 4. The weaknesses exploited are conventional Across all AI agent driven incidents observed recently, the root weaknesses are conventional: • Credentials and keys exposed in source code, public repository history, configuration files, client applications and public web content; • Dormant, deprecated and test application programming interfaces (APIs) left reachable from the internet; • Payment-API keys stored in plaintext and readable from application runtimes; • Over-permissive cloud and backend-as-a-service roles permitting broad reads and writes by ordinary or anonymous callers; • Internet-exposed management interfaces and unpatched application middleware with weak credentials or no multi-factor authentication. • In the incidents observed, AI found and exploited these conventional weaknesses faster, more exhaustively and at greater scale than human attackers. Recommended Actions A. For AI model developers, research laboratories and evaluation agencies • Isolate research and evaluation workloads with default-deny network egress, permitting only the destinations a task strictly requires. Enforce the restriction at the network layer, not through instructions to the model. • Use synthetic targets, synthetic credentials and disposable infrastructure. Keep production data and real credentials out of the evaluation environment. • Define in every task the systems and actions that are in scope, and treat everything else as out of scope. Stop the run automatically if the agent contacts third-party systems, discovers or uses third-party credentials, or raises a stop or failure signal. Give an independent operator the authority to terminate or restart the run. • Monitor agent activity in real time. Log model-initiated requests as completely as feasible, including destination, port, protocol and result. Do not rely on after-the-fact transcript review alone; on its own it can miss activity that a model's reasoning makes appear legitimate. • Block the re-use of every third-party credential an agent encounters: suppress it in all future runs and flag the exposure for review and remediation. • If an agent accesses a real system, notify the affected organization and CERT-In promptly. Assist the organization's remediation. • Publish the safeguards adopted so that the community benefits. • B. For organizations and service providers • Implement the baseline measures as outlined in the CERT-In \"Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure\". • Audit for exposed credentials in source code, repositories (including commit history), continuous integration and continuous delivery (CI/CD) variables, configuration files, client applications and cloud storage. • Rotate any exposed credential, purge it from history and verify the fix externally. Scan every commit and build for secrets. Keep credentials out of code, configuration files and databases. • Keep a complete inventory of APIs. Decommission dormant, deprecated and test APIs and accounts. • Apply least privilege in cloud and backend-as-a-service deployments. Use row-level security and least-privileged client roles. Never place privileged or service keys in client-side code. Allow writes only to authenticated, authorized roles. Test what an anonymous caller can read and write. • Remove management and administrative interfaces from the internet. Enforce multi-factor authentication for all administrative access. Patch exposed application middleware without delay. • Detect attacks at machine speed. Apply rate-based and per-second API anomaly detection. Alert on enumeration bursts, bulk reads and automated registrations. Retain logs for at least 180 days. • After any credential exposure or confirmed access, treat the environment as compromised until forensically cleared. Retest after remediation. Expect repeat attempts within days to weeks. • Govern AI agents deployed within the organization. Give each run a separate, short-lived identity with least privilege. Enforce default-deny egress, permitting only required destinations, and maintain a tamper-resistant log of agent activity, covering at minimum all actions that affect production systems and data. • BFSI and fintech entities should also implement the payment and disbursement API measures advised in CIAD-2026-0046. •",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951"
+    ],
     "solutionLinks": []
   },
   {
@@ -1152,40 +1236,6 @@
       "CVE-2025-89105",
       "CVE-2026-58242",
       "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951"
     ],
     "solutionLinks": []
   },
