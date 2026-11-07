@@ -1,20 +1,36 @@
 [
   {
-    "title": "Authentication Bypass Vulnerability in OpenSSH",
+    "title": "Multiple Vulnerabilities in Drupal Modules",
     "severity": "critical",
     "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0542",
-    "code": "CIVN-2026-0542",
-    "summary": "A vulnerability has been reported in OpenSSH which could allow a remote attacker to bypass password authentication mechanism on the targeted system.",
-    "description": "OpenSSH is a SSH protocol 2.0 implementation and includes sftp client and server support. This vulnerability exists in OpenSSH due to authentication bypass. A remote attacker could exploit this vulnerability by sending an unusually long password to the targeted system running OpenSSH on Linux with musl libc and PAM disabled. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access and elevate privileges on the targeted system.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0541",
+    "code": "CIVN-2026-0541",
+    "summary": "Multiple critical vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass security restrictions, execute arbitrary code, conduct cross-site scripting (XSS) attacks, or gain unauthorized access to sensitive information and resources.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various contributed modules of Drupal due to insufficient access controls, improper authentication validation, inadequate input validation, and unsafe PHP object deserialization. An attacker could exploit these vulnerabilities by sending specially crafted requests, manipulating application inputs, or abusing improperly configured access controls. Successful exploitation could allow an attacker to bypass authentication and authorization mechanisms, access or modify protected resources, perform cross-site scripting attacks, or execute arbitrary code on the affected system, potentially resulting in complete compromise of the website.",
     "softwareAffected": [
-      "OpenSSH versions prior to 10.6p2"
+      "Reset Password Email/SMS OTP versions prior to 1.0.5",
+      "Commerce Product Alternative versions prior to 1.0.1",
+      "Highlight Js syntax highlighter versions prior to 1.3.1",
+      "REST & JSON API Authentication for Drupal versions prior to 3.2.1",
+      "Workflow Notifications versions prior to 3.0.3",
+      "Simple OAuth (OAuth2) & OpenID Connect versions prior to 5.2.6, from 6.0.0 to 6.0.9 and from 6.1.1 to 6.1.3",
+      "S3 File System CORS Upload versions prior to 8.x-1.3",
+      "Content Synchronizer versions prior to 4.1.1",
+      "GroupEx PRO (Daxko) integration versions prior to 2.2.1"
     ],
-    "targetAudience": "All organizations and individuals using OpenSSH.",
-    "riskAssessment": "High risk of service disruption.",
-    "impactAssessment": "Potential for High risk of denial of service (DoS) conditions.",
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites",
     "cves": [
-      "CVE-2026-123158"
+      "CVE-2026-122074",
+      "CVE-2026-122070",
+      "CVE-2026-122068",
+      "CVE-2026-122067",
+      "CVE-2026-122066",
+      "CVE-2026-122058",
+      "CVE-2026-122057",
+      "CVE-2026-118547",
+      "CVE-2026-118565"
     ],
     "solutionLinks": []
   },
@@ -55,6 +71,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Authentication Bypass Vulnerability in OpenSSH",
+    "severity": "critical",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0542",
+    "code": "CIVN-2026-0542",
+    "summary": "A vulnerability has been reported in OpenSSH which could allow a remote attacker to bypass password authentication mechanism on the targeted system.",
+    "description": "OpenSSH is a SSH protocol 2.0 implementation and includes sftp client and server support. This vulnerability exists in OpenSSH due to authentication bypass. A remote attacker could exploit this vulnerability by sending an unusually long password to the targeted system running OpenSSH on Linux with musl libc and PAM disabled. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access and elevate privileges on the targeted system.",
+    "softwareAffected": [
+      "OpenSSH versions prior to 10.6p2"
+    ],
+    "targetAudience": "All organizations and individuals using OpenSSH.",
+    "riskAssessment": "High risk of service disruption.",
+    "impactAssessment": "Potential for High risk of denial of service (DoS) conditions.",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Use-After-Free Vulnerability in Linux Kernel",
     "severity": "critical",
     "date": "2026-11-06",
@@ -80,6 +115,47 @@
       "cve-2026-98432",
       "CVE-2026-98432"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3652",
+    "severity": "high",
+    "date": "2026-11-05",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3652",
+    "code": "CICA-2026-3652",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "MikroTik RouterOS is a network operating system used in various networking devices. Multiple vulnerabilities exist in MikroTik Routers due to improper authentication, improper en-forcement of security checks, argument injection, and memory handling issues. An attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system, such as through the SSH service, the WebFig interface, or the bandwidth-test service. Successful exploitation of these vulnerabilities could allow a remote attacker to bypass au-thentication, gain elevated privileges, execute arbitrary code, obtain sensitive information, or cause denial of service on the targeted system. Note: These vulnerabilities along with the SSH vulnerabilities CVE-2026-67279 and CVE-2026-86060 in combination, under the name \"MikroTrick\" are being actively exploited in the wild.",
+    "softwareAffected": [
+      "MikroTik RouterOS 6 versions prior to 6.49.21",
+      "MikroTik RouterOS 7.23.x versions prior to 7.23.6",
+      "MikroTik RouterOS 7.24.x versions prior to 7.24.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using MikroTik Routers.",
+    "riskAssessment": "High risk of authentication bypass, remote code execution, privilege escalation, sensitive in-formation disclosure, denial-of-service.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-67279",
+      "CVE-2026-86060",
+      "CVE-2026-67276",
+      "CVE-2026-67277",
+      "CVE-2026-67278",
+      "CVE-2026-67281"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Escalation of AI-Driven Attacks on BFSI Entities by Threat Actor \"CRAFTY FALCON\"",
+    "severity": "critical",
+    "date": "2026-11-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058",
+    "code": "CIAD-2026-0058",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 07, 2026",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -138,21 +214,6 @@
       "CVE-2026-55279",
       "CVE-2026-58859"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Escalation of AI-Driven Attacks on BFSI Entities by Threat Actor \"CRAFTY FALCON\"",
-    "severity": "critical",
-    "date": "2026-11-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058",
-    "code": "CIAD-2026-0058",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 07, 2026",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -343,63 +404,6 @@
       "CVE-2026-108184",
       "CVE-2026-53420",
       "CVE-2026-53418"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
-    "severity": "high",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
-    "code": "CIVN-2026-0529",
-    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
-    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
-    "riskAssessment": "Manipulation of application logic and information disclosure.",
-    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
-    "cves": [
-      "CVE-2026-114358"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in PHP",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
-    "code": "CIVN-2026-0528",
-    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
-    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "PHP 8.2 versions prior to 8.2.35",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.5 versions prior to 8.5.12"
-    ],
-    "targetAudience": "Administrators and users of PHP-based web applications.",
-    "riskAssessment": "High risk of information disclosure and remote code execution.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
-    "code": "CIAD-2026-0055",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
-    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
-    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
-    "cves": [
-      "cve-2026-111497",
-      "CVE-2026-111497"
     ],
     "solutionLinks": []
   },
@@ -607,6 +611,63 @@
       "CVE-2026-113949",
       "CVE-2026-113950",
       "CVE-2026-113952"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "severity": "high",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "cves": [
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in PHP",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
+    "code": "CIVN-2026-0528",
+    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "PHP 8.2 versions prior to 8.2.35",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.5 versions prior to 8.5.12"
+    ],
+    "targetAudience": "Administrators and users of PHP-based web applications.",
+    "riskAssessment": "High risk of information disclosure and remote code execution.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+    "code": "CIAD-2026-0055",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
+    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
+    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
+    "cves": [
+      "cve-2026-111497",
+      "CVE-2026-111497"
     ],
     "solutionLinks": []
   },
@@ -857,6 +918,29 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-10-22",
@@ -889,29 +973,6 @@
     "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
     "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
     "solutionLinks": []
   },
   {
