@@ -1,5 +1,25 @@
 [
   {
+    "title": "Remote Code Execution Vulnerability in Cisco UCS Central Software",
+    "severity": "high",
+    "date": "2026-11-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0543",
+    "code": "CIVN-2026-0543",
+    "summary": "A vulnerability has been reported in the Cisco UCS Central Software which could allow a remote attacker to execute arbitrary commands, write arbitrary files and disclose sensitive information on the targeted system.",
+    "description": "Cisco UCS Central Software is a centralized management",
+    "softwareAffected": [
+      "Cisco UCS Central Software versions 2.0 and earlier.",
+      "Cisco UCS Central Software version 2.1 prior to version 2.1(2c)."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of Cisco UCS Central Software.",
+    "riskAssessment": "High risk of remote code execution and information disclosure on affected devices.",
+    "impactAssessment": "Potential impact on confidentiality, and integrity of the affected system.",
+    "cves": [
+      "CVE-2026-76506"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Authentication Bypass Vulnerability in OpenSSH",
     "severity": "critical",
     "date": "2026-11-06",
@@ -168,6 +188,21 @@
     "solutionLinks": []
   },
   {
+    "title": "Escalation of AI-Driven Attacks on BFSI Entities by Threat Actor \"CRAFTY FALCON\"",
+    "severity": "critical",
+    "date": "2026-11-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058",
+    "code": "CIAD-2026-0058",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 10, 2026",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "CERT-In Advisory CICA-2026-3651",
     "severity": "high",
     "date": "2026-11-04",
@@ -180,26 +215,6 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Tata Motors iRA and iRA.ev Application",
-    "severity": "high",
-    "date": "2026-11-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0537",
-    "code": "CIVN-2026-0537",
-    "summary": "Multiple vulnerabilities have been reported in Tata Motors iRA and iRA.ev applications, which could allow an attacker to obtain sensitive credentials or access to vehicle related information and services.",
-    "description": "The iRA 2.0 and iRA.ev mobile applications are Tata Motors connected vehicle applications for internal combustion engine (ICE) and electric vehicle (EV) customers, respectively. They provide access to vehicle related information and connected services, including remote vehicle commands, vehicle status and health monitoring and trip information. 1. Hardcoded Credentials Vulnerability ( CVE-2026-121144 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to presence of hardcoded service account credentials, API Keys and authorization tokens within the application package. An unauthenticated remote attacker could exploit this vulnerability by downloading application package and extracting embedded sensitive information. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to associated backend services and potentially access sensitive information or perform unauthorized operations on the targeted system. 2. Insecure Configuration Vulnerability ( CVE-2026-121145 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to insufficient validation of URLs and origins loaded within the WebView component. A remote attacker could exploit this vulnerability by sending malicious web content to the affected WebView. Successful exploitation of this vulnerability could allow the attacker to perform unauthorized interaction with application functionality, obtain live bearer authentication tokens and potentially impersonate the associated user and access vehicle related information and services. 3. Information Disclosure Vulnerability ( CVE-2026-121146 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to the recording of authentication tokens in application logs used for development and debugging. A local attacker with an access to logs could exploit this vulnerability by retrieving and misusing the exposed session tokens. Successful exploitation of this vulnerability could allow the attacker to impersonate the associated user and gain unauthorized access to vehicle related information and services. 4. Security Misconfiguration Vulnerability ( CVE-2026-121147 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to improper implementation of SSL certificate pinning in the network security configuration, resulting in ineffective certificate pinning controls. An attacker positioned to intercept network traffic could exploit this vulnerability to intercept or modify communications between the application and its backend services. Credit These vulnerabilities are reported by Pranav Rajendran.",
-    "softwareAffected": "",
-    "targetAudience": "Users of the affected iRA 2.0 and iRA.ev mobile applications.",
-    "riskAssessment": "Risk of unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
-    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
-    "cves": [
-      "CVE-2026-121144",
-      "CVE-2026-121145",
-      "CVE-2026-121146",
-      "CVE-2026-121147"
-    ],
     "solutionLinks": []
   },
   {
@@ -246,18 +261,23 @@
     "solutionLinks": []
   },
   {
-    "title": "Escalation of AI-Driven Attacks on BFSI Entities by Threat Actor \"CRAFTY FALCON\"",
-    "severity": "critical",
+    "title": "Multiple Vulnerabilities in Tata Motors iRA and iRA.ev Application",
+    "severity": "high",
     "date": "2026-11-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058",
-    "code": "CIAD-2026-0058",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 09, 2026",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0537",
+    "code": "CIVN-2026-0537",
+    "summary": "Multiple vulnerabilities have been reported in Tata Motors iRA and iRA.ev applications, which could allow an attacker to obtain sensitive credentials or access to vehicle related information and services.",
+    "description": "The iRA 2.0 and iRA.ev mobile applications are Tata Motors connected vehicle applications for internal combustion engine (ICE) and electric vehicle (EV) customers, respectively. They provide access to vehicle related information and connected services, including remote vehicle commands, vehicle status and health monitoring and trip information. 1. Hardcoded Credentials Vulnerability ( CVE-2026-121144 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to presence of hardcoded service account credentials, API Keys and authorization tokens within the application package. An unauthenticated remote attacker could exploit this vulnerability by downloading application package and extracting embedded sensitive information. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to associated backend services and potentially access sensitive information or perform unauthorized operations on the targeted system. 2. Insecure Configuration Vulnerability ( CVE-2026-121145 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to insufficient validation of URLs and origins loaded within the WebView component. A remote attacker could exploit this vulnerability by sending malicious web content to the affected WebView. Successful exploitation of this vulnerability could allow the attacker to perform unauthorized interaction with application functionality, obtain live bearer authentication tokens and potentially impersonate the associated user and access vehicle related information and services. 3. Information Disclosure Vulnerability ( CVE-2026-121146 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to the recording of authentication tokens in application logs used for development and debugging. A local attacker with an access to logs could exploit this vulnerability by retrieving and misusing the exposed session tokens. Successful exploitation of this vulnerability could allow the attacker to impersonate the associated user and gain unauthorized access to vehicle related information and services. 4. Security Misconfiguration Vulnerability ( CVE-2026-121147 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to improper implementation of SSL certificate pinning in the network security configuration, resulting in ineffective certificate pinning controls. An attacker positioned to intercept network traffic could exploit this vulnerability to intercept or modify communications between the application and its backend services. Credit These vulnerabilities are reported by Pranav Rajendran.",
     "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
+    "targetAudience": "Users of the affected iRA 2.0 and iRA.ev mobile applications.",
+    "riskAssessment": "Risk of unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
+    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
+    "cves": [
+      "CVE-2026-121144",
+      "CVE-2026-121145",
+      "CVE-2026-121146",
+      "CVE-2026-121147"
+    ],
     "solutionLinks": []
   },
   {
@@ -357,28 +377,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in GoAhead Web Server",
-    "severity": "critical",
-    "date": "2026-10-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
-    "code": "CIAD-2026-0057",
-    "summary": "Multiple vulnerabilities have been reported in GoAhead Web Server which could allow a remote attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
-    "description": "GoAhead is an embedded web server used for device management in various IoT, firewall, and industrial control devices. These vulnerabilities exist in GoAhead due to improper certificate validation. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
-    "softwareAffected": [
-      "GoAhead Web Server versions 3.4.5 to 6.1.0 with OpenSSL TLS build",
-      "GoAhead Web Server versions 4.0.2 to 6.1.0 with Mbed TLS build",
-      "GoAhead Web Server versions 6.1.0 and prior with LibreSSL Legacy TLS build"
-    ],
-    "targetAudience": "All organizations and Individuals using GoAhead Web Server.",
-    "riskAssessment": "High risk of bypassing security restrictions and obtaining sensitive information.",
-    "impactAssessment": "Potential for unauthorized access, disclosure of sensitive information, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-115881",
-      "CVE-2026-115884"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-10-28",
@@ -406,6 +404,28 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in GoAhead Web Server",
+    "severity": "critical",
+    "date": "2026-10-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
+    "code": "CIAD-2026-0057",
+    "summary": "Multiple vulnerabilities have been reported in GoAhead Web Server which could allow a remote attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
+    "description": "GoAhead is an embedded web server used for device management in various IoT, firewall, and industrial control devices. These vulnerabilities exist in GoAhead due to improper certificate validation. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
+    "softwareAffected": [
+      "GoAhead Web Server versions 3.4.5 to 6.1.0 with OpenSSL TLS build",
+      "GoAhead Web Server versions 4.0.2 to 6.1.0 with Mbed TLS build",
+      "GoAhead Web Server versions 6.1.0 and prior with LibreSSL Legacy TLS build"
+    ],
+    "targetAudience": "All organizations and Individuals using GoAhead Web Server.",
+    "riskAssessment": "High risk of bypassing security restrictions and obtaining sensitive information.",
+    "impactAssessment": "Potential for unauthorized access, disclosure of sensitive information, and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-115881",
+      "CVE-2026-115884"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Zoom Workplace Clients",
     "severity": "high",
     "date": "2026-10-28",
@@ -428,6 +448,24 @@
       "CVE-2026-108184",
       "CVE-2026-53420",
       "CVE-2026-53418"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+    "code": "CIAD-2026-0055",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
+    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
+    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
+    "cves": [
+      "cve-2026-111497",
+      "CVE-2026-111497"
     ],
     "solutionLinks": []
   },
@@ -674,24 +712,6 @@
     "impactAssessment": "Potential for complete system compromise.",
     "cves": [
       "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
-    "code": "CIAD-2026-0055",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
-    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
-    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
-    "cves": [
-      "cve-2026-111497",
-      "CVE-2026-111497"
     ],
     "solutionLinks": []
   },
@@ -965,29 +985,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
-    "code": "CIAD-2026-0052",
-    "summary": "Multiple vulnerabilities have been reported in PHP which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities (collectively referred to as \"PHP2Shell\") exist in PHP due to memory corruption and improper resource control. An unauthenticated remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on an affected server, potentially exposing or modifying website content, customer data, databases, and other linked resources. Micro, Small and Medium Enterprises (MSME) operating PHP-based websites, content-management systems, e-commerce platforms, or third-party applications could face security risks, particularly where PHP comes bundled with their hosting services or other software. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently. Recommendations: MSMEs are advised to undertake the following actions: • Identify PHP usage: Check whether the website, hosting account, content-management system, or business application uses PHP. If the PHP version is unknown, contact the hosting provider or software vendor for confirmation. • Apply security updates: Upgrade affected PHP installations to the appropriate fixed versions: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or vendor's fixed package. • Prioritise internet-facing systems: Remediate public-facing websites and applications first. After applying updates, restart the relevant services as needed and verify that the updated PHP runtime is actually in use. • Address unsupported versions: PHP 8.1 and earlier versions are no longer supported by the upstream PHP project. Upgrade to a supported release, or obtain and verify a security-fixed package from the relevant vendor. • Restrict exposure where patching is delayed: If an affected system cannot be patched immediately, consider restricting access to trusted networks until remediation is completed. Also follow mitigation steps mentioned by the vendor. • Check for signs of compromise: Check for signs of compromise by reviewing available web-server and application logs for unusual requests, unexpected file changes, newly created administrator accounts, suspicious processes, and unexplained outbound connections. If compromise or suspicious activity is detected, preserve relevant logs, contain the incident, and promptly report it with available evidence to CERT-In at incident@cert-in.org.in • Secure business information: Protect business information by maintaining regular offline or otherwise secure backups, testing that restoration works, and ensuring administrative accounts use strong, unique passwords and multi-factor authentication wherever supported. •",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All MSME organizations using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-10-22",
@@ -1020,6 +1017,29 @@
     "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
     "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
+    "code": "CIAD-2026-0052",
+    "summary": "Multiple vulnerabilities have been reported in PHP which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities (collectively referred to as \"PHP2Shell\") exist in PHP due to memory corruption and improper resource control. An unauthenticated remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on an affected server, potentially exposing or modifying website content, customer data, databases, and other linked resources. Micro, Small and Medium Enterprises (MSME) operating PHP-based websites, content-management systems, e-commerce platforms, or third-party applications could face security risks, particularly where PHP comes bundled with their hosting services or other software. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently. Recommendations: MSMEs are advised to undertake the following actions: • Identify PHP usage: Check whether the website, hosting account, content-management system, or business application uses PHP. If the PHP version is unknown, contact the hosting provider or software vendor for confirmation. • Apply security updates: Upgrade affected PHP installations to the appropriate fixed versions: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or vendor's fixed package. • Prioritise internet-facing systems: Remediate public-facing websites and applications first. After applying updates, restart the relevant services as needed and verify that the updated PHP runtime is actually in use. • Address unsupported versions: PHP 8.1 and earlier versions are no longer supported by the upstream PHP project. Upgrade to a supported release, or obtain and verify a security-fixed package from the relevant vendor. • Restrict exposure where patching is delayed: If an affected system cannot be patched immediately, consider restricting access to trusted networks until remediation is completed. Also follow mitigation steps mentioned by the vendor. • Check for signs of compromise: Check for signs of compromise by reviewing available web-server and application logs for unusual requests, unexpected file changes, newly created administrator accounts, suspicious processes, and unexplained outbound connections. If compromise or suspicious activity is detected, preserve relevant logs, contain the incident, and promptly report it with available evidence to CERT-In at incident@cert-in.org.in • Secure business information: Protect business information by maintaining regular offline or otherwise secure backups, testing that restoration works, and ensuring administrative accounts use strong, unique passwords and multi-factor authentication wherever supported. •",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All MSME organizations using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
     "solutionLinks": []
   },
   {
