@@ -1,5 +1,27 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Ivanti Connect Secure (ICS)",
+    "severity": "high",
+    "date": "2026-11-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0547",
+    "code": "CIVN-2026-0547",
+    "summary": "Multiple vulnerabilities have been reported in Ivanti Connect Secure (ICS), which could allow an attacker to escalate privileges, upload files containing attacker-controlled content, and achieve unauthorized access on the targeted system.",
+    "description": "Ivanti Connect Secure (ICS) is a remote access VPN",
+    "softwareAffected": [
+      "Ivanti Connect Secure (ICS) version 25.1.1.2 and prior",
+      "Ivanti Connect Secure (ICS) version 22.8R2.5 and prior"
+    ],
+    "targetAudience": "All Individuals and end-user organizations using affected Ivanti Products.",
+    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
+    "impactAssessment": "Potential for privilege escalation, unauthorized access, credential theft, and compromise of sensitive system information.",
+    "cves": [
+      "CVE-2026-104935",
+      "CVE-2026-111357",
+      "CVE-2026-118527"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Cisco UCS Central Software",
     "severity": "high",
     "date": "2026-11-10",
@@ -67,6 +89,69 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Drupal Modules",
+    "severity": "critical",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0541",
+    "code": "CIVN-2026-0541",
+    "summary": "Multiple critical vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass security restrictions, execute arbitrary code, conduct cross-site scripting (XSS) attacks, or gain unauthorized access to sensitive information and resources.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various contributed modules of Drupal due to insufficient access controls, improper authentication validation, inadequate input validation, and unsafe PHP object deserialization. An attacker could exploit these vulnerabilities by sending specially crafted requests, manipulating application inputs, or abusing improperly configured access controls. Successful exploitation could allow an attacker to bypass authentication and authorization mechanisms, access or modify protected resources, perform cross-site scripting attacks, or execute arbitrary code on the affected system, potentially resulting in complete compromise of the website.",
+    "softwareAffected": [
+      "Reset Password Email/SMS OTP versions prior to 1.0.5",
+      "Commerce Product Alternative versions prior to 1.0.1",
+      "Highlight Js syntax highlighter versions prior to 1.3.1",
+      "REST & JSON API Authentication for Drupal versions prior to 3.2.1",
+      "Workflow Notifications versions prior to 3.0.3",
+      "Simple OAuth (OAuth2) & OpenID Connect versions prior to 5.2.6, from 6.0.0 to 6.0.9 and from 6.1.1 to 6.1.3",
+      "S3 File System CORS Upload versions prior to 8.x-1.3",
+      "Content Synchronizer versions prior to 4.1.1",
+      "GroupEx PRO (Daxko) integration versions prior to 2.2.1"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal Modules",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise",
+    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites",
+    "cves": [
+      "CVE-2026-122074",
+      "CVE-2026-122070",
+      "CVE-2026-122068",
+      "CVE-2026-122067",
+      "CVE-2026-122066",
+      "CVE-2026-122058",
+      "CVE-2026-122057",
+      "CVE-2026-118547",
+      "CVE-2026-118565"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Use-After-Free Vulnerability in Linux Kernel",
+    "severity": "critical",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0539",
+    "code": "CIVN-2026-0539",
+    "summary": "A vulnerability has been reported in the Linux kernel which could allow a remote attacker to cause memory corruption, execute arbitrary code or trigger denial-of-service (DoS) conditions on the targeted system.",
+    "description": "The Linux kernel is the core component of Linux-based operating systems, responsible for managing hardware resources, memory and essential system services. This vulnerability exists in the Linux kernels IPv4 TCP networking subsystem due to improper memory deallocation during concurrent TCP connection processing, resulting in a use-after-free condition. A remote attacker could exploit this vulnerability by sending specially crafted IPv4 TCP packets containing IP options under specific timing conditions. Successful exploitation of this vulnerability could allow a remote attacker to cause memory corruption, execute arbitrary code or trigger denial-of-service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "Linux kernel versions 4.4 and later",
+      "Linux kernel 5.10.x versions prior to 5.10.272.",
+      "Linux kernel 5.15.x versions prior to 5.15.223.",
+      "Linux kernel 6.1.x versions prior to 6.1.190.",
+      "Linux kernel 6.6.x versions prior to 6.6.159.",
+      "Linux kernel 6.12.x versions prior to 6.12.113.",
+      "Linux kernel 6.18.x versions prior to 6.18.56.",
+      "Linux kernel 7.2.x versions prior to 7.2.10.",
+      "Linux kernel versions prior to 7.3."
+    ],
+    "targetAudience": "System Administrators, Cloud Service Providers and Security Professionals.",
+    "riskAssessment": "High risk of kernel memory corruption, denial of service and potential compromise of affected systems.",
+    "impactAssessment": "Potential for remote code execution, kernel memory corruption and service disruption.",
+    "cves": [
+      "cve-2026-98432",
+      "CVE-2026-98432"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Drupal Products",
     "severity": "critical",
     "date": "2026-11-06",
@@ -99,34 +184,6 @@
       "CVE-2026-118573",
       "CVE-2026-118575",
       "CVE-2026-118576"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Use-After-Free Vulnerability in Linux Kernel",
-    "severity": "critical",
-    "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0539",
-    "code": "CIVN-2026-0539",
-    "summary": "A vulnerability has been reported in the Linux kernel which could allow a remote attacker to cause memory corruption, execute arbitrary code or trigger denial-of-service (DoS) conditions on the targeted system.",
-    "description": "The Linux kernel is the core component of Linux-based operating systems, responsible for managing hardware resources, memory and essential system services. This vulnerability exists in the Linux kernels IPv4 TCP networking subsystem due to improper memory deallocation during concurrent TCP connection processing, resulting in a use-after-free condition. A remote attacker could exploit this vulnerability by sending specially crafted IPv4 TCP packets containing IP options under specific timing conditions. Successful exploitation of this vulnerability could allow a remote attacker to cause memory corruption, execute arbitrary code or trigger denial-of-service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "Linux kernel versions 4.4 and later",
-      "Linux kernel 5.10.x versions prior to 5.10.272.",
-      "Linux kernel 5.15.x versions prior to 5.15.223.",
-      "Linux kernel 6.1.x versions prior to 6.1.190.",
-      "Linux kernel 6.6.x versions prior to 6.6.159.",
-      "Linux kernel 6.12.x versions prior to 6.12.113.",
-      "Linux kernel 6.18.x versions prior to 6.18.56.",
-      "Linux kernel 7.2.x versions prior to 7.2.10.",
-      "Linux kernel versions prior to 7.3."
-    ],
-    "targetAudience": "System Administrators, Cloud Service Providers and Security Professionals.",
-    "riskAssessment": "High risk of kernel memory corruption, denial of service and potential compromise of affected systems.",
-    "impactAssessment": "Potential for remote code execution, kernel memory corruption and service disruption.",
-    "cves": [
-      "cve-2026-98432",
-      "CVE-2026-98432"
     ],
     "solutionLinks": []
   },
@@ -174,41 +231,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Modules",
-    "severity": "critical",
-    "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0541",
-    "code": "CIVN-2026-0541",
-    "summary": "Multiple critical vulnerabilities have been reported in various contributed modules of Drupal, which could allow an attacker to bypass security restrictions, execute arbitrary code, conduct cross-site scripting (XSS) attacks, or gain unauthorized access to sensitive information and resources.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. These vulnerabilities exist in various contributed modules of Drupal due to insufficient access controls, improper authentication validation, inadequate input validation, and unsafe PHP object deserialization. An attacker could exploit these vulnerabilities by sending specially crafted requests, manipulating application inputs, or abusing improperly configured access controls. Successful exploitation could allow an attacker to bypass authentication and authorization mechanisms, access or modify protected resources, perform cross-site scripting attacks, or execute arbitrary code on the affected system, potentially resulting in complete compromise of the website.",
-    "softwareAffected": [
-      "Reset Password Email/SMS OTP versions prior to 1.0.5",
-      "Commerce Product Alternative versions prior to 1.0.1",
-      "Highlight Js syntax highlighter versions prior to 1.3.1",
-      "REST & JSON API Authentication for Drupal versions prior to 3.2.1",
-      "Workflow Notifications versions prior to 3.0.3",
-      "Simple OAuth (OAuth2) & OpenID Connect versions prior to 5.2.6, from 6.0.0 to 6.0.9 and from 6.1.1 to 6.1.3",
-      "S3 File System CORS Upload versions prior to 8.x-1.3",
-      "Content Synchronizer versions prior to 4.1.1",
-      "GroupEx PRO (Daxko) integration versions prior to 2.2.1"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal Modules",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure, malicious script execution, and account compromise",
-    "impactAssessment": "Potential compromise of the confidentiality, integrity, and availability of affected Drupal websites",
-    "cves": [
-      "CVE-2026-122074",
-      "CVE-2026-122070",
-      "CVE-2026-122068",
-      "CVE-2026-122067",
-      "CVE-2026-122066",
-      "CVE-2026-122058",
-      "CVE-2026-122057",
-      "CVE-2026-118547",
-      "CVE-2026-118565"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "CERT-In Advisory CICA-2026-3652",
     "severity": "high",
     "date": "2026-11-05",
@@ -231,6 +253,26 @@
       "CVE-2026-67277",
       "CVE-2026-67278",
       "CVE-2026-67281"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Tata Motors iRA and iRA.ev Application",
+    "severity": "high",
+    "date": "2026-11-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0537",
+    "code": "CIVN-2026-0537",
+    "summary": "Multiple vulnerabilities have been reported in Tata Motors iRA and iRA.ev applications, which could allow an attacker to obtain sensitive credentials or access to vehicle related information and services.",
+    "description": "The iRA 2.0 and iRA.ev mobile applications are Tata Motors connected vehicle applications for internal combustion engine (ICE) and electric vehicle (EV) customers, respectively. They provide access to vehicle related information and connected services, including remote vehicle commands, vehicle status and health monitoring and trip information. 1. Hardcoded Credentials Vulnerability ( CVE-2026-121144 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to presence of hardcoded service account credentials, API Keys and authorization tokens within the application package. An unauthenticated remote attacker could exploit this vulnerability by downloading application package and extracting embedded sensitive information. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to associated backend services and potentially access sensitive information or perform unauthorized operations on the targeted system. 2. Insecure Configuration Vulnerability ( CVE-2026-121145 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to insufficient validation of URLs and origins loaded within the WebView component. A remote attacker could exploit this vulnerability by sending malicious web content to the affected WebView. Successful exploitation of this vulnerability could allow the attacker to perform unauthorized interaction with application functionality, obtain live bearer authentication tokens and potentially impersonate the associated user and access vehicle related information and services. 3. Information Disclosure Vulnerability ( CVE-2026-121146 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to the recording of authentication tokens in application logs used for development and debugging. A local attacker with an access to logs could exploit this vulnerability by retrieving and misusing the exposed session tokens. Successful exploitation of this vulnerability could allow the attacker to impersonate the associated user and gain unauthorized access to vehicle related information and services. 4. Security Misconfiguration Vulnerability ( CVE-2026-121147 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to improper implementation of SSL certificate pinning in the network security configuration, resulting in ineffective certificate pinning controls. An attacker positioned to intercept network traffic could exploit this vulnerability to intercept or modify communications between the application and its backend services. Credit These vulnerabilities are reported by Pranav Rajendran.",
+    "softwareAffected": "",
+    "targetAudience": "Users of the affected iRA 2.0 and iRA.ev mobile applications.",
+    "riskAssessment": "Risk of unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
+    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
+    "cves": [
+      "CVE-2026-121144",
+      "CVE-2026-121145",
+      "CVE-2026-121146",
+      "CVE-2026-121147"
     ],
     "solutionLinks": []
   },
@@ -262,26 +304,6 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Tata Motors iRA and iRA.ev Application",
-    "severity": "high",
-    "date": "2026-11-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0537",
-    "code": "CIVN-2026-0537",
-    "summary": "Multiple vulnerabilities have been reported in Tata Motors iRA and iRA.ev applications, which could allow an attacker to obtain sensitive credentials or access to vehicle related information and services.",
-    "description": "The iRA 2.0 and iRA.ev mobile applications are Tata Motors connected vehicle applications for internal combustion engine (ICE) and electric vehicle (EV) customers, respectively. They provide access to vehicle related information and connected services, including remote vehicle commands, vehicle status and health monitoring and trip information. 1. Hardcoded Credentials Vulnerability ( CVE-2026-121144 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to presence of hardcoded service account credentials, API Keys and authorization tokens within the application package. An unauthenticated remote attacker could exploit this vulnerability by downloading application package and extracting embedded sensitive information. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to associated backend services and potentially access sensitive information or perform unauthorized operations on the targeted system. 2. Insecure Configuration Vulnerability ( CVE-2026-121145 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to insufficient validation of URLs and origins loaded within the WebView component. A remote attacker could exploit this vulnerability by sending malicious web content to the affected WebView. Successful exploitation of this vulnerability could allow the attacker to perform unauthorized interaction with application functionality, obtain live bearer authentication tokens and potentially impersonate the associated user and access vehicle related information and services. 3. Information Disclosure Vulnerability ( CVE-2026-121146 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to the recording of authentication tokens in application logs used for development and debugging. A local attacker with an access to logs could exploit this vulnerability by retrieving and misusing the exposed session tokens. Successful exploitation of this vulnerability could allow the attacker to impersonate the associated user and gain unauthorized access to vehicle related information and services. 4. Security Misconfiguration Vulnerability ( CVE-2026-121147 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to improper implementation of SSL certificate pinning in the network security configuration, resulting in ineffective certificate pinning controls. An attacker positioned to intercept network traffic could exploit this vulnerability to intercept or modify communications between the application and its backend services. Credit These vulnerabilities are reported by Pranav Rajendran.",
-    "softwareAffected": "",
-    "targetAudience": "Users of the affected iRA 2.0 and iRA.ev mobile applications.",
-    "riskAssessment": "Risk of unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
-    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
-    "cves": [
-      "CVE-2026-121144",
-      "CVE-2026-121145",
-      "CVE-2026-121146",
-      "CVE-2026-121147"
-    ],
     "solutionLinks": []
   },
   {
@@ -499,6 +521,23 @@
     "solutionLinks": []
   },
   {
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "severity": "high",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "cves": [
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in PHP",
     "severity": "critical",
     "date": "2026-10-27",
@@ -535,23 +574,6 @@
     "cves": [
       "cve-2026-111497",
       "CVE-2026-111497"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
-    "severity": "high",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
-    "code": "CIVN-2026-0529",
-    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
-    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
-    "riskAssessment": "Manipulation of application logic and information disclosure.",
-    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
-    "cves": [
-      "CVE-2026-114358"
     ],
     "solutionLinks": []
   },
@@ -1009,6 +1031,29 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -1064,29 +1109,6 @@
     "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
     "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
     "solutionLinks": []
   },
   {
@@ -1461,6 +1483,41 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. CVE-2026-83844: This vulnerability exists in Microsoft Paint due to an out-of-bounds read error. An attacker could exploit this vulnerability by providing a specially crafted image, potentially enabling remote code execution and compromising the confidentiality, integrity, and availability of the affected system. Note: These vulnerabilities are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951",
+      "CVE-2026-83844"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -1515,41 +1572,6 @@
       "CVE-2025-89105",
       "CVE-2026-58242",
       "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. CVE-2026-83844: This vulnerability exists in Microsoft Paint due to an out-of-bounds read error. An attacker could exploit this vulnerability by providing a specially crafted image, potentially enabling remote code execution and compromising the confidentiality, integrity, and availability of the affected system. Note: These vulnerabilities are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951",
-      "CVE-2026-83844"
     ],
     "solutionLinks": []
   },
