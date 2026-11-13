@@ -1,5 +1,23 @@
 [
   {
+    "title": "Information Disclosure Vulnerability in eMudhra emBridge",
+    "severity": "low",
+    "date": "2026-11-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0549",
+    "code": "CIVN-2026-0549",
+    "summary": "A vulnerability has been reported in eMudhra emBridge, which could allow an unauthenticated attacker to enumerate file and directory names on the targeted system.",
+    "description": "eMudhra emBridge is a client-side utility that enables web applications to interact with digital signature certificates and hardware tokens for digital signing and related certificate operations. This vulnerability exists in the eMudhra emBridge due to missing authorization checks in the FileBrowser API endpoints. These endpoints perform file system enumeration using the LocalSystem account without adequately validating the requesting callers authorization. An unauthenticated attacker on the same LAN could exploit this vulnerability by sending malicious webpage to the local HTTPS Web API. Successful exploitation of this vulnerability could allow the attacker to enumerate file and directory names and obtain information about the directory structure of the targeted system. The vulnerability however, does not provide access to file contents or permit file modification, deletion, or code execution, or access to cryptographic keys and hardware token PINs. Credit This vulnerability is reported by Karan Saini.",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using affected versions of eMudhra emBridge.",
+    "riskAssessment": "Unauthorized access to file-system metadata, including file and directory names, from the targeted system.",
+    "impactAssessment": "Unauthorized disclosure of file and directory names and directory structure information.",
+    "cves": [
+      "cve-2026-125659",
+      "CVE-2026-125659"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Ivanti Connect Secure (ICS)",
     "severity": "high",
     "date": "2026-11-12",
@@ -18,6 +36,25 @@
       "CVE-2026-104935",
       "CVE-2026-111357",
       "CVE-2026-118527"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authorization Bypass Vulnerability in IBM Aspera Faspex",
+    "severity": "critical",
+    "date": "2026-11-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0546",
+    "code": "CIVN-2026-0546",
+    "summary": "A vulnerability has been reported in IBM Aspera Faspex which could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application.",
+    "description": "IBM Aspera Faspex is a secure, web-based file transfer and collaboration application developed by IBM. This vulnerability exists in IBM Aspera Faspex due to improper authorization. An authenticated remote attacker could exploit this vulnerability by crafting a specific message to bypass authorization controls. Successful exploitation could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application. Note - This vulnerability is known to be exploited in the wild.",
+    "softwareAffected": [
+      "IBM Aspera Faspex versions 5.0.0 to 5.0.19"
+    ],
+    "targetAudience": "Organizations and individuals using IBM Aspera Faspex.",
+    "riskAssessment": "High risk of unauthorized access and privilege escalation.",
+    "impactAssessment": "Potential for unauthorized access to data and full administrative control of the affected application.",
+    "cves": [
+      "CVE-2026-123218"
     ],
     "solutionLinks": []
   },
@@ -89,6 +126,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Authentication Bypass Vulnerability in OpenSSH",
+    "severity": "critical",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0542",
+    "code": "CIVN-2026-0542",
+    "summary": "A vulnerability has been reported in OpenSSH which could allow a remote attacker to bypass password authentication mechanism on the targeted system.",
+    "description": "OpenSSH is a SSH protocol 2.0 implementation and includes sftp client and server support. This vulnerability exists in OpenSSH due to authentication bypass. A remote attacker could exploit this vulnerability by sending an unusually long password to the targeted system running OpenSSH on Linux with musl libc and PAM disabled. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access and elevate privileges on the targeted system.",
+    "softwareAffected": [
+      "OpenSSH versions prior to 10.6p2"
+    ],
+    "targetAudience": "All organizations and individuals using OpenSSH.",
+    "riskAssessment": "High risk of service disruption.",
+    "impactAssessment": "Potential for High risk of denial of service (DoS) conditions.",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Drupal Modules",
     "severity": "critical",
     "date": "2026-11-06",
@@ -120,6 +176,30 @@
       "CVE-2026-122057",
       "CVE-2026-118547",
       "CVE-2026-118565"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Elevation of Privilege Vulnerability in ASP.NET Core",
+    "severity": "high",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0538",
+    "code": "CIVN-2026-0538",
+    "summary": "A vulnerability has been reported in ASP.NET Core that could allow an authorized attacker to elevate privileges on the targeted system.",
+    "description": "ASP.NET Core is a framework for building modern, cloud-enabled, Internet-connected applications. The vulnerability exist in ASP.NET Core due to incorrect default permissions. A local attacker could exploit the vulnerability by accessing the system with existing low-privileged credentials. Successful exploitation of the vulnerability could allow an attacker to elevate privileges on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      ".NET 11.0 (Windows, Linux, Mac OS) prior to 11.0.100-rc.3",
+      ".NET 10.0 (Windows, Linux, Mac OS) prior to 10.0.403",
+      ".NET 9.0 (Windows, Linux, Mac OS) prior to 9.0.320",
+      ".NET 8.0 (Windows, Linux, Mac OS) prior to 8.0.427",
+      "ASP.NET Core runtime and targeting-pack Linux tarballs (Microsoft-published) prior to 9.0.22",
+      ".NET source-build Linux tarballs (all archive types) prior to 10.0.403-servicing.26523.112"
+    ],
+    "targetAudience": "Developers and system administrators using affected .NET and ASP.NET Core products.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for elevation of privileges and complete compromise of the affected system.",
+    "cves": [
+      "CVE-2026-114148"
     ],
     "solutionLinks": []
   },
@@ -188,49 +268,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Elevation of Privilege Vulnerability in ASP.NET Core",
-    "severity": "high",
-    "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0538",
-    "code": "CIVN-2026-0538",
-    "summary": "A vulnerability has been reported in ASP.NET Core that could allow an authorized attacker to elevate privileges on the targeted system.",
-    "description": "ASP.NET Core is a framework for building modern, cloud-enabled, Internet-connected applications. The vulnerability exist in ASP.NET Core due to incorrect default permissions. A local attacker could exploit the vulnerability by accessing the system with existing low-privileged credentials. Successful exploitation of the vulnerability could allow an attacker to elevate privileges on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      ".NET 11.0 (Windows, Linux, Mac OS) prior to 11.0.100-rc.3",
-      ".NET 10.0 (Windows, Linux, Mac OS) prior to 10.0.403",
-      ".NET 9.0 (Windows, Linux, Mac OS) prior to 9.0.320",
-      ".NET 8.0 (Windows, Linux, Mac OS) prior to 8.0.427",
-      "ASP.NET Core runtime and targeting-pack Linux tarballs (Microsoft-published) prior to 9.0.22",
-      ".NET source-build Linux tarballs (all archive types) prior to 10.0.403-servicing.26523.112"
-    ],
-    "targetAudience": "Developers and system administrators using affected .NET and ASP.NET Core products.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for elevation of privileges and complete compromise of the affected system.",
-    "cves": [
-      "CVE-2026-114148"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in OpenSSH",
-    "severity": "critical",
-    "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0542",
-    "code": "CIVN-2026-0542",
-    "summary": "A vulnerability has been reported in OpenSSH which could allow a remote attacker to bypass password authentication mechanism on the targeted system.",
-    "description": "OpenSSH is a SSH protocol 2.0 implementation and includes sftp client and server support. This vulnerability exists in OpenSSH due to authentication bypass. A remote attacker could exploit this vulnerability by sending an unusually long password to the targeted system running OpenSSH on Linux with musl libc and PAM disabled. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access and elevate privileges on the targeted system.",
-    "softwareAffected": [
-      "OpenSSH versions prior to 10.6p2"
-    ],
-    "targetAudience": "All organizations and individuals using OpenSSH.",
-    "riskAssessment": "High risk of service disruption.",
-    "impactAssessment": "Potential for High risk of denial of service (DoS) conditions.",
-    "cves": [
-      "CVE-2026-123158"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "CERT-In Advisory CICA-2026-3652",
     "severity": "high",
     "date": "2026-11-05",
@@ -253,6 +290,49 @@
       "CVE-2026-67277",
       "CVE-2026-67278",
       "CVE-2026-67281"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Android OS",
+    "severity": "critical",
+    "date": "2026-11-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0536",
+    "code": "CIVN-2026-0536",
+    "summary": "Multiple vulnerabilities have been reported in the Android operating system, which could allow an attacker to gain elevated privileges, disclose sensitive information, execute arbitrary code or cause denial-of-service conditions on affected devices.",
+    "description": "Android is an open-source operating system primarily designed for mobile devices, including smart phones, tablets, smart watches, and other embedded system. Multiple vulnerabilities exist in Android OS components, including Framework and System, which could lead to remote denial-of-service, local elevation of privilege, and information disclosure. Successful exploitation of these vulnerabilities could allow an attacker to gain elevated privileges, access sensitive information, or cause denial-of-service on the targeted device.",
+    "softwareAffected": [
+      "Android versions 14, 15, 16, 16-qpr2, and 17"
+    ],
+    "targetAudience": "Individuals and organizations using affected versions of the Android operating system.",
+    "riskAssessment": "High risk of privilege escalation, information disclosure, and denial-of-service on affected Android devices.",
+    "impactAssessment": "Successful exploitation could result in privilege escalation, unauthorized access to sensitive information, and disruption of affected Android devices.",
+    "cves": [
+      "CVE-2026-58865",
+      "CVE-2026-55270",
+      "CVE-2026-58815",
+      "CVE-2026-58841",
+      "CVE-2026-58854",
+      "CVE-2026-58856",
+      "CVE-2026-58834",
+      "CVE-2026-55269",
+      "CVE-2026-55280",
+      "CVE-2026-58835",
+      "CVE-2026-58880",
+      "CVE-2026-49933",
+      "CVE-2026-55265",
+      "CVE-2026-49878",
+      "CVE-2026-45513",
+      "CVE-2026-49880",
+      "CVE-2026-49885",
+      "CVE-2026-55286",
+      "CVE-2026-28667",
+      "CVE-2026-45516",
+      "CVE-2026-45524",
+      "CVE-2026-49937",
+      "CVE-2026-55266",
+      "CVE-2026-55279",
+      "CVE-2026-58859"
     ],
     "solutionLinks": []
   },
@@ -304,49 +384,6 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Android OS",
-    "severity": "critical",
-    "date": "2026-11-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0536",
-    "code": "CIVN-2026-0536",
-    "summary": "Multiple vulnerabilities have been reported in the Android operating system, which could allow an attacker to gain elevated privileges, disclose sensitive information, execute arbitrary code or cause denial-of-service conditions on affected devices.",
-    "description": "Android is an open-source operating system primarily designed for mobile devices, including smart phones, tablets, smart watches, and other embedded system. Multiple vulnerabilities exist in Android OS components, including Framework and System, which could lead to remote denial-of-service, local elevation of privilege, and information disclosure. Successful exploitation of these vulnerabilities could allow an attacker to gain elevated privileges, access sensitive information, or cause denial-of-service on the targeted device.",
-    "softwareAffected": [
-      "Android versions 14, 15, 16, 16-qpr2, and 17"
-    ],
-    "targetAudience": "Individuals and organizations using affected versions of the Android operating system.",
-    "riskAssessment": "High risk of privilege escalation, information disclosure, and denial-of-service on affected Android devices.",
-    "impactAssessment": "Successful exploitation could result in privilege escalation, unauthorized access to sensitive information, and disruption of affected Android devices.",
-    "cves": [
-      "CVE-2026-58865",
-      "CVE-2026-55270",
-      "CVE-2026-58815",
-      "CVE-2026-58841",
-      "CVE-2026-58854",
-      "CVE-2026-58856",
-      "CVE-2026-58834",
-      "CVE-2026-55269",
-      "CVE-2026-55280",
-      "CVE-2026-58835",
-      "CVE-2026-58880",
-      "CVE-2026-49933",
-      "CVE-2026-55265",
-      "CVE-2026-49878",
-      "CVE-2026-45513",
-      "CVE-2026-49880",
-      "CVE-2026-49885",
-      "CVE-2026-55286",
-      "CVE-2026-28667",
-      "CVE-2026-45516",
-      "CVE-2026-45524",
-      "CVE-2026-49937",
-      "CVE-2026-55266",
-      "CVE-2026-55279",
-      "CVE-2026-58859"
-    ],
     "solutionLinks": []
   },
   {
@@ -446,28 +483,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple vulnerabilities in GoAhead Web Server",
-    "severity": "critical",
-    "date": "2026-10-28",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
-    "code": "CIAD-2026-0057",
-    "summary": "Multiple vulnerabilities have been reported in GoAhead Web Server which could allow a remote attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
-    "description": "GoAhead is an embedded web server used for device management in various IoT, firewall, and industrial control devices. These vulnerabilities exist in GoAhead due to improper certificate validation. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
-    "softwareAffected": [
-      "GoAhead Web Server versions 3.4.5 to 6.1.0 with OpenSSL TLS build",
-      "GoAhead Web Server versions 4.0.2 to 6.1.0 with Mbed TLS build",
-      "GoAhead Web Server versions 6.1.0 and prior with LibreSSL Legacy TLS build"
-    ],
-    "targetAudience": "All organizations and Individuals using GoAhead Web Server.",
-    "riskAssessment": "High risk of bypassing security restrictions and obtaining sensitive information.",
-    "impactAssessment": "Potential for unauthorized access, disclosure of sensitive information, and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-115881",
-      "CVE-2026-115884"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-10-28",
@@ -495,6 +510,28 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple vulnerabilities in GoAhead Web Server",
+    "severity": "critical",
+    "date": "2026-10-28",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
+    "code": "CIAD-2026-0057",
+    "summary": "Multiple vulnerabilities have been reported in GoAhead Web Server which could allow a remote attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
+    "description": "GoAhead is an embedded web server used for device management in various IoT, firewall, and industrial control devices. These vulnerabilities exist in GoAhead due to improper certificate validation. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, obtain sensitive information, decrypt certain TLS-encrypted communications, or unauthorized access to affected services on the targeted system.",
+    "softwareAffected": [
+      "GoAhead Web Server versions 3.4.5 to 6.1.0 with OpenSSL TLS build",
+      "GoAhead Web Server versions 4.0.2 to 6.1.0 with Mbed TLS build",
+      "GoAhead Web Server versions 6.1.0 and prior with LibreSSL Legacy TLS build"
+    ],
+    "targetAudience": "All organizations and Individuals using GoAhead Web Server.",
+    "riskAssessment": "High risk of bypassing security restrictions and obtaining sensitive information.",
+    "impactAssessment": "Potential for unauthorized access, disclosure of sensitive information, and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-115881",
+      "CVE-2026-115884"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Zoom Workplace Clients",
     "severity": "high",
     "date": "2026-10-28",
@@ -517,63 +554,6 @@
       "CVE-2026-108184",
       "CVE-2026-53420",
       "CVE-2026-53418"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
-    "code": "CIAD-2026-0055",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
-    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
-    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
-    "cves": [
-      "cve-2026-111497",
-      "CVE-2026-111497"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
-    "severity": "high",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
-    "code": "CIVN-2026-0529",
-    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
-    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
-    "softwareAffected": "",
-    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
-    "riskAssessment": "Manipulation of application logic and information disclosure.",
-    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
-    "cves": [
-      "CVE-2026-114358"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in PHP",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
-    "code": "CIVN-2026-0528",
-    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
-    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "PHP 8.2 versions prior to 8.2.35",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.5 versions prior to 8.5.12"
-    ],
-    "targetAudience": "Administrators and users of PHP-based web applications.",
-    "riskAssessment": "High risk of information disclosure and remote code execution.",
-    "impactAssessment": "Potential for complete system compromise.",
-    "cves": [
-      "CVE-2026-109619"
     ],
     "solutionLinks": []
   },
@@ -781,6 +761,63 @@
       "CVE-2026-113949",
       "CVE-2026-113950",
       "CVE-2026-113952"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+    "code": "CIAD-2026-0055",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
+    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
+    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
+    "cves": [
+      "cve-2026-111497",
+      "CVE-2026-111497"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "SQL Injection Vulnerability in Radius Xenia M2M Platform",
+    "severity": "high",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0529",
+    "code": "CIVN-2026-0529",
+    "summary": "A vulnerability has been reported in Radius Xenia M2M Platform, which could allow an unauthenticated remote attacker to gain unauthorized access to sensitive information, or modify database records on the targeted system.",
+    "description": "The Radius Xenia M2M Platform is a web based IoT platform used to manage M2M connectivity and information associated with connected devices and services. This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface. An unauthenticated remote attacker could exploit this vulnerability by supplying crafted SQL query through input fields to the targeted system. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to sensitive information, enumerate database structure or modify database records on the targeted system. Credit This vulnerability is reported by Jainil Borisagar.",
+    "softwareAffected": "",
+    "targetAudience": "End-users/ Administrators of Radius Xenia M2M Platform.",
+    "riskAssessment": "Manipulation of application logic and information disclosure.",
+    "impactAssessment": "Gain sensitive information, enumerate or modify database records.",
+    "cves": [
+      "CVE-2026-114358"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in PHP",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0528",
+    "code": "CIVN-2026-0528",
+    "summary": "A vulnerability has been reported in PHP which could allow a remote attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "description": "PHP is a widely used open-source scripting language for developing dynamic websites and web applications. This vulnerability exists in PHP due to memory corruption and memory disclosure flaws. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to gain access to sensitive information or execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "PHP 8.2 versions prior to 8.2.35",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.5 versions prior to 8.5.12"
+    ],
+    "targetAudience": "Administrators and users of PHP-based web applications.",
+    "riskAssessment": "High risk of information disclosure and remote code execution.",
+    "impactAssessment": "Potential for complete system compromise.",
+    "cves": [
+      "CVE-2026-109619"
     ],
     "solutionLinks": []
   },
@@ -1031,6 +1068,29 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -1086,29 +1146,6 @@
     "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
     "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
     "solutionLinks": []
   },
   {
