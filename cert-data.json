@@ -1,5 +1,48 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Barracuda Products",
+    "severity": "high",
+    "date": "2026-11-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0550",
+    "code": "CIVN-2026-0550",
+    "summary": "Multiple vulnerabilities have been reported in Barracuda products which could allow a remote attacker to bypass security restrictions, execute arbitrary code and gain unauthorized access on the targeted system.",
+    "description": "Barracuda Email Security Gateway (ESG), Load Balancer Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) are security appliances provided by Barracuda. These vulnerabilities exist in these products due to authorization bypass and command injection. A remote attacker could exploit these vulnerabilities by accessing the administrative user interface of an affected product. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, execute arbitrary code and gain unauthorized access on the targeted system.",
+    "softwareAffected": [
+      "Email Security Gateway (ESG) versions prior to 9.4.017+ and versions prior to 9.4.017",
+      "Load Balancer Application Delivery Controller (ADC) versions prior to BNADC-16586",
+      "Message Archiver (BMA) versions prior to BNMA-32468",
+      "WAF Control Center (WCC) versions prior to BNWF-60060",
+      "Web Application Firewall (WAF) versions prior to BNADC-16586",
+      "Web Security Gateway (WSG) versions prior to BNYF-24789"
+    ],
+    "targetAudience": "All organizations and individuals using the above-mentioned Barracuda products.",
+    "riskAssessment": "High risk of unauthorized access and arbitrary code execution.",
+    "impactAssessment": "Potential for bypass of security restrictions, execution of arbitrary code, and gain of unauthorized access.",
+    "cves": [
+      "CVE-2026-116606",
+      "CVE-2026-111560"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Information Disclosure Vulnerability in eMudhra emBridge",
+    "severity": "low",
+    "date": "2026-11-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0549",
+    "code": "CIVN-2026-0549",
+    "summary": "A vulnerability has been reported in eMudhra emBridge, which could allow an unauthenticated attacker to enumerate file and directory names on the targeted system.",
+    "description": "eMudhra emBridge is a client-side utility that enables web applications to interact with digital signature certificates and hardware tokens for digital signing and related certificate operations. This vulnerability exists in the eMudhra emBridge due to missing authorization checks in the FileBrowser API endpoints. These endpoints perform file system enumeration using the LocalSystem account without adequately validating the requesting callers authorization. An unauthenticated attacker on the same LAN could exploit this vulnerability by sending malicious webpage to the local HTTPS Web API. Successful exploitation of this vulnerability could allow the attacker to enumerate file and directory names and obtain information about the directory structure of the targeted system. The vulnerability however, does not provide access to file contents or permit file modification, deletion, or code execution, or access to cryptographic keys and hardware token PINs. Credit This vulnerability is reported by Karan Saini.",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using affected versions of eMudhra emBridge.",
+    "riskAssessment": "Unauthorized access to file-system metadata, including file and directory names, from the targeted system.",
+    "impactAssessment": "Unauthorized disclosure of file and directory names and directory structure information.",
+    "cves": [
+      "cve-2026-125659",
+      "CVE-2026-125659"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Mozilla Products",
     "severity": "high",
     "date": "2026-11-13",
@@ -22,20 +65,49 @@
     "solutionLinks": []
   },
   {
-    "title": "Information Disclosure Vulnerability in eMudhra emBridge",
-    "severity": "low",
+    "title": "The Gentlemen Ransomware",
+    "severity": "high",
     "date": "2026-11-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0549",
-    "code": "CIVN-2026-0549",
-    "summary": "A vulnerability has been reported in eMudhra emBridge, which could allow an unauthenticated attacker to enumerate file and directory names on the targeted system.",
-    "description": "eMudhra emBridge is a client-side utility that enables web applications to interact with digital signature certificates and hardware tokens for digital signing and related certificate operations. This vulnerability exists in the eMudhra emBridge due to missing authorization checks in the FileBrowser API endpoints. These endpoints perform file system enumeration using the LocalSystem account without adequately validating the requesting callers authorization. An unauthenticated attacker on the same LAN could exploit this vulnerability by sending malicious webpage to the local HTTPS Web API. Successful exploitation of this vulnerability could allow the attacker to enumerate file and directory names and obtain information about the directory structure of the targeted system. The vulnerability however, does not provide access to file contents or permit file modification, deletion, or code execution, or access to cryptographic keys and hardware token PINs. Credit This vulnerability is reported by Karan Saini.",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0060",
+    "code": "CIAD-2026-0060",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "\"The Gentlemen\" is a financially motivated Ransomware-as-a-Service (RaaS) group that employs a double-extortion technique, combining data exfiltration with file encryption to pressure victims into paying ransom. The group threatens to publicly disclose stolen sensitive information if ransom demands are not met. A key characteristic of \"The Gentlemen\" ransomware is its self-propagation capability, allowing it to spread across compromised networks through various lateral movement techniques. Developed in the Go programming language, the ransomware leverages Garble for code obfuscation, making reverse engineering, static analysis, and detection more challenging. It targets multiple platforms including Windows, Linux, BSD, NAS devices, and VMware ESXi environments. The group has been associated with attacks targeting organizations across critical sectors including healthcare, construction, finance, and manufacturing. Infection Mechanism Threat actors exploit vulnerabilities in internet-facing edge devices and remote access",
     "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using affected versions of eMudhra emBridge.",
-    "riskAssessment": "Unauthorized access to file-system metadata, including file and directory names, from the targeted system.",
-    "impactAssessment": "Unauthorized disclosure of file and directory names and directory structure information.",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-11-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0059",
+    "code": "CIAD-2026-0059",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, execute arbitrary code remotely, obtain sensitive information, bypass security features, conduct spoofing attacks or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, execute arbitrary code remotely, obtain sensitive information, bypass security features, conduct spoofing attacks or cause denial-of-service (DoS) conditions. CVE-2026-124194: This vulnerability exists in Microsoft Outlook due to improper handling of potentially unsafe user actions. An unauthenticated attacker could exploit this vulnerability over a network by sending a specially crafted message file and convincing a user to open it, potentially causing Outlook to connect to an attacker-controlled network location without displaying the usual external-content warning, thereby exposing authentication information. Note: This vulnerability is being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft 365 Apps",
+      "Microsoft Exchange Server",
+      "Microsoft SharePoint Server",
+      "Microsoft SQL Server",
+      "Microsoft Edge",
+      "Microsoft .NET",
+      "Microsoft PowerShell",
+      "Windows Server",
+      "Microsoft Azure components",
+      "Microsoft Entra",
+      "Windows Internet Information Services (IIS)",
+      "Microsoft Developer Tools and other supported Microsoft components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, privilege escalation, unauthorized access and sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of systems, credential theft, unauthorized access to sensitive data, system disruption or denial of service.",
     "cves": [
-      "cve-2026-125659",
-      "CVE-2026-125659"
+      "CVE-2026-124194"
     ],
     "solutionLinks": []
   },
@@ -81,26 +153,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in Cisco UCS Central Software",
-    "severity": "high",
-    "date": "2026-11-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0543",
-    "code": "CIVN-2026-0543",
-    "summary": "A vulnerability has been reported in the Cisco UCS Central Software which could allow a remote attacker to execute arbitrary commands, write arbitrary files and disclose sensitive information on the targeted system.",
-    "description": "Cisco UCS Central Software is a centralized management",
-    "softwareAffected": [
-      "Cisco UCS Central Software versions 2.0 and earlier.",
-      "Cisco UCS Central Software version 2.1 prior to version 2.1(2c)."
-    ],
-    "targetAudience": "All organizations and individuals using affected versions of Cisco UCS Central Software.",
-    "riskAssessment": "High risk of remote code execution and information disclosure on affected devices.",
-    "impactAssessment": "Potential impact on confidentiality, and integrity of the affected system.",
-    "cves": [
-      "CVE-2026-76506"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Google Chrome",
     "severity": "critical",
     "date": "2026-11-10",
@@ -125,6 +177,26 @@
       "CVE-2026-125345",
       "CVE-2026-125342",
       "CVE-2026-125349"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Cisco UCS Central Software",
+    "severity": "high",
+    "date": "2026-11-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0543",
+    "code": "CIVN-2026-0543",
+    "summary": "A vulnerability has been reported in the Cisco UCS Central Software which could allow a remote attacker to execute arbitrary commands, write arbitrary files and disclose sensitive information on the targeted system.",
+    "description": "Cisco UCS Central Software is a centralized management",
+    "softwareAffected": [
+      "Cisco UCS Central Software versions 2.0 and earlier.",
+      "Cisco UCS Central Software version 2.1 prior to version 2.1(2c)."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of Cisco UCS Central Software.",
+    "riskAssessment": "High risk of remote code execution and information disclosure on affected devices.",
+    "impactAssessment": "Potential impact on confidentiality, and integrity of the affected system.",
+    "cves": [
+      "CVE-2026-76506"
     ],
     "solutionLinks": []
   },
@@ -202,6 +274,42 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Drupal Products",
+    "severity": "critical",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0540",
+    "code": "CIVN-2026-0540",
+    "summary": "Multiple vulnerabilities have been reported in Drupal products which could allow a remote attacker to execute arbitrary code, gain unauthorized access, bypass security restrictions, access restricted files or directories, and perform cross-site scripting (XSS) attacks on the targeted system.",
+    "description": "AI is a module that enables interaction with AI providers. OAuth2 Token Manager allows management of system-wide OAuth2 access and refresh tokens. OAuth Login - OAuth OIDC SSO enables login via OAuth 2.0 or OpenID Connect identity providers. Single Content Sync facilitates exporting and importing content between Drupal sites. Stage File Proxy provides a",
+    "softwareAffected": [
+      "AI versions prior to 1.4.11 and 1.5.2",
+      "Commerce Core versions prior to 2.41 and 3.3.13",
+      "Commerce Stripe versions from 2.0.0 before 2.2.3",
+      "OAuth2 Token Manager versions prior to 1.2.0",
+      "OAuth Login - OAuth OIDC SSO versions prior to 3.1.1",
+      "Single Content Sync versions prior to 1.4.19",
+      "Stage File Proxy versions prior to 3.1.7 and 4.0.1"
+    ],
+    "targetAudience": "Users of Drupal modules.",
+    "riskAssessment": "High risk of unauthorized access, remote code execution, and bypass of security controls.",
+    "impactAssessment": "Potential for complete system compromise, unauthorized access to sensitive information, and financial impact due to bypassed payment processes.",
+    "cves": [
+      "CVE-2026-118539",
+      "CVE-2026-118549",
+      "CVE-2026-118558",
+      "CVE-2026-118561",
+      "CVE-2026-118562",
+      "CVE-2026-118563",
+      "CVE-2026-118564",
+      "CVE-2026-118565",
+      "CVE-2026-118572",
+      "CVE-2026-118573",
+      "CVE-2026-118575",
+      "CVE-2026-118576"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Elevation of Privilege Vulnerability in ASP.NET Core",
     "severity": "high",
     "date": "2026-11-06",
@@ -254,42 +362,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Products",
-    "severity": "critical",
-    "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0540",
-    "code": "CIVN-2026-0540",
-    "summary": "Multiple vulnerabilities have been reported in Drupal products which could allow a remote attacker to execute arbitrary code, gain unauthorized access, bypass security restrictions, access restricted files or directories, and perform cross-site scripting (XSS) attacks on the targeted system.",
-    "description": "AI is a module that enables interaction with AI providers. OAuth2 Token Manager allows management of system-wide OAuth2 access and refresh tokens. OAuth Login - OAuth OIDC SSO enables login via OAuth 2.0 or OpenID Connect identity providers. Single Content Sync facilitates exporting and importing content between Drupal sites. Stage File Proxy provides a",
-    "softwareAffected": [
-      "AI versions prior to 1.4.11 and 1.5.2",
-      "Commerce Core versions prior to 2.41 and 3.3.13",
-      "Commerce Stripe versions from 2.0.0 before 2.2.3",
-      "OAuth2 Token Manager versions prior to 1.2.0",
-      "OAuth Login - OAuth OIDC SSO versions prior to 3.1.1",
-      "Single Content Sync versions prior to 1.4.19",
-      "Stage File Proxy versions prior to 3.1.7 and 4.0.1"
-    ],
-    "targetAudience": "Users of Drupal modules.",
-    "riskAssessment": "High risk of unauthorized access, remote code execution, and bypass of security controls.",
-    "impactAssessment": "Potential for complete system compromise, unauthorized access to sensitive information, and financial impact due to bypassed payment processes.",
-    "cves": [
-      "CVE-2026-118539",
-      "CVE-2026-118549",
-      "CVE-2026-118558",
-      "CVE-2026-118561",
-      "CVE-2026-118562",
-      "CVE-2026-118563",
-      "CVE-2026-118564",
-      "CVE-2026-118565",
-      "CVE-2026-118572",
-      "CVE-2026-118573",
-      "CVE-2026-118575",
-      "CVE-2026-118576"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "CERT-In Advisory CICA-2026-3652",
     "severity": "high",
     "date": "2026-11-05",
@@ -312,6 +384,26 @@
       "CVE-2026-67277",
       "CVE-2026-67278",
       "CVE-2026-67281"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Tata Motors iRA and iRA.ev Application",
+    "severity": "high",
+    "date": "2026-11-04",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0537",
+    "code": "CIVN-2026-0537",
+    "summary": "Multiple vulnerabilities have been reported in Tata Motors iRA and iRA.ev applications, which could allow an attacker to obtain sensitive credentials or access to vehicle related information and services.",
+    "description": "The iRA 2.0 and iRA.ev mobile applications are Tata Motors connected vehicle applications for internal combustion engine (ICE) and electric vehicle (EV) customers, respectively. They provide access to vehicle related information and connected services, including remote vehicle commands, vehicle status and health monitoring and trip information. 1. Hardcoded Credentials Vulnerability ( CVE-2026-121144 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to presence of hardcoded service account credentials, API Keys and authorization tokens within the application package. An unauthenticated remote attacker could exploit this vulnerability by downloading application package and extracting embedded sensitive information. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to associated backend services and potentially access sensitive information or perform unauthorized operations on the targeted system. 2. Insecure Configuration Vulnerability ( CVE-2026-121145 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to insufficient validation of URLs and origins loaded within the WebView component. A remote attacker could exploit this vulnerability by sending malicious web content to the affected WebView. Successful exploitation of this vulnerability could allow the attacker to perform unauthorized interaction with application functionality, obtain live bearer authentication tokens and potentially impersonate the associated user and access vehicle related information and services. 3. Information Disclosure Vulnerability ( CVE-2026-121146 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to the recording of authentication tokens in application logs used for development and debugging. A local attacker with an access to logs could exploit this vulnerability by retrieving and misusing the exposed session tokens. Successful exploitation of this vulnerability could allow the attacker to impersonate the associated user and gain unauthorized access to vehicle related information and services. 4. Security Misconfiguration Vulnerability ( CVE-2026-121147 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to improper implementation of SSL certificate pinning in the network security configuration, resulting in ineffective certificate pinning controls. An attacker positioned to intercept network traffic could exploit this vulnerability to intercept or modify communications between the application and its backend services. Credit These vulnerabilities are reported by Pranav Rajendran.",
+    "softwareAffected": "",
+    "targetAudience": "Users of the affected iRA 2.0 and iRA.ev mobile applications.",
+    "riskAssessment": "Risk of unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
+    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
+    "cves": [
+      "CVE-2026-121144",
+      "CVE-2026-121145",
+      "CVE-2026-121146",
+      "CVE-2026-121147"
     ],
     "solutionLinks": []
   },
@@ -371,26 +463,6 @@
     "riskAssessment": "",
     "impactAssessment": "",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Tata Motors iRA and iRA.ev Application",
-    "severity": "high",
-    "date": "2026-11-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0537",
-    "code": "CIVN-2026-0537",
-    "summary": "Multiple vulnerabilities have been reported in Tata Motors iRA and iRA.ev applications, which could allow an attacker to obtain sensitive credentials or access to vehicle related information and services.",
-    "description": "The iRA 2.0 and iRA.ev mobile applications are Tata Motors connected vehicle applications for internal combustion engine (ICE) and electric vehicle (EV) customers, respectively. They provide access to vehicle related information and connected services, including remote vehicle commands, vehicle status and health monitoring and trip information. 1. Hardcoded Credentials Vulnerability ( CVE-2026-121144 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to presence of hardcoded service account credentials, API Keys and authorization tokens within the application package. An unauthenticated remote attacker could exploit this vulnerability by downloading application package and extracting embedded sensitive information. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to associated backend services and potentially access sensitive information or perform unauthorized operations on the targeted system. 2. Insecure Configuration Vulnerability ( CVE-2026-121145 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to insufficient validation of URLs and origins loaded within the WebView component. A remote attacker could exploit this vulnerability by sending malicious web content to the affected WebView. Successful exploitation of this vulnerability could allow the attacker to perform unauthorized interaction with application functionality, obtain live bearer authentication tokens and potentially impersonate the associated user and access vehicle related information and services. 3. Information Disclosure Vulnerability ( CVE-2026-121146 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to the recording of authentication tokens in application logs used for development and debugging. A local attacker with an access to logs could exploit this vulnerability by retrieving and misusing the exposed session tokens. Successful exploitation of this vulnerability could allow the attacker to impersonate the associated user and gain unauthorized access to vehicle related information and services. 4. Security Misconfiguration Vulnerability ( CVE-2026-121147 ) This vulnerability exists in the iRA 2.0 and iRA.ev mobile applications due to improper implementation of SSL certificate pinning in the network security configuration, resulting in ineffective certificate pinning controls. An attacker positioned to intercept network traffic could exploit this vulnerability to intercept or modify communications between the application and its backend services. Credit These vulnerabilities are reported by Pranav Rajendran.",
-    "softwareAffected": "",
-    "targetAudience": "Users of the affected iRA 2.0 and iRA.ev mobile applications.",
-    "riskAssessment": "Risk of unauthorized access to sensitive information, user impersonation and unauthorized modification of application data.",
-    "impactAssessment": "Potential for unauthorized access and modification of data with the privileges of the impersonated user.",
-    "cves": [
-      "CVE-2026-121144",
-      "CVE-2026-121145",
-      "CVE-2026-121146",
-      "CVE-2026-121147"
-    ],
     "solutionLinks": []
   },
   {
@@ -1113,29 +1185,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
-    "severity": "critical",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
-    "code": "CIAD-2026-0052",
-    "summary": "Multiple vulnerabilities have been reported in PHP which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities (collectively referred to as \"PHP2Shell\") exist in PHP due to memory corruption and improper resource control. An unauthenticated remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on an affected server, potentially exposing or modifying website content, customer data, databases, and other linked resources. Micro, Small and Medium Enterprises (MSME) operating PHP-based websites, content-management systems, e-commerce platforms, or third-party applications could face security risks, particularly where PHP comes bundled with their hosting services or other software. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently. Recommendations: MSMEs are advised to undertake the following actions: • Identify PHP usage: Check whether the website, hosting account, content-management system, or business application uses PHP. If the PHP version is unknown, contact the hosting provider or software vendor for confirmation. • Apply security updates: Upgrade affected PHP installations to the appropriate fixed versions: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or vendor's fixed package. • Prioritise internet-facing systems: Remediate public-facing websites and applications first. After applying updates, restart the relevant services as needed and verify that the updated PHP runtime is actually in use. • Address unsupported versions: PHP 8.1 and earlier versions are no longer supported by the upstream PHP project. Upgrade to a supported release, or obtain and verify a security-fixed package from the relevant vendor. • Restrict exposure where patching is delayed: If an affected system cannot be patched immediately, consider restricting access to trusted networks until remediation is completed. Also follow mitigation steps mentioned by the vendor. • Check for signs of compromise: Check for signs of compromise by reviewing available web-server and application logs for unusual requests, unexpected file changes, newly created administrator accounts, suspicious processes, and unexplained outbound connections. If compromise or suspicious activity is detected, preserve relevant logs, contain the incident, and promptly report it with available evidence to CERT-In at incident@cert-in.org.in • Secure business information: Protect business information by maintaining regular offline or otherwise secure backups, testing that restoration works, and ensuring administrative accounts use strong, unique passwords and multi-factor authentication wherever supported. •",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All MSME organizations using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Oracle Products",
     "severity": "high",
     "date": "2026-10-22",
@@ -1168,6 +1217,29 @@
     "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
     "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
+    "severity": "critical",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
+    "code": "CIAD-2026-0052",
+    "summary": "Multiple vulnerabilities have been reported in PHP which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities (collectively referred to as \"PHP2Shell\") exist in PHP due to memory corruption and improper resource control. An unauthenticated remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow the attacker to execute arbitrary code on an affected server, potentially exposing or modifying website content, customer data, databases, and other linked resources. Micro, Small and Medium Enterprises (MSME) operating PHP-based websites, content-management systems, e-commerce platforms, or third-party applications could face security risks, particularly where PHP comes bundled with their hosting services or other software. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently. Recommendations: MSMEs are advised to undertake the following actions: • Identify PHP usage: Check whether the website, hosting account, content-management system, or business application uses PHP. If the PHP version is unknown, contact the hosting provider or software vendor for confirmation. • Apply security updates: Upgrade affected PHP installations to the appropriate fixed versions: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or vendor's fixed package. • Prioritise internet-facing systems: Remediate public-facing websites and applications first. After applying updates, restart the relevant services as needed and verify that the updated PHP runtime is actually in use. • Address unsupported versions: PHP 8.1 and earlier versions are no longer supported by the upstream PHP project. Upgrade to a supported release, or obtain and verify a security-fixed package from the relevant vendor. • Restrict exposure where patching is delayed: If an affected system cannot be patched immediately, consider restricting access to trusted networks until remediation is completed. Also follow mitigation steps mentioned by the vendor. • Check for signs of compromise: Check for signs of compromise by reviewing available web-server and application logs for unusual requests, unexpected file changes, newly created administrator accounts, suspicious processes, and unexplained outbound connections. If compromise or suspicious activity is detected, preserve relevant logs, contain the incident, and promptly report it with available evidence to CERT-In at incident@cert-in.org.in • Secure business information: Protect business information by maintaining regular offline or otherwise secure backups, testing that restoration works, and ensuring administrative accounts use strong, unique passwords and multi-factor authentication wherever supported. •",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All MSME organizations using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
     "solutionLinks": []
   },
   {
@@ -1542,6 +1614,41 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. CVE-2026-83844: This vulnerability exists in Microsoft Paint due to an out-of-bounds read error. An attacker could exploit this vulnerability by providing a specially crafted image, potentially enabling remote code execution and compromising the confidentiality, integrity, and availability of the affected system. Note: These vulnerabilities are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951",
+      "CVE-2026-83844"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -1596,41 +1703,6 @@
       "CVE-2025-89105",
       "CVE-2026-58242",
       "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. CVE-2026-83844: This vulnerability exists in Microsoft Paint due to an out-of-bounds read error. An attacker could exploit this vulnerability by providing a specially crafted image, potentially enabling remote code execution and compromising the confidentiality, integrity, and availability of the affected system. Note: These vulnerabilities are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951",
-      "CVE-2026-83844"
     ],
     "solutionLinks": []
   },
