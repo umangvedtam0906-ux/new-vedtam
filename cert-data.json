@@ -80,6 +80,28 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Ivanti Connect Secure (ICS)",
+    "severity": "high",
+    "date": "2026-11-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0547",
+    "code": "CIVN-2026-0547",
+    "summary": "Multiple vulnerabilities have been reported in Ivanti Connect Secure (ICS), which could allow an attacker to escalate privileges, upload files containing attacker-controlled content, and achieve unauthorized access on the targeted system.",
+    "description": "Ivanti Connect Secure (ICS) is a remote access VPN",
+    "softwareAffected": [
+      "Ivanti Connect Secure (ICS) version 25.1.1.2 and prior",
+      "Ivanti Connect Secure (ICS) version 22.8R2.5 and prior"
+    ],
+    "targetAudience": "All Individuals and end-user organizations using affected Ivanti Products.",
+    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
+    "impactAssessment": "Potential for privilege escalation, unauthorized access, credential theft, and compromise of sensitive system information.",
+    "cves": [
+      "CVE-2026-104935",
+      "CVE-2026-111357",
+      "CVE-2026-118527"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-11-12",
@@ -112,28 +134,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Ivanti Connect Secure (ICS)",
-    "severity": "high",
-    "date": "2026-11-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0547",
-    "code": "CIVN-2026-0547",
-    "summary": "Multiple vulnerabilities have been reported in Ivanti Connect Secure (ICS), which could allow an attacker to escalate privileges, upload files containing attacker-controlled content, and achieve unauthorized access on the targeted system.",
-    "description": "Ivanti Connect Secure (ICS) is a remote access VPN",
-    "softwareAffected": [
-      "Ivanti Connect Secure (ICS) version 25.1.1.2 and prior",
-      "Ivanti Connect Secure (ICS) version 22.8R2.5 and prior"
-    ],
-    "targetAudience": "All Individuals and end-user organizations using affected Ivanti Products.",
-    "riskAssessment": "High risk of arbitrary command execution and unauthorized access.",
-    "impactAssessment": "Potential for privilege escalation, unauthorized access, credential theft, and compromise of sensitive system information.",
-    "cves": [
-      "CVE-2026-104935",
-      "CVE-2026-111357",
-      "CVE-2026-118527"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Authorization Bypass Vulnerability in IBM Aspera Faspex",
     "severity": "critical",
     "date": "2026-11-12",
@@ -149,6 +149,26 @@
     "impactAssessment": "Potential for unauthorized access to data and full administrative control of the affected application.",
     "cves": [
       "CVE-2026-123218"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Cisco UCS Central Software",
+    "severity": "high",
+    "date": "2026-11-10",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0543",
+    "code": "CIVN-2026-0543",
+    "summary": "A vulnerability has been reported in the Cisco UCS Central Software which could allow a remote attacker to execute arbitrary commands, write arbitrary files and disclose sensitive information on the targeted system.",
+    "description": "Cisco UCS Central Software is a centralized management",
+    "softwareAffected": [
+      "Cisco UCS Central Software versions 2.0 and earlier.",
+      "Cisco UCS Central Software version 2.1 prior to version 2.1(2c)."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of Cisco UCS Central Software.",
+    "riskAssessment": "High risk of remote code execution and information disclosure on affected devices.",
+    "impactAssessment": "Potential impact on confidentiality, and integrity of the affected system.",
+    "cves": [
+      "CVE-2026-76506"
     ],
     "solutionLinks": []
   },
@@ -181,26 +201,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Remote Code Execution Vulnerability in Cisco UCS Central Software",
-    "severity": "high",
-    "date": "2026-11-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0543",
-    "code": "CIVN-2026-0543",
-    "summary": "A vulnerability has been reported in the Cisco UCS Central Software which could allow a remote attacker to execute arbitrary commands, write arbitrary files and disclose sensitive information on the targeted system.",
-    "description": "Cisco UCS Central Software is a centralized management",
-    "softwareAffected": [
-      "Cisco UCS Central Software versions 2.0 and earlier.",
-      "Cisco UCS Central Software version 2.1 prior to version 2.1(2c)."
-    ],
-    "targetAudience": "All organizations and individuals using affected versions of Cisco UCS Central Software.",
-    "riskAssessment": "High risk of remote code execution and information disclosure on affected devices.",
-    "impactAssessment": "Potential impact on confidentiality, and integrity of the affected system.",
-    "cves": [
-      "CVE-2026-76506"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Authentication Bypass Vulnerability in OpenSSH",
     "severity": "high",
     "date": "2026-11-10",
@@ -216,6 +216,77 @@
     "impactAssessment": "Potential for High risk of denial of service (DoS) conditions.",
     "cves": [
       "CVE-2026-123158"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in OpenSSH",
+    "severity": "critical",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0542",
+    "code": "CIVN-2026-0542",
+    "summary": "A vulnerability has been reported in OpenSSH which could allow a remote attacker to bypass password authentication mechanism on the targeted system.",
+    "description": "OpenSSH is a SSH protocol 2.0 implementation and includes sftp client and server support. This vulnerability exists in OpenSSH due to authentication bypass. A remote attacker could exploit this vulnerability by sending an unusually long password to the targeted system running OpenSSH on Linux with musl libc and PAM disabled. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access and elevate privileges on the targeted system.",
+    "softwareAffected": [
+      "OpenSSH versions prior to 10.6p2"
+    ],
+    "targetAudience": "All organizations and individuals using OpenSSH.",
+    "riskAssessment": "High risk of service disruption.",
+    "impactAssessment": "Potential for High risk of denial of service (DoS) conditions.",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Use-After-Free Vulnerability in Linux Kernel",
+    "severity": "critical",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0539",
+    "code": "CIVN-2026-0539",
+    "summary": "A vulnerability has been reported in the Linux kernel which could allow a remote attacker to cause memory corruption, execute arbitrary code or trigger denial-of-service (DoS) conditions on the targeted system.",
+    "description": "The Linux kernel is the core component of Linux-based operating systems, responsible for managing hardware resources, memory and essential system services. This vulnerability exists in the Linux kernels IPv4 TCP networking subsystem due to improper memory deallocation during concurrent TCP connection processing, resulting in a use-after-free condition. A remote attacker could exploit this vulnerability by sending specially crafted IPv4 TCP packets containing IP options under specific timing conditions. Successful exploitation of this vulnerability could allow a remote attacker to cause memory corruption, execute arbitrary code or trigger denial-of-service (DoS) conditions on the targeted system.",
+    "softwareAffected": [
+      "Linux kernel versions 4.4 and later",
+      "Linux kernel 5.10.x versions prior to 5.10.272.",
+      "Linux kernel 5.15.x versions prior to 5.15.223.",
+      "Linux kernel 6.1.x versions prior to 6.1.190.",
+      "Linux kernel 6.6.x versions prior to 6.6.159.",
+      "Linux kernel 6.12.x versions prior to 6.12.113.",
+      "Linux kernel 6.18.x versions prior to 6.18.56.",
+      "Linux kernel 7.2.x versions prior to 7.2.10.",
+      "Linux kernel versions prior to 7.3."
+    ],
+    "targetAudience": "System Administrators, Cloud Service Providers and Security Professionals.",
+    "riskAssessment": "High risk of kernel memory corruption, denial of service and potential compromise of affected systems.",
+    "impactAssessment": "Potential for remote code execution, kernel memory corruption and service disruption.",
+    "cves": [
+      "cve-2026-98432",
+      "CVE-2026-98432"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Elevation of Privilege Vulnerability in ASP.NET Core",
+    "severity": "high",
+    "date": "2026-11-06",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0538",
+    "code": "CIVN-2026-0538",
+    "summary": "A vulnerability has been reported in ASP.NET Core that could allow an authorized attacker to elevate privileges on the targeted system.",
+    "description": "ASP.NET Core is a framework for building modern, cloud-enabled, Internet-connected applications. The vulnerability exist in ASP.NET Core due to incorrect default permissions. A local attacker could exploit the vulnerability by accessing the system with existing low-privileged credentials. Successful exploitation of the vulnerability could allow an attacker to elevate privileges on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      ".NET 11.0 (Windows, Linux, Mac OS) prior to 11.0.100-rc.3",
+      ".NET 10.0 (Windows, Linux, Mac OS) prior to 10.0.403",
+      ".NET 9.0 (Windows, Linux, Mac OS) prior to 9.0.320",
+      ".NET 8.0 (Windows, Linux, Mac OS) prior to 8.0.427",
+      "ASP.NET Core runtime and targeting-pack Linux tarballs (Microsoft-published) prior to 9.0.22",
+      ".NET source-build Linux tarballs (all archive types) prior to 10.0.403-servicing.26523.112"
+    ],
+    "targetAudience": "Developers and system administrators using affected .NET and ASP.NET Core products.",
+    "riskAssessment": "High risk of privilege escalation.",
+    "impactAssessment": "Potential for elevation of privileges and complete compromise of the affected system.",
+    "cves": [
+      "CVE-2026-114148"
     ],
     "solutionLinks": []
   },
@@ -256,25 +327,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Authentication Bypass Vulnerability in OpenSSH",
-    "severity": "critical",
-    "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0542",
-    "code": "CIVN-2026-0542",
-    "summary": "A vulnerability has been reported in OpenSSH which could allow a remote attacker to bypass password authentication mechanism on the targeted system.",
-    "description": "OpenSSH is a SSH protocol 2.0 implementation and includes sftp client and server support. This vulnerability exists in OpenSSH due to authentication bypass. A remote attacker could exploit this vulnerability by sending an unusually long password to the targeted system running OpenSSH on Linux with musl libc and PAM disabled. Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access and elevate privileges on the targeted system.",
-    "softwareAffected": [
-      "OpenSSH versions prior to 10.6p2"
-    ],
-    "targetAudience": "All organizations and individuals using OpenSSH.",
-    "riskAssessment": "High risk of service disruption.",
-    "impactAssessment": "Potential for High risk of denial of service (DoS) conditions.",
-    "cves": [
-      "CVE-2026-123158"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Drupal Modules",
     "severity": "critical",
     "date": "2026-11-06",
@@ -306,58 +358,6 @@
       "CVE-2026-122057",
       "CVE-2026-118547",
       "CVE-2026-118565"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Elevation of Privilege Vulnerability in ASP.NET Core",
-    "severity": "high",
-    "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0538",
-    "code": "CIVN-2026-0538",
-    "summary": "A vulnerability has been reported in ASP.NET Core that could allow an authorized attacker to elevate privileges on the targeted system.",
-    "description": "ASP.NET Core is a framework for building modern, cloud-enabled, Internet-connected applications. The vulnerability exist in ASP.NET Core due to incorrect default permissions. A local attacker could exploit the vulnerability by accessing the system with existing low-privileged credentials. Successful exploitation of the vulnerability could allow an attacker to elevate privileges on the targeted system. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      ".NET 11.0 (Windows, Linux, Mac OS) prior to 11.0.100-rc.3",
-      ".NET 10.0 (Windows, Linux, Mac OS) prior to 10.0.403",
-      ".NET 9.0 (Windows, Linux, Mac OS) prior to 9.0.320",
-      ".NET 8.0 (Windows, Linux, Mac OS) prior to 8.0.427",
-      "ASP.NET Core runtime and targeting-pack Linux tarballs (Microsoft-published) prior to 9.0.22",
-      ".NET source-build Linux tarballs (all archive types) prior to 10.0.403-servicing.26523.112"
-    ],
-    "targetAudience": "Developers and system administrators using affected .NET and ASP.NET Core products.",
-    "riskAssessment": "High risk of privilege escalation.",
-    "impactAssessment": "Potential for elevation of privileges and complete compromise of the affected system.",
-    "cves": [
-      "CVE-2026-114148"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Use-After-Free Vulnerability in Linux Kernel",
-    "severity": "critical",
-    "date": "2026-11-06",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0539",
-    "code": "CIVN-2026-0539",
-    "summary": "A vulnerability has been reported in the Linux kernel which could allow a remote attacker to cause memory corruption, execute arbitrary code or trigger denial-of-service (DoS) conditions on the targeted system.",
-    "description": "The Linux kernel is the core component of Linux-based operating systems, responsible for managing hardware resources, memory and essential system services. This vulnerability exists in the Linux kernels IPv4 TCP networking subsystem due to improper memory deallocation during concurrent TCP connection processing, resulting in a use-after-free condition. A remote attacker could exploit this vulnerability by sending specially crafted IPv4 TCP packets containing IP options under specific timing conditions. Successful exploitation of this vulnerability could allow a remote attacker to cause memory corruption, execute arbitrary code or trigger denial-of-service (DoS) conditions on the targeted system.",
-    "softwareAffected": [
-      "Linux kernel versions 4.4 and later",
-      "Linux kernel 5.10.x versions prior to 5.10.272.",
-      "Linux kernel 5.15.x versions prior to 5.15.223.",
-      "Linux kernel 6.1.x versions prior to 6.1.190.",
-      "Linux kernel 6.6.x versions prior to 6.6.159.",
-      "Linux kernel 6.12.x versions prior to 6.12.113.",
-      "Linux kernel 6.18.x versions prior to 6.18.56.",
-      "Linux kernel 7.2.x versions prior to 7.2.10.",
-      "Linux kernel versions prior to 7.3."
-    ],
-    "targetAudience": "System Administrators, Cloud Service Providers and Security Professionals.",
-    "riskAssessment": "High risk of kernel memory corruption, denial of service and potential compromise of affected systems.",
-    "impactAssessment": "Potential for remote code execution, kernel memory corruption and service disruption.",
-    "cves": [
-      "cve-2026-98432",
-      "CVE-2026-98432"
     ],
     "solutionLinks": []
   },
