@@ -1,5 +1,30 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Barracuda Products",
+    "severity": "high",
+    "date": "2026-11-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0550",
+    "code": "CIVN-2026-0550",
+    "summary": "Multiple vulnerabilities have been reported in Barracuda products which could allow a remote attacker to bypass security restrictions, execute arbitrary code and gain unauthorized access on the targeted system.",
+    "description": "Barracuda Email Security Gateway (ESG), Load Balancer Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) are security appliances provided by Barracuda. These vulnerabilities exist in these products due to authorization bypass and command injection. A remote attacker could exploit these vulnerabilities by accessing the administrative user interface of an affected product. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, execute arbitrary code and gain unauthorized access on the targeted system.",
+    "softwareAffected": [
+      "Email Security Gateway (ESG) versions prior to 9.4.017+ and versions prior to 9.4.017",
+      "Load Balancer Application Delivery Controller (ADC) versions prior to BNADC-16586",
+      "Message Archiver (BMA) versions prior to BNMA-32468",
+      "WAF Control Center (WCC) versions prior to BNWF-60060",
+      "Web Application Firewall (WAF) versions prior to BNADC-16586",
+      "Web Security Gateway (WSG) versions prior to BNYF-24789"
+    ],
+    "targetAudience": "All organizations and individuals using the above-mentioned Barracuda products.",
+    "riskAssessment": "High risk of unauthorized access and arbitrary code execution.",
+    "impactAssessment": "Potential for bypass of security restrictions, execution of arbitrary code, and gain of unauthorized access.",
+    "cves": [
+      "CVE-2026-116606",
+      "CVE-2026-111560"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "The Gentlemen Ransomware",
     "severity": "high",
     "date": "2026-11-13",
@@ -37,31 +62,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Barracuda Products",
-    "severity": "high",
-    "date": "2026-11-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0550",
-    "code": "CIVN-2026-0550",
-    "summary": "Multiple vulnerabilities have been reported in Barracuda products which could allow a remote attacker to bypass security restrictions, execute arbitrary code and gain unauthorized access on the targeted system.",
-    "description": "Barracuda Email Security Gateway (ESG), Load Balancer Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) are security appliances provided by Barracuda. These vulnerabilities exist in these products due to authorization bypass and command injection. A remote attacker could exploit these vulnerabilities by accessing the administrative user interface of an affected product. Successful exploitation of these vulnerabilities could allow an attacker to bypass security restrictions, execute arbitrary code and gain unauthorized access on the targeted system.",
-    "softwareAffected": [
-      "Email Security Gateway (ESG) versions prior to 9.4.017+ and versions prior to 9.4.017",
-      "Load Balancer Application Delivery Controller (ADC) versions prior to BNADC-16586",
-      "Message Archiver (BMA) versions prior to BNMA-32468",
-      "WAF Control Center (WCC) versions prior to BNWF-60060",
-      "Web Application Firewall (WAF) versions prior to BNADC-16586",
-      "Web Security Gateway (WSG) versions prior to BNYF-24789"
-    ],
-    "targetAudience": "All organizations and individuals using the above-mentioned Barracuda products.",
-    "riskAssessment": "High risk of unauthorized access and arbitrary code execution.",
-    "impactAssessment": "Potential for bypass of security restrictions, execution of arbitrary code, and gain of unauthorized access.",
-    "cves": [
-      "CVE-2026-116606",
-      "CVE-2026-111560"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Information Disclosure Vulnerability in eMudhra emBridge",
     "severity": "low",
     "date": "2026-11-13",
@@ -76,6 +76,25 @@
     "cves": [
       "cve-2026-125659",
       "CVE-2026-125659"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in WordPress",
+    "severity": "high",
+    "date": "2026-11-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0545",
+    "code": "CIVN-2026-0545",
+    "summary": "A vulnerability has been reported in WordPress Core which could allow an unauthenticated remote attacker to execute arbitrary code on the targeted system.",
+    "description": "WordPress is an open-source content management system (CMS) that allows you to build and manage websites. A remote code execution vulnerability exists in WordPress Core due to a time-of-check time-of-use (TOCTOU) race condition in the upgrade process. During a full-package core upgrade, WordPress extracts installation files into predictable, web-accessible temporary directories. An unauthenticated remote attacker could exploit this vulnerability by accessing the staged installer during the upgrade window and manipulating the installation process. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to execute arbitrary code on the targeted server. Note - This vulnerability is known to be actively exploited in the wild.",
+    "softwareAffected": [
+      "WordPress Core versions 4.7.0 through 7.1.3, including versions prior to the following fixed releases in their respective branches: 4.7.39, 4.8.34, 4.9.35, 5.0.31, 5.1.28, 5.2.30, 5.3.27, 5.4.25, 5.5.24, 5.6.23, 5.7.21, 5.8.19, 5.9.20, 6.0.18, 6.1.16, 6.2.15, 6.3.14, 6.4.14, 6.5.14, 6.6.11, 6.7.11, 6.8.12, 6.9.11, 7.0.8, and 7.1.4."
+    ],
+    "targetAudience": "All end user organizations and individuals using WordPress.",
+    "riskAssessment": "High risk of unauthorized access, system compromise.",
+    "impactAssessment": "Potential for remote code execution, unauthorized access to sensitive information, and compromise of the targeted server.",
+    "cves": [
+      "CVE-2026-119977"
     ],
     "solutionLinks": []
   },
@@ -197,25 +216,6 @@
       "CVE-2026-125345",
       "CVE-2026-125342",
       "CVE-2026-125349"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authentication Bypass Vulnerability in OpenSSH",
-    "severity": "high",
-    "date": "2026-11-10",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0545",
-    "code": "CIVN-2026-0545",
-    "summary": "A vulnerability has been reported in OpenSSH which could allow a remote attacker to bypass password authentication mechanism on the targeted system.",
-    "description": "This vulnerability exists in OpenSSH due to improper input validation. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to bypass password authentication mechanism on the targeted system.",
-    "softwareAffected": [
-      "OpenSSH versions prior to 10.6p2"
-    ],
-    "targetAudience": "All organizations and individuals using OpenSSH.",
-    "riskAssessment": "High risk of service disruption.",
-    "impactAssessment": "Potential for High risk of denial of service (DoS) conditions.",
-    "cves": [
-      "CVE-2026-123158"
     ],
     "solutionLinks": []
   },
@@ -652,24 +652,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
-    "code": "CIAD-2026-0055",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
-    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
-    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
-    "cves": [
-      "cve-2026-111497",
-      "CVE-2026-111497"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Apple Products",
     "severity": "high",
     "date": "2026-10-27",
@@ -873,6 +855,24 @@
       "CVE-2026-113949",
       "CVE-2026-113950",
       "CVE-2026-113952"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+    "code": "CIAD-2026-0055",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
+    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
+    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
+    "cves": [
+      "cve-2026-111497",
+      "CVE-2026-111497"
     ],
     "solutionLinks": []
   },
@@ -1614,6 +1614,41 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Microsoft Products",
+    "severity": "high",
+    "date": "2026-10-14",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
+    "code": "CIAD-2026-0047",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
+    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. CVE-2026-83844: This vulnerability exists in Microsoft Paint due to an out-of-bounds read error. An attacker could exploit this vulnerability by providing a specially crafted image, potentially enabling remote code execution and compromising the confidentiality, integrity, and availability of the affected system. Note: These vulnerabilities are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Microsoft Windows",
+      "Microsoft Office",
+      "Microsoft Dynamics",
+      "SQL Server",
+      "Extended Security Updates (ESU) for legacy Microsoft products",
+      "Azure",
+      "Apps",
+      "Developer Tools",
+      "Open Source Software",
+      "Server Software",
+      "System Center",
+      "ASP.NET Core",
+      "Microsoft Azure",
+      ".NET",
+      "Skype for Business Server",
+      "Linux components"
+    ],
+    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
+    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
+    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
+    "cves": [
+      "CVE-2026-96951",
+      "CVE-2026-83844"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SAP Products",
     "severity": "critical",
     "date": "2026-10-14",
@@ -1668,41 +1703,6 @@
       "CVE-2025-89105",
       "CVE-2026-58242",
       "CVE-2026-89111"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Products",
-    "severity": "high",
-    "date": "2026-10-14",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0047",
-    "code": "CIAD-2026-0047",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions.",
-    "description": "Multiple vulnerabilities have been reported in Microsoft products that could allow an attacker to gain elevated privileges, obtain sensitive information, execute arbitrary code remotely, bypass security restrictions, conduct spoofing attacks, perform tampering of data or system processes, or cause denial-of-service (DoS) conditions. CVE-2026-96951: This vulnerability exists in Microsoft Windows Shell due to improper neutralization of special elements used in a command (command injection). An unauthenticated attacker could exploit this vulnerability over a network by convincing a user to interact with a specially crafted file, thereby bypassing security features and potentially executing arbitrary commands on the affected system. CVE-2026-83844: This vulnerability exists in Microsoft Paint due to an out-of-bounds read error. An attacker could exploit this vulnerability by providing a specially crafted image, potentially enabling remote code execution and compromising the confidentiality, integrity, and availability of the affected system. Note: These vulnerabilities are being exploited in the wild. Users are advised to apply patches immediately. For complete list of affected products, CVEs, workarounds and",
-    "softwareAffected": [
-      "Microsoft Windows",
-      "Microsoft Office",
-      "Microsoft Dynamics",
-      "SQL Server",
-      "Extended Security Updates (ESU) for legacy Microsoft products",
-      "Azure",
-      "Apps",
-      "Developer Tools",
-      "Open Source Software",
-      "Server Software",
-      "System Center",
-      "ASP.NET Core",
-      "Microsoft Azure",
-      ".NET",
-      "Skype for Business Server",
-      "Linux components"
-    ],
-    "targetAudience": "Individuals and IT administrators, security teams responsible for maintaining and updating Microsoft products.",
-    "riskAssessment": "Risk of remote code execution, system instability or sensitive information disclosure.",
-    "impactAssessment": "Potential compromise of system, exfiltration of data, ransomware attacks or system crashes.",
-    "cves": [
-      "CVE-2026-96951",
-      "CVE-2026-83844"
     ],
     "solutionLinks": []
   },
