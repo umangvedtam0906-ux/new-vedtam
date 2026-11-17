@@ -363,6 +363,25 @@
     "solutionLinks": []
   },
   {
+    "title": "Authorization Bypass Vulnerability in IBM Aspera Faspex",
+    "severity": "critical",
+    "date": "2026-11-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0546",
+    "code": "CIVN-2026-0546",
+    "summary": "A vulnerability has been reported in IBM Aspera Faspex which could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application.",
+    "description": "IBM Aspera Faspex is a secure, web-based file transfer and collaboration application developed by IBM. This vulnerability exists in IBM Aspera Faspex due to improper authorization. An authenticated remote attacker could exploit this vulnerability by crafting a specific message to bypass authorization controls. Successful exploitation could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application. Note - This vulnerability is known to be exploited in the wild.",
+    "softwareAffected": [
+      "IBM Aspera Faspex versions 5.0.0 to 5.0.19"
+    ],
+    "targetAudience": "Organizations and individuals using IBM Aspera Faspex.",
+    "riskAssessment": "High risk of unauthorized access and privilege escalation.",
+    "impactAssessment": "Potential for unauthorized access to data and full administrative control of the affected application.",
+    "cves": [
+      "CVE-2026-123218"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Ivanti Connect Secure (ICS)",
     "severity": "high",
     "date": "2026-11-12",
@@ -381,25 +400,6 @@
       "CVE-2026-104935",
       "CVE-2026-111357",
       "CVE-2026-118527"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authorization Bypass Vulnerability in IBM Aspera Faspex",
-    "severity": "critical",
-    "date": "2026-11-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0546",
-    "code": "CIVN-2026-0546",
-    "summary": "A vulnerability has been reported in IBM Aspera Faspex which could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application.",
-    "description": "IBM Aspera Faspex is a secure, web-based file transfer and collaboration application developed by IBM. This vulnerability exists in IBM Aspera Faspex due to improper authorization. An authenticated remote attacker could exploit this vulnerability by crafting a specific message to bypass authorization controls. Successful exploitation could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application. Note - This vulnerability is known to be exploited in the wild.",
-    "softwareAffected": [
-      "IBM Aspera Faspex versions 5.0.0 to 5.0.19"
-    ],
-    "targetAudience": "Organizations and individuals using IBM Aspera Faspex.",
-    "riskAssessment": "High risk of unauthorized access and privilege escalation.",
-    "impactAssessment": "Potential for unauthorized access to data and full administrative control of the affected application.",
-    "cves": [
-      "CVE-2026-123218"
     ],
     "solutionLinks": []
   },
@@ -1413,29 +1413,6 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -1491,6 +1468,29 @@
     "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
     "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
     "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
     "solutionLinks": []
   },
   {
