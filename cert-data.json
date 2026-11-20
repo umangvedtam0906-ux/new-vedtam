@@ -1,18 +1,57 @@
 [
   {
-    "title": "Authentication Bypass Vulnerability in GPUStack",
+    "title": "Multiple Vulnerabilities in VMware Products",
     "severity": "critical",
-    "date": "2026-11-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0559",
-    "code": "CIVN-2026-0559",
-    "summary": "A vulnerability has been reported in GPUStack that could allow a remote attacker to bypass authentication mechanism, gain unauthorized administrative access, disclose sensitive information, and potentially execute arbitrary code on the targeted system.",
-    "description": "GPUStack is an open-source GPU cluster management platform designed to deploy, manage and scale Artificial Intelligence (AI) models, particularly Large Language Models (LLMs), across multiple GPU servers. A vulnerability has been reported in GPUStack products due to improper authentication. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow a remote attacker to bypass authentication mechanism, gain unauthorized administrative access, disclose sensitive information, and potentially execute arbitrary code on the targeted system.",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using affected versions of GPUStack.",
-    "riskAssessment": "High risk of unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0564",
+    "code": "CIVN-2026-0564",
+    "summary": "Multiple vulnerabilities have been reported in VMware products, which could allow a remote or authenticated attacker to bypass authentication, gain unauthorized access, perform unauthorized database operations, execute arbitrary commands, or escalate privileges to root on the affected systems.",
+    "description": "VMware vCenter Server, VMware Cloud Foundation, VMware vSphere Foundation, VMware Tools, VMware Telco Cloud Platform, and VMware Telco Cloud Infrastructure are virtualization and cloud infrastructure products used to deploy, manage, and maintain enterprise virtual environments. These vulnerabilities exist in VMware products due to an authentication bypass flaw in the VMware Directory Service, improper sanitization of user-supplied input in SDDC Manager, a local privilege escalation flaw, and a SAML token signature bypass flaw in VMware Tools for Windows. Successful exploitation of these vulnerabilities could allow an attacker with network access to bypass authentication and gain unauthorized access to VMware vCenter, perform unauthorized database read/write operations, execute arbitrary commands on the SDDC Manager appliance, escalate privileges to root, or elevate privileges within an affected guest virtual machine.",
+    "softwareAffected": [
+      "VMware vCenter Server versions prior to 8.0 U3m",
+      "VMware vCenter Server 7.0 (affected; contact Broadcom Support for extended-support fixes)",
+      "VMware Cloud Foundation versions prior to 9.1.1.0200",
+      "VMware vSphere Foundation versions prior to 9.1.1.0200",
+      "VMware Cloud Foundation and VMware vSphere Foundation deployments containing affected VMware vCenter components prior to 9.0.2.0200",
+      "VMware Cloud Foundation and VMware vSphere Foundation deployments containing affected SDDC Manager/VCF Installer components prior to 9.0.2.0100",
+      "VMware Cloud Foundation versions prior to 5.2.5",
+      "VMware Tools for Windows versions prior to 13.1.5.0",
+      "VMware Tools for Windows versions prior to 12.5.5",
+      "VMware Telco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x and 5.2 deployments containing VMware vCenter versions prior to 8.0 U3m",
+      "VMware Telco Cloud Infrastructure 3.0 deployments containing VMware vCenter versions prior to 8.0 U3m"
+    ],
+    "targetAudience": "All organizations and individuals using the affected VMware products.",
+    "riskAssessment": "Critical risk of authentication bypass, unauthorized access, unauthorized database operations, arbitrary command execution, and privilege escalation.",
+    "impactAssessment": "Successful exploitation of these vulnerabilities could allow a remote or authenticated attacker to bypass authentication, gain unauthorized access to affected systems, perform unauthorized database read/write operations, execute arbitrary commands, and escalate privileges to root.",
     "cves": [
-      "CVE-2026-102895"
+      "CVE-2026-123890",
+      "CVE-2026-123891",
+      "CVE-2026-123892",
+      "CVE-2026-123893",
+      "CVE-2026-123894"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Perforce Puppet",
+    "severity": "critical",
+    "date": "2026-11-19",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0563",
+    "code": "CIVN-2026-0563",
+    "summary": "A critical vulnerability has been reported in Perforce Puppet which could allow a remote attacker to execute arbitrary code and compromise the affected Puppet Server.",
+    "description": "Puppet is an infrastructure management platform designed to automate the configuration, deployment and maintenance of servers and other IT resources across distributed environments. This vulnerability exist in the Perforce Puppet due to improper deserialization of untrusted data in its report-processing functionality. An attacker possessing a valid CA-signed agent certificate could exploit this vulnerability by submitting a specially crafted report containing a malicious rich-data type through a PUT request. Where the Certificate Authority (CA) automatically signs certificate requests without adequate verification, an unauthenticated remote attacker could potentially obtain a valid agent certificate and exploit the vulnerability. Successful exploitation could allow a remote attacker to execute arbitrary code, modify files and compromise the affected Puppet Server.",
+    "softwareAffected": [
+      "Puppet Enterprise versions 2026.0.0 prior to 2026.0.1.",
+      "Puppet Enterprise versions 2025.0.0 prior to 2025.12.1.",
+      "Puppet Enterprise versions 2023.8.0 prior to 2023.8.13.",
+      "Puppet Core versions 9.0.0 prior to 9.1.3.",
+      "Puppet Core versions 8.x prior to 8.22.2."
+    ],
+    "targetAudience": "All organizations and individuals using affected versions of Puppet Enterprise and Puppet Core.",
+    "riskAssessment": "Very high risk of remote code execution, privilege escalation, and complete compromise of the server.",
+    "impactAssessment": "Potential for execute arbitrary code, unauthorized access and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-115731"
     ],
     "solutionLinks": []
   },
@@ -51,6 +90,23 @@
     "impactAssessment": "Potential for complete system compromise through unauthorized root-level command execution.",
     "cves": [
       "CVE-2026-123039"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in GPUStack",
+    "severity": "critical",
+    "date": "2026-11-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0559",
+    "code": "CIVN-2026-0559",
+    "summary": "A vulnerability has been reported in GPUStack that could allow a remote attacker to bypass authentication mechanism, gain unauthorized administrative access, disclose sensitive information, and potentially execute arbitrary code on the targeted system.",
+    "description": "GPUStack is an open-source GPU cluster management platform designed to deploy, manage and scale Artificial Intelligence (AI) models, particularly Large Language Models (LLMs), across multiple GPU servers. A vulnerability has been reported in GPUStack products due to improper authentication. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow a remote attacker to bypass authentication mechanism, gain unauthorized administrative access, disclose sensitive information, and potentially execute arbitrary code on the targeted system.",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using affected versions of GPUStack.",
+    "riskAssessment": "High risk of unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "cves": [
+      "CVE-2026-102895"
     ],
     "solutionLinks": []
   },
@@ -423,6 +479,21 @@
     "solutionLinks": []
   },
   {
+    "title": "The Gentlemen Ransomware",
+    "severity": "high",
+    "date": "2026-11-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0060",
+    "code": "CIAD-2026-0060",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "\"The Gentlemen\" is a financially motivated Ransomware-as-a-Service (RaaS) group that employs a double-extortion technique, combining data exfiltration with file encryption to pressure victims into paying ransom. The group threatens to publicly disclose stolen sensitive information if ransom demands are not met. A key characteristic of \"The Gentlemen\" ransomware is its self-propagation capability, allowing it to spread across compromised networks through various lateral movement techniques. Developed in the Go programming language, the ransomware leverages Garble for code obfuscation, making reverse engineering, static analysis, and detection more challenging. It targets multiple platforms including Windows, Linux, BSD, NAS devices, and VMware ESXi environments. The group has been associated with attacks targeting organizations across critical sectors including healthcare, construction, finance, and manufacturing. Infection Mechanism Threat actors exploit vulnerabilities in internet-facing edge devices and remote access",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Barracuda Products",
     "severity": "high",
     "date": "2026-11-13",
@@ -488,40 +559,6 @@
     "solutionLinks": []
   },
   {
-    "title": "The Gentlemen Ransomware",
-    "severity": "high",
-    "date": "2026-11-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0060",
-    "code": "CIAD-2026-0060",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "\"The Gentlemen\" is a financially motivated Ransomware-as-a-Service (RaaS) group that employs a double-extortion technique, combining data exfiltration with file encryption to pressure victims into paying ransom. The group threatens to publicly disclose stolen sensitive information if ransom demands are not met. A key characteristic of \"The Gentlemen\" ransomware is its self-propagation capability, allowing it to spread across compromised networks through various lateral movement techniques. Developed in the Go programming language, the ransomware leverages Garble for code obfuscation, making reverse engineering, static analysis, and detection more challenging. It targets multiple platforms including Windows, Linux, BSD, NAS devices, and VMware ESXi environments. The group has been associated with attacks targeting organizations across critical sectors including healthcare, construction, finance, and manufacturing. Infection Mechanism Threat actors exploit vulnerabilities in internet-facing edge devices and remote access",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Authorization Bypass Vulnerability in IBM Aspera Faspex",
-    "severity": "critical",
-    "date": "2026-11-12",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0546",
-    "code": "CIVN-2026-0546",
-    "summary": "A vulnerability has been reported in IBM Aspera Faspex which could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application.",
-    "description": "IBM Aspera Faspex is a secure, web-based file transfer and collaboration application developed by IBM. This vulnerability exists in IBM Aspera Faspex due to improper authorization. An authenticated remote attacker could exploit this vulnerability by crafting a specific message to bypass authorization controls. Successful exploitation could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application. Note - This vulnerability is known to be exploited in the wild.",
-    "softwareAffected": [
-      "IBM Aspera Faspex versions 5.0.0 to 5.0.19"
-    ],
-    "targetAudience": "Organizations and individuals using IBM Aspera Faspex.",
-    "riskAssessment": "High risk of unauthorized access and privilege escalation.",
-    "impactAssessment": "Potential for unauthorized access to data and full administrative control of the affected application.",
-    "cves": [
-      "CVE-2026-123218"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Microsoft Products",
     "severity": "high",
     "date": "2026-11-12",
@@ -550,6 +587,25 @@
     "impactAssessment": "Potential compromise of systems, credential theft, unauthorized access to sensitive data, system disruption or denial of service.",
     "cves": [
       "CVE-2026-124194"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authorization Bypass Vulnerability in IBM Aspera Faspex",
+    "severity": "critical",
+    "date": "2026-11-12",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0546",
+    "code": "CIVN-2026-0546",
+    "summary": "A vulnerability has been reported in IBM Aspera Faspex which could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application.",
+    "description": "IBM Aspera Faspex is a secure, web-based file transfer and collaboration application developed by IBM. This vulnerability exists in IBM Aspera Faspex due to improper authorization. An authenticated remote attacker could exploit this vulnerability by crafting a specific message to bypass authorization controls. Successful exploitation could allow an authenticated remote attacker to bypass authorization controls and gain full administrative privileges within the application. Note - This vulnerability is known to be exploited in the wild.",
+    "softwareAffected": [
+      "IBM Aspera Faspex versions 5.0.0 to 5.0.19"
+    ],
+    "targetAudience": "Organizations and individuals using IBM Aspera Faspex.",
+    "riskAssessment": "High risk of unauthorized access and privilege escalation.",
+    "impactAssessment": "Potential for unauthorized access to data and full administrative control of the affected application.",
+    "cves": [
+      "CVE-2026-123218"
     ],
     "solutionLinks": []
   },
@@ -811,13 +867,13 @@
     "solutionLinks": []
   },
   {
-    "title": "Escalation of AI-Driven Attacks on BFSI Entities by Threat Actor \"CRAFTY FALCON\"",
-    "severity": "critical",
+    "title": "CERT-In Advisory CICA-2026-3651",
+    "severity": "high",
     "date": "2026-11-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058",
-    "code": "CIAD-2026-0058",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3651",
+    "code": "CICA-2026-3651",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 20, 2026",
+    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email:info@cert-in.org.in Phone: +91-11-22902657 Postal Address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 20, 2026",
     "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
@@ -826,13 +882,13 @@
     "solutionLinks": []
   },
   {
-    "title": "CERT-In Advisory CICA-2026-3651",
-    "severity": "high",
+    "title": "Escalation of AI-Driven Attacks on BFSI Entities by Threat Actor \"CRAFTY FALCON\"",
+    "severity": "critical",
     "date": "2026-11-04",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3651",
-    "code": "CICA-2026-3651",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058",
+    "code": "CIAD-2026-0058",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email:info@cert-in.org.in Phone: +91-11-22902657 Postal Address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 19, 2026",
+    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email: info@cert-in.org.in Phone: +91-11-22902657 Postal address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 20, 2026",
     "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
@@ -1075,6 +1131,24 @@
     "solutionLinks": []
   },
   {
+    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+    "code": "CIAD-2026-0055",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
+    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
+    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
+    "cves": [
+      "cve-2026-111497",
+      "CVE-2026-111497"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Apple Products",
     "severity": "high",
     "date": "2026-10-27",
@@ -1278,24 +1352,6 @@
       "CVE-2026-113949",
       "CVE-2026-113950",
       "CVE-2026-113952"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
-    "code": "CIAD-2026-0055",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
-    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
-    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
-    "cves": [
-      "cve-2026-111497",
-      "CVE-2026-111497"
     ],
     "solutionLinks": []
   },
@@ -1585,6 +1641,29 @@
     "solutionLinks": []
   },
   {
+    "title": "CERT-In Advisory CICA-2026-3650",
+    "severity": "high",
+    "date": "2026-10-22",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
+    "code": "CICA-2026-3650",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
+    "softwareAffected": [
+      "PHP 8.5 versions prior to 8.5.12",
+      "PHP 8.4 versions prior to 8.4.27",
+      "PHP 8.3 versions prior to 8.3.36",
+      "PHP 8.2 versions prior to 8.2.35"
+    ],
+    "targetAudience": "All organizations and individuals using PHP.",
+    "riskAssessment": "High risk of remote code execution and complete system compromise.",
+    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell)",
     "severity": "critical",
     "date": "2026-10-22",
@@ -1640,29 +1719,6 @@
     "riskAssessment": "High risk of information disclosure, data manipulation, system instability and arbitrary code execution.",
     "impactAssessment": "Potential unauthorized access to sensitive information, denial of service, data manipulation, and complete takeover of control of the target system.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "CERT-In Advisory CICA-2026-3650",
-    "severity": "high",
-    "date": "2026-10-22",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3650",
-    "code": "CICA-2026-3650",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "PHP is an open-source scripting language designed for server-side web development, enabling the creation of dynamic web pages. These vulnerabilities exist in PHP due to memory corruption and improper resource control. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and com-promise of affected systems on the targeted system. Note: Multiple reports confirm large scale exploitation in the wild, users are advised to patch urgently.",
-    "softwareAffected": [
-      "PHP 8.5 versions prior to 8.5.12",
-      "PHP 8.4 versions prior to 8.4.27",
-      "PHP 8.3 versions prior to 8.3.36",
-      "PHP 8.2 versions prior to 8.2.35"
-    ],
-    "targetAudience": "All organizations and individuals using PHP.",
-    "riskAssessment": "High risk of remote code execution and complete system compromise.",
-    "impactAssessment": "Potential for remote code execution and compromise of the affected systems.",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
     "solutionLinks": []
   },
   {
