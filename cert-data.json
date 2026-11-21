@@ -1,5 +1,72 @@
 [
   {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0568",
+    "code": "CIVN-2026-0568",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could allow a remote attacker to execute arbitrary code, gain elevated access, trigger denial of service condition and gain unauthorized access to sensitive information on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle Database Server",
+      "Oracle Application Express (APEX)",
+      "Oracle Autonomous Health Framework",
+      "Oracle REST Data Services",
+      "Oracle Application Testing Suite",
+      "Oracle Commerce",
+      "Oracle Communications",
+      "Oracle E-Business Suite",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle Java SE and JavaFX",
+      "Oracle MySQL",
+      "Oracle GraalVM",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cspunov2026.html"
+    ],
+    "targetAudience": "Individuals and organizations using the above-mentioned Oracle products.",
+    "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, information disclosure and privilege escalation.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Core",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0567",
+    "code": "CIVN-2026-0567",
+    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. Multiple vulnerabilities exist in Drupal core due to improper input validation and gadget chain weaknesses. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "Drupal 10.6.x versions prior to 10.6.22",
+      "Drupal 11.0.x through 11.3.x versions prior to 11.3.22",
+      "Drupal 11.4.x versions prior to 11.4.13"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal core.",
+    "riskAssessment": "High risk of remote code execution and compromise of affected systems.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-132165",
+      "CVE-2026-132166"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
+    "code": "CIAD-2026-0062",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "CERT-In has recently issued advisories highlighting threats arising from the exploitation of payment and disbursement systems, unauthorised activity by AI agents under evaluation, misuse of open-source agentic AI tools and AI-assisted cyberattacks against Indian ICT assets. Recent observations by CERT-In show that unauthorised financial transactions involving business payment systems are not limited to BFSI entities but also affect technology service providers supporting government-linked payment processes and platforms handling vendor or partner payouts. In the observed incidents, attackers targeted business records and approval processes to carry out unauthorised transactions through otherwise legitimate systems. In separate threat-hunting activities, CERT-In has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across different sectors. The activity includes automated reconnaissance, credential attacks and unauthorised access to systems and data. Organisations should review the security of business applications, critical records, user identities and third-party interfaces. Existing monitoring and incident-response arrangements should also account for the risks arising from misuse of trusted business processes and automated intrusion activity. Categories of Incidents Observed 1. Financially motivated abuse of business payment workflows CERT-In has received reports of unauthorised financial transactions involving organisations outside the financial sector. Some incidents have affected service providers supporting government-linked payment workflows and platforms responsible for vendor or partner payouts. The reported incidents involved the following methods: • Misuse of business applications and service-provider-operated workflows, rather than direct exploitation of payment APIs alone. • Alteration of business records or approval relationships that determine payments, followed by the use of legitimate payment processes. • Use of trusted systems and established approval procedures to process unauthorised transactions without immediately raising suspicion. • Exploitation of gaps in independent verification, reconciliation and review of changes to business records. • The concern is not limited to the security of payment APIs. A transaction may pass the usual application and approval checks even when the records used to initiate it have been changed without authorisation. Organisations need to verify the underlying business records and the authority for a payment, in addition to validating the payment request itself. 2. AOF-enabled intrusion activity across sectors CERT-In's proactive threat hunting has identified the use of AOFs in activity directed at enterprises, technology and other service providers, government organisations, and academic and research institutions. The analysis identified the following techniques: • Automated reconnaissance to identify exposed systems, services and possible attack paths. • Rapid preparation and modification of exploits for known vulnerabilities, including through analysis of software updates and related technical information. • Use of multiple agents or automated workers to undertake reconnaissance, privilege discovery and other intrusion tasks in parallel. • Modification of scripts, requests and attack steps in response to errors, blocked attempts or information returned by targeted systems. • Use of valid credentials, legitimate administrative functions, trust relationships and external infrastructure to gain further access. • AOFs allow several intrusion tasks to be carried out with less manual effort and can shorten the time between reconnaissance and subsequent attack stages. Organisations should account for such activity when reviewing their exposure, access controls and monitoring arrangements, irrespective of the sector in which they operate. Recommended Actions Organisations are advised to implement the relevant measures mentioned in CERT-In Advisories CIAD-2026-0046, CIAD-2026-0049 and CIAD-2026-0058. The Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure (CISG-2026-02) also provides guidance on reducing exposure and strengthening defensive arrangements. In view of the reported incidents, particular attention should be given to the following measures. A. Government organisations and owners of services operated through technology service providers 1. Identify service-provider systems, accounts and integrations that can change payment-related records, approve transactions or access sensitive information. Review whether these privileges are necessary and appropriately restricted. 2. Reconcile payment instructions and critical business records maintained by service providers against independent, authoritative records. The verification source should not be capable of being altered through the same compromised provider environment. 3. Require independent verification for high-risk changes, particularly those affecting payment instructions, beneficiaries and approval arrangements. Multiple approvals within the same provider-controlled system may not provide sufficient protection if that environment is compromised. 4. Agree with service providers on arrangements for incident detection, access to relevant logs, investigation and containment. These arrangements should cover suspension of affected payments or integrations and timely notification where a shared compromise may affect other clients. B. Technology service providers (TSPs), IT-enabled services (ITES) entities and non-financial payout platforms 5. Separate client environments and restrict administrative accounts, credentials and control-plane privileges. Access provided for one client or service should not permit unauthorised access to other client environments. 6. Monitor changes to payment-related business records alongside privileged account activity, approval actions and subsequent transactions. Review unusual sequences of activity even when individual actions appear to have been performed through authorised accounts or applications. 7. Where compromise is suspected, independently verify affected business records and examine whether the account or system involved had access to other clients, integrations or environments. C. Organisations exposed to AOF-enabled intrusion activity 8. Organisations should review the security of internet-facing applications, user identities, privileged accounts, service credentials and connections to external systems. 9. Available authentication, endpoint, application and network logs should be examined for unusual reconnaissance, credential use, administrative activity and outbound data transfers. • Reporting Requirements • In accordance with the CERT-In Directions dated 28 April 2022, applicable cyber incidents must be reported to CERT-In within six hours of noticing the incident or being informed of it. Incident reports and relevant logs may be sent to incident@cert-in.org.in. • Cases involving unauthorised financial transactions should also be reported promptly through the National Cyber Crime Reporting Portal (https://cybercrime.gov.in) or by calling helpline 1930. • Organisations should inform the relevant law-enforcement agencies, regulators and payment-system authorities, as applicable, so that timely action can be taken against unauthorised financial transactions and associated accounts. •",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in GitLab products",
     "severity": "high",
     "date": "2026-11-20",
@@ -52,21 +119,6 @@
       "CVE-2026-85778",
       "CVE-2026-112203"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
-    "severity": "critical",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
-    "code": "CIAD-2026-0062",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "CERT-In has recently issued advisories highlighting threats arising from the exploitation of payment and disbursement systems, unauthorised activity by AI agents under evaluation, misuse of open-source agentic AI tools and AI-assisted cyberattacks against Indian ICT assets. Recent observations by CERT-In show that unauthorised financial transactions involving business payment systems are not limited to BFSI entities but also affect technology service providers supporting government-linked payment processes and platforms handling vendor or partner payouts. In the observed incidents, attackers targeted business records and approval processes to carry out unauthorised transactions through otherwise legitimate systems. In separate threat-hunting activities, CERT-In has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across different sectors. The activity includes automated reconnaissance, credential attacks and unauthorised access to systems and data. Organisations should review the security of business applications, critical records, user identities and third-party interfaces. Existing monitoring and incident-response arrangements should also account for the risks arising from misuse of trusted business processes and automated intrusion activity. Categories of Incidents Observed 1. Financially motivated abuse of business payment workflows CERT-In has received reports of unauthorised financial transactions involving organisations outside the financial sector. Some incidents have affected service providers supporting government-linked payment workflows and platforms responsible for vendor or partner payouts. The reported incidents involved the following methods: • Misuse of business applications and service-provider-operated workflows, rather than direct exploitation of payment APIs alone. • Alteration of business records or approval relationships that determine payments, followed by the use of legitimate payment processes. • Use of trusted systems and established approval procedures to process unauthorised transactions without immediately raising suspicion. • Exploitation of gaps in independent verification, reconciliation and review of changes to business records. • The concern is not limited to the security of payment APIs. A transaction may pass the usual application and approval checks even when the records used to initiate it have been changed without authorisation. Organisations need to verify the underlying business records and the authority for a payment, in addition to validating the payment request itself. 2. AOF-enabled intrusion activity across sectors CERT-In's proactive threat hunting has identified the use of AOFs in activity directed at enterprises, technology and other service providers, government organisations, and academic and research institutions. The analysis identified the following techniques: • Automated reconnaissance to identify exposed systems, services and possible attack paths. • Rapid preparation and modification of exploits for known vulnerabilities, including through analysis of software updates and related technical information. • Use of multiple agents or automated workers to undertake reconnaissance, privilege discovery and other intrusion tasks in parallel. • Modification of scripts, requests and attack steps in response to errors, blocked attempts or information returned by targeted systems. • Use of valid credentials, legitimate administrative functions, trust relationships and external infrastructure to gain further access. • AOFs allow several intrusion tasks to be carried out with less manual effort and can shorten the time between reconnaissance and subsequent attack stages. Organisations should account for such activity when reviewing their exposure, access controls and monitoring arrangements, irrespective of the sector in which they operate. Recommended Actions Organisations are advised to implement the relevant measures mentioned in CERT-In Advisories CIAD-2026-0046, CIAD-2026-0049 and CIAD-2026-0058. The Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure (CISG-2026-02) also provides guidance on reducing exposure and strengthening defensive arrangements. In view of the reported incidents, particular attention should be given to the following measures. A. Government organisations and owners of services operated through technology service providers 1. Identify service-provider systems, accounts and integrations that can change payment-related records, approve transactions or access sensitive information. Review whether these privileges are necessary and appropriately restricted. 2. Reconcile payment instructions and critical business records maintained by service providers against independent, authoritative records. The verification source should not be capable of being altered through the same compromised provider environment. 3. Require independent verification for high-risk changes, particularly those affecting payment instructions, beneficiaries and approval arrangements. Multiple approvals within the same provider-controlled system may not provide sufficient protection if that environment is compromised. 4. Agree with service providers on arrangements for incident detection, access to relevant logs, investigation and containment. These arrangements should cover suspension of affected payments or integrations and timely notification where a shared compromise may affect other clients. B. Technology service providers (TSPs), IT-enabled services (ITES) entities and non-financial payout platforms 5. Separate client environments and restrict administrative accounts, credentials and control-plane privileges. Access provided for one client or service should not permit unauthorised access to other client environments. 6. Monitor changes to payment-related business records alongside privileged account activity, approval actions and subsequent transactions. Review unusual sequences of activity even when individual actions appear to have been performed through authorised accounts or applications. 7. Where compromise is suspected, independently verify affected business records and examine whether the account or system involved had access to other clients, integrations or environments. C. Organisations exposed to AOF-enabled intrusion activity 8. Organisations should review the security of internet-facing applications, user identities, privileged accounts, service credentials and connections to external systems. 9. Available authentication, endpoint, application and network logs should be examined for unusual reconnaissance, credential use, administrative activity and outbound data transfers. • Reporting Requirements • In accordance with the CERT-In Directions dated 28 April 2022, applicable cyber incidents must be reported to CERT-In within six hours of noticing the incident or being informed of it. Incident reports and relevant logs may be sent to incident@cert-in.org.in. • Cases involving unauthorised financial transactions should also be reported promptly through the National Cyber Crime Reporting Portal (https://cybercrime.gov.in) or by calling helpline 1930. • Organisations should inform the relevant law-enforcement agencies, regulators and payment-system authorities, as applicable, so that timely action can be taken against unauthorised financial transactions and associated accounts. •",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -124,28 +176,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in Drupal Core",
-    "severity": "critical",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0567",
-    "code": "CIVN-2026-0567",
-    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. Multiple vulnerabilities exist in Drupal core due to improper input validation and gadget chain weaknesses. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "Drupal 10.6.x versions prior to 10.6.22",
-      "Drupal 11.0.x through 11.3.x versions prior to 11.3.22",
-      "Drupal 11.4.x versions prior to 11.4.13"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal core.",
-    "riskAssessment": "High risk of remote code execution and compromise of affected systems.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-132165",
-      "CVE-2026-132166"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Remote Code Execution Vulnerability in Perforce Puppet",
     "severity": "critical",
     "date": "2026-11-19",
@@ -165,6 +195,27 @@
     "impactAssessment": "Potential for execute arbitrary code, unauthorized access and compromise of the affected systems.",
     "cves": [
       "CVE-2026-115731"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Oracle Java SE and Oracle GraalVM Products",
+    "severity": "high",
+    "date": "2026-11-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0061",
+    "code": "CIAD-2026-0061",
+    "summary": "A vulnerability has been reported in Oracle Java SE, Oracle GraalVM for JDK and Oracle GraalVM Enterprise Edition which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Oracle Java SE, Oracle GraalVM for JDK, and Oracle GraalVM Enterprise Edition are widely used runtime environments for Java applications. This vulnerability exists in Oracle Java SE, Oracle GraalVM for JDK, and Oracle GraalVM Enterprise Edition Java due to improper input validation. A remote attacker could exploit these vulnerabilities by sending a specially crafted request containing malformed Base64 data to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "Oracle Java SE versions 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, and 27.0.1.0.3",
+      "Oracle GraalVM for JDK versions 17.0.21.0.3 and 21.0.13.0.3",
+      "Oracle GraalVM Enterprise Edition version 21.3.20.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected versions of Oracle Java SE and Oracle GraalVM products.",
+    "riskAssessment": "High risk of unauthorized access and arbitrary code execution.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-114938"
     ],
     "solutionLinks": []
   },
@@ -269,27 +320,6 @@
     "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
     "cves": [
       "CVE-2026-102895"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Oracle Java SE and Oracle GraalVM Products",
-    "severity": "high",
-    "date": "2026-11-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0061",
-    "code": "CIAD-2026-0061",
-    "summary": "A vulnerability has been reported in Oracle Java SE, Oracle GraalVM for JDK and Oracle GraalVM Enterprise Edition which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Oracle Java SE, Oracle GraalVM for JDK, and Oracle GraalVM Enterprise Edition are widely used runtime environments for Java applications. This vulnerability exists in Oracle Java SE, Oracle GraalVM for JDK, and Oracle GraalVM Enterprise Edition Java due to improper input validation. A remote attacker could exploit these vulnerabilities by sending a specially crafted request containing malformed Base64 data to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "Oracle Java SE versions 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, and 27.0.1.0.3",
-      "Oracle GraalVM for JDK versions 17.0.21.0.3 and 21.0.13.0.3",
-      "Oracle GraalVM Enterprise Edition version 21.3.20.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected versions of Oracle Java SE and Oracle GraalVM products.",
-    "riskAssessment": "High risk of unauthorized access and arbitrary code execution.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-114938"
     ],
     "solutionLinks": []
   },
@@ -1005,7 +1035,7 @@
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3651",
     "code": "CICA-2026-3651",
     "summary": "Multiple vulnerabilities reported.",
-    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email:info@cert-in.org.in Phone: +91-11-22902657 Postal Address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 21, 2026",
+    "description": "Analysis of the reported incidents indicates below attack pattern: • Cloud infrastructure of entities targeted including compute, serverless and management services with cloud management services (such as AWS Systems Manager and Lambda) abused to execute commands and deploy malicious files, blending malicious activity into legitimate cloud management channels. • Internet-exposed non-production environments (UAT/staging/testing) used as entry points, followed by movement to production environments using shared credentials, tokens or network paths. • Application codebases reverse-engineered by the threat actor to develop tailored exploits; unauthorized API calls subsequently initiated using altered/modified application packages, defeating controls that assumed only the legitimate client application would call the APIs. • IP allow-listing bypassed by originating traffic from whitelisted third-party fetcher IP pools (such as content-acceleration and app-store review fetchers); any Internet user can cause such shared fetcher services to fetch arbitrary URLs. • Micro-value test transactions (such as Rs. 1) performed to validate unauthorized fund flows before executing large-value transfers. • Merchant settlement APIs of payment aggregators exploited or abused to move funds. • Newly published vulnerabilities exploited as soon as they become public, including file-upload and deserialization exploit chains leading to web shells in PHP and Node.js applications. • Cryptocurrency exchanges and virtual digital asset service providers targeted, with wallet keys stolen and funds siphoned from cryptocurrency wallets. • Large numbers of custom, tailored scripts created on the fly, with functionally identical variants refined in rapid succession; a pattern consistent with AI-generated code and iterative AI-assisted development. • Recommended Actions • Treat this campaign as active and escalating: maintain heightened 24x7 security monitoring, with increased staffing and lowered alert thresholds during holidays, weekends and other low-coverage windows. • After any incident, assume persistence: perform full eradication with forensic verification and continue periodic threat hunting; entities have been re-attacked after incomplete remediation. • Enable centralized, real-time monitoring of cloud audit logs with alerting on high-risk events such as remote command execution, serverless function code updates and creation of roles, users or access keys. • Restrict cloud management and serverless execution to approved principals and accounts; alert on any interactive remote-management session or serverless function code change in production. • Enforce instance metadata service protections and least-privilege roles for instances and functions; deny wildcard egress in security groups; configure serverless functions with no Internet egress by default. • Isolate UAT/staging/testing environments from production - no shared credentials, tokens, API keys, databases or direct network paths and apply production-grade hardening and monitoring to internet-facing non-production environments. • Alert on and investigate any access from non-production systems to production systems, credentials or data. • Make application deployment directories read-only for the application runtime user; deploy file-integrity monitoring on application directories for web shell detection. • Treat client applications and packages as untrusted: enforce server-side validation of every transaction and business rule; implement API request signing with nonce and timestamp; adopt app attestation services and certificate pinning to detect altered or repackaged applications. • Establish a rapid patching SLA for internet-facing applications, prioritizing file-upload and deserialization weaknesses in PHP and Node.js applications; use WAF virtual patching as an interim control. • Prohibit hardcoded tokens and credentials in source and build code; deploy automated secret scanning across repositories and CI/CD pipelines; use short-lived, fine-grained, least-privileged access tokens and rotate all build and deployment tokens. • Alert on token usage from unusual source IPs, user agents or geographies; enforce branch protection, commit signing and mandatory code review on production deployment branches. • Replace IP allow-listing of shared third-party fetcher pools with identity-based controls such as mutual TLS, cryptographically signed requests or scoped API keys on dedicated vendor endpoints. • Enforce default-deny egress from server segments through allow-listed proxies; unrestricted HTTPS egress was used for command-and-control and data exfiltration. • Deploy TLS inspection with alerting on self-signed certificates presented over non-standard ports. • Extend real-time transaction monitoring to flag micro-value test transactions to new beneficiaries followed by high-value transactions; treat this pattern as a strong precursor of unauthorized fund transfer and hold or review such flows. • Implement transaction velocity rules, new-beneficiary cooling periods and amount-band anomaly detection across all payment and disbursement paths. • Enforce server-side validation, maker-checker approval and reconciliation for all merchant settlement instructions submitted through payment aggregator APIs. • Store cryptocurrency wallet keys in hardware security modules or cold custody; require multi-signature approvals for withdrawals; monitor withdrawal patterns for anomalies and rotate keys immediately upon any suspected compromise. • Prohibit installation or execution of unauthorized security and attack tools including publicly available AI-driven offensive frameworks on corporate infrastructure; monitor for their download and for AI coding-agent processes running with permission checks disabled. • Monitor and govern LLM API usage and keys; LLM API traffic originating from servers or other non-development hosts may indicate an attack rig or planted operator console. • Establish a policy requiring written approval, defined scope and a time window for all penetration testing; the tools themselves do not validate authorization. • Tune SIEM correlation for machine-speed, multi-technique attack patterns , multiple tools and techniques, parallel attack threads, adaptive payload mutation and continuous non-business-hours operation against a single target and adopt automated (SOAR-based) containment. • Deploy deception measures such as honeypots, decoy administrative panels and canary credentials; autonomous attack agents enumerate targets exhaustively and are likely to touch decoy assets, generating high-confidence early alerts. • Monitor web roots, temporary directories and staging paths for bursts of newly created commented scripts and rapid successive variants of functionally identical scripts - a strong indicator of AI-generated attack tooling. • Adopt zero-trust principles , micro-segmentation, identity-based access for every user and service, and inspection of east-west traffic operating on the assumption that the threat actor is already inside the environment. • Upon detection of suspicious activity: isolate affected hosts, preserve forensic evidence and logs, rotate all credentials, and report to CERT-In/CSIRT-Fin at incident@cert-in.org.in . • Conclusion Entities are advised to report any signs of suspicious activity related to the \"CRAFTY FALCON\" campaign to CERT-In/CSIRT-Fin at incident@cert-in.org.in, along with all relevant logs, at the earliest. Entities shall also contact Indian Cybercrime Coordination Centre (I4C) for reporting of such fraudulent transactions in bulk at Cyber Fraud Mitigation Centre (CFCFRMS Portal). The detailed (restricted) version of this advisory, including the full indicators of compromise, infrastructure fingerprints and detection rules, has been shared with BFSI entities at the appropriate TLP level. Indicators may change while adversary techniques often remain consistent; entities should therefore not limit their response to blocking indicators. Disclaimer The information provided herein is on \"as is\" basis, without warranty of any kind. Contact Information Email:info@cert-in.org.in Phone: +91-11-22902657 Postal Address Indian Computer Emergency Response Team (CERT-In) Ministry of Electronics and Information Technology Government of India Electronics Niketan 6, CGO Complex, Lodhi Road, New Delhi - 110 003 India Indian Computer Emergency Response Team - CERT-In, Ministry of Electronics and Information Technology, Government of India. Website Policies | Terms of Use | Help Last Updated On November 22, 2026",
     "softwareAffected": "",
     "targetAudience": "",
     "riskAssessment": "",
@@ -1263,24 +1293,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
-    "severity": "critical",
-    "date": "2026-10-27",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
-    "code": "CIAD-2026-0055",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
-    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
-    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
-    "cves": [
-      "cve-2026-111497",
-      "CVE-2026-111497"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Apple Products",
     "severity": "high",
     "date": "2026-10-27",
@@ -1484,6 +1496,24 @@
       "CVE-2026-113949",
       "CVE-2026-113950",
       "CVE-2026-113952"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
+    "severity": "critical",
+    "date": "2026-10-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+    "code": "CIAD-2026-0055",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "description": "An Out-of-Bounds Write vulnerability has been reported in using products that utilizes the Brotli decoder; details of which are provided below:",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using software that utilizes the Brotli decoder, including those using Bun, Microsoft .NET, Python (Brotli and brotlicffi packages), and Envoy proxies.",
+    "riskAssessment": "Critical risks of unauthorised access, memory corruption and denial of service.",
+    "impactAssessment": "Potential for arbitrary code execution, system compromise, sensitive data disclosure, memory corruption, and denial of service.",
+    "cves": [
+      "cve-2026-111497",
+      "CVE-2026-111497"
     ],
     "solutionLinks": []
   },
