@@ -199,6 +199,40 @@
     "solutionLinks": []
   },
   {
+    "title": "Local Privilege Escalation Vulnerability in Check Point",
+    "severity": "high",
+    "date": "2026-11-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0561",
+    "code": "CIVN-2026-0561",
+    "summary": "A vulnerability has been reported in Check Point products which could allow an authenticated local user to elevate privileges to root and execute arbitrary code on the targeted system.",
+    "description": "Check Point provides advanced security",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using affected Check Point products.",
+    "riskAssessment": "High risk of privilege escalation, unauthorized access, and sensitive data disclosure.",
+    "impactAssessment": "Potential for complete system compromise through unauthorized root-level command execution.",
+    "cves": [
+      "CVE-2026-123039"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Authentication Bypass Vulnerability in GPUStack",
+    "severity": "critical",
+    "date": "2026-11-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0559",
+    "code": "CIVN-2026-0559",
+    "summary": "A vulnerability has been reported in GPUStack that could allow a remote attacker to bypass authentication mechanism, gain unauthorized administrative access, disclose sensitive information, and potentially execute arbitrary code on the targeted system.",
+    "description": "GPUStack is an open-source GPU cluster management platform designed to deploy, manage and scale Artificial Intelligence (AI) models, particularly Large Language Models (LLMs), across multiple GPU servers. A vulnerability has been reported in GPUStack products due to improper authentication. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow a remote attacker to bypass authentication mechanism, gain unauthorized administrative access, disclose sensitive information, and potentially execute arbitrary code on the targeted system.",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using affected versions of GPUStack.",
+    "riskAssessment": "High risk of unauthorized access, and sensitive information disclosure.",
+    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "cves": [
+      "CVE-2026-102895"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Oracle Java SE and Oracle GraalVM Products",
     "severity": "high",
     "date": "2026-11-18",
@@ -236,23 +270,6 @@
     "riskAssessment": "High risk of remote code execution, security restriction bypass, sensitive information disclosure.",
     "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Local Privilege Escalation Vulnerability in Check Point",
-    "severity": "high",
-    "date": "2026-11-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0561",
-    "code": "CIVN-2026-0561",
-    "summary": "A vulnerability has been reported in Check Point products which could allow an authenticated local user to elevate privileges to root and execute arbitrary code on the targeted system.",
-    "description": "Check Point provides advanced security",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using affected Check Point products.",
-    "riskAssessment": "High risk of privilege escalation, unauthorized access, and sensitive data disclosure.",
-    "impactAssessment": "Potential for complete system compromise through unauthorized root-level command execution.",
-    "cves": [
-      "CVE-2026-123039"
-    ],
     "solutionLinks": []
   },
   {
@@ -307,19 +324,24 @@
     "solutionLinks": []
   },
   {
-    "title": "Authentication Bypass Vulnerability in GPUStack",
-    "severity": "critical",
-    "date": "2026-11-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0559",
-    "code": "CIVN-2026-0559",
-    "summary": "A vulnerability has been reported in GPUStack that could allow a remote attacker to bypass authentication mechanism, gain unauthorized administrative access, disclose sensitive information, and potentially execute arbitrary code on the targeted system.",
-    "description": "GPUStack is an open-source GPU cluster management platform designed to deploy, manage and scale Artificial Intelligence (AI) models, particularly Large Language Models (LLMs), across multiple GPU servers. A vulnerability has been reported in GPUStack products due to improper authentication. A remote attacker could exploit this vulnerability by sending a specially crafted request to the targeted system. Successful exploitation of this vulnerability could allow a remote attacker to bypass authentication mechanism, gain unauthorized administrative access, disclose sensitive information, and potentially execute arbitrary code on the targeted system.",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using affected versions of GPUStack.",
-    "riskAssessment": "High risk of unauthorized access, and sensitive information disclosure.",
-    "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
+    "title": "Multiple Vulnerabilities in C-DAC e-Sushrut HMIS",
+    "severity": "high",
+    "date": "2026-11-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0557",
+    "code": "CIVN-2026-0557",
+    "summary": "Multiple vulnerabilities have been reported in the CDAC e-Sushrut HMIS, which could allow an unauthenticated remote attacker to gain unauthorized access to hospital dashboard information, internal operational statistics, and sensitive patient data or perform authentication related attacks on the targeted healthcare organization.",
+    "description": "e-Sushrut is a Hospital Management Information System (HMIS) developed and deployed by C-DAC. It is used for managing patient information, hospital workflows and administrative processes in healthcare organizations. 1. Improper Authentication Vulnerability ( CVE-2026-124643 ) This vulnerability exists in e-Sushrut HMIS due to insufficient authentication and session validation in the dashboard functionality. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted HTTP requests to the affected endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the dashboard information associated with the targeted healthcare organization. 2. Sensitive Information Disclosure Vulnerability ( CVE-2026-124644 ) This vulnerability exists in e-Sushrut HMIS due to the exposure of internal hospital operational statistics through data structure embedded in the HTML response of the login page. An unauthenticated remote attacker could exploit this vulnerability by accessing the affected login page and extracting the returned HTML content. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to internal hospital operational information associated with the targeted healthcare organization. 3. Hardcoded Cryptographic Key Vulnerability ( CVE-2026-124645 ) This vulnerability exists in e-Sushrut HIMS due to the use of a static and predictable value in the client-side password hashing mechanism, which is embedded in the login page and accessible to unauthenticated users. An unauthenticated remote attacker could exploit this vulnerability by accessing the login page, extracting the embedded value and using it to reproduce the password hashing process. Successful exploitation of this vulnerability could weaken the security of the authentication mechanism and potentially facilitate authentication related attacks on the targeted healthcare organization. 4. Insecure Direct Object Reference (IDOR) Vulnerability ( CVE-2026-124646 ) This vulnerability exists in e-Sushrut HMIS due to insufficient server side object level authorization validation in the API endpoint. An unauthenticated remote attacker could exploit this vulnerability by modifying the parameter value in the API request. Successful exploitation of this vulnerability could allow the attacker to enumerate and gain unauthorized access to sensitive information of patients on the targeted healthcare organization. Credit These vulnerabilities are reported by Rylen Anil (CVE-2026-124643, CVE-2026-124644, CVE-2026-124645) and Sriharan Mahendran (CVE-2026-124646).",
+    "softwareAffected": [
+      "CDAC e-Sushrut HMIS"
+    ],
+    "targetAudience": "End-users/ Administrators of e-Sushrut HMIS and Patients",
+    "riskAssessment": "Risk of unauthorized access to hospital dashboard, operational statics, authentication-related attacks and exposure of sensitive patient data.",
+    "impactAssessment": "Potential for unauthorized disclosure of hospital dashboard information, internal operational statistics and sensitive patient data.",
     "cves": [
-      "CVE-2026-102895"
+      "CVE-2026-124643",
+      "CVE-2026-124644",
+      "CVE-2026-124645",
+      "CVE-2026-124646"
     ],
     "solutionLinks": []
   },
@@ -339,45 +361,6 @@
     "impactAssessment": "Potential for a kernel crash, resulting in a denial-of-service (DoS) condition.",
     "cves": [
       "CVE-2026-99288"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Fortinet Products",
-    "severity": "critical",
-    "date": "2026-11-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0555",
-    "code": "CIVN-2026-0555",
-    "summary": "Multiple vulnerabilities have been reported in Fortinet products which could allow a remote attacker to execute arbitrary code or commands, elevate privileges, obtain sensitive information, bypass security restrictions, cause denial of service (DoS) conditions, and gain unauthorized access on the targeted system.",
-    "description": "Fortinet is a global cybersecurity company that provides network security",
-    "softwareAffected": [
-      "FortiAnalyzer versions prior to 8.0.3, 7.6.8, 7.4.13, and 7.2.13",
-      "FortiAnalyzer Cloud versions prior to 8.0.3, 7.6.8, and 7.4.12",
-      "FortiManager versions prior to 8.0.3, 7.6.8, 7.4.12, and 7.2.14",
-      "FortiManager Cloud versions prior to 8.0.3, 7.6.8, and 7.4.12",
-      "FortiSASE-Sovereign versions prior to 26.2, 25.4, 25.3, and 25",
-      "FortiSASE versions prior to 26.3.2, 26.2, 26.1, 25.4, 25.3, 25.2, 25.1.a, 25.1, and 25",
-      "FortiAnalyzer-BigData versions prior to 7.6.3",
-      "FortiManager FGFM versions prior to 8.0.1, 7.6.8, 7.4.6, and 7.2.9",
-      "FortiClient Mac versions prior to 7.4.8",
-      "FortiClient Windows versions prior to 7.4.8 and 7.2.15",
-      "FortiClient Windows PAM versions prior to 7.4.8 and 7.2.15",
-      "FortiOS versions prior to 8.0.2, 7.6.8, 7.4.13, and 7.2.14",
-      "FortiAnalyzer-BigData 7.6 versions prior to 7.6.3"
-    ],
-    "targetAudience": "All organizations and individuals using Fortinet products.",
-    "riskAssessment": "High risk of complete system compromise, unauthorized code execution, and denial of service.",
-    "impactAssessment": "Potential for executing unauthorized code or commands, elevating privileges, and causing denial of service (DoS) conditions.",
-    "cves": [
-      "CVE-2026-126170",
-      "CVE-2026-126254",
-      "CVE-2026-126260",
-      "CVE-2026-126262",
-      "CVE-2026-126259",
-      "CVE-2026-126261",
-      "CVE-2026-126229",
-      "CVE-2026-126253",
-      "CVE-2026-121529"
     ],
     "solutionLinks": []
   },
@@ -516,28 +499,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Multiple Vulnerabilities in C-DAC e-Sushrut HMIS",
-    "severity": "high",
-    "date": "2026-11-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0557",
-    "code": "CIVN-2026-0557",
-    "summary": "Multiple vulnerabilities have been reported in the CDAC e-Sushrut HMIS, which could allow an unauthenticated remote attacker to gain unauthorized access to hospital dashboard information, internal operational statistics, and sensitive patient data or perform authentication related attacks on the targeted healthcare organization.",
-    "description": "e-Sushrut is a Hospital Management Information System (HMIS) developed and deployed by C-DAC. It is used for managing patient information, hospital workflows and administrative processes in healthcare organizations. 1. Improper Authentication Vulnerability ( CVE-2026-124643 ) This vulnerability exists in e-Sushrut HMIS due to insufficient authentication and session validation in the dashboard functionality. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted HTTP requests to the affected endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the dashboard information associated with the targeted healthcare organization. 2. Sensitive Information Disclosure Vulnerability ( CVE-2026-124644 ) This vulnerability exists in e-Sushrut HMIS due to the exposure of internal hospital operational statistics through data structure embedded in the HTML response of the login page. An unauthenticated remote attacker could exploit this vulnerability by accessing the affected login page and extracting the returned HTML content. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to internal hospital operational information associated with the targeted healthcare organization. 3. Hardcoded Cryptographic Key Vulnerability ( CVE-2026-124645 ) This vulnerability exists in e-Sushrut HIMS due to the use of a static and predictable value in the client-side password hashing mechanism, which is embedded in the login page and accessible to unauthenticated users. An unauthenticated remote attacker could exploit this vulnerability by accessing the login page, extracting the embedded value and using it to reproduce the password hashing process. Successful exploitation of this vulnerability could weaken the security of the authentication mechanism and potentially facilitate authentication related attacks on the targeted healthcare organization. 4. Insecure Direct Object Reference (IDOR) Vulnerability ( CVE-2026-124646 ) This vulnerability exists in e-Sushrut HMIS due to insufficient server side object level authorization validation in the API endpoint. An unauthenticated remote attacker could exploit this vulnerability by modifying the parameter value in the API request. Successful exploitation of this vulnerability could allow the attacker to enumerate and gain unauthorized access to sensitive information of patients on the targeted healthcare organization. Credit These vulnerabilities are reported by Rylen Anil (CVE-2026-124643, CVE-2026-124644, CVE-2026-124645) and Sriharan Mahendran (CVE-2026-124646).",
-    "softwareAffected": [
-      "CDAC e-Sushrut HMIS"
-    ],
-    "targetAudience": "End-users/ Administrators of e-Sushrut HMIS and Patients",
-    "riskAssessment": "Risk of unauthorized access to hospital dashboard, operational statics, authentication-related attacks and exposure of sensitive patient data.",
-    "impactAssessment": "Potential for unauthorized disclosure of hospital dashboard information, internal operational statistics and sensitive patient data.",
-    "cves": [
-      "CVE-2026-124643",
-      "CVE-2026-124644",
-      "CVE-2026-124645",
-      "CVE-2026-124646"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in SonicWall Products",
     "severity": "high",
     "date": "2026-11-17",
@@ -562,6 +523,45 @@
       "CVE-2026-82308",
       "CVE-2026-107155",
       "CVE-2026-107154"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Fortinet Products",
+    "severity": "critical",
+    "date": "2026-11-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0555",
+    "code": "CIVN-2026-0555",
+    "summary": "Multiple vulnerabilities have been reported in Fortinet products which could allow a remote attacker to execute arbitrary code or commands, elevate privileges, obtain sensitive information, bypass security restrictions, cause denial of service (DoS) conditions, and gain unauthorized access on the targeted system.",
+    "description": "Fortinet is a global cybersecurity company that provides network security",
+    "softwareAffected": [
+      "FortiAnalyzer versions prior to 8.0.3, 7.6.8, 7.4.13, and 7.2.13",
+      "FortiAnalyzer Cloud versions prior to 8.0.3, 7.6.8, and 7.4.12",
+      "FortiManager versions prior to 8.0.3, 7.6.8, 7.4.12, and 7.2.14",
+      "FortiManager Cloud versions prior to 8.0.3, 7.6.8, and 7.4.12",
+      "FortiSASE-Sovereign versions prior to 26.2, 25.4, 25.3, and 25",
+      "FortiSASE versions prior to 26.3.2, 26.2, 26.1, 25.4, 25.3, 25.2, 25.1.a, 25.1, and 25",
+      "FortiAnalyzer-BigData versions prior to 7.6.3",
+      "FortiManager FGFM versions prior to 8.0.1, 7.6.8, 7.4.6, and 7.2.9",
+      "FortiClient Mac versions prior to 7.4.8",
+      "FortiClient Windows versions prior to 7.4.8 and 7.2.15",
+      "FortiClient Windows PAM versions prior to 7.4.8 and 7.2.15",
+      "FortiOS versions prior to 8.0.2, 7.6.8, 7.4.13, and 7.2.14",
+      "FortiAnalyzer-BigData 7.6 versions prior to 7.6.3"
+    ],
+    "targetAudience": "All organizations and individuals using Fortinet products.",
+    "riskAssessment": "High risk of complete system compromise, unauthorized code execution, and denial of service.",
+    "impactAssessment": "Potential for executing unauthorized code or commands, elevating privileges, and causing denial of service (DoS) conditions.",
+    "cves": [
+      "CVE-2026-126170",
+      "CVE-2026-126254",
+      "CVE-2026-126260",
+      "CVE-2026-126262",
+      "CVE-2026-126259",
+      "CVE-2026-126261",
+      "CVE-2026-126229",
+      "CVE-2026-126253",
+      "CVE-2026-121529"
     ],
     "solutionLinks": []
   },
@@ -641,39 +641,6 @@
     "solutionLinks": []
   },
   {
-    "title": "The Gentlemen Ransomware",
-    "severity": "high",
-    "date": "2026-11-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0060",
-    "code": "CIAD-2026-0060",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "\"The Gentlemen\" is a financially motivated Ransomware-as-a-Service (RaaS) group that employs a double-extortion technique, combining data exfiltration with file encryption to pressure victims into paying ransom. The group threatens to publicly disclose stolen sensitive information if ransom demands are not met. A key characteristic of \"The Gentlemen\" ransomware is its self-propagation capability, allowing it to spread across compromised networks through various lateral movement techniques. Developed in the Go programming language, the ransomware leverages Garble for code obfuscation, making reverse engineering, static analysis, and detection more challenging. It targets multiple platforms including Windows, Linux, BSD, NAS devices, and VMware ESXi environments. The group has been associated with attacks targeting organizations across critical sectors including healthcare, construction, finance, and manufacturing. Infection Mechanism Threat actors exploit vulnerabilities in internet-facing edge devices and remote access",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Information Disclosure Vulnerability in eMudhra emBridge",
-    "severity": "low",
-    "date": "2026-11-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0549",
-    "code": "CIVN-2026-0549",
-    "summary": "A vulnerability has been reported in eMudhra emBridge, which could allow an unauthenticated attacker to enumerate file and directory names on the targeted system.",
-    "description": "eMudhra emBridge is a client-side utility that enables web applications to interact with digital signature certificates and hardware tokens for digital signing and related certificate operations. This vulnerability exists in the eMudhra emBridge due to missing authorization checks in the FileBrowser API endpoints. These endpoints perform file system enumeration using the LocalSystem account without adequately validating the requesting callers authorization. An unauthenticated attacker on the same LAN could exploit this vulnerability by sending malicious webpage to the local HTTPS Web API. Successful exploitation of this vulnerability could allow the attacker to enumerate file and directory names and obtain information about the directory structure of the targeted system. The vulnerability however, does not provide access to file contents or permit file modification, deletion, or code execution, or access to cryptographic keys and hardware token PINs. Credit This vulnerability is reported by Karan Saini.",
-    "softwareAffected": "",
-    "targetAudience": "All end-user organizations and individuals using affected versions of eMudhra emBridge.",
-    "riskAssessment": "Unauthorized access to file-system metadata, including file and directory names, from the targeted system.",
-    "impactAssessment": "Unauthorized disclosure of file and directory names and directory structure information.",
-    "cves": [
-      "cve-2026-125659",
-      "CVE-2026-125659"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Barracuda Products",
     "severity": "high",
     "date": "2026-11-13",
@@ -696,6 +663,39 @@
       "CVE-2026-116606",
       "CVE-2026-111560"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Information Disclosure Vulnerability in eMudhra emBridge",
+    "severity": "low",
+    "date": "2026-11-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0549",
+    "code": "CIVN-2026-0549",
+    "summary": "A vulnerability has been reported in eMudhra emBridge, which could allow an unauthenticated attacker to enumerate file and directory names on the targeted system.",
+    "description": "eMudhra emBridge is a client-side utility that enables web applications to interact with digital signature certificates and hardware tokens for digital signing and related certificate operations. This vulnerability exists in the eMudhra emBridge due to missing authorization checks in the FileBrowser API endpoints. These endpoints perform file system enumeration using the LocalSystem account without adequately validating the requesting callers authorization. An unauthenticated attacker on the same LAN could exploit this vulnerability by sending malicious webpage to the local HTTPS Web API. Successful exploitation of this vulnerability could allow the attacker to enumerate file and directory names and obtain information about the directory structure of the targeted system. The vulnerability however, does not provide access to file contents or permit file modification, deletion, or code execution, or access to cryptographic keys and hardware token PINs. Credit This vulnerability is reported by Karan Saini.",
+    "softwareAffected": "",
+    "targetAudience": "All end-user organizations and individuals using affected versions of eMudhra emBridge.",
+    "riskAssessment": "Unauthorized access to file-system metadata, including file and directory names, from the targeted system.",
+    "impactAssessment": "Unauthorized disclosure of file and directory names and directory structure information.",
+    "cves": [
+      "cve-2026-125659",
+      "CVE-2026-125659"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "The Gentlemen Ransomware",
+    "severity": "high",
+    "date": "2026-11-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0060",
+    "code": "CIAD-2026-0060",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "\"The Gentlemen\" is a financially motivated Ransomware-as-a-Service (RaaS) group that employs a double-extortion technique, combining data exfiltration with file encryption to pressure victims into paying ransom. The group threatens to publicly disclose stolen sensitive information if ransom demands are not met. A key characteristic of \"The Gentlemen\" ransomware is its self-propagation capability, allowing it to spread across compromised networks through various lateral movement techniques. Developed in the Go programming language, the ransomware leverages Garble for code obfuscation, making reverse engineering, static analysis, and detection more challenging. It targets multiple platforms including Windows, Linux, BSD, NAS devices, and VMware ESXi environments. The group has been associated with attacks targeting organizations across critical sectors including healthcare, construction, finance, and manufacturing. Infection Mechanism Threat actors exploit vulnerabilities in internet-facing edge devices and remote access",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
