@@ -22,51 +22,6 @@
     "solutionLinks": []
   },
   {
-    "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
-    "severity": "critical",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
-    "code": "CIAD-2026-0062",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "CERT-In has recently issued advisories highlighting threats arising from the exploitation of payment and disbursement systems, unauthorised activity by AI agents under evaluation, misuse of open-source agentic AI tools and AI-assisted cyberattacks against Indian ICT assets. Recent observations by CERT-In show that unauthorised financial transactions involving business payment systems are not limited to BFSI entities but also affect technology service providers supporting government-linked payment processes and platforms handling vendor or partner payouts. In the observed incidents, attackers targeted business records and approval processes to carry out unauthorised transactions through otherwise legitimate systems. In separate threat-hunting activities, CERT-In has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across different sectors. The activity includes automated reconnaissance, credential attacks and unauthorised access to systems and data. Organisations should review the security of business applications, critical records, user identities and third-party interfaces. Existing monitoring and incident-response arrangements should also account for the risks arising from misuse of trusted business processes and automated intrusion activity. Categories of Incidents Observed 1. Financially motivated abuse of business payment workflows CERT-In has received reports of unauthorised financial transactions involving organisations outside the financial sector. Some incidents have affected service providers supporting government-linked payment workflows and platforms responsible for vendor or partner payouts. The reported incidents involved the following methods: • Misuse of business applications and service-provider-operated workflows, rather than direct exploitation of payment APIs alone. • Alteration of business records or approval relationships that determine payments, followed by the use of legitimate payment processes. • Use of trusted systems and established approval procedures to process unauthorised transactions without immediately raising suspicion. • Exploitation of gaps in independent verification, reconciliation and review of changes to business records. • The concern is not limited to the security of payment APIs. A transaction may pass the usual application and approval checks even when the records used to initiate it have been changed without authorisation. Organisations need to verify the underlying business records and the authority for a payment, in addition to validating the payment request itself. 2. AOF-enabled intrusion activity across sectors CERT-In's proactive threat hunting has identified the use of AOFs in activity directed at enterprises, technology and other service providers, government organisations, and academic and research institutions. The analysis identified the following techniques: • Automated reconnaissance to identify exposed systems, services and possible attack paths. • Rapid preparation and modification of exploits for known vulnerabilities, including through analysis of software updates and related technical information. • Use of multiple agents or automated workers to undertake reconnaissance, privilege discovery and other intrusion tasks in parallel. • Modification of scripts, requests and attack steps in response to errors, blocked attempts or information returned by targeted systems. • Use of valid credentials, legitimate administrative functions, trust relationships and external infrastructure to gain further access. • AOFs allow several intrusion tasks to be carried out with less manual effort and can shorten the time between reconnaissance and subsequent attack stages. Organisations should account for such activity when reviewing their exposure, access controls and monitoring arrangements, irrespective of the sector in which they operate. Recommended Actions Organisations are advised to implement the relevant measures mentioned in CERT-In Advisories CIAD-2026-0046, CIAD-2026-0049 and CIAD-2026-0058. The Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure (CISG-2026-02) also provides guidance on reducing exposure and strengthening defensive arrangements. In view of the reported incidents, particular attention should be given to the following measures. A. Government organisations and owners of services operated through technology service providers 1. Identify service-provider systems, accounts and integrations that can change payment-related records, approve transactions or access sensitive information. Review whether these privileges are necessary and appropriately restricted. 2. Reconcile payment instructions and critical business records maintained by service providers against independent, authoritative records. The verification source should not be capable of being altered through the same compromised provider environment. 3. Require independent verification for high-risk changes, particularly those affecting payment instructions, beneficiaries and approval arrangements. Multiple approvals within the same provider-controlled system may not provide sufficient protection if that environment is compromised. 4. Agree with service providers on arrangements for incident detection, access to relevant logs, investigation and containment. These arrangements should cover suspension of affected payments or integrations and timely notification where a shared compromise may affect other clients. B. Technology service providers (TSPs), IT-enabled services (ITES) entities and non-financial payout platforms 5. Separate client environments and restrict administrative accounts, credentials and control-plane privileges. Access provided for one client or service should not permit unauthorised access to other client environments. 6. Monitor changes to payment-related business records alongside privileged account activity, approval actions and subsequent transactions. Review unusual sequences of activity even when individual actions appear to have been performed through authorised accounts or applications. 7. Where compromise is suspected, independently verify affected business records and examine whether the account or system involved had access to other clients, integrations or environments. C. Organisations exposed to AOF-enabled intrusion activity 8. Organisations should review the security of internet-facing applications, user identities, privileged accounts, service credentials and connections to external systems. 9. Available authentication, endpoint, application and network logs should be examined for unusual reconnaissance, credential use, administrative activity and outbound data transfers. • Reporting Requirements • In accordance with the CERT-In Directions dated 28 April 2022, applicable cyber incidents must be reported to CERT-In within six hours of noticing the incident or being informed of it. Incident reports and relevant logs may be sent to incident@cert-in.org.in. • Cases involving unauthorised financial transactions should also be reported promptly through the National Cyber Crime Reporting Portal (https://cybercrime.gov.in) or by calling helpline 1930. • Organisations should inform the relevant law-enforcement agencies, regulators and payment-system authorities, as applicable, so that timely action can be taken against unauthorised financial transactions and associated accounts. •",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "critical",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0568",
-    "code": "CIVN-2026-0568",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could allow a remote attacker to execute arbitrary code, gain elevated access, trigger denial of service condition and gain unauthorized access to sensitive information on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle Database Server",
-      "Oracle Application Express (APEX)",
-      "Oracle Autonomous Health Framework",
-      "Oracle REST Data Services",
-      "Oracle Application Testing Suite",
-      "Oracle Commerce",
-      "Oracle Communications",
-      "Oracle E-Business Suite",
-      "Oracle Financial Services Applications",
-      "Oracle Fusion Middleware",
-      "Oracle Java SE and JavaFX",
-      "Oracle MySQL",
-      "Oracle GraalVM",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cspunov2026.html"
-    ],
-    "targetAudience": "Individuals and organizations using the above-mentioned Oracle products.",
-    "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, information disclosure and privilege escalation.",
-    "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in GitLab products",
     "severity": "high",
     "date": "2026-11-20",
@@ -119,6 +74,21 @@
       "CVE-2026-85778",
       "CVE-2026-112203"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
+    "code": "CIAD-2026-0062",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "CERT-In has recently issued advisories highlighting threats arising from the exploitation of payment and disbursement systems, unauthorised activity by AI agents under evaluation, misuse of open-source agentic AI tools and AI-assisted cyberattacks against Indian ICT assets. Recent observations by CERT-In show that unauthorised financial transactions involving business payment systems are not limited to BFSI entities but also affect technology service providers supporting government-linked payment processes and platforms handling vendor or partner payouts. In the observed incidents, attackers targeted business records and approval processes to carry out unauthorised transactions through otherwise legitimate systems. In separate threat-hunting activities, CERT-In has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across different sectors. The activity includes automated reconnaissance, credential attacks and unauthorised access to systems and data. Organisations should review the security of business applications, critical records, user identities and third-party interfaces. Existing monitoring and incident-response arrangements should also account for the risks arising from misuse of trusted business processes and automated intrusion activity. Categories of Incidents Observed 1. Financially motivated abuse of business payment workflows CERT-In has received reports of unauthorised financial transactions involving organisations outside the financial sector. Some incidents have affected service providers supporting government-linked payment workflows and platforms responsible for vendor or partner payouts. The reported incidents involved the following methods: • Misuse of business applications and service-provider-operated workflows, rather than direct exploitation of payment APIs alone. • Alteration of business records or approval relationships that determine payments, followed by the use of legitimate payment processes. • Use of trusted systems and established approval procedures to process unauthorised transactions without immediately raising suspicion. • Exploitation of gaps in independent verification, reconciliation and review of changes to business records. • The concern is not limited to the security of payment APIs. A transaction may pass the usual application and approval checks even when the records used to initiate it have been changed without authorisation. Organisations need to verify the underlying business records and the authority for a payment, in addition to validating the payment request itself. 2. AOF-enabled intrusion activity across sectors CERT-In's proactive threat hunting has identified the use of AOFs in activity directed at enterprises, technology and other service providers, government organisations, and academic and research institutions. The analysis identified the following techniques: • Automated reconnaissance to identify exposed systems, services and possible attack paths. • Rapid preparation and modification of exploits for known vulnerabilities, including through analysis of software updates and related technical information. • Use of multiple agents or automated workers to undertake reconnaissance, privilege discovery and other intrusion tasks in parallel. • Modification of scripts, requests and attack steps in response to errors, blocked attempts or information returned by targeted systems. • Use of valid credentials, legitimate administrative functions, trust relationships and external infrastructure to gain further access. • AOFs allow several intrusion tasks to be carried out with less manual effort and can shorten the time between reconnaissance and subsequent attack stages. Organisations should account for such activity when reviewing their exposure, access controls and monitoring arrangements, irrespective of the sector in which they operate. Recommended Actions Organisations are advised to implement the relevant measures mentioned in CERT-In Advisories CIAD-2026-0046, CIAD-2026-0049 and CIAD-2026-0058. The Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure (CISG-2026-02) also provides guidance on reducing exposure and strengthening defensive arrangements. In view of the reported incidents, particular attention should be given to the following measures. A. Government organisations and owners of services operated through technology service providers 1. Identify service-provider systems, accounts and integrations that can change payment-related records, approve transactions or access sensitive information. Review whether these privileges are necessary and appropriately restricted. 2. Reconcile payment instructions and critical business records maintained by service providers against independent, authoritative records. The verification source should not be capable of being altered through the same compromised provider environment. 3. Require independent verification for high-risk changes, particularly those affecting payment instructions, beneficiaries and approval arrangements. Multiple approvals within the same provider-controlled system may not provide sufficient protection if that environment is compromised. 4. Agree with service providers on arrangements for incident detection, access to relevant logs, investigation and containment. These arrangements should cover suspension of affected payments or integrations and timely notification where a shared compromise may affect other clients. B. Technology service providers (TSPs), IT-enabled services (ITES) entities and non-financial payout platforms 5. Separate client environments and restrict administrative accounts, credentials and control-plane privileges. Access provided for one client or service should not permit unauthorised access to other client environments. 6. Monitor changes to payment-related business records alongside privileged account activity, approval actions and subsequent transactions. Review unusual sequences of activity even when individual actions appear to have been performed through authorised accounts or applications. 7. Where compromise is suspected, independently verify affected business records and examine whether the account or system involved had access to other clients, integrations or environments. C. Organisations exposed to AOF-enabled intrusion activity 8. Organisations should review the security of internet-facing applications, user identities, privileged accounts, service credentials and connections to external systems. 9. Available authentication, endpoint, application and network logs should be examined for unusual reconnaissance, credential use, administrative activity and outbound data transfers. • Reporting Requirements • In accordance with the CERT-In Directions dated 28 April 2022, applicable cyber incidents must be reported to CERT-In within six hours of noticing the incident or being informed of it. Incident reports and relevant logs may be sent to incident@cert-in.org.in. • Cases involving unauthorised financial transactions should also be reported promptly through the National Cyber Crime Reporting Portal (https://cybercrime.gov.in) or by calling helpline 1930. • Organisations should inform the relevant law-enforcement agencies, regulators and payment-system authorities, as applicable, so that timely action can be taken against unauthorised financial transactions and associated accounts. •",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
@@ -176,6 +146,36 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0568",
+    "code": "CIVN-2026-0568",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could allow a remote attacker to execute arbitrary code, gain elevated access, trigger denial of service condition and gain unauthorized access to sensitive information on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle Database Server",
+      "Oracle Application Express (APEX)",
+      "Oracle Autonomous Health Framework",
+      "Oracle REST Data Services",
+      "Oracle Application Testing Suite",
+      "Oracle Commerce",
+      "Oracle Communications",
+      "Oracle E-Business Suite",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle Java SE and JavaFX",
+      "Oracle MySQL",
+      "Oracle GraalVM",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cspunov2026.html"
+    ],
+    "targetAudience": "Individuals and organizations using the above-mentioned Oracle products.",
+    "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, information disclosure and privilege escalation.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Remote Code Execution Vulnerability in Perforce Puppet",
     "severity": "critical",
     "date": "2026-11-19",
@@ -199,6 +199,27 @@
     "solutionLinks": []
   },
   {
+    "title": "Remote Code Execution Vulnerability in Oracle Java SE and Oracle GraalVM Products",
+    "severity": "high",
+    "date": "2026-11-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0061",
+    "code": "CIAD-2026-0061",
+    "summary": "A vulnerability has been reported in Oracle Java SE, Oracle GraalVM for JDK and Oracle GraalVM Enterprise Edition which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Oracle Java SE, Oracle GraalVM for JDK, and Oracle GraalVM Enterprise Edition are widely used runtime environments for Java applications. This vulnerability exists in Oracle Java SE, Oracle GraalVM for JDK, and Oracle GraalVM Enterprise Edition Java due to improper input validation. A remote attacker could exploit these vulnerabilities by sending a specially crafted request containing malformed Base64 data to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "Oracle Java SE versions 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, and 27.0.1.0.3",
+      "Oracle GraalVM for JDK versions 17.0.21.0.3 and 21.0.13.0.3",
+      "Oracle GraalVM Enterprise Edition version 21.3.20.0.3"
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected versions of Oracle Java SE and Oracle GraalVM products.",
+    "riskAssessment": "High risk of unauthorized access and arbitrary code execution.",
+    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Google Chrome for Desktop",
     "severity": "critical",
     "date": "2026-11-18",
@@ -215,23 +236,6 @@
     "riskAssessment": "High risk of remote code execution, security restriction bypass, sensitive information disclosure.",
     "impactAssessment": "Potential for unauthorized access to sensitive data, system compromise, service disruption.",
     "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Local Privilege Escalation Vulnerability in Check Point",
-    "severity": "high",
-    "date": "2026-11-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0561",
-    "code": "CIVN-2026-0561",
-    "summary": "A vulnerability has been reported in Check Point products which could allow an authenticated local user to elevate privileges to root and execute arbitrary code on the targeted system.",
-    "description": "Check Point provides advanced security",
-    "softwareAffected": "",
-    "targetAudience": "Individuals and organizations using affected Check Point products.",
-    "riskAssessment": "High risk of privilege escalation, unauthorized access, and sensitive data disclosure.",
-    "impactAssessment": "Potential for complete system compromise through unauthorized root-level command execution.",
-    "cves": [
-      "CVE-2026-123039"
-    ],
     "solutionLinks": []
   },
   {
@@ -286,6 +290,23 @@
     "solutionLinks": []
   },
   {
+    "title": "Local Privilege Escalation Vulnerability in Check Point",
+    "severity": "high",
+    "date": "2026-11-18",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0561",
+    "code": "CIVN-2026-0561",
+    "summary": "A vulnerability has been reported in Check Point products which could allow an authenticated local user to elevate privileges to root and execute arbitrary code on the targeted system.",
+    "description": "Check Point provides advanced security",
+    "softwareAffected": "",
+    "targetAudience": "Individuals and organizations using affected Check Point products.",
+    "riskAssessment": "High risk of privilege escalation, unauthorized access, and sensitive data disclosure.",
+    "impactAssessment": "Potential for complete system compromise through unauthorized root-level command execution.",
+    "cves": [
+      "CVE-2026-123039"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Authentication Bypass Vulnerability in GPUStack",
     "severity": "critical",
     "date": "2026-11-18",
@@ -299,52 +320,6 @@
     "impactAssessment": "Potential for compromise on confidentiality and integrity of the system.",
     "cves": [
       "CVE-2026-102895"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Remote Code Execution Vulnerability in Oracle Java SE and Oracle GraalVM Products",
-    "severity": "high",
-    "date": "2026-11-18",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0061",
-    "code": "CIAD-2026-0061",
-    "summary": "A vulnerability has been reported in Oracle Java SE, Oracle GraalVM for JDK and Oracle GraalVM Enterprise Edition which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Oracle Java SE, Oracle GraalVM for JDK, and Oracle GraalVM Enterprise Edition are widely used runtime environments for Java applications. This vulnerability exists in Oracle Java SE, Oracle GraalVM for JDK, and Oracle GraalVM Enterprise Edition Java due to improper input validation. A remote attacker could exploit these vulnerabilities by sending a specially crafted request containing malformed Base64 data to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "Oracle Java SE versions 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, and 27.0.1.0.3",
-      "Oracle GraalVM for JDK versions 17.0.21.0.3 and 21.0.13.0.3",
-      "Oracle GraalVM Enterprise Edition version 21.3.20.0.3"
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected versions of Oracle Java SE and Oracle GraalVM products.",
-    "riskAssessment": "High risk of unauthorized access and arbitrary code execution.",
-    "impactAssessment": "Potential impact on confidentiality, integrity, and availability of the system.",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in N-Able Products",
-    "severity": "critical",
-    "date": "2026-11-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0558",
-    "code": "CIVN-2026-0558",
-    "summary": "Multiple vulnerabilities have been identified in N-able N-central which could allow an attacker to execute arbitrary code, escalate privileges, bypass authentication and disclose sensitive information on the targeted system.",
-    "description": "N-able N-central is a remote monitoring and management (RMM) platform used by managed service providers (MSPs) to monitor, manage, and automate IT infrastructure. Multiple vulnerabilities exist in N-able N-central due to improper handling of XML external entities (XXE), OGNL injection, insecure inter-process communication (IPC), improper access controls, and other security weaknesses. An attacker could exploit these vulnerabilities to execute arbitrary code, escalate privileges to root, access sensitive information, perform server-side request forgery (SSRF), conduct cross-site scripting (XSS) attacks, and compromise the affected N-central server. Successful exploitation of these vulnerabilities could allow an attacker to compromise the affected system, gain unauthorized administrative access, and execute arbitrary commands on the targeted system.",
-    "softwareAffected": [
-      "N-able N-central Appliance versions prior to 2026.4.1.26 (2026.4 HF2), including affected earlier releases."
-    ],
-    "targetAudience": "All end-user organizations and individuals using N-able N-central.",
-    "riskAssessment": "High risk of remote code execution, unauthorized access, privilege escalation, and compromise of the system.",
-    "impactAssessment": "Potential for unauthorized access, execute arbitrary commands, privilege escalation, access sensitive information and compromise of the system.",
-    "cves": [
-      "CVE-2026-125883",
-      "CVE-2026-125878",
-      "CVE-2026-125879",
-      "CVE-2026-125880",
-      "CVE-2026-125881",
-      "CVE-2026-125882",
-      "CVE-2026-91000"
     ],
     "solutionLinks": []
   },
@@ -563,6 +538,31 @@
     "solutionLinks": []
   },
   {
+    "title": "Multiple Vulnerabilities in N-Able Products",
+    "severity": "critical",
+    "date": "2026-11-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0558",
+    "code": "CIVN-2026-0558",
+    "summary": "Multiple vulnerabilities have been identified in N-able N-central which could allow an attacker to execute arbitrary code, escalate privileges, bypass authentication and disclose sensitive information on the targeted system.",
+    "description": "N-able N-central is a remote monitoring and management (RMM) platform used by managed service providers (MSPs) to monitor, manage, and automate IT infrastructure. Multiple vulnerabilities exist in N-able N-central due to improper handling of XML external entities (XXE), OGNL injection, insecure inter-process communication (IPC), improper access controls, and other security weaknesses. An attacker could exploit these vulnerabilities to execute arbitrary code, escalate privileges to root, access sensitive information, perform server-side request forgery (SSRF), conduct cross-site scripting (XSS) attacks, and compromise the affected N-central server. Successful exploitation of these vulnerabilities could allow an attacker to compromise the affected system, gain unauthorized administrative access, and execute arbitrary commands on the targeted system.",
+    "softwareAffected": [
+      "N-able N-central Appliance versions prior to 2026.4.1.26 (2026.4 HF2), including affected earlier releases."
+    ],
+    "targetAudience": "All end-user organizations and individuals using N-able N-central.",
+    "riskAssessment": "High risk of remote code execution, unauthorized access, privilege escalation, and compromise of the system.",
+    "impactAssessment": "Potential for unauthorized access, execute arbitrary commands, privilege escalation, access sensitive information and compromise of the system.",
+    "cves": [
+      "CVE-2026-125883",
+      "CVE-2026-125878",
+      "CVE-2026-125879",
+      "CVE-2026-125880",
+      "CVE-2026-125881",
+      "CVE-2026-125882",
+      "CVE-2026-91000"
+    ],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in SonicWall Products",
     "severity": "high",
     "date": "2026-11-17",
@@ -641,21 +641,6 @@
     "solutionLinks": []
   },
   {
-    "title": "The Gentlemen Ransomware",
-    "severity": "high",
-    "date": "2026-11-13",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0060",
-    "code": "CIAD-2026-0060",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "\"The Gentlemen\" is a financially motivated Ransomware-as-a-Service (RaaS) group that employs a double-extortion technique, combining data exfiltration with file encryption to pressure victims into paying ransom. The group threatens to publicly disclose stolen sensitive information if ransom demands are not met. A key characteristic of \"The Gentlemen\" ransomware is its self-propagation capability, allowing it to spread across compromised networks through various lateral movement techniques. Developed in the Go programming language, the ransomware leverages Garble for code obfuscation, making reverse engineering, static analysis, and detection more challenging. It targets multiple platforms including Windows, Linux, BSD, NAS devices, and VMware ESXi environments. The group has been associated with attacks targeting organizations across critical sectors including healthcare, construction, finance, and manufacturing. Infection Mechanism Threat actors exploit vulnerabilities in internet-facing edge devices and remote access",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Barracuda Products",
     "severity": "high",
     "date": "2026-11-13",
@@ -678,6 +663,21 @@
       "CVE-2026-116606",
       "CVE-2026-111560"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "The Gentlemen Ransomware",
+    "severity": "high",
+    "date": "2026-11-13",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0060",
+    "code": "CIAD-2026-0060",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "\"The Gentlemen\" is a financially motivated Ransomware-as-a-Service (RaaS) group that employs a double-extortion technique, combining data exfiltration with file encryption to pressure victims into paying ransom. The group threatens to publicly disclose stolen sensitive information if ransom demands are not met. A key characteristic of \"The Gentlemen\" ransomware is its self-propagation capability, allowing it to spread across compromised networks through various lateral movement techniques. Developed in the Go programming language, the ransomware leverages Garble for code obfuscation, making reverse engineering, static analysis, and detection more challenging. It targets multiple platforms including Windows, Linux, BSD, NAS devices, and VMware ESXi environments. The group has been associated with attacks targeting organizations across critical sectors including healthcare, construction, finance, and manufacturing. Infection Mechanism Threat actors exploit vulnerabilities in internet-facing edge devices and remote access",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
