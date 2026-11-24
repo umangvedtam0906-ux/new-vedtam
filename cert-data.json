@@ -1,93 +1,5 @@
 [
   {
-    "title": "Multiple Vulnerabilities in Oracle Products",
-    "severity": "critical",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0568",
-    "code": "CIVN-2026-0568",
-    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could allow a remote attacker to execute arbitrary code, gain elevated access, trigger denial of service condition and gain unauthorized access to sensitive information on the targeted system.",
-    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
-    "softwareAffected": [
-      "Oracle Database Server",
-      "Oracle Application Express (APEX)",
-      "Oracle Autonomous Health Framework",
-      "Oracle REST Data Services",
-      "Oracle Application Testing Suite",
-      "Oracle Commerce",
-      "Oracle Communications",
-      "Oracle E-Business Suite",
-      "Oracle Financial Services Applications",
-      "Oracle Fusion Middleware",
-      "Oracle Java SE and JavaFX",
-      "Oracle MySQL",
-      "Oracle GraalVM",
-      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cspunov2026.html"
-    ],
-    "targetAudience": "Individuals and organizations using the above-mentioned Oracle products.",
-    "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, information disclosure and privilege escalation.",
-    "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, privilege escalation and full system compromise.",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
-    "severity": "critical",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
-    "code": "CIAD-2026-0062",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "CERT-In has recently issued advisories highlighting threats arising from the exploitation of payment and disbursement systems, unauthorised activity by AI agents under evaluation, misuse of open-source agentic AI tools and AI-assisted cyberattacks against Indian ICT assets. Recent observations by CERT-In show that unauthorised financial transactions involving business payment systems are not limited to BFSI entities but also affect technology service providers supporting government-linked payment processes and platforms handling vendor or partner payouts. In the observed incidents, attackers targeted business records and approval processes to carry out unauthorised transactions through otherwise legitimate systems. In separate threat-hunting activities, CERT-In has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across different sectors. The activity includes automated reconnaissance, credential attacks and unauthorised access to systems and data. Organisations should review the security of business applications, critical records, user identities and third-party interfaces. Existing monitoring and incident-response arrangements should also account for the risks arising from misuse of trusted business processes and automated intrusion activity. Categories of Incidents Observed 1. Financially motivated abuse of business payment workflows CERT-In has received reports of unauthorised financial transactions involving organisations outside the financial sector. Some incidents have affected service providers supporting government-linked payment workflows and platforms responsible for vendor or partner payouts. The reported incidents involved the following methods: • Misuse of business applications and service-provider-operated workflows, rather than direct exploitation of payment APIs alone. • Alteration of business records or approval relationships that determine payments, followed by the use of legitimate payment processes. • Use of trusted systems and established approval procedures to process unauthorised transactions without immediately raising suspicion. • Exploitation of gaps in independent verification, reconciliation and review of changes to business records. • The concern is not limited to the security of payment APIs. A transaction may pass the usual application and approval checks even when the records used to initiate it have been changed without authorisation. Organisations need to verify the underlying business records and the authority for a payment, in addition to validating the payment request itself. 2. AOF-enabled intrusion activity across sectors CERT-In's proactive threat hunting has identified the use of AOFs in activity directed at enterprises, technology and other service providers, government organisations, and academic and research institutions. The analysis identified the following techniques: • Automated reconnaissance to identify exposed systems, services and possible attack paths. • Rapid preparation and modification of exploits for known vulnerabilities, including through analysis of software updates and related technical information. • Use of multiple agents or automated workers to undertake reconnaissance, privilege discovery and other intrusion tasks in parallel. • Modification of scripts, requests and attack steps in response to errors, blocked attempts or information returned by targeted systems. • Use of valid credentials, legitimate administrative functions, trust relationships and external infrastructure to gain further access. • AOFs allow several intrusion tasks to be carried out with less manual effort and can shorten the time between reconnaissance and subsequent attack stages. Organisations should account for such activity when reviewing their exposure, access controls and monitoring arrangements, irrespective of the sector in which they operate. Recommended Actions Organisations are advised to implement the relevant measures mentioned in CERT-In Advisories CIAD-2026-0046, CIAD-2026-0049 and CIAD-2026-0058. The Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure (CISG-2026-02) also provides guidance on reducing exposure and strengthening defensive arrangements. In view of the reported incidents, particular attention should be given to the following measures. A. Government organisations and owners of services operated through technology service providers 1. Identify service-provider systems, accounts and integrations that can change payment-related records, approve transactions or access sensitive information. Review whether these privileges are necessary and appropriately restricted. 2. Reconcile payment instructions and critical business records maintained by service providers against independent, authoritative records. The verification source should not be capable of being altered through the same compromised provider environment. 3. Require independent verification for high-risk changes, particularly those affecting payment instructions, beneficiaries and approval arrangements. Multiple approvals within the same provider-controlled system may not provide sufficient protection if that environment is compromised. 4. Agree with service providers on arrangements for incident detection, access to relevant logs, investigation and containment. These arrangements should cover suspension of affected payments or integrations and timely notification where a shared compromise may affect other clients. B. Technology service providers (TSPs), IT-enabled services (ITES) entities and non-financial payout platforms 5. Separate client environments and restrict administrative accounts, credentials and control-plane privileges. Access provided for one client or service should not permit unauthorised access to other client environments. 6. Monitor changes to payment-related business records alongside privileged account activity, approval actions and subsequent transactions. Review unusual sequences of activity even when individual actions appear to have been performed through authorised accounts or applications. 7. Where compromise is suspected, independently verify affected business records and examine whether the account or system involved had access to other clients, integrations or environments. C. Organisations exposed to AOF-enabled intrusion activity 8. Organisations should review the security of internet-facing applications, user identities, privileged accounts, service credentials and connections to external systems. 9. Available authentication, endpoint, application and network logs should be examined for unusual reconnaissance, credential use, administrative activity and outbound data transfers. • Reporting Requirements • In accordance with the CERT-In Directions dated 28 April 2022, applicable cyber incidents must be reported to CERT-In within six hours of noticing the incident or being informed of it. Incident reports and relevant logs may be sent to incident@cert-in.org.in. • Cases involving unauthorised financial transactions should also be reported promptly through the National Cyber Crime Reporting Portal (https://cybercrime.gov.in) or by calling helpline 1930. • Organisations should inform the relevant law-enforcement agencies, regulators and payment-system authorities, as applicable, so that timely action can be taken against unauthorised financial transactions and associated accounts. •",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Microsoft Office SharePoint",
-    "severity": "high",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0565",
-    "code": "CIVN-2026-0565",
-    "summary": "Multiple vulnerabilities have been reported in Microsoft Office SharePoint and Microsoft 365 Apps for Enterprise which could allow a remote attacker to execute arbitrary code or elevate privileges on the targeted system.",
-    "description": "Microsoft 365 Apps for Enterprise and Microsoft SharePoint Server Subscription Edition are enterprise software products used for collaboration and document management. These vulnerabilities exist in Microsoft 365 Apps for Enterprise and Microsoft SharePoint Server Subscription Edition due to improper authorization and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code or elevate privileges on the targeted system.",
-    "softwareAffected": [
-      "Microsoft 365 Apps for Enterprise versions 16.0.1 and prior",
-      "Microsoft SharePoint Server Subscription Edition versions 16.0.0 before 16.0.20326.20278"
-    ],
-    "targetAudience": "Individuals and organizations using affected versions of the Microsoft products.",
-    "riskAssessment": "High risk of remote code execution and privilege escalation.",
-    "impactAssessment": "Potential for execute arbitrary code and elevate privileges on the targeted system.",
-    "cves": [
-      "CVE-2026-124223",
-      "CVE-2026-124222"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Drupal Core",
-    "severity": "critical",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0567",
-    "code": "CIVN-2026-0567",
-    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow a remote attacker to execute arbitrary code on the targeted system.",
-    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. Multiple vulnerabilities exist in Drupal core due to improper input validation and gadget chain weaknesses. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system.",
-    "softwareAffected": [
-      "Drupal 10.6.x versions prior to 10.6.22",
-      "Drupal 11.0.x through 11.3.x versions prior to 11.3.22",
-      "Drupal 11.4.x versions prior to 11.4.13"
-    ],
-    "targetAudience": "Individuals and end-user organizations using Drupal core.",
-    "riskAssessment": "High risk of remote code execution and compromise of affected systems.",
-    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
-    "cves": [
-      "CVE-2026-132165",
-      "CVE-2026-132166"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in GitLab products",
     "severity": "high",
     "date": "2026-11-20",
@@ -172,6 +84,94 @@
       "CVE-2026-123892",
       "CVE-2026-123893",
       "CVE-2026-123894"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Oracle Products",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0568",
+    "code": "CIVN-2026-0568",
+    "summary": "Multiple vulnerabilities have been reported in various Oracle products which could allow a remote attacker to execute arbitrary code, gain elevated access, trigger denial of service condition and gain unauthorized access to sensitive information on the targeted system.",
+    "description": "Oracle products are used for several applications including enterprise-level data management, cloud",
+    "softwareAffected": [
+      "Oracle Database Server",
+      "Oracle Application Express (APEX)",
+      "Oracle Autonomous Health Framework",
+      "Oracle REST Data Services",
+      "Oracle Application Testing Suite",
+      "Oracle Commerce",
+      "Oracle Communications",
+      "Oracle E-Business Suite",
+      "Oracle Financial Services Applications",
+      "Oracle Fusion Middleware",
+      "Oracle Java SE and JavaFX",
+      "Oracle MySQL",
+      "Oracle GraalVM",
+      "For complete list of affected products refer to the oracle advisory: https://www.oracle.com/security-alerts/cspunov2026.html"
+    ],
+    "targetAudience": "Individuals and organizations using the above-mentioned Oracle products.",
+    "riskAssessment": "High risk of arbitrary code execution, unauthorized access, denial of service, information disclosure and privilege escalation.",
+    "impactAssessment": "Potential for unauthorized access to sensitive information, denial of service, privilege escalation and full system compromise.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
+    "code": "CIAD-2026-0062",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "CERT-In has recently issued advisories highlighting threats arising from the exploitation of payment and disbursement systems, unauthorised activity by AI agents under evaluation, misuse of open-source agentic AI tools and AI-assisted cyberattacks against Indian ICT assets. Recent observations by CERT-In show that unauthorised financial transactions involving business payment systems are not limited to BFSI entities but also affect technology service providers supporting government-linked payment processes and platforms handling vendor or partner payouts. In the observed incidents, attackers targeted business records and approval processes to carry out unauthorised transactions through otherwise legitimate systems. In separate threat-hunting activities, CERT-In has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across different sectors. The activity includes automated reconnaissance, credential attacks and unauthorised access to systems and data. Organisations should review the security of business applications, critical records, user identities and third-party interfaces. Existing monitoring and incident-response arrangements should also account for the risks arising from misuse of trusted business processes and automated intrusion activity. Categories of Incidents Observed 1. Financially motivated abuse of business payment workflows CERT-In has received reports of unauthorised financial transactions involving organisations outside the financial sector. Some incidents have affected service providers supporting government-linked payment workflows and platforms responsible for vendor or partner payouts. The reported incidents involved the following methods: • Misuse of business applications and service-provider-operated workflows, rather than direct exploitation of payment APIs alone. • Alteration of business records or approval relationships that determine payments, followed by the use of legitimate payment processes. • Use of trusted systems and established approval procedures to process unauthorised transactions without immediately raising suspicion. • Exploitation of gaps in independent verification, reconciliation and review of changes to business records. • The concern is not limited to the security of payment APIs. A transaction may pass the usual application and approval checks even when the records used to initiate it have been changed without authorisation. Organisations need to verify the underlying business records and the authority for a payment, in addition to validating the payment request itself. 2. AOF-enabled intrusion activity across sectors CERT-In's proactive threat hunting has identified the use of AOFs in activity directed at enterprises, technology and other service providers, government organisations, and academic and research institutions. The analysis identified the following techniques: • Automated reconnaissance to identify exposed systems, services and possible attack paths. • Rapid preparation and modification of exploits for known vulnerabilities, including through analysis of software updates and related technical information. • Use of multiple agents or automated workers to undertake reconnaissance, privilege discovery and other intrusion tasks in parallel. • Modification of scripts, requests and attack steps in response to errors, blocked attempts or information returned by targeted systems. • Use of valid credentials, legitimate administrative functions, trust relationships and external infrastructure to gain further access. • AOFs allow several intrusion tasks to be carried out with less manual effort and can shorten the time between reconnaissance and subsequent attack stages. Organisations should account for such activity when reviewing their exposure, access controls and monitoring arrangements, irrespective of the sector in which they operate. Recommended Actions Organisations are advised to implement the relevant measures mentioned in CERT-In Advisories CIAD-2026-0046, CIAD-2026-0049 and CIAD-2026-0058. The Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure (CISG-2026-02) also provides guidance on reducing exposure and strengthening defensive arrangements. In view of the reported incidents, particular attention should be given to the following measures. A. Government organisations and owners of services operated through technology service providers 1. Identify service-provider systems, accounts and integrations that can change payment-related records, approve transactions or access sensitive information. Review whether these privileges are necessary and appropriately restricted. 2. Reconcile payment instructions and critical business records maintained by service providers against independent, authoritative records. The verification source should not be capable of being altered through the same compromised provider environment. 3. Require independent verification for high-risk changes, particularly those affecting payment instructions, beneficiaries and approval arrangements. Multiple approvals within the same provider-controlled system may not provide sufficient protection if that environment is compromised. 4. Agree with service providers on arrangements for incident detection, access to relevant logs, investigation and containment. These arrangements should cover suspension of affected payments or integrations and timely notification where a shared compromise may affect other clients. B. Technology service providers (TSPs), IT-enabled services (ITES) entities and non-financial payout platforms 5. Separate client environments and restrict administrative accounts, credentials and control-plane privileges. Access provided for one client or service should not permit unauthorised access to other client environments. 6. Monitor changes to payment-related business records alongside privileged account activity, approval actions and subsequent transactions. Review unusual sequences of activity even when individual actions appear to have been performed through authorised accounts or applications. 7. Where compromise is suspected, independently verify affected business records and examine whether the account or system involved had access to other clients, integrations or environments. C. Organisations exposed to AOF-enabled intrusion activity 8. Organisations should review the security of internet-facing applications, user identities, privileged accounts, service credentials and connections to external systems. 9. Available authentication, endpoint, application and network logs should be examined for unusual reconnaissance, credential use, administrative activity and outbound data transfers. • Reporting Requirements • In accordance with the CERT-In Directions dated 28 April 2022, applicable cyber incidents must be reported to CERT-In within six hours of noticing the incident or being informed of it. Incident reports and relevant logs may be sent to incident@cert-in.org.in. • Cases involving unauthorised financial transactions should also be reported promptly through the National Cyber Crime Reporting Portal (https://cybercrime.gov.in) or by calling helpline 1930. • Organisations should inform the relevant law-enforcement agencies, regulators and payment-system authorities, as applicable, so that timely action can be taken against unauthorised financial transactions and associated accounts. •",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Microsoft Office SharePoint",
+    "severity": "high",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0565",
+    "code": "CIVN-2026-0565",
+    "summary": "Multiple vulnerabilities have been reported in Microsoft Office SharePoint and Microsoft 365 Apps for Enterprise which could allow a remote attacker to execute arbitrary code or elevate privileges on the targeted system.",
+    "description": "Microsoft 365 Apps for Enterprise and Microsoft SharePoint Server Subscription Edition are enterprise software products used for collaboration and document management. These vulnerabilities exist in Microsoft 365 Apps for Enterprise and Microsoft SharePoint Server Subscription Edition due to improper authorization and deserialization of untrusted data. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code or elevate privileges on the targeted system.",
+    "softwareAffected": [
+      "Microsoft 365 Apps for Enterprise versions 16.0.1 and prior",
+      "Microsoft SharePoint Server Subscription Edition versions 16.0.0 before 16.0.20326.20278"
+    ],
+    "targetAudience": "Individuals and organizations using affected versions of the Microsoft products.",
+    "riskAssessment": "High risk of remote code execution and privilege escalation.",
+    "impactAssessment": "Potential for execute arbitrary code and elevate privileges on the targeted system.",
+    "cves": [
+      "CVE-2026-124223",
+      "CVE-2026-124222"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Drupal Core",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0567",
+    "code": "CIVN-2026-0567",
+    "summary": "Multiple vulnerabilities have been reported in Drupal core which could allow a remote attacker to execute arbitrary code on the targeted system.",
+    "description": "Drupal is an open-source content management system (CMS) used to build, manage, and publish websites and digital applications. Its contributed modules and themes extend core functionality by providing additional features, integrations, and customizable user interfaces. Multiple vulnerabilities exist in Drupal core due to improper input validation and gadget chain weaknesses. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code on the targeted system.",
+    "softwareAffected": [
+      "Drupal 10.6.x versions prior to 10.6.22",
+      "Drupal 11.0.x through 11.3.x versions prior to 11.3.22",
+      "Drupal 11.4.x versions prior to 11.4.13"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal core.",
+    "riskAssessment": "High risk of remote code execution and compromise of affected systems.",
+    "impactAssessment": "Potential for execute arbitrary code and compromise of affected systems.",
+    "cves": [
+      "CVE-2026-132165",
+      "CVE-2026-132166"
     ],
     "solutionLinks": []
   },
@@ -324,114 +324,6 @@
     "solutionLinks": []
   },
   {
-    "title": "TCP Pre-Authentication Remote Corruption vulnerability in the Linux kernel: NoisyTCP",
-    "severity": "high",
-    "date": "2026-11-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0556",
-    "code": "CIVN-2026-0556",
-    "summary": "A vulnerability has been reported in Linux Kernel which could allow, a remote unauthenticated attacker to cause a denial-of-service (DoS) condition on the targeted system.",
-    "description": "The Linux kernel is the core component of Linux-based operating systems and is responsible for managing hardware resources, memory and essential system services. This vulnerability exists in the Linux Kernel's TCP networking subsystem due to a race condition during lockless socket lookups. A remote unauthenticated attacker could exploit this vulnerability by sending specially crafted TCP packets to the targeted system. Successful exploitation of this vulnerability could allow an attacker to cause a kernel panic, resulting in a denial-of-service (DoS) condition on the targeted system.",
-    "softwareAffected": [
-      "Linux Kernel versions prior to 6.12.117, 6.18.63, 7.3.4 and 7.4-rc2"
-    ],
-    "targetAudience": "Users and administrators of Linux-based systems.",
-    "riskAssessment": "High risk of denial-of-service (DoS) condition.",
-    "impactAssessment": "Potential for a kernel crash, resulting in a denial-of-service (DoS) condition.",
-    "cves": [
-      "CVE-2026-99288"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in SonicWall Products",
-    "severity": "high",
-    "date": "2026-11-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0553",
-    "code": "CIVN-2026-0553",
-    "summary": "Multiple vulnerabilities have been reported in SonicWall products which could allow an attacker to perform unauthorized access, bypass security restrictions, disclose sensitive information or cause a denial of service (DoS) condition on the targeted system.",
-    "description": "SonicWall offers next-generation firewalls, secure VPNs, wireless security, email protection, and real-time threat intelligence. Its products deliver malware defense, intrusion prevention, content filtering, and secure remote access, providing scalable, easy-to-manage cybersecurity for businesses. Multiple vulnerabilities exist in SonicWall products due to permissive cross-domain security policies with untrusted domains, reliance on IP address for authentication, stack-based and heap-based buffer overflow conditions, and use of single-factor authentication and hard-coded credentials. Successful exploitation of these vulnerabilities could allow an attacker to perform unauthorized access, bypass security restrictions, disclose sensitive information or cause a denial of service (DoS) condition on the targeted system.",
-    "softwareAffected": [
-      "Gen7 Hardware Firewalls (TZ 270, TZ 270W, TZ 370, TZ 370W, TZ 470, TZ 470W, TZ 570, TZ 570W, TZ 570P, TZ 670, NSa 2700, NSa 3700, NSa 4700, NSa 5700, NSa 6700, NSsp 10700, NSsp 11700, NSsp 13700 and NSsp 15700) running SonicOS versions 7.3.3-7015 and prior versions.",
-      "Gen7 Virtual Firewalls (NSv 270, NSv 470 and NSv 870) for ESX, KVM, Hyper-V, AWS and Azure running SonicOS versions 7.3.3-7015 and prior versions.",
-      "Gen8 Hardware Firewalls (TZ 80, TZ 280, TZ 280W, TZ 380, TZ 380W, TZ 480, TZ 580, TZ 680, NSa 2800, NSa 3800, NSa 4800 and NSa 5800) running SonicOS versions 8.2.2-8015 and prior versions.",
-      "Gen8 Virtual Firewalls (NSv XS, NSv S, NSv M and NSv L) for ESX, KVM, Hyper-V, AWS and Azure running SonicOS versions 8.2.2-8015 and prior versions."
-    ],
-    "targetAudience": "All end-user organizations and individuals using affected SonicWall products.",
-    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure and denial of service.",
-    "impactAssessment": "Potential for bypass security restrictions, sensitive information disclosure, system instability.",
-    "cves": [
-      "CVE-2026-19703",
-      "CVE-2026-19868",
-      "CVE-2026-77708",
-      "CVE-2026-77709",
-      "CVE-2026-82308",
-      "CVE-2026-107155",
-      "CVE-2026-107154"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in C-DAC e-Sushrut HMIS",
-    "severity": "high",
-    "date": "2026-11-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0557",
-    "code": "CIVN-2026-0557",
-    "summary": "Multiple vulnerabilities have been reported in the CDAC e-Sushrut HMIS, which could allow an unauthenticated remote attacker to gain unauthorized access to hospital dashboard information, internal operational statistics, and sensitive patient data or perform authentication related attacks on the targeted healthcare organization.",
-    "description": "e-Sushrut is a Hospital Management Information System (HMIS) developed and deployed by C-DAC. It is used for managing patient information, hospital workflows and administrative processes in healthcare organizations. 1. Improper Authentication Vulnerability ( CVE-2026-124643 ) This vulnerability exists in e-Sushrut HMIS due to insufficient authentication and session validation in the dashboard functionality. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted HTTP requests to the affected endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the dashboard information associated with the targeted healthcare organization. 2. Sensitive Information Disclosure Vulnerability ( CVE-2026-124644 ) This vulnerability exists in e-Sushrut HMIS due to the exposure of internal hospital operational statistics through data structure embedded in the HTML response of the login page. An unauthenticated remote attacker could exploit this vulnerability by accessing the affected login page and extracting the returned HTML content. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to internal hospital operational information associated with the targeted healthcare organization. 3. Hardcoded Cryptographic Key Vulnerability ( CVE-2026-124645 ) This vulnerability exists in e-Sushrut HIMS due to the use of a static and predictable value in the client-side password hashing mechanism, which is embedded in the login page and accessible to unauthenticated users. An unauthenticated remote attacker could exploit this vulnerability by accessing the login page, extracting the embedded value and using it to reproduce the password hashing process. Successful exploitation of this vulnerability could weaken the security of the authentication mechanism and potentially facilitate authentication related attacks on the targeted healthcare organization. 4. Insecure Direct Object Reference (IDOR) Vulnerability ( CVE-2026-124646 ) This vulnerability exists in e-Sushrut HMIS due to insufficient server side object level authorization validation in the API endpoint. An unauthenticated remote attacker could exploit this vulnerability by modifying the parameter value in the API request. Successful exploitation of this vulnerability could allow the attacker to enumerate and gain unauthorized access to sensitive information of patients on the targeted healthcare organization. Credit These vulnerabilities are reported by Rylen Anil (CVE-2026-124643, CVE-2026-124644, CVE-2026-124645) and Sriharan Mahendran (CVE-2026-124646).",
-    "softwareAffected": [
-      "CDAC e-Sushrut HMIS"
-    ],
-    "targetAudience": "End-users/ Administrators of e-Sushrut HMIS and Patients",
-    "riskAssessment": "Risk of unauthorized access to hospital dashboard, operational statics, authentication-related attacks and exposure of sensitive patient data.",
-    "impactAssessment": "Potential for unauthorized disclosure of hospital dashboard information, internal operational statistics and sensitive patient data.",
-    "cves": [
-      "CVE-2026-124643",
-      "CVE-2026-124644",
-      "CVE-2026-124645",
-      "CVE-2026-124646"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Fortinet Products",
-    "severity": "critical",
-    "date": "2026-11-17",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0555",
-    "code": "CIVN-2026-0555",
-    "summary": "Multiple vulnerabilities have been reported in Fortinet products which could allow a remote attacker to execute arbitrary code or commands, elevate privileges, obtain sensitive information, bypass security restrictions, cause denial of service (DoS) conditions, and gain unauthorized access on the targeted system.",
-    "description": "Fortinet is a global cybersecurity company that provides network security",
-    "softwareAffected": [
-      "FortiAnalyzer versions prior to 8.0.3, 7.6.8, 7.4.13, and 7.2.13",
-      "FortiAnalyzer Cloud versions prior to 8.0.3, 7.6.8, and 7.4.12",
-      "FortiManager versions prior to 8.0.3, 7.6.8, 7.4.12, and 7.2.14",
-      "FortiManager Cloud versions prior to 8.0.3, 7.6.8, and 7.4.12",
-      "FortiSASE-Sovereign versions prior to 26.2, 25.4, 25.3, and 25",
-      "FortiSASE versions prior to 26.3.2, 26.2, 26.1, 25.4, 25.3, 25.2, 25.1.a, 25.1, and 25",
-      "FortiAnalyzer-BigData versions prior to 7.6.3",
-      "FortiManager FGFM versions prior to 8.0.1, 7.6.8, 7.4.6, and 7.2.9",
-      "FortiClient Mac versions prior to 7.4.8",
-      "FortiClient Windows versions prior to 7.4.8 and 7.2.15",
-      "FortiClient Windows PAM versions prior to 7.4.8 and 7.2.15",
-      "FortiOS versions prior to 8.0.2, 7.6.8, 7.4.13, and 7.2.14",
-      "FortiAnalyzer-BigData 7.6 versions prior to 7.6.3"
-    ],
-    "targetAudience": "All organizations and individuals using Fortinet products.",
-    "riskAssessment": "High risk of complete system compromise, unauthorized code execution, and denial of service.",
-    "impactAssessment": "Potential for executing unauthorized code or commands, elevating privileges, and causing denial of service (DoS) conditions.",
-    "cves": [
-      "CVE-2026-126170",
-      "CVE-2026-126254",
-      "CVE-2026-126260",
-      "CVE-2026-126262",
-      "CVE-2026-126259",
-      "CVE-2026-126261",
-      "CVE-2026-126229",
-      "CVE-2026-126253",
-      "CVE-2026-121529"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in Adobe Products",
     "severity": "critical",
     "date": "2026-11-17",
@@ -562,6 +454,114 @@
       "CVE-2026-113560",
       "CVE-2026-113549",
       "CVE-2026-122097"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in SonicWall Products",
+    "severity": "high",
+    "date": "2026-11-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0553",
+    "code": "CIVN-2026-0553",
+    "summary": "Multiple vulnerabilities have been reported in SonicWall products which could allow an attacker to perform unauthorized access, bypass security restrictions, disclose sensitive information or cause a denial of service (DoS) condition on the targeted system.",
+    "description": "SonicWall offers next-generation firewalls, secure VPNs, wireless security, email protection, and real-time threat intelligence. Its products deliver malware defense, intrusion prevention, content filtering, and secure remote access, providing scalable, easy-to-manage cybersecurity for businesses. Multiple vulnerabilities exist in SonicWall products due to permissive cross-domain security policies with untrusted domains, reliance on IP address for authentication, stack-based and heap-based buffer overflow conditions, and use of single-factor authentication and hard-coded credentials. Successful exploitation of these vulnerabilities could allow an attacker to perform unauthorized access, bypass security restrictions, disclose sensitive information or cause a denial of service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "Gen7 Hardware Firewalls (TZ 270, TZ 270W, TZ 370, TZ 370W, TZ 470, TZ 470W, TZ 570, TZ 570W, TZ 570P, TZ 670, NSa 2700, NSa 3700, NSa 4700, NSa 5700, NSa 6700, NSsp 10700, NSsp 11700, NSsp 13700 and NSsp 15700) running SonicOS versions 7.3.3-7015 and prior versions.",
+      "Gen7 Virtual Firewalls (NSv 270, NSv 470 and NSv 870) for ESX, KVM, Hyper-V, AWS and Azure running SonicOS versions 7.3.3-7015 and prior versions.",
+      "Gen8 Hardware Firewalls (TZ 80, TZ 280, TZ 280W, TZ 380, TZ 380W, TZ 480, TZ 580, TZ 680, NSa 2800, NSa 3800, NSa 4800 and NSa 5800) running SonicOS versions 8.2.2-8015 and prior versions.",
+      "Gen8 Virtual Firewalls (NSv XS, NSv S, NSv M and NSv L) for ESX, KVM, Hyper-V, AWS and Azure running SonicOS versions 8.2.2-8015 and prior versions."
+    ],
+    "targetAudience": "All end-user organizations and individuals using affected SonicWall products.",
+    "riskAssessment": "High risk of unauthorized access, sensitive information disclosure and denial of service.",
+    "impactAssessment": "Potential for bypass security restrictions, sensitive information disclosure, system instability.",
+    "cves": [
+      "CVE-2026-19703",
+      "CVE-2026-19868",
+      "CVE-2026-77708",
+      "CVE-2026-77709",
+      "CVE-2026-82308",
+      "CVE-2026-107155",
+      "CVE-2026-107154"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "TCP Pre-Authentication Remote Corruption vulnerability in the Linux kernel: NoisyTCP",
+    "severity": "high",
+    "date": "2026-11-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0556",
+    "code": "CIVN-2026-0556",
+    "summary": "A vulnerability has been reported in Linux Kernel which could allow, a remote unauthenticated attacker to cause a denial-of-service (DoS) condition on the targeted system.",
+    "description": "The Linux kernel is the core component of Linux-based operating systems and is responsible for managing hardware resources, memory and essential system services. This vulnerability exists in the Linux Kernel's TCP networking subsystem due to a race condition during lockless socket lookups. A remote unauthenticated attacker could exploit this vulnerability by sending specially crafted TCP packets to the targeted system. Successful exploitation of this vulnerability could allow an attacker to cause a kernel panic, resulting in a denial-of-service (DoS) condition on the targeted system.",
+    "softwareAffected": [
+      "Linux Kernel versions prior to 6.12.117, 6.18.63, 7.3.4 and 7.4-rc2"
+    ],
+    "targetAudience": "Users and administrators of Linux-based systems.",
+    "riskAssessment": "High risk of denial-of-service (DoS) condition.",
+    "impactAssessment": "Potential for a kernel crash, resulting in a denial-of-service (DoS) condition.",
+    "cves": [
+      "CVE-2026-99288"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in C-DAC e-Sushrut HMIS",
+    "severity": "high",
+    "date": "2026-11-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0557",
+    "code": "CIVN-2026-0557",
+    "summary": "Multiple vulnerabilities have been reported in the CDAC e-Sushrut HMIS, which could allow an unauthenticated remote attacker to gain unauthorized access to hospital dashboard information, internal operational statistics, and sensitive patient data or perform authentication related attacks on the targeted healthcare organization.",
+    "description": "e-Sushrut is a Hospital Management Information System (HMIS) developed and deployed by C-DAC. It is used for managing patient information, hospital workflows and administrative processes in healthcare organizations. 1. Improper Authentication Vulnerability ( CVE-2026-124643 ) This vulnerability exists in e-Sushrut HMIS due to insufficient authentication and session validation in the dashboard functionality. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted HTTP requests to the affected endpoint. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to the dashboard information associated with the targeted healthcare organization. 2. Sensitive Information Disclosure Vulnerability ( CVE-2026-124644 ) This vulnerability exists in e-Sushrut HMIS due to the exposure of internal hospital operational statistics through data structure embedded in the HTML response of the login page. An unauthenticated remote attacker could exploit this vulnerability by accessing the affected login page and extracting the returned HTML content. Successful exploitation of this vulnerability could allow the attacker to gain unauthorized access to internal hospital operational information associated with the targeted healthcare organization. 3. Hardcoded Cryptographic Key Vulnerability ( CVE-2026-124645 ) This vulnerability exists in e-Sushrut HIMS due to the use of a static and predictable value in the client-side password hashing mechanism, which is embedded in the login page and accessible to unauthenticated users. An unauthenticated remote attacker could exploit this vulnerability by accessing the login page, extracting the embedded value and using it to reproduce the password hashing process. Successful exploitation of this vulnerability could weaken the security of the authentication mechanism and potentially facilitate authentication related attacks on the targeted healthcare organization. 4. Insecure Direct Object Reference (IDOR) Vulnerability ( CVE-2026-124646 ) This vulnerability exists in e-Sushrut HMIS due to insufficient server side object level authorization validation in the API endpoint. An unauthenticated remote attacker could exploit this vulnerability by modifying the parameter value in the API request. Successful exploitation of this vulnerability could allow the attacker to enumerate and gain unauthorized access to sensitive information of patients on the targeted healthcare organization. Credit These vulnerabilities are reported by Rylen Anil (CVE-2026-124643, CVE-2026-124644, CVE-2026-124645) and Sriharan Mahendran (CVE-2026-124646).",
+    "softwareAffected": [
+      "CDAC e-Sushrut HMIS"
+    ],
+    "targetAudience": "End-users/ Administrators of e-Sushrut HMIS and Patients",
+    "riskAssessment": "Risk of unauthorized access to hospital dashboard, operational statics, authentication-related attacks and exposure of sensitive patient data.",
+    "impactAssessment": "Potential for unauthorized disclosure of hospital dashboard information, internal operational statistics and sensitive patient data.",
+    "cves": [
+      "CVE-2026-124643",
+      "CVE-2026-124644",
+      "CVE-2026-124645",
+      "CVE-2026-124646"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Fortinet Products",
+    "severity": "critical",
+    "date": "2026-11-17",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0555",
+    "code": "CIVN-2026-0555",
+    "summary": "Multiple vulnerabilities have been reported in Fortinet products which could allow a remote attacker to execute arbitrary code or commands, elevate privileges, obtain sensitive information, bypass security restrictions, cause denial of service (DoS) conditions, and gain unauthorized access on the targeted system.",
+    "description": "Fortinet is a global cybersecurity company that provides network security",
+    "softwareAffected": [
+      "FortiAnalyzer versions prior to 8.0.3, 7.6.8, 7.4.13, and 7.2.13",
+      "FortiAnalyzer Cloud versions prior to 8.0.3, 7.6.8, and 7.4.12",
+      "FortiManager versions prior to 8.0.3, 7.6.8, 7.4.12, and 7.2.14",
+      "FortiManager Cloud versions prior to 8.0.3, 7.6.8, and 7.4.12",
+      "FortiSASE-Sovereign versions prior to 26.2, 25.4, 25.3, and 25",
+      "FortiSASE versions prior to 26.3.2, 26.2, 26.1, 25.4, 25.3, 25.2, 25.1.a, 25.1, and 25",
+      "FortiAnalyzer-BigData versions prior to 7.6.3",
+      "FortiManager FGFM versions prior to 8.0.1, 7.6.8, 7.4.6, and 7.2.9",
+      "FortiClient Mac versions prior to 7.4.8",
+      "FortiClient Windows versions prior to 7.4.8 and 7.2.15",
+      "FortiClient Windows PAM versions prior to 7.4.8 and 7.2.15",
+      "FortiOS versions prior to 8.0.2, 7.6.8, 7.4.13, and 7.2.14",
+      "FortiAnalyzer-BigData 7.6 versions prior to 7.6.3"
+    ],
+    "targetAudience": "All organizations and individuals using Fortinet products.",
+    "riskAssessment": "High risk of complete system compromise, unauthorized code execution, and denial of service.",
+    "impactAssessment": "Potential for executing unauthorized code or commands, elevating privileges, and causing denial of service (DoS) conditions.",
+    "cves": [
+      "CVE-2026-126170",
+      "CVE-2026-126254",
+      "CVE-2026-126260",
+      "CVE-2026-126262",
+      "CVE-2026-126259",
+      "CVE-2026-126261",
+      "CVE-2026-126229",
+      "CVE-2026-126253",
+      "CVE-2026-121529"
     ],
     "solutionLinks": []
   },
