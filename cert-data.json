@@ -1,55 +1,79 @@
 [
   {
+    "title": "Access Bypass Vulnerability in Drupal",
+    "severity": "critical",
+    "date": "2026-11-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0579",
+    "code": "CIVN-2026-0579",
+    "summary": "A vulnerability has been reported in Drupal which could allow an attacker to bypass security restrictions and potentially take complete control of an affected website.",
+    "description": "Drupal is an open-source, content management system (CMS) which allows individuals and organizations to create, manage and maintain websites and web applications. This vulnerability exists in Drupal Core due to improper security handling of the install.php file used during Drupal installation. Certain websites in unusual or incomplete installation states may remain vulnerable to unauthorized access through the Drupal installer, even after previous security fixes. A remote attacker could exploit this vulnerability by accessing the exposed installation interface, potentially bypassing security restrictions and taking control of the affected website. Successful exploitation of this vulnerability could allow an attacker to bypass security restrictions, gain unauthorized administrative access, take control of the affected website, and compromise sensitive information. Note: This vulnerability is being actively exploited in the wild. Websites that left the installer remotely accessible following the previous security advisory (SA-CORE-2026-017) may already have been compromised. Administrators are advised to review website logs for unauthorized access, particularly unexpected changes involving the user 1 account.",
+    "softwareAffected": [
+      "Drupal core versions before 10.6.23",
+      "Drupal core versions from 11.0.0 before 11.3.23",
+      "Drupal core versions from 11.4.0 before 11.4.14"
+    ],
+    "targetAudience": "Individuals and end-user organizations using Drupal.",
+    "riskAssessment": "High risk of unauthorized access, security bypass.",
+    "impactAssessment": "Potential for privilege escalation, website takeover, and compromise of sensitive information.",
+    "cves": [
+      "CVE-2026-136716"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Memory Management Vulnerability in Linux Kernel KVM",
+    "severity": "high",
+    "date": "2026-11-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0578",
+    "code": "CIVN-2026-0578",
+    "summary": "A vulnerability has been identified in the Linux Kernel KVM subsystem which may allow an attacker with privileges inside a guest virtual machine to gain unauthorized read and write access to host memory under specific conditions.",
+    "description": "Linux Kernel-based Virtual Machine (KVM) is a virtualization technology that allows Linux systems to function as hypervisors, enabling multiple virtual machines to run on a single physical host. This vulnerability exists in the Linux Kernel KVM subsystem due to improper handling of the Memory Management Unit (MMU) context while emulating an INIT reset in nested AMD virtualization environments. The issue may result in a stale nested page table pointer due to improper reset of the MMU context. A local attacker with privileges inside a guest virtual machine could exploit this vulnerability under specific conditions to gain read and write access to host memory, potentially compromising the host system and other virtual machines running on the same physical server.",
+    "softwareAffected": [
+      "Linux Kernel versions prior to 5.16, 6.1.193, 6.12.118, 6.18.64, 7.3.5 and 7.4-rc2"
+    ],
+    "targetAudience": "All end user organizations and individuals using the affected Linux Kernel KVM-based virtualization environments.",
+    "riskAssessment": "High risk of unauthorized access to host memory, compromise of virtual machine isolation, and potential compromise of the host system.",
+    "impactAssessment": "Potential for unauthorized access to host memory, exposure of sensitive information, and compromise of the confidentiality, integrity, and availability of the affected system.",
+    "cves": [
+      "CVE-2026-99312"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Mozilla Products",
+    "severity": "critical",
+    "date": "2026-11-27",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0577",
+    "code": "CIVN-2026-0577",
+    "summary": "Multiple vulnerabilities have been reported in Mozilla products which could allow a remote attacker to gain elevated privileges, bypass security restrictions, disclose sensitive information, or cause denial of service (DoS) conditions on the targeted system.",
+    "description": "Mozilla Firefox is a free and open-source web browser developed by Mozilla foundation, while Firefox ESR (Extended support Release) is a stable version tailored for organizations that re-quiring long-term support with security and maintenance updates. Mozilla Thunderbird is an open-source email client developed by the Mozilla Foundation. Multiple vulnerabilities have been reported in Mozilla products due to use-after-free, integer overflow, invalid pointer, incorrect boundary conditions, race condition, uninitialized memory, and other security weaknesses. A remote attacker could exploit these vulnerabilities by sending a specially crafted request to the targeted system, persuading a victim to visit a specially crafted webpage, or persuading a victim to open a malicious file. Successful exploitation of these vulnerabilities could allow a remote attacker to gain elevated privileges, bypass security restrictions, disclose sensitive information and perform spoofing at-tacks on the targeted system. For complete list of affected products, CVEs, workarounds and",
+    "softwareAffected": [
+      "Mozilla Firefox versions prior to 161",
+      "Mozilla Firefox ESR versions prior to 153.8 and 115.46",
+      "Mozilla Thunderbird versions prior to 161 and 153.8"
+    ],
+    "targetAudience": "All organizations and individuals using Mozilla Products.",
+    "riskAssessment": "Risk of privilege escalation, security restriction bypass, sensitive information disclosure.",
+    "impactAssessment": "Potential for complete compromise of affected systems.",
+    "cves": [],
+    "solutionLinks": []
+  },
+  {
     "title": "Multiple Vulnerabilities in Whatsapp",
     "severity": "high",
     "date": "2026-11-26",
     "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0576",
     "code": "CIVN-2026-0576",
     "summary": "Multiple vulnerabilities have been reported in WhatsApp which could allow a remote attacker to execute arbitrary code, obtain sensitive information, or bypass security restrictions on the targeted system.",
-    "description": "WhatsApp for Android, WhatsApp Business for Android, WhatsApp for iOS, WhatsApp for Mac Desktop, and WhatsApp for Windows are cross-platform communication applications developed by Meta, offering instant messaging, voice and video calling, and multimedia sharing. These vulnerabilities exist in WhatsApp products due to attachment spoofing, SQL injection, improper certificate chain validation, incomplete validation of AI rich response messages and external ad-reply URLs. A remote attacker could exploit these vulnerabilities by sending a specially crafted message, attachment, or URL to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or manipulate application data on the targeted system.",
-    "softwareAffected": [
-      "WhatsApp for Android versions prior to 2.26.35.74 and 2.26.17.4",
-      "WhatsApp Business for Android versions prior to 2.26.23.70 and 2.26.17.4",
-      "WhatsApp Business for iOS prior to v2.26.23.72",
-      "WhatsApp for iOS versions prior to 2.26.24.72 and 2.26.15.72",
-      "WhatsApp for Mac Desktop versions prior to v2.26.23.72",
-      "WhatsApp for Windows versions prior to v2.3000.1032164386.258709"
-    ],
+    "description": "WhatsApp for Android, WhatsApp Business for Android, WhatsApp for iOS, WhatsApp for Mac Desktop, and WhatsApp for Windows are cross-platform communication applications developed by Meta, offering instant messaging, voice and video calling, and multimedia sharing. These vulnerabilities exist in WhatsApp products due to SQL injection, improper certificate chain validation, incomplete validation of external ad-reply URLs. A remote attacker could exploit these vulnerabilities by sending a specially crafted message or URL to the targeted system. Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, obtain sensitive information, bypass security restrictions, or manipulate application data on the targeted system.",
+    "softwareAffected": "",
     "targetAudience": "Individuals and organizations using the affected WhatsApp, WhatsApp Business, and WhatsApp for Mac/Windows.",
     "riskAssessment": "High risk of arbitrary code execution, sensitive information disclosure, and bypassing security restrictions.",
     "impactAssessment": "Potential for compromise of affected systems, unauthorized access, and bypass of hardware root of trust.",
     "cves": [
-      "CVE-2026-23863",
       "CVE-2026-102769",
       "CVE-2026-44908",
-      "CVE-2026-23866",
       "CVE-2026-23871"
-    ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Multiple Vulnerabilities in Asus",
-    "severity": "critical",
-    "date": "2026-11-26",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0575",
-    "code": "CIVN-2026-0575",
-    "summary": "Multiple vulnerabilities have been reported in ASUS products, which could allow a remote attacker to bypass authentication, forge authentication tokens, obtain administrative control, and gain elevated privileges on affected systems.",
-    "description": "ASUS is a multinational computer hardware and electronics manufacturer that provides system management software, hardware configuration utilities, and enterprise IT management",
-    "softwareAffected": [
-      "ASUS Control Center Express versions prior to v1.7.29",
-      "ASUS Control Center Datacenter version 4.0.0.2 and earlier",
-      "ASUS Control Center Enterprise version 3.1.0.8 and earlier",
-      "ASUS Armoury Crate versions up to and including v6.7.2"
-    ],
-    "targetAudience": "All organizations, system administrators, and users utilizing the affected ASUS products.",
-    "riskAssessment": "High risk of unauthorized administrative access to management consoles and potentially compromise the confidentiality, integrity, and availability of managed systems.",
-    "impactAssessment": "Potential for unauthorized administrative access, privilege escalation, authentication bypass, and compromise of managed devices.",
-    "cves": [
-      "CVE-2026-114202",
-      "CVE-2026-114204",
-      "CVE-2026-114205",
-      "CVE-2026-126574",
-      "CVE-2026-112115"
     ],
     "solutionLinks": []
   },
@@ -80,6 +104,70 @@
       "CVE-2026-76430",
       "CVE-2026-76515",
       "CVE-2026-76516"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Multiple Vulnerabilities in Asus",
+    "severity": "critical",
+    "date": "2026-11-26",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0575",
+    "code": "CIVN-2026-0575",
+    "summary": "Multiple vulnerabilities have been reported in ASUS products, which could allow a remote attacker to bypass authentication, forge authentication tokens, obtain administrative control, and gain elevated privileges on affected systems.",
+    "description": "ASUS is a multinational computer hardware and electronics manufacturer that provides system management software, hardware configuration utilities, and enterprise IT management",
+    "softwareAffected": [
+      "ASUS Control Center Express versions prior to v1.7.29",
+      "ASUS Control Center Datacenter version 4.0.0.2 and earlier",
+      "ASUS Control Center Enterprise version 3.1.0.8 and earlier",
+      "ASUS Armoury Crate versions up to and including v6.7.2"
+    ],
+    "targetAudience": "All organizations, system administrators, and users utilizing the affected ASUS products.",
+    "riskAssessment": "High risk of unauthorized administrative access to management consoles and potentially compromise the confidentiality, integrity, and availability of managed systems.",
+    "impactAssessment": "Potential for unauthorized administrative access, privilege escalation, authentication bypass, and compromise of managed devices.",
+    "cves": [
+      "CVE-2026-114202",
+      "CVE-2026-114204",
+      "CVE-2026-114205",
+      "CVE-2026-126574",
+      "CVE-2026-112115"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "SQL Injection Vulnerability in DIGIT Platform",
+    "severity": "high",
+    "date": "2026-11-25",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0570",
+    "code": "CIVN-2026-0570",
+    "summary": "A vulnerability has been reported in DIGIT Platform, which could allow an unauthenticated remote attacker to execute arbitrary SQL queries, potentially resulting in unauthorized disclosure, modification or deletion of database information on the targeted system.",
+    "description": "DIGIT (Digital Infrastructure for Governance, Inclusion & Transformation) is an open source platform, with reusable building blocks and shared data registries that helps local governments, market partners and NGOs build sectoral Digital Public Infrastructure (DPIs). This vulnerability exists in the DIGIT Platform due to improper neutralization of user supplied input while constructing SQL queries and execution in the affected User and Access Control Service components. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted input through the affected API endpoint to the targeted system. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary SQL queries, potentially resulting in unauthorized disclosure, modification or deletion of database information on the targeted system. Credit This vulnerability is reported by Sarthak Chauhan.",
+    "softwareAffected": "",
+    "targetAudience": "Organizations, system administrators and maintainers of the DIGIT Platform.",
+    "riskAssessment": "Unauthorized SQL query execution, manipulation of application logic and sensitive information disclosure.",
+    "impactAssessment": "Unauthorized access to sensitive database information, modify or delete database records.",
+    "cves": [
+      "CVE-2026-136706"
+    ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Remote Code Execution Vulnerability in Microsoft Office PowerPoint",
+    "severity": "high",
+    "date": "2026-11-25",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0569",
+    "code": "CIVN-2026-0569",
+    "summary": "A vulnerability has been reported in Microsoft Office PowerPoint which could allow an unauthorized attacker to execute arbitrary code over a network on the affected system.",
+    "description": "Microsoft Office PowerPoint is a presentation application that enables users to create, edit and deliver presentations and is widely used across enterprise and individual environments. This vulnerability exist in the Microsoft Office PowerPoint due to improper certificate validation in Microsoft Office PowerPoint. An unauthorized attacker could exploit this vulnerability over a network. Successful exploitation could allow an unauthorized attacker to execute arbitrary code over a network on the affected system.",
+    "softwareAffected": [
+      "Microsoft 365 Apps for Enterprise 32-bit and x64-based Systems",
+      "Microsoft Office LTSC 2021 32-bit and x64-based System versions prior to 16.0.14334.21048",
+      "Microsoft Office LTSC 2024 32-bit and x64-based System versions prior to 16.0.17932.21140"
+    ],
+    "targetAudience": "All organizations and individuals using affected Microsoft Office PowerPoint.",
+    "riskAssessment": "High risk of remote code execution and information disclosure on affected devices.",
+    "impactAssessment": "Potential impact on confidentiality, integrity and availability of the affected system.",
+    "cves": [
+      "CVE-2026-120787"
     ],
     "solutionLinks": []
   },
@@ -115,23 +203,6 @@
     "solutionLinks": []
   },
   {
-    "title": "SQL Injection Vulnerability in DIGIT Platform",
-    "severity": "high",
-    "date": "2026-11-25",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0570",
-    "code": "CIVN-2026-0570",
-    "summary": "A vulnerability has been reported in DIGIT Platform, which could allow an unauthenticated remote attacker to execute arbitrary SQL queries, potentially resulting in unauthorized disclosure, modification or deletion of database information on the targeted system.",
-    "description": "DIGIT (Digital Infrastructure for Governance, Inclusion & Transformation) is an open source platform, with reusable building blocks and shared data registries that helps local governments, market partners and NGOs build sectoral Digital Public Infrastructure (DPIs). This vulnerability exists in the DIGIT Platform due to improper neutralization of user supplied input while constructing SQL queries and execution in the affected User and Access Control Service components. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted input through the affected API endpoint to the targeted system. Successful exploitation of this vulnerability could allow the attacker to execute arbitrary SQL queries, potentially resulting in unauthorized disclosure, modification or deletion of database information on the targeted system. Credit This vulnerability is reported by Sarthak Chauhan.",
-    "softwareAffected": "",
-    "targetAudience": "Organizations, system administrators and maintainers of the DIGIT Platform.",
-    "riskAssessment": "Unauthorized SQL query execution, manipulation of application logic and sensitive information disclosure.",
-    "impactAssessment": "Unauthorized access to sensitive database information, modify or delete database records.",
-    "cves": [
-      "CVE-2026-136706"
-    ],
-    "solutionLinks": []
-  },
-  {
     "title": "Multiple Vulnerabilities in NGINX",
     "severity": "critical",
     "date": "2026-11-25",
@@ -158,21 +229,6 @@
       "CVE-2026-118899",
       "CVE-2026-123007"
     ],
-    "solutionLinks": []
-  },
-  {
-    "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
-    "severity": "critical",
-    "date": "2026-11-20",
-    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
-    "code": "CIAD-2026-0062",
-    "summary": "Multiple vulnerabilities reported.",
-    "description": "CERT-In has recently issued advisories highlighting threats arising from the exploitation of payment and disbursement systems, unauthorised activity by AI agents under evaluation, misuse of open-source agentic AI tools and AI-assisted cyberattacks against Indian ICT assets. Recent observations by CERT-In show that unauthorised financial transactions involving business payment systems are not limited to BFSI entities but also affect technology service providers supporting government-linked payment processes and platforms handling vendor or partner payouts. In the observed incidents, attackers targeted business records and approval processes to carry out unauthorised transactions through otherwise legitimate systems. In separate threat-hunting activities, CERT-In has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across different sectors. The activity includes automated reconnaissance, credential attacks and unauthorised access to systems and data. Organisations should review the security of business applications, critical records, user identities and third-party interfaces. Existing monitoring and incident-response arrangements should also account for the risks arising from misuse of trusted business processes and automated intrusion activity. Categories of Incidents Observed 1. Financially motivated abuse of business payment workflows CERT-In has received reports of unauthorised financial transactions involving organisations outside the financial sector. Some incidents have affected service providers supporting government-linked payment workflows and platforms responsible for vendor or partner payouts. The reported incidents involved the following methods: • Misuse of business applications and service-provider-operated workflows, rather than direct exploitation of payment APIs alone. • Alteration of business records or approval relationships that determine payments, followed by the use of legitimate payment processes. • Use of trusted systems and established approval procedures to process unauthorised transactions without immediately raising suspicion. • Exploitation of gaps in independent verification, reconciliation and review of changes to business records. • The concern is not limited to the security of payment APIs. A transaction may pass the usual application and approval checks even when the records used to initiate it have been changed without authorisation. Organisations need to verify the underlying business records and the authority for a payment, in addition to validating the payment request itself. 2. AOF-enabled intrusion activity across sectors CERT-In's proactive threat hunting has identified the use of AOFs in activity directed at enterprises, technology and other service providers, government organisations, and academic and research institutions. The analysis identified the following techniques: • Automated reconnaissance to identify exposed systems, services and possible attack paths. • Rapid preparation and modification of exploits for known vulnerabilities, including through analysis of software updates and related technical information. • Use of multiple agents or automated workers to undertake reconnaissance, privilege discovery and other intrusion tasks in parallel. • Modification of scripts, requests and attack steps in response to errors, blocked attempts or information returned by targeted systems. • Use of valid credentials, legitimate administrative functions, trust relationships and external infrastructure to gain further access. • AOFs allow several intrusion tasks to be carried out with less manual effort and can shorten the time between reconnaissance and subsequent attack stages. Organisations should account for such activity when reviewing their exposure, access controls and monitoring arrangements, irrespective of the sector in which they operate. Recommended Actions Organisations are advised to implement the relevant measures mentioned in CERT-In Advisories CIAD-2026-0046, CIAD-2026-0049 and CIAD-2026-0058. The Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure (CISG-2026-02) also provides guidance on reducing exposure and strengthening defensive arrangements. In view of the reported incidents, particular attention should be given to the following measures. A. Government organisations and owners of services operated through technology service providers 1. Identify service-provider systems, accounts and integrations that can change payment-related records, approve transactions or access sensitive information. Review whether these privileges are necessary and appropriately restricted. 2. Reconcile payment instructions and critical business records maintained by service providers against independent, authoritative records. The verification source should not be capable of being altered through the same compromised provider environment. 3. Require independent verification for high-risk changes, particularly those affecting payment instructions, beneficiaries and approval arrangements. Multiple approvals within the same provider-controlled system may not provide sufficient protection if that environment is compromised. 4. Agree with service providers on arrangements for incident detection, access to relevant logs, investigation and containment. These arrangements should cover suspension of affected payments or integrations and timely notification where a shared compromise may affect other clients. B. Technology service providers (TSPs), IT-enabled services (ITES) entities and non-financial payout platforms 5. Separate client environments and restrict administrative accounts, credentials and control-plane privileges. Access provided for one client or service should not permit unauthorised access to other client environments. 6. Monitor changes to payment-related business records alongside privileged account activity, approval actions and subsequent transactions. Review unusual sequences of activity even when individual actions appear to have been performed through authorised accounts or applications. 7. Where compromise is suspected, independently verify affected business records and examine whether the account or system involved had access to other clients, integrations or environments. C. Organisations exposed to AOF-enabled intrusion activity 8. Organisations should review the security of internet-facing applications, user identities, privileged accounts, service credentials and connections to external systems. 9. Available authentication, endpoint, application and network logs should be examined for unusual reconnaissance, credential use, administrative activity and outbound data transfers. • Reporting Requirements • In accordance with the CERT-In Directions dated 28 April 2022, applicable cyber incidents must be reported to CERT-In within six hours of noticing the incident or being informed of it. Incident reports and relevant logs may be sent to incident@cert-in.org.in. • Cases involving unauthorised financial transactions should also be reported promptly through the National Cyber Crime Reporting Portal (https://cybercrime.gov.in) or by calling helpline 1930. • Organisations should inform the relevant law-enforcement agencies, regulators and payment-system authorities, as applicable, so that timely action can be taken against unauthorised financial transactions and associated accounts. •",
-    "softwareAffected": "",
-    "targetAudience": "",
-    "riskAssessment": "",
-    "impactAssessment": "",
-    "cves": [],
     "solutionLinks": []
   },
   {
@@ -334,6 +390,21 @@
       "CVE-2026-123893",
       "CVE-2026-123894"
     ],
+    "solutionLinks": []
+  },
+  {
+    "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
+    "severity": "critical",
+    "date": "2026-11-20",
+    "link": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
+    "code": "CIAD-2026-0062",
+    "summary": "Multiple vulnerabilities reported.",
+    "description": "CERT-In has recently issued advisories highlighting threats arising from the exploitation of payment and disbursement systems, unauthorised activity by AI agents under evaluation, misuse of open-source agentic AI tools and AI-assisted cyberattacks against Indian ICT assets. Recent observations by CERT-In show that unauthorised financial transactions involving business payment systems are not limited to BFSI entities but also affect technology service providers supporting government-linked payment processes and platforms handling vendor or partner payouts. In the observed incidents, attackers targeted business records and approval processes to carry out unauthorised transactions through otherwise legitimate systems. In separate threat-hunting activities, CERT-In has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across different sectors. The activity includes automated reconnaissance, credential attacks and unauthorised access to systems and data. Organisations should review the security of business applications, critical records, user identities and third-party interfaces. Existing monitoring and incident-response arrangements should also account for the risks arising from misuse of trusted business processes and automated intrusion activity. Categories of Incidents Observed 1. Financially motivated abuse of business payment workflows CERT-In has received reports of unauthorised financial transactions involving organisations outside the financial sector. Some incidents have affected service providers supporting government-linked payment workflows and platforms responsible for vendor or partner payouts. The reported incidents involved the following methods: • Misuse of business applications and service-provider-operated workflows, rather than direct exploitation of payment APIs alone. • Alteration of business records or approval relationships that determine payments, followed by the use of legitimate payment processes. • Use of trusted systems and established approval procedures to process unauthorised transactions without immediately raising suspicion. • Exploitation of gaps in independent verification, reconciliation and review of changes to business records. • The concern is not limited to the security of payment APIs. A transaction may pass the usual application and approval checks even when the records used to initiate it have been changed without authorisation. Organisations need to verify the underlying business records and the authority for a payment, in addition to validating the payment request itself. 2. AOF-enabled intrusion activity across sectors CERT-In's proactive threat hunting has identified the use of AOFs in activity directed at enterprises, technology and other service providers, government organisations, and academic and research institutions. The analysis identified the following techniques: • Automated reconnaissance to identify exposed systems, services and possible attack paths. • Rapid preparation and modification of exploits for known vulnerabilities, including through analysis of software updates and related technical information. • Use of multiple agents or automated workers to undertake reconnaissance, privilege discovery and other intrusion tasks in parallel. • Modification of scripts, requests and attack steps in response to errors, blocked attempts or information returned by targeted systems. • Use of valid credentials, legitimate administrative functions, trust relationships and external infrastructure to gain further access. • AOFs allow several intrusion tasks to be carried out with less manual effort and can shorten the time between reconnaissance and subsequent attack stages. Organisations should account for such activity when reviewing their exposure, access controls and monitoring arrangements, irrespective of the sector in which they operate. Recommended Actions Organisations are advised to implement the relevant measures mentioned in CERT-In Advisories CIAD-2026-0046, CIAD-2026-0049 and CIAD-2026-0058. The Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure (CISG-2026-02) also provides guidance on reducing exposure and strengthening defensive arrangements. In view of the reported incidents, particular attention should be given to the following measures. A. Government organisations and owners of services operated through technology service providers 1. Identify service-provider systems, accounts and integrations that can change payment-related records, approve transactions or access sensitive information. Review whether these privileges are necessary and appropriately restricted. 2. Reconcile payment instructions and critical business records maintained by service providers against independent, authoritative records. The verification source should not be capable of being altered through the same compromised provider environment. 3. Require independent verification for high-risk changes, particularly those affecting payment instructions, beneficiaries and approval arrangements. Multiple approvals within the same provider-controlled system may not provide sufficient protection if that environment is compromised. 4. Agree with service providers on arrangements for incident detection, access to relevant logs, investigation and containment. These arrangements should cover suspension of affected payments or integrations and timely notification where a shared compromise may affect other clients. B. Technology service providers (TSPs), IT-enabled services (ITES) entities and non-financial payout platforms 5. Separate client environments and restrict administrative accounts, credentials and control-plane privileges. Access provided for one client or service should not permit unauthorised access to other client environments. 6. Monitor changes to payment-related business records alongside privileged account activity, approval actions and subsequent transactions. Review unusual sequences of activity even when individual actions appear to have been performed through authorised accounts or applications. 7. Where compromise is suspected, independently verify affected business records and examine whether the account or system involved had access to other clients, integrations or environments. C. Organisations exposed to AOF-enabled intrusion activity 8. Organisations should review the security of internet-facing applications, user identities, privileged accounts, service credentials and connections to external systems. 9. Available authentication, endpoint, application and network logs should be examined for unusual reconnaissance, credential use, administrative activity and outbound data transfers. • Reporting Requirements • In accordance with the CERT-In Directions dated 28 April 2022, applicable cyber incidents must be reported to CERT-In within six hours of noticing the incident or being informed of it. Incident reports and relevant logs may be sent to incident@cert-in.org.in. • Cases involving unauthorised financial transactions should also be reported promptly through the National Cyber Crime Reporting Portal (https://cybercrime.gov.in) or by calling helpline 1930. • Organisations should inform the relevant law-enforcement agencies, regulators and payment-system authorities, as applicable, so that timely action can be taken against unauthorised financial transactions and associated accounts. •",
+    "softwareAffected": "",
+    "targetAudience": "",
+    "riskAssessment": "",
+    "impactAssessment": "",
+    "cves": [],
     "solutionLinks": []
   },
   {
